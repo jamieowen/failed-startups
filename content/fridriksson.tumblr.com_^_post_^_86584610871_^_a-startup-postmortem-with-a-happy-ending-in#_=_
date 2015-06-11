@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!--
+  ____   _    ____  _____ ____
+ |  _ \ / \  |  _ \| ____|  _ \
+ | |_) / _ \ | |_) |  _| | |_) |
+ |  __/ ___ \|  __/| |___|  _ <
+ |_| /_/   \_\_|   |_____|_| \_\
+
+
+Version 1.0
+
+Paper theme created by Thomas Kimura
+
+View a live demo at http://papertheme.tumblr.com/
+
+view this project at https://github.com/thomaskimura/Paper
+
+    tweet @thomaskimura_
+    github @thomaskimura
+
+thanks to:
+    - github.com/PixelUnion/Extended-Tumblr-Photoset
+    - instafeedjs.com
+    - code.google.com/p/google-code-prettify/
+
+-->
+<html lang="en">
+  <head>
+    <title>A startup postmortem with a happy ending? ..in... | By the Beard of Zeus!</title>
+
+    <style type="text/css">figure {margin: 0;}</style>
+<link rel="alternate" type="application/rss+xml" href="http://fridriksson.tumblr.com/rss">
+    <link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_2459e06a6241_128.png">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8">
+
+    <!-- for Facebook -->
+<meta property="og:title" content="A startup postmortem with a happy ending? ..in... | By the Beard of Zeus!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="" />
+<meta property="og:description" content="A startup postmortem with a happy ending? ..in..." />
+
+    <!-- for Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@tfridriksson">
+<meta name="twitter:creator" content="@tfridriksson">
+<meta name="twitter:title" content="A startup postmortem with a happy ending? ..in... | By the Beard of Zeus!">
+
+    <!--TUMBLR CUSTOMIZATION-->
+    <!--Colours-->
+    <meta name="color:Main Color" content="#d45603"/> <!--Color for hover and highlight-->
+    <meta name="color:Tint Color" content="#000"/>
+    <meta name="color:Header Color" content="#d45603"/>
+
+    <!--Sizing-->
+    <meta name="text:Column Size" content="600"/> <!--Set column width-->
+
+    <!--Images-->
+    <meta name="image:HeaderBackground" content=""/>  <!--Background image for header-->
+    <meta name="image:Header" content=""/>            <!--Optional image above header-->
+
+    <!--Fonts-->
+    <meta name="font:Headings" content="Calluna Sans"/> <!--Sans-serif, headings, notes, navigation-->
+    <meta name="font:Subheadings" content="Calluna Sans"/>
+    <meta name="font:Body" content="Calluna"/>     <!--All content-->
+    <meta name="font:Fancy" content="Clarendon"/> <!--Quotes-->
+
+    <!--Text-->
+    <meta name="text:Email" content="Email"/>
+    <meta name="text:Tumblr Username" content="USER" /> <!--Needed for ask/submit to work-->
+    <meta name='text:Disqus Shortname' content='' />
+
+    <meta name="text:Username on Facebook" content="Facebook"/>
+    <meta name="text:Google Plus Url" content="Google"/>
+    <meta name="text:Username on Twitter" content="Twitter"/>
+    <meta name="text:Username on YouTube" content="YouTube"/>
+    <meta name="text:Username on Instagram" content="Instagram"/>
+    <meta name="text:Username on Pinterest" content="Pintrest"/>
+    <meta name="text:Username on Flickr" content="Flickr"/>
+    <meta name="text:Username on Linkedin" content="Linkedin"/>
+    <meta name="text:Username on Dribbble" content="Dribbble"/>
+    <meta name="text:Username on GitHub" content="GitHub"/>
+
+    <meta name="text:Instagram User ID" content=""/>
+    <meta name="text:Instagram Access Token" content=""/>
+    <meta name="text:Instagram Tag" content=""/>
+
+    <!--Options-->
+    <meta name="if:Keyboard Controls" content="1"/>   <!--Turn on keyboard controls-->
+    <meta name="if:Author" content="1"/>              <!--Display authors-->
+    <meta name="if:Random" content="1"/>              <!--Allow random post navigation-->
+    <meta name="if:Post Navigation" content="1"/>     <!--Navigation on permalink pages-->
+    <meta name="if:Recent Post" content="1"/>         <!--Display recent posts-->
+    <meta name="if:Instagram Feed" content="0"/>      <!--Enable instagram feeds-->
+    <meta name="if:Tweet Button" content="0"/>        <!--Turn on keyboard controls-->
+
+    <!--Stylesheets-->
+    <link href="http://static.tumblr.com/9hupah0/5ptn5xh2l/style.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<style>
+/*-------------*/
+/*---OPTIONS---*/
+/*-------------*/
+
+/*--Column Width--*/
+.postHead{max-width:600px;}
+.row{max-width:600px;}
+
+/*--Header--*/
+#headerBackground{
+    background:url('http://assets.tumblr.com/images/x.gif?v=1');
+    background-size: cover;}
+#headerTint{background:#e67e22;}
+#bigTitle{color:#e67e22;}
+
+/*--Highlight Options--*/
+::selection{opacity:1;color:#fff; background-color:#e67e22;}
+:-moz-selection{opacity:1;color:#fff; background-color:#e67e22;}
+
+/*--Link Hover--*/
+a:hover{color:#e67e22;}
+.header #title:hover{color:#e67e22;}
+.menuIcon:hover{color:#e67e22;}
+.sb-slidebar ul li a:hover{color:#e67e22;}
+#bottomLinks a:hover{color:#e67e22;}
+
+/*--Fonts--*/
+ h1, h2, h3, h4, h5, h6{font-family:'Calluna Sans', sans-serif; !important}
+ body, ol.notes li.note blockquote a, .postAuthor, .postStats, ol.notes li {font-family:'Calluna Sans', sans-serif; !important}
+.quote, .pDropCap, pQuote {font-family: Clarendon !important;}
+.post p, .chat li, blockquote, #recentSummary, .source{font-family:'Calluna', serif;}
+
+
+</style>
+
+
+  <style>
+  /*--STYLE FOR PERMALINK PAGE ONLY--*/
+    /*HEADER*/
+    .header ul, .header p{display:none;}
+    .header h1{display:none;}
+    .header .backButton{border: 3px solid #eee; padding: 10px; border-radius: 5px;}
+    .backButtonContainer{margin-top:20px;}
+    .backButton{display:initial;}
+
+    /*HIDE*/
+    .hideOnPermalink{display:none !important;}
+    .hideOnIndex{display:block;}
+
+    #title, #recentTitle{font-size:2.618rem; line-height:3.141rem;}
+
+    /*TYPOGRAPHY*/
+    /* first paragraph larger */
+    .post > p:first-of-type{font-size:1.25rem; line-height:2.022rem;} /*1.2 & 1.618*/
+
+  /*LARGER THAN 900PX*/
+    @media only screen and (min-width: 900px)
+    {
+      #title, #recentTitle{font-size:3.272rem; line-height:3.926rem;}
+
+      /* first paragraph larger*/
+      .post > p:first-of-type{font-size:1.5rem; line-height:2.427rem;} /*1.2 & 1.618*/
+    }
+  /*END LARGER THAN 900PX*/
+  </style>
+
+
+
+<style>
+.postNav{
+    width:32%;
+    display:inline-table;}
+.random{
+    float:inherit;}
+</style>
+
+
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=fridriksson%26postID=86584610871" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://fridriksson.tumblr.com/post/86584610871/a-startup-postmortem-with-a-happy-ending-in" title="A startup postmortem with a happy ending? ..in Thailand
+When facing the reality of a failed product and 3 months runway left of investors money, sometimes the best solution is to go to Thailand.
+[[MORE]] In early 2012 Thomas and I envisioned a future..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/calluna/stylesheet.css?v=3"><link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/callunasans/stylesheet.css?v=3"><link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/fridriksson.tumblr.com\/post\/86584610871\/a-startup-postmortem-with-a-happy-ending-in","mainEntityOfPage":true,"datePublished":"2014-05-23T09:51:00-04:00","author":"fridriksson","image":{"@list":["https:\/\/31.media.tumblr.com\/db1046cd94e625b83e3cd98166b63fd4\/tumblr_inline_n6df7sxtLm1r0ojkh.png","https:\/\/31.media.tumblr.com\/edec62c0d4f299bbd8f48dbcf061d59d\/tumblr_inline_n60qj05uLj1r0ojkh.jpg","https:\/\/31.media.tumblr.com\/072807cb8935c264a6eec2a892e29540\/tumblr_inline_n60qrcsebb1r0ojkh.jpg","https:\/\/31.media.tumblr.com\/74c80afbbf82765c41d7beec32221d2f\/tumblr_inline_n60qz3Ti3Q1r0ojkh.jpg","https:\/\/31.media.tumblr.com\/79f3f36eb617230b28538b86759f203a\/tumblr_inline_n60rbwKZtw1r0ojkh.png","https:\/\/31.media.tumblr.com\/9fbe85101624d6fac37b0d3a37c93b6e\/tumblr_inline_n67t6l4Ny81r0ojkh.jpg","https:\/\/31.media.tumblr.com\/fcf65fbf7534f287f618d60991887d8d\/tumblr_inline_n6dfi60agm1r0ojkh.jpg","https:\/\/31.media.tumblr.com\/e07801f183e7c41999219498ce9cfd0e\/tumblr_inline_n60rldbqqW1r0ojkh.png"]},"headline":"A startup postmortem with a happy ending? ..in Thailand","articleBody":"When facing the reality of a failed product and 3 months runway left of investors money, sometimes the best solution is to go to Thailand.\n[[MORE]] In early 2012 Thomas and I envisioned a future where recreational football players would use an app to share their matches with friends and family. All their history of achievements would be recorded that would become their online football identity.\nUsing mockup design we tested the idea at KB (football club in Copenhagen) with players and coaches. The response was very positive. So we gave ourselves three months to build the first version of the app and test with a group of teams.\nAt the time I could work full time as I just sold my previous startup. Thomas on the other hand was contracted at Scandinavia\u2019s biggest deal site to upgrade their whole backend. A tall order for any hacker. So building this app on the side would not going to be easy.\nAs I started working in the morning, Thomas would join me after his work and code till late after midnight. Those three months I think he slept 4-5 hours each night.\nClear vision and validation ironed out\nPumodo was launched in App Store in mid April with 5 test teams. The feedback was promising and the data showed that each user would in average add 6.4 players to his team. A very good growth indicator.\nInterviews showed that spectators really loved the idea to get live score notification from the matches they were unable to attend. The math was that each player had in average 3 fans so a team had 45 in total. Often only 5 people attended a match so there would be 40 friends and family at home wanting to be updated on that match. The key would be getting players to track their matches.\nA Skype meeting with senior level guys at Adidas confirmed that we were on right track in regards to our monetization model. They were committed to launch a campaign in our app once we reached a specific amount of users.\nThomas and I had the proof we needed. He just finished the contracting assignment so it was perfect timed as he could go full time on the project.\nWe also decided to work on the app the next three months in Silicon Valley. We\u2019d had never been there before and it sounded like fun.\nThere we also could test the US market that was among the top 3 in size in regards to active recreational football players.\nDo or do not. There is no try\nIn August we left for Palo Alto where we were invited to stay for two weeks for free in a cabin build in a backyard. The host was an awesome guy we met a year before in Copenhagen and one of the most esteemed growth hackers in The Valley.\nFrom the comfort of the backyard cabin we moved to big city San Francisco and faced the totally hopeless situation of finding a place to live. We survived the first two weeks by renting office space at Tradeshift and sleeping on their couches at night. Not sure if they ever found that out.\nFinally we managed to get a 9 m2\/97 sqft room through our Y-Combinator network. Rent $1,250. Dang! But since we had free office space from our friends at OneLogin, our burnrate wasn\u2019t yet gone through the roof. But close..\nWe did the show and tell dance at Techcrunch Disrupt and DEMO. Networked at GigaOm RoadMap Con and YC Startup School. Got tons of advice. Met people with amazing experience. We felt we were in the nexus of entrepreneurship and innovation. And we probably were. But we also got tangled in the hype machine. Our business plan was changing every week. We went from focusing only on football to becoming app for all sports. Think BIGGER was the mantra.\nIt was like our feet never touched the ground.\nOur market research showed USA would not become our main market. Too fragmented and unfavorable league structures. Europe would be our target.\nSo in November we headed back to Copenhagen just in time for the Danish App Awards where we were nominated for Best Sports App and Best Functionality. With our feet on solid ground yet again we won as Best Sports App. Sweet!\nAnd since we had been contacted by Danish business angels interested in investing, we felt everything was going as planned.\nWinter is coming\nOne of the biggest disadvantages with recreational football in Europe was the long winter breaks. In Denmark it was 5 months. I felt like Ned Stark facing many years of winter. It rendered our app lifeless and desolate. No live user data to use to improve the app as majority of our users were based in the cold north of Europe.\nTrying to remain positive we saw it as an opportunity to submerge into our hack cave to build the next big feature.\nWe wanted to solve the lack of ability to compare players across different positions. Current comparable metrics were goals and assist. It was not possible for a defender and forward to compare fairly.\nThe solution was an universal score based on players abilities to compare and compete against anybody regardless of age, level or position in lineup. Kinda like Klout score just for football players. The bigger impact you have in a matches, the higher is your score.\nConcept explained here:\nClubs were offered a widget that showed Team of the Week based on the players\u2019 score and a leaderboard among the clubs players. We wanted the clubs to celebrate individual players weekly achievements with place on the clubs Team of the Week\nThe hypothesis was that if we can get a club to place it on their club page and promote it, the players would want to be on the weekly Team Of Week so they download the app and start tracking their matches.\nThis was our growth hack.\nGetting as close to our users as possible\nIn April we closed a $180k angel round and hired our first employee, Anders as a frontend dev. He was a great fit. Skillful, curious and a football fan.\nFrom the desire to be in close day-to-day dialogue with our users, we decided to move our office to a football club (B93) in Copenhagen that was 1,800 members strong. Our office had only smelly locker rooms as neighbors. Perfect!\nWe were basically living with and meeting our users every day.\nThe coding of these two features took longer than anticipated which meant that we would not be able to launch before the summer holiday that is from May to August. The breaks between season started to really become a huge problem. How had we not seen this coming?\nWe needed users to test the new features. So that summer we went on a 7-day guerilla marketing campaign at one of the worlds biggest youth football tournaments, Dana Cup. We made a special Team of the Day webpage for this campaign. Promotion was with flyers and posters.\nDespite personally handing out 10k+ flyers only 3 teams tracked their matches. The morale was still high but concerns started to arise. No panic. Yet\u2026\nIf a platform fails at encouraging creation, it breaks down\nWhen the new season started we had convinced a handful of teams at B93 to start tracking their matches. It started well as the matches were tracked and the \u201cTeam of the Week\u201d on the clubs webpage was generated.\nBut the conversion of teammates joining after invite was very low. After 2-3 matches the tracking stopped. Even those players who had been explicitly instructed by the club director to track, stopped tracking. We did multiple interviews with the players and the general response was \u201cthe idea is cool, but meh..\u201d\nWe had created an Indifferent product. Oh, the shame.\nPumodo was a product where people wanted to consume the live matches, player data and history but players didn\u2019t want to supply it. The reward wasn\u2019t high enough compared to the effort.\nBut our biggest self realization was that we were not users of our own product. We didn\u2019t obsess over it and we didn\u2019t love it. We loved the idea of it. That hurt.\nCoinciding with our time of woe, the Danish National Football Union announced they would launch a competitive live score app. With all their members already in the app it would get even harder for us to sign up users on our home market.\nWe had good ideas how to fix the situation but with 3 months runway remaining of our angel round and, once again, a 5 month winter break upon us, we needed radical ideas.\nFurther funding was not possible without a critical amount of active users and an proven product\/market fit.\nOne does not simply pivot\nOur conclusion was that if we would use remaining resources to try to fix Pumodo, the odds would be against us. Even with extended runway the winter break would make it very difficult to test and validate the new ideas.\nSo why not create a new football app build upon our current experience and code\u2026\nDuring the last year working on Pumodo we had noticed accelerated technology leaps in live tracking of pro football players during matches.\nThe ability to track and record 1,000+ live events per match created incredible rich data that nobody was utilizing properly. Live score services still served fans with simple and stale stat notifications in apps and on web.\nSo we looked at the market for live score football apps. No real market leader. But the market was growing fast as this seemed to be the last category that not yet migrated to mobile. We looked at some of the major apps and thought we can do much better.\nBut we needed more runway!\nExtending the runway by bringing down expenses was the only solution. Denmark is not a cheap country to live and work in. Almost as expensive as San Francisco.\nSo moving to a much cheaper country made sense. We narrowed it down to Philippines, Indonesia and Thailand. After much consideration we chose Thailand as Thomas had a good friend who lived there and owned a small co-working space from where we could work and live.\nAs the dust had settled, we realized that this time we did not have to convince teams to input data. We could just buy it. Awesome!\nFrom the ashes a phoenix arises\nFour weeks later in mid November Thomas and I were on a plane to Thailand. Anders would join us later in January. We decided to bump Anders up to co-founder. He shared our passion for the new product, was prepared to take a drastic pay cut and we really liked him. Best decision ever!\nThe next months went fast. Our corner of the co-working space was quickly transformed into our new hack cave . We were spitting out code and design in a daze of strong coffee and thai Red Bull. The Pace was frantic and probably prolonged the jetlag with a week.\nWe didn\u2019t care. This time we were building an app with ourselves as users. That just felt right.\nWe designed the ultimate football app and then scraped everything \u201cnice\u201d off. Left was a minimum viable product that could be build fast and get out in the hands of users asap. All hypothesis could then be tested and iterated on as we got feedback.\nOne thing we thought was missing among the other football apps was the ability to get notification for individual players. Get updates of just Zlatans achievements without following PSG.\nThis would become our unique value proposition.\nOut of money but an awesome app richer\nLast wages were paid end of March. As expected. With barely $1,000 remaining, it was time to get this show on the road.\nOn April 9th Apple approved version 1.0 of Champion.\nWe limited the launch to Thai App Store only. It gave us a contained environment to learn and iterate. To get users in the app we used most of remaining cash to buy cheap app installs through Facebook ads. We had 5 weeks left to test the app in before the football season ended.\n30 days later we became no. 1 sports app in the Thai App Store.\nThen Apple promoted us. Boom!\nThe launch had gone so much better than hoped for.\nOut of money. Don\u2019t care. We\u2019re driven by the excitement of building, what we think, can become the best football experience on mobile. An app that empowers fans with great insight in players stats and history.\nSoon it will deliver a live-score experience so powerful that we expect to see Jos\u00e9 Mourinho sneak peek at our app before making substitution decisions.\nBut right now we\u2019re laser focused on the biggest football event of them all: The World Cup in Brazil. To celebrate this we will add some Easter eggs that maybe will ruffle some Uruguayan and Brazilian fans.\nHope this story can become inspirational for entrepreneurs when struggling with a failed product and end of runway.\nUPDATE! Read next chapter here: When your startup runs out of money you only got 1 problem\nPS. If you want to help us, check out Champion and, if you like it, share it with friends. Thanks!","@context":"http:\/\/schema.org"}</script>
+</head>
+<body onload="prettyPrint()" tabindex="0" onkeydown="keyPress(event)"> <!--load syntax highlighter-->
+
+
+<div id="sb-site"> <!--main content for animation-->
+
+<!--++++++-->
+<!--SPLASH-->
+<!--++++++-->
+
+  
+    <div id="splashTint"></div>
+    <div id="splashGradient"></div>
+    <div id="splashContainer"></div>
+  
+
+
+<!--++++++-->
+<!--HEADER-->
+<!--++++++-->
+<div class="fullRow header" id="header">
+  <div class="spaceSmall hideOnSplash"></div> <!--space at top-->
+
+  <!--IMAGE-->
+  
+
+  <!--TITLE-->
+  <h1 id="bigTitle"><a href="http://fridriksson.tumblr.com/">By the Beard of Zeus!</a></h1>
+
+  <!--BACK-->
+  
+    <div class="backButtonContainer hideOnPrint"> <!--back button, hide on index, show on permalink-->
+      <a class="backButton" href="http://fridriksson.tumblr.com/"><i class="fa fa-long-arrow-left"></i> By the Beard of Zeus!</a>
+    </div>
+  
+
+  <!--DESCRIPTION-->
+  <p></p>
+
+  <!--MENU-->
+  <ul>
+    
+  </ul>
+
+  <div class="spaceSmall"></div> <!--space at end of header-->
+</div>
+<!--++++++++++-->
+<!--END HEADER-->
+<!--++++++++++-->
+
+<!--+++++++++++++++++-->
+<!--HEADER BACKGROUND-->
+<!--+++++++++++++++++-->
+
+
+<!--+++++++-->
+<!--CONTENT-->
+<!--+++++++-->
+<div class="row">
+<div class="spaceSmall"></div> <!--space after header-->
+  <ol class="posts">
+
+<!--POST TYPES-->
+
+
+<!--++++++++++-->
+<!--TEXT POSTS-->
+<!--++++++++++-->
+
+  <li class="post text">
+
+    <div class="postHead">
+      
+          <h3 id="title" class="title"><a href="http://fridriksson.tumblr.com/post/86584610871/a-startup-postmortem-with-a-happy-ending-in">A startup postmortem with a happy ending? ..in Thailand</a></h3>
+      
+
+      
+        <span class="postAuthor hideOnIndex">
+          
+              <a href="http://fridriksson.tumblr.com/"><img class="postAuthorImage" src="http://33.media.tumblr.com/avatar_2459e06a6241_30.png"/></a>
+              Posted by:
+              <a href="http://fridriksson.tumblr.com/"> fridriksson </a>
+          
+
+          
+              on 23 May 2014
+          
+
+        
+
+        </span>
+      
+    </div>
+
+    <p>When facing the reality of a failed product and 3 months runway left of investors money, sometimes the best solution is to go to Thailand. &nbsp;</p>
+<!-- more -->
+<p>In early 2012 Thomas and I envisioned a future where recreational football players would use an app to share their matches with friends and family. All their history of achievements would be recorded that would become their online football identity. &nbsp;</p>
+<p>Using mockup design we tested the idea at KB (football club in Copenhagen) with players and coaches. The response was very positive. So we gave ourselves three months to build the first version of the app and test with a group of teams.</p>
+<p>At the time I could work full time as I just sold my previous startup. Thomas on the other hand was contracted at Scandinavia&rsquo;s biggest deal site to upgrade their whole backend. A tall order for any hacker. So building this app on the side would not going to be easy.</p>
+<p>As I started working in the morning, Thomas would join me after his work and code till late after midnight. Those three months I think he slept 4-5 hours each night.</p>
+
+<p><b>Clear vision and validation ironed out</b></p>
+<p>Pumodo was launched in App Store in mid April with 5 test teams. The feedback was promising and the data showed that each user would in average add 6.4 players to his team. A very good growth indicator. </p>
+<p>Interviews showed that spectators really loved the idea to get live score notification from the matches they were unable to attend. The math was that each player had in average 3 fans so a team had 45 in total. Often only 5 people attended a match so there would be 40 friends and family at home wanting to be updated on that match. The key would be getting players to track their matches.</p>
+<img src="http://38.media.tumblr.com/db1046cd94e625b83e3cd98166b63fd4/tumblr_inline_n6df7sxtLm1r0ojkh.png" alt="image"><p></p>
+
+
+<p>A Skype meeting with senior level guys at Adidas confirmed that we were on right track in regards to our monetization model. They were committed to launch a campaign in our app once we reached a specific amount of users. &nbsp;&nbsp;</p>
+<p>Thomas and I had the proof we needed. He just finished the contracting assignment so it was perfect timed as he could go full time on the project.</p>
+<p>We also decided to work on the app the next three months in Silicon Valley. We&rsquo;d had never been there before and it sounded like fun.</p>
+<p>There we also could test the US market that was among the top 3 in size in regards to active recreational&nbsp;football players.</p>
+
+<p><b>Do or do not. There is no try</b></p>
+<p>In August we left for Palo Alto where we were invited to stay for two weeks for free in a cabin build in a backyard. The host was an awesome guy we met a year before in Copenhagen and one of the most esteemed growth hackers in The Valley.</p>
+
+<img src="http://38.media.tumblr.com/edec62c0d4f299bbd8f48dbcf061d59d/tumblr_inline_n60qj05uLj1r0ojkh.jpg" alt="image"><p></p>
+
+<p>From the comfort of the backyard cabin we moved to big city San Francisco and faced the totally hopeless situation of finding a place to live. We survived the first two weeks by renting office space at Tradeshift and sleeping on their couches at night. Not sure if they ever found that out. &nbsp;</p>
+<p>Finally we managed to get a 9 m2/97 sqft room through our Y-Combinator network. Rent $1,250. Dang! But since we had free office space from our friends at OneLogin, our burnrate wasn&rsquo;t yet gone through the roof. But close.. &nbsp; &nbsp;</p>
+<p>We did the show and tell dance at&nbsp;Techcrunch Disrupt and DEMO. Networked at GigaOm RoadMap Con and &nbsp;YC Startup School. Got tons of advice. Met people with amazing experience. We felt we were in the nexus of entrepreneurship and innovation. And we probably were. But we also got tangled in the hype machine. Our business plan was changing every week. We went from focusing only on football to becoming app for all sports. Think BIGGER was the mantra.</p>
+<p>It was like our feet never touched the ground. &nbsp;&nbsp;</p>
+
+<p></p><img src="http://38.media.tumblr.com/072807cb8935c264a6eec2a892e29540/tumblr_inline_n60qrcsebb1r0ojkh.jpg" alt="image"><p>&nbsp;</p>
+<p>Our market research showed USA would not become our main market. Too fragmented and unfavorable league structures. Europe would be our target. </p>
+<p>So in November we headed back to Copenhagen just in time for the Danish App Awards where we were nominated for Best Sports App and Best Functionality. With our feet on solid ground yet again we won as Best Sports App. Sweet! &nbsp;</p>
+<p>And since we had been contacted by Danish business angels interested in investing, we felt everything was going as planned. &nbsp;</p>
+<img src="http://38.media.tumblr.com/74c80afbbf82765c41d7beec32221d2f/tumblr_inline_n60qz3Ti3Q1r0ojkh.jpg" alt="image"><p></p>
+
+
+<p><b>Winter is coming</b></p>
+<p>One of the biggest disadvantages with recreational football in Europe was the long winter breaks. In Denmark it was 5 months. I felt like Ned Stark facing many years of winter. It rendered our app lifeless and desolate. No live user data to use to improve the app as majority of our users were based in the cold north of Europe.</p>
+<p>Trying to remain positive we saw it as an opportunity to submerge into our hack cave to build the next big feature.</p>
+<p>We wanted to solve the lack of ability to compare players across different positions. &nbsp;Current comparable metrics were goals and assist. It was not possible for a defender and forward to compare fairly.</p>
+<p>The solution was an universal score based on players abilities to compare and compete against anybody regardless of age, level or position in lineup. Kinda like Klout score just for football players. The bigger impact you have in a matches, the higher is your score.</p>
+<p>Concept explained here:&nbsp;</p>
+
+<iframe src="//www.youtube.com/embed/G5L2eDqlC48" frameborder="0"></iframe><p></p>
+
+<p>Clubs were offered a widget that showed Team of the Week based on the players&rsquo; score and a leaderboard among the clubs players. We wanted the clubs to celebrate individual players weekly achievements with place on the clubs Team of the Week</p>
+<p>The hypothesis was that if we can get a club to place it on their club page and promote it, the players would want to be on the weekly Team Of Week so they download the app and start tracking their matches.</p>
+<p>This was our growth hack.&nbsp;</p>
+
+<img src="http://38.media.tumblr.com/79f3f36eb617230b28538b86759f203a/tumblr_inline_n60rbwKZtw1r0ojkh.png" alt="image"><p></p>
+<p><b>Getting as close to our users as possible</b> &nbsp;&nbsp;</p>
+<p>In April we closed a $180k angel round and hired our first employee, Anders as a frontend dev. He was a great fit. Skillful,&nbsp;curious&nbsp;and a football fan.&nbsp;</p>
+<p>From the desire to be in close day-to-day dialogue with our users, we decided to move our office to a football club (B93) in Copenhagen that was 1,800 members strong. Our office had only smelly locker rooms as&nbsp;neighbors. Perfect!&nbsp;</p>
+<p>We were basically living with and meeting our users every day.&nbsp;</p>
+<p>The coding of these two features took longer than anticipated which meant that we would not be able to launch before the summer holiday that is from May to August. The breaks between season started to really become a huge problem. How had we not seen this coming?</p>
+<p>We needed users to test the new features. So that summer we went on a 7-day guerilla marketing campaign at one of the worlds biggest youth football tournaments, Dana Cup. We made a special Team of the Day webpage for this campaign. Promotion was with flyers and posters.</p>
+<p>Despite personally handing out 10k+ flyers only 3 teams tracked their matches. The morale was still high but concerns started to arise. No panic. Yet&hellip;</p>
+
+<p><b>If a platform fails at encouraging creation, it breaks down</b></p>
+<p>When the new season started we had convinced a handful of teams at B93 to start tracking their matches. It started well as the matches were tracked and the &ldquo;Team of the Week&rdquo; on the clubs webpage was generated. </p>
+<p>But the conversion of teammates joining after invite was very low. After 2-3 matches the tracking stopped. Even those players who had been explicitly instructed by the club director to track, stopped tracking. We did multiple interviews with the players and the general response was &ldquo;the idea is cool, but meh..&rdquo; &nbsp;</p>
+<p>We had created an Indifferent product. Oh, the shame. &nbsp;</p>
+<img src="http://33.media.tumblr.com/9fbe85101624d6fac37b0d3a37c93b6e/tumblr_inline_n67t6l4Ny81r0ojkh.jpg" alt="image"><p></p>
+
+
+<p>Pumodo was a product where people wanted to consume the live matches, player data and history but players didn&rsquo;t want to supply it. The reward wasn&rsquo;t high enough compared to the effort.</p>
+<p>But our biggest self realization was that we were not users of our own product. We didn&rsquo;t obsess over it and we didn&rsquo;t love it. We loved the idea of it. That hurt.&nbsp;</p>
+<p>Coinciding with our time of woe, the Danish National Football Union announced they would launch a competitive live score app. With all their members already in the app it would get even harder for us to sign up users on our home market.&nbsp;</p>
+<p>We had good ideas how to fix the situation but with 3 months runway remaining of our angel round and, once again, a 5 month winter break upon us, we needed radical ideas. </p>
+<p>Further funding was not possible without a critical amount of active users and an proven product/market fit. </p>
+
+<p><b>One does not simply pivot</b></p>
+<p>Our conclusion was that if we would use remaining resources to try to fix Pumodo, the odds would be against us. Even with extended runway the winter break would make it very difficult to test and validate the new ideas. </p>
+<p>So why not create a new football app build upon our current experience and code&hellip;</p>
+<p>During the last year working on Pumodo we had noticed accelerated technology leaps in live tracking of pro football players during matches.</p>
+<p>The ability to track and record 1,000+ live events per match created incredible rich data that nobody was utilizing properly. Live score services still served fans with simple and stale stat notifications in apps and on web.</p>
+<p>So we looked at the market for live score football apps. No real market leader. But the market was growing fast as this seemed to be the last category that not yet migrated to mobile. We looked at some of the major apps and thought we can do much better. &nbsp; &nbsp;</p>
+<p>But we needed more runway!</p>
+<p>Extending the runway by bringing down expenses was the only solution. Denmark is not a cheap country to live and work in. Almost as expensive as San Francisco.</p>
+<p>So moving to a much cheaper country made sense. We narrowed it down to Philippines, Indonesia and Thailand. After much consideration we chose Thailand as Thomas had a good friend who lived there and owned a small co-working space from where we could work and live. &nbsp;&nbsp;</p>
+<p>As the dust had settled, we realized that this time we did not have to convince teams to input data. We could just buy it. Awesome!</p>
+
+<p><b>From the ashes a phoenix arises </b></p>
+<p>Four weeks later in mid November Thomas and I were on a plane to Thailand. Anders would join us later in January. We decided to bump Anders up to co-founder. He shared our passion for the new product, was prepared to take a drastic pay cut and we really liked him. Best decision ever! </p>
+<p>The next months went fast. Our corner of the co-working space was quickly transformed into our new hack cave . We were spitting out code and design in a daze of strong coffee and thai Red Bull. The Pace was frantic and probably prolonged the jetlag with a week.</p>
+<p>We didn&rsquo;t care. This time we were building an app with ourselves as users. That just felt right. &nbsp;</p>
+
+<img src="http://31.media.tumblr.com/fcf65fbf7534f287f618d60991887d8d/tumblr_inline_n6dfi60agm1r0ojkh.jpg" alt="image"><p></p>
+
+
+<p>We designed the ultimate football app and then scraped everything &ldquo;nice&rdquo; off. Left was a minimum viable product that could be build fast and get out in the hands of users asap. All hypothesis could then be tested and iterated on as we got feedback.</p>
+<p>One thing we thought was missing among the other football apps was the ability to get notification for individual players. Get updates of just Zlatans achievements without following PSG.</p>
+<p>This would become our unique value proposition.&nbsp;</p>
+
+<p><b>Out of money but an awesome app richer</b></p>
+<p>Last wages were paid end of March. As expected. With barely $1,000 remaining, it was time to get this show on the road. &nbsp;</p>
+<p>On April 9th Apple approved version 1.0 of <a href="https://itunes.apple.com/th/app/livescore-champion-live-football/id846055643?mt=8" title="Champion">Champion</a>.</p>
+<p>We limited the launch to Thai App Store only. It gave us a contained environment to learn and iterate. To get users in the app we used most of remaining cash to buy cheap app installs through Facebook ads. We had 5 weeks left to test the app in before the football season ended. &nbsp;</p>
+<p>30 days later we became no. 1 sports app in the Thai App Store.</p>
+<p>Then Apple promoted us. Boom! &nbsp;</p>
+<img src="http://33.media.tumblr.com/e07801f183e7c41999219498ce9cfd0e/tumblr_inline_n60rldbqqW1r0ojkh.png" alt="image"><p></p>
+
+<p>The launch had gone so much better than hoped for. </p>
+<p>Out of money. Don&rsquo;t care. We&rsquo;re driven by the excitement of building, what we think, can become the best football experience on mobile. An app that empowers fans with great insight in players stats and history.</p>
+<p>Soon it will deliver a live-score experience so powerful that we expect to see Jos&eacute; Mourinho sneak peek at our app before making substitution decisions.</p>
+<p>But right now we&rsquo;re laser focused on the biggest football event of them all: The World Cup in Brazil. To celebrate this we will add some Easter eggs that maybe will ruffle some Uruguayan and Brazilian fans.&nbsp;</p>
+<p>Hope this story can become inspirational for entrepreneurs when&nbsp;struggling with a failed product and end of runway.&nbsp;</p>
+<p>UPDATE! Read next chapter here: <a href="https://medium.com/@tfridriksson/when-your-startup-runs-out-of-money-you-only-got-1-problem-f84cad5b0f79">When your startup runs out of money you only got 1 problem</a>&nbsp;</p>
+<p>PS. If you want to help us, check out <a href="https://itunes.apple.com/th/app/livescore-champion-live-football/id846055643?mt=8">Champion</a> and, if you like it, share it with friends. Thanks!&nbsp;</p>
+
+    
+
+    
+
+  </li>
+
+  <!--POST FOOTER FOR TEXT-->
+    <div class="postFooter">
+      <ul class="postStats">
+        
+
+          
+
+          
+      </ul>
+    </div>
+  <!--END POST FOOTER-->
+
+<!--+++++++++++++-->
+<!--END TEXT POST-->
+<!--+++++++++++++-->
+
+
+<!--+++++-->
+<!--PHOTO-->
+<!--+++++-->
+
+<!--+++++++++-->
+<!--END PHOTO-->
+<!--+++++++++-->
+
+
+<!--+++++++++-->
+<!--PANORAMA-->
+<!--+++++++++-->
+
+<!--++++++++++++-->
+<!--END PANORAMA-->
+<!--++++++++++++-->
+
+
+<!--++++++++-->
+<!--PHOTOSET-->
+<!--++++++++-->
+
+<!--++++++++++++-->
+<!--END PHOTOSET-->
+<!--++++++++++++-->
+
+
+<!--+++++-->
+<!--QUOTE-->
+<!--+++++-->
+
+<!--+++++++++-->
+<!--END QUOTE-->
+<!--+++++++++-->
+
+
+<!--++++-->
+<!--LINK-->
+<!--++++-->
+
+<!--++++++++-->
+<!--END LINK-->
+<!--++++++++-->
+
+
+<!--++++-->
+<!--CHAT-->
+<!--++++-->
+
+<!--++++++++-->
+<!--END CHAT-->
+<!--++++++++-->
+
+
+<!--+++++-->
+<!--VIDEO-->
+<!--+++++-->
+
+<!--+++++++++-->
+<!--END VIDEO-->
+<!--+++++++++-->
+
+
+<!--+++++-->
+<!--AUDIO-->
+<!--+++++-->
+
+<!--+++++++++-->
+<!--END AUDIO-->
+<!--+++++++++-->
+
+
+<!--++++++-->
+<!--ANSWER-->
+<!--++++++-->
+
+<!--+++++++-->
+<!--END ASK-->
+<!--+++++++-->
+
+
+<div class="space"></div> <!--space between each post-->
+
+<!--+++++++++-->
+<!--END POSTS-->
+<!--+++++++++-->
+
+<!--++++++++++++++-->
+<!--PERMALINK PAGE-->
+<!--++++++++++++++-->
+<!--Display only on
+    permalink page-->
+
+
+  <!--Keyboard Controls-->
+  
+    
+  
+
+  <!--Post Navigation-->
+  
+    
+  
+
+  <!--Disqus Comments-->
+  
+    <div id="disqus_thread"></div>
+    <div id="disqus_loader" style="text-align: center">
+      <a onclick='$.ajaxSetup({cache:true});$.getScript("http://bythebeardofzeus.disqus.com/embed.js");$.ajaxSetup({cache:false});$("#disqus_loader").remove();' id="disqusButton"><i class="fa fa-comments"></i></a>
+    </div>
+    <div class="spaceSmall"></div> <!--space-->
+  
+
+  <!--Notes-->
+  
+    <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_iturgeon without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://blog.ianturgeon.com/" title="Ian Turgeon " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_f80e6ba9d3d3_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://blog.ianturgeon.com/" title="Ian Turgeon" rel="nofollow">iturgeon</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_justasoldasboburnham without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://justasoldasboburnham.tumblr.com/" title="Christopher Truman " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_b01ab9c32c4a_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://justasoldasboburnham.tumblr.com/" title="Christopher Truman" rel="nofollow">justasoldasboburnham</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_joey4jesus without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://joey4jesus.tumblr.com/" title="Jesus&amp;Laura " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_01674891cb85_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://joey4jesus.tumblr.com/" title="Jesus&amp;Laura" rel="nofollow">joey4jesus</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_publicpools without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://publicpools.tumblr.com/" title="Public Pools " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_f5373063876d_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://publicpools.tumblr.com/" title="Public Pools" rel="nofollow">publicpools</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_monlouis without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://monlouis.tumblr.com/" title="I&#039;m broader than broadway!"><img src="http://38.media.tumblr.com/avatar_c763a3f4423f_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://monlouis.tumblr.com/post/87411888655"><a rel="nofollow" href="http://monlouis.tumblr.com/" class="tumblelog" title="I&#039;m broader than broadway!">monlouis</a> reblogged this from <a rel="nofollow" href="http://fridriksson.tumblr.com/" class="source_tumblelog" title="By the Beard of Zeus!">fridriksson</a></span><div class="clear"></div></li><li class="note reblog tumblelog_fairplaie without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://fairplaie.tumblr.com/" title="Fair-plaie"><img src="http://38.media.tumblr.com/avatar_e2f224f1b430_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://fairplaie.tumblr.com/post/87411860855"><a rel="nofollow" href="http://fairplaie.tumblr.com/" class="tumblelog" title="Fair-plaie">fairplaie</a> reblogged this from <a rel="nofollow" href="http://fridriksson.tumblr.com/" class="source_tumblelog" title="By the Beard of Zeus!">fridriksson</a></span><div class="clear"></div></li><li class="note like tumblelog_neatocode without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://neatocode.tumblr.com/" title="NeatoCode Techniques " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_589171471a1e_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://neatocode.tumblr.com/" title="NeatoCode Techniques" rel="nofollow">neatocode</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_omg without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://omg.tumblr.com/" title="OMG " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://omg.tumblr.com/" title="OMG" rel="nofollow">omg</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_wildestdrake without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://wildestdrake.tumblr.com/" title="Drake&#039;s playground"><img src="http://38.media.tumblr.com/avatar_695b2527f111_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://wildestdrake.tumblr.com/post/87385629287"><a rel="nofollow" href="http://wildestdrake.tumblr.com/" class="tumblelog" title="Drake&#039;s playground">wildestdrake</a> reblogged this from <a rel="nofollow" href="http://fridriksson.tumblr.com/" class="source_tumblelog" title="By the Beard of Zeus!">fridriksson</a></span><div class="clear"></div></li><li class="note like tumblelog_wildestdrake without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://wildestdrake.tumblr.com/" title="Drake&#039;s playground " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_695b2527f111_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://wildestdrake.tumblr.com/" title="Drake&#039;s playground" rel="nofollow">wildestdrake</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_fridriksson original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://fridriksson.tumblr.com/" title="By the Beard of Zeus!"><img src="http://33.media.tumblr.com/avatar_2459e06a6241_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://fridriksson.tumblr.com/post/86584610871"><a rel="nofollow" href="http://fridriksson.tumblr.com/" class="tumblelog" title="By the Beard of Zeus!">fridriksson</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+    <div class="spaceSmall"></div>
+  
+
+
+<!--+++++++++++++-->
+<!--END PERMALINK-->
+<!--+++++++++++++-->
+
+  </ol> <!--Ordered list for posts to be displayed, take this out?-->
+</div> <!--Content row-->
+
+<!--+++++++++++-->
+<!--END CONTENT-->
+<!--+++++++++++-->
+
+<!--++++++-->
+<!--FOOTER-->
+<!--++++++-->
+
+<!--Page Navigation-->
+
+
+
+<div class="postBottom hideOnPrint"> <!--hide on index, show on permalink-->
+  <div>
+
+    <!--Title-->
+    <h3><a href="http://fridriksson.tumblr.com/">By the Beard of Zeus!</a></h3>
+
+    <!--Social Media-->
+    <ul>
+      
+        <li>
+          <a target="_blank" href="http://www.facebook.com/tfridriksson" id="facebook"><i class="fa fa-facebook-square"></i></a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a target="_blank" href="http://www.twitter.com/tfridriksson" id="twitter"><i class="fa fa-twitter-square"></i></a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a target="_blank" href="http://www.linkedin.com/in/fridriksson" id="linkedin"><i class="fa fa-linkedin-square"></i></a>
+        </li>
+      
+
+      
+
+      
+    </ul>
+
+  </div>
+</div>
+
+
+<div class="bottom hideOnPrint">
+  <!--Links-->
+  <div id="bottomLinks">
+    <a href="http://fridriksson.tumblr.com/">Home</a>
+    <a href="/archive">Archive</a>
+    
+    
+    
+      <a href="mailto:thor@championapp.co" id="Email">Email</a>
+    
+  </div>
+
+  <!--Blurb-->
+  <div id="bottomBlurb">
+    <p class="powered">
+      <a href="https://www.tumblr.com/theme/38875">Paper</a> theme powered by <a href="http://www.tumblr.com/">Tumblr</a>
+    </p>
+  </div>
+
+</div>
+
+<div class="spaceSmall"></div>
+<!--++++++++++-->
+<!--END FOOTER-->
+<!--++++++++++-->
+
+
+<!--++++++++++++-->
+<!--ASK & SUBMIT-->
+<!--++++++++++++-->
+<div class="asksubmit hideOnPrint">
+  <a name="asksubmit"></a>
+  
+
+  
+</div>
+<!--+++++++++++-->
+<!--END ASK/SUB-->
+<!--+++++++++++-->
+
+
+
+    <div id="recent">
+        <div class="spaceSmall"></div>
+        <div class="row">
+                <p id="recentPost">Recent Post</p>
+
+                <h3 id="recentTitle"></h3>
+
+                
+                <span id="recentAuthor"></span>
+                
+
+                <span id="recentDate"></span>
+
+                <p id="recentSummary"></p>
+
+              <a href="http://fridriksson.tumblr.com/post/86584610871/a-startup-postmortem-with-a-happy-ending-in" class="readMoreButton">
+                Read more <i class="fa fa-long-arrow-right"></i>
+              </a>
+
+        </div>
+        <div class="spaceSmall"></div>
+    </div>
+
+
+
+<!--Instagram feed-->
+
+
+</div> <!--main window to animate-->
+
+<!--+++++++-->
+<!--SCRIPTS-->
+<!--+++++++-->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script type="text/javascript" src="http://static.tumblr.com/smotcsf/phJn1y2w7/prettify.js"></script>
+
+<script type="text/javascript" src="http://static.tumblr.com/smotcsf/Ecdn2cscy/pxuphotoset.min.js"></script>
+<script type="text/javascript" src="http://static.tumblr.com/9hupah0/oVJn4m3gk/script.min.js"></script>
+
+
+<script>
+    //SPLASH
+    //If a splash image is avaliable
+    if(document.getElementById("splash"))
+    {
+        var source = document.getElementById("splash").src;
+        $("#splashContainer").css({"background-image":'url(' + source + ')'});
+        $("#splashContainer").css({"display": "block"});
+        $(".hideOnSplash").css({"display": "none"});
+        $("#splashTint").css({"display": "block"});
+        $(".postHead").css({
+                "position": "absolute",
+                "top": "20vh",
+                "color": "white"});
+        $(".title").css({"color": "white"});
+        $(".postAuthor").css({"color": "white"});
+        $(".header").css({
+                "position": "absolute",
+                "opacity": "0.6",
+                "top": "1rem"});
+        $(".backButton").css({
+                "border": "none",
+                "color": "white"});
+
+        //If screen is 480px or smaller
+        if (matchMedia('only screen and (max-width: 480px)').matches)
+        {
+            var newHeight = $(window).height();
+            var newWidth = $(window).width();
+
+            $('#splashContainer').height(newHeight);
+            $('#splashTint').height(newHeight);
+            $(".header").css({"top": "1rem"});
+            $(".postHead").css({"top": "5rem"});
+        }
+    }
+
+    //SPLASH FADE
+    if(document.getElementById("splashFade"))
+    {
+        var source = document.getElementById("splashFade").src;
+        $("#splashContainer").css({"background-image":'url(' + source + ')'});
+        $("#splashGradient").css({"display": "block"});
+        $("#splashContainer").css({
+                "display": "block",
+                "opacity": "1"});
+        $(".hideOnSplash").css({"display": "none"});
+        $("#splashTint").css({"display": "none"});
+        $("li.post.text").css({
+                "position": "relative",
+                "margin-top": "-30vh"
+        });
+        $(".header").css({
+                "position": "absolute",
+                "top": "1rem"});
+        $(".backButton").css({
+                "border": "none",
+                "color": "white"});
+
+        //If screen is 480px or smaller
+        if (matchMedia('only screen and (max-width: 480px)').matches)
+        {
+            var newHeight = $(window).height();
+            var newWidth = $(window).width();
+
+            $('#splashContainer').height(newHeight);
+            $("#splashGradient").height(newHeight);
+            $(".header").css({"top": "1rem"});
+            $("li.post.text").css({"margin-top": "-20vh"});
+        }
+    }
+</script>
+
+
+<!--KEYBOARD NAV ON INDEX-->
+
+  
+
+
+<!--KEYBOARD NAV ON PAGES-->
+
+  
+    
+  
+
+
+<!--PERSONAL INSTAFEED-->
+
+
+<!--INSTAFEED OF A TAG-->
+
+
+<!--PERMALINK ONLY-->
+
+  
+    
+  
+
+
+
+    
+        <script>
+            //Get title of recent posts
+            var src = 'http://fridriksson.tumblr.com/' + "rss";
+
+            $.get(src, function (data) {
+                $(data).find("item").first().each(function () { // or "item" or whatever suits your feed
+                    var el = $(this);
+
+                    /*
+                    console.log("------------------------");
+                    console.log("Title      : " + el.find("title").text());
+                    console.log("Date       : " + el.find("pubDate").text());
+                    console.log("Author     : " + el.find("creator").text());
+                    console.log("Author     : " + el.find("category").text());
+                    */
+
+                    var title = el.find("title").text().substr(0,50);
+                    var date = el.find("pubDate").text().substr(5,11);
+                    var author = el.find("creator").text();
+                    var summary = el.find("description").text().substr(0,75);
+                    var link = el.find("link").text();
+
+                    document.getElementById("recentTitle").innerHTML=title + "...";
+                    document.getElementById("recentDate").innerHTML="on " + date;
+                    document.getElementById("recentAuthor").innerHTML=author;
+                    document.getElementById("recentSummary").innerHTML=summary + "...";
+                    $("#recent").click(function(){
+                        $("#sb-site").addClass( "slideUp" );
+                          setTimeout(function(){
+                              window.location= link;
+                          },100);
+                         return false;
+                    });
+
+                });
+            });
+        </script>
+    
+
+
+
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://fridriksson.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/86584610871/a-startup-postmortem-with-a-happy-ending-in?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017147&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvZnJpZHJpa3Nzb24udHVtYmxyLmNvbVwvcG9zdFwvODY1ODQ2MTA4NzFcL2Etc3RhcnR1cC1wb3N0bW9ydGVtLXdpdGgtYS1oYXBweS1lbmRpbmctaW4iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=FBEMGGICGL&K=2ea1e3fbb6abb0ffdb0008f8568181fc9c157a1196a3da39c2163be8d61b2476&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017147&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvZnJpZHJpa3Nzb24udHVtYmxyLmNvbVwvcG9zdFwvODY1ODQ2MTA4NzFcL2Etc3RhcnR1cC1wb3N0bW9ydGVtLXdpdGgtYS1oYXBweS1lbmRpbmctaW4iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=FBEMGGICGL&K=030a46de37d781f8a9f1ddb26c9d83ccbcd596a1878fdf19f288d234d6f89d96&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017147&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2ZyaWRyaWtzc29uLnR1bWJsci5jb21cL3Bvc3RcLzg2NTg0NjEwODcxXC9hLXN0YXJ0dXAtcG9zdG1vcnRlbS13aXRoLWEtaGFwcHktZW5kaW5nLWluIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiODY1ODQ2MTA4NzEiLCJibG9naWQiOiIyODQzMTA2NyIsInNvdXJjZSI6MzN9XX0=&U=IAIDMNJKGB&K=ff1f985d1677c7d0f7dbe2e528b47e313ea7f2d55cdc7f590dad1374b75cc0d6&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017147&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2ZyaWRyaWtzc29uLnR1bWJsci5jb21cL3Bvc3RcLzg2NTg0NjEwODcxXC9hLXN0YXJ0dXAtcG9zdG1vcnRlbS13aXRoLWEtaGFwcHktZW5kaW5nLWluIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiODY1ODQ2MTA4NzEiLCJibG9naWQiOiIyODQzMTA2NyIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=IAIDMNJKGB&K=99ef24d07aeed8a40b20391a0e4933d9931bb708c72abd597e0d6feca3866010&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:28431067,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Ffridriksson.tumblr.com%2Fpost%2F86584610871%2Fa-startup-postmortem-with-a-happy-ending-in&amp;pid=86584610871&amp;rk=ARGJI007&amp;lang=en_US&amp;name=fridriksson&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_2459e06a6241_64.png&amp;title=By+the+Beard+of+Zeus%21&amp;url=http%3A%2F%2Ffridriksson.tumblr.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Ffridriksson.tumblr.com%2Fpost%2F86584610871%2Fa-startup-postmortem-with-a-happy-ending-in&amp;pid=86584610871&amp;rk=ARGJI007&amp;lang=en_US&amp;name=fridriksson&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_2459e06a6241_64.png&amp;title=By+the+Beard+of+Zeus%21&amp;url=http%3A%2F%2Ffridriksson.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

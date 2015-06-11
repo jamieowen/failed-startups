@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+	<head profile="http://gmpg.org/xfn/11">
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+																		
+		<title>Cusoy: A Postmortem - Life experiments</title>
+		 
+		
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="It&#8217;s hard to believe that it&#8217;s been exactly six months since I first penned my post What can you do in six months? that began this startup journey in the first place (see Six Month Challenge for a table of contents of my past weekly updates). This is the conclusion of the hardest yet most fulfilling six [&hellip;]"/>
+<meta name="twitter:title" content="Cusoy: A Postmortem - Life experiments"/>
+<meta name="twitter:site" content="@melissatsang"/>
+<meta name="twitter:domain" content="Life experiments"/>
+<meta name="twitter:creator" content="@melissatsang"/>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/melissatsang.com\/","name":"Life experiments"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/melissatsang.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='http://melissatsang.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='uaf_client_css-css'  href='http://melissatsang.com/wp-content/uploads/useanyfont/uaf.css?ver=1433830925' type='text/css' media='all' />
+<link rel='stylesheet' id='wilson_googleFonts-css'  href='//fonts.googleapis.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic%7CRaleway%3A400%2C700&#038;ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wilson_style-css'  href='http://melissatsang.com/wp-content/themes/wilson/style.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='yarppRelatedCss-css'  href='http://melissatsang.com/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=4.2.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://melissatsang.com/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://melissatsang.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+
+<style type="text/css"> .enews .screenread {
+	height: 1px;
+    left: -1000em;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    width: 1px; } </style>      
+	      <!--Customizer CSS--> 
+	      
+	      <style type="text/css">
+	           .blog-title a:hover { color:#FF706C; }	           .blog-menu a:hover { color:#FF706C; }	           .blog-menu .current-menu-item > a { color:#FF706C; }	           .featured-media .sticky-post { background-color:#FF706C; }	           .post-title a:hover { color:#FF706C; }	           .post-meta a:hover { color:#FF706C; }	           .post-content a { color:#FF706C; }	           .post-content a:hover { color:#FF706C; }	           .blog .format-quote blockquote cite a:hover { color:#FF706C; }	           .post-content a.more-link:hover { background-color:#FF706C; }	           .post-content fieldset legend { background-color:#FF706C; }	           .post-content input[type="submit"]:hover { background-color:#FF706C; }	           .post-content input[type="reset"]:hover { background-color:#FF706C; }	           .post-content input[type="button"]:hover { background-color:#FF706C; }	           .content .button:hover { background-color:#FF706C; }	           .post-cat-tags a { color:#FF706C; }	           .post-cat-tags a:hover { color:#FF706C; }	           .archive-nav a:hover { background-color:#FF706C; }	           .logged-in-as a { color:#FF706C; }	           .logged-in-as a:hover { color:#FF706C; }	           .content #respond input[type="submit"]:hover { background-color:#FF706C; }	           .comment-meta-content cite a:hover { color:#FF706C; }	           .comment-meta-content p a:hover { color:#FF706C; }	           .comment-actions a:hover { color:#FF706C; }	           #cancel-comment-reply-link { color:#FF706C; }	           #cancel-comment-reply-link:hover { color:#FF706C; }	           .comment-nav-below a:hover { color:#FF706C; }	           .widget-title a { color:#FF706C; }	           .widget-title a:hover { color:#FF706C; }	           .widget_text a { color:#FF706C; }	           .widget_text a:hover { color:#FF706C; }	           .widget_rss a { color:#FF706C; }	           .widget_rss a:hover { color:#FF706C; }	           .widget_archive a { color:#FF706C; }	           .widget_archive a:hover { color:#FF706C; }	           .widget_links a { color:#FF706C; }	           .widget_links a:hover { color:#FF706C; }	           .widget_recent_comments a { color:#FF706C; }	           .widget_recent_comments a:hover { color:#FF706C; }	           .widget_recent_entries a { color:#FF706C; }	           .widget_recent_entries a:hover { color:#FF706C; }	           .widget_categories a { color:#FF706C; }	           .widget_categories a:hover { color:#FF706C; }	           .widget_meta a { color:#FF706C; }	           .widget_meta a:hover { color:#FF706C; }	           .widget_recent_comments a { color:#FF706C; }	           .widget_pages a { color:#FF706C; }	           .widget_pages a:hover { color:#FF706C; }	           #wp-calendar a { color:#FF706C; }	           #wp-calendar a:hover { color:#FF706C; }	           #wp-calendar tfoot a:hover { color:#FF706C; }	           .dribbble-shot:hover { background:#FF706C; }	           .widgetmore a { color:#FF706C; }	           .widgetmore a:hover { color:#FF706C; }	           .flickr_badge_image a:hover img { background:#FF706C; }	           .tagcloud a:hover { background:#FF706C; }	           .credits a:hover { color:#FF706C; }	           .mobile-menu a:hover { background:#FF706C; }	      </style> 
+	      
+	      <!--/Customizer CSS-->
+	      
+      <script type="text/javascript">
+(function(url){
+if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+var wfscr = document.createElement('script');
+wfscr.type = 'text/javascript';
+wfscr.async = true;
+wfscr.src = url + '&r=' + Math.random();
+(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+})('//melissatsang.com/wp-admin/admin-ajax.php?action=wordfence_logHuman&hid=2708D28FA5ABC3B6F66C9D4C77E288AF');
+</script><style type="text/css">.mc4wp-form input[name="_mc4wp_required_but_not_really"] { display: none !important; }</style><style type="text/css">#optimizedsocial{height: 60px; margin: 15px 0;} .pinterest{margin-top: 40px !important;} #optimizedsocial .socialbox{min-width: 48px; margin: 0 10px 0 0;float: left;} .clear{clear:both}</style>
+<!-- Styles cached and displayed inline for speed. Generated by http://stylesplugin.com -->
+<style type="text/css" id="styles-plugin-css">
+
+</style>
+	
+	</head>
+	
+	<body class="single single-post postid-539 single-format-standard styles">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32528749-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32528749-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+		<div class="wrapper">
+	
+			<div class="sidebar">
+							
+				<div class="blog-header">
+				
+									
+						<h1 class="blog-title">
+							<a href="http://melissatsang.com" title="Life experiments &mdash; with Melissa Tsang" rel="home">Life experiments</a>
+						</h1>
+						
+						<h3 class="blog-description">with Melissa Tsang</h3>
+					
+					
+				</div> <!-- /blog-header -->
+				
+				<div class="nav-toggle toggle">
+				
+					<p>
+						<span class="show">Show menu</span>
+						<span class="hide">Hide menu</span>
+					</p>
+				
+					<div class="bars">
+							
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+						
+						<div class="clear"></div>
+						
+					</div>
+				
+				</div> <!-- /nav-toggle -->
+				
+				<div class="blog-menu">
+			
+					<ul class="navigation">
+					
+						<li class="page_item page-item-450"><a href="http://melissatsang.com/">About Melissa Tsang</a></li>
+<li class="page_item page-item-571"><a href="http://melissatsang.com/b2b-saas-venture-challenge/">B2B SaaS Venture Challenge</a></li>
+<li class="page_item page-item-262"><a href="http://melissatsang.com/six-month-challenge/">Six Month Challenge</a></li>
+												
+					 </ul>
+					 
+					 <div class="clear"></div>
+					 
+				</div> <!-- /blog-menu -->
+				
+				<div class="mobile-menu">
+						 
+					 <ul class="navigation">
+					
+						<li class="page_item page-item-450"><a href="http://melissatsang.com/">About Melissa Tsang</a></li>
+<li class="page_item page-item-571"><a href="http://melissatsang.com/b2b-saas-venture-challenge/">B2B SaaS Venture Challenge</a></li>
+<li class="page_item page-item-262"><a href="http://melissatsang.com/six-month-challenge/">Six Month Challenge</a></li>
+						
+					 </ul>
+					 
+				</div> <!-- /mobile-menu -->
+				
+				
+					<div class="widgets" role="complementary">
+					
+						<div class="widget enews-widget"><div class="widget-content"><div class="enews"><h3 class="widget-title">Never miss a post</h3><p>Weekly updates straight to your inbox. </p>
+		<form id="subscribe" action="http://melissatsang.us4.list-manage.com/subscribe/post?u=fd7f37a2b70b2de7b3ea1165b&amp;id=8f777f63fd" method="post"  target="_blank" onsubmit="if ( subbox1.value == 'First Name') { subbox1.value = ''; } if ( subbox2.value == 'Last Name') { subbox2.value = ''; }" name="Never miss a post">
+									<label for="subbox" class="screenread">Enter your email address...</label><input type="text" value="Enter your email address..." id="subbox" onfocus="if ( this.value == 'Enter your email address...') { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Enter your email address...'; }" name="EMAIL"  />
+						<input type="submit" value="Go" id="subbutton" />
+		</form>
+		</div></div><div class="clear"></div></div>		<div class="widget widget_recent_entries"><div class="widget-content">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://melissatsang.com/2014/03/31/weeks-7-8-validate-saas-product-idea/">Weeks #7-8: How do I validate my SaaS product idea?</a>
+							<span class="post-date">March 31, 2014</span>
+						</li>
+					<li>
+				<a href="http://melissatsang.com/2014/03/17/weeks-5-6-internal-struggles-choosing-a-potentially-viable-software-idea-and-finding-a-technical-cofounder/">Weeks #5-6: Internal struggles, choosing a viable software idea and finding a technical cofounder</a>
+							<span class="post-date">March 17, 2014</span>
+						</li>
+					<li>
+				<a href="http://melissatsang.com/2014/03/09/monthly-review-1-february-2014-warming/">Monthly Review #1: February 2014 &#8211; Warming Up</a>
+							<span class="post-date">March 9, 2014</span>
+						</li>
+					<li>
+				<a href="http://melissatsang.com/2014/03/03/weeks-3-4-market-im-targeting-idea-extraction/">Weeks #3-4: The market I&#8217;m targeting and idea extraction</a>
+							<span class="post-date">March 3, 2014</span>
+						</li>
+					<li>
+				<a href="http://melissatsang.com/2014/02/17/weeks-1-2-plan-attack-picking-market-problem-passion/">Weeks #1-2: My plan of attack, picking a market and the problem with passion</a>
+							<span class="post-date">February 17, 2014</span>
+						</li>
+				</ul>
+		</div><div class="clear"></div></div>						
+					</div><!-- /widgets -->
+					
+													
+			</div> <!-- /sidebar -->
+<div class="content">
+											        
+		
+		<div class="posts">
+	
+			<div id="post-539" class="post-539 post type-post status-publish format-standard hentry category-life category-startups-b2b-saas category-startups-cusoy">
+			
+									
+								
+				<div class="post-inner">
+
+				<div class="post-header">
+					
+				    <h2 class="post-title"><a href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" rel="bookmark" title="Cusoy: A Postmortem">Cusoy: A Postmortem</a></h2>
+				    
+				    <div class="post-meta">
+					
+						<span class="post-date"><a href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" title="Cusoy: A Postmortem">January 15, 2014</a></span>
+						
+						<span class="date-sep"> / </span>
+							
+						<span class="post-author"><a href="http://melissatsang.com/author/grandmaster-mel/" title="Posts by Melissa Tsang" rel="author">Melissa Tsang</a></span>
+						
+						<span class="date-sep"> / </span>
+						
+						<a href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/#comments">9 Comments</a>						
+																		
+					</div> <!-- /post-meta -->
+				    
+				</div> <!-- /post-header -->
+													                                    	    
+				<div class="post-content">
+					    		            			            	                                                                                            
+					<div id="fsb-social-bar" class="fsb-social-bar fsb-no-float" data-post-id="539" data-socialite="true"><style type="text/css">            #fsb-social-bar { width: 100%; border-bottom: 1px solid #dbdbdb; border-top: 1px solid #dbdbdb; padding: 10px 0; margin: 0px 0 20px 0; float: left; background: #fff; position: relative; clear: both; }            #fsb-social-bar a { border: 0px !important }            #fsb-social-bar.fsb-fixed { position: fixed; top: -2px; z-index: 99999; }            #fsb-social-bar .fsb-title { display: block; float: left; margin: 3px 20px 0 0; font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #333; }            #fsb-social-bar .fsb-share-facebook { width: 120px; float: left; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-facebook.fsb-hide-count { width: 44px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-twitter { float: left; width: 135px; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-twitter.fsb-hide-count { width: 61px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-google { float: left; width: 105px; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-google.fsb-hide-count { width: 33px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-linkedin { float: left; width: 135px; padding: 3px 0 2px; height: 25px; }            #fsb-social-bar .fsb-share-linkedin.fsb-hide-count { width: 61px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .fsb-share-pinterest { float: left; width: 115px; padding: 3px 0 2px; height: 25px;}            #fsb-social-bar .fsb-share-pinterest.fsb-hide-count { width: 43px; overflow: hidden; margin-right: 30px; }            #fsb-social-bar .socialite { display: block; position: relative; background: url(http://melissatsang.com/wp-content/plugins/floating-social-bar/images/fsb-sprite.png) no-repeat scroll 0 0; }            #fsb-social-bar .socialite-loaded { background: none !important; }            #fsb-social-bar .fsb-service-title { display: none; }            #fsb-social-bar a { color: #333; text-decoration: none; font-size: 12px; font-family: Arial, Helvetica, sans-serif; }            #fsb-social-bar .fsb-twitter { width: 105px; height: 25px; background-position: -13px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-twitter .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 69px; color: #333; }            #fsb-social-bar .fsb-google { width: 75px; height: 25px; background-position: -136px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-google .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 41px; color: #333; }            #fsb-social-bar .fsb-google .socialite-button { margin: 0 !important; }            #fsb-social-bar .fsb-share-google .socialite-loaded .socialite-button{padding: 2px 0 0}            #fsb-social-bar .fsb-facebook { width: 89px; height: 25px; background-position: -231px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-facebook .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 52px; color: #333; }            #fsb-social-bar .fsb-facebook .socialite-button { margin: 0 !important;}            #fsb-social-bar .fsb-share-facebook .socialite-loaded .socialite-button {padding: 2px 0 0}            #fsb-social-bar .fsb-linkedin { width: 105px; height: 25px; background-position: -347px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-linkedin .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 70px; color: #333; }            #fsb-social-bar .fsb-linkedin .socialite-button { margin: 0 !important; }            #fsb-social-bar .fsb-pinterest { width: 88px; height: 25px; background-position: -484px -10px; line-height: 25px; vertical-align: middle; }            #fsb-social-bar .fsb-pinterest .fsb-count { width: 30px; text-align: center; display: inline-block; margin: 0px 0 0 50px; color: #333; }            #fsb-social-bar .fsb-pinterest .socialite-button { margin: 0 !important; }            .fsb-clear { clear: both; }            .fsb-clear:after { clear:both; content:; display:block; height:0; line-height:0; overflow:auto; visibility:hidden; zoom:1; }            @media (max-width: 768px) { #fsb-social-bar.fsb-fixed { position: relative !important; top: auto !important; } }        </style><span class="fsb-title">If you enjoyed this post, share it.</span><div class="fsb-share-twitter"><a href="https://twitter.com/share?original_referer=http%3A%2F%2Fmelissatsang.com%2F&source=tweetbutton&text=Cusoy%3A+A+Postmortem&url=http%3A%2F%2Fmelissatsang.com%2F2014%2F01%2F15%2Fcusoy-a-postmortem%2F&via=melissatsang" class="socialite twitter fsb-twitter" data-fsb-service="twitter" rel="nofollow" target="_blank" title="51 retweets so far"><span class="fsb-service-title">Twitter</span><span class="fsb-count">51</span></a></div><div class="fsb-share-facebook"><a href="http://www.facebook.com/sharer.php?u=http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" class="socialite facebook fsb-facebook" data-fsb-service="facebook" data-href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="fsb-service-title">Facebook</span><span class="fsb-count">34</span></a></div><div class="fsb-share-google"><a href="https://plus.google.com/share?url=http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" class="socialite googleplus fsb-google" data-fsb-service="google" data-size="medium" data-href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" rel="nofollow" target="_blank"><span class="fsb-service-title">Google+</span><span class="fsb-count">2</span></a></div><div class="fsb-share-linkedin"><a href="https://www.linkedin.com/cws/share?url=http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" class="socialite linkedin fsb-linkedin" data-fsb-service="linkedin" data-size="medium" data-href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/" rel="nofollow" target="_blank"><span class="fsb-service-title">LinkedIn</span><span class="fsb-count">25</span></a></div></div><div class="fsb-clear"></div><p>It&#8217;s hard to believe that it&#8217;s been exactly six months since I first penned my post <a href="http://melissatsang.com/2013/07/15/what-can-you-do-in-six-months/" target="_blank">What can you do in six months?</a> that began this startup journey in the first place (see <a href="http://melissatsang.com/six-month-challenge/" target="_blank">Six Month Challenge</a> for a table of contents of my past weekly updates).</p>
+<p><em>This is the conclusion of the hardest yet most fulfilling six months of my life, so far.</em></p>
+<p>Today I’m going to write a post-mortem about my startup called <a href="http://www.cusoy.com/" target="_blank">Cusoy</a>, a curated restaurant finder for people who are gluten-free (from gluten intolerance, celiac disease or as a healthy lifestyle choice) and/or have food allergies.</p>
+<p><b>I. Why I started Cusoy</b><br />
+<b>II. What I accomplished</b><br />
+<b>III. Why I shut it down (alternatively, what I would’ve needed to continue)</b></p>
+<p><span id="more-539"></span></p>
+<p><b>I. WHY I STARTED CUSOY</b></p>
+<p>I’ve always wanted to start my own company and saw everything up until this point as preparation for this dream.</p>
+<p>Five key reasons why I started Cusoy:</p>
+<ol>
+<li><b>It solved a personal pain point.</b></li>
+<li><b>It came at a time of excellent market timing and opportunity.</b></li>
+<li><b>It resonated with its intended demographic of users.</b></li>
+<li><b>It came during a time when I had the financial and life means to pursue it.</b></li>
+<li><b>It originated from a cause I deeply believe in: health and wellness.</b></li>
+</ol>
+<p><b>1. It solved a personal pain point</b>.</p>
+<p>I am gluten intolerant and this was a big pain point for me of finding &#8220;safe&#8221; restaurants when I went out to eat with family and friends, and more importantly, beyond &#8220;safe&#8221; restaurants, &#8220;safe&#8221; menu items I could actually eat without getting sick afterwards.</p>
+<p>I didn’t find a good solution out there outside of a variety of solutions: calling the restaurant, asking the waiter/kitchen manager, scrolling Yelp to find one or two comments (if any) mentioning gluten free or Googling. I thought, there must be a better way.</p>
+<p>Yes, Yelp has a tag for “gluten free” but it only has 44 restaurants in San Francisco with that tag (<a href="http://www.yelp.com/search?find_desc=gluten+free&amp;find_loc=San+Francisco%2C+CA&amp;ns=1&amp;ls=32ddbcd7494b4d71#cflt=gluten_free" target="_blank">do it yourself if you don&#8217;t believe me</a> and NYC actually has double the number of restaurants tagged gluten-free), which is a very low and deceiving number.</p>
+<p>More importantly, it does a terrible job of giving people like me actual relevant information for gluten free: Does the restaurant train its staff? Do they have separate cutters for their gluten free pizza? Are they flexible and accommodating? Do they have a separate gluten free menu? What ingredients do they use? etc.</p>
+<p>Moreover, if a restaurant is gluten free and if I am gluten free, dairy free and soy free, what exactly can I eat? What do other people with dietary restrictions like me recommend? I wanted to collect all of that information.</p>
+<p>Gluten-free apps out there now like Find Me Gluten Free are just okay and barely adequate, but still don&#8217;t give me relevant detailed information like I mentioned above. It&#8217;s almost completely useless to me &#8212; my own research is much more valuable.</p>
+<p>At the same time, the difficulty lies in having accurate menu information and getting information (that I mentioned above) in a way that, while it doesn&#8217;t scale, is extremely valuable to the user.</p>
+<p><b>2. It came at a time of excellent market timing and opportunity</b>.</p>
+<p>There are two groups of users: those who <i>have</i> to eat gluten free because of gluten intolerance or celiac disease, and those who choose to do so as a healthy lifestyle choice — with both groups high in number and growing.</p>
+<ul>
+<li>In January 2013, the NPD Group released findings that 1 in 3 Americans are trying to cut down or avoid gluten (over 100+ million Americans).</li>
+<li>In 2012 alone, over 200 million restaurant visits occurred with consumers ordering food described on the menu as gluten-free.</li>
+<li>Moreover, there are 3 million people in the U.S. who have celiac disease, 18 million estimated to have gluten intolerance (though many do not know it) and 15 million with other related food allergies (dairy, soy, wheat, nuts, etc).</li>
+</ul>
+<p>That&#8217;s a quick snapshot for those who are not familiar with gluten free and may think it’s some “small niche” with no opportunity at all. <i>Not to mention that San Francisco and the Bay Area is the perfect starting point — SF is the foodiest city in the country and the Bay Area demographic is extremely health-conscious.</i></p>
+<p><b>3. It resonated with its intended demographic of users</b>.</p>
+<p>I took a week to validate this idea with my users and consistently reached out to potential users for additional feedback, resulting in over 100+ quality customer research surveys. Many complained about this problem and were happy to hear I was working on a solution to help them.</p>
+<p><b>4. It came during a time when I had the financial and life means to pursue it.</b></p>
+<p>I am 23, single, no debt or student loans with 6+ months of financial runway. I completely bootstrapped Cusoy from my savings and did not have any other distractions or obligations.</p>
+<p><b>5. It originated from a cause I deeply believe in: health and wellness</b>.</p>
+<p>People don’t realize the immense importance of proper diet and nutrition. What you eat affects everything, especially your health (not to mention your energy, productivity, etc). The contribution of your diet to serious medical problems and digestive health is often overlooked in favor of complex procedures and prescribing complicated drugs with a lot of side effects. What if we started helping people at the base of the pyramid of having symptoms, rather than the end-stage of the disease?</p>
+<p><b>II. WHAT I ACCOMPLISHED</b><br />
+<b></b></p>
+<p><b>Start</b>: July 15, 2013<br />
+<b>Shipped</b>: November 8, 2013<br />
+<b>End</b>: December 31, 2013</p>
+<p>Summary: customer research, product development, user acquisition, usability testing, sales, email marketing, analytics/KPI&#8217;s, pitching (Rock Health and Greylock Partners), customer support</p>
+<ul>
+<li><a href="http://melissatsang.com/2013/07/21/week-1-choosing-an-idea-validating-a-market-need-and-bridging-focus/" target="_blank">Successfully validated a market need that also solved a personal pain point</a></li>
+<li>Narrowed initial broad focus (vegetarian/vegan, Paleo, gluten free) to owning the gluten free space</li>
+<li>Researched gluten free via books, medical lectures and conversations with healthcare professionals</li>
+<li>Collected 100+ quality customer research surveys</li>
+<li>Sourced 80+ beta testers through organic user acquisition</li>
+<li><a href="http://melissatsang.com/2013/09/17/week-9-designing-the-imperfect-email-experiment-mvp/" target="_blank">Designed a 3-week email experiment</a> to study user interest vs. intent to purchase</li>
+<li>Built 3 MVP iterations despite being non-technical</li>
+<li>Product activation (sign-up &amp; meaningful action) in first 30 days: 50%</li>
+<li>Product retention in first 30 days: 25%</li>
+<li>Conducted 10+ in-person usability tests in San Francisco/Greater Bay Area</li>
+<li>Scheduled 6 meetings with <a href="http://rockhealth.com/" target="_blank">Rock Health</a> over the course of 5 months for product/application feedback</li>
+<li>Invited to pitch practice with <a href="http://www.greylock.com/" target="_blank">Greylock Partners</a> and learned <a href="http://melissatsang.com/2013/08/11/week-4-building-out-my-mvp-talking-to-advisors-learning-how-to-pitch-vcs-and-pitching-greylock/" target="_blank">how to best pitch Cusoy for seed funding</a></li>
+<li>Consulted an informal advisory board of current tech employees, former and present entrepreneurs</li>
+</ul>
+<p>I felt that Cusoy did succeed in solving the initial problem I set out to solve, but ultimately it was difficult for me to generate money from it (or at least see a clear, predictable way to sustainability).</p>
+<p><b>III. WHY I SHUT IT DOWN (ALTERNATIVELY, WHAT I WOULD’VE NEEDED TO CONTINUE)</b></p>
+<p>Four reasons (in order of least to most important):</p>
+<ol>
+<li><strong>No team</strong></li>
+<li><strong>No funding</strong></li>
+<li><strong>No longer aligned with my personal goals anymore</strong></li>
+<li><strong>No clear or predictable way to sustainability (B2C is extremely, extremely hard to monetize)</strong></li>
+</ol>
+<p><b>1. No team</b></p>
+<p>It’s really hard to do a startup by yourself, especially if you’re a non-technical founder. No kidding, right? However, being non-technical wasn’t my excuse since WordPress came to the rescue and I basically bought the development through using cost-effective themes.</p>
+<p>Rather, it was overwhelming both physically, mentally and emotionally — morale wise, it was incredibly exhausting. Without anyone else to keep me accountable or really caring about Cusoy as much as I did, it was hard to deal with all my self-doubt and still persevere on when I was essentially my own cheerleader.</p>
+<p>I was juggling many things at once — including manually adding restaurants (this was my biggest gripe), sourcing new restaurants, talking to restaurants and users, sourcing new users, reaching out to restaurants, etc. It was just too much work for myself, with little hopes of generating even a dollar in revenue.</p>
+<p>At the very least, I would’ve liked a sales/marketing/business cofounder who would’ve helped to hustle with restaurant outreach, content marketing and so forth. At this point, I didn&#8217;t need a technical cofounder since I could handle it myself (for the time being).</p>
+<p><b><i>What about trying to find other people?</i></b></p>
+<p>I tried Meetup groups and a couple Hacker and Founder lunches and even met another founder working on a food-related startup. I had a meeting with a potential front-end developer from Reddit, and then also met with a potential user from Meetup who actually made a gluten free app four years ago but shut it down. Ultimately, over time, these meetings didn’t pan out.</p>
+<p>Over time, I realized the right match would’ve been a developer who also was facing problems eating out while gluten-free.</p>
+<p>I also realized finding a technical cofounder is not just trying to find a cofounder that matches you in terms of complementary skills (do they know Ruby on Rails? node.js? etc), but also having the same values, vision, work style, expectations, etc. It’s exactly what you’ve heard — akin to a sexless marriage with the startup as the baby of the relationship.</p>
+<p>Moreover, it’s difficult to compete with sky-high salaries and perks engineers already enjoy from working at Google, Twitter, Facebook, etc. when I couldn’t offer a salary, funding or even also strong numbers of product/market fit (or better yet, paying customers or revenues of some sort). I didn’t come across as many who faced this sort of problem of eating out while gluten free, so it was difficult for them to understand and thus find it an interesting project. Not to mention everyone seems to be working on their own projects as well.</p>
+<p>I didn’t expect this to happen overnight but went back and forth in terms of how much time I was “wasting” trying to meet other people vs. working on the product itself.</p>
+<p><b><i>My hypothesis of five metrics of finding a technical cofounder</i></b><br />
+I was thinking about this and after talking to some engineer friends, came up with five metrics that cofounders (especially technical ones) care about when they think about partnering up with a non-technical founder.</p>
+<p>These are not in any particular order:</p>
+<ol>
+<li>Is the founder technical (or at least trying to learn how to code?); the founder&#8217;s background/domain expertise</li>
+<li>Product/market fit, validated idea, paying customers, etc</li>
+<li>If the project is personally interesting / challenging to them</li>
+<li>Equity / salary / compensation</li>
+<li>Similar vision, values, work styles</li>
+</ol>
+<p><i>I’m definitely keeping this in mind as <a href="http://melissatsang.com/2014/01/07/2014-year-creating-value-systems/" target="_blank">one of my goals for 2014</a> is to find a technical cofounder for my next venture, this time in B2B SaaS.</i></p>
+<p><b>2. No funding</b></p>
+<p>Since Cusoy is not revenue-first, I was completely bootstrapping from my savings and it was difficult to keep going without watching my money dwindle without much to show for it.</p>
+<p><b><i>What about trying to apply for funding or contacting investors?</i></b></p>
+<p>I did, with Rock Health. I went to six different office hour sessions over five months with them and applied to their most recent batch, but unfortunately did not get in due to their concerns that Cusoy’s nature would be very difficult to scale and grow and that I needed another cofounder to help shoulder the work. Not to mention Rock Health is extremely competitive, with 99% of their portfolio being B2B enterprise companies, and hardly any B2C ones like Cusoy.</p>
+<p>I could’ve tried to reach out to angel investors who are personally interested in the food / health and wellness space, but again, since I was the one doing everything, I didn’t see trying to get funding as a productive use of my time (outside of working on the product and talking to users). Apparently, a rule of thumb suggests that 1/60 actually invest.</p>
+<p>To make it worthwhile to look for funding meant I would need strong growth/traction numbers (like 10%+ MoM) that proved product-market fit to make a compelling case, which I would need more manpower help to get (see: no team). It was kind of a self-perpetuating problem.</p>
+<p>I had great early traction with my beta testers very early on, but I felt really burned out and demotivated shortly thereafter… not because Cusoy wasn’t doing well, but that I had increasingly come to the realization that it just didn’t fit with my personal goals anymore and left me physically and emotionally exhausted.</p>
+<p><b>3. No longer aligned with my personal goals</b></p>
+<p>Over time, I realized Cusoy is not meant to be a small-scale, one-person venture.</p>
+<p>I don’t know what I expected going in (certainly not everything that has transpired since), but for some reason I naively thought the money part would take care of itself and that somehow by some magical force of willpower, Cusoy would become self-sustaining without the need for investors.</p>
+<p>Wrong.</p>
+<p>That’s when reality hit, a couple months ago.</p>
+<p>I wasn’t so much concerned that Cusoy’s growth didn’t skyrocket to thousands or hundreds of thousands of users, but more so that it was indeed providing value and that I could perhaps take it to a point where it would become ramen profitable and I could just organically grow the product, team etc from there.</p>
+<p>Cusoy has the incredible potential to become an organically grown gluten-free brand and community, not simply just a curated restaurant finder. Once I owned the gluten free space, I would have expanded to vegetarians and vegans, Paleo and the like. You can get an idea of how big Cusoy could get (dream big, right?) and particularly given the perfect market timing and opportunity right now.</p>
+<p><b><i>What were my personal goals and how did they change over time?</i></b></p>
+<p>In the beginning, I wanted to build a beautifully designed product with a great user experience that helped solve a personal problem, but more importantly, also a problem other users had.</p>
+<p>Over time, I realized I wanted to build a beautifully designed product with a great user experience that helped solve a personal problem for me and for other users… <b><i>that also generates revenue</i></b>.</p>
+<p>I didn’t want a startup, but an actual business that generates revenue, and Cusoy would not fulfill that personal goal for me without a full-time team, 1-2+ years of funding, multiple years of hard work (3-5+ years at the very least?) trying to answer the if/when questions of whether or not Cusoy could make money (very expensive questions too, might I add — not only in money but time, my most valuable asset).</p>
+<p>While I know there might be a possibility I could hustle incredibly hard and try to set up partnerships, the time investment required far outweighed the already incredibly slim chances of generating revenue.</p>
+<p>Cusoy ultimately no longer aligned with my personal goals.</p>
+<p><b>4. No clear or predictable way to sustainability (B2C is extremely, extremely hard to monetize)</b></p>
+<p>This is probably the #1 reason that really was the straw that broke the camel’s back.</p>
+<p>I left the most important reason for last.</p>
+<p><strong>If I didn’t have a team or funding <i>but</i> had clear and predictable ways to sustainability, I would have persevered with Cusoy. Absolutely, no holds barred.</strong></p>
+<p>Back in October, I read this TC piece on how the <a href="http://techcrunch.com/2013/10/02/its-over-for-paid-apps-with-a-few-exceptions/" target="_blank">percentage of free apps in the App Store will grow to 91-93%</a>. Wow.</p>
+<p>Actually, as recently as two days ago, <a href="http://techcrunch.com/2014/01/13/making-apps-pay-gets-harder/" target="_blank">Gartner predicted that 94.5% of apps will be free by 2017</a>.</p>
+<p>It makes total sense — if you think about the increasing consumer expectations of free apps and free content. It’s incredibly hard to convince a user to pay even $0.99 (less than a cup of coffee) for an app, since there are many free alternatives available that make it difficult to overcome the friction for consumers to pay.</p>
+<p>This posed an interesting dilemma since I was both the developer and also a user myself of Cusoy, and I certainly would not have paid to use Cusoy. Cusoy is too similar to Yelp, and consumers don’t pay to use Yelp, they don’t even need an account to use Yelp. Obviously, Yelp charges the businesses in order to make money.</p>
+<p><b><i>What about charging restaurants? Partnering with OpenTable and taking a cut of reservations, etc?</i></b></p>
+<p>Of course, I thought about this, but without strong user numbers and growth to prove to restaurants that Cusoy was in fact responsible for 10 extra reservations at XYZ restaurant last Friday night, it would be hard to convince them to advertise with Cusoy.</p>
+<p><span style="text-decoration: underline;">Bottom line</span>: I needed strong user growth numbers and concrete evidence before I would have leverage to use when talking to restaurants to advertise and partner with Cusoy. I couldn’t get those numbers yet working by myself (especially with no team or funding).</p>
+<p>I even played with a certain pricing model — of $1-9/month pay-as-you-go and at-your-discretion payment plan. For instance, if one month you decided to try cooking yourself at home, it may be worth $1 to you a certain month. Then another month, if you’re traveling to San Francisco and are not familiar with the restaurants that are gluten free, you might use it 5 times over the course of a week — and it may be worth $9 to you (a tiny cost at the expected value of not getting sick).</p>
+<p>But even that was an uphill battle and left a sour taste in my mouth — is it right to charge users when they are helping to generate content for Cusoy?</p>
+<p><b><i>What is the crux here?</i></b></p>
+<p><span style="text-decoration: underline;"><i>Monetizing user-generated content is really, really hard</i></span>. Especially for Cusoy, where it heavily relies on users to crowdsource information and generate new restaurant additions, it doesn’t encourage or incentivize users to do so if they have to pay to use Cusoy.</p>
+<p>It’s interesting too — because it’s kind of a brute force, numbers game with Cusoy. If you think about it, Yelp has 117 million monthly unique visitors but I’d wager only 1% of users actually post reviews, and just a slightly higher percentage actually register as users (not sure how many active registered users there are, though).</p>
+<p>With Cusoy, it is powered by my manual research and vetting of restaurants but heavily relies on <i>active and registered users</i> to post reviews, rate restaurants and even submit restaurants to list.</p>
+<p>I would need incredibly high numbers of users since only 1% of them would actually register and contribute back to Cusoy rather than passively consume its content. <i>Again, this goes back to needing another cofounder, team and even funding to make this a reality.</i></p>
+<p><b><i>Why is it so hard to monetize B2C startups?</i></b></p>
+<p>This past fall 2013, it was also painful to see a lot of B2C startups shut down — from Forkly, Everpix and Sonar to Flud, Cue and Tutorspree. They shut down for various reasons, but mainly either not being able to reach product/market fit or becoming profitable.</p>
+<p>I got a taste of it myself with Cusoy as my personal experience.</p>
+<p>B2C is really, really hard to monetize and thus hard to succeed in the long run. Unless you can find a big enough pain point — or go into a deep niche problem, it’s very tough to convince users to pay you.</p>
+<p>In contrast, <a href="http://blog.sourcing.io/yc-b2b" target="_blank">the inconvenient truth is: if you run a B2B startup you’re more likely to succeed</a>.</p>
+<p>Overall, Cusoy served as a great lesson in startups for me and I don’t regret doing it for a second, in spite of its failure to take off or generate revenue.</p>
+<p>Read more about <a href="http://melissatsang.com/2014/01/30/new-b2b-saas-venture/" target="_blank">my new B2B SaaS venture for 2014</a>.</p>
+<p><em>Thanks to Dennis and Connie for editing initial drafts.</em></p>
+<p><em>P.S. I&#8217;d love to meet you on Twitter <a href="http://www.twitter.com/melissatsang" target="_blank">here</a>.</em></p>
+<p>And if you enjoyed this post, please consider sharing it on FB or Twitter.</p>
+<div class='yarpp-related'>
+<h3>Related posts:</h3><ol>
+<li><a href="http://melissatsang.com/2014/01/05/week-24-officially-putting-cusoy-hold/" rel="bookmark" title="Week #24 &#8211; Officially putting Cusoy on hold">Week #24 &#8211; Officially putting Cusoy on hold </a></li>
+<li><a href="http://melissatsang.com/2013/12/12/week-20-put-cusoy-hiatus-changed-mind/" rel="bookmark" title="Week #20 &#8211; Put Cusoy on hiatus, then changed my mind">Week #20 &#8211; Put Cusoy on hiatus, then changed my mind </a></li>
+</ol>
+</div>
+							
+													        
+				</div> <!-- /post-content -->
+				            
+				<div class="clear"></div>
+				
+			</div> <!-- /post-inner -->
+			
+		</div> <!-- /post -->
+		
+	</div> <!-- /posts -->
+								
+	<div class="post-meta-bottom">
+	
+		<div class="post-cat-tags">
+														
+			<p class="post-categories"><span>Categories:</span> <a href="http://melissatsang.com/category/life/" rel="category tag">Life</a>, <a href="http://melissatsang.com/category/startups-b2b-saas/" rel="category tag">Startups - B2B SaaS</a>, <a href="http://melissatsang.com/category/startups-cusoy/" rel="category tag">Startups - Cusoy (B2C)</a></p>
+			
+					
+		</div> <!-- /post-cat-tags -->
+										
+		<div class="archive-nav post-nav">
+									
+						
+				<a class="post-nav-older" title="Previous post: Annual Review 2013" href="http://melissatsang.com/2014/01/06/annual-review-2013/">
+				
+				&laquo; Annual Review 2013				
+				</a>
+		
+						
+							
+				<a class="post-nav-newer" title="Next post: A new B2B SaaS venture" href="http://melissatsang.com/2014/01/30/new-b2b-saas-venture/">
+				
+				A new B2B SaaS venture &raquo;
+				
+				</a>
+		
+													
+			<div class="clear"></div>
+		
+		</div> <!-- /post-nav -->
+							
+	</div> <!-- /post-meta-bottom -->
+	
+	
+		
+		<div class="comments">
+				
+			<h2 class="comments-title">
+			
+				2 Comments				
+			</h2>
+	
+			<ol class="commentlist">
+			    	<li class="comment even thread-even depth-1" id="li-comment-6348">
+	
+		<div id="comment-6348" class="comment">
+		
+			<div class="comment-meta comment-author vcard">
+							
+				<img alt='' src='http://0.gravatar.com/avatar/008c0179c77cac42ed61de9bed78ea8d?s=120&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/008c0179c77cac42ed61de9bed78ea8d?s=240&amp;d=mm&amp;r=g 2x' class='avatar avatar-120 photo' height='120' width='120' />
+				<div class="comment-meta-content">
+											
+					<cite class="fn"><a href='http://500.co' rel='external nofollow' class='url'>Dave</a> </cite>					
+					<p><a href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/#comment-6348">January 19, 2014 at 11:40 am</a></p>
+					
+				</div> <!-- /comment-meta-content -->
+				
+			</div> <!-- /comment-meta -->
+
+			<div class="comment-content post-content">
+			
+							
+				<p>great post &amp; [self] analysis. </p>
+<p>I&#8217;m sure you learned quite a bit going through the journey.</p>
+<p>hope your next venture has more success, but regardless this one appears to have been useful.</p>
+<p>regards &amp; good luck,</p>
+<p>DMC</p>
+				
+				<div class="comment-actions">
+				
+										
+					<a class='comment-reply-link' href='/2014/01/15/cusoy-a-postmortem/?replytocom=6348#respond' onclick='return addComment.moveForm( "comment-6348", "6348", "respond", "539" )' aria-label='Reply to Dave'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div><!-- /comment-content -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-6353">
+	
+		<div id="comment-6353" class="comment">
+		
+			<div class="comment-meta comment-author vcard">
+							
+				<img alt='' src='http://1.gravatar.com/avatar/4c762772874c11b8245a6a119443d2e5?s=120&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4c762772874c11b8245a6a119443d2e5?s=240&amp;d=mm&amp;r=g 2x' class='avatar avatar-120 photo' height='120' width='120' />
+				<div class="comment-meta-content">
+											
+					<cite class="fn">Jess </cite>					
+					<p><a href="http://melissatsang.com/2014/01/15/cusoy-a-postmortem/#comment-6353">January 22, 2014 at 12:33 pm</a></p>
+					
+				</div> <!-- /comment-meta-content -->
+				
+			</div> <!-- /comment-meta -->
+
+			<div class="comment-content post-content">
+			
+							
+				<p>I am glad you shared your honest experience with well structured analysis.. You are already smarter and know what not to do/what to do for your next venture.</p>
+				
+				<div class="comment-actions">
+				
+										
+					<a class='comment-reply-link' href='/2014/01/15/cusoy-a-postmortem/?replytocom=6353#respond' onclick='return addComment.moveForm( "comment-6353", "6353", "respond", "539" )' aria-label='Reply to Jess'>Reply</a>					
+					<div class="clear"></div>
+				
+				</div> <!-- /comment-actions -->
+				
+			</div><!-- /comment-content -->
+
+		</div><!-- /comment-## -->
+	</li><!-- #comment-## -->
+			</ol>
+			
+						
+				<div class="pingbacks">
+				
+					<div class="pingbacks-inner">
+				
+						<h3 class="pingbacks-title">
+						
+							7 Pingbacks						
+						</h3>
+					
+						<ol class="pingbacklist">
+						    	
+	<li class="pingback even thread-even depth-1" id="comment-6356">
+	
+		 <a href='http://pando.com/2014/01/28/the-one-reason-why-most-startups-fail/' rel='external nofollow' class='url'>The one reason why most startups fail | PandoDaily</a> 		
+	</li>
+	</li><!-- #comment-## -->
+	
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-6357">
+	
+		 <a href='http://kszybalski.com/on-startups-they-arent-easy/' rel='external nofollow' class='url'>On startups.. they aren&#8217;t easy &#8211; Kamil Szybalski</a> 		
+	</li>
+	</li><!-- #comment-## -->
+	
+	<li class="pingback even thread-even depth-1" id="comment-6368">
+	
+		 <a href='http://www.cbinsights.com/blog/trends/startup-failure-post-mortem' rel='external nofollow' class='url'>51 Startup Failure Post-Mortems</a> 		
+	</li>
+	</li><!-- #comment-## -->
+	
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-6379">
+	
+		 <a href='http://vallebro.com/blog/la-unica-razon-por-la-que-la-mayoria-de-las-startups-fracasan/' rel='external nofollow' class='url'>La única razón por la que la mayoría de las startups fracasan | Vallebro Comunicación</a> 		
+	</li>
+	</li><!-- #comment-## -->
+	
+	<li class="pingback even thread-even depth-1" id="comment-6400">
+	
+		 <a href='http://alltopstartups.com/2014/03/01/failed-startups-what-went-wrong/' rel='external nofollow' class='url'>Failed Startups: 7 Startup Founders Reveal What Went Wrong with Their Startups | Alltopstartups.com</a> 		
+	</li>
+	</li><!-- #comment-## -->
+	
+	<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-6408">
+	
+		 <a href='http://matrixcbsolutions.com/wp2/failed-startups-7-startup-founders-reveal-went-wrong-startups/' rel='external nofollow' class='url'>MATRIX Collaborative Business Solutions Failed Startups: 7 Startup Founders Reveal What Went Wrong with Their Startups - MATRIX Collaborative Business Solutions</a> 		
+	</li>
+	</li><!-- #comment-## -->
+	
+	<li class="pingback even thread-even depth-1" id="comment-6445">
+	
+		 <a href='http://jcvalda.wordpress.com/2014/03/13/la-unica-razon-por-la-cual-la-mayoria-de-las-startups-fracasan/' rel='external nofollow' class='url'>La única razón por la cual la mayoría de las startups fracasan | grandes Pymes</a> 		
+	</li>
+	</li><!-- #comment-## -->
+						</ol>
+						
+					</div>
+					
+				</div>
+			
+							
+						
+		</div><!-- /comments -->
+		
+		
+		
+							<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/01/15/cusoy-a-postmortem/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://melissatsang.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">Your email address will not be published.</p>							<p class="comment-form-author"><input id="author" name="author" type="text" placeholder="Name" value="" size="30" /><label for="author">Author</label> <span class="required">*</span></p>
+<p class="comment-form-email"><input id="email" name="email" type="text" placeholder="Email" value="" size="30" /><label for="email">Email</label> <span class="required">*</span></p>
+<p class="comment-form-url"><input id="url" name="url" type="text" placeholder="Website" value="" size="30" /><label for="url">Website</label></p>
+												<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="6" required></textarea></p>						<p class="form-allowed-tags" id="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></p>
+						<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='539' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>					</form>
+							</div><!-- #respond -->
+			 
+				
+	   
+
+		<div class="footer section large-padding bg-dark">
+		
+						
+				<div class="column column-1 left">
+				
+					<div class="widgets">
+			
+						<div class="widget widget_categories"><div class="widget-content"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-1"><a href="http://melissatsang.com/category/book-reviews/" >Book Reviews</a> (1)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://melissatsang.com/category/habits/" >Habits</a> (2)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://melissatsang.com/category/hacking-and-coding/" >Hacking and Coding</a> (1)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://melissatsang.com/category/life/" >Life</a> (4)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://melissatsang.com/category/startups-b2b-saas/" >Startups &#8211; B2B SaaS</a> (7)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://melissatsang.com/category/startups-cusoy/" >Startups &#8211; Cusoy (B2C)</a> (31)
+</li>
+		</ul>
+</div><div class="clear"></div></div>											
+					</div>
+					
+				</div>
+				
+			 <!-- /footer-a -->
+				
+						
+				<div class="column column-2 left">
+				
+					<div class="widgets">
+			
+						<div class="widget widget_archive"><div class="widget-content"><h3 class="widget-title">Archives</h3>		<ul>
+	<li><a href='http://melissatsang.com/2014/03/'>March 2014</a>&nbsp;(4)</li>
+	<li><a href='http://melissatsang.com/2014/02/'>February 2014</a>&nbsp;(1)</li>
+	<li><a href='http://melissatsang.com/2014/01/'>January 2014</a>&nbsp;(5)</li>
+	<li><a href='http://melissatsang.com/2013/12/'>December 2013</a>&nbsp;(5)</li>
+	<li><a href='http://melissatsang.com/2013/11/'>November 2013</a>&nbsp;(4)</li>
+	<li><a href='http://melissatsang.com/2013/10/'>October 2013</a>&nbsp;(5)</li>
+	<li><a href='http://melissatsang.com/2013/09/'>September 2013</a>&nbsp;(5)</li>
+	<li><a href='http://melissatsang.com/2013/08/'>August 2013</a>&nbsp;(5)</li>
+	<li><a href='http://melissatsang.com/2013/07/'>July 2013</a>&nbsp;(3)</li>
+	<li><a href='http://melissatsang.com/2013/03/'>March 2013</a>&nbsp;(1)</li>
+	<li><a href='http://melissatsang.com/2012/09/'>September 2012</a>&nbsp;(2)</li>
+	<li><a href='http://melissatsang.com/2012/08/'>August 2012</a>&nbsp;(1)</li>
+		</ul>
+</div><div class="clear"></div></div>											
+					</div> <!-- /widgets -->
+					
+				</div>
+				
+			 <!-- /footer-b -->
+			
+			<div class="clear"></div>
+		
+		</div> <!-- /footer -->
+		
+		<div class="credits">
+		
+			<div class="credits-inner">
+			
+				<p class="credits-left">
+				
+					&copy; 2012-2015 Melissa Tsang
+				
+				</p>
+				
+				<p class="credits-right">
+					
+					<a title="To the top" class="tothetop">Up &uarr;</a>
+					
+				</p>
+				
+				<div class="clear"></div>
+			
+			</div> <!-- /credits-inner -->
+			
+		</div> <!-- /credits -->
+	
+	</div> <!-- /content -->
+	
+	<div class="clear"></div>
+	
+</div> <!-- /wrapper -->
+
+<script type='text/javascript' src='http://melissatsang.com/wp-content/themes/wilson/js/global.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://melissatsang.com/wp-includes/js/comment-reply.min.js?ver=4.2.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fsb = {"ajax":"http:\/\/melissatsang.com\/wp-admin\/admin-ajax.php","nonce":"1ad7bb10c8"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://melissatsang.com/wp-content/plugins/floating-social-bar/js/fsb.js?ver=1.1.7'></script>
+
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+ Served from: melissatsang.com @ 2015-06-11 04:05:37 by W3 Total Cache -->

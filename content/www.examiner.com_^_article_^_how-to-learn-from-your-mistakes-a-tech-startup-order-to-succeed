@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Learn From Your Mistakes in a Tech Startup in Order to Succeed - Philadelphia entrepreneur | Examiner.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta property="og:type" content="article"><meta property="og:title" content="How to Learn From Your Mistakes in a Tech Startup in Order to Succeed"><meta property="og:image" content="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/5f/07/5f07b81d39bf4be64a7bf96b44ebfac3.png?itok=35ksiRnA"><meta property="og:url" content="http://www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed"><meta name="keywords" content="Small Business, Tech, Startup, Founder, Silicon Valley, Philadelphia"><link rel="shortcut icon" href="http://cdn2-b.examiner.com/sites/all/themes/greyhound/favicon.ico" type="image/vnd.microsoft.icon"><meta name="dc.date.issued" content="2015-06-07T09:55:43-06:00"><link rel="image_src" href="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/5f/07/5f07b81d39bf4be64a7bf96b44ebfac3.png?itok=35ksiRnA"><meta name="description" content="It was the fall of 2010, and the movie I had written, produced, and directed was finally finished and submitted to film festivals."><meta property="og:site_name" content="Examiner.com"><meta http-equiv="Content-Language" content="en"><meta name="twitter:card" content="summary"><link rel="canonical" href="http://www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed"><meta name="Generator" content="Drupal 7 (http://drupal.org)"><meta name="twitter:site" content="@examinercom"><meta name="twitter:title" content="How to Learn From Your Mistakes in a Tech Startup in Order to Succeed"><meta name="twitter:image" content="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/5f/07/5f07b81d39bf4be64a7bf96b44ebfac3.png?itok=35ksiRnA"><meta property="fb:app_id" content="113003962065478"><meta name="twitter:description" content="It was the fall of 2010, and the movie I had written, produced, and directed was finally finished and submitted to film festivals."><meta name="twitter:creator" content="@shermanbiz">
+<!--[if lte IE 8]>
+<script type="text/javascript" src="http://cdn2-b.examiner.com/sites/all/libraries/html5shiv-printshiv.js"></script>
+<![endif]-->
+    <link type="text/css" rel="stylesheet" href="http://cdn2-b.examiner.com/sites/default/files/css/css_jH53Mf_jA3oPz_vXjZ9uZqw78gFxgaDzOFuC9zXo-3s_440_1.css" media="all"><link type="text/css" rel="stylesheet" href="http://cdn2-b.examiner.com/sites/default/files/css/css_iM0e58F9UuXz9n7_NutmG7vEipuH3IgrlP8vGiwo9oA_440_1.css" media="all"><link type="text/css" rel="stylesheet" href="http://cdn2-b.examiner.com/sites/default/files/css/css_-pOaQB6BsVmy1RffuEK02PxiDvG3CgnKQWUwLTx1FI8_440_1.css" media="print">
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="http://cdn2-b.examiner.com/sites/all/themes/greyhound/assets/styles/ie.css?np9zhx" media="all"><![endif]-->
+        <script type="text/javascript" src="http://cdn2-b.examiner.com/sites/default/files/js/js_izMbklKled8Iz36tDzoCaxKTK2LGkVInrJgIP9SfR_g_440_1.js?np9zhx"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$LAB.script("http:\/\/beacon.examiner.com\/header.js?guid=type%3Dnode%26id%3D78383511%26vid%3D264584846%26event%3Dpage_init");
+var _os={"account":"examinercom","dayLightStart":"03\/08\/2015","dayLightEnd":"11\/01\/2015","server":"stats.examiner.com","secureServer":"sstats.examiner.com","namespace":"examinercom","zip":null};
+_os.s = {
+	pageName:"Examiner Article",
+	channel:"Business & Finance",
+	server:"10.146.146.138",
+	pageType:"",
+	prop1:"Small Business",
+	prop2:"",
+	prop3:"",
+	prop4:"ARTICLE EXENTRY:78383511",
+	prop5:"How to Learn From Your Mistakes in a Tech Startup in Order to Succeed",
+	prop6:"Jason Sherman",
+	prop7:"EXID:361566 Philadelphia Entrepreneur Examiner",
+	prop8:"EXID:361566",
+	prop9:11,
+	prop10:"Chicago",
+	prop11:"Philadelphia",
+	prop12:"story",
+	prop13:"y2015m06d07",
+	prop14:"entrepreneur",
+	prop15:"",
+	prop16:"",
+	prop17:"",
+	prop18:"",
+	prop19:"",
+	prop20:"",
+	prop21:"",
+	prop22:"Philadelphia Entrepreneur Examiner",
+	prop23:"Philadelphia:Business & Finance:Small Business:how to learn from your mistakes in a tech startup in order to succeed",
+	prop24:"4837021",
+	prop25:"Philadelphia",
+	prop28:"unauthenticated",
+	prop29:"not-newsworthy",
+	prop30:"2012\/03\/02",
+	prop31:181,
+	prop32:"Small Business:Tech:Startup:Founder:Silicon Valley:Philadelphia",
+	prop33:"evergreen-approved",
+	prop34:"local-approved",
+	prop35:"",
+	prop38:"Tech",
+	prop39:0,
+	prop40:false,
+	prop41:false,
+	prop42:true,
+	hier1:"Philadelphia:Business & Finance:Small Business:entrepreneur",
+	campaign:"",
+	eVar1:"",
+	eVar2:"",
+	eVar3:"",
+	eVar4:"ARTICLE EXENTRY:78383511",
+	eVar5:"Chicago",
+	eVar6:"Philadelphia",
+	eVar7:"",
+	eVar8:"",
+	eVar9:"",
+	eVar10:"",
+	eVar11:"",
+	eVar12:"",
+	eVar13:"",
+	eVar14:"",
+	eVar15:"",
+	eVar16:"",
+	eVar17:"",
+	eVar18:"",
+	eVar19:"",
+	eVar20:"",
+	eVar21:"",
+	eVar22:"",
+	eVar23:"",
+	eVar24:"",
+	eVar25:"",
+	eVar26:"",
+	eVar27:"",
+	eVar28:"",
+	eVar29:"",
+	eVar30:"",
+	events:"event4,event15,event5"
+};
+$LAB.script("http:\/\/cdn2-b.examiner.com\/sites\/all\/modules\/custom\/ex_omniture\/s_code.js?v=np9zhx").wait(function () {_os.copyVars();s.t();});
+var _qoptions= { qacct: "p-631HUI1Pqfxis" };;
+$LAB.script("http:\/\/edge.quantserve.com\/quant.js");
+var _gaq = _gaq || []; _gaq.push(["_setAccount","UA-18147775-1"]);
+_gaq.push(["_setDomainName",".examiner.com"]);
+_gaq.push(["_setCustomVar",1,"Site-Section","Business & Finance",1]);
+_gaq.push(["_trackPageview"]);
+;
+$LAB.script("http:\/\/www.google-analytics.com\/ga.js");
+var _comscore = _comscore || []; _comscoreData = {"c1":2,"c2":6036472,"options":{"url_append":"comscorekw=SmallBusiness"}}; _comscore.push(_comscoreData);
+$LAB.script("http:\/\/b.scorecardresearch.com\/\/beacon.js").wait(function () {COMSCORE.data = _comscoreData;});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var div_gpt_ad_ex_dart_header_ad;var div_gpt_ad_ex_dart_header_ad_oop;var div_gpt_ad_ex_dart_sidebar_ad_block_top;var div_gpt_ad_ex_dart_sidebar_ad_block_bottom;var div_gpt_ad_ex_dart_ncm;
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _sf_startpt=(new Date()).getTime()
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(a){function f(a){return a&&a.split(".").slice(-2).join(".")}var b=a.top.location,c=a.location,d=c.hostname,e;try{e=b.hostname}catch(g){}if(!e||c!==b&&e!==d&&f(e)!==f(d))b.replace(c.href),c.replace("about:blank")})(this);
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      (function() {
+        var gads = document.createElement("script");
+        gads.async = true;
+        gads.type = "text/javascript";
+        var useSSL = "https:" == document.location.protocol;
+        gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+        var node =document.getElementsByTagName("script")[0];
+        node.parentNode.insertBefore(gads, node);
+      })();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {div_gpt_ad_ex_dart_header_ad = googletag.defineSlot("/5578/Examiner/cdg.examiner2.philadelphia-pa/bf/pos1/article", [[728,90],[950,60],[970,250],[970,90]], "div-gpt-ad-ex-dart-header-ad").setTargeting("dcopt", "ist").setTargeting("pos", 1).setTargeting("tile", 1);div_gpt_ad_ex_dart_header_ad.addService(googletag.pubads());div_gpt_ad_ex_dart_header_ad_oop = googletag.defineOutOfPageSlot("/5578/Examiner/cdg.examiner2.philadelphia-pa/bf/pos1/article", "div-gpt-ad-ex-dart-header-ad-oop").addService(googletag.pubads());div_gpt_ad_ex_dart_sidebar_ad_block_top = googletag.defineSlot("/5578/Examiner/cdg.examiner2.philadelphia-pa/bf/pos2/article", [[300,250],[300,600],[300,1050]], "div-gpt-ad-ex-dart-sidebar-ad-block-top").setTargeting("pos", 2).setTargeting("tile", 2);div_gpt_ad_ex_dart_sidebar_ad_block_top.addService(googletag.pubads());div_gpt_ad_ex_dart_sidebar_ad_block_bottom = googletag.defineSlot("/5578/Examiner/cdg.examiner2.philadelphia-pa/bf/pos4/article", [[300,250]], "div-gpt-ad-ex-dart-sidebar-ad-block-bottom").setTargeting("pos", 4).setTargeting("tile", 4);div_gpt_ad_ex_dart_sidebar_ad_block_bottom.addService(googletag.pubads());div_gpt_ad_ex_dart_ncm = googletag.defineSlot("/5578/Examiner/cdg.examiner2.philadelphia-pa/article", [[728,90]], "div-gpt-ad-ex-dart-ncm").setTargeting("pos", 14).setTargeting("tile", 14);div_gpt_ad_ex_dart_ncm.addService(googletag.pubads());googletag.pubads().setTargeting("tt","entrepreneur");googletag.pubads().setTargeting("plc","philadelphia");googletag.pubads().setTargeting("uid","4837021");googletag.pubads().setTargeting("etid","361566");googletag.pubads().setTargeting("has_related_photos",true);googletag.pubads().setTargeting("has_related_videos",false);googletag.pubads().setTargeting("has_related_slideshows",false);googletag.pubads().setTargeting("tablet","o");googletag.pubads().setTargeting("chn","business%20%26%20finance");googletag.pubads().setTargeting("subc","small%20business");googletag.pubads().setTargeting("nid","78383511");googletag.pubads().setTargeting("top",["business%20%26%20finance","small%20business","small%20business","tech","startup","founder","silicon%20valley","philadelphia"]);googletag.pubads().setTargeting("ed","philadelphia-pa");googletag.pubads().setTargeting("dc_ref","http%3A%2F%2Fwww.examiner.com%2Farticle%2Fhow-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed");googletag.pubads().setTargeting("sect","small%20business");googletag.pubads().setTargeting("pgtp","article");googletag.pubads().setTargeting("vertical","Examiner");googletag.pubads().enableSingleRequest();googletag.enableServices();});
+//--><!]]>
+</script>
+  </head>
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-78383511 node-type-story page-user-no-dashboard sc-news" >
+    <div class="accessibility">
+      <a href="#main">Skip to main content</a>
+    </div>
+    
+<div class="site-wrapper">
+  <div class="page-wrapper" id="ut_piggyback">
+      
+<div id="ex_dart--ex_dart_header_ad" class="block block-ex-dart">
+      
+  <div class="block__content">
+    <div class="ad ad--dart ad--  block">
+  <div id="div-gpt-ad-ex-dart-header-ad">
+    <script type="text/javascript">
+       googletag.cmd.push(function() {
+         googletag.display("div-gpt-ad-ex-dart-header-ad");
+       });
+    </script>
+  </div>
+      <div id='div-gpt-ad-ex-dart-header-ad-oop'>
+      <script type='text/javascript'>
+        googletag.cmd.push(function() {
+          googletag.display('div-gpt-ad-ex-dart-header-ad-oop');
+        });
+      </script>
+    </div>
+        <div class='pubnation' data-target='div-gpt-ad-ex-dart-header-ad'>Report this ad</div>
+  </div>
+  </div>
+  </div>
+    <header class="header header--top">
+        
+<div id="ex_article--ex_article_facebook_connect" class="block block-ex-article">
+      
+  <div class="block__content">
+    
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '113003962065478',
+      xfbml: true,
+      version: 'v2.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+  </div>
+  </div>
+      <div class="navbar">
+        <a href="/" class="logo navbar__logo"><img class="logo__image" typeof="foaf:Image" src="http://cdn2-b.examiner.com/sites/all/themes/greyhound/assets/images/examiner-logo.png" alt="Examiner.com" /></a>        <div class="navbar__navigation">
+            
+<div id="ex_taxonomy--superchannel-menu" class="block block-ex-taxonomy">
+      
+  <div class="block__content">
+    <h2 class="sc-news"><a href="/news">In News:</a></h2>
+<ul class="sc-news"><li class="first"><a href="http://www.examiner.com/news">News</a></li><li><a href="http://www.examiner.com/politics">Politics</a></li><li><a href="http://www.examiner.com/business-and-finance">Business &amp; Finance</a></li><li><a href="http://www.examiner.com/topic/strange-news">Strange News</a></li><li class="last"><a href="http://www.examiner.com/crime-and-courts">Crime &amp; Courts</a></li></ul>  </div>
+  </div>
+
+<div id="ex_blocks--supplemental" class="block block-ex-blocks">
+      
+  <div class="block__content">
+    <div class="social supplemental-nav-button"><a href="http://www.facebook.com/Examinercom" class="facebook icon icon--facebook icon--replace" target="_blank"><span class="visuallyhidden">Facebook</span></a><a href="http://twitter.com/examinercom" class="twitter icon icon--twitter icon--replace" target="_blank"><span class="visuallyhidden">Twitter</span></a><a href="http://plus.google.com/+examinercom/posts" class="googleplus icon icon--googleplus icon--replace" target="_blank"><span class="visuallyhidden">Google Plus</span></a></div><div class="search supplemental-nav-button icon icon--replace icon--search"><span class="visuallyhidden">Search</span>
+</div>  </div>
+  </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-page-wrapper wrapper cf">
+      <div class="main-page-column cf">
+          
+
+
+
+
+        <div class="center-page-column padding--all">
+                              <nav id="breadcrumbs" class="colorized-links"><ol  class="list--horizontal list--navigation list--plain" 0="xmlns:v=&quot;http://rdf.data-vocabulary.org/#&quot;"><li typeof="v:Breadcrumb" ><a rel="v:url" href="/news"><span rel="v:title">News</span></a></li>
+<li typeof="v:Breadcrumb" ><a rel="v:url" href="/business-and-finance"><span rel="v:title">Business &amp; Finance</span></a></li>
+<li typeof="v:Breadcrumb" ><a rel="v:url" href="/small-business"><span rel="v:title">Small Business</span></a></li>
+</ol></nav>            
+
+
+
+            
+
+<article id="node-78383511" class="node node-story node-promoted mode-full clearfix" about="/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" typeof="schema:NewsArticle sioc:Item foaf:Document" class="article article-story article-full cf">
+  <header class="article-header">
+    <div class="ex-article-related-topics related-topics colorized-links tag-set"><h4 class="tag-set__title">See also: </h4><ul class="tag-set__body list--plain list--horizontal list--comma-separated"><li class="761 first"><a href="/small-business" class="primary-tag" typeof="skos:Concept" property="rdfs:label skos:prefLabel">Small Business</a></li>
+<li class="138611"><a href="/tech" class="secondary-tags" typeof="skos:Concept" property="rdfs:label skos:prefLabel">Tech</a></li>
+<li class="35931"><a href="/topic/startup" class="secondary-tags" typeof="skos:Concept" property="rdfs:label skos:prefLabel">Startup</a></li>
+<li class="232746"><a href="/topic/founder" class="secondary-tags" typeof="skos:Concept" property="rdfs:label skos:prefLabel">Founder</a></li>
+<li class="105386"><a href="/topic/silicon-valley" class="secondary-tags" typeof="skos:Concept" property="rdfs:label skos:prefLabel">Silicon Valley</a></li>
+<li class="70826 last"><a href="/topic/philadelphia" class="secondary-tags" typeof="skos:Concept" property="rdfs:label skos:prefLabel">Philadelphia</a></li>
+</ul></div>                          <h1 class="page-title">How to Learn From Your Mistakes in a Tech Startup in Order to Succeed</h1>
+      <div class="fb-like" data-href="http://www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>        <span property="schema:name dc:title" content="How to Learn From Your Mistakes in a Tech Startup in Order to Succeed" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>    <div class="next-article bleed--sides margin--ends"><div class="next-article__directions">Use your <span class="icon icon--rightarrow icon--before"><span>key for the next article</div><div class="next-article__title"><a href="/article/biggest-tax-hike-nevada-history-better-for-education-bad-for-business"><span class="next">Next:</span> Biggest tax hike in Nevada history: Better for education? Bad for business ?</a></div></div>    <div class="article-socialtime flexbox margin--ends">
+      <time datetime="2015-06-07T09:55" property="dc:date dc:created" content="June 7, 2015" datatype="xsd:dateTime" class="datetime flexbox-item">
+        <span class="datetime__date colorized-text">
+          June 7, 2015        </span>
+        <span class="datetime__time">
+          9:55 AM MST        </span>
+      </time>
+      <ul class="list--plain list--horizontal social-widgets flexbox-item"><li class="first"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" class="facebook share--facebook icon icon--facebook icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Facebook&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]); javascript:window.open(this.href, &#039;sharer&#039;, &#039;height=400,width=600&#039;);return false;"><span class="visuallyhidden">Facebook</span></a></li>
+<li><a href="https://twitter.com/intent/tweet?url=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed&amp;via=examinercom&amp;text=How%20to%20Learn%20From%20Your%20Mistakes%20in%20a%20Tech%20Startup%20in%20Order%20to%20Succeed" class="twitter share--twitter icon icon--twitter icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Twitter&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]); javascript:window.open(this.href, &#039;sharer&#039;, &#039;height=400,width=600&#039;);return false;"><span class="visuallyhidden">Twitter</span></a></li>
+<li><a class="pinterest share--pinterest icon icon--pinterest icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" id="share--pinterest"><span class="visuallyhidden">Pinterest</span></a>
+</li>
+<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed&amp;title=How%20to%20Learn%20From%20Your%20Mistakes%20in%20a%20Tech%20Startup%20in%20Order%20to%20Succeed&amp;summary=It%20was%20the%20fall%20of%202010%2C%20and%20the%20movie%20I%20had%20written%2C%20produced%2C%20and%20directed%20was%20finally%20finished%20and%20submitted%20to%20film%20festivals.%20It%20was%20an%20exhausting%20journey%20%28creating%20a%20feature-length%20film%29%2C%20and%20I%20found%20myself%20needing%20a%20break.%20Being%20a%20technology%20guy%20at&amp;source=Examiner.com" class="linkedin share--linkedin icon icon--linkedin icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" target="_blank" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Linkedin&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]);"><span class="visuallyhidden">Linkedin</span></a></li>
+<li><a href="https://plus.google.com/share?url=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" class="googleplus share--googleplus icon icon--googleplus icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" target="_blank" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Google Plus&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]); javascript:window.open(this.href, &#039;sharer&#039;, &#039;height=400,width=600&#039;);return false;"><span class="visuallyhidden">Google Plus</span></a></li>
+<li><a href="#comments" class="comments share--comments icon icon--chat icon--before icon--social icon--medium" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Comment&#039;, &#039;Clicked&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true])" onmouseover="_gaq.push([&#039;_trackEvent&#039;, &#039;Comment&#039;, &#039;Mouse On&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true])"><span class="visuallyhidden">Comment</span></a></li>
+<li><a href="/node/78383511/forward?render=overlay" rel="nofollow" title="Email this article" class="catch icon icon--before icon--mail icon--social mail overlay icon--medium" id="share--email" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Email&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]);"></a></li>
+<li class="last"><a href="/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed#print" rel="print" title="Print this article" class="icon icon--before icon--medium icon--print icon--social active" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Print&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]);"></a></li>
+</ul>    </div>
+  </header>
+
+    <section  class="article-content">
+    
+          <figure class="article-image article-image--landscape">  <img rel="image_src" typeof="foaf:Image" src="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/5f/07/5f07b81d39bf4be64a7bf96b44ebfac3.png?itok=35ksiRnA" width="600" height="338" alt="Fail Fast" title="Fail Fast" /><figcaption class="caption media__body"><div class="caption__title">Fail Fast</div><div class="caption__credit">jasonsherman.org</div></figcaption>
+</figure>            <div class="field field-name-body field-type-text-with-summary field-label-hidden clearfix">
+    <div class="field-items">
+          <div class="field-item even" property="schema:articleBody content:encoded" class="article__body cf"><p>It was the fall of 2010, and the movie I had written, produced, and directed was finally finished and submitted to film festivals. It was an exhausting journey (creating a <a href="http://www.imdb.com/title/tt1844635/" target="_blank" rel="nofollow">feature-length film</a>), and I found myself needing a break. Being a technology guy at my core, I felt inclined to take a step back from film and take a step forward into the realm of technology. Roughly 6 years before creating my movie, I had an idea for a new website. But there were no such thing as smart phones, and my application would have been difficult to build as a website back then. </p>
+<p>One of the actors from the movie called me one day to see how things were going with the film festivals, and then asked me what I was going to do next. I told him I was thinking about building a website and told him about my idea. Since smart phones were now prevalent, I thought it was a perfect opportunity to dive back into my old idea. He liked it and said he would partner up with me if I agreed to tweak the platform for a different audience. So after discussing our ideas on the phone for a couple of hours that day, we decided to partner up and do it together. This was the first time I cofounded a <a href="/tech" class="inline_link">tech</a> <a href="/topic/startup" class="inline_link">startup</a>. During my one year in this company, I learned what not to do.  </p>
+<p>The first thing I learned, was how to choose a cofounder. The person I had chosen was an artist, plain and simple. He was not technologically savvy, had a little bit of business knowledge, but very little marketing or presentation skills. The first thing he made me do was go with him to a law firm to pay them a retainer, and get everything documented.  He had seen the movie “<a href="http://www.imdb.com/title/tt1285016" target="_blank" rel="nofollow">The Social Network</a>” shortly before partnering with me, and said he didn't want the same thing to happen to us. Sadly, we didn't have anything to protect, no code, no designs, no platform, no team, nothing. Yet he still wanted us to spend thousands of dollars on lawyers to tell us what to do. Basically, he did not know how to run a company, and he wanted the lawyers to tell us how to do just that. Unfortunately, we argued a lot about this because I was a business owner for many years, and I did understand how to run a business, but he didn't feel confident enough that my skills were up to par. </p>
+<p>As the technologically savvy partner, I was in charge of designing our platform, finding programmers, and creating the workflow document for our functionality.  I also designed our PowerPoint presentation, wrote a lot of our business plan, handled our marketing on social media sites, created a video to showcase our idea, and much more. I felt like I was doing 90% of the work, but only owned 50% of the company, and I didn’t like that at all.  All the while, we kept sending money to these lawyers for more and more documents, which in hindsight I realize we did not need at all. I kept asking myself, “Why am I doing all the work, AND paying lawyers all this money?”  I felt as though my partner should be paying the lawyers, while I did the work.  It was only fair.  But unfortunately, he did not value my skillset as much as others would in the future (as I have found out in the last 5 years).</p>
+<p>Anyway, we ended up outsourcing our original platform to a company in India to get built quickly, and for little money. While we did get some of the work done, we found ourselves spending a lot of money and not getting exactly what we wanted. I then tried to get programmers locally to help us with our idea, and while I did succeed in getting a couple of programmers, their productivity fizzled out when my partner and I could not secure funding. </p>
+<p>Luckily for me, my partner realized this lifestyle was not for him, and after one year of trying to get <a href="https://www.crunchbase.com/organization/gugo" target="_blank" rel="nofollow">the company</a> off the ground, he gracefully bowed out. I too, let go of the company altogether, and joined two friends to start another tech company. This time I took my lessons learned and brought them into the company. Unfortunately, this new company also did not work out because of cofounder disagreements (go figure).  But, after one year not only did we not spend a lot of money on lawyers, but we had a <a href="http://picklify.com/" target="_blank" rel="nofollow">fully functional platform</a> available to the public. This company, we did pitch to a lot of investors, but quickly were saturated by other competitors who started to surface every day. It seems as if we launched at the right time, but could not secure funding quick enough to keep up with competitors.  So again, we fizzled out and let go of the company, even though the website is still live and getting new users.</p>
+<p>Now in my <a href="http://corp.instamour.com" target="_blank" rel="nofollow">current (and third) startup</a>, I am in my second year.  I used all of the lessons of the past of what not to do, and what to do, how to choose cofounders, how to get programmers to join the team, how to properly execute legal documentation, and how to properly run a tech startup. As the saying goes, “Third time's a charm.”  I do see why they say that. </p>
+<p>Here is what I can say to anyone out there who wants to start a tech company of what NOT to do:</p>
+<ul><li>Don’t hire lawyers right away</li>
+<li>Don’t rush to pick a cofounder</li>
+<li>Don’t spend money on anything that you can do yourself</li>
+<li>Don’t pitch to investors until you are either earning revenue, or have 1 million users.</li>
+<li>Don’t pay employees with cash (they aren’t passionate then)</li>
+<li>Don’t wait to release your first version until it’s perfect.  Release it when it is barely considered finished.  Get customer feedback before it’s too late.  (See MVP below)</li>
+<li>Don’t be stubborn, be open-minded and embrace opinions</li>
+</ul><p>And here is what I can say TO DO:</p>
+<ul><li>Do design your product before talking to programmers</li>
+<li>Do create a workflow document explaining your entire platform</li>
+<li>Do learn how to build (code) an MVP (Minimum Viable Product) by yourself</li>
+<li>Do release your MVP as a “Soft Launch” to get customer feedback from at least a few thousand users.</li>
+<li>Do pick cofounders that have skills that you don’t have (and need)</li>
+<li>Do find free legal help from local colleges</li>
+<li>Do get interns from local colleges</li>
+<li>Do pay employees with stock options (this incentivizes them)</li>
+<li>Do listen to your employees and customers, use this information to make your product amazing.</li>
+</ul><p>Hopefully this article helps those of you who are just starting out. Or maybe it resonates with other tech founders out there who have been through the same thing.  Knowing when to let go of your startup is just as important as knowing when to push forward.  I started 3 tech startups in 3 years, and stuck with the third one because it showed potential.   I still run it full time and love every second of it.  It's exciting to say the least, but I would have never gotten here if I hadn't failed in the first two.</p>
+</div>
+      </div>
+</div>
+                      </section>
+  <footer class="article-footer">
+    <ul class="links"><li class="abuse-report first last"><a href="/abuse/report/node/78383511?render=overlay" title="Report and surface objectionable content with this button." rel="nofollow" class="overlay icon icon--before icon--warning">Report this content</a></li>
+</ul>        <div class="flexbox margin--ends">
+      <div class="article-social-bottom block flexbox-item">
+        <h2><span class="highlight">Share</span> this article</h2>
+        <ul class="list--plain list--horizontal social-widgets flexbox-item"><li class="first"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" class="facebook share--facebook icon icon--facebook icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Facebook&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]); javascript:window.open(this.href, &#039;sharer&#039;, &#039;height=400,width=600&#039;);return false;"><span class="visuallyhidden">Facebook</span></a></li>
+<li><a href="https://twitter.com/intent/tweet?url=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed&amp;via=examinercom&amp;text=How%20to%20Learn%20From%20Your%20Mistakes%20in%20a%20Tech%20Startup%20in%20Order%20to%20Succeed" class="twitter share--twitter icon icon--twitter icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Twitter&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]); javascript:window.open(this.href, &#039;sharer&#039;, &#039;height=400,width=600&#039;);return false;"><span class="visuallyhidden">Twitter</span></a></li>
+<li><a class="pinterest share--pinterest icon icon--pinterest icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" id="share--pinterest"><span class="visuallyhidden">Pinterest</span></a>
+</li>
+<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed&amp;title=How%20to%20Learn%20From%20Your%20Mistakes%20in%20a%20Tech%20Startup%20in%20Order%20to%20Succeed&amp;summary=It%20was%20the%20fall%20of%202010%2C%20and%20the%20movie%20I%20had%20written%2C%20produced%2C%20and%20directed%20was%20finally%20finished%20and%20submitted%20to%20film%20festivals.%20It%20was%20an%20exhausting%20journey%20%28creating%20a%20feature-length%20film%29%2C%20and%20I%20found%20myself%20needing%20a%20break.%20Being%20a%20technology%20guy%20at&amp;source=Examiner.com" class="linkedin share--linkedin icon icon--linkedin icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" target="_blank" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Linkedin&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]);"><span class="visuallyhidden">Linkedin</span></a></li>
+<li><a href="https://plus.google.com/share?url=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" class="googleplus share--googleplus icon icon--googleplus icon--before icon--social icon--circular icon--inverse icon--medium social-colorized-background colorized-override" target="_blank" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Google Plus&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]); javascript:window.open(this.href, &#039;sharer&#039;, &#039;height=400,width=600&#039;);return false;"><span class="visuallyhidden">Google Plus</span></a></li>
+<li><a href="#comments" class="comments share--comments icon icon--chat icon--before icon--social icon--medium" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Comment&#039;, &#039;Clicked&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true])" onmouseover="_gaq.push([&#039;_trackEvent&#039;, &#039;Comment&#039;, &#039;Mouse On&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true])"><span class="visuallyhidden">Comment</span></a></li>
+<li><a href="/node/78383511/forward?render=overlay" rel="nofollow" title="Email this article" class="catch icon icon--before icon--mail icon--social mail overlay icon--medium" id="share--email" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Email&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]);"></a></li>
+<li class="last"><a href="/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed#print" rel="print" title="Print this article" class="icon icon--before icon--medium icon--print icon--social active" onclick="_gaq.push([&#039;_trackEvent&#039;, &#039;Share&#039;, &#039;Print&#039;, &#039;How to Learn From Your Mistakes in a Tech Startup in Order to Succeed&#039;, 1, true]);"></a></li>
+</ul>      </div>
+      <div class="article-subscribe block flexbox-item">
+        <a href="/user/4837021/10720201/subscribe?destination=node/78383511&amp;render=overlay" class="ocmap ocm-newsletter overlay catch colorized-background padding--half-all"><span class="highlight">Subscribe</span>
+<span class="suffix">to author</span>
+</a>      </div>
+    </div>
+  </footer>
+</article>
+            
+
+<!-- BEGIN SNIPPET -->
+<div class="YAD-a98beddc-234e-3504-8718-aa2eca56943d"></div>
+
+<script>
+   (function(a,b,c,d,e,f){a[d]||(a[d]=
+   function(){(a[d].q=a[d].q||[]).push([arguments,+new Date])});
+   e=b.createElement(c);f=b.getElementsByTagName(c)[0];
+   e.src='https://s.yimg.com/uq/syndication/yad.js';e.async=true;
+   f.parentNode.insertBefore(e,f)}(window,document,'script','yad'));
+   yad('a98beddc-234e-3504-8718-aa2eca56943d', {
+     tracking: {cid: 'yahoo-recommends-inbound'}
+   });
+</script>
+<!-- END SNIPPET -->
+
+
+<div id="comments"><div class="comments-header margin--bottom cf"><div class="icon icon--before icon--chat icon--circular icon--inverse icon--large float-left margin--half-right"></div><div class="headline headline--xxxl"><a href="/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed#disqus_thread" data-disqus-identifier="node/78383511" class="active">Comments</a></div></div><div id="disqus_thread"><noscript><p><a href="http://examinersite.disqus.com/?url=http%3A%2F%2Fwww.examiner.com%2Farticle%2Fhow-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed">View the discussion thread.</a></p></noscript></div></div>        </div>
+        <aside class="left-page-column colorized-border left-page-column--shaded">
+            
+
+<div id="ex_article--ex_article_author" class="block block-ex-article is-enabled">
+      
+  <div class="block__content">
+    <div class="bio media padding--all border--solid border--top border--thicker colorized-border media--vertical bio--right"><div class="bio__image media__img">  <img typeof="foaf:Image" src="http://cdn2-b.examiner.com/sites/default/files/styles/square_thumb_medium/hash/38/7a/387aae89c3456161dc5cc560a1d258c4.png?itok=5IhvSl53" width="180" height="180" alt="" /></div><div class="media__body"><div class="bio__name"><a href="/entrepreneur-in-philadelphia/jason-sherman">Jason Sherman</a></div><div class="bio__title"><a href="/entrepreneur-in-philadelphia/jason-sherman">Philadelphia Entrepreneur Examiner</a></div><div class="bio__subscribe"></div><div class="bio__body">Jason Sherman has dedicated his life to research, networking, helping others, and making his ideas a reality. He is an expert in technology, and has founded various innovative tech startups, his most current being <a href="http://instamour.com" target="_blank">Instamour</a>. One thing he thoroughly enjoys, is being a mentor to other new business owners and entrepreneurs.  He is a published author, an award winning film director, a creative designer, and is also a front end developer.  He majored in Computer Science at Delaware Valley University during the dot com boom. He loves all things tech, art, music, film, food and his Shih Tzu Wolfgang.  You can check him out on his website <a href="http://jasonsherman.org" target="_blank">JasonSherman.org</a></div><ul class="bio__links list list--horizontal list--plain"><li class="first"><a href="http://facebook.com/delphiaonline" class="ocmap icon icon--facebook icon--social icon--small icon--circular icon--before icon--inverse ocm-facebook facebook social-colorized-background colorized-override" target="_blank"><span class="visuallyhidden">Facebook</span></a></li>
+<li><a href="http://twitter.com/shermanbiz" class="ocmap icon icon--facebook icon--social icon--small icon--circular icon--before icon--inverse ocm-twitter twitter icon--twitter social-colorized-background colorized-override" target="_blank"><span class="visuallyhidden">Twitter</span></a></li>
+<li class="last"><a href="/user/4837021/contact" class="ocmap icon icon--facebook icon--social icon--small icon--circular icon--before icon--inverse ocm-contact contact icon--mail icon--muted"><span class="visuallyhidden">Contact me</span></a></li>
+</ul></div></div>  </div>
+  </div>
+
+
+
+<div id="ex_taxonomy--ex_taxonomy_popular_articles_left" class="block block-ex-taxonomy colorized-background padding--all" title="Related Stories">
+        <h2 class="block__title">
+      <span class="highlight">Related</span>
+<span class="suffix">stories</span>
+    </h2>
+    
+  <div class="block__content">
+    <ul class="list list--plain list--dotted"><li class="first"><a href="/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Small Business&#039;, &#039;Link&#039;]);">How to Learn From Your Mistakes in a Tech Startup in Order to Succeed</a></li>
+<li class=""><a href="/article/top-10-reasons-why-sponsoring-an-event-is-a-brilliant-marketing-strategy" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Small Business&#039;, &#039;Link&#039;]);">Top 10 Reasons Why Sponsoring an Event is a Brilliant Marketing Strategy</a></li>
+<li class=""><a href="/article/pipeliner-can-help-manage-contacts-met-seven-decades-or-seven-weeks" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Small Business&#039;, &#039;Link&#039;]);">Pipeliner can help manage contacts met in seven decades or seven weeks</a></li>
+<li class=""><a href="/article/vostok-has-ufos-aliens-and-secrets" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Small Business&#039;, &#039;Link&#039;]);">'Vostok' has UFOs, Aliens and Secrets</a></li>
+<li class="last"><a href="/article/what-people-really-think-of-the-apple-watch" class="icon icon--before icon--camera headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Small Business&#039;, &#039;Link&#039;]);">What People Really Think of the Apple Watch</a></li>
+</ul>  </div>
+  </div>
+
+
+
+<div id="ex_taxonomy--ex-taxonomy-article-curated-content" class="block block-ex-taxonomy padding--all">
+      
+  <div class="block__content">
+    <h2 class="block__title"><span class="highlight">News</span>
+<span class="suffix">highlights</span>
+</h2>
+<ul class="curated-topic list--dotted list list--plain grid"><li class="grid__item one-whole padding--bottom first"><div class="media media--vertical sticker-container sc-news">  <a href="/article/obama-sending-450-additional-troops-to-iraq-to-help-fight-against-isis?cid=PROG-NewsBlock2-Article-IP-ObamaSendingTroops" class="media__img"><img class="topic-feature-image" typeof="foaf:Image" src="http://cdn2-b.examiner.com/sites/default/files/styles/hero_curated_large/hash/4c/6d/4c6d649ac2884d570b4e6daf84093ef2.jpg?itok=mp2t7sPe" alt="Obama sending 450 additional troops to Iraq to help fight against ISIS" title="Obama sending 450 additional troops to Iraq to help fight against ISIS" /></a><a href="/article/obama-sending-450-additional-troops-to-iraq-to-help-fight-against-isis?cid=PROG-NewsBlock2-Article-IP-ObamaSendingTroops" class="headline headline--lg">Obama sending 450 additional troops to Iraq to help fight against ISIS</a><div class="copy copy--sm">It was announced today that President Barack Obama is sending 450 more troops to Iraq, to fight the Islamic State, or ISIS. The goal for U.S. troops is not to be involved in combat, but rather to...</div></div></li>
+<li class="grid__item one-whole padding--bottom last"><div class="media media--vertical sticker-container sc-news">  <a href="/article/court-upholds-texas-anti-abortion-law-big-affects-to-reproductive-health-access?cid=PROG-NewsBlock2-Article-IP-TexasAbortionLaw" class="media__img"><img class="topic-feature-image" typeof="foaf:Image" src="http://cdn2-b.examiner.com/sites/default/files/styles/hero_curated_large/hash/5c/2c/5c2c1ba71c183e3da7e4b4044b3fa0d5.jpg?itok=bfTDiZEK" alt="Court upholds Texas anti-abortion law: Big affects on reproductive health access" title="Court upholds Texas anti-abortion law: Big affects on reproductive health access" /></a><a href="/article/court-upholds-texas-anti-abortion-law-big-affects-to-reproductive-health-access?cid=PROG-NewsBlock2-Article-IP-TexasAbortionLaw" class="headline headline--lg">Court upholds Texas anti-abortion law: Big affects on reproductive health access</a><div class="copy copy--sm">On June 9, the U.S. Fifth Circuit Court of Appeal ruled in favor of a law that will impose upon Texas abortion clinics standards that, according to an article by The Guardian, “requires all clinics...</div></div></li>
+</ul>  </div>
+  </div>
+
+
+<div id="ex_article--ex_article_thumbseed_videos" class="block block-ex-article padding--all">
+      
+  <div class="block__content">
+    <h2 class="block__title"><span class="highlight">Featured</span>
+<span class="suffix">Video</span>
+</h2>
+<script type="text/javascript" src="http://pshared.5min.com/Scripts/Thumbseed2.js?width=auto&height=140&adUnit=true&textFGColor=%23FFFFFF&textBGColor=%23202020&textLocation=0&thumbnailSize=0&displayHeader=false&sid=1304&headerTextColor=%23000000&textBGColor_MO=%23FFFFFF&textFGColor_MO=%2361B9CE&fallback=310&fallbackType=category&categories=310"></script>
+  </div>
+  </div>
+
+
+<div id="ex_article--ex_article_next_article" class="block block-ex-article block--next-article colorized-background colorized-axs-alternate padding--all">
+        <h2 class="block__title">
+      <span class="highlight">Next</span>
+<span class="suffix">Article</span>
+    </h2>
+    
+  <div class="headline headline--xl block__content">
+    <a href="/article/what-people-really-think-of-the-apple-watch?cid=PROD-redesign-right-next" class="next-article-link omniture-link-article">What People Really Think of the Apple Watch</a>  </div>
+  </div>
+
+        </aside>
+      </div>
+      <aside class="right-page-column padding--all">
+          
+
+<div id="companion-ad-container" class="block ad ad--companion">
+</div>
+
+
+<div class="ad ad--dart ad--300  block">
+  <div id="div-gpt-ad-ex-dart-sidebar-ad-block-top">
+    <script type="text/javascript">
+       googletag.cmd.push(function() {
+         googletag.display("div-gpt-ad-ex-dart-sidebar-ad-block-top");
+       });
+    </script>
+  </div>
+        <div class='pubnation' data-target='div-gpt-ad-ex-dart-sidebar-ad-block-top'>Report this ad</div>
+  </div>
+
+
+<div id="ex_taxonomy--ex_taxonomy_popular_articles" class="block block-ex-taxonomy" title="Popular in Business &amp; Finance">
+        <h2 class="block__title">
+      <span class="highlight">POPULAR</span>
+<span class="suffix">in BUSINESS & FINANCE</span>
+    </h2>
+    
+  <div class="block__content">
+    <ul class="list list--plain list--dotted"><li class="first"><a href="/article/there-are-now-two-reserve-currencies-as-petro-yuan-joins-petro-dollar" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">There are now two reserve currencies as petro-yuan joins petro-dollar</a></li>
+<li class=""><a href="/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">How to Learn From Your Mistakes in a Tech Startup in Order to Succeed</a></li>
+<li class=""><a href="/review/netflix-sense8-review-by-a-binge-watcher-rankin-the-8-sensates" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">Netflix Sense8 review by a binge watcher - ranking the 8 sensates</a></li>
+<li class=""><a href="/article/15-companies-that-offer-legitimate-work-at-home-jobs" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">15 companies that offer legitimate work-at-home jobs</a></li>
+<li class=""><a href="/article/the-5-characteristics-of-martin-luther-king-jr-and-how-to-use-them" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">The 5 characteristics of Martin Luther King, Jr. and how to use them</a></li>
+<li class=""><a href="/article/where-can-i-get-my-w2-form-online-for-2013-2014" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">Where can I get my W2 form online for 2014, 2015</a></li>
+<li class=""><a href="/article/top-10-reasons-why-sponsoring-an-event-is-a-brilliant-marketing-strategy" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">Top 10 Reasons Why Sponsoring an Event is a Brilliant Marketing Strategy</a></li>
+<li class=""><a href="/article/pipeliner-can-help-manage-contacts-met-seven-decades-or-seven-weeks" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">Pipeliner can help manage contacts met in seven decades or seven weeks</a></li>
+<li class=""><a href="/article/csi-cyber-not-science-fiction-new-2015-trustwave-report-paints-grim-picture" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">‘CSI: Cyber’ not science fiction - New 2015 Trustwave report paints grim picture</a></li>
+<li class="last"><a href="/article/stock-market-tumbles-after-280-000-jobs-added-here-s-why" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Business &amp;amp; Finance&#039;, &#039;Link&#039;]);">Stock market tumbles after 280,000 jobs added?  Here's why</a></li>
+</ul>  </div>
+  </div>
+
+
+<div id="ex_dart--ex_dart_adblade_article" class="block block-ex-dart">
+      
+  <div class="block__content">
+    <script type="text/javascript"><!--
+  adblade_cid="1990-3469835437";
+  adblade_ad_width="300";
+  adblade_ad_height="600";
+  adblade_ad_host="web.adblade.com";
+//--></script>
+<script type="text/javascript" src="http://web.adblade.com/js/ads/show.js"></script>
+  </div>
+  </div>
+
+
+
+
+<div id="ex_taxonomy--ex_taxonomy_popular_articles_global" class="block block-ex-taxonomy" title="Trending on Examiner.com">
+        <h2 class="block__title">
+      <span class="highlight">TRENDING</span>
+<span class="suffix">on EXAMINER.COM</span>
+    </h2>
+    
+  <div class="block__content">
+    <ul class="list list--plain list--dotted"><li class="first"><a href="/article/browser-history-obstruction-of-justice-wiping-internet-tracks-is-obstruction" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Browser history: Obstruction of justice? Wiping Internet tracks is Obstruction</a></li>
+<li class=""><a href="/article/kyemah-mcentyre-s-dress-bullied-teen-gets-last-laugh-with-stunning-prom-dress" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Kyemah McEntyre's dress: Bullied teen gets last laugh with stunning prom dress</a></li>
+<li class=""><a href="/article/kyemah-mcentyre-dress-who-sewed-the-gorgeous-prom-gown-that-broke-the-internet" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Kyemah McEntyre dress: Who sewed the gorgeous prom gown that broke the Internet?</a></li>
+<li class=""><a href="/article/kyemah-mcentyre-dress-stuns-the-internet-after-bullied-teen-sews-prom-gown" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Kyemah McEntyre dress stuns the Internet after bullied teen designs prom gown</a></li>
+<li class=""><a href="/article/abused-south-carolina-dog-caitlyn-heading-for-a-home" class="icon icon--before icon--camera headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Abused South Carolina dog, 'Caitlyn,' heading for a home</a></li>
+<li class=""><a href="/article/owner-dumps-7-year-old-cat-to-high-kill-shelter-when-she-bought-a-new-sofa" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Owner dumps 7-year-old cat to high kill shelter when she bought a new sofa</a></li>
+<li class=""><a href="/article/updates-on-kelly-ripa-pregnant-posted-another-photo-on-instagram" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Updates on Kelly Ripa pregnant: Posted another photo on Instagram</a></li>
+<li class=""><a href="/article/kelly-ripa-pregnant-ripa-shocks-with-tmi-about-her-sex-life-montreal-pregnancy" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Kelly Ripa pregnant: Ripa shocks with TMI about her sex life, Montreal pregnancy</a></li>
+<li class=""><a href="/article/stuart-varney-fracking-chat-explodes-guest-ousted-for-saying-varney-is-lying" class="headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Stuart Varney fracking chat explodes: Guest ousted for saying Varney is 'lying'</a></li>
+<li class="last"><a href="/article/kelly-ripa-pregnant-star-teases-potential-reason-for-family-addition-after-trip" class="icon icon--before icon--video headline headline--med" onClick="_gaq.push([&#039;_trackEvent&#039;, &#039;Content Discovery&#039;, &#039;Global&#039;, &#039;Link&#039;]);">Kelly Ripa pregnant: Star teases potential reason for family addition after trip</a></li>
+</ul>  </div>
+  </div>
+
+
+
+<div class="ad ad--dart ad--300 fixie block">
+  <div id="div-gpt-ad-ex-dart-sidebar-ad-block-bottom">
+    <script type="text/javascript">
+       googletag.cmd.push(function() {
+         googletag.display("div-gpt-ad-ex-dart-sidebar-ad-block-bottom");
+       });
+    </script>
+  </div>
+        <div class='pubnation' data-target='div-gpt-ad-ex-dart-sidebar-ad-block-bottom'>Report this ad</div>
+  </div>
+      </aside>
+    </div>
+
+      
+<div id="ex_dart--ex_dart_ncm" class="block block-ex-dart">
+      
+  <div class="block__content">
+    <div class="ad ad--dart ad--  block">
+  <div id="div-gpt-ad-ex-dart-ncm">
+    <script type="text/javascript">
+       googletag.cmd.push(function() {
+         googletag.display("div-gpt-ad-ex-dart-ncm");
+       });
+    </script>
+  </div>
+        <div class='pubnation' data-target='div-gpt-ad-ex-dart-ncm'>Report this ad</div>
+  </div>
+  </div>
+  </div>
+    <footer class="page-footer padding--all">
+        
+<div id="ex_blocks--examiner_site_social_media" class="block block-ex-blocks">
+      
+  <div class="block__content">
+    <ul class="list--plain list--horizontal social-widgets"><li>
+          <a class="icon icon--circular icon--before icon--inverse icon--medium icon--muted icon--social icon--facebook" href="http://www.facebook.com/Examinercom" target="_blank">
+            <span class="visuallyhidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon icon--before icon--circular icon--inverse icon--medium icon--muted icon--social icon--twitter" href="http://twitter.com/examinercom/" target="_blank">
+           <span class="visuallyhidden">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon icon--before icon--circular icon--inverse icon--medium icon--muted icon--social icon--linkedin" href="http://www.linkedin.com/company/examiner.com" target="_blank">
+            <span class="visuallyhidden">Linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon icon--before icon--circular icon--inverse icon--medium icon--muted icon--social icon--googleplus" href="http://plus.google.com/+examinercom/posts" target="_blank">
+            <span class="visuallyhidden">Google+</span>
+          </a>
+        </li>
+        <li>
+          <a class="icon icon--before icon--circular icon--inverse icon--medium icon--muted icon--social icon--pinterest" href="http://pinterest.com/examinercom/" target="_blank">
+            <span class="visuallyhidden">Pinterest</span>
+          </a>
+        </li>
+      </ul>  </div>
+  </div>
+
+<div id="ex_blocks--company" class="block block-ex-blocks">
+        <h2 class="block__title">
+      Company Links    </h2>
+    
+  <div class="block__content">
+    <ul class="list"><li class="0 first"><a href="http://www.examiner.com/About_Examiner" title="">About us</a></li>
+<li class="1"><a href="http://examinerontopic.com" title="OnTopic landing page">OnTopic custom content</a></li>
+<li class="2"><a href="http://www.examiner.com/Advertise" class="advertise">Advertise with us</a></li>
+<li class="7 last"><a href="http://www.examiner.com/sitemap" class="sitemap">Sitemap</a></li>
+</ul>  </div>
+  </div>
+<div class="legal text--center" id="footer-copyright-and-terms"><span class="copyright"><a href="http://www.examiner.com/">Examiner.com Entertainment</a> &#124; AXS Network &#124; &copy; 2006-2015 AXS Digital Group LLC d/b/a <a href="http://www.examiner.com/">Examiner.com &#124;</a></span> <a href="http://www.examiner.com/privacy_policy">Privacy Policy</a> &#124; <a href="http://www.examiner.com/Terms_of_Use.html">Terms of Use</a> &#124; <a href="http://www.examiner.com/About_Examiner">About us</a></div>
+    </footer>
+  </div>
+
+  <div class="navigation-wrapper">
+    <div class="navdrawer">
+        
+<div id="ex_taxonomy--hamburger-menu" class="block block-ex-taxonomy">
+        <h2 class="block__title">
+      Choose a Topic    </h2>
+    
+  <div class="block__content">
+    <ul class="navigation-menu"><li class="sc-arts--entertainment first"><a href="http://www.examiner.com/arts-and-entertainment">Arts &amp; Entertainment</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/arts-and-entertainment">Arts &amp; Entertainment</a></h2><ul><li class="first"><a href="http://www.examiner.com/music">Music</a></li><li><a href="http://www.examiner.com/movies">Movies</a></li><li><a href="http://www.examiner.com/tv">TV</a></li><li><a href="http://www.examiner.com/arts-and-exhibits">Arts &amp; Exhibits</a></li><li><a href="http://www.examiner.com/performing-arts">Performing Arts</a></li><li><a href="http://www.examiner.com/topic/reality-tv">Reality TV</a></li><li><a href="http://www.examiner.com/celebrity">Celebrity</a></li><li><a href="http://www.examiner.com/topic/pop-culture">Pop Culture</a></li><li><a href="http://www.examiner.com/animation">Animation</a></li><li><a href="http://www.examiner.com/topic/young-adult-fiction">Young Adult Fiction</a></li><li><a href="http://www.examiner.com/books">Books</a></li><li><a href="http://www.examiner.com/topic/movie-review">Movie Reviews</a></li><li class="last"><a href="http://www.examiner.com/topic/comic-books">Comic Books</a></li></ul></div></li><li class="sc-axs-entertainment"><a href="http://www.examiner.com/axs-entertainment">AXS Entertainment</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/axs-entertainment">AXS Entertainment</a></h2><ul><li class="first"><a href="http://www.examiner.com/music">Music</a></li><li><a href="http://www.examiner.com/movies">Movies</a></li><li><a href="http://www.examiner.com/tv">TV</a></li><li><a href="http://www.examiner.com/arts-and-exhibits">Arts &amp; Exhibits</a></li><li><a href="http://www.examiner.com/performing-arts">Performing Arts</a></li><li><a href="http://www.examiner.com/nfl">NFL</a></li><li><a href="http://www.examiner.com/nhl">NHL</a></li><li><a href="http://www.examiner.com/mlb">MLB</a></li><li><a href="http://www.examiner.com/nba">NBA</a></li><li><a href="http://www.examiner.com/fight-sports">Fight Sports</a></li><li><a href="http://www.examiner.com/soccer">Soccer</a></li><li><a href="http://www.examiner.com/recreational-sports">Recreational Sports</a></li><li><a href="http://www.examiner.com/topic/reality-tv">Reality TV</a></li><li class="last"><a href="http://www.examiner.com/topic/music-festivals">Music Festivals</a></li></ul></div></li><li class="sc-news"><a href="http://www.examiner.com/news">News</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/news">News</a></h2><ul><li class="first"><a href="http://www.examiner.com/politics">Politics</a></li><li><a href="http://www.examiner.com/business-and-finance">Business &amp; Finance</a></li><li><a href="http://www.examiner.com/topic/strange-news">Strange News</a></li><li><a href="http://www.examiner.com/crime-and-courts">Crime &amp; Courts</a></li><li><a href="http://www.examiner.com/topic/extreme-weather">Extreme Weather</a></li><li><a href="http://www.examiner.com/small-business">Small Business</a></li><li><a href="http://www.examiner.com/science-and-space">Science &amp; Space</a></li><li><a href="http://www.examiner.com/stock-market">Stock Market</a></li><li><a href="http://www.examiner.com/topic/gun-control">Gun Control</a></li><li><a href="http://www.examiner.com/topic/same-sex-marriage">Same-Sex Marriage</a></li><li><a href="http://www.examiner.com/topic/global-warming">Global Warming</a></li><li><a href="http://www.examiner.com/personal-finance">Personal Finance</a></li><li><a href="http://www.examiner.com/democrat">Democrat</a></li><li><a href="http://www.examiner.com/republican">Republican</a></li><li><a href="http://www.examiner.com/political-buzz">Political Buzz</a></li><li><a href="http://www.examiner.com/environment">Environment</a></li><li class="last"><a href="http://www.examiner.com/marketing-and-pr">Marketing and PR</a></li></ul></div></li><li class="sc-life"><a href="http://www.examiner.com/topic/life">Life</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/topic/life">Life</a></h2><ul><li class="first"><a href="http://www.examiner.com/home-and-living">Home &amp; Living</a></li><li><a href="http://www.examiner.com/pets">Pets</a></li><li><a href="http://www.examiner.com/style-and-fashion">Style &amp; Fashion</a></li><li><a href="http://www.examiner.com/family-and-parenting">Family &amp; Parenting</a></li><li><a href="http://www.examiner.com/health-and-fitness">Health &amp; Fitness</a></li><li><a href="http://www.examiner.com/topic/education">Education</a></li><li><a href="http://www.examiner.com/religion-and-spirituality">Religion &amp; Spirituality</a></li><li><a href="http://www.examiner.com/weight-loss-and-dieting">Weight Loss &amp; Dieting</a></li><li><a href="http://www.examiner.com/weddings">Weddings</a></li><li><a href="http://www.examiner.com/gardening">Gardening</a></li><li><a href="http://www.examiner.com/home-improvement">Home Improvement</a></li><li><a href="http://www.examiner.com/relationships">Relationships</a></li><li><a href="http://www.examiner.com/green-living">Green Living</a></li><li><a href="http://www.examiner.com/nutrition">Nutrition</a></li><li><a href="http://www.examiner.com/neighborhoods">Neighborhoods</a></li><li><a href="http://www.examiner.com/careers-and-workplace">Careers &amp; Workplace</a></li><li><a href="http://www.examiner.com/sales-and-deals">Sales &amp; Deals</a></li><li><a href="http://www.examiner.com/healthcare">Healthcare</a></li><li><a href="http://www.examiner.com/jobs">Jobs</a></li><li class="last"><a href="http://www.examiner.com/hobbies">Hobbies</a></li></ul></div></li><li class="sc-leisure"><a href="http://www.examiner.com/topic/leisure">Leisure</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/topic/leisure">Leisure</a></h2><ul><li class="first"><a href="http://www.examiner.com/food-and-drink">Food &amp; Drink</a></li><li><a href="http://www.examiner.com/travel">Travel</a></li><li><a href="http://www.examiner.com/spa-and-beauty">Spa &amp; Beauty</a></li><li><a href="http://www.examiner.com/autos-and-motorcycles">Autos &amp; Motorcycles</a></li><li><a href="http://www.examiner.com/bars-and-clubs">Bars &amp; Clubs</a></li><li><a href="http://www.examiner.com/topic/recipes">Recipes</a></li><li><a href="http://www.examiner.com/drinks">Drinks</a></li><li><a href="http://www.examiner.com/budget-travel">Budget Travel</a></li><li><a href="http://www.examiner.com/diy-mechanic">DIY Mechanic</a></li><li><a href="http://www.examiner.com/auto-reviews">Auto Reviews</a></li><li><a href="http://www.examiner.com/natural-beauty">Natural Beauty</a></li><li><a href="http://www.examiner.com/topic/luxury-travel">Luxury Travel</a></li><li><a href="http://www.examiner.com/topic/makeup">Makeup</a></li><li class="last"><a href="http://www.examiner.com/hair-and-nails">Hair &amp; Nails</a></li></ul></div></li><li class="sc-sports"><a href="http://www.examiner.com/sports">Sports</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/sports">Sports</a></h2><ul><li class="first"><a href="http://www.examiner.com/mlb">MLB</a></li><li><a href="http://www.examiner.com/nfl">NFL</a></li><li><a href="http://www.examiner.com/nba">NBA</a></li><li><a href="http://www.examiner.com/nhl">NHL</a></li><li><a href="http://www.examiner.com/soccer">Soccer</a></li><li><a href="http://www.examiner.com/fight-sports">Fight Sports</a></li><li><a href="http://www.examiner.com/recreational-sports">Recreational Sports</a></li><li><a href="http://www.examiner.com/college-sports">College Sports</a></li><li><a href="http://www.examiner.com/general-sports">General Sports</a></li><li><a href="http://www.examiner.com/fantasy-sports">Fantasy Sports</a></li><li><a href="http://www.examiner.com/motorsports">Motorsports</a></li><li><a href="http://www.examiner.com/hunting-and-fishing">Hunting &amp; Fishing</a></li><li><a href="http://www.examiner.com/hiking">Hiking</a></li><li><a href="http://www.examiner.com/topic/camping">Camping</a></li><li><a href="http://www.examiner.com/running">Running</a></li><li><a href="http://www.examiner.com/equestrian">Equestrian</a></li><li><a href="http://www.examiner.com/water-sports">Water Sports</a></li><li><a href="http://www.examiner.com/action-sports">Action Sports</a></li><li><a href="http://www.examiner.com/endurance-sports">Endurance Sports</a></li><li class="last"><a href="http://www.examiner.com/topic/recreation">Recreation</a></li></ul></div></li><li class="sc-tech"><a href="http://www.examiner.com/tech">Tech</a><div class="navigation-submenu"><h2><a href="http://www.examiner.com/tech">Tech</a></h2><ul><li class="first"><a href="http://www.examiner.com/gadgets-and-tech">Gadgets &amp; Tech</a></li><li><a href="http://www.examiner.com/games">Video Games</a></li><li><a href="http://www.examiner.com/internet">Internet</a></li><li><a href="http://www.examiner.com/tech-gear">Tech Gear</a></li><li><a href="http://www.examiner.com/topic/tablets">Tablets</a></li><li><a href="http://www.examiner.com/topic/iphone">iPhone</a></li><li><a href="http://www.examiner.com/topic/google-glass">Google Glass</a></li><li><a href="http://www.examiner.com/topic/wearable-tech">Wearable Tech</a></li><li><a href="http://www.examiner.com/topic/xbox-one">Xbox One</a></li><li><a href="http://www.examiner.com/topic/playstation-4">Playstation 4</a></li><li><a href="http://www.examiner.com/photography">Photography</a></li><li><a href="http://www.examiner.com/mmogs">MMOGs</a></li><li><a href="http://www.examiner.com/handheld-games">Handheld Games</a></li><li><a href="http://www.examiner.com/topic/facebook">Facebook</a></li><li><a href="http://www.examiner.com/topic/anonymous">Anonymous</a></li><li><a href="http://www.examiner.com/social-media">Social Media</a></li><li><a href="http://www.examiner.com/consoles">Consoles</a></li><li><a href="http://www.examiner.com/topic/bitcoin">Bitcoin</a></li><li><a href="http://www.examiner.com/topic/google">Google</a></li><li class="last"><a href="http://www.examiner.com/topic/twitter">Twitter</a></li></ul></div></li><li class="video"><a href="http://www.examiner.com/video-portal">Video</a></li><li class="user-login"><a href="http://www.examiner.com/user/login">Log In / Register</a></li><li class=" last"><a href="http://apply.examiner.com/">Write for Us</a></li></ul>  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<div id="hidden" style="display: none">
+    
+<div id="ex_search--ex_searchbox" class="block block-ex-search">
+      
+  <div class="block__content">
+    <form action="http://www.examiner.com/search/google" id="cse-search-box">
+  <div>
+  <input type="text" class="main-search" name="query" value="" size="38" title="Search this site" />
+  <input type="hidden" name="cx" value="partner-pub-7479725245717969:9ze01gmnpyp" />
+  <input type="hidden" name="cof" value="FORID:9" />
+  <input type="hidden" name="ie" value="ISO-8859-1" />
+  <button class="search-button ocmap ocm-search icon icon--replace icon--search form-submit" id="edit-search-form-submit" name="sa" value="Search" type="submit">Search</button>  </div>
+</form>
+  </div>
+  </div>
+</div>
+
+    <script type="text/javascript" src="http://cdn2-b.examiner.com/sites/default/files/js/js_2cBQ1DfFkt8zrbf_MtJPF7di7jwslFByQwZU63t57EE_440_1.js?np9zhx"></script>
+<script type="text/javascript" src="http://cdn2-b.examiner.com/sites/default/files/js/js_Ad5B_0-dVsflHJ4hVcF8rJPTIX1hDt78Lzn6zvz43Sc_440_1.js?np9zhx"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _ex_beacon="type=node&id=78383511&vid=264584846&event=dom_ready", _ex_beacon_url="http://beacon.examiner.com";
+$LAB.script("http:\/\/beacon.examiner.com");
+$LAB.script("http:\/\/www.google.com\/cse\/brand?form=cse-search-box&lang=en");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn2-b.examiner.com/sites/default/files/js/js_TGMzde3ItxVLO_dyaPuyQhs_OXqUmjN-boC4fkDuf5w_440_1.js?np9zhx"></script>
+<script type="text/javascript" src="http://cdn2-b.examiner.com/sites/default/files/js/js_Di6OlgzsM6uXXTAfNew9uGokBaOxLvGcq7hdjPA1T8Q_440_1.js?np9zhx"></script>
+<script type="text/javascript" src="http://cdn2-b.examiner.com/sites/default/files/js/js_4Jw9dzqoP-ppZQwODDGwFZiSQTIaIGbYrJwGLTf18-M_440_1.js?np9zhx"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"greyhound","theme_token":"BnRO_fDlBsKFju2byLg9w-zYzgPt2m7ZsFvz2qawNKo","js":{"public:\/\/js\/js_izMbklKled8Iz36tDzoCaxKTK2LGkVInrJgIP9SfR_g_440_1.js":1,"LABjs.stats":1,"examiner.page_init.labjs":1,"omniture.labjs":1,"0":1,"quantcast.labjs":1,"1":1,"googleanalytics.labjs":1,"comscore.labjs":1,"2":1,"3":1,"4":1,"LABjs.footer":1,"adexcite.labjs":1,"nativo.labjs":1,"public:\/\/js\/js_2cBQ1DfFkt8zrbf_MtJPF7di7jwslFByQwZU63t57EE_440_1.js":1,"public:\/\/js\/js_Ad5B_0-dVsflHJ4hVcF8rJPTIX1hDt78Lzn6zvz43Sc_440_1.js":1,"LABjs.header":1,"public:\/\/js\/js_TGMzde3ItxVLO_dyaPuyQhs_OXqUmjN-boC4fkDuf5w_440_1.js":1,"examiner.dom_ready.labjs":1,"public:\/\/js\/js_Di6OlgzsM6uXXTAfNew9uGokBaOxLvGcq7hdjPA1T8Q_440_1.js":1,"googlecse.labjs":1,"public:\/\/js\/js_4Jw9dzqoP-ppZQwODDGwFZiSQTIaIGbYrJwGLTf18-M_440_1.js":1},"css":{"sites\/all\/modules\/contrib\/extlink\/extlink.css":1,"sites\/all\/themes\/greyhound\/assets\/styles\/normalize.css":1,"modules\/system\/system.theme.css":1,"modules\/system\/system.base.css":1,"sites\/all\/modules\/contrib\/mollom\/mollom.css":1,"sites\/all\/themes\/greyhound\/assets\/styles\/style.css":1,"sites\/all\/themes\/greyhound\/assets\/styles\/print.css":1,"sites\/all\/themes\/greyhound\/assets\/styles\/ie.css":1}},"basePrefix":"","extlink":{"extTarget":"_blank","extClass":false,"extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":false,"mailtoLabel":"(link sends e-mail)"},"isMobile":false,"greyhound":{"menuImage":"data:image\/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAABICAQAAAAARl4uAAABZklEQVR4AezWMREAAAgCQPuX1hByx\/IQ4DdlthTwI2AwuFQwOFiwkxkMGAy2QMBgsAUCBoMtEE8CDAaDr7wyqnUYhqHoKIRCKZRCKZRCKZhCKYRCKYRCKYRCKNynZEet4k2Rut9nf0x38c2JvbRLpHULB9\/uTW1KPlmZO4X+6tya3oV+Kesd5YJWO6GI\/TMSlQW9OO2cgKOgVZEQK9h7+Z7Cgl5aGuCW1GYFtHdyLNKafgFu5zyuxarKwD4zSkDE\/gs4VsWZ13b+NLB3Sb815udgU+p+B\/sKjjLSgak\/f+l4Y9ihDXlS9vYuPsETnw\/BCWDQxsXRs47Zsmh6CL5GfDDyod2DqTzrTg\/BXKqTSzYGTzJtDkwVYe6dQDXtlR7My0RxeEVQOHzl7sHsWpo30G+s4MhTGy\/bqkkHD4kBOuUCsK8Myh58v82IU6GCr2AsuYLc9obyYF9Zc+3BHC8qAzWF\/\/m3+Af\/qT8hK63ijQAAAABJRU5ErkJggg=="},"ex_dart":{"fixedAd":0},"omnitureShare":{"addOmniture":["facebook","twitter","more_social_networks","pinterest","linkedin","googleplus","email","print"],"data":{"primary_tag":"Small Business","secondary_tags":"Tech","etid":"361566","nid":"78383511"}},"nextArticleUrl":"http:\/\/www.examiner.com\/article\/biggest-tax-hike-nevada-history-better-for-education-bad-for-business","disqusComments":"examinersite","disqus":{"domain":"examinersite","url":"http:\/\/www.examiner.com\/article\/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed","title":"How to Learn From Your Mistakes in a Tech Startup in Order to Succeed","identifier":"node\/78383511"},"ex_taxonomy":{"discovery_term_name":"Small Business"}});
+//--><!]]>
+</script>
+      <!-- start comscore beacon -->
+<noscript>
+  <img src="http://b.scorecardresearch.com/b?c1=2&amp;c2=6036472&amp;cv=1.3&amp;cj=1&amp;c4=http%3A//www.examiner.com/article/how-to-learn-from-your-mistakes-a-tech-startup-order-to-succeed" width="0" height="0" alt="" />
+</noscript>
+<!-- end comscore -->
+<!-- start chartbeat beacon -->
+<script type='text/javascript'>
+  var _sf_async_config={};
+  /** CONFIGURATION START **/
+  _sf_async_config.uid = 45966;
+  _sf_async_config.domain = 'examiner.com';
+  _sf_async_config.sections = 'Business & Finance';
+  _sf_async_config.authors = 'Jason Sherman';
+  /** CONFIGURATION END **/
+  (function(){
+    function loadChartbeat()
+    { window._sf_endpt=(new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js'); document.body.appendChild(e); }
+
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+    loadChartbeat : function()
+    { oldonload(); loadChartbeat(); };
+  })();
+</script>
+<!-- end chartbeat -->
+<!-- start quantcast beacon -->
+<noscript>
+  <div><img src="http://pixel.quantserve.com/pixel/p-631HUI1Pqfxis.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+<!-- end quantcast -->
+<!-- start googleanalytics beacon -->
+<!-- end googleanalytics -->
+<!-- start omniture SiteCatalyst beacon: code version H.21 Copyright 1997-2010 Omniture, Inc. More info available at http://www.omniture.com -->
+
+<noscript>
+  <div><a href="http://www.omniture.com" title="Web Analytics">
+    <img src="http://stats.examiner.com/b/ss/examinercom/1/H.21--NS/0/7154166" height="1" width="1" alt="" />
+  </a></div>
+</noscript><!--/DO NOT REMOVE/-->
+<!-- End omniture beacon ?> -->
+<!-- start pubnation beacon -->
+<script type="text/javascript">
+  var _pnq = _pnq || [];
+  _pnq.push(['setId', 'pn-67ec32890830070a']);
+  (function() {
+    var pnr = document.createElement("script");
+    pnr.async = true;
+    pnr.type = "text/javascript";
+    var useSSL = "https:" == document.location.protocol;
+    pnr.src = (useSSL ? "https:" : "http:") + "//report-ads-to.pubnation.com/dist/pnr.js?=pn-67ec32890830070a";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(pnr, s);
+  })();
+</script>
+<!-- end pubnation -->
+<!-- start examiner beacon -->
+<noscript><div id="ex_beacon"><img src="http://beacon.examiner.com/beacon.gif?guid=type=node&id=78383511&vid=264584846&event=no_script" style="display:none" width="0" height="0" alt=""/></div></noscript>
+<!-- end examiner beacon -->
+<!-- start yahoo_page beacon -->
+<div class="YAD-5287e7e8-12d4-3ecc-b4d8-d1abfa1ff763"></div>
+<script>
+    (function(a,b,c,d,e,f){a[d]||(a[d]=
+    function(){(a[d].q=a[d].q||[]).push([arguments,+new Date])});
+    e=b.createElement(c);f=b.getElementsByTagName(c)[0];
+    e.src='https://s.yimg.com/uq/syndication/yad.js';e.async=true;
+    f.parentNode.insertBefore(e,f)}(window,document,'script','yad'));
+    yad('5287e7e8-12d4-3ecc-b4d8-d1abfa1ff763', {
+    tracking: {cid: 'yahoo-recommends-inbound'}
+    });
+</script>
+<!-- end yahoo_page -->
+<!-- start taboola_page beacon -->
+<script type="text/javascript">
+window._taboola = window._taboola || [];
+window._taboola.push({article: "auto"});
+$LAB.script('http://cdn.taboolasyndication.com/libtrc/examiner/loader.js');
+</script>
+<!-- end taboola_page -->
+<!-- start yahoo_gemini beacon -->
+<script type="text/javascript">
+  var sectionCode = ["c3cb4a17-d578-45ce-8acc-8bfe3175e4c7","e722e5a3-5e5d-4ee0-aa2e-08d92e986d61"];
+
+  (function(){
+    var script = document.createElement("script");
+    script.async = true;
+    script.src = "https://s.yimg.com/av/gemini/ga/gemini.js";
+    document.body.appendChild(script);
+  })();
+</script>
+<!-- end yahoo_gemini -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$LAB.script("http:\/\/Q1MediaHydraPlatform.com\/ads\/video\/controller.php?qid=54f36c65ad1d148132958681&qz=1");
+$LAB.script("http:\/\/a.postrelease.com\/serve\/load.js?async=true");
+//--><!]]>
+</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ff73f2810b","applicationID":"6416745","transactionName":"NFMDMkZQVxAEWhVQDQ0ZIAVAWFYNSlwZZhIMQhEJQUNLCjpRBFgUClMSEmtfVgcAZhJRDRQ=","queueTime":0,"applicationTime":273,"atts":"GBQARA5KRB4=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-632.min.js"}</script></body>
+</html>

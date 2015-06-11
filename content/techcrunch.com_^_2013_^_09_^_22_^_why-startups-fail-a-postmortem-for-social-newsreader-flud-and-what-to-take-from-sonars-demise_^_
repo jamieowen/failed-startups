@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en">
+<head>
+	<title>Why Startups Fail: A Postmortem For Flud, The Social Newsreader  |  TechCrunch</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta charset="UTF-8">
+			<script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+		<meta name="p:domain_verify" content="6189ff68ce30e30f12b40b3b40873027"/>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-title" content="TechCrunch">
+	<meta name="robots" content="NOYDIR,NOODP" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/favicon.ico" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon.png" rel="apple-touch-icon-precomposed" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon_2x.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon_ipad.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon_ipad_2x.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+			<link rel="alternate" href="android-app://com.aol.mobile.techcrunch/http/techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/" />
+	
+	<script type="text/javascript">window.bN_cfg={h:window.location.hostname};</script>
+	<meta name="google-site-verification" content="4U1OC1LwZlFHAehLhCV4rt3YzWI_AyF7Gb0XqlaVEhE" />
+<meta name="msvalidate.01" content="5ABD8A078F3356F3A6A8C8643C31FB8F" />
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=techcrunch.com&amp;id=24588526&amp;t=1434017169&amp;back=http%3A%2F%2Ftechcrunch.com%2F2013%2F09%2F22%2Fwhy-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="TechCrunch &raquo; Feed" href="http://techcrunch.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TechCrunch &raquo; Comments Feed" href="http://techcrunch.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TechCrunch &raquo; Why Startups Fail: A Postmortem For Flud, The Social&nbsp;Newsreader Comments Feed" href="http://techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/_static/??-eJx9jtFuwjAMRX9oxoMi1Jdp35JmJjHESZS4oP09Lohp07a+WPda58jGawVfslJWlBlqmgPnjonP1PFEWp0/w71tfO8v+DfuSyPbS3W6EEIf7CiRGLamST08rSVGu7V65lqNhmmqjXoHm8KzgEY79Nt7rPHCFZV89G3OPsLudTtg189EG+H8kBhzUTavf4W1LwIVSMU75ZJ/FDgmx21NbTSlEiwGNOpb/e/7uMeQyuTSArzL23Y/DONhHMbd6QaAY6Ph' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Live_Cache = {"ajaxurl":"http:\/\/techcrunch.com","auto_updates":{"live-cache-widget-1-title":"#live-cache-widget-1 h2","live-cache-widget-1-text":"#live-cache-widget-1 div","live-cache-subtitle":".live-island .live-subtitle","live-cache-text":".live-island .vid-caption","live-cache-title-livecaster":".livecaster-title","live-cache-text-livecaster":".livecaster-text"}};
+var gravityInsightsParams = {"type":"content","action":"","site_guid":"fca4fa8af1286d8a77f26033fdeed202"};
+var tcOmniture = {"pageName":"Why Startups Fail: A Postmortem For Flud, The Social Newsreader","prop1":"article","prop2":"apps","prop54":"wordpress","prop9":"tcr:870190","prop16":"standard-article","prop19":"flud|startups|fail|postmortem|newsreader|social|venture capital","prop23":"09-22-2013","prop64":"gravity","prop65":"original_content","prop22":"rip-empson","omni_env":"prod"};
+var TC_Async_Head_Scripts = {"tc_ads_wrapper_omniture":"http:\/\/o.aolcdn.com\/os_merge\/?file=\/ads\/adsWrapper.js&file=\/moat\/prod\/moatuac.js"};
+var TC_Google_Analytics_Config = {"account":"UA-991406-1","domain":"techcrunch.com"};
+var tcKorrelate = "post";
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sranalytics = {"version":"0.1.4","pid":"518833fa642b2405ba000008","iframe":"0","title":"Why Startups Fail: A Postmortem For Flud, The Social Newsreader","url":"http:\/\/techcrunch.com\/2013\/09\/22\/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise\/","date":"2013-09-23 02:54:29","channels":["apps","enterprise","fundings-exits","mobile","social","startups","tc"],"tags":["FLUD","Startups","FAIL","postmortem","newsreader","social","venture capital"],"authors":["Rip Empson"]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyNkGluAzEIhS9Ux52lP6uehRDiwfVWw8woOX2cKF01aishIcHj44Fdi+GEYT6QWN/ibaZ6uqedlwf7m8BEdhWUdpHTuxhzUkp61ZYsGkkEHG10v6/itDCtf8o8aQF8NZWEz7RlUNZj3ntC/cnSiZoZu3CxSjhhnRNOpn/sBgsipLfpwHvz2d26618Yl7MLm2/5Ml7C7Dg1xxxLoHYSNBAkCCdlbBhYQLByaUipH/UGfInP3TgMT10/9qO/AM5tp9I='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tctechcrunch2011.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Poshmark, The Mobile Marketplace For Women To Sell And Swap Clothes, Crosses 1M Items Sold So Far This&nbsp;Year' href='http://techcrunch.com/2013/09/22/poshmark-growth-downloads-sales/' />
+<link rel='next' title='Hackathons And How To Find A Parking Spot In Rio De Janeiro With Team Rua&nbsp;Aberta' href='http://techcrunch.com/2013/09/22/hackathons-hyperbole-and-how-to-find-a-parking-spot-in-rio-de-janeiro/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/' />
+<link rel='shortlink' href='http://wp.me/p1FaB8-3Enk' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Ftechcrunch.com%2F2013%2F09%2F22%2Fwhy-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Ftechcrunch.com%2F2013%2F09%2F22%2Fwhy-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise%2F&amp;for=wpcom-auto-discovery" /><link rel='openid.server' href='http://tctechcrunch2011.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://tctechcrunch2011.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://techcrunch.com/osd.xml" title="TechCrunch" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+
+
+<!-- BEGIN Sailthru Horizon Meta Information -->
+<meta name="sailthru.date" content="2013-09-22 19:54:29" />
+<meta name="sailthru.title" content="Why Startups Fail: A Postmortem For Flud, The Social&nbsp;Newsreader" />
+<meta name="sailthru.tags" content="FLUD, Startups, FAIL, postmortem, newsreader, social, venture capital" />
+<meta name="sailthru.author" content="&lt;a href=&quot;/author/rip-empson/&quot; title=&quot;Posts by Rip Empson&quot; onclick=&quot;s_objectID=&#039;river_author&#039;;&quot; rel=&quot;author&quot;&gt;Rip Empson&lt;/a&gt; &lt;span class=&quot;twitter-handle&quot;&gt;(&lt;a href=&quot;https://twitter.com/ripemp&quot; rel=&quot;external&quot;&gt;@ripemp&lt;/a&gt;)&lt;/span&gt;" />
+<meta name="sailthru.description" content="
+In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too familiar, even cliche, story in Silicon Valley." />
+<meta name="sailthru.image.full" content="https://tctechcrunch2011.files.wordpress.com/2013/09/flud-hand.jpeg" />
+<meta name="sailthru.image.thumb" content="https://tctechcrunch2011.files.wordpress.com/2013/09/flud-hand.jpeg?w=50" />
+<!-- END Sailthru Horizon Meta Information -->
+
+	<meta property="fb:app_id" content="187288694643718" />
+	<meta property="fb:admins" content="543710097,771265067,1661021707,1550970059,663677613,1178144075,726995222,506404657,4700188" />
+			<meta property="article:publisher" content="https://www.facebook.com/techcrunch" />
+	<meta property="og:site_name" content="TechCrunch" />
+<meta property="og:site" content="social.techcrunch.com" />
+<meta property="og:title" content="Why Startups Fail: A Postmortem For Flud, The Social&nbsp;Newsreader" />
+<meta property="og:description" content="In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too.." />
+<meta property="og:image" content="https://tctechcrunch2011.files.wordpress.com/2013/09/flud-hand.jpeg?w=300&amp;h=199&amp;crop=1" />
+<meta property="og:url" content="http://social.techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/" />
+<meta property="og:type" content="article" />
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:image:src' content='https://tctechcrunch2011.files.wordpress.com/2013/09/flud-hand.jpeg?w=300&#038;h=199&#038;crop=1' />
+<meta name='twitter:site' content='@techcrunch' />
+<meta name='twitter:url' content='http://techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/' />
+<meta name='twitter:description' content='In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too familiar, even cliche, story in Silicon&hellip;' />
+<meta name='twitter:title' content='Why Startups Fail: A Postmortem For Flud, The Social Newsreader |&hellip;' />
+<meta class="swiftype" name="author" data-type="string" content="Rip Empson" />
+<meta class="swiftype" name="title" data-type="string" content="Why Startups Fail: A Postmortem For Flud, The Social Newsreader" />
+<meta class="swiftype" name="image" data-type="enum" content="https://tctechcrunch2011.files.wordpress.com/2013/09/flud-hand.jpeg?w=150" />
+<meta class="swiftype" name="object_type" data-type="string" content="post" />
+<meta class="swiftype" name="url" data-type="enum" content="http://techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/" />
+<meta class="swiftype" name="timestamp" data-type="date" content="2013-09-22 19:54:29" />
+<meta class="swiftype" name="content" data-type="text" content="In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too familiar, even cliche, story in Silicon Valley. But when San Diegoan co-founders Bobby Ghoshal and Matthew Ausonio officially shuttered the Flud app and website in August, after three years of development, it was a disappointing final chapter for a product that had attracted more buzz in a year than the average startup sees in its entire lifecycle. It was also a surprising conclusion, considering that Flud had managed to raise $2.1 million in seed financing from investors Detroit Venture Partners, Ludlow Ventures, Behance co-founder and CEO Scott Belsky and JFJF Ventures, among others. Furthermore, reports circulated last year that FLUD was continuing to see interest from investors and was in the process of raising up to $8 million in new funding. But Flud never closed on the round and today, the startup is no more. In fact what&hellip;" />
+<meta class="swiftype" name="excerpt" data-type="text" content="In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too familiar, even cliche, story in Silicon Valley. But when San Diegoan co-founders Bobby Ghoshal and Matthew Ausonio officially shuttered the Flud app and website in August, after three years of development, it was a disappointing final chapter for&hellip;" />
+<meta class="swiftype" name="category" data-type="string" content="Apps" />
+<meta class="swiftype" name="category" data-type="string" content="Enterprise" />
+<meta class="swiftype" name="category" data-type="string" content="Fundings &amp; Exits" />
+<meta class="swiftype" name="category" data-type="string" content="Mobile" />
+<meta class="swiftype" name="category" data-type="string" content="Social" />
+<meta class="swiftype" name="category" data-type="string" content="Startups" />
+<meta class="swiftype" name="category" data-type="string" content="TC" />
+<meta class="swiftype" name="tag" data-type="string" content="FLUD" />
+<meta class="swiftype" name="tag" data-type="string" content="Startups" />
+<meta class="swiftype" name="tag" data-type="string" content="FAIL" />
+<meta class="swiftype" name="tag" data-type="string" content="postmortem" />
+<meta class="swiftype" name="tag" data-type="string" content="newsreader" />
+<meta class="swiftype" name="tag" data-type="string" content="social" />
+<meta class="swiftype" name="tag" data-type="string" content="venture capital" />
+	<meta name="description" content="In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too.." />
+	<script type="text/javascript">var ajaxurl = "http://techcrunch.com/wp-admin/admin-ajax.php"</script><meta name="application-name" content="TechCrunch" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Startup and Technology News" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://techcrunch.com/feed/;icon-uri=http://0.gravatar.com/blavatar/ad5b2a2b10ddd8fc4e4588abd4e12a84?s=16" />
+	<style type="text/css">#site-logo { background: url(http://s0.wp.com/wp-content/themes/vip/techcrunch-2013/images/logos/green.png) no-repeat !important; }</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+	<script src="http://o.aolcdn.com/os_merge/?file=/aol/beacon.min.js&file=/aol/omniture.min.js" type="text/javascript"></script>
+	<!--[if lte IE 8 ]>
+	<script src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/js/respond.min.js"></script>
+	<![endif]-->
+	<meta name="st:robots" content="follow, index">
+</head>
+<body class="single single-post postid-870190 single-format-standard mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+
+<div class="ad-top-mobile">
+	<div id="adsDiv2b85153c36" class="mobile-ads-center"></div>
+<script>
+/* <![CDATA[ */
+if (ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.htmlAdWH('348-14-15-be7', ads.width(), ads.height(), 'f', 'adsDiv2b85153c36');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div>
+
+<header class="header cf header-context-news" role="banner">
+
+	<div class="nav-bar">
+		<div class="lc">
+			<div class="lc">
+				<a href="/" class="logo-link" title="TechCrunch" data-omni-sm="gbl_topnav"><img src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/logo.svg" alt="TechCrunch" class="logo"></a>
+
+				<a href="#" class="toggle-link nav-toggle icon-hamburger"><span class="is-vishidden">Menu</span></a>
+				<a href="#" class="toggle-link search-form-toggle icon-mag"><span class="is-vishidden">Search</span></a>
+
+				<div class="header-logo-bar cf">
+
+					<div class="header-social">
+						<ul class="inline-list social-list sprite-social">
+							<li class="nav-followus">Follow Us</li><li class="first">
+								<a href="https://www.facebook.com/techcrunch" rel="external" class="spricon nosprite icon-facebook" target="_blank"><span class="is-vishidden">Facebook</span></a>
+							</li><li>
+								<a href="https://instagram.com/techcrunch" rel="external" class="spricon nosprite icon-instagram" target="_blank"><span class="is-vishidden">Instagram</span></a>
+							</li><li>
+								<a href="https://twitter.com/techcrunch" rel="external" class="spricon nosprite icon-twitter" target="_blank"><span class="is-vishidden">Twitter</span></a>
+							</li><li class="youtube nav-aux">
+								<a href="http://www.youtube.com/user/techcrunch" rel="external" class="spricon nosprite icon-youtube" target="_blank"><span class="is-vishidden">Youtube</span></a>
+							</li><li class="flipboard nav-aux">
+								<a href="https://flipboard.com/@techcrunch" rel="external" class="spricon nosprite icon-flipboard" target="_blank"><span class="is-vishidden">Flipboard</span></a>
+							</li><li class="linkedin nav-aux">
+								<a href="http://www.linkedin.com/company/techcrunch" rel="external" class="spricon nosprite icon-linkedin" target="_blank"><span class="is-vishidden">LinkedIn</span></a>
+							</li><li class="nav-aux">
+								<a href="https://plus.google.com/+TechCrunch" rel="external" class="spricon nosprite icon-google-plus" target="_blank"><span class="is-vishidden">Google+</span></a>
+							</li><li class="rss nav-aux">
+								<a href="/rssfeeds/" class="spricon nosprite icon-rss"><span class="is-vishidden">RSS</span></a>
+							</li>
+							<li class="nav-social-more">
+								<a href="#" class="icon-caret-down"><span class="is-vishidden">More</span></a>
+								<ul>
+									<li class="youtube">
+										<a href="http://www.youtube.com/user/techcrunch" rel="external" class="spricon nosprite icon-youtube" target="_blank"><span class="is-vishidden">Youtube</span></a>
+									</li><li class="flipboard">
+										<a href="https://flipboard.com/@techcrunch" rel="external" class="spricon nosprite icon-flipboard" target="_blank"><span class="is-vishidden">Flipboard</span></a>
+									</li><li class="linkedin">
+										<a href="http://www.linkedin.com/company/techcrunch" rel="external" class="spricon nosprite icon-linkedin" target="_blank"><span class="is-vishidden">LinkedIn</span></a>
+									</li><li class="google-plus">
+										<a href="https://plus.google.com/+TechCrunch" rel="external" class="spricon nosprite icon-google-plus" target="_blank"><span class="is-vishidden">Google+</span></a>
+									</li><li class="rss">
+										<a href="/rssfeeds/" class="spricon nosprite icon-rss"><span class="is-vishidden">RSS</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<div class="header-tip">
+							<a href="/got-a-tip/" data-omni-sm="gbl_topnav">
+								Got a tip? <span>Let us know.</span>
+							</a>
+						</div>
+					</div>
+
+					<nav class="nav-primary">
+	<ul class="nav" id="nav">
+		<li class="nav-level1 nav-news">
+			<a href="/" class="nav-parent icon-caret-down">News</a>
+
+			<div class="nav-subnav single-col">
+				<ul class="nav-col">
+					<li class="subnav-title">Channels</li>
+					<ul class="subnav-channel" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-899745" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899745"><a href="http://techcrunch.com/startups/">Startups</a></li>
+<li id="menu-item-899746" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899746"><a href="http://techcrunch.com/mobile/">Mobile</a></li>
+<li id="menu-item-899747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899747"><a href="http://techcrunch.com/gadgets/">Gadgets</a></li>
+<li id="menu-item-899748" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899748"><a href="http://techcrunch.com/enterprise/">Enterprise</a></li>
+<li id="menu-item-899749" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899749"><a href="http://techcrunch.com/social/">Social</a></li>
+<li id="menu-item-899750" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899750"><a href="http://techcrunch.com/europe/">Europe</a></li>
+<li id="menu-item-901944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-901944"><a href="/asia">Asia</a></li>
+</ul>				</ul>
+				<div class="nav-col nav-col-border">
+					<a href="http://techcrunch.com/topic/">All Topics</a>
+					<a href="http://techcrunch.com/gallery/">All Galleries</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-level1 nav-shows">
+			<a href="/video/" class="nav-parent icon-caret-down">Video</a>
+
+			<div class="nav-subnav">
+				<div class="subnav-title">Shows</div>
+				<ul class="nav-col">
+					<ul class="subnav-tctv-shows-left" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-1134051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134051"><a href="http://techcrunch.com/video/tctv-news/">TCTV News</a></li>
+<li id="menu-item-1134050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134050"><a href="http://techcrunch.com/video/crunchreport/">Crunch Report</a></li>
+<li id="menu-item-899755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899755"><a href="http://techcrunch.com/video/crunchweek/">CrunchWeek</a></li>
+<li id="menu-item-1106526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1106526"><a href="http://techcrunch.com/events/disrupt-ny-2015/video/">Disrupt NY 2015</a></li>
+</ul>				</ul>
+				<ul class="nav-col">
+					<ul class="subnav-tctv-shows-left" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-1106527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1106527"><a href="http://techcrunch.com/video/techcrunch-gadgets/">Gadgets</a></li>
+<li id="menu-item-1134052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134052"><a href="http://techcrunch.com/video/fly-or-die/">Fly or Die</a></li>
+<li id="menu-item-1041669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1041669"><a href="http://techcrunch.com/video/inside-jobs/">Inside Jobs</a></li>
+<li id="menu-item-899762" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899762"><a href="http://techcrunch.com/video/tc-cribs/">TC Cribs</a></li>
+</ul>				</ul>
+				<div class="subnav-separator"></div>
+				<div class="nav-col nav-col-border">
+					<a href="/video/">All Shows</a>
+				</div>
+				<div class="nav-col nav-col-border">
+					<a href="/video/all/">All Videos</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-level1 nav-events">
+			<a href="/events/" class="nav-parent icon-caret-down">Events</a>
+
+			<div class="nav-subnav">
+				<ul class="nav-col">
+					<li class="subnav-title">TechCrunch Events</li>
+					<ul class="subnav-events-tc-events" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-899739" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899739"><a href="http://techcrunch.com/event-type/disrupt/">Disrupt</a></li>
+<li id="menu-item-936211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-936211"><a href="http://techcrunch.com/startup-battlefield/">Startup Battlefield</a></li>
+<li id="menu-item-899740" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899740"><a href="http://techcrunch.com/event-type/crunchies-23/">Crunchies</a></li>
+<li id="menu-item-899741" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899741"><a href="http://techcrunch.com/event-type/meetups/">Meetups</a></li>
+<li id="menu-item-899742" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899742"><a href="http://techcrunch.com/event-type/international-city/">International City Events</a></li>
+<li id="menu-item-899744" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899744"><a href="http://techcrunch.com/event-type/hackathon-2/">Hackathon</a></li>
+<li id="menu-item-1084973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1084973"><a href="http://techcrunch.com/events/include">Include</a></li>
+</ul>				</ul>
+				<ul class="nav-col">
+					<li class="subnav-title">News About</li>
+					<ul class="subnav-events-news-about" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-1021048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1021048"><a href="http://techcrunch.com/events/google-io/">Google I/O 2014</a></li>
+<li id="menu-item-899737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899737"><a href="http://techcrunch.com/events/ces-2015/">CES</a></li>
+<li id="menu-item-899736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899736"><a href="http://techcrunch.com/event-type/sxsw-2/">SXSW</a></li>
+<li id="menu-item-1010535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1010535"><a href="http://techcrunch.com/events/wwdc-2014/">WWDC 2014</a></li>
+</ul>				</ul>
+				<div class="subnav-separator"></div>
+				<div class="nav-col-border">
+					<a href="/events/">All Events</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-crunchbase">
+			<a href="https://www.crunchbase.com" class="nav-parent">Crunchbase</a>
+		</li>
+	</ul>
+</nav>
+
+		<nav class="nav-trending">
+			<ul class="nav">
+				<li id="trending-icon">
+					Trending
+					<i class="icon-trending"></i>
+				</li>
+				<li id="menu-item-1159242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1159242"><a href="http://techcrunch.com/topic/company/spotify/">Spotify</a></li>
+<li id="menu-item-899781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899781"><a href="http://techcrunch.com/tag/apple/">Apple</a></li>
+<li id="menu-item-1135158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1135158"><a href="http://techcrunch.com/topic/company/uber">Uber</a></li>
+			</ul>
+		</nav>
+
+		<nav class="nav-contextual">
+			<ul class="nav">
+				<li class="nav-news">
+					<a href="/" class="nav-parent">News</a>
+				</li>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899745"><a href="http://techcrunch.com/startups/">Startups</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899746"><a href="http://techcrunch.com/mobile/">Mobile</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899747"><a href="http://techcrunch.com/gadgets/">Gadgets</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899748"><a href="http://techcrunch.com/enterprise/">Enterprise</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-899749"><a href="http://techcrunch.com/social/">Social</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899750"><a href="http://techcrunch.com/europe/">Europe</a></li>
+			</ul>
+		</nav>
+	
+										<form action="/" method="get" class="search-form">
+						<fieldset>
+							<legend>Search TechCrunch</legend>
+							<label for="s">Search TechCrunch</label>
+							<input type="search" placeholder="Search" class="search-field" name="s" value="" />
+							<button class="search-submit">
+								<span class="icon-mag" aria-hidden="true"></span>
+								<span class="is-vishidden">Search</span>
+							</button>
+							<button class="search-close">
+								<span class="icon-close" aria-hidden="true"></span>
+								<span class="is-vishidden">Search</span>
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<div class="header-ad">
+	<div id="adsDiv7a33234d8f" class=""></div>
+<script>
+/* <![CDATA[ */
+if (!ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.htmlAdWH('93458668', "LB", "LB", 'f', 'adsDiv7a33234d8f');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div>
+
+
+		<div class="announcement announcement-flat-background announcement-centered">
+			<div class="lc">
+				<div class="announcement-bg">
+										<div class="announcement_left">
+						<a href="http://apply.tcdisrupt.com/">
+														<span class="announcement-text">
+							<strong class="announcement-headline">Startup Battlefield</strong>&nbsp;Now Accepting Applications for Disrupt SF Startup Battlefield								<span class="announcement-link-text">
+																			Apply Now																												<span class="icon-caret-right"></span>
+																	</span>
+						</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!-- Begin: Article Body Content - Main -->
+<div role="main" class="fluid" style="">
+	<!-- Begin: Article - Primary -->
+	<article class="article lc">
+		<div class="l-two-col-expose">
+
+			<!-- Begin: Article Content - Body Right Column -->
+			<div class="l-main-container">
+				<div class="l-main">
+				
+				<!-- Begin: Article Header -->
+				<header class="article-header page-title">
+					<!-- Begin: Article Eyebrows -->
+<div class="tags">
+	
+			<div class="tag-item">
+				<a href="http://techcrunch.com/apps/" class="tag" data-omni-sm="art_articlecategory">Apps</a>
+
+				<div class="links" id="tc-tag-item-apps">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/06/10/homekit-in-ios-9-supports-custom-triggers-apple-watch-without-iphone-and-more/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2014/06/32-homekit.png?w=150" alt="HomeKit In iOS 9 Supports Custom Triggers, Apple Watch Without iPhone And&nbsp;More" />
+
+					<div class="block-content">
+						<h3>HomeKit In iOS 9 Supports Custom Triggers, Apple Watch Without iPhone And&nbsp;More</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-06-10 14:12:32"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/06/10/hoteltonight-expands-location-based-offers-with-georates-and-ht-escape/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/06/phone-screenshots.jpg?w=150" alt="HotelTonight Expands Location-Based Offers With GeoRates And HT&nbsp;Escape" />
+
+					<div class="block-content">
+						<h3>HotelTonight Expands Location-Based Offers With GeoRates And HT&nbsp;Escape</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-06-10 12:11:59"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/06/10/apple-watch-is-about-to-become-a-perfect-podcast-machine/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/06/screen-shot-2015-06-10-at-11-40-03-am.png?w=150" alt="Apple Watch Is About To Become A Perfect Podcast&nbsp;Machine" />
+
+					<div class="block-content">
+						<h3>Apple Watch Is About To Become A Perfect Podcast&nbsp;Machine</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-06-10 11:44:10"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/apps/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		
+			<div class="tag-item">
+				<a href="http://techcrunch.com/tag/fail/" class="tag" data-omni-sm="art_articlecategory">FAIL</a>
+
+				<div class="links" id="tc-tag-item-fail">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2014/04/03/after-week-long-my-cloud-outage-western-digital-is-making-a-case-for-dropbox-box/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2014/04/broken-hd.jpg?w=150" alt="After Week-Long My Cloud Outage, Western Digital Is Making A Case For Dropbox,&nbsp;Box" />
+
+					<div class="block-content">
+						<h3>After Week-Long My Cloud Outage, Western Digital Is Making A Case For Dropbox,&nbsp;Box</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2014-04-03 05:37:58"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2013/03/25/sigh/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2013/03/z10-facepalm.jpg?w=125" alt="You&#8217;re Doing It Wrong,&nbsp;BlackBerry" />
+
+					<div class="block-content">
+						<h3>You&#8217;re Doing It Wrong,&nbsp;BlackBerry</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2013-03-25 17:02:28"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2011/06/14/blake-griffin-demos-the-upcoming-vizio-android-tablet/">
+					<img src="http://i0.wp.com/tctechcrunch2011.files.wordpress.com/2011/06/blake.jpg?resize=150%2C150" alt="Blake Griffin Demos The Upcoming Vizio Android&nbsp;Tablet" />
+
+					<div class="block-content">
+						<h3>Blake Griffin Demos The Upcoming Vizio Android&nbsp;Tablet</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2011-06-14 09:56:41"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/tag/fail/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		
+			<div class="tag-item">
+				<a href="http://techcrunch.com/tag/startups/" class="tag" data-omni-sm="art_articlecategory">Startups</a>
+
+				<div class="links" id="tc-tag-item-startups">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/05/01/rocana-lands-15m-to-bring-big-data-analysis-to-it-ops/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/05/424442436_fcd1fc9241_o.jpg?w=150" alt="Rocana Lands $15M To Bring Big Data Analysis To IT&nbsp;Ops" />
+
+					<div class="block-content">
+						<h3>Rocana Lands $15M To Bring Big Data Analysis To IT&nbsp;Ops</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-05-01 07:00:49"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/04/25/we-are-all-venture-capitalists-now/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/04/joust.jpg?w=150" alt="We Are All Venture Capitalists&nbsp;Now" />
+
+					<div class="block-content">
+						<h3>We Are All Venture Capitalists&nbsp;Now</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-04-25 06:00:08"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/04/06/with-tech-whats-old-is-new-again/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/04/1179484711_b92bbc4ab8_o.jpg?w=150" alt="With Tech, What&#8217;s Old Is New&nbsp;Again" />
+
+					<div class="block-content">
+						<h3>With Tech, What&#8217;s Old Is New&nbsp;Again</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-04-06 12:42:37"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/tag/startups/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		
+			<div class="tag-item">
+				<a href="http://techcrunch.com/tag/flud/" class="tag" data-omni-sm="art_articlecategory">FLUD</a>
+
+				<div class="links" id="tc-tag-item-flud">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2013/04/19/mobile-social-newsreader-flud-finds-a-home-in-the-enterprise-with-a-sharepoint-yammer-integrated-service-for-both-private-and-public-content/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2013/04/flud-hand.jpeg?w=150" alt="Mobile, Social Newsreader Flud Finds A Home In The Enterprise With A SharePoint &amp; Yammer-Integrated Service For Both Private And Public&nbsp;Content" />
+
+					<div class="block-content">
+						<h3>Mobile, Social Newsreader Flud Finds A Home In The Enterprise With A SharePoint &amp; Yammer-Integrated Service For Both Private And Public&nbsp;Content</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2013-04-19 10:14:49"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2012/04/05/flud-2-0-rolls-out-to-android-windows-phone-as-startup-readies-its-series-a/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2012/04/fludandroid_2.png?w=150" alt="FLUD 2.0 Rolls Out To Android &amp; Windows Phone, As Startup Readies Its Series&nbsp;A" />
+
+					<div class="block-content">
+						<h3>FLUD 2.0 Rolls Out To Android &amp; Windows Phone, As Startup Readies Its Series&nbsp;A</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2012-04-05 08:15:06"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2011/12/07/with-v2-0-flud-wants-to-do-for-social-news-reading-what-spotify-did-for-music/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2011/11/screen-shot-2011-12-07-at-8-53-31-am.png?w=150" alt="With v2.0, Flud Wants To Do For Social News Reading What Spotify Is Doing For&nbsp;Music" />
+
+					<div class="block-content">
+						<h3>With v2.0, Flud Wants To Do For Social News Reading What Spotify Is Doing For&nbsp;Music</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2011-12-07 09:53:58"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/tag/flud/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+<!-- End: Article Eyebrows -->
+
+					
+					<h1 class="alpha tweet-title">Why Startups Fail: A Postmortem For Flud, The Social Newsreader</h1>
+					<div class="title-left">
+					<div class="byline">
+	Posted <time datetime="2013-09-22" class="timestamp">Sep 22, 2013</time> by <a href="/author/rip-empson/" title="Posts by Rip Empson" onclick="s_objectID='river_author';" rel="author">Rip Empson</a> <span class="twitter-handle">(<a href="https://twitter.com/ripemp" rel="external">@ripemp</a>)</span></div>
+<!-- Begin: Social Share Icons -->
+<div class="social-share social-share-inline">
+	<ul class="inline-list social-share-list" id="social-share" data-permalink="http://techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/" data-shortlink="http://tcrn.ch/18k5sCq" data-shareTitle="Why Startups Fail: A Postmortem For Flud, The Social&nbsp;Newsreader" data-post-id="870190">
+				<li class="total-shares">
+			<h5 class="total-shares-count">0</h5><br />
+			<small>SHARES</small>
+		</li>
+							<li>
+				<a href="#comments" rel="external" class="comment icon-comment launch-social-load"></a>
+			</li>
+		
+		<li>
+			<a href="#" rel="external" class="facebook icon-facebook"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="twitter icon-twitter"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="linkedin icon-linkedin"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="google-plus icon-google-plus"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="reddit icon-reddit"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="stumbleupon icon-stumbleupon"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="email icon-email"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="flipboard icon-flipboard"></a>
+		</li>
+			</ul>
+</div>
+
+<div class="social-share social-share-fixed">
+	<div class="less">
+		<a class="blank"></a>
+		<a class="icon-flipboard" href="#"></a>
+		<a class="icon-stumbleupon" href="#"></a>
+		<a class="icon-reddit" href="#"></a>
+		<a class="icon-email" href="#"></a>
+	</div>
+
+	<div class="shown">
+		<a class="icon-facebook" href="#"></a>
+		<a class="icon-twitter" href="#"></a>
+		<a class="icon-linkedin" href="#"></a>
+		<a class="icon-whatsapp" href="#"></a>
+		<a class="icon-email" href="#"></a>
+	</div>
+</div>
+
+<!-- End: Social Share Icons -->
+
+					</div>
+					<a href="http://techcrunch.com/2013/09/22/poshmark-growth-downloads-sales/" class="next-link" data-omni-sm="art_nextstory">
+						<div class="next-story-link">Next Story</div>
+						<div class="next-story-full">
+							<h4 class="next-title">Poshmark, The Mobile Marketplace For Women To Sell And Swap Clothes, Crosses 1M Items Sold So Far This&nbsp;Year</h4>
+						</div>
+					</a>
+				</header>
+				<!-- End: Article Header -->
+
+				<!-- Begin: Article Body -->
+				<div class="l-two-col">
+
+					<!-- Begin: Article Body - Main -->
+					<div class="l-main-container">
+						<div class="l-main">
+							<div class="article-entry text">
+
+<!-- Begin: Wordpress Article Content -->
+<img src="https://tctechcrunch2011.files.wordpress.com/2013/09/flud-hand.jpeg?w=300" class="article-img-feature" />
+<p>In late July, <a target="_blank" href="http://venturebeat.com/2013/07/31/flud-folds-news-reader-startup-is-shutting-down/">news broke that Flud</a>, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too familiar, even cliche, story in Silicon Valley. But when San Diegoan co-founders Bobby Ghoshal and Matthew Ausonio officially shuttered the Flud app and website in August, after three years of development, it was a disappointing final chapter for a product that had attracted more buzz in a year than the average startup sees in its entire lifecycle.</p>
+<p>It was also a surprising conclusion, considering that Flud had managed to raise $2.1 million in seed financing from investors Detroit Venture Partners, Ludlow Ventures, Behance co-founder and CEO Scott Belsky and JFJF Ventures, among others. Furthermore, <a target="_blank" href="http://venturebeat.com/2012/03/30/flud-android-windows-phone/">reports circulated last year</a> that FLUD was continuing to see interest from investors and was in the process of raising up to $8 million in new funding.</p>
+<p>But Flud never closed on the round and today, the startup <a target="_blank" href="http://www.youtube.com/watch?v=4vuW6tQ0218">is no more</a>. In fact what eventually killed Flud, was that the company wasn’t able to raise this additional funding. Despite multiple approaches and incarnations — <a href="http://techcrunch.com/2013/04/19/mobile-social-newsreader-flud-finds-a-home-in-the-enterprise-with-a-sharepoint-yammer-integrated-service-for-both-private-and-public-content/">including a pivot toward enterprise</a> — in pursuit of the ever elusive product-market fit (and monetization), Flud eventually ran out of money — and a runway.</p>
+<p>To date, the founders have yet to speak publicly in any detail about Flud’s closure and why the company wasn’t able to turn a promising start into fame and fortune. Last week we caught up with Ghoshal, who graciously agreed to peel back the curtain and offer a bit of a postmortem on Flud– for sake of clarification and, of course, edification.</p>
+<p>Startups are hard — don’t let anyone tell you differently — and everyone fails. Some just learn to fail better than others, and that’s what makes the difference.</p>
+<p>Flud’s story has much in common with another recent casualty in the mobile space: Sonar. <a target="_blank" href="https://medium.com/p/72c6f8bec7df">In a recent post on Medium</a> (which is a must-read for all entrepreneurs, investors and startup peeps), former Sonar co-founder and CEO, Brett Martin, offered insight into why his own mobile, location-based startup went bye-bye.</p>
+<p>Sonar and Flud were both downloaded by millions of people, were promoted by Apple and Google, raised multiple millions and received high praise from the media — and yet you know how both stories ended.</p>
+<h3>Demand</h3>
+<p>As <a target="_blank" href="http://www.paulgraham.com/start.html">Paul Graham has famously said</a>, one of the keys to building a successful startup isn’t necessarily having a brilliant idea, but to “make something that people actually want.” When Ghoshal and Ausonio began developing the idea for Flud in the summer of 2010, their big vision was to build a product that wouldn’t just be another RSS-based news reader or social magazine, but an actual social news ecosystem (and a design-centric, i.e. visual, one at that) — an “Instagram for news,” if you will.</p>
+<p>While it’s easy to say, as an armchair observer, that part of the reason Flud failed was because the market was already saturated by similar products and the competition was too strong. After all, when <a href="http://techcrunch.com/2010/12/25/flud/">Flud launched its first app for the iPad in August 2010</a>, Flipboard and Pulse were already well-established, had millions of users and mostly dominated mindshare in the newsreader market.</p>
+<p><a target="_blank" href="http://tctechcrunch2011.files.wordpress.com/2013/09/flud-messages.jpeg"><img class="alignright size-full wp-image-881638" alt="flud-messages" src="http://tctechcrunch2011.files.wordpress.com/2013/09/flud-messages.jpeg?w=300&#038;h=199" width="300" height="199"></a>Plus, Flud had to work against the fickle, uncertain and ever-evolving relationship people have with news and news consumption tools. They always say they want a better newsreader, are willing to try something new, but then they cling like pocket lint to what’s familiar. Look at what <a href="http://techcrunch.com/2013/06/29/you-cant-quit-google-reader-because-i-already-fired-you/">happened with Google Reader</a>: Most digitally-savvy people seemed to agree that, while Google and RSS were fantasti-awesome for many years, eventually smarter, real-time tools offered greener pastures. Seemingly in agreement, <a href="http://techcrunch.com/2013/03/13/googlereaderpocalypse-for-real-this-time/">Google started dismantling the service in 2011</a>, finally turning it off this summer, and, <em>of course</em>, the Web went bananas. It was as if Google had just turned off their electricity and punched their mom in the face.</p>
+<p>But, really, when Flud launched its iPhone app in December 2010, there was plenty of demand for a “better” way to consume the news — in truth, there still is. As an illustration of this, when we talked to Ghoshal at the end of December, the app was <a href="http://techcrunch.com/2010/12/25/flud/">“adding a new user every four seconds.”</a></p>
+<p>It’s also why (at least in theory) Flud struck a chord with the media: <a target="_blank" href="http://www.fastcodesign.com/1662959/12-of-the-years-best-ideas-in-interface-design-slideshow">Fast Company put its iPhone app</a> among the “Best UI Designs” of 2010 and <a target="_blank" href="http://vimeo.com/14946187">NBC dubbed it</a> “the future of news.” Hell, even some guy named Rip Empson (I know, right?) <a href="http://techcrunch.com/2010/12/25/flud/">said Flud could establish</a> itself as a “force to be reckoned with” in the news arena.</p>
+<p>In retrospect, it’s pretty apparent that we were, in a word, “not exactly correct.” (Hey, even the best get it wrong sometimes, right guys? Right? Hello?) Nonetheless, and of course with a little of my own, requisite defensiveness, the demand for a better newsreader was there. And, going one step further, I’d argue that the initial vision behind Flud — the vision of building a full-service, design-friendly social news ecosystem — had appeal. And still does.</p>
+<p>Just ask the big social networks. Today, Facebook <a href="http://techcrunch.com/2013/06/24/facebook-reader-details/">is in the process of developing its own social newsreader</a> as it inches into territory where Flipboard, Pulse and Feedly are arguably still the best options, if not the best-known names. In regard to Pulse, LinkedIn bought the popular newsreader for $90 million earlier this year to help it develop <em>its own</em> content hub and news reading strategy. Not only did LinkedIn think it was worth $90 million, but has kept the apps alive <a href="http://techcrunch.com/2013/08/21/linkedin-revamps-pulse-apps-with-faster-search-more-discovery-tools/">in spite of the acquisition (and overlap) and continues to update them</a>.</p>
+<h3>Competition</h3>
+<p>But who cares about them? (Yes, that’s half a rhetorical question.) <a target="_blank" href="https://medium.com/p/72c6f8bec7df">In his post on Medium</a>, Brett Martin details the results of Sonar worrying too much about competitors, like Highlight, Banjo and a host of others. Like Sonar, Ghoshal says that there was always noise about how well Flipboard and Pulse were doing, but it was always more psychological. In the end, you can’t let what other companies are doing drive the direction of your business — the more you let them into your head, the worse it gets.</p>
+<p>It’s impossible NOT to pay attention, naturally, but your response should be “Hrmm, that’s interesting — not ‘Oh, F#$%^&amp;*” … Know a good idea when you see it (a “good” idea being a better way to solve the problems your users are having NOW, and if you want to push it, the problems they’ll be having in a few weeks, but NOT the problems they’ll be having in a year, that’s hubris. You’re not Steve Jobs), but don’t let it lead you away from your overall vision.</p>
+<p>Instead, if a startup is lucky enough to hit on an idea or a product that users actually want to use, what’s far more important than what the competition is doing is understanding what customers want and narrowing the gap between what customers want, what parts of the product they’re actually using and what your product’s functionality/feature set as it exists at the time.</p>
+<h3>Press</h3>
+<p>Don’t waste too much time worrying about press and coverage. If you build a great product, press will come — take it from me, I’m a doctor. Then again, Ghoshal tells us, believe in your product and vision enough so that you’re not surprised by press if it does come, and so that you’ll be ready.</p>
+<p>Ghoshal says that, leading up to Flud’s launch of the app three years ago, he and his co-founder were working on it part time. Hindsight is 20/20, as they say, but in part because they didn’t expect to get any press and hadn’t done a press-fueled launch before, little problems at the beginning snowballed quickly.</p>
+<p>Flud was lucky enough to get a ton of press around its early product launches. However, from then on, when the team would launch a new product, they would reflexively go after press, Ghoshal says. They would get press, users would overload the app, the system crashed, and when they finally got it back up, there were still too many bugs left, and, in a world of eleventy billion apps, people tend to be pretty unforgiving of glitchy user experiences. (As they should, by the way.)</p>
+<p>The Flud CEO then concluded, chuckling: “One of the most important things I learned,” he says, “is that when you launch a new product — especially if it has some real ‘novelty’ to it — the best thing to do is shut up about it.”</p>
+<h3>Test, Test And Test Again</h3>
+<p>“We really didn’t test the initial product enough,” Ghoshal says. The team pulled the trigger on its initial launches without a significant beta period and without spending a lot of time running QA, scenario testing, task-based testing and the like. When v1.0 launched, glitches and bugs quickly began rearing their head (as they always do), making for delays and laggy user experiences aplenty — something <a href="http://techcrunch.com/2010/12/25/flud/">we even mentioned in our early coverage</a>.</p>
+<p>Not giving enough time to stress and load testing or leaving it until the last minute is something startups are known for — especially true of small teams — but it means things tend to get pretty tricky at scale, particularly if you start adding a user every four seconds.</p><div>
+<div id="adsDiv81e94e45fe" class="native-ad-mobile"></div>
+<script>
+/*  */
+(function(window){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function() {
+			if (window.ads.isMobile()) {
+				window.adSetInView('1');
+				window.htmlAdWH('348-14-15-339d', '320', '115', 'text', 'adsDiv81e94e45fe');
+				window.adSetInView('0');
+			}
+		});
+	}(this));
+/*  */
+</script>
+</div>
+<p>Ghoshal also says that what testing they had done was too narrow in scope: “We also hadn’t tested our assumptions on what people would care most about in a newsreader — we knew that they’d want to share with friends after reading something, but we didn’t think they cared about things like influence. They did, and by the time we added that, some people had already moved on.”</p>
+<p>This relates to the advice above: Know what your customers want and how they’re using the app, and as Brett Martin says, optimize for actual user behavior and, as much as possible, focus on removing friction from their existing behaviors. Not focusing on more abstract things, like tech or an amazing set of APIs.</p>
+<p><a target="_blank" href="http://tctechcrunch2011.files.wordpress.com/2013/09/flud-ipad.jpeg"><img class="aligncenter size-full wp-image-881639" alt="flud-ipad" src="http://tctechcrunch2011.files.wordpress.com/2013/09/flud-ipad.jpeg?w=640&#038;h=425" width="640" height="425"></a></p>
+<p><strong>It’s Hard To Recover Once Things Start To Spiral</strong></p>
+<p>Flud was too concerned with press and not concerned enough with testing new features beyond a few trusted people, he says. And, after that, “things spiraled pretty quickly, because our new users heard about the bad experience from early users, reviews didn’t help, so we lost a lot of mindshare.”</p>
+<p>Even after Flud added much-needed features like email notifications to its early product, it was too late, he said. “It’s really hard to recover from that early spiral.” In response to these early problems, the team went heads-down to focus on rebuilding the tech side of Flud, while its competitors focused on user acquisition, the CEO says. But this was a reflexive decision, and it led to Flud going too far in that direction.</p>
+<p>As Martin says of Sonar’s experience, for startups, there’s an ongoing, internal battle over whether to focus on growth or engagement, and how to balance the two. However, if a startup is building a social product, he says, growth is what’s key — engagement doesn’t matter. Ghoshal’s account echoes that of Sonar — perhaps not surprising considering Flud was essentially trying to reimagine what a social network should be in the context of news consumption.</p>
+<p>In the long run, the Flud CEO believes that the team did eventually succeed in building a much better product on the tech side, but when it came time to raise capital, “investors don’t want to invest in a third-tier newsreader.” To Martin’s point — all they cared about was growth. And because of it’s early struggles, Flud had a steeper hill to climb thanks to plateau-ing user adoption.</p>
+<h3>Figuring Out When, And How To Pivot (Listen To Feedback)</h3>
+<p>Once Flud saw that investors were balking at its consumer product, it had to take stock in the business. The team quickly realized that money was getting tight and it had to move quickly to find a new market where customers would pay — in other words, where it could build a real business.</p>
+<p>Early on, Ghoshal said, a number of enterprise players had reached out to the company, saying things like, “even though Flud is a consumer product, our executives just bought iPads, and they want to use the app, but they need to use it behind a firewall.” Essentially, these companies wanted Flud to build a white label product, keeping the user experience the same, but optimizing it for “big company” use cases.</p>
+<p>At the time, Ghoshal says, he didn’t see the opportunity, so Flud turned down those opportunities. But when it came time to pivot, they went back to those initial leads and found the demand was unchanged. Flud moved quickly to launch a new enterprise version, which launched in December of last year with 1,500 companies on its wait list.</p>
+<h3>There’s Always Enterprise, Right?</h3>
+<p>Impressively, in the four-plus months that its enterprise product was live, the four-person team was able to bring in about $500K in bookings. However, the team hadn’t given itself enough time — it ran out time and money before it could really get the ball rolling in any significant way.</p>
+<p>In spite of Flud’s failure, Ghoshal believes that there’s still a huge opportunity for a “consumerized,” social, news-sharing network for medium-sized and businesses. “The enterprise is hungry for a product like this,” the CEO says, “and it’s something not many are talking about. Big companies have a content sharing problem that Yammer isn’t adequately solving.”</p>
+<p>These companies want to offer a product through which employees can read content about their customers, along with internal news and content shared by executives and managers. They want to be able to track what people are reading and offer better, more personalized content.</p>
+<p>“There’s a huge opportunity for a product that offers businesses, particularly enterprise businesses, a better way to read, share and syndicate content internally,” the Flud co-founder tells us. While Flud began to do just that, it also ran into problems that any consumer-facing startup moving to target the enterprise has to deal with, and it didn’t have the resources to see it through.</p>
+<p>As many know, Ghoshal says, building a product for the enterprise is an expensive proposition and startups need to make business development hires, deal with the hand-holding and time required to negotiate the more complex integration processes in enterprise — not to mention the capital demands that come from dealing with longer sales cycles.</p>
+<p>In the end, though it was seeing encouraging data from its early customers and had nibbles of interest from investors, “they all wanted to see three to six months worth of data, but we only had two months worth,” Ghoshal explained. Investors wanted to see more validation, which Flud didn’t have, and that, in the end, is what finally killed the company.</p>
+<h3>Moving On</h3>
+<p>The decision to shut down or sell a company is a nerve-racking, white-knuckled process down to the last minute. The process is all-consuming, and leaves many in bad sorts. While one would assume that it would be tough for employees and founders to move on to the next opportunity, once there’s finality, it can be a lot easier to move on.</p>
+<p>The whole Flud team has moved on to different projects, and Ghoshal says he’s beginning to work on his next startup, though he’s not ready to talk about what that is just yet. In the meantime, the founders are in the process of looking for a buyer for Flud’s assets and are in conversations with several potential acquirers.</p>
+<p>His advice to startups on what to look for in a potential acquirer? “I think for most, it’s a matter of figuring out which company would benefit the most from your product,” he says. “It’s probably obvious, but the company that’s going to give you the best value is the one that wants to sell the product right away … and isn’t going to just give you cash and then shut it down.”</p>
+<p>For more, check out <a target="_blank" href="https://medium.com/p/72c6f8bec7df">Brett Martin’s postmortem on Sonar here</a>, and for another great (postmortem) read, check out <a href="http://techcrunch.com/2012/01/22/post-mortem-for-plancast/">Mark Hendrickson’s post on Plancast</a>. While the failure rate of startups hasn’t changed, it’s great to see that more entrepreneurs and startup peeps are willing to admit that it’s happened to them and share what they learned so that others — when they do fail — at least won’t make the same mistakes.</p>
+<!-- End: Wordpress Article Content -->
+
+
+								
+							</div>
+
+<div id="social-after-wrapper" class="cf social-share social-share-inline social-share-with-bubbles">
+	<ul class="inline-list social-share-list" id="social-after" data-permalink="http://techcrunch.com/2013/09/22/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise/" data-shortlink="http://tcrn.ch/18k5sCq" data-shareTitle="Why Startups Fail: A Postmortem For Flud, The Social&nbsp;Newsreader" data-post-id="870190">
+		<li class="total-shares">
+			<h5 class="total-shares-count">0</h5><br />
+			<small>SHARES</small>
+		</li>
+		<li>
+			<div class="bubble total-facebook">0</div>
+			<a href="#" rel="external" class="facebook has-text icon-facebook">Share</a>
+		</li>
+		<li>
+			<div class="bubble total-twitter">0</div>
+			<a href="#" rel="external" class="twitter has-text icon-twitter">Tweet</a>
+		</li>
+		<li>
+			<div class="bubble total-linkedin">0</div>
+			<a href="#" rel="external" class="linkedin has-text icon-linkedin">Share</a>
+		</li>
+		<li>
+			<div class="bubble total-google-plus">0</div>
+			<a href="#" rel="external" class="google-plus icon-google-plus"></a>
+		</li>
+		<li>
+			<div class="bubble total-reddit">0</div>
+			<a href="#" rel="external" class="reddit icon-reddit"></a>
+		</li>
+		<li>
+			<div class="bubble total-stumbleupon">0</div>
+			<a href="#" rel="external" class="stumbleupon icon-stumbleupon"></a>
+		</li>
+		<li>
+			<div class="bubble total-email">0</div>
+			<a href="#" rel="external" class="email icon-email"></a>
+		</li>
+		<li>
+			<div class="bubble bubble-fake"></div>
+			<a href="#" rel="external" class="flipboard icon-flipboard"></a>
+		</li>
+	</ul>
+</div>
+<div id="grv-personalization-56"></div>
+<script>window.TechCrunch.loader.on( 'gravity-beacon', function(){ window.tc_loadGravityScript( 'recirculation' ); } );</script><div class="ad-cluster-container ad-cluster-no-ad" style="display: none;">
+	<small class="advertise-here"><a href="http://techcrunch.com/advertise/" title="Advertise on TechCrunch">Advertisement</a></small>
+	<ul class="ad-cluster" data-adcount="4">
+	</ul>
+</div>
+						</div>
+					</div>
+					<!-- End: Article Body - Main -->
+
+					<!-- Begin: Article Body - Sidebar -->
+					<div class="l-sidebar">
+<div class="ad-unit ad-300x250">
+	<small class="advertise-here">
+		<a href="http://techcrunch.com/advertise/" title="Advertise on TechCrunch">
+			Advertisement		</a>
+	</small>
+	<!-- Begin: Right Rail Advertisement -->
+		<div id="adsDiv5f513beed4" class=""></div>
+<script>
+/* <![CDATA[ */
+if (!ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.htmlAdWH('93319958', "RR", "RR", 'f', 'adsDiv5f513beed4');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script>	<!-- End: Right Rail Advertisement -->
+</div>
+
+<div class="section">
+	<div id="adsDiv88bbacc240" class="mobile-ads-center"></div>
+<script>
+/* <![CDATA[ */
+if (ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.adSetInView('1');
+			window.htmlAdWH('93446212', "300", "250", 'f', 'adsDiv88bbacc240');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div><!-- Begin: Crunchbase Shoal -->
+<div class="section aside crunchbase-cluster collapse">
+<h3 class="section-title collapse-title">CrunchBase</h3>
+
+<div class="collapse-body">
+<ul class="crunchbase-accordion">
+		<!-- Begin: CrunchBase Card -->
+		<li class="data-card crunchbase-card active" data-crunchbase-url="https://crunchbase.com/product/flud/">
+		<h4 class="card-title card-acc-handle">
+			<a class="cb-card-title-link" href="https://crunchbase.com/product/flud/">
+				FLUD			</a>
+		</h4>
+
+		<div class="card-acc-panel">
+		<ul class="card-info">					<li class="cb-card-description full">
+						<strong class="key">Description</strong>
+						<span class="value">FLUD is a personalized mobile news ecosystem with a vision to empower its users to interact with each other to access, engage and broadcast content that is relevant to them. You probably visit hundreds of sites a week to look at content you love, but, until now itâ€™s been a pain to do and far from classy.
+
+FLUDâ€™s intuitive interface brings all those sites into 1 app. You now have 1 place &hellip;</span>
+					</li>
+													<li class="full">
+					<strong class="key">Website</strong>
+					<span class="value"><a href="http://www.theflud.com" target="_blank">http://www.theflud.com</a></span>
+				</li>
+						<li class="full profile">
+			<a href="https://crunchbase.com/product/flud" target="_blank">Full profile for FLUD</a>		</li>
+		</ul>
+		</div>
+		</li>
+		<!-- End: CrunchBase Card -->		<!-- Begin: CrunchBase Card -->
+		<li class="data-card crunchbase-card" data-crunchbase-url="https://crunchbase.com/person/bobby-ghoshal/">
+		<h4 class="card-title card-acc-handle">
+			<a class="cb-card-title-link" href="https://crunchbase.com/person/bobby-ghoshal/">
+				Bobby Ghoshal			</a>
+		</h4>
+
+		<div class="card-acc-panel">
+		<ul class="card-info">					<li class="cb-card-description full">
+						<strong class="key">Bio</strong>
+						<span class="value">Bobby is a designer, entrepreneur and founder of FLUD.</span>
+					</li>
+							<li class="full profile">
+			<a href="https://crunchbase.com/person/bobby-ghoshal" target="_blank">Full profile for Bobby Ghoshal</a>		</li>
+		</ul>
+		</div>
+		</li>
+		<!-- End: CrunchBase Card -->		<!-- Begin: CrunchBase Card -->
+		<li class="data-card crunchbase-card" data-crunchbase-url="https://crunchbase.com/organization/sonar-me/">
+		<h4 class="card-title card-acc-handle">
+			<a class="cb-card-title-link" href="https://crunchbase.com/organization/sonar-me/">
+				Sonar.me			</a>
+		</h4>
+
+		<div class="card-acc-panel">
+		<ul class="card-info">					<li>
+						<strong class="key">Founded</strong>
+						<span class="value">2010</span>
+					</li>
+										<li>
+						<strong class="key">&nbsp;</strong>
+						<span class="value">&nbsp;</span>
+					</li>
+									<li class="cb-card-description full">
+						<strong class="key">Overview</strong>
+						<span class="value">Sonar is a a mobile application that shows you how you are connected to the other people in the room.
+
+Sonar combines publicly available profile and location information to help you discover business contacts, colleagues, old friends and new ones at conferences, cafes, and bars.  
+
+Sonar enables you take your online identity offline, to help you meet real people, in the real world.</span>
+					</li>
+
+																								<li class="full">
+								<strong class="key">Location</strong>
+								<span class="value">
+																		<a href="http://crunchbase.com/location/new-york/d64b7615985cfbf44affaa89d70c4050">New York, New York</a>
+								</span>
+							</li>
+						
+																			<li class="full">
+								<strong class="key">Categories</strong>
+								<span class="value">
+																													<a class="" href="http://crunchbase.com/category/twitterapplications/ece4daebaadd47cff72e1638f55518ad">Twitter Applications</a>, 																													<a class="" href="http://crunchbase.com/category/networking/cdf763fe4af9fc9e6ab9d51df5ee18c9">Networking</a>, 																													<a class="" href="http://crunchbase.com/category/software/c08b5441a05b9777b7a6012728caddd9">Software</a>, 																													<a class="" href="http://crunchbase.com/category/identity/c44d8e501bec7c70c7ffb864d8072fd3">Identity</a>, 																													<a class="" href="http://crunchbase.com/category/crm/1f24c7e8a95d3e1b27240941e80c9884">CRM</a>, 																													<a class="" href="http://crunchbase.com/category/locationbasedservices/b94dffa8e39f1a70ef05451d1b29fb20">Location Based Services</a>, 																													<a class="" href="http://crunchbase.com/category/hotels/b7cc065f4c03e1a9cbc01d3fcec0f641">Hotels</a>, 																													<a class="" href="http://crunchbase.com/category/mobile/e907cf2a842d8a30a0b107d9de4a8178">Mobile</a>								</span>
+							</li>
+											
+										<li class="full">
+						<strong class="key">Website</strong>
+						<span class="value">
+							<a href="http://sonar.me" target="_blank">http://sonar.me</a>						</span>
+					</li>
+							<li class="full profile">
+			<a href="https://crunchbase.com/organization/sonar-me" target="_blank">Full profile for Sonar.me</a>		</li>
+		</ul>
+		</div>
+		</li>
+		<!-- End: CrunchBase Card -->
+
+</ul>
+</div>
+</div>
+<!-- End: Crunchbase Shoal -->
+	<div class="section aside newsletters-signup collapse collapse-adjacent block">
+		
+<h2 class="section-title collapse-title aside-adjacent">
+	<img class="newsletter-logo" alt="TechCrunch" src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/logo.svg" scale="0"> Newsletters
+</h2>
+
+
+<div class="collapse-body newsletter-body">
+	<div class="newsletter newsletter-side-bar-newsletters">
+		<form method="post" class="inline-form form-newsletters" action="" data-nonce="da85246b35">
+			<div class="checkboxes">
+				<fieldset class="custom-checkbox">
+					<input type="checkbox" name="crunchdaily" id="tc-daily-55795d914152a2.09494141" checked="checked">
+					<label for="tc-daily-55795d914152a2.09494141">
+						<span class="custom-checkbox-fake"></span>
+						<strong>TechCrunch Daily</strong> Top headlines, delivered daily
+					</label>
+				</fieldset>
+				<fieldset class="custom-checkbox">
+					<input type="checkbox" name="crunchweekly" id="tc-week-in-review-55795d914152a2.09494141" checked="checked">
+					<label for="tc-week-in-review-55795d914152a2.09494141">
+						<span class="custom-checkbox-fake"></span>
+						<strong>TC Week-in-Review</strong> Most popular stories, delivered Sundays
+					</label>
+				</fieldset>
+				<fieldset class="custom-checkbox">
+					<input type="checkbox" name="crunchbase" id="tc-crunchbase-daily-55795d914152a2.09494141" checked="checked">
+					<label for="tc-crunchbase-daily-55795d914152a2.09494141">
+						<span class="custom-checkbox-fake"></span>
+						<strong>CrunchBase Daily</strong> Latest startup fundings, delivered daily
+					</label>
+				</fieldset>
+			</div>
+
+			<fieldset>
+				<label class="is-vishidden">Enter Address</label>
+				<input type="email" name="email" placeholder="Enter Address">
+				<button type="submit" class="newsletter-submit">Subscribe</button>
+			</fieldset>
+		</form>
+	</div>
+</div>	</div>
+
+<section class="aside section video-aside crunchreport collapse collapse-adjacent">
+	<h2 class="section-title collapse-title">
+		Latest <span>Crunch Report</span>	</h2>
+	<div class="collapse-body cf">
+		<ul class="vid-list cf">
+			<li class="block vid-feature" data-lightbox-omniture="crunchreport">
+				<div class="block block-inset">
+	<a href="http://techcrunch.com/video/facebook-messenger-adds-games-to-app-list-crunch-report/518878434/?rr">
+		<img src="http://pthumbnails.5min.com/10377569/518878434_c_300_170.jpg" alt="Facebook Messenger Adds Its First Offical Game | Crunch Report" data-lightbox-url="http://techcrunch.com/video/facebook-messenger-adds-games-to-app-list-crunch-report/518878434/lightbox">
+				<div class="block-title">
+			<h3>Facebook Messenger Adds Its First Offical Game | Crunch Report</h3>			
+		</div>
+			</a>
+</div>
+			</li>
+		</ul>
+		<a href="http://techcrunch.com/video/crunchreport/?rr" class="text-btn" data-omni-sm="rightrail_crmore">Watch More Episodes<i class="icon-caret-right"></i></a>
+	</div>
+</section>
+<div class="section ad-300x250">
+	<div id="adsDivd145028a42" class=""></div>
+<script>
+/* <![CDATA[ */
+if (!ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.adSetInView('D');
+			window.htmlAdWH('93422878', "RR", "RR", 'f', 'adsDivd145028a42');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div>
+					</div>
+					<!-- End: Article Body - Sidebar -->
+
+				</div>
+				<!-- End: Article Body -->
+
+				</div>
+			</div>
+			<!-- End: Article Content - Body Right Column -->
+
+			<!-- Begin: Article Recirculation - Body Left Column -->
+			<div class="l-sidebar demo-block">
+				<!-- Begin: Recirculation Accordion -->
+<div class="accordion recirc-accordion">
+		<ul>
+												<li id="tc-accordion-item-fail-tag">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/tag/fail/">
+							FAIL						</a>
+					</div>
+				</li>
+														<li id="tc-accordion-item-startups-tag">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/tag/startups/">
+							Startups						</a>
+					</div>
+				</li>
+														<li id="tc-accordion-item-flud-tag">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/tag/flud/">
+							FLUD						</a>
+					</div>
+				</li>
+														<li id="tc-accordion-item-apps-category">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/apps/">
+							Apps						</a>
+					</div>
+				</li>
+														<li class="active">
+					<div class="acc-handle loaded"><a>Popular Posts</a></div>
+					<div class="acc-panel">
+
+								<div id="acc-native-ad"></div>
+		<script type='text/javascript'>
+			(function(window){
+				try {
+					window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function() {
+						if (!window.ads.isMobile()) {
+							window.adSetInView('1');
+							window.htmlAdWH('93457286', '320', '115', 'text', 'acc-native-ad');
+							window.adSetInView('0');
+						}
+					});
+				} catch (e) {
+					// Assume this is just no ad placement for this page load
+				}
+			}(this));
+		</script>
+						<ul class="recirc-river river-small" data-omni-sm-delegate="art_recircbottom">
+							<div id="grv-personalization-14"></div>
+							<script>if( !ads.isMobile() ){ window.TechCrunch.loader.on( 'gravity-beacon', function(){ window.tc_loadGravityScript( 'recirculation-accordion' ); } ); }</script>
+						</ul>
+					</div>	
+				</li>
+				</ul>
+</div>
+<!-- End: Recirculation Accordion -->
+
+			</div>
+			<!-- End: Article Recirculation - Body Left Column -->
+
+		</div>
+	</article>
+	<!-- End: Article - Primary -->
+
+<!-- Begin: Article - Secondary -->
+<div class="article-extra">
+	<div class="lc l-three-col">
+
+		<!-- Begin: Center Column -->
+		<div class="l-main-container">
+			<div class="l-main">
+				<section class="comments section">
+					<div class="comments-container" id="comments-container">
+							<div id="comments">
+		<div id="fyre-comment-count">
+			<div id="livefyre"></div>
+			<div id="powered_by_livefyre_new">
+				<a href="http://livefyre.com" target="_blank">Powered by Livefyre</a>
+			</div>
+			<br style="clear:both;" />
+		</div>
+	</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- End: Center Column -->
+
+		<!-- Begin: Right Column -->
+		<div class="l-sidebar-2 recirc-up-next section">
+			
+				<div class="toaster section">
+					<div class="toaster-container">
+						<div class="toaster-content">
+							<div class="toaster-title">Up Next</div>
+							<h3 class="h-alt"><a href="http://techcrunch.com/2013/09/22/poshmark-growth-downloads-sales/" data-omni-sm="art_upnext">Poshmark, The Mobile Marketplace For Women To Sell And Swap Clothes, Crosses 1M Items Sold So Far This&nbsp;Year</a></h3>
+							<div class="byline">
+	Posted <time datetime="2013-09-22" class="timestamp">Sep 22, 2013</time> </div>						</div>
+					</div>
+				</div>
+	<div class="section aside-alt crunchboard-listings collapse collapse-last">
+		<h3 class="section-title collapse-title">CrunchBoard</h3>
+
+		<div class="collapse-body">
+			<h4 class="h-alt crunchboard-listings-subhead">Job Listings</h4>
+			<ul class="info-list lined-list">
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20550" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Marketing Performance Manager</h3>
+
+							<div class="info-meta">Close5</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20549" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Producer, Website &amp; Content</h3>
+
+							<div class="info-meta">Open Road Media</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20544" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Technical Manager, Client Engineering</h3>
+
+							<div class="info-meta">Discovery Communications</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20543" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>ShopStyle Senior Software Engineer - Messaging Infrastructure</h3>
+
+							<div class="info-meta">POPSUGAR</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20539" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Full-Stack Developer</h3>
+
+							<div class="info-meta">PadillaCRT</div>
+						</a>
+					</li>
+							</ul>
+			<a href="http://www.crunchboard.com/jobs/" target="_blank" class="text-btn">More from CrunchBoard</a>
+		</div>
+	</div>
+		</div>
+		<!-- End: Right Column -->
+
+	</div>
+</div>
+<!-- End: Article - Secondary -->
+
+</div>
+<!-- End: Article Body Content - Main -->
+
+<!-- Begin: Article Body Content - Advertisement -->
+<div class="feature-island-container">
+	<div class="ad-cluster-container ad-cluster-no-ad" style="display: none;">
+	<small class="advertise-here"><a href="http://techcrunch.com/advertise/" title="Advertise on TechCrunch">Advertisement</a></small>
+	<ul class="ad-cluster-6" data-adcount="6">
+	</ul>
+</div>
+</div>
+<!-- End: Article Body Content - Advertisement -->
+<!-- Begin Footer -->
+<footer class="footer" role="contentinfo">
+	<div class="footer-content">
+
+		<!-- Begin Primary Nav (Footer) -->
+		<nav class="nav-footer">
+			<h4 class="footer-logo"><a href="/" rel="home">TechCrunch</a></h4>
+
+			<div class="g g-3up g-nogutter">
+
+				<!-- Begin TechCrunch Column -->
+				<div class="gi">
+					<h4 class="footer-logo-crunch-network"><img src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/crunch-network.jpg"/></h4>
+					<div>
+						<ul class="footer-links-about"><li id="menu-item-899764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-899764"><a href="http://techcrunch.com/">News</a></li>
+<li id="menu-item-899765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899765"><a href="http://techcrunch.com/video/">TCTV</a></li>
+<li id="menu-item-899766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899766"><a href="http://techcrunch.com/events/">Events</a></li>
+<li id="menu-item-899767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899767"><a href="http://www.crunchbase.com">CrunchBase</a></li>
+</ul>
+					</div>
+				</div>
+				<!-- End TechCrunch Column -->
+
+				<!-- Begin About Column -->
+				<div class="gi">
+					<h4>About</h4>
+					<div>
+						<ul class="footer-links-about"><li id="menu-item-899768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899768"><a href="http://techcrunch.com/about/">Staff</a></li>
+<li id="menu-item-899769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899769"><a href="http://techcrunch.com/contact/">Contact Us</a></li>
+<li id="menu-item-899770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899770"><a href="http://techcrunch.com/advertise/">Advertise With Us</a></li>
+<li id="menu-item-899771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899771"><a href="http://techcrunch.com/got-a-tip/">Send Us A Tip</a></li>
+</ul>
+					</div>
+				</div>
+				<!-- End About Column -->
+
+				<!-- Begin International Column -->
+				<div class="gi">
+					<h4>International</h4>
+					<div>
+						<ul class="footer-links-about"><li id="menu-item-899772" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899772"><a href="http://techcrunch.cn/">China</a></li>
+<li id="menu-item-899773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899773"><a href="http://techcrunch.com/europe/">Europe</a></li>
+<li id="menu-item-899774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899774"><a href="http://jp.techcrunch.com/">Japan</a></li>
+</ul>
+					</div>
+				</div>
+				<!-- End International Column -->
+
+			</div>
+		</nav>
+		<!-- End Primary Nav (Footer) -->
+
+		<!-- Begin Secondary Nav (Footer) -->
+		<div class="footer-follow g g-3up">
+
+			<!-- Begin Social Column -->
+			<div class="gi">
+				<div class="footer-social">
+					<h3>Follow TechCrunch</h3>
+					<ul class="inline-list social-list sprite-social">
+						<li><a href="https://www.facebook.com/techcrunch" rel="external" class="spricon nosprite dark icon-facebook" target="_blank"><span class="is-vishidden">Facebook</span></a></li>
+						<li><a href="https://twitter.com/techcrunch" rel="external" class="spricon nosprite dark icon-twitter" target="_blank"><span class="is-vishidden">Twitter</span></a></li>
+						<li><a href="https://plus.google.com/+TechCrunch" rel="external" class="spricon nosprite dark icon-google-plus" target="_blank"><span class="is-vishidden">Google+</span></a></li>
+						<li><a href="http://www.linkedin.com/company/techcrunch" rel="external" class="spricon nosprite dark icon-linkedin" target="_blank"><span class="is-vishidden">LinkedIn</span></a></li>
+						<li><a href="http://www.youtube.com/user/techcrunch" rel="external" class="spricon nosprite dark icon-youtube" target="_blank"><span class="is-vishidden">Youtube</span></a></li>
+						<li><a href="http://pinterest.com/techcrunch/" rel="external" class="spricon nosprite dark icon-pinterest" target="_blank"><span class="is-vishidden">Pinterest</span></a></li>
+						<li><a href="http://techcrunch.tumblr.com/" rel="external" class="spricon i-tumblr" target="_blank"><span class="is-vishidden">Tumblr</span></a></li>
+						<li><a href="http://instagram.com/techcrunch" rel="external" class="spricon i-instagram" target="_blank"><span class="is-vishidden">Instagram</span></a></li>
+						<li><a href="http://www.stumbleupon.com/channel/techcrunch/" rel="external" class="spricon nosprite dark icon-stumbleupon" target="_blank"><span class="is-vishidden">StumbleUpon</span></a></li>
+						<li><a href="/rssfeeds/" rel="external" class="spricon nosprite dark icon-rss"><span class="is-vishidden">Feed</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Social Column -->
+
+			<!-- Begin TC Apps Column -->
+			<div class="gi">
+				<h3>TechCrunch Apps</h3>
+				<ul class="inline-list social-list sprite-social">
+					<li><a href="https://itunes.apple.com/us/app/techcrunch/id526058642?mt=8" class="spricon i-apple" rel="external" target="_blank"><span class="is-vishidden">iOS</span></a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.aol.mobile.techcrunch" class="spricon i-android" rel="external" target="_blank"><span class="is-vishidden">Android</span></a></li>
+					<li><a href="http://apps.microsoft.com/windows/en-US/app/techcrunch-the-inside-story/e1127f3e-b8da-4939-9778-0a4e3a51d2d9" class="spricon i-windows" target="_blank"><span class="is-vishidden">Windows 8</span></a></li>
+				</ul>
+			</div>
+			<!-- End TC Apps Column -->
+
+			<!-- Begin Subscribe Column -->
+			<div class="gi">
+				
+<h3 class="section-title aside-adjacent"><span class="no-mobile">Subscribe to </span>TechCrunch Daily</h3 >
+<div class="">
+	<p class="crunchdaily-tagline">Latest headlines delivered to you daily</p>
+	<div class="newsletter newsletter-side-bar-crunchdaily">
+		<form method="post" class="inline-form form-newsletters crunchdaily-newsletter" data-crunchlist="crunchdaily" action="http://link.techcrunch.com/s/Readership" data-nonce="da85246b35">
+			<input type="checkbox" name="crunchdaily" checked="checked" class="is-hidden">
+			<fieldset>
+				<legend>Subscribe to &lt;span class=&quot;no-mobile&quot;&gt;Subscribe to &lt;/span&gt;TechCrunch Daily</legend>
+				<label class="is-vishidden">Enter Email Address</label>
+				<input type="email" name="email" placeholder="Enter Email Address">
+				<button type="submit" class="newsletter-submit">Subscribe</button>
+			</fieldset>
+		</form>
+	</div>
+</div>			</div>
+			<!-- End Subscribe Column -->
+
+		</div>
+		<!-- End Secondary Nav (Footer) -->
+
+		<!-- Begin Copyright -->
+		<div class="footer-meta-nav g g-1up">
+			<div class="copyright gi">
+				<span class="footer-section">
+					&copy; 2013-2015 AOL Inc. All rights reserved.
+				</span>
+				<span class="footer-section">
+					<a href="http://www.aoltech.com/" rel="external">Aol Tech</a>
+					<a href="http://privacy.aol.com/">Privacy Policy</a>
+					<a href="http://adinfo.aol.com/about-our-ads">About Our Ads</a>
+					<a href="/anti-harassment-policy/">Anti Harassment Policy</a>
+					<a href="http://legal.aol.com/TOS/">Terms of Service</a>
+				</span>
+				<span class="footer-section">
+					<div class="vip-shoutout-container">Powered by <a href="https://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a></div>
+				</span>
+				<span class="footer-section">
+					<div class="webtype-shout-out">Fonts by <a href="http://www.webtype.com/" rel="external" style="padding:0;" target="_blank"><img src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/1x1.png" data-src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/webtype_footer_link.png" alt="<Webtype>" /></a></div>
+				</span>
+			</div>
+		</div>
+		<!-- End Copyright -->
+
+	</div>
+</footer>
+
+<!--[if lte IE 9 ]>
+    <script src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/js/placeMe-1.0.js"></script>
+<![endif]-->
+<!--[if lte IE 8 ]>
+	<script src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/js/ie8.js"></script>
+<![endif]-->
+
+<!-- wpcom_wp_footer -->
+	<script type="application/ld+json">
+		{"@context":"http:\/\/schema.org","@type":"Article","url":"http:\/\/techcrunch.com\/2013\/09\/22\/why-startups-fail-a-postmortem-for-social-newsreader-flud-and-what-to-take-from-sonars-demise\/","author":{"@type":"Person","name":"Rip Empson"},"headline":"Why Startups Fail: A Postmortem For Flud, The","articleBody":"In late July, news broke that Flud, the social news reader for iOS, Android and Windows Phone, was headed to the deadpool. Startup failure is an all-too familiar, even cliche, story in Silicon Valley. But when San Diegoan co-founders Bobby Ghoshal and Matthew Ausonio officially shuttered the Flud app and website in August, after three years of development, it was a disappointing final chapter for a product that had attracted more buzz in a year than the average startup sees in its entire lifecycle.\r\n\r\nIt was also a surprising conclusion, considering that Flud had managed to raise $2.1 million in seed financing from investors Detroit Venture Partners, Ludlow Ventures, Behance co-founder and CEO Scott Belsky and JFJF Ventures, among others. Furthermore, reports circulated last year that FLUD was continuing to see interest from investors and was in the process of raising up to $8 million in new funding.\r\n\r\nBut Flud never closed on the round and today, the startup is no more. In fact what eventually killed Flud, was that the company wasn't able to raise this additional funding. Despite multiple approaches and incarnations -- including a pivot toward enterprise -- in pursuit of the ever elusive product-market fit (and monetization), Flud eventually ran out of money -- and a runway.\r\n\r\nTo date, the founders have yet to speak publicly in any detail about Flud's closure and why the company wasn't able to turn a promising start into fame and fortune. Last week we caught up with Ghoshal, who graciously agreed to peel back the curtain and offer a bit of a postmortem on Flud-- for sake of clarification and, of course, edification.\r\n\r\nStartups are hard -- don't let anyone tell you differently -- and everyone fails. Some just learn to fail better than others, and that's what makes the difference.\r\n\r\nFlud's story has much in common with another recent casualty in the mobile space: Sonar. In a recent post on Medium (which is a must-read for all entrepreneurs, investors and startup peeps), former Sonar co-founder and CEO, Brett Martin, offered insight into why his own mobile, location-based startup went bye-bye.\r\n\r\nSonar and Flud were both downloaded by millions of people, were promoted by Apple and Google, raised multiple millions and received high praise from the media -- and yet you know how both stories ended.\r\nDemand\r\nAs Paul Graham has famously said, one of the keys to building a successful startup isn't necessarily having a brilliant idea, but to \"make something that people actually want.\" When Ghoshal and Ausonio began developing the idea for Flud in the summer of 2010, their big vision was to build a product that wouldn't just be another RSS-based news reader or social magazine, but an actual social news ecosystem (and a design-centric, i.e. visual, one at that) -- an \"Instagram for news,\" if you will.\r\n\r\nWhile it's easy to say, as an armchair observer, that part of the reason Flud failed was because the market was already saturated by similar products and the competition was too strong. After all, when Flud launched its first app for the iPad in August 2010, Flipboard and Pulse were already well-established, had millions of users and mostly dominated mindshare in the newsreader market.\r\n\r\nPlus, Flud had to work against the fickle, uncertain and ever-evolving relationship people have with news and news consumption tools. They always say they want a better newsreader, are willing to try something new, but then they cling like pocket lint to what's familiar. Look at what happened with Google Reader: Most digitally-savvy people seemed to agree that, while Google and RSS were fantasti-awesome for many years, eventually smarter, real-time tools offered greener pastures. Seemingly in agreement, Google started dismantling the service in 2011, finally turning it off this summer, and, of course, the Web went bananas. It was as if Google had just turned off their electricity and punched their mom in the face.\r\n\r\nBut, really, when Flud launched its iPhone app in December 2010, there was plenty of demand for a \"better\" way to consume the news -- in truth, there still is. As an illustration of this, when we talked to Ghoshal at the end of December, the app was \"adding a new user every four seconds.\"\r\n\r\nIt's also why (at least in theory) Flud struck a chord with the media: Fast Company put its iPhone app among the \"Best UI Designs\" of 2010 and NBC dubbed it \"the future of news.\" Hell, even some guy named Rip Empson (I know, right?) said Flud could establish itself as a \"force to be reckoned with\" in the news arena.\r\n\r\nIn retrospect, it's pretty apparent that we were, in a word, \"not exactly correct.\" (Hey, even the best get it wrong sometimes, right guys? Right? Hello?) Nonetheless, and of course with a little of my own, requisite defensiveness, the demand for a better newsreader was there. And, going one step further, I'd argue that the initial vision behind Flud -- the vision of building a full-service, design-friendly social news ecosystem -- had appeal. And still does.\r\n\r\nJust ask the big social networks. Today, Facebook is in the process of developing its own social newsreader as it inches into territory where Flipboard, Pulse and Feedly are arguably still the best options, if not the best-known names. In regard to Pulse, LinkedIn bought the popular newsreader for $90 million earlier this year to help it develop its own content hub and news reading strategy. Not only did LinkedIn think it was worth $90 million, but has kept the apps alive in spite of the acquisition (and overlap) and continues to update them.\r\nCompetition\r\nBut who cares about them? (Yes, that's half a rhetorical question.) In his post on Medium, Brett Martin details the results of Sonar worrying too much about competitors, like Highlight, Banjo and a host of others. Like Sonar, Ghoshal says that there was always noise about how well Flipboard and Pulse were doing, but it was always more psychological. In the end, you can't let what other companies are doing drive the direction of your business -- the more you let them into your head, the worse it gets.\r\n\r\nIt's impossible NOT to pay attention, naturally, but your response should be \"Hrmm, that's interesting -- not 'Oh, F#$%^&amp;*\" ... Know a good idea when you see it (a \"good\" idea being a better way to solve the problems your users are having NOW, and if you want to push it, the problems they'll be having in a few weeks, but NOT the problems they'll be having in a year, that's hubris. You're not Steve Jobs), but don't let it lead you away from your overall vision.\r\n\r\nInstead, if a startup is lucky enough to hit on an idea or a product that users actually want to use, what's far more important than what the competition is doing is understanding what customers want and narrowing the gap between what customers want, what parts of the product they're actually using and what your product's functionality\/feature set as it exists at the time.\r\nPress\r\nDon't waste too much time worrying about press and coverage. If you build a great product, press will come -- take it from me, I'm a doctor. Then again, Ghoshal tells us, believe in your product and vision enough so that you're not surprised by press if it does come, and so that you'll be ready.\r\n\r\nGhoshal says that, leading up to Flud's launch of the app three years ago, he and his co-founder were working on it part time. Hindsight is 20\/20, as they say, but in part because they didn't expect to get any press and hadn't done a press-fueled launch before, little problems at the beginning snowballed quickly.\r\n\r\nFlud was lucky enough to get a ton of press around its early product launches. However, from then on, when the team would launch a new product, they would reflexively go after press, Ghoshal says. They would get press, users would overload the app, the system crashed, and when they finally got it back up, there were still too many bugs left, and, in a world of eleventy billion apps, people tend to be pretty unforgiving of glitchy user experiences. (As they should, by the way.)\r\n\r\nThe Flud CEO then concluded, chuckling: \"One of the most important things I learned,\" he says, \"is that when you launch a new product -- especially if it has some real 'novelty' to it -- the best thing to do is shut up about it.\"\r\nTest, Test And Test Again\r\n\"We really didn't test the initial product enough,\" Ghoshal says. The team pulled the trigger on its initial launches without a significant beta period and without spending a lot of time running QA, scenario testing, task-based testing and the like. When v1.0 launched, glitches and bugs quickly began rearing their head (as they always do), making for delays and laggy user experiences aplenty -- something we even mentioned in our early coverage.\r\n\r\nNot giving enough time to stress and load testing or leaving it until the last minute is something startups are known for -- especially true of small teams -- but it means things tend to get pretty tricky at scale, particularly if you start adding a user every four seconds.\r\n\r\nGhoshal also says that what testing they had done was too narrow in scope: \"We also hadn't tested our assumptions on what people would care most about in a newsreader -- we knew that they'd want to share with friends after reading something, but we didn't think they cared about things like influence. They did, and by the time we added that, some people had already moved on.\"\r\n\r\nThis relates to the advice above: Know what your customers want and how they're using the app, and as Brett Martin says, optimize for actual user behavior and, as much as possible, focus on removing friction from their existing behaviors. Not focusing on more abstract things, like tech or an amazing set of APIs.\r\n\r\n\r\n\r\nIt's Hard To Recover Once Things Start To Spiral\r\n\r\nFlud was too concerned with press and not concerned enough with testing new features beyond a few trusted people, he says. And, after that, \"things spiraled pretty quickly, because our new users heard about the bad experience from early users, reviews didn't help, so we lost a lot of mindshare.\"\r\n\r\nEven after Flud added much-needed features like email notifications to its early product, it was too late, he said. \"It's really hard to recover from that early spiral.\" In response to these early problems, the team went heads-down to focus on rebuilding the tech side of Flud, while its competitors focused on user acquisition, the CEO says. But this was a reflexive decision, and it led to Flud going too far in that direction.\r\n\r\nAs Martin says of Sonar's experience, for startups, there's an ongoing, internal battle over whether to focus on growth or engagement, and how to balance the two. However, if a startup is building a social product, he says, growth is what's key -- engagement doesn't matter. Ghoshal's account echoes that of Sonar -- perhaps not surprising considering Flud was essentially trying to reimagine what a social network should be in the context of news consumption.\r\n\r\nIn the long run, the Flud CEO believes that the team did eventually succeed in building a much better product on the tech side, but when it came time to raise capital, \"investors don't want to invest in a third-tier newsreader.\" To Martin's point -- all they cared about was growth. And because of it's early struggles, Flud had a steeper hill to climb thanks to plateau-ing user adoption.\r\nFiguring Out When, And How To Pivot (Listen To Feedback)\r\nOnce Flud saw that investors were balking at its consumer product, it had to take stock in the business. The team quickly realized that money was getting tight and it had to move quickly to find a new market where customers would pay -- in other words, where it could build a real business.\r\n\r\nEarly on, Ghoshal said, a number of enterprise players had reached out to the company, saying things like, \"even though Flud is a consumer product, our executives just bought iPads, and they want to use the app, but they need to use it behind a firewall.\" Essentially, these companies wanted Flud to build a white label product, keeping the user experience the same, but optimizing it for \"big company\" use cases.\r\n\r\nAt the time, Ghoshal says, he didn't see the opportunity, so Flud turned down those opportunities. But when it came time to pivot, they went back to those initial leads and found the demand was unchanged. Flud moved quickly to launch a new enterprise version, which launched in December of last year with 1,500 companies on its wait list.\r\nThere's Always Enterprise, Right?\r\nImpressively, in the four-plus months that its enterprise product was live, the four-person team was able to bring in about $500K in bookings. However, the team hadn't given itself enough time -- it ran out time and money before it could really get the ball rolling in any significant way.\r\n\r\nIn spite of Flud's failure, Ghoshal believes that there's still a huge opportunity for a \"consumerized,\" social, news-sharing network for medium-sized and businesses. \"The enterprise is hungry for a product like this,\" the CEO says, \"and it's something not many are talking about. Big companies have a content sharing problem that Yammer isn't adequately solving.\"\r\n\r\nThese companies want to offer a product through which employees can read content about their customers, along with internal news and content shared by executives and managers. They want to be able to track what people are reading and offer better, more personalized content.\r\n\r\n\"There's a huge opportunity for a product that offers businesses, particularly enterprise businesses, a better way to read, share and syndicate content internally,\" the Flud co-founder tells us. While Flud began to do just that, it also ran into problems that any consumer-facing startup moving to target the enterprise has to deal with, and it didn't have the resources to see it through.\r\n\r\nAs many know, Ghoshal says, building a product for the enterprise is an expensive proposition and startups need to make business development hires, deal with the hand-holding and time required to negotiate the more complex integration processes in enterprise -- not to mention the capital demands that come from dealing with longer sales cycles.\r\n\r\nIn the end, though it was seeing encouraging data from its early customers and had nibbles of interest from investors, \"they all wanted to see three to six months worth of data, but we only had two months worth,\" Ghoshal explained. Investors wanted to see more validation, which Flud didn't have, and that, in the end, is what finally killed the company.\r\nMoving On\r\nThe decision to shut down or sell a company is a nerve-racking, white-knuckled process down to the last minute. The process is all-consuming, and leaves many in bad sorts. While one would assume that it would be tough for employees and founders to move on to the next opportunity, once there's finality, it can be a lot easier to move on.\r\n\r\nThe whole Flud team has moved on to different projects, and Ghoshal says he's beginning to work on his next startup, though he's not ready to talk about what that is just yet. In the meantime, the founders are in the process of looking for a buyer for Flud's assets and are in conversations with several potential acquirers.\r\n\r\nHis advice to startups on what to look for in a potential acquirer? \"I think for most, it's a matter of figuring out which company would benefit the most from your product,\" he says. \"It's probably obvious, but the company that's going to give you the best value is the one that wants to sell the product right away ... and isn't going to just give you cash and then shut it down.\"\r\n\r\nFor more, check out Brett Martin's postmortem on Sonar here, and for another great (postmortem) read, check out Mark Hendrickson's post on Plancast. While the failure rate of startups hasn't changed, it's great to see that more entrepreneurs and startup peeps are willing to admit that it's happened to them and share what they learned so that others -- when they do fail -- at least won't make the same mistakes.","datePublished":"2013-09-23T02:54:29+00:00","mainEntityOfPage":"True","image":{"@list":["https:\/\/tctechcrunch2011.files.wordpress.com\/2013\/09\/flud-hand.jpeg?w=300","http:\/\/tctechcrunch2011.files.wordpress.com\/2013\/09\/flud-messages.jpeg","http:\/\/tctechcrunch2011.files.wordpress.com\/2013\/09\/flud-ipad.jpeg"]}}	</script> <noscript><img src="http://b.scorecardresearch.com/b?c1=2&c2=6036210&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style="height:0;width:0;visibility:hidden" /></noscript><script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201524x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/js/devicepx.js?m=1429298047g'></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PushUpNotificationSettings = {"domain":"https:\/\/tctechcrunch2011.wordpress.com","userID":"271","websitePushID":"web.com.wordpress.tctechcrunch2011","webServiceURL":"https:\/\/push.10up.com","prompt":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var TC_VideoLoader_Settings = {"yt_key":"AIzaSyBhsoyL5FHDdWDh-w7DgTTHaC8PS2dvFdI"};
+var TC_Language_Settings = {"ajax_url":{"chinese":"http:\/\/techcrunch.com\/chinesemodal"},"chinese":["zh","zh-hk","zh-cn","zh-sg","zh-tw"],"english":["en","en-au","en-bz","en-ca","en-ie","en-jm","en-nz","en-ph","en-za","en-tt","en-gb","en-us","en-zw"],"japanese":["ja"]};
+var tclfConv = {"lf_config":"[{\"el\":\"livefyre\",\"checksum\":\"613bbb0d632bff52a5317b6e151fe717\",\"collectionMeta\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IldoeSBTdGFydHVwcyBGYWlsOiBBIFBvc3Rtb3J0ZW0gRm9yIEZsdWQsIFRoZSBTb2NpYWwmbmJzcDtOZXdzcmVhZGVyIiwidXJsIjoiaHR0cDpcL1wvdGVjaGNydW5jaC5jb21cLzIwMTNcLzA5XC8yMlwvd2h5LXN0YXJ0dXBzLWZhaWwtYS1wb3N0bW9ydGVtLWZvci1zb2NpYWwtbmV3c3JlYWRlci1mbHVkLWFuZC13aGF0LXRvLXRha2UtZnJvbS1zb25hcnMtZGVtaXNlXC8iLCJ0YWdzIjoiRkxVRCwgU3RhcnR1cHMsIEZBSUwsIHBvc3Rtb3J0ZW0sIG5ld3NyZWFkZXIsIHNvY2lhbCwgdmVudHVyZSBjYXBpdGFsIiwiY2hlY2tzdW0iOiI2MTNiYmIwZDYzMmJmZjUyYTUzMTdiNmUxNTFmZTcxNyIsImFydGljbGVJZCI6ODcwMTkwfQ.hYr8mBM-gcVheAnxS5Xv39JnUoMimzVu3g2SsZPhGCc\",\"siteId\":\"311145\",\"articleId\":870190,\"postToButtons\":[\"tw\",\"fb\",\"li\"]}]","app":"techcrunch.auth.fyre.co","network":"techcrunch.fyre.co","customStrings":"{\"moderator\":\"TechCrunch\",\"sortHotThreads\":\"Popular\",\"sortBackButton\":\"Back to Popular\"}"};
+var TC_Async_Scripts = {"tc_livefyre":"http:\/\/zor.livefyre.com\/wjs\/v1.0\/javascripts\/CommentCount.js","tc_gravity":"http:\/\/cdn.insights.gravity.com\/moth-min.js","commscore":"http:\/\/b.scorecardresearch.com\/beacon.js","aol_universal_navbar":"https:\/\/s.aolcdn.com\/os\/aol\/unb.min.js","tc_lf_custom_profiles":"http:\/\/techcrunch.ep.livefyre.com\/media\/dGVjaGNydW5jaC5lcC5saXZlZnlyZS5jb20=\/javascripts\/customprofiles.js","tc_lf_js":"http:\/\/zor.livefyre.com\/wjs\/v3.0\/javascripts\/livefyre.js","tc_adsonar":"http:\/\/js.adsonar.com\/js\/aslJSON.js"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _sf_async_config = {"uid":"2905","domain":"techcrunch.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVj90KwjAMRl/ILu5H1AvxWbourK1tLEu64dvrxOHNGHoX+DjnEJiSMncSJIGYVQq5d8QgkxPBQbVBm1vrhk4lh5CQOkd94XkH/3CEIw7rrFiMyDC6BIsjZbY5gV+uIjraSFZqhv3boTTp8BBneKMjaKwZMhmrqn1Zg2ZG4dnwXdaaPyn49WPAD36Nl7Kp6+ZwPJVn/wRqooXg'></script>
+<script type='text/javascript' src='https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js?ver=4.2-RC4-32277'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?47" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'24588526','blog_tz':'-7','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'24588526','v':'wpcom','tz':'-7','user_id':'0','post':'870190','subd':'tctechcrunch2011'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=24588526&v=wpcomvt&tz=-7&user_id=0&post=870190&subd=tctechcrunch2011&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTdsV05haVJbcGxtJjNRPStQNVpUOHlbPUJnQi45Py5telFkWjZDbj9PX2RIVjlBbjZ0dXVFRnNnOGZ6Jmd5WXNZQXhPa0dNc0pqQklWV2ZLZWNhUyZrRVZRWUssR053P3A5aldrMHQrU2lUcWw9eVJEND91aDksQ2k0ZTN0Q3VjVzYmbVNzeW9iRVFhSjV8c294T2RdZG9pLnBSXyZLanRJPXZVdjFldTF4TE0yM0hNV0k2eg=='}]);
+_stq.push([ 'clickTrackerInit', '24588526', '870190' ]);
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>	<script>
+		(function (window, $, undefined) {
+			var document = window.document;
+
+			function loadChartbeat() {
+				window._sf_endpt = (new Date()).getTime();
+				var e = document.createElement('script'),
+					url = ("https:" === document.location.protocol) ? "https://s3.amazonaws.com/" : "http://";
+				url += "static.chartbeat.com/js/chartbeat.js";
+				e.setAttribute('language', 'javascript');
+				e.setAttribute('type', 'text/javascript');
+				e.async = true;
+				e.setAttribute('src', url);
+				document.body.appendChild(e);
+			}
+
+			$(loadChartbeat);
+		}(this, this.jQuery));
+	</script>
+<!--Page generated in 0.3726 seconds.-->
+</body>
+</html>
+<!--
+	generated in 0.406 seconds
+	115069 bytes batcached for 300 seconds
+-->

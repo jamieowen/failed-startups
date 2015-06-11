@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>The little startup that couldn&#8217;t (a postmortem of MyFavorites) | By Steve Poland, @popo</title>
+    <link rel="pingback" href="http://www.stevepoland.com/xmlrpc.php" />
+    <link rel="alternate" type="application/rss+xml" title="By Steve Poland, @popo &raquo; Feed" href="http://www.stevepoland.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="By Steve Poland, @popo &raquo; Comments Feed" href="http://www.stevepoland.com/comments/feed/" />
+<link rel="shortcut icon" href="http://www.stevepoland.com/wp-content/uploads/2014/03/avatar-steve-favicon.png">
+<link rel="alternate" type="application/rss+xml" title="By Steve Poland, @popo &raquo; The little startup that couldn&#8217;t (a postmortem of MyFavorites) Comments Feed" href="http://www.stevepoland.com/the-little-startup-that-couldnt-a-postmortem-of-myfavorites/feed/" />
+<link rel='stylesheet' id='ac_style-css'  href='http://www.stevepoland.com/wp-content/themes/justwrite/style.css?ver=1.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ac_custom_css-css'  href='http://www.stevepoland.com/wp-content/themes/justwrite/assets/css/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ac_media_queries-css'  href='http://www.stevepoland.com/wp-content/themes/justwrite/assets/css/media-queries.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='ac_icons-css'  href='http://www.stevepoland.com/wp-content/themes/justwrite/assets/icons/css/font-awesome.min.css?ver=4.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ac_webfonts_style1-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CQuestrial%7CArimo%3A400%2C700%7CSource+Sans+Pro%3A400%2C700%2C400italic%2C700italic' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.stevepoland.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-content/themes/justwrite/assets/js/html5.js?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.stevepoland.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.stevepoland.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='My review of Veranda PVC Composite Railing for Balcony/Deck from Home Depot' href='http://www.stevepoland.com/my-review-of-veranda-pvc-composite-railing-for-balconydeck-from-home-depot/' />
+<link rel='next' title='Back in March 2007, I registered 1000+ of the best Twitter Usernames' href='http://www.stevepoland.com/twitter-usernames-for-sale/' />
+<meta name="generator" content="WordPress 4.1.5" />
+<link rel='canonical' href='http://www.stevepoland.com/the-little-startup-that-couldnt-a-postmortem-of-myfavorites/' />
+<link rel='shortlink' href='http://www.stevepoland.com/?p=887' />
+    <link rel="stylesheet" href="http://www.stevepoland.com/wp-content/plugins/google-plus-one-button-by-kms/gpo_plusone.css" type="text/css" media="screen" />      <!-- Customizer - Saved Styles--> 
+      <style type="text/css">
+		.header-wrap{background-image:url(http://www.stevepoland.com/wp-content/uploads/2014/03/IMG_8124.jpg);}.logo .description{color:#ffffff;}		      </style> 
+      <!-- END Customizer - Saved Styles -->
+      </head>
+
+<body class="single single-post postid-887 single-format-standard">
+
+
+<header id="main-header" class="header-wrap">
+
+<div class="wrap">
+
+	<div class="top">
+    
+    	<div class="logo">
+        	<a href="http://www.stevepoland.com" title="By Steve Poland, @popo" class="logo-contents logo-image"><img src="http://www.stevepoland.com/wp-content/uploads/2014/03/avatar-steve-circle_smaller.png" alt="By Steve Poland, @popo" /></a>
+                        <h2 class="description">Entrepreneur and Journalist that flipped sides</h2>
+                    </div><!-- END .logo -->
+        
+                
+    </div><!-- END .top -->
+    
+    <nav class="menu-wrap sticky-disabled" role="navigation">
+		<ul class="menu-main mobile-menu superfish"><li id="menu-item-858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-858"><a href="http://blog.stevepoland.com/">Home</a></li>
+<li id="menu-item-859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-859"><a href="http://www.stevepoland.com/about/">About</a></li>
+<li id="menu-item-857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-857"><a href="http://blog.stevepoland.com/100-web-start-up-business-ideas/">100+ web startup ideas</a></li>
+</ul>        
+        <a href="#" class="mobile-menu-button"><i class="fa fa-bars"></i> </a>
+                <a href="#" class="browse-more" id="browse-more"><i class="fa fa-caret-down"></i> Browse</a>
+                <a href="#" class="search-button"><i class="fa fa-search"></i> </a>
+        
+        <ul class="header-social-icons clearfix">
+						<li><a href="https://twitter.com/popo" class="social-btn left twitter"><i class="fa fa-twitter"></i> </a></li>			<li><a href="https://www.facebook.com/stevepoland" class="social-btn right facebook"><i class="fa fa-facebook"></i> </a></li>						<li><a href="http://www.stevepoland.com/feed/" class="social-btn right rss"><i class="fa fa-rss"></i> </a></li>
+        </ul><!-- END .header-social-icons -->
+        
+        <div class="search-wrap nobs">
+        	<form role="search" id="header-search" method="get" class="search-form" action="http://www.stevepoland.com/">
+            	<input type="submit" class="search-submit" value="Search" />
+            	<div class="field-wrap">
+					<input type="search" class="search-field" placeholder="type your keywords ..." value="" name="s" title="Search for:" />
+				</div>
+			</form>
+        </div><!-- END .search-wrap -->
+        
+    </nav><!-- END .menu-wrap -->
+    
+</div><!-- END .wrap -->
+
+</header><!-- END .header-wrap -->
+
+<div class="wrap" id="content-wrap">
+<section class="container clearfix">
+	
+    
+<section class="mini-sidebar">
+	<header class="browse-by-wrap clearfix">
+    	<h2 class="browse-by-title">Browse By</h2>
+        <a href="#" class="close-browse-by"><i class="fa fa-times"></i></a>
+    </header><!-- END .browse-by -->
+    
+    	<aside class="side-box">
+		<h3 class="sidebar-heading" id="mini-first-title">Pages</h3>
+		<nav class="sb-content clearfix">
+        	<ul class="normal-list"><li class=""><a href="http://www.stevepoland.com" title="Go Home">Main Page</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-858"><a href="http://blog.stevepoland.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-859"><a href="http://www.stevepoland.com/about/">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-857"><a href="http://blog.stevepoland.com/100-web-start-up-business-ideas/">100+ web startup ideas</a></li>
+</ul>		</nav><!-- END .sb-content -->
+	</aside><!-- END .sidebox -->
+        
+         <aside class="side-box">
+		<h3 class="sidebar-heading" id="mini-second-title">Links</h3>
+		<nav class="sb-content clearfix">
+			<ul class="normal-list"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-858"><a href="http://blog.stevepoland.com/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-859"><a href="http://www.stevepoland.com/about/">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-857"><a href="http://blog.stevepoland.com/100-web-start-up-business-ideas/">100+ web startup ideas</a></li>
+</ul>		</nav><!-- END .sb-content -->
+	</aside><!-- END .sidebox -->
+            
+	<aside class="side-box">
+		<h3 class="sidebar-heading">Archives</h3>
+		<nav class="sb-content clearfix">
+			<ul class="normal-list">
+					<li><a href='http://www.stevepoland.com/2015/04/'>April 2015</a></li>
+	<li><a href='http://www.stevepoland.com/2015/03/'>March 2015</a></li>
+	<li><a href='http://www.stevepoland.com/2015/02/'>February 2015</a></li>
+	<li><a href='http://www.stevepoland.com/2015/01/'>January 2015</a></li>
+	<li><a href='http://www.stevepoland.com/2014/11/'>November 2014</a></li>
+	<li><a href='http://www.stevepoland.com/2014/08/'>August 2014</a></li>
+	<li><a href='http://www.stevepoland.com/2014/05/'>May 2014</a></li>
+	<li><a href='http://www.stevepoland.com/2014/04/'>April 2014</a></li>
+	<li><a href='http://www.stevepoland.com/2014/03/'>March 2014</a></li>
+	<li><a href='http://www.stevepoland.com/2013/01/'>January 2013</a></li>
+	<li><a href='http://www.stevepoland.com/2012/08/'>August 2012</a></li>
+	<li><a href='http://www.stevepoland.com/2012/04/'>April 2012</a></li>
+			</ul>
+		</nav><!-- END .sb-content -->
+	</aside><!-- END .sidebox -->
+    
+    <div class="side-box larger">
+    		<h3 class="sidebar-heading">Calendar</h3>
+            <div class="sb-content clearfix">
+            	<table id="wp-calendar">
+	<caption>June 2015</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://www.stevepoland.com/2015/04/">&laquo; Apr</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td>9</td><td>10</td><td id="today">11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table>		</div><!-- END .sb-content -->
+	</div><!-- END .sidebox -->
+    
+    <div class="wrap-over-1600">
+    	<!-- 
+        	 If you want to add something in this sidebar please place your code bellow. 
+        	 It will show up only when your screen resolution is above 1600 pixels.	
+		-->
+		
+                
+    </div><!-- END .wrap-over-1600 -->
+</section><!-- END .mini-sidebar -->
+
+<div class="mini-sidebar-bg"></div>
+    
+    <div class="wrap-template-1 clearfix">
+    
+    <section class="content-wrap clearfix" role="main">
+    
+    	<section class="posts-wrap single-style-template-1 clearfix">
+        
+        
+<article id="post-887" class="post-887 post type-post status-publish format-standard has-post-thumbnail hentry category-analysis category-ideas single-template-1 clearfix">
+	<div class="post-content">
+    	<h2 class="title">The little startup that couldn&#8217;t (a postmortem of MyFavorites)</h2>        <header class="details clearfix">
+        	<time class="detail left index-post-date" datetime="2011-07-15">Jul 15, 2011</time>
+			<span class="detail left index-post-author"><em>by</em> <a href="http://www.stevepoland.com/author/steve-poland/" title="Posts by Steve Poland" rel="author">Steve Poland</a></span>
+			<span class="detail left index-post-category"><em>in</em> <a href="http://www.stevepoland.com/category/analysis/" title="View all posts in analysis" >analysis</a> </span>
+        </header><!-- END .details -->
+        		<div class="single-content">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-via="popo" data-related="popo:Im always tweeting web startup ideas, feel free to follow to keep in the loop" data-url="http://www.stevepoland.com/the-little-startup-that-couldnt-a-postmortem-of-myfavorites/" data-text="The little startup that couldn't (a postmortem of MyFavorites)" data-count="horizontal">Tweet</a><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.stevepoland.com%2Fthe-little-startup-that-couldnt-a-postmortem-of-myfavorites%2F&amp;layout=button_count&amp;show_faces=true&amp;width=300&amp;height=25&amp;action=like&amp;font=arial&amp;colorscheme=light"  id="fbLikeIframe" name="fbLikeIframe"  scrolling="no" frameborder="0" allowTransparency="true"  class="fbLikeContainer"  style="border:none; overflow:hidden; width:300px; height:25px; display:inline;"  ></iframe><p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/webLogo-twitter.png"><img class="alignleft size-full wp-image-926" title="webLogo-twitter" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/webLogo-twitter.png" alt="" width="160" height="160" /></a>I&#8217;m officially putting MyFavorites behind me. The problem I was trying to solve, isn&#8217;t one of those problems you think you have&#8230; and I think those types of solutions/startups are a bit tougher. I already outlined my own problems with running a startup in a prior post about MyFavorites (&#8220;<a href="http://blog.stevepoland.com/repeat-after-me-i-will-not-do-another-startup-as-a-non-technical-founder-unless/">Repeat after me, I will not do another startup as a non-technical founder unless&#8230;</a>&#8220;).</p>
+<p>I&#8217;m writing this post with the intentions of telling you about the idea, sharing the debates that occurred with how the app should operate and be used, share mockups with you, share documents/spreadsheets of tasks/bugs/features/timelines, and simply give a glimpse into this failure. It was a failure because I called quits on it &#8212; I ultimately couldn&#8217;t keep funding it myself and the team was losing interest in working on this app that I kept going back-and-forth on how the user experience should play out &#8212; when we hadn&#8217;t even had any users using it yet.</p>
+<p><strong>THE IDEA</strong></p>
+<p>My initial pitch for MyFavorites was &#8220;Show + Tell Your Favorites&#8221;. That pitch eventually became: &#8220;<strong>The Like button for everything</strong>.&#8221; <a href="http://twitter.com/nb3004">Nick</a> came up with that one and it was solid gold &#8212; would have made a great TechCrunch post title&#8230; we discussed possibly using it as our tagline, knowing it might be controversial and Facebook might sue &#8212; but any press is good press <img src="http://www.stevepoland.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> We weren&#8217;t going to do that though. <em>[Quick shout-out to Buffalo-native <a href="http://twitter.com/sacca">Chris Sacca</a>, whose <a href="http://lowercasellc.com/posse/">portfolio list</a> has a one-liner that sums up every single company. If you can&#8217;t do that for your startup, then you&#8217;re likely too broad and not simple enough. Remember, if you can&#8217;t explain your solution to your Mom so she can understand it, then most people won&#8217;t understand it and they especially can&#8217;t explain it to their friends]</em></p>
+<p><img class="alignright size-full wp-image-925" title="aplusk loves popchips" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/md_horiz.jpg" alt="" width="300" height="200" /></p>
+<p>The problem we tried to solve &#8212; wouldn&#8217;t it be great to know the favorite books of your friends (and celebs), so you know what book you should be buying to read this weekend? Facebook has interests, but have you ever updated those since you signed up for Facebook? Wouldn&#8217;t it be great to know your friend&#8217;s favorite &#8230; anythings? You&#8217;d be looking at a feed of just favorites &#8212; blog posts, beers, sneakers, drinks at Starbucks, things to do in Baltimore, apps for iPhone, tree cutting services locally, meals at a restaurant, etc.</p>
+<p>Wouldn&#8217;t it be cool to see all of Ashton&#8217;s favorites? Or Britney Spears, or any celebrity?</p>
+<p>We were tackling the &#8220;interest graph&#8221;. You can find lots of my notes and findings at the <a href="myfavoritesinc.tumblr.com?phpMyAdmin=530c4fa2a5f3tcdd1f45">MyFavorites blog</a>.</p>
+<p>I&#8217;ll tell you my grandiose billion-dollar idea for MyFavorites &#8212; imagine 50k people that took pictures of themselves with their love for Starbucks (or any brand). Sure, Starbucks currently can show a Facebook widget that shows profile pics of their Facebook fans&#8230; but imagine just replacing their homepage with 50,000 people showing their absolute love for Starbucks? That&#8217;d be amazing &#8212; Starbucks doesn&#8217;t even need to say anything about their products, because here&#8217;s people that vouch for us. Imagine Gary Vaynerchuk when selling his next book to just show tons of pictures of people with his last book, showing creatively how much they love <a href="http://twitter.com/garyvee">garyvee</a>?</p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/f7718d8bbe704e3663f946cf746fab11_10772022.jpg"><img class="size-thumbnail wp-image-905 alignnone" title="f7718d8bbe704e3663f946cf746fab11_10772022" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/f7718d8bbe704e3663f946cf746fab11_10772022-150x150.jpg" alt="" width="150" height="150" /></a><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/ac72fc8137a828f5af7c33e7db5d1491_10736425.jpg"><img class="alignnone size-thumbnail wp-image-902" title="ac72fc8137a828f5af7c33e7db5d1491_10736425" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/ac72fc8137a828f5af7c33e7db5d1491_10736425-150x150.jpg" alt="" width="150" height="150" /></a><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/38443894.jpg"><img class="alignnone size-thumbnail wp-image-899" title="38443894" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/38443894-150x150.jpg" alt="" width="150" height="150" /></a><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/0308f411c6f033b4959ddd610beaf078_10773769.jpg"><img class="alignnone size-thumbnail wp-image-891" title="0308f411c6f033b4959ddd610beaf078_10773769" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/0308f411c6f033b4959ddd610beaf078_10773769-150x150.jpg" alt="" width="150" height="150" /></a><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/278388fbd340ad24d0842fbeec06edf0_11414915.jpg"><img class="alignnone size-thumbnail wp-image-896" title="278388fbd340ad24d0842fbeec06edf0_11414915" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/278388fbd340ad24d0842fbeec06edf0_11414915-150x150.jpg" alt="" width="150" height="150" /></a><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/540e9ef8d15fdfa83e059f1731bb26e7_10911216.jpg"><img class="alignnone size-thumbnail wp-image-892" title="540e9ef8d15fdfa83e059f1731bb26e7_10911216" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/540e9ef8d15fdfa83e059f1731bb26e7_10911216-150x150.jpg" alt="" width="150" height="150" /></a></p>
+<p>With all of these pictures, a new ad network could be created &#8212; per the one I wrote about back in 2007 (&#8220;<a href="http://blog.stevepoland.com/idea-14-ads-with-personal-endorsements-filtered-ad-network/">Ads with Personal Endorsements</a>&#8220;) &#8212; this is the future, there&#8217;s no doubt about that. The problem is how do you get people to take pics of themselves with brands/products that they absolutely love and personally vouch for?</p>
+<p>In the feed, our plan was to always have a #dickbar at the top of the screen. That would be asking the user for their favorites. At first, these would all be some default categories that we ask everyone, but as the user gets friends and follows people, anytime those users are asking people for favorites in a category, that user&#8217;s profile pic and name would show in the #dickbar with category they want favorites for. Meanwhile, there&#8217;d be sponsored favorite questions &#8212; such as, if you favorited Doritos, then Doritos could ask you &#8220;What&#8217;s your favorite Doritos flavor?&#8221;, or if you favorited Starbucks, it could be asked &#8220;What&#8217;s your favorite drink at Starbucks?&#8221;, etc. It just keeps going and going. [Here&#8217;s a <a href="https://spreadsheets1.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AqxeBaWxgLuKdE9acmZoVEdkQ0JhTFk0bVM5VVAxYnc&amp;output=html">spreadsheet</a> of some more sub-question examples]</p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/feedItem-2.3.png"><img class="size-medium wp-image-909 alignright" title="feedItem-2.3" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/feedItem-2.3-120x300.png" alt="" width="120" height="300" /></a></p>
+<p>As a user favorites something, there would be sub-questions to those categories. If you favorited &#8216;NFL&#8217;, then we could ask the question, &#8220;What&#8217;s your favorite NFL team?&#8221;. The plan was to allow multiple favorites for any category, for every user&#8230; so that everytime you were drinking a beer you loved, we wanted you to whip out your phone and favorite it. Then you&#8217;d have a ranking of your favorite beers &#8212; with # of times you favorited each one. You&#8217;d also be able to see the favorite beer tally of all your friends combined, or individually&#8230; so then you would know the most popular beer amongst your friends. With us knowing where you live and where you&#8217;re favoriting this stuff, we could also figure out the most popular ANYTHING in every city &#8212; that&#8217;s powerful. We could basically show a map of the world and show Gibson vs Fender and which guitar brand is the leader in every city, every state, and every country.</p>
+<p><strong>LOGO</strong></p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/Logo-1-myfavorites-830.png"><img class="alignleft size-medium wp-image-928" title="Logo #1 myfavorites #830" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/Logo-1-myfavorites-830-300x62.png" alt="" width="300" height="62" /></a>I used <a href="http://99designs.com/logo-design/contests/myfavorites-logo-design-favorite-button-60014">99designs</a>. I know that basically every designer out there loathes this service and anyone that uses it, but I beg to differ. If you&#8217;re awesome, you aren&#8217;t going to be replaced by 99designs. I think it&#8217;s a great opportunity for college kids and international designers that don&#8217;t have access to design work. It&#8217;s a great platform for learning as a designer &#8212; understanding a client&#8217;s needs/requirements/vision and trying to design for that. The designer gets feedback from not only the client, but other designers &#8212; and can see feedback on other designer&#8217;s work by the client [and others]. As a designer you need to go into knowing you&#8217;re basically paying for education &#8212; you pay by doing work for free and likely not going to get paid for that work. You go to school and pay for that education. Education and experience costs money and time. 99designs is disruptive and I understand the controversy. Various designers in the world will continue using it and so will various people &#8212; but it&#8217;s not going to become the defacto for the entire design world.</p>
+<p>With the MyFavorites logo, I wanted something that could eventually be placed on blog posts like the Twitter &#8216;tweet&#8217; button and the Facebook &#8216;like&#8217; button.</p>
+<p><strong>FAVORITING PROCESS</strong></p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/download.jpeg"><img class="alignleft size-medium wp-image-911" title="myfavorites favoriting process" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/download-290x300.jpg" alt="" width="290" height="300" /></a>We went back and forth on this so many times I can&#8217;t count them all. Granted, I was the one changing my mind a lot. We initially started with a sentence strategy &#8212; you would say &#8220;My Favorite beer is Duvel&#8221; &#8212; so basically &#8220;My Favorite (category) is (item)&#8221;. The problem you run into is pluralization &#8212; is vs are. I can&#8217;t even speak to all the issues with this, but our language is a mess <img src="http://www.stevepoland.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" />  [Here&#8217;s a <a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/favePage-2.1.jpg">screenshot</a> of an old sentence structure process for our app]</p>
+<p>The other problem with the sentence structure is that it seems a bit lengthy. We all went to SXSW 2011 and were almost ready to launch the app (this was after weeks of tons of <a href="http://picplz.com/user/popo/pic/wqqr/">late nights</a> trying to cram this app to be ready) &#8230; and then we all saw <a href="http://sxsw.com/interactive/live?channelId=cd9352c56cd84781aaf17879de88ac6b&amp;channelListId&amp;mediaId=9b8e4b5a37e4481d904b72f67b41b352">Pete Cashmore&#8217;s interview of Dennis Crowley</a> &#8230; where Dens talks about making the checkin process as easy as possible.. and I realized we needed to simplify our favoriting process. Nick had mentioned many weeks prior that we should start the process by showing like 10 default categories, with the ability for user to choose &#8216;other&#8217; and input their own category. This would help guide our users and make the process slicker. So that was our final strategy on this focal UX point of the app.</p>
+<p>We also originally allowed the user to input multiple categories for a favorite &#8212; this seemed to like it would make the user have to &#8220;think&#8221; too much. We found ourselves wondering what categories/tags to use.</p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/2011-04-19_14-27-25_642.jpg"><img class="size-medium wp-image-921 alignleft" title="my moleskine mockup of new fave process" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/2011-04-19_14-27-25_642-300x169.jpg" alt="" width="300" height="169" /></a>Our other strategy was to focus on the ability for users to add tips to Foursquare. Initially we thought that when someone favorites something, they&#8217;d be able to checkin at Foursquare, post it to Twitter and Facebook. That doesn&#8217;t really make sense though &#8212; I use the Foursquare app &#8212; I opened that as soon as I walk into a venue &#8212; that&#8217;s when I think to use that app. The idea with MyFavorites is to use it when you are loving something &#8212; so likely, you&#8217;re already checked-into a Foursquare venue, and so this would be an ability to add more tips into Foursquare&#8230;. which hasn&#8217;t been done yet. No other apps are focused on getting more tips into Foursquare &#8212; and to me, tips are the most valuable aspect of Foursquare.</p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/leaderboard-ranking-2.3.png"><img class="alignright size-medium wp-image-910" title="leaderboard-ranking-2.3" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/leaderboard-ranking-2.3-234x300.png" alt="" width="234" height="300" /></a>The big problem we just never knew how to answer until the app started getting used, was we didn&#8217;t know what to give the user after they favorited something. Foursquare gives points, random badges&#8230; should MyFavorites being doing game mechanics like this? Leaderboard seemed pertinent to us &#8212; but specifically showing the user what other favorites exist in the category they just favorited in &#8212; and where their current favorite item ranks in relation to other items they have favorited in that same category (i.e. &#8216;Pabst Blue Ribbon is your 3rd favorite beer!&#8217;). [Here&#8217;s an old <a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/leaderboard-ranking-23.png">leaderboard mockup</a> and <a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/leaderboard-ranking-favorite.png">another one specific to a user</a>] [Here&#8217;s a <a href="https://spreadsheets1.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AqxeBaWxgLuKdDgyV0hNdUdWZmY1UHNmaTFSekozdUE&amp;output=html">spreadsheet</a> of tons of possible messages we could have delivered to the user after they favorited something]</p>
+<p><strong>MOBILE APP vs WEB APP</strong></p>
+<p><strong> </strong>Initially we were building both an iPhone &amp; Android app (after establishing our dev platform as Titanium Appcelerator), as well as a website where you could favorite things as well. It was all too much. Even with Titanium&#8217;s ability to &#8220;write once, and push out an iPhone and Android app&#8221; &#8212; that&#8217;s false; it takes a lot of work to manipulate features for iPhone and Android &#8212; there&#8217;s no scroll wheel function in Android; there&#8217;s no menu button on iPhone as there is on Android.</p>
+<p>Having a web app being created at the same time was ridiculous too &#8212; especially since we still hadn&#8217;t nailed down the favoriting process or tried it with any users. I was blowing cash &#8212; at a ridiculous pace. I had 7 guys working on this thing at once, as we were hustling for SXSW launch deadline. We decided to focus on the iPhone app, which sucked for me and <a href="http://twitter.com/magnachef">Dan</a> the backend programmer, because we both couldn&#8217;t even use the app &#8212; we both have Droid X phones.</p>
+<p>Focus on one platform. Get it out there &#8212; let people use it &#8212; nail down the UX with user input.</p>
+<p><strong>SOCIAL INTERACTIONS</strong></p>
+<p>I looked at Twitter, Facebook and Foursquare &#8212; then wrote a post called the &#8220;<a href="http://blog.stevepoland.com/metrics-of-me-me-me/">Metrics of me, me, me!</a>&#8221; &#8212; basically the conscious and subconscious interactions/metrics we make with these services. I also blogged about the &#8220;<a href="http://blog.stevepoland.com/the-usage-psychology-of-twitter-foursquare-facebook/">usage psychology</a>&#8221; of those services to better understand how we could hook MyFavorites users. Our social interactions were the following:</p>
+<ul>
+<li>favorite [default action; like a tweet or checkin]</li>
+<li>&#8216;me too&#8217; [trying to get users to add more favorites easier]</li>
+<li>&#8216;reply&#8217; [ability for users to reply to someone&#8217;s favorite with their own favorite &#8212; i.e. your favorite car is a Nissan Altima, well mine is a Mattel. We found a lot of humor came from this action]</li>
+<li>ask for favorites [ability for user to ask friends for their favorites in a category &#8212; i.e. if I were going to Ireland for vacation, what are things to do there?] [users would simply &#8216;reply&#8217; with their favorite]<br />
+<a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/faveProcess-2.3-question.png"><img title="faveProcess-2.3-question" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/faveProcess-2.3-question-300x171.png" alt="" /></a></li>
+</ul>
+<p><strong>API</strong></p>
+<p>Eventually we wanted to open an API that allowed you to have favorites auto-imported &#8212; such as Twitter favorites, who uses that feature on Twitter anyway? Our site would give you a reason to use favoriting on Twitter. For YouTube, we&#8217;d auto-import stuff you favorite in there. Lots of apps out there have a like or favorite ability, and it seems like an opportunity exists for aggregating all of that.</p>
+<p><strong>MOCKUPS OF FUNCTIONALITY</strong></p>
+<p><strong> </strong>These obviously took tons of hours of our lives nailing these. We looked at lots of apps for help/ideas.</p>
+<p>Question Process:</p>
+<p>This was up for serious debate all the time. Basically, I wanted this. I wanted to be able to ask my friends what their favorite things to do in Ireland were. Or Hawaii, where I&#8217;m going for my honeymoon. Or I am looking for someone to take down this tree in my backyard &#8212; Yelp sucks in Buffalo, so how can I find a friend that can recommend a tree cutting service? So the &#8216;where&#8217; was a big issue &#8212; I didn&#8217;t want just a &#8216;tree cutting service&#8217;, I wanted a &#8216;tree cutting service in Buffalo, NY, USA&#8217;. So we had this &#8216;Where?&#8217; optional field, which then would either take a Foursquare venue, or you could select a city or country from a DB we had. It was a complete mess &#8212; it was confusing to users [especially when we had this on the Favoriting process] &#8212; and the rest of my team didn&#8217;t think we needed this functionality at all anyhow.</p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/faveProcess-2.3-question1.png"><img class="alignnone size-large wp-image-923" title="faveProcess-2.3-question" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/faveProcess-2.3-question1-1024x585.png" alt="" /></a></p>
+<p>&nbsp;</p>
+<p>Profile Settings and Adding Friends:</p>
+<div style="text-align: left;"><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/profilePage-2.0-3.jpg"><img class="alignnone size-large wp-image-915" title="profilePage-2.0 (3)" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/profilePage-2.0-3-1024x307.jpg" alt="" /></a></div>
+<p>Signup:</p>
+<div style="text-align: left;"><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/signup-2.0-1.jpg"><img class="alignnone size-large wp-image-916" title="signup-2.0 (1)" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/signup-2.0-1-1024x362.jpg" alt="" /></a></div>
+<p>Favorite page on web &#8212; we ultimately decided to do the Instagram thing, which was have a non-interactive website initially and simply have a webpage for every favorite that occurs by users, so that these could be shared. I think this minimal design was great and we planned to build out feed/category/profile pages on the web this way too:<br />
+<a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/homepage-fav-page-question.png"><img class="size-large wp-image-917 aligncenter" title="homepage-fav-page-question" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/homepage-fav-page-question-614x1024.png" alt="" /></a></p>
+<p>Search / Discovery &#8211; nearby and everywhere. By the people you follow, or everyone. Too many options and thus too cluttered IMO:</p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/searchResults.2.0.png"><img class="aligncenter size-medium wp-image-927" title="searchResults.2.0" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/searchResults.2.0-300x133.png" alt="" width="300" height="133" /></a></p>
+<p><strong>Documents / Spreadsheets</strong></p>
+<ul>
+<li>Sharing to Facebook and Twitter and Foursquare &#8212; get new users! Here&#8217;s a <a href="https://spreadsheets0.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AqxeBaWxgLuKdEkyT2FPZWtoWXlNeG5uRWtKOEVfS1E&amp;output=html">spreadsheet</a> of all the possible copy (tweets, etc) that could have been used.</li>
+<li>URL examples of our website as a <a href="https://spreadsheets0.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AqxeBaWxgLuKdGJqQkhpYkpiVEZXX09nU0V3TkFwenc&amp;output=html">spreadsheet</a> (more ideas of our future plans).</li>
+<li style="text-align: left;">Here is a <a href="https://spreadsheets0.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AqxeBaWxgLuKdEFfYkI5QWphZVZFM3NsNGI3dVhZdHc&amp;output=html">spreadsheet</a> of our final team push towards a launch. These were the remaining features to finish and some hours estimates on completing them.</li>
+<li style="text-align: left;">Here is a monster <a href="https://spreadsheets2.google.com/spreadsheet/pub?hl=en_US&amp;hl=en_US&amp;key=0AqxeBaWxgLuKdGZHTmlWWGtLWUpMZHlndzkyS2RkS0E&amp;output=html">feature / task list</a>, which clearly was just out of control. I didn&#8217;t know how to tame my beastly instincts for &#8220;we could do this, and this, and this, and..&#8221;</li>
+<li style="text-align: left;">Here is a <a href="https://docs.google.com/document/pub?id=1lJsLkuEfuDWw2QeLq0ZBDp4PRBa6JGSLamX4czaInIY">list of common categories</a> that most people would likely add favorites for.</li>
+<li style="text-align: left;">Here is a monster <a href="https://docs.google.com/document/pub?id=1qHOjKoL6pyedx0BX7SkCnxJ6tSPLO45QYmG3v_ppH0U">list of bugs and features</a> (different from above) &#8212; you&#8217;ll see more ideas of our plans here.</li>
+</ul>
+<p><strong><a href="http://oink.com">OINK</a></strong></p>
+<p><a href="http://blog.stevepoland.com/wp-content/uploads/2011/07/oink.png"><img class="alignleft size-full wp-image-924" title="oink" src="http://blog.stevepoland.com/wp-content/uploads/2011/07/oink.png" alt="" width="173" height="63" /></a>Meanwhile at SXSW is when I first learned that <a href="http://twitter.com/kevinrose">Kevin Rose</a> was gathering some troops (including <a href="http://twitter.com/dburka">Daniel Burka</a>, whose design work I have been following for years in awe) to create <a href="http://twitter.com/milk">Milk</a> Inc., which was going to be an incubator of app ideas. One of those app ideas that possibly was going to be their focus (<a href="http://oink.com">OINK</a>), was dabbling in similar territory of MyFavorites. We had about 6 months on them, but still &#8212; that&#8217;s some competition.</p>
+<p><strong>THE END</strong></p>
+<p>I still want to use an app like MyFavorites &#8212; and I hope OINK can nail it. Ultimately, I wasn&#8217;t the guy to push this idea through. <a href="http://blog.stevepoland.com/repeat-after-me-i-will-not-do-another-startup-as-a-non-technical-founder-unless/">Being a non-technical founder</a>, I just can&#8217;t throw money at this thing in the hopes of nailing it. I believe we were definitely at a point where we could have raised some funding around SXSW timeframe &#8212; we had the team, the focus, and an app that was working &#8230; but ultimately when we came back from SXSW, we all started losing interest, the team was all wondering where this was eventually going, and I was wondering if I even wanted to run a startup, have investors, have the responsibility of employees and answering to a board of investors, etc.</p>
+<p>Moving forward I&#8217;m looking to help the OINK guys or anyone working on this problem in any way I can. There&#8217;s a solid 6 months of problems, solutions, strategy, userflow, monetization, and everything else under the sun&#8230; that went down. And there&#8217;s still a massive opportunity out there to nail.<br />
+<code></code></p>
+<ul>
+<li>Want to read more of my startup failures? <a href="http://blog.stevepoland.com/start-up-scars-10-times-ive-fallen-on-my-face/">Read here</a></li>
+<li>Want to read the 100+ web startup ideas I&#8217;ve written about? <a href="http://blog.stevepoland.com/100-web-start-up-business-ideas/">Read here</a></li>
+</ul>
+<p>&nbsp;</p>
+<p><code></code><br />
+<strong>In closing, I&#8217;ll leave you with some Jay-Z that pretty much sums my future up&#8230;</strong></p>
+<blockquote><p>I&#8217;m <a href="http://www.youtube.com/watch?v=WM1RChZk1EU">onto the next one</a>, I&#8217;m onto the next one&#8230;</p></blockquote>
+<p><iframe src="http://www.youtube.com/embed/WM1RChZk1EU?rel=0" frameborder="0" width="640" height="390"></iframe></p>
+		</div><!-- END .single-content -->
+	</div><!-- END .post-content -->
+</article><!-- END #post-887 .post-template-1 -->
+        
+        </section><!-- END .posts-wrap -->
+        
+        <section class="about-share clearfix">
+        
+        	<div class="as-wrap clearfix">
+            	
+                <aside class="share-pagination about-disabled clearfix">
+                    
+                    <div class="post-navigation clearfix"><a href="http://www.stevepoland.com/twitter-usernames-for-sale/" class="prev-post" title="Previous Post"><i class="fa fa-angle-left"></i> </a><a href="http://www.stevepoland.com/my-review-of-veranda-pvc-composite-railing-for-balconydeck-from-home-depot/" class="next-post" title="Next Post"><i class="fa fa-angle-right"></i> </a></div>                    
+                    <div class="clear-border"></div>
+                </aside><!-- END .share-pagination -->
+                
+               	                
+            </div><!-- END .as-wrap -->
+        
+        </section><!-- END .about-share -->
+        
+        
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-37657">
+        <div id="dsq-comment-header-37657" class="dsq-comment-header">
+            <cite id="dsq-cite-37657">
+                <span id="dsq-author-user-37657">fthead9</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-37657" class="dsq-comment-body">
+            <div id="dsq-comment-message-37657" class="dsq-comment-message"><p>Great post. Sorry it didn&#8217;t work out in the end but it looks like you learned a hell of a lot along the way. I&#8217;m sure you&#8217;ll get the itch to start another company at some point and these lessons will make your new venture a great success. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-37777">
+        <div id="dsq-comment-header-37777" class="dsq-comment-header">
+            <cite id="dsq-cite-37777">
+http://twitter.com/kojnp                <span id="dsq-author-user-37777">Andrei I</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-37777" class="dsq-comment-body">
+            <div id="dsq-comment-message-37777" class="dsq-comment-message"><p>Thanks for sharing! Maybe you could have got to the point where someone bought it and take it off your shoulders. Maybe you still can. Maybe asking around can give you ideas and a partner to continue it. </p>
+<p>It&#8217;s very generous what you&#8217;re doing( I opened all the links you gave <img src="http://www.stevepoland.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> so I saw you really shared a lot) but you should try to get some of the investment back.</p>
+<p>btw great song! didn&#8217;t know about it, just listened to it 5 times in a row <img src="http://www.stevepoland.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-37786">
+        <div id="dsq-comment-header-37786" class="dsq-comment-header">
+            <cite id="dsq-cite-37786">
+                <span id="dsq-author-user-37786">Abid</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-37786" class="dsq-comment-body">
+            <div id="dsq-comment-message-37786" class="dsq-comment-message"><p>Wow, That&#8217;s one hell of a postmortem. Thanks for sharing. I recently found out about iWant. Looks somewhat similar to MyFavorites. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-37796">
+        <div id="dsq-comment-header-37796" class="dsq-comment-header">
+            <cite id="dsq-cite-37796">
+                <span id="dsq-author-user-37796">Ken</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-37796" class="dsq-comment-body">
+            <div id="dsq-comment-message-37796" class="dsq-comment-message"><p>thanks mate for the sharing. i am watching you from your blog&#8230;keep us update <img src="http://www.stevepoland.com/wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley" /></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-37848">
+        <div id="dsq-comment-header-37848" class="dsq-comment-header">
+            <cite id="dsq-cite-37848">
+http://amosjohnsonjr.com                <span id="dsq-author-user-37848">Amos Johnson Jr</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-37848" class="dsq-comment-body">
+            <div id="dsq-comment-message-37848" class="dsq-comment-message"><p>Steve, this has to be one of the best blog sites I have ever read. Your openness to share your failures is huge. Everyone wants to read about the one guy who made it, but these stores of failure captures some of the best learning experience in startup combat, that you can not get by just reading about that one guy who made it.   </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-37852">
+        <div id="dsq-comment-header-37852" class="dsq-comment-header">
+            <cite id="dsq-cite-37852">
+http://stevepoland.com/about                <span id="dsq-author-user-37852">Steve Poland</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-37852" class="dsq-comment-body">
+            <div id="dsq-comment-message-37852" class="dsq-comment-message"><p>Amos thanks for the note, much appreciated</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.huffingtonpost.com/marty-zwilling/celebrity-endorsements-ar_b_1010238.html' rel='external nofollow' class='url'>Marty Zwilling: Celebrity Endorsements are Hot For Startups Today</a></p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38313">
+        <div id="dsq-comment-header-38313" class="dsq-comment-header">
+            <cite id="dsq-cite-38313">
+http://twitter.com/rzidane360                <span id="dsq-author-user-38313">rajiv</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38313" class="dsq-comment-body">
+            <div id="dsq-comment-message-38313" class="dsq-comment-message"><p>A very honest appraisal. A great look at all the little temptations and obstacles one faces transforming a idea they are passionate about to a working product. Can&#8217;t recommend this enough</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38327">
+        <div id="dsq-comment-header-38327" class="dsq-comment-header">
+            <cite id="dsq-cite-38327">
+http://stevepoland.com/about                <span id="dsq-author-user-38327">Steve Poland</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38327" class="dsq-comment-body">
+            <div id="dsq-comment-message-38327" class="dsq-comment-message"><p>thanks rajiv!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38652">
+        <div id="dsq-comment-header-38652" class="dsq-comment-header">
+            <cite id="dsq-cite-38652">
+http://stevepoland.com/about                <span id="dsq-author-user-38652">Steve Poland</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38652" class="dsq-comment-body">
+            <div id="dsq-comment-message-38652" class="dsq-comment-message"><p>Summary of lessons learned:</p>
+<p> &#8211; Motivating a team, let alone yourself, on an idea that doesn&#8217;t have a real customer (so you know what you need to build; and so you know someone even wants it), can&#8217;t sustain itself.</p>
+<p> &#8211; Talk to actual customers/users. It&#8217;s super easy to get blinded by your &#8220;vision&#8221;, but you really need to listen to people. Most people can&#8217;t criticize you &#8212; particularly friends, family and colleagues. Go find people you don&#8217;t even know and see if this is a real need of theirs. Find 5 real customers that have the problem you&#8217;re expressing and they have a need for getting it solved. A need &#8212; aka, they are ready to pay you. Instagram &#8212; I would have paid for that app, it made my photos awesomer &#8212; it made me look like a pro. Twitter &#8212; I would still pay for this, all the immediate content it provides. </p>
+<p> &#8211; Problem. Find a real problem that exists for someone. I *WANTED* to know what Ashton Kutcher&#8217;s favorite jeans are, and I wanted to see Gary Vaynerchuk&#8217;s homepage replaced by 50,000 images of his fans with his book, but these weren&#8217;t needs. In the case of Gary V, he could promote people to do that by instagramming their love and hashtagging it, then he could select those images and put them in a widget on his homepage. Starbucks could do a similar promotion.</p>
+<p> &#8211; As a non-technical founder, don&#8217;t spend a dime on programming until you have a user experience (UX) flow of your app/site/whatever fully completed. In the meantime, reach out to programmers and get their input on your product, if you lack the technical know-how of whether it&#8217;s possible.</p>
+<p> &#8211; The big ad-supported ideas that lack revenue models at first, which rely on mega-scale of users to get the advertisers&#8230; are very rare. Twitter, Tumblr, Facebook, Instagram&#8230; there are thousands of these that died at the cross. I think you really need to have a technical founder, or at least a technical co-founder, because you are stabbing in the dark at something brand new that has likely never been done before &#8212; it will require tons of iterations, which can get super costly if you hire a developer. Or if you can get some VC money, do that, but don&#8217;t use your own money for this kind of idea. IMO.</p>
+<p>Ending thought&#8230; find a customer. Find 5 customers. Find 10 customers. Then build for them. They know the problem, unless you too are one of those customers, then you know first-hand &#8212; but make sure you aren&#8217;t blinded and that other real people will pay if you solve their problem. Solution doesn&#8217;t matter yet, find 10 people with that same problem and start to figure out the solution.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://www.stevepoland.com/the-little-startup-that-couldnt-a-postmortem-of-myfavorites/';
+    var disqus_identifier = '887 http://blog.stevepoland.com/?p=887';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'blogstevepoland';
+    var disqus_title = "The little startup that couldn&#8217;t (a postmortem of MyFavorites)";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=887';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+            {
+                'author_name':    "Marty Zwilling: Celebrity Endorsements are Hot For Startups Today",
+                'author_url':    "http:\/\/www.huffingtonpost.com\/marty-zwilling\/celebrity-endorsements-ar_b_1010238.html",
+                'date':            "10\/18\/2011 03:45 PM",
+                'excerpt':        "[...] such as Charlie Sheen using Twitter to promote Internships.com, as well as some failures, including MyFavorites.com using celebrities to &hellip;",
+                'type':            "pingback"            }
+        ],
+        'trackback_url': "http:\/\/www.stevepoland.com\/the-little-startup-that-couldnt-a-postmortem-of-myfavorites\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+        
+    </section><!-- END .content-wrap -->
+    
+    
+ <section class="sidebar posts-sidebar clearfix">
+
+	<aside id="ac_social_buttons_widget-3" class="side-box clearfix widget ac-social-buttons-widget"><div class="sb-content clearfix"><h3 class="sidebar-heading">Social</h3>        
+        <ul class="sidebar-social clearfix">
+        	<li class="alignleft"><a href="http://www.twitter.com/popo" class="social-btn twitter">@popo<i class="fa fa-twitter"></i> </a></li><li class="alignright"><a href="http://www.facebook.com/stevepoland" class="social-btn facebook">Facebook<i class="fa fa-facebook"></i> </a></li><li class="alignleft"><a href="http://instagram.com/stevepopo" class="social-btn instagram">Instagram<i class="fa fa-instagram"></i> </a></li>        </ul>
+        
+        </div></aside><!-- END .sidebox .widget -->		<aside id="recent-posts-3" class="side-box clearfix widget widget_recent_entries"><div class="sb-content clearfix">		<h3 class="sidebar-heading">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://www.stevepoland.com/the-sports-stadiumarena-as-a-platform/">The Sports Stadium/Arena as a Platform</a>
+							<span class="post-date">April 7, 2015</span>
+						</li>
+					<li>
+				<a href="http://www.stevepoland.com/positive-national-attention-heats-up-in-buffalo/">Positive National Attention Heats Up In Buffalo</a>
+							<span class="post-date">March 13, 2015</span>
+						</li>
+					<li>
+				<a href="http://www.stevepoland.com/open-office-hours-8am-9am-wednesdays/">Open Office Hours 8am-9am Wednesdays</a>
+							<span class="post-date">February 11, 2015</span>
+						</li>
+					<li>
+				<a href="http://www.stevepoland.com/why-facebook-is-kicking-your-ass-recruiting-the-countrys-top-talent/">How Facebook is Kicking Your Ass Recruiting The Country&#8217;s Top Talent</a>
+							<span class="post-date">February 10, 2015</span>
+						</li>
+					<li>
+				<a href="http://www.stevepoland.com/vcstartups-internship-machine-learning-engineer-z80labs/">VC/Startups Internship: Machine Learning Engineer @Z80Labs</a>
+							<span class="post-date">February 8, 2015</span>
+						</li>
+				</ul>
+		</div></aside><!-- END .sidebox .widget --><!-- END Sidebar Widgets -->
+</section><!-- END .sidebar -->
+    
+    </div><!-- END .wrap-template-1 -->
+    
+</section><!-- END .container -->
+
+		<footer id="main-footer" class="footer-wrap clearfix">
+    		<aside class="footer-credits">
+        		<a href="http://www.stevepoland.com" title="By Steve Poland, @popo" rel="nofollow" class="blog-title">Steve Poland</a>
+            	<strong class="copyright">Copyright 2014 Steve Poland. All rights reserved.</strong>
+                        	</aside><!-- END .footer-credits -->
+			<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i> </a>
+		</footer><!-- END .footer-wrap -->
+    
+    </div><!-- END .wrap -->
+    
+        <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'blogstevepoland';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><script type='text/javascript' src='http://apis.google.com/js/plusone.js?ver=4.1.5'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-content/themes/justwrite/assets/js/jquery.fitvids.js?ver=1.1'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-content/themes/justwrite/assets/js/idtabs.js?ver=3.0'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-content/themes/justwrite/assets/js/menu-dropdown.js?ver=1.4.8'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-content/themes/justwrite/assets/js/slider.js?ver=0.3.0'></script>
+<script type='text/javascript' src='http://www.stevepoland.com/wp-content/themes/justwrite/assets/js/myscripts.js?ver=1.0'></script>
+    
+</body>
+</html>

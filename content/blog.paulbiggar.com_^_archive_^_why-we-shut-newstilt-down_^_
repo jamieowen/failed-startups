@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Why we shut NewsTilt down | Bad Nomenclature</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://blog.paulbiggar.com/wp-content/themes/twentyten/style.css" />
+<link rel="pingback" href="http://blog.paulbiggar.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Bad Nomenclature &raquo; Feed" href="http://blog.paulbiggar.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bad Nomenclature &raquo; Comments Feed" href="http://blog.paulbiggar.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bad Nomenclature &raquo; Why we shut NewsTilt down Comments Feed" href="http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/feed/" />
+<script type='text/javascript' src='http://blog.paulbiggar.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://blog.paulbiggar.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://blog.paulbiggar.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.paulbiggar.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.paulbiggar.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='A rant about PHP compilers in general and HipHop in particular.' href='http://blog.paulbiggar.com/archive/a-rant-about-php-compilers-in-general-and-hiphop-in-particular/' />
+<link rel='next' title='Great commit messages' href='http://blog.paulbiggar.com/archive/great-commit-messages/' />
+<meta name="generator" content="WordPress 3.3.2" />
+<link rel='canonical' href='http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/' />
+<link rel='shortlink' href='http://blog.paulbiggar.com/?p=66' />
+<!-- Google Analytics Tracking by Google Analyticator 6.2: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-6698901-4']);
+	_gaq.push(['_trackPageview']);
+	_gaq.push(['_trackPageLoadTime']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</head>
+
+<body class="single single-post postid-66 single-format-standard">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://blog.paulbiggar.com/" title="Bad Nomenclature" rel="home">Bad Nomenclature</a>
+					</span>
+				</div>
+				<div id="site-description">Compilers, open source, and similar.</div>
+
+										<img src="http://blog.paulbiggar.com/wp-content/themes/twentyten/images/headers/concave.jpg" width="940" height="198" alt="" />
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li ><a href="http://blog.paulbiggar.com/" title="Home">Home</a></li><li class="page_item page-item-2"><a href="http://blog.paulbiggar.com/about/">About</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://blog.paulbiggar.com/archive/a-rant-about-php-compilers-in-general-and-hiphop-in-particular/" rel="prev"><span class="meta-nav">&larr;</span> A rant about PHP compilers in general and HipHop in particular.</a></div>
+					<div class="nav-next"><a href="http://blog.paulbiggar.com/archive/great-commit-messages/" rel="next">Great commit messages <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-66" class="post-66 post type-post status-publish format-standard hentry category-uncategorized tag-failure tag-journalism tag-newslabs tag-newstilt tag-startups tag-ycombinator">
+					<h1 class="entry-title">Why we shut NewsTilt down</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/" title="9:18 pm" rel="bookmark"><span class="entry-date">September 16, 2010</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://blog.paulbiggar.com/archive/author/admin/" title="View all posts by Paul Biggar">Paul Biggar</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<div class="document">
+<p><a class="reference internal" href="#last-updated">Last updated</a>: <strong>October 7th, 11:55pm GMT</strong></p>
+<p><em>NewsTilt was a YCombinator-backed startup which aimed to provide services to help journalists become entrepreneurs and earn a living off their work online.
+It closed down in July 2010, a total of 8 months after it was founded.</em></p>
+<p>A while back, we announced to our journalists that we shut <a class="reference external" href="http://newstilt.com">NewsTilt</a> down, only two months since we launched.
+I think people are interested in why it failed, and there are some interesting lessons in our demise, at least for me.</p>
+<p>This piece focuses on my own view of why it failed, as opposed to answering the questions and comments which appeared following the <a class="reference external" href="http://www.poynter.org/column.asp?id=45&amp;aid=185999">publication of our announcement</a> by Romenesko.
+I&#8217;ll probably take some time in the future to respond to critics in the future, and to get back to those who contacted me for comments.</p>
+<div class="section" id="summary">
+<h1>Summary</h1>
+<p>Following the launch, everything started going to shit, and a huge number of challenges to the success of the company had arisen.
+The biggest of these were the lack of traction from launch, that we had lost the faith of our journalists, and because there were communication issues between Nathan (my co-founder) and me.
+This combination also killed our motivation.</p>
+<p>As a result, I made a carefully thought out decision to shutdown the company, and return as much money as we had left (about 50%) to the investors.
+Nathan believed the best thing to do would be to pivot our company, and so I agreed to step down to allow him do that.
+After some work, he agreed that it was best to shut it down (hence the email above), and we are currently going through the steps of winding down the company, and returning the remaining money to investors.</p>
+</div>
+<div class="section" id="problem-overview">
+<h1>Problem overview</h1>
+<p>NewsLabs failed because of internal problems and problems with the NewsTilt product.
+NewsTilt failed because:</p>
+<ul class="simple">
+<li>journalists stopped posting content,</li>
+<li>we never had a large number of readers,</li>
+<li>we were very slow to produce the features we had promised,</li>
+<li>we did not have the money to fix the issues with NewsTilt, and it would have been tough to raise more.</li>
+</ul>
+<p>None of these problems should have been unassailable, which leads us to why NewsLabs failed as a company:</p>
+<ul class="simple">
+<li>Nathan and I had major communication problems,</li>
+<li>we weren&#8217;t intrinsically motivated by news and journalism,</li>
+<li>making a new product required changes we could not make,</li>
+<li>our motivation to make a successful company got destroyed by all of the above.</li>
+</ul>
+<p>Overall, the most important of these are that Nathan and I had difficulty communicating in a way which would allow us save the company, and that this really drained out motivation.</p>
+</div>
+<div class="section" id="newstilt-problems">
+<h1>NewsTilt problems</h1>
+<p>NewsTilt wasn&#8217;t a bad idea, but we certainly faced a ton of problems with it.
+Most of them could be overcome, but its instructive to go through what they were.</p>
+<div class="section" id="who-are-you-writing-for">
+<h2>Who are you writing for?</h2>
+<p>NewsTilt was a news destination website, but we very quickly ran out of news.
+We relied on journalists posting news, and they stopped posting because they largely no longer believed that NewsTilt was good for them.</p>
+<p>Journalists felt that they were writing for us, instead of writing for themselves, for their own brands.
+How could they feel anything else, since that&#8217;s the impression we gave them by the design of newstilt.com.
+The most important part of NewsTilt&#8211;that journalists would have their own brands and own domains&#8211;got cut from the minimum viable product in order to make launch date <a class="footnote-reference" href="#id24" id="id1">[1]</a>.
+It was never re-added because of <a class="reference internal" href="#technical-issues">technical issues</a> with Facebook.</p>
+<p>As a result, it looked like NewsTilt was trying to be another Huffington Post <a class="footnote-reference" href="#id25" id="id2">[2]</a>, that is, a news company to compete with existing news organisations.
+As well as convincing the journalists that they were contributing to us for nothing in return, this had knock-on effects: other venues to which a journalist might sell their news refused to allow the same stories to be posted to NewsTilt.
+This is obviously the right thing to do if you perceive NewsTilt to be a competitor.
+If they had perceived each journalist&#8217;s NewsTilt site to essentially be a personal blog, as we perceived it, we wouldn&#8217;t have had this problem.</p>
+<p>Since we weren&#8217;t making any money for them, and it appeared to them&#8211;correctly&#8211;that no-one was even reading their content, there was no earthly reason they would keep writing &#8220;for us&#8221;.</p>
+</div>
+<div class="section" id="worse-is-better">
+<h2>Worse is better</h2>
+<p>Somewhat surprisingly, the journalists we picked were <em>too</em> good.
+We made a big deal of only hiring the &#8220;best journalists&#8221;, something we spent a great deal of time getting right.
+We had a guy with a Pulitzer, one with an Emmy, and overall a great deal of talent writing for us <a class="footnote-reference" href="#id26" id="id3">[3]</a>.</p>
+<p>In hindsight, this may have been a big mistake.
+The kind of writer we actually needed was one that was hungry to succeed.
+Someone who would write five pieces a day, and who wanted nothing more than to be a big-time journalist.
+We needed a young <a class="reference external" href="http://perezhilton.com">Perez Hilton</a> or <a class="reference external" href="http://techcrunch.com">Michael Arrington</a>, people who wrote for 18 hours a day in order to make their names.</p>
+<p>Instead, we got journalists who were already successful in their day jobs, and who already had families and other commitments.
+They were checking out the latest thing in news, not hungry to make something of themselves.
+Why would they be, they already had made something of themselves.
+Unsurprisingly, they didn&#8217;t write 18 hours a day, instead just dipping their toes in to try NewsTilt out.
+They applied, and either never started or posted only a small number of articles.</p>
+<p id="this-paragraph">I think it&#8217;s important to say that we really failed because of a lack of content.
+But that was a symptom of having the wrong kind of journalists.
+All the problems the journalists faced, not writing enough, their distrust of Facebook, their unwillingness to socially promote their work, would not have been problems for a young journalist eager to make a name for himself.
+If we had the sort of people who gave up everything to succeed at their dreams, these problems could have been blown past.
+But as established successes in their field, it was unreasonable to expect them to make giant changes for uncertain return.</p>
+<p>We never made it clear how hard it was going to be to create an online presence, and so when articles went nowhere, there was little motivation to continue.
+Building a brand online is akin to doing a startup &#8211; it&#8217;ll take five years.
+But we failed to prepare them for this <a class="footnote-reference" href="#id27" id="id4">[4]</a>, and we failed to recruit the people with the kind of that kind of dedication to &#8220;making it&#8221;.</p>
+</div>
+<div class="section" id="wrong-content">
+<h2>Wrong content</h2>
+<p>The actual content that the journalists wrote wasn&#8217;t what we needed either.
+Content on the site was a very high standard, but it tended to be very long pieces.
+Long pieces online are difficult to make a success of, as the online attention span is very low.</p>
+<p>The problem was that I didn&#8217;t really know how the journalists should write their pieces, only a vague sense that it was wrong.
+I also didn&#8217;t really want to tell them what to write, since they were doing us a favour by writing at all.
+In fact, we actively told them to write what they wanted.
+This could have been fine, if they had taken their cue from their readers.
+But we didn&#8217;t really know who the readers were, and there weren&#8217;t that many of them anyway.</p>
+<p>It took a while for me to work out that the first thing I did in the morning to sate my internet addiction wasn&#8217;t going to NewsTilt.
+I was still going to <a class="reference external" href="http://reddit.com">Reddit</a> and <a class="reference external" href="http://news.ycombinator.com">Hacker News</a>.
+When I did read the pieces, I wasn&#8217;t terribly interested in them; they were definitely better than what I read in the paper, but they didn&#8217;t trigger the dopamine receptors that made me want more and more, and I didn&#8217;t know how to fix it.</p>
+</div>
+<div class="section" id="who-are-the-readers">
+<h2>Who are the readers?</h2>
+<p>The fact that we didn&#8217;t know anything about our readers&#8217; demographics underscores another problem: I don&#8217;t understand news readers.
+I certainly wasn&#8217;t one, and I didn&#8217;t know many people who really were.
+My customer development had largely consisted of talking to journalists and figuring out what they wanted.
+I never really&#8211;despite good intentions on lots of occasions&#8211;talked to people who loved news about why they loved it.
+So I was unable to say what was going wrong and why people weren&#8217;t sticking around.</p>
+<p>I could possibly have fixed this at a certain level by giving a greater role to the editors, but I was very uneasy about having editors in the first place.
+I didn&#8217;t want to tell the journalists what to write, and I felt that greater input for the editors would have made each journalist&#8217;s brand less individual <a class="footnote-reference" href="#id28" id="id5">[5]</a>.</p>
+</div>
+<div class="section" id="traffic-problems">
+<h2>Traffic problems</h2>
+<p>The major reason the journalists bailed was that we failed them.
+We didn&#8217;t deliver the things that we said we would, and we wasted the content they provided.</p>
+<p>One part of the service we offered was that we would get the journalists traffic.
+Whooops!
+Getting traffic is really really difficult.
+We completely underestimated how difficult it would be, largely because I&#8217;d never had a problem with it in the past.
+When I&#8217;ve needed to promote some pieces I&#8217;ve written, I simply submitted them to <a class="reference external" href="http://news.ycombinator.com">Hacker News</a> and <a class="reference external" href="http://programming.reddit.com">Proggit</a>.
+However, that doesn&#8217;t generalise in any way.</p>
+<p>In retrospect, it was foolish to offer to do promotion for the journalists.
+We should instead have built the tools to help them with promotion, and let them do it themselves.
+We had a couple of ideas of what these would be, but we never built them.
+We felt that we would understand promotion better if we started by doing it ourselves&#8211;standard practise for any company&#8211;but it sucked up massive amounts of time, and we never got anywhere with it.</p>
+<p>We had no domain experience in promotion, and really had no idea what to do.
+Worse, we had no idea what to tell the journalists to do.
+We struck upon the idea that if we had fifty journalists, and they each cross-promoted each other to their social networks, then over time we would get more and more people to read each others&#8217; content.
+Suffice to say that the journalists were not happy, and didn&#8217;t go along with it.</p>
+<p>We had pseudo-hired a social media promoter, someone who had gotten bitten by the startup bug, and was interested in community management, social media promotion, etc.
+She was pretty good, way better than me, but was still relatively new at it. What we really needed was someone who knew this stuff inside out <a class="footnote-reference" href="#id29" id="id7">[6]</a>, rather than someone who was learning as they went.</p>
+<p>We also missed a few opportunities for some traffic.
+We fluffed our <a class="reference external" href="http://techcrunch.com/2010/04/12/ycs-newstilt-aims-to-help-journalists-create-a-business-model-for-content/">TechCrunch launch</a> by having the piece posted before the site was even launched.
+This happened because we were sending out old fashioned press releases in an effort to get old media to cover it, and they needed to go out a day early.
+Old media didn&#8217;t cover it, but TechCrunch did, a good 30 hours or so before we actually launched.
+We got 18,000 hits that day, nearly all of whom saw no news, and probably didn&#8217;t come back.</p>
+</div>
+<div class="section" id="technical-promises">
+<h2>Technical promises</h2>
+<p>We basically over promised what we were going to do for the journalists.
+We showed them a list of things we were going to build quickly, then built things very slowly.
+Our technical ability was going to be our differentiator, but our technology showing was pretty poor.</p>
+<p>One reason is that we misprioritized things, where the thing that really really needed to get built right now changed daily.
+Another is that building things take time, and we weren&#8217;t just building one product, we were building tons of products to be used in different ways.
+We needed Facebook integration and Twitter integration, to integrate the latest changes from the designer, to automatically admit journalists, and alert the editors upon application, and to actually build the product, to build the social promotion tools, etc, etc, etc.
+Individually each feature might only take between a few hours and a few days each.
+However, they build up very quickly, and soon we had features we promised would be ready weeks ago, still sitting in a low-priority slot on our TODO list.</p>
+<p>We also suffered from a lack of technical resources.
+I spent nearly all my time doing CEO things <a class="footnote-reference" href="#id30" id="id8">[7]</a>, so Nathan was left to do the technical stuff alone.
+We needed to hire quickly to make up for that, but made a <a class="reference internal" href="#key-error-with-our-hiring">key error with our hiring</a>.</p>
+<p>We also made some bad technical decisions, such as <a class="reference internal" href="#failing-to-choose-wordpress">failing to choose WordPress</a>, and <a class="reference internal" href="#the-whole-facebook-thing">the whole Facebook thing</a>.
+The latter also prevented us from <a class="reference internal" href="#moving-journalists-to-their-own-domains">moving journalists to their own domains</a>, instead of being under the NewsTilt banner.</p>
+</div>
+</div>
+<div class="section" id="the-end-of-newstilt">
+<h1>The end of NewsTilt</h1>
+<p>As a result of the errors above, we managed to alienate our journalists.
+By the time we ran out of content, it was already too late.
+The journalists were disillusioned and unhappy, and we did not have a product to prevent that.</p>
+<p>I realised this when I found myself reluctant to suggest that people visit the site.
+Journalists were still excited by the concept, readers wanted to check it out, but I realised that I didn&#8217;t believe that NewsTilt was a good product for either set of our customers.</p>
+<p>There were a few possible solutions:</p>
+<ul class="simple">
+<li>fix NewsTilt,</li>
+<li>make a different product, aka <em>pivoting</em> the company,</li>
+<li>close down NewsLabs.</li>
+</ul>
+<div class="section" id="fix-newstilt">
+<h2>Fix NewsTilt</h2>
+<p>NewsTilt was definitely a good idea, just one that we hadn&#8217;t executed well on.
+The major flaw was that we couldn&#8217;t promote the stories well enough, and the journalists&#8217; stories went into a black hole where no-one read them.
+The clear way to fix this would be to hire someone who knew what they were doing in this regard.
+We had a couple of people in mind who possibly could be brought in, and if it required stepping down as CEO so be it <a class="footnote-reference" href="#id31" id="id9">[8]</a>.</p>
+<p>The second flaw was that Nathan and I hadn&#8217;t been working well together since about February.
+There probably isn&#8217;t any blame to be apportioned, except that we should have tried working together on something before building a company together.
+So one or the other of us should probably leave the company.</p>
+<p>Presumably most other things could be fixed.
+We could shut down NewsTilt for a few weeks or months while we fixed everything, focusing instead on the personal sites of one or two journalists who were dedicated to making it big <a class="footnote-reference" href="#id32" id="id10">[9]</a>.
+We&#8217;d fix our technical mistakes, build the tools we really needed, and relaunch later in the year to take in another 10 journalists.
+Over the next two years, we&#8217;d expand to 1000 journalists, and to 10000 over the next five years.
+At some point, we&#8217;d reopen NewsTilt as a news aggregator, when it actually made sense, instead of when we were too small to do anything valuable with it.</p>
+<p>We&#8217;d need more money, but the new CEO could handle that.
+We&#8217;d need more tech, but the new money could fix that, and whichever one of us stayed would make it happen.
+Everything could be fixed.</p>
+<p>Well, maybe.
+This assumes we could find a CEO, and that we hadn&#8217;t burnt our journalist bridges.
+It assumes that we could find anyone to give us more money, especially since we launched once and got no traction at all <a class="footnote-reference" href="#id33" id="id11">[10]</a>.
+It assumes that we could do something with the first two journalists, especially considering making them money would be very difficult for the first year at least, probably longer, so we&#8217;d probably have to pay them ourselves.</p>
+<p>Our motivation was sapped from not working well together, and so our ability to be optimistic was pretty sapped too, especially since one of us would be leaving.
+Working on NewsTilt had never been the fun that startups are supposed to be <a class="footnote-reference" href="#id34" id="id12">[11]</a>, and the stress was not being counterbalanced by anything positive.
+We also weren&#8217;t all that into news and journalism, so our desire to keep pushing the &#8220;mission&#8221; was extremely low.</p>
+<p>I felt that it was probably possible, though extremely challenging, to make something of NewsTilt or some variation of it.
+When you combine a lack of interest and motivation with that extreme challenge, I think it&#8217;s clear that this wasn&#8217;t a good idea.</p>
+</div>
+<div class="section" id="make-something-else">
+<h2>Make something else</h2>
+<p>We each had a few ideas of other products we wanted to make.
+I quite liked the idea of a Heroku for Python, a competitor to Google App Engine.
+I also had a few products that I knew I wanted to use, so this seemed like the best time to make them.</p>
+<p>However, since we weren&#8217;t going to work together, whichever one of us stayed needed a new co-founder.
+To be fair to a co-founder, you have to be able to move to Silicon Valley, especially since my product ideas were all for early adopters <a class="footnote-reference" href="#id35" id="id13">[12]</a>.
+I couldn&#8217;t move to California without my wife, and I couldn&#8217;t get a visa that would allow me bring my wife <a class="footnote-reference" href="#id36" id="id14">[13]</a>.
+Take into account I&#8217;d essentially be starting from scratch, and that I&#8217;d been working 14 hour days for 8 months and had no motivation left, and you can see why I&#8217;m not sure I&#8217;d have made a success of this.</p>
+</div>
+<div class="section" id="close-the-company">
+<h2>Close the company</h2>
+<p>When deciding how to proceed, we had to consider all the people in the company.</p>
+<p>We had one employee, but she was working for free, and it now seemed unlikely that we&#8217;d be raising the money to pay her.
+Our co-founder relationship would have to end either way, so if we decided to part ways we wouldn&#8217;t have been screwing our partner.
+The journalists had already stopped posting, and they and we were not convinced that continuing was the best thing for them.
+The only thing left to consider was the investors.</p>
+<p>We felt a great duty to two great sets of investors who had put up their personal money to finance our idea, even though they both kissed their money goodbye when they invested.
+They had largely invested because we had clicked as people, and we wanted to make sure we did the best thing for them too.
+We still had $20,000 of the original $50,000 they gave us, and we had the option to return that to them.</p>
+<p>They too favoured shutting down the company down and returning what money we had left <a class="footnote-reference" href="#id37" id="id15">[14]</a>.
+They accepted that NewsTilt was not going to work, didn&#8217;t like some other ideas we ran past them, and everybody at that point agreed that returning what was left was the best outcome for them.</p>
+<p>So far, everyone&#8211;founders, employees, journalists, investors&#8211;were better served by closing down.
+The final set of people to consider were <a class="reference external" href="http://ycombinator.com">YCombinator</a>.</p>
+<p>YC had consulted and advised us every step of the way.
+When we had co-founder problems, they gracefully refused to take sides.
+When we wanted to make a new product, they advised us not to proceed without co-founders, and that we&#8217;d need to move to Silicon Valley to be fair to those co-founders.
+And finally, they didn&#8217;t expect a cent back, telling us to give all the money back to our later investors.
+Not once in my whole time at YC did I believe that they valued their investment more than they valued us, and they were OK with us closing down.
+YC is a class act.</p>
+<p>Given the options above, it was pretty clear that closing down NewsLabs was the best option.</p>
+</div>
+</div>
+<div class="section" id="would-the-newstilt-model-actually-work">
+<h1>Would the NewsTilt model actually work?</h1>
+<p>Despite everything that went wrong, I&#8217;m pretty sure that what we set out to do can be accomplished, though perhaps not by us.
+It is certainly the product that journalists want, but simply one we were unable to deliver.</p>
+<p>The biggest thing it needs is a shit-ton of traffic, and that is not easy to bootstrap.
+Perhaps that&#8217;s why bootstrapped technology startups haven&#8217;t been very successful in media, and why most of the inroads into content startups have come from people with more money, ability to create traffic, or both: Demand Media, <a class="reference external" href="http://trueslant.com">True/Slant</a> <a class="footnote-reference" href="#id38" id="id16">[15]</a>, AOL&#8217;s <a class="reference external" href="http://seed.com">Seed.com</a>, or Pierre Omidyar&#8217;s <a class="reference external" href="http://www.civilbeat.com/">Honolulu Civil Beat</a>.</p>
+<p>It also needs to ability to build great tech very quickly, and lots of it.
+There were tons of things we were dying to innovate on that media companies are still doing very badly, but we hadn&#8217;t the money to make them happen quickly enough.</p>
+<p>Google could have made this work.
+I believe that if Google applied the same model they could probably succeed.
+They have the tech ability, they have the traffic, and they already have a massive news property.
+They also have have a big problem with whiny news organisation, and an elegant solution would be to kill them off by enfranchising their journalists to be their own bosses.</p>
+<p>One of the things we did right at the start was that the journalists trusted us.
+They may not have trusted us to do everything right or to be successful, but they felt we would do right by them.
+There are some companies who could probably try to replicate this model and not succeed because they wouldn&#8217;t be trusted by the journalists; Demand Media for example.
+AOL is still tinged in the scent of the content mill, but they&#8217;ve hired cleverly and are probably capable of pulling it off.
+Google has shown it is able to operate transparently and somewhat benevolently, but lots of people don&#8217;t trust it.</p>
+</div>
+<div class="section" id="things-we-did-right">
+<h1>Things we did right</h1>
+<p>So far, I&#8217;ve tried to present why we failed, which focuses on our mistakes and is by definition pretty bleak.
+But we did lots of things right too.</p>
+<p>For a start, we developed an idea that people wanted.
+I spoke to lots of journalists and came up with an idea that they were really interested in.
+Then I talked to more and more of them, developing the idea until it was something that lots of people got behind.
+To a certain extent, this was easier as an outsider looking in.
+We didn&#8217;t really know what the problem was with the industry, so we instead looked at what people wanted, and we really nailed the customer development aspect of this, at least initially.</p>
+<p>The thing that the journalists wanted was to be in control of their own destinies.
+They don&#8217;t like how their newspapers are essentially fucking up their lives and possibly their pensions, and they don&#8217;t like the content mill alternatives.
+They really loved the model that we only made money if they did, and that a 20% cut was the way to go about it.</p>
+<p>We were able to convince editors to come on board, and even to lend their names to the enterprise.
+Doug, Les and Jon helped NewsTilt no end, and I am very grateful to them.
+But they got behind us because they believed in the mission, and they believed in us, and getting this right was important early on.</p>
+<p>Similarly, we got about 150 journalists to sign up to take part.
+Of those, 27 actually wrote something on the site.
+That&#8217;s no small number, and I was delighted in achieving that.
+We also launched, which is a lot more than many startups.</p>
+<p>We did OK on the business side.
+We got into YC, and we ditched out first idea which was going nowhere fast.
+Between demo day and me going back to Ireland, 7 days, we managed to raise $50K from two small angels.
+I had a <a class="reference external" href="http://online.wsj.com/video/newslabs-promises-help-for-unemployed-journalists/534401C4-3A1A-4BA4-BEAB-F24239274741.html">five minute video interview</a> in the Wall Street Journal, which is going on my resume next to my <a class="reference external" href="http://www.youtube.com/watch?v=kKySEUrP7LA">Google Tech Talk</a>.
+And when the chips were down, we somewhat bravely <a class="footnote-reference" href="#id39" id="id17">[16]</a> decided to shut down, saving time and money for our unpaid employee, ourselves, the journalists, and investors.</p>
+<p>Personally, I&#8217;ve learned so much from working on NewsLabs.
+The largest, for me anyway, was that before I started I still had a bit of that shyness that lots of geeks have; doing the CEO job quickly cures you of that.
+I don&#8217;t want anyone to come away from this essay with the idea that they shouldn&#8217;t do a startup because it might fail.
+Mine failed, and I still learned more and improved myself more than I probably could have in any other way.</p>
+</div>
+<div class="section" id="personal-lessons-from-newstilt">
+<h1>Personal Lessons from NewsTilt</h1>
+<p>I&#8217;ve made a list of what I&#8217;ve personally learnt from working on NewsLabs.
+Not every one of these will generalise, but I hope my mistakes are instructive for other founders.</p>
+<p>In no particular order:</p>
+<div class="section" id="lesson-deeply-care-about-what-you-re-working-on">
+<h2>Lesson: Deeply care about what you&#8217;re working on</h2>
+<p>I think it&#8217;s fair to say we didn&#8217;t really care about journalism.
+We started by building a commenting product which came from my desire for the perfect commenting system for my blog <a class="footnote-reference" href="#id40" id="id18">[17]</a>.
+This turned into designing the best damn commenting system ever, which led to figuring out an ideal customer: newspapers.
+While there, we figured they were never going to buy, and we figured out a product that people were dying to use if it existed.</p>
+<p>But we didn&#8217;t really care about journalism, and weren&#8217;t even avid news readers.
+If the first thing we did every day was go to <a class="reference external" href="http://news.bbc.co.uk">news.bbc.co.uk</a>, we should have been making this product.
+But even when we had NewsTilt, it wasn&#8217;t my go-to place to be entertained, that was still Hacker News and Reddit.
+And how could we build a product that we were only interested in from a business perspective.</p>
+<p>This compounded when we didn&#8217;t really know anything about the industry, or what readers wanted.</p>
+</div>
+<div class="section" id="lesson-don-t-be-too-ambitious">
+<h2>Lesson: Don&#8217;t be too ambitious</h2>
+<p>NewsTilt would be a great thing to succeed at.
+If you assume that newspapers were going out of business <a class="footnote-reference" href="#id41" id="id19">[18]</a>, all the journalists would become their own bosses, and need something exactly like NewsTilt to help them.
+As such, there was the potential to be the <em>sole source of news online</em>.
+Ridiculous, massively ambitious, and very unlikely as a result, but if it worked we&#8217;d be billionaires.</p>
+<p>Next time, I&#8217;m going to make a product which will make me comfortably rich, rather than one with a tiny chance of going supernova.</p>
+</div>
+<div class="section" id="lesson-communicate-your-idea-and-manage-it">
+<h2>Lesson: Communicate your idea (and manage it)</h2>
+<p>Our idea kept changing.
+The more journalists I talked to, the more I understood what our product should be, and what people needed.
+Unfortunately, that means I changed <a class="footnote-reference" href="#id42" id="id20">[19]</a> our idea all the time.</p>
+<p>Worse, I failed to communicate effectively what changed and why.
+I communicated this badly to Nathan, and badly to the journalists.
+The latter was difficult to manage&#8211;no-one is going to listen to everything I say when it changes regularly&#8211;but the former was very important.
+The result was that Nathan and I never shared a vision of where the product was going, which was one of our biggest problems.</p>
+</div>
+<div class="section" id="lesson-make-sure-your-minimal-viable-product-is-viable">
+<h2>Lesson: Make sure your minimal viable product is viable</h2>
+<p>We were greatly influenced by the idea of a minimal viable product.
+Build less, launch, then iterate when you have customers.
+This is a great idea, but judging when your product is viable is always a tough challenge.</p>
+<p id="moving-journalists-to-their-own-domains">The conventional wisdom is to cut any feature which isn&#8217;t essential.
+Ultimately though, if you cut features which make your users feel differently about your product, that&#8217;s a problem.
+We cut multiple domains from our MVP, meaning that journalists were publishing under our masthead, which substantially changed how they felt about NewsTilt.
+They were writing for us, whereas they should have been writing for themselves.</p>
+</div>
+<div class="section" id="lesson-be-careful-about-cool-ideas">
+<span id="the-whole-facebook-thing"></span><h2>Lesson: Be careful about cool ideas</h2>
+<p>One of the reasons that switching to domains was cut from our MVP was that it didn&#8217;t work with our Facebook integration.
+I was married to this idea that Facebook integration was really important.
+It was the only way that we would allow people to comment, because it forced them to use their real names.
+This would mean high quality comments, and great community interaction, and I was convinced that this was essential for our success.</p>
+<p>And we could only get real names by making everybody use Facebook to sign in.
+Absolutely <em>everybody</em> worried about this, but I was convinced.
+I was totally wrong.
+It alienated people who didn&#8217;t like Facebook, including some of our journalists.
+Worse, it caused people to just not comment, meaning they didn&#8217;t come back, they didn&#8217;t engage with the journalists, and they didn&#8217;t start to frequent the site.</p>
+<p>This was at the time of renewed interest in Facebook&#8217;s privacy policy&#8211;they had just changed it and people weren&#8217;t happy.
+Every day there were articles in newspapers about how Facebook was doing a terrible thing; there was massive backlash <a class="footnote-reference" href="#id43" id="id21">[20]</a>.
+Our own <a class="reference external" href="http://blog.jgc.org">John Graham-Cumming</a> even wrote a piece called &#8216;<a class="reference external" href="http://blog.jgc.org/2010_06_01_archive.html#nt5">the Facebook Cull</a>&#8216;, and told us the only thing keeping him on Facebook at all was that we required it.</p>
+<p><strong>Man was I stupid.</strong>
+When people asked to signup without it, I told them no.
+When the people who did sign up were worried about things being posted to their walls, I didn&#8217;t understand the problem.
+When readers said they wouldn&#8217;t signup to comment, I thought it was just a small minority.</p>
+<p>After a few weeks, I realised I had made a mistake, and put it on our &#8220;nice to have&#8221; list.
+There were a million other priorities, and how important was this, really.
+So that was another massive mistake.
+I should instead have moved it to the top priority, in particular because it held back domains which should (um, also) have been our top priority.</p>
+<p id="technical-issues">From a technical perspective, it also prevented us from rolling out one-domain-per-journalist a lot sooner.
+There is an issue with Facebook where single-sign on doesn&#8217;t work across domains, so readers would have to approve each domain separately.
+As a result, we didn&#8217;t introduce what was probably the most important feature for actually making the journalists feel like they were writing for themselves.</p>
+</div>
+<div class="section" id="lesson-if-you-think-you-should-build-it-not-buy-it-you-re-wrong">
+<span id="failing-to-choose-wordpress"></span><h2>Lesson: If you think you should build it, not buy it, you&#8217;re wrong</h2>
+<p>We built our whole platform ourselves.
+Now, we used lots of scaffolding, built on Rails, hosted at <a class="reference external" href="http://heroku.com">Heroku</a>, using every plugin we could find.
+I reasoned that the platform was the core of our technology, and we were a technology company, and smart technology companies needed the flexibility that comes from writing the core of their platform themselves.
+In retrospect, this could only be considered premature optimization.</p>
+<p id="the-wordpress-section">The natural thing to do was build on <a class="reference external" href="http://wordpress.org">WordPress</a> instead, but I wasn&#8217;t having any of it.
+The major problem with WordPress is that it&#8217;s written in PHP <a class="footnote-reference" href="#id44" id="id22">[21]</a>.
+I hated PHP with a passion, and couldn&#8217;t fathom building my company on it.
+How would we attract good developers?
+<a class="reference external" href="http://blog.paulbiggar.com/archive/introducing-malicious-code-reviews/">How could we live with ourselves?</a></p>
+<p>Really, I shouldn&#8217;t have worried.
+It was far more important to just get it built, and nothing could have helped that more than just using WordPress.
+We could easily have given journalists distinctive styles, so they didn&#8217;t feel like they were writing for us, and we could have built things really quickly by just plugging them together.</p>
+<p>If I was worried about how productive we&#8217;d be with PHP, well, it&#8217;s not like we had to build everything in PHP.
+We could just have done data collection in Python, and made it available to the rest of our app through either a web service, the database, or some other way.
+We might not have been happy, but we would have stood a much better chance of being successful.</p>
+</div>
+<div class="section" id="lesson-build-quickly-little-company">
+<h2>Lesson: Build quickly, little company</h2>
+<p>The biggest fallout of building our platform ourselves was that we couldn&#8217;t build quickly enough.
+When you roll your own infrastructure, everything takes time, more time than you can afford.
+And we had promised the journalists that we would very quickly build a large list of features, none of which were produced nearly quickly enough.
+This was the major cause of disillusionment&#8211;we overpromised and underdelivered&#8211;and this was an important reason why.</p>
+</div>
+<div class="section" id="lesson-hire-well">
+<span id="key-error-with-our-hiring"></span><h2>Lesson: Hire well</h2>
+<p>Since we needed to build so quickly, as soon as we got some money we wanted to hire another technical person.
+Nathan had a friend he wanted to hire, who was exactly the kind of great programmer he could work well with.
+However, it took some convincing to get him to try working on a news website, and he wasn&#8217;t sure he&#8217;d stick with it.
+We were sure we&#8217;d be able to convince him to stay, and we even waited two weeks for him to move to work with us.</p>
+<p>Unfortunately, we were never able to excite him about the project, and we quickly realised he was never going to be intrinsically motivated the way we need for a first employee.
+There was a point when I was over in Cambridge with Nathan and the other developer, and I noticed that the developer wasn&#8217;t working on a Sunday.
+Now, we aren&#8217;t the kind of people who think our employees <em>owe</em> us 90 hours a week, but startups need that kind of work ethic from very early employees&#8211;exactly the reason that intrinsic motivation is so important.
+If your first employee doesn&#8217;t love what you do, doesn&#8217;t wake up each morning dying to work on HIS product, you have likely chosen poorly, and that&#8217;s exactly what we did.</p>
+<p>Similarly, we hired someone who wanted to learn how to do community management and social media promotion, instead of someone who knew how already.
+This is a pretty tough area, and I think we made a mistake in not hiring someone with much more experienced for such an important role.</p>
+<div class="highlight container" id="a-note-to-clarify-the-situation-with-the-developer-we-hired">
+<p><strong>Update</strong>: The comment about working on a Sunday probably raised more ire than anything else in the piece, largely from developers, so I think I should clarify some things.</p>
+<p>Firstly, we&#8217;re not talking about death marches or prolonged periods of 100 hour weeks.
+It was early days in his employment, maybe the first or second week, and we had either just launched, or were coming up to launch, and had a great deal of things to be done.</p>
+<p>Secondly, early stage startups are not normal jobs, and early stage employees are not normal employees.
+Your first employee is almost a founder.
+While they get less reward as a result of taking less risk, the success of the company depends on them a great deal.</p>
+<p>Thirdly, it&#8217;s nothing that Nathan and I didn&#8217;t do ourselves.
+We worked 80 hour weeks basically since December.
+And you can get more done in 80 hours than you can in 40, so long as you don&#8217;t prolong it.</p>
+<p>Finally, I&#8217;m not speaking ill of the developer.
+The problem is that we tried to convince someone to join a startup who wasn&#8217;t really interested.
+The fault was ours.</p>
+</div>
+</div>
+<div class="section" id="lesson-distributed-teams-are-hard">
+<h2>Lesson: Distributed teams are hard</h2>
+<p>At the end of YCombinator, I moved to back to Dublin, and Nathan moved back to Cambridge.
+Neither of us had US visas, and we both had things to keep us here: Nathan&#8217;s girlfriend, and my soon-to-be wife.
+Both of us prioritised our significant others over the company, and I stand by that.</p>
+<p>However, that meant a number of sacrifices, including that we were in different cities.
+We already had a communication problem when this happened, but this made it far worse.
+Our social media optimizer was in San Francisco, our designer was in York, and we struggled to make the whole thing work.</p>
+<p>While there is nothing wrong with remote teams, I think your company has to be at a certain point for it to work.
+Everyone has to be on the same page, everyone&#8217;s roles have to be certain, and the communication has to be constant.
+We had none of these, and we never had the time to implement them.</p>
+</div>
+<div class="section" id="lesson-work-with-co-founders-before-starting-a-company-together">
+<h2>Lesson: Work with co-founders before starting a company together</h2>
+<p>You need a co-founder who gets you, and who you work together well with.
+When Nathan and I signed up together, we had not spent any time working together, and that was a big mistake.
+Nathan is certainly a great coder, but when we didn&#8217;t share a vision, and we found it so difficult to communicate, there was no way we were going to get this built.</p>
+<p>When I get another co-founder, I&#8217;m going to make sure that we spend a lot more time working together on other things before we start a company together.</p>
+</div>
+<div class="section" id="lesson-transparency-is-tough">
+<h2>Lesson: Transparency is tough</h2>
+<p>It was important to the journalists that we were a very open and transparent company.
+From the start, we tried to put as much information out there as we possibly could, and the most efficient way was to put every journalist we accepted onto a mailing list.
+However, this meant that our blunders and critical feedback were visible for all those journalists to see.
+Lots of them hadn&#8217;t started writing, we didn&#8217;t know them, and they had simply signed up, so we were always aware that our emails were semi-public.
+As a result, when we decided to close up shop, our <a class="reference external" href="http://www.poynter.org/column.asp?id=45&amp;aid=185999">closing down email</a> was &#8220;leaked&#8221; to Poynter, leading to all sorts of speculation.</p>
+<p>It takes a lot of time to be open like this, and a lot of effort to communicate effectively.
+The lesson here isn&#8217;t so much that we did it wrong, but that it&#8217;s difficult to do well.</p>
+</div>
+<div class="section" id="lesson-don-t-do-too-much-at-once">
+<h2>Lesson: Don&#8217;t do too much at once</h2>
+<p>I finished and submitted my <a class="reference external" href="http://paulbiggar.com/research/#wip-phd-dissertation">PhD thesis</a> a week before the YCombinator application deadline.
+Three days later I gave a talk to 900 people at <a class="reference external" href="http://paulbiggar.com/research/#so-2009">StackOverflow London</a>.
+When I moved to California in January to do YCombinator, I had still to organise my wedding in May, and I had a paper to write in between.
+My PhD defence in April was 4 hours after we launched NewsTilt.
+In May I got married and went on honeymoon.</p>
+<p>Basically, life happens.
+There is never a good time to start a company, just like there is never a good time to have kids.
+Certainly entrepreneurship favour those without other commitments, but it seems like nonsense that people with other commitments shouldn&#8217;t start companies.</p>
+<p>While I don&#8217;t regret doing all those things, I need to stop feeling like I can do everything at once.
+Everything takes time, and that&#8217;s time which could be spent on other things which are really important too.
+In retrospect, I should have delayed either the wedding or YCombinator.</p>
+</div>
+<div class="section" id="lesson-be-very-careful-how-you-are-presented-to-the-press">
+<h2>Lesson: Be very careful how you are presented to the press</h2>
+<p>When I gave my demo day speech to investors, I explained that there were tons of customers out there; in 2008-2009, 30000 journalist had been laid off.
+When I gave an <a class="reference external" href="http://online.wsj.com/video/newslabs-promises-help-for-unemployed-journalists/534401C4-3A1A-4BA4-BEAB-F24239274741.html">interview to AllThingsD</a> a few minutes later, Peter Kafka focused heavily on the <em>unemployed</em> part of this.
+I didn&#8217;t quite realise the problem&#8211;it seemed like a minor detail that he was focusing on a bit heavily&#8211;until potential customers kept asking &#8220;what about solutions for journalists not laid off&#8221;.
+Even though our product was for all journalists, it had effectively been maligned by what I thought was a minor detail.</p>
+<p>This also led to people thinking we were going to take advantage of them, and that we were just another content mill like Demand Media.
+Even when we made it clear that we were only making money if they did&#8211;taking a 20% cut&#8211;this kept coming up, even with journalists who we had signed up and were using our service.</p>
+<div class="highlight container" id="a-note-that-peter-kafka-and-allthingsd">
+<strong>Update:</strong> Peter Kafka spent some time <a class="reference external" href="http://mediamemo.allthingsd.com/20100916/anatomy-of-a-failed-startup-why-newslabs-didnt-make-it-and-why-i-may-not-have-helped/">defending himself</a> when he wrote about this post.
+I feel there is no need for this.
+It was my pitch that put unemployed journalists in his mind, and I had the opportunity to correct him afterwards.
+Clearly, <a class="reference external" href="http://mediamemo.allthingsd.com/20100916/anatomy-of-a-failed-startup-why-newslabs-didnt-make-it-and-why-i-may-not-have-helped/#comment-78389101">the error was mine</a>.</div>
+</div>
+<div class="section" id="lesson-you-have-the-greatest-product-on-earth-and-everyone-should-be-lucky-to-talk-to-you">
+<h2>Lesson: You have the greatest product on earth, and everyone should be lucky to talk to you</h2>
+<p>My natural way to network is to chat to someone, develop a rapport, and to set up another chat to talk about the world, current events, and (given time) some business <a class="footnote-reference" href="#id45" id="id23">[22]</a>.
+But even to chat to someone, you need an in: what do I know about that person, what could I say to get chatting.
+So this is what I did on Demo day.</p>
+<p>The way it should be done it in to boldly walk up to them and ask them what they thought of your speech.
+After a few minutes discussing it, they have to talk to someone else, so do you, that&#8217;s fine, here&#8217;s a card, we&#8217;ll chat later.</p>
+<p>Irish people tend to self deprecate.
+They also don&#8217;t like successful people, and certainly not people who talk like they&#8217;re the greatest thing in the world.
+Silicon Valley is the complete and utter polar opposite.
+Self deprecation is out.
+No-one invests in a company who isn&#8217;t convinced that they are the greatest thing to ever happen.
+I&#8217;m thinking &#8220;my company has a great idea, but most companies fail, probably mine too, but we&#8217;ll certainly try as hard as we can to make it work&#8221;.
+Great entrepreneurs never concede that they might fail, and tell everyone how lucky they are to be able to invest in their company.</p>
+<p>I was certainly told early on to present ourselves as the greatest thing ever, but I didn&#8217;t properly internalise it until demo day was over, which was probably too late.</p>
+</div>
+<div class="section" id="lesson-two-sets-of-customers-is-hard">
+<h2>Lesson: Two sets of customers is hard</h2>
+<p>NewsTilt was a product designed to connect journalists with readers.
+As such, we had two sets of customers, which means we need to do customer development twice.
+I spent a great deal of time designing the ultimate solution for journalists, and almost no time on what readers wanted.
+As such, I didn&#8217;t really know what to make, or what to say to the journalists about what they should write.</p>
+<p>It&#8217;s tempting to look at the lesson as &#8220;don&#8217;t forget to do both sets of customer development&#8221;, but I think its many times more difficult to do it twice than to do it once.
+In the future, I&#8217;ll certainly be aiming for tools that only need to appeal to one set of customers.</p>
+</div>
+</div>
+<div class="section" id="epilogue">
+<span id="an-epilogue"></span><h1>Epilogue:</h1>
+<div class="highlight container">
+<strong>Update</strong>: A final point that should be made is that this is not an attempt to blame anyone.
+The journalists aren&#8217;t to blame: we didn&#8217;t make a sufficiently good product for them.
+The developer isn&#8217;t to blame; we tried to hire someone for a startup role who had no interest in startups.
+No, the only people to blame is us, and more specifically me, since I was at the helm when it all went down.</div>
+</div>
+<div class="section" id="what-s-next">
+<h1>What&#8217;s next?</h1>
+<p>While I&#8217;m still tying up loose ends with NewsLabs, I&#8217;ve gone and gotten a real job!
+It&#8217;s great to take a break from the stress of startup life, and I&#8217;m loving working on compilers again.</p>
+<p>I&#8217;ve just started a job with Mozilla, and I work on the Javascript engine in Firefox.
+Its a great job, working with smart people, on product used daily by about 400 million people.
+Its the sort of job I was looking for when I decided to do a PhD 6 years ago, and the perfect place for a geek to end up.</p>
+<p>Finally, I&#8217;m looking forward to working on side projects.
+All projects get put on hold when working on a startup, and most were on hold during the final two years of my PhD.
+I have to write a scripting language, learn Haskell, read SICP and Concrete Mathematics, fix the mess that is Autotools, and am currently writing a <em>little language</em> for an itch that needs scratching.
+I&#8217;m also going to start writing a lot more.
+There are a few NewsTilt observations yet to be made, some lessons from my PhD that were a bit informal to make it into the thesis, and about 15 half-written pieces which I hope haven&#8217;t bit-rotten since I sketched them.</p>
+<p>If you&#8217;re interested, all things will be <a class="reference external" href="http://blog.paulbiggar.com/feed/">posted here</a>, and on my <a class="reference external" href="https://twitter.com/paulbiggar">twitter</a>, as soon as I get a chance.</p>
+<div class="section" id="updates">
+<span id="last-updated"></span><h2>Updates</h2>
+<ul class="simple">
+<li>I added <a class="reference internal" href="#a-note-to-clarify-the-situation-with-the-developer-we-hired">a note to clarify the situation with the developer we hired</a>.
+<a class="reference external" href="http://news.ycombinator.com/item?id=1699411">HackerNews went nuts over that</a>!</li>
+<li>I rewrote <a class="reference internal" href="#this-paragraph">this paragraph</a> because it sounded like I was speaking badly of the journalists.</li>
+<li>I added <a class="reference internal" href="#a-note-that-peter-kafka-and-allthingsd">a note that Peter Kafka and AllThingsD</a> aren&#8217;t to blame in any way.</li>
+<li>I added <a class="reference internal" href="#an-epilogue">an epilogue</a> where I made it clear the blame lay with me, not anyone named or unnamed in this piece.
+I assumed that was implicit when I wrote it, and the piece was more of an effort to discuss the problems we faced, but I believe some people interpreted it as an attempt to deflect blame.</li>
+<li>I said we were returning 40% to investors; it&#8217;s a lot closer to 50% now.</li>
+<li><a class="reference external" href="http://ma.tt">Matt Mullenweg</a> asked me about my WordPress problems, and I realized I was really projecting my hatred of PHP onto it. Sorry! I rewrote <a class="reference internal" href="#the-wordpress-section">the WordPress section</a> to reflect this.</li>
+</ul>
+<table class="docutils footnote" frame="void" id="id24" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>We didn&#8217;t consider delaying the launch, as news is rather timely, and journalists had prepared news for our launch that started going stale as we stalled.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id25" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Many of the people we spoke to felt that the Huffington Post was no better than Demand Media in that they exploited journalists.
+And we looked the same because we also didn&#8217;t pay journalists.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id26" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[3]</a></td><td>Did I say &#8220;for us&#8221;? I meant &#8220;on our platform&#8221;. Easy mistake to make&#8230;</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id27" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[4]</a></td><td>We weren&#8217;t hiding this information from them. It just took us a long time to realise it.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id28" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[5]</a></td><td>Here&#8217;s another problem. We thought way way too far ahead of ourselves. We were worrying about brands when there weren&#8217;t any readers.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id29" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[6]</a></td><td>which we didn&#8217;t have the money for, etc.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id30" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[7]</a></td><td>Incidentally, I used to wonder why tech startups had people who weren&#8217;t coders. I have a new-found respect for these people.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id31" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[8]</a></td><td>I was generally conscious to call myself &#8220;co-founder&#8221; rather than &#8220;CEO&#8221;.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id32" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id10">[9]</a></td><td>More, um, <em>dedicated</em> founders might have just brought on new journalists, and pretended there wasn&#8217;t a problem. No points for guessing why we didn&#8217;t do this.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id33" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id11">[10]</a></td><td>If we did, we probably wouldn&#8217;t get very favourable terms, which isn&#8217;t the end of the world, but it does lower the potential reward for everyone involved.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id34" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id12">[11]</a></td><td>When PG lures in a new batch, he always talks about how much fun a startup is. And looking around, all the other startups were having fun as they went. This should have been a bigger clue earlier on.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id35" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id13">[12]</a></td><td>Without going too much into it, I used to believe that a company didn&#8217;t need to be in Silicon Valley to succeed.
+I still believe that, but not being there is a large disadvantage at the least.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id36" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id14">[13]</a></td><td>If you support the Startup visa take note: if the startup visa does not allow a founder&#8217;s significant other to work, then many founders won&#8217;t move.
+I can support my wife on a H1B because it comes with a high salary, but good luck on a founder&#8217;s salary, no matter how good the funding is.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id37" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id15">[14]</a></td><td>Technically, neither set of investors had any say in what we did.
+But we had to consider them because we felt a duty to them.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id38" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id16">[15]</a></td><td>Which, despite being a much larger success than us, also shut down, in circumstances which are regarded to be largely unfavourable.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id39" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id17">[16]</a></td><td>If I do say so myself.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id40" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id18">[17]</a></td><td>Despite the fact that 90% of what I write goes unfinished.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id41" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id19">[18]</a></td><td>My money is still on the newsapocolypse.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id42" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id20">[19]</a></td><td>There is a challenge here to iterate your idea and change and refine it to be what people want, without making them feel like they haven&#8217;t a clue what you do.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id43" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id21">[20]</a></td><td>Ah, how soon people forget. Haven&#8217;t seen anyone care about Facebook&#8217;s massive privacy problems since Google&#8217;s Net Neutrality thing.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id44" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id22">[21]</a></td><td>Though it must be said that WordPress&#8217; security problems are undeniable, and that is has a bad reputation for performance and maintainability.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id45" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id23">[22]</a></td><td>I&#8217;m going to say this is because I&#8217;m Irish, but no doubt <em>real</em> Irish businessmen know how to do this better.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+											</div><!-- .entry-content -->
+
+					<div id="entry-author-info">
+						<div id="author-avatar">
+							<img alt='' src='http://0.gravatar.com/avatar/eee6ec3be3e3176ff1e1119301630812?s=60&amp;d=http%3A%2F%2Fblog.paulbiggar.com%2Fwp-includes%2Fimages%2Fblank.gif&amp;r=X' class='avatar avatar-60 photo' height='60' width='60' />						</div><!-- #author-avatar -->
+						<div id="author-description">
+							<h2>About Paul Biggar</h2>
+							I'm a compiler geek, with a slant towards scripting languages.
+
+I work on the Javascript team at Mozilla. Before that I did a PhD in compiler optimizations, static analysis and scripting languages.							<div id="author-link">
+								<a href="http://blog.paulbiggar.com/archive/author/admin/" rel="author">
+									View all posts by Paul Biggar <span class="meta-nav">&rarr;</span>								</a>
+							</div><!-- #author-link	-->
+						</div><!-- #author-description -->
+					</div><!-- #entry-author-info -->
+
+					<div class="entry-utility">
+						This entry was posted in <a href="http://blog.paulbiggar.com/archive/category/uncategorized/" title="View all posts in Uncategorized" rel="category tag">Uncategorized</a> and tagged <a href="http://blog.paulbiggar.com/archive/tag/failure/" rel="tag">failure</a>, <a href="http://blog.paulbiggar.com/archive/tag/journalism/" rel="tag">journalism</a>, <a href="http://blog.paulbiggar.com/archive/tag/newslabs/" rel="tag">newslabs</a>, <a href="http://blog.paulbiggar.com/archive/tag/newstilt/" rel="tag">newstilt</a>, <a href="http://blog.paulbiggar.com/archive/tag/startups/" rel="tag">startups</a>, <a href="http://blog.paulbiggar.com/archive/tag/ycombinator/" rel="tag">ycombinator</a>. Bookmark the <a href="http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/" title="Permalink to Why we shut NewsTilt down" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://blog.paulbiggar.com/archive/a-rant-about-php-compilers-in-general-and-hiphop-in-particular/" rel="prev"><span class="meta-nav">&larr;</span> A rant about PHP compilers in general and HipHop in particular.</a></div>
+					<div class="nav-next"><a href="http://blog.paulbiggar.com/archive/great-commit-messages/" rel="next">Great commit messages <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-257">
+        <div id="dsq-comment-header-257" class="dsq-comment-header">
+            <cite id="dsq-cite-257">
+                <span id="dsq-author-user-257">yvesman</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-257" class="dsq-comment-body">
+            <div id="dsq-comment-message-257" class="dsq-comment-message"><p>Thank you for this fantastic list. You probably know of or have heard of the books by the guys who made Rails. Getting Real and ReWork. A lot of what you said resonates with those books. </p>
+<p>Stay positive and I look forward to your next venture. </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-256">
+        <div id="dsq-comment-header-256" class="dsq-comment-header">
+            <cite id="dsq-cite-256">
+                <span id="dsq-author-user-256">EastLondonLines</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-256" class="dsq-comment-body">
+            <div id="dsq-comment-message-256" class="dsq-comment-message"><p>You biggest flaw was not actually understanding who your customers were. The customers were never the journalists. Getting it right for them was certainly important but they are actually part of your work force. Your customers are your audience. If you didn&#8217;t start off by working out who you were talking to you didn&#8217;t stand a chance.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-255">
+        <div id="dsq-comment-header-255" class="dsq-comment-header">
+            <cite id="dsq-cite-255">
+                <span id="dsq-author-user-255">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-255" class="dsq-comment-body">
+            <div id="dsq-comment-message-255" class="dsq-comment-message"><p>I&#8217;m a journalist and after reading the way you treated the journalists on this project &#8211; I can&#8217;t tell you how truly glad I am you failed so miserably. You can&#8217;t see how many truly horrid, clueless mistakes you made obviously or you would never have written this blog. You respected no one. You didn&#8217;t appreciate what you had. You didn&#8217;t worry at all obviously about what was in it for the journalists. You admit you didn&#8217;t care about journalism to begin with &#8211; so what were you in it for? Sounds like you wanted a get rich quick scheme and thought it would be so easy. We get enough disrespect and shit from the existing media companies and sure don&#8217;t need someone else expecting us to use our years of hard won writing skills to make your fortunes.  If you&#8217;d attracted &#8220;hungry inexperienced journalists you would have (1) burned them out (2) not attracted anyone and even turned readers away because they ARE young and inexperienced and can&#8217;t write, and you had NO F&#8217;ing clue how to work with them. Not only that, you couldn&#8217;t offer them feedback or mentoring since you really don&#8217;t care about journalism so you didn&#8217;t care about them (3) All you would have done was prolong the failure. People aren&#8217;t slaves. You obviously don&#8217;t respect journalists or the process and hard work it takes to succeed as an entrepreneur or a newsman. You don&#8217;t even understand how bad this whole post makes you look. My prediction? You&#8217;ll never succeed as an entrepreneur building a journalism base from scratch up. You don&#8217;t have the skills. Good thing you have a job being someone else&#8217;s monkey.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-258">
+        <div id="dsq-comment-header-258" class="dsq-comment-header">
+            <cite id="dsq-cite-258">
+                <span id="dsq-author-user-258">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-258" class="dsq-comment-body">
+            <div id="dsq-comment-message-258" class="dsq-comment-message"><p>Of course we cared for journalists &#8211; they were our customers. Everything we did was for them. Certainly we got it wrong, but we were not trying to take advantage of anyone. We were in it because we had started a company to make a related product, and we listened to people&#8217;s problems.</p>
+<p>We would only have been successful by making successes of journalists. To be able to run NewsTilt successfully, at least 20 journalists would have to be making a full living from it. To be able to get rich, we would have needed at least 1000 customers making a living. That&#8217;s not exactly taking advantage.</p>
+<p>The &#8220;hungry inexperienced journalists&#8221; was an idea, and not one fully fleshed out. Perhaps it would not have been in their best interests, in which case we would have changed what we did. Change is what young companies do (&#8220;pivot&#8221; in the startup vernacular) so if we found they lacked mentorship we would have solved that, perhaps by hiring mentors.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-3" id="dsq-comment-259">
+        <div id="dsq-comment-header-259" class="dsq-comment-header">
+            <cite id="dsq-cite-259">
+                <span id="dsq-author-user-259">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-259" class="dsq-comment-body">
+            <div id="dsq-comment-message-259" class="dsq-comment-message"><p>Reread your post. You seem totally confused about why journalists were opposed to so much you were doing. You didn&#8217;t deliver on promises, you said you wasted their content. NO WHERE in this entire blog have you recognized, apologized to or addressed the hard work the journalists put in. You&#8217;re saying one thing, doing another. You&#8217;re not walking the talk. Your intent &#8220;we were not trying to take advantage of anyone,&#8221; isn&#8217;t what matters. What you actually did &#8211; &#8220;waste content, not deliver&#8221; is what people remember.  You say you wanted to &#8220;make successes of journalists,&#8221; yet you didn&#8217;t want to do any promotion, found promotion &#8220;a huge time suck&#8221; and talk about finding a way to get the most out of people for YOUR advantage, not theirs. For a site that was supposedly all about journalists, this is all about you. My suggestion is you write another blog, NAME EVERY ONE who contributed a piece of writing to Newstilt, LINK to that site, THANK EVERYONE profusely and seriously READ what they wrote and make a comment about it. You have yet to appreciate what anyone has done. No wonder they think you&#8217;re another Demand Media &#8211; or worse. How can you afford to hire mentors, but not pay writers?! </p>
+<p>It&#8217;s like you&#8217;re not even thinking through what you&#8217;re thinking about! Did you even ask anyone from Poynter, or Knight-Ridder, or ANY organization to critique your plan and give you feedback before you launched this? </p>
+<p>I&#8217;m not convinced of your intent and neither is anyone else. We all want to know who funded this ill-conceived venture because he&#8217;s obviously got more money than God and is not worried about throwing it away. The class of 19 journalists (including Pulitzer winners) from Poynter&#8217;s entrepreneurial seminar last August would love to get funding for any of our serious, well-thought out projects and business plans whose due diligence has been done, and that are backed by long-term, award winning, dedicated passionate journalists who ARE passionate about making a difference in the world, and not just in our bank accounts. </p>
+<p>Please stick to coding. Journalism is an art, not a science. It requires right-brain thinkers to succeed. Left-brained bean counters are a dime a dozen, but innovation, the ability to spot trends, understand readers, craft stories etc. is something only a true journalist can do. The reason journalism is an untapped wasteland is because the right creative force (like those in my class at Poynter) just haven&#8217;t hit the radar yet. It&#8217;s coming though.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-4" id="dsq-comment-262">
+        <div id="dsq-comment-header-262" class="dsq-comment-header">
+            <cite id="dsq-cite-262">
+                <span id="dsq-author-user-262">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-262" class="dsq-comment-body">
+            <div id="dsq-comment-message-262" class="dsq-comment-message"><p>I did apologize, on the mailing list that the we and the journalists used to communicate. Nathan also did that when he announced that we shut down. This piece wasn&#8217;t about apology, it was about the lessons to be gotten from it.</p>
+<p>Paying writers would have changed the dynamic of our relationship. We weren&#8217;t buying content, and we weren&#8217;t hiring journalists. We were providing a service to them, and aiming to take a cut of their profits online as our income.</p>
+<p>We didn&#8217;t just invent this idea. We spoke to dozens of journalists, and the product was based entirely on what they told us. We spoke to some people at Knight (not in an official capacity); I don&#8217;t want to put words in their mouths, but they obviously didn&#8217;t tell us we were doing the wrong thing or we would have changed what we were doing.</p>
+<p>Our intent was plain. We wanted to make a successful company making a successful product. We could only have done that through making successful journalists. Our funders we mentioned in this piece several times: YCombinator. I&#8217;m sure they&#8217;d be delighted to invest in real journalists, and the application process is open for a few more days I believe. YCombinator&#8217;s motto is &#8216;make something people want&#8217;, and that&#8217;s what we were doing.</p>
+<p>I&#8217;m afraid your final paragraph simply makes no sense. Art/science is a false dichotomy, as is left-/right-brained. To think that journalism can only come from inside to box is ludicrous. People have many skills besides the one in which they are trained, and you certainly believe this or you wouldn&#8217;t suggest that journalists, whose primary skill is not innovation, can innovate. Please don&#8217;t believe that anyone can think themselves out of this wasteland. It requires not only innovation and the right creative force (for want of a better term), but also rapid iteration, and lots of different companies trying. </p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-5" id="dsq-comment-263">
+        <div id="dsq-comment-header-263" class="dsq-comment-header">
+            <cite id="dsq-cite-263">
+                <span id="dsq-author-user-263">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-263" class="dsq-comment-body">
+            <div id="dsq-comment-message-263" class="dsq-comment-message"><p>You say: &#8220;Art/science is a false dichotomy, as is left-/right-brained. To think that journalism can only come from inside to box is ludicrous. People have many skills besides the one in which they are trained, and you certainly believe this or you wouldn&#8217;t suggest that journalists, whose primary skill is not innovation, can innovate. Please don&#8217;t believe that anyone can think themselves out of this wasteland. It requires not only innovation and the right creative force (for want of a better term), but also rapid iteration, and lots of different companies trying. &#8221;</p>
+<p>You really have been living under a rock.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-254">
+        <div id="dsq-comment-header-254" class="dsq-comment-header">
+            <cite id="dsq-cite-254">
+http://twitter.com/grassroots_tv                <span id="dsq-author-user-254">Grassroots</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-254" class="dsq-comment-body">
+            <div id="dsq-comment-message-254" class="dsq-comment-message"><p>really nice post, thanks we are using it to learn how to do our new project visionOntv</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-248">
+        <div id="dsq-comment-header-248" class="dsq-comment-header">
+            <cite id="dsq-cite-248">
+http://smcnally.myopenid.com/                <span id="dsq-author-user-248">smcnally</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-248" class="dsq-comment-body">
+            <div id="dsq-comment-message-248" class="dsq-comment-message"><p>Thanks for all the detail, Paul. It&#8217;s generous to share it all like this. You and I touched on some of these same things on Hacker News and Reddit. <a href="http://news.ycombinator.com/item?id=1260476" rel="nofollow">http://news.ycombinator.com/item?id=1260476</a><a href="http://www.reddit.com/r/IAmA/comments/bwrew/iama_founder_of_newstilt_a_y_combinator_startup/c0oza6h?context=3" rel="nofollow">http://www.reddit.com/r/IAmA/comments/bwrew/iama_founder_of_newstilt_a_y_combinator_startup/c0oza6h?context=3</a>Building vs &#8220;buying&#8221; was a tough decision that forced a lot of others, I&#8217;m sure. Even if not WordPress, there are other CMS frameworks out there that likely could have saved you significant time and allowed you to focus resources elsewhere. I&#8217;m surprised your not catching more heat for this:&#8221;I think it’s important to say that we really failed because of a lack of content. But that was a symptom of having journalists who just didn’t want to succeed enough. &#8220;That&#8217;s less generous as it&#8217;s laying blame on others rather than on your communication with and management of those others. This is something &#8220;geeks,&#8221; and others, can often miss.With regard to True/Slant (where I was CTO) &#8220;shutting down under unfavorable circumstances,&#8221; we were acquired by Forbes. The platform we built for <a href="http://trueslant.com" rel="nofollow">trueslant.com</a> is now running <a href="http://blogs.forbes.com" rel="nofollow">blogs.forbes.com</a>. We&#8217;re rebuilding the rest of the <a href="http://forbes.com" rel="nofollow">forbes.com</a> network with much of the same DNA. Our founder now owns content and product across Forbes digital, print and video. Several True/Slant Contributors are working with us. Several others built their brands enough to get good gigs elsewhere. That may not be as favorable as continuing as an independent entity, but it&#8217;s been very good so far. I hope and expect that continues, and I wish you the best of luck in your current and future work.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-249">
+        <div id="dsq-comment-header-249" class="dsq-comment-header">
+            <cite id="dsq-cite-249">
+                <span id="dsq-author-user-249">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-249" class="dsq-comment-body">
+            <div id="dsq-comment-message-249" class="dsq-comment-message"><p>&gt; That&#8217;s less generous as it&#8217;s laying blame on others rather than on your communication with and management of those others. This is something &#8220;geeks,&#8221; and others, can often miss.</p>
+<p>Looking at it now, I can see why it sounds like we&#8217;re blaming the journalists, but that was not the intent. It was our fault for getting the wrong kind of people. I think True/Slant did much better in the regard.</p>
+<p>&gt; With regard to True/Slant (where I was CTO) &#8220;shutting down under unfavorable circumstances,&#8221; we were acquired by Forbes.</p>
+<p>As I understand it, Forbes acquired it and shut it down. You mention several people have done well out of it, but I recall 265 journalists, which I presume is a lot more than &#8216;several&#8217;. I don&#8217;t know why it sold, but shutting down the product is clearly &#8220;unfavourable circumstances&#8221;. I presume that after taking a large amount of VC, it wasn&#8217;t purely a talent acquisition. I could be wrong of course, and I&#8217;m sure you can&#8217;t speak of the terms in public, so it&#8217;s difficult to figure out whether it&#8217;s closing was positive overall.</p>
+<p>What are you doing next? Are you at Forbes?</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-3" id="dsq-comment-250">
+        <div id="dsq-comment-header-250" class="dsq-comment-header">
+            <cite id="dsq-cite-250">
+http://smcnally.myopenid.com/                <span id="dsq-author-user-250">smcnally</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-250" class="dsq-comment-body">
+            <div id="dsq-comment-message-250" class="dsq-comment-message"><p>Yes &#8211; I&#8217;ve been working with Forbes since the acquisition. </p>
+<p>And, true, not all of our journalists moved with us. True/Slant was their site, they wrote about their own topics (with guidance as requested and needed). So there were many topics &#8211; many slants &#8211; not all of which made sense for Forbes&#8217; narrower needs. </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-247">
+        <div id="dsq-comment-header-247" class="dsq-comment-header">
+            <cite id="dsq-cite-247">
+                <span id="dsq-author-user-247">Frank Biggar</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-247" class="dsq-comment-body">
+            <div id="dsq-comment-message-247" class="dsq-comment-message"><p>Interesting article, Paul, and very generous &#8211; some might even say generous to a fault (more on that later). Some questions occur to me, which you might or might not care to think about before you try again.</p>
+<p>1) What made (and seemingly still makes) you think that Facebook stops people posting anonymous comments? Unless things have changed very recently, it&#8217;s dead easy to create a new e-mail account under a fake name on Yahoo, and then a new Facebook account to go with it (if you don&#8217;t believe me, it should only take you a few minutes to try).</p>
+<p>2) Does the answer to question 1 suggest your set-up had difficulty with acquiring correct info, and/or with correcting misinformation? </p>
+<p>3) If you wanted to get your start-up employee to work Sundays, did you consider giving him shares or share options? (If you did, your article doesn&#8217;t mention it)</p>
+<p>4) Are you psychologically in denial, unwilling to admit to yourself that you&#8217;re a techie (or geek, as you put it) but NOT a natural businessman, and that if there is a next time, maybe your co-founder should be a businessperson and not a fellow geek as he was this time? The combination often works well &#8211; at the start of Apple, Steve Wozniak was the geek, and Steve Jobs was the businessman. Woz is not as rich as Jobs, but he was still worth $200 million last time I heard (quite a few years ago). And Rolls was a businessman, but Royce was a geek (well, an engineer actually, as geeks hadn&#8217;t yet been invented), and his name and fame is just as immortal as that of Rolls. I&#8217;m just going by your apparent lack of any attempt to acquire business qualifications, your lack of fun in your first setup, and your generous (arguably to a fault, at least for a businessman) free give-away in this article of all your hard-won lessons to possible future competitors. </p>
+<p>I could of course easily be completely wrong about you in that last question, so the only piece of explicit advice I&#8217;ll offer (as distinct from advice arguably implicit in my questions) is that you&#8217;d probaby be well-advised to feel totally free to ignore any or all advice coming from idiots like me, as we probably know almost nothing of what we&#8217;re talking about :-) </p>
+<p>Good luck in the new job.</p>
+<p>Cheers,</p>
+<p>Frank</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-244">
+        <div id="dsq-comment-header-244" class="dsq-comment-header">
+            <cite id="dsq-cite-244">
+                <span id="dsq-author-user-244">Trevor Blackwell</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-244" class="dsq-comment-body">
+            <div id="dsq-comment-message-244" class="dsq-comment-message"><p>Thanks for sharing your experiences. And please make Firefox JS as fast as Chrome!</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-245">
+        <div id="dsq-comment-header-245" class="dsq-comment-header">
+            <cite id="dsq-cite-245">
+                <span id="dsq-author-user-245">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-245" class="dsq-comment-body">
+            <div id="dsq-comment-message-245" class="dsq-comment-message"><p>Well, thank you for your support. YC was great!</p>
+<p>As for JS in Firefox, check out <a href="http://arewefastyet.com/" rel="nofollow">http://arewefastyet.com/</a>.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-243">
+        <div id="dsq-comment-header-243" class="dsq-comment-header">
+            <cite id="dsq-cite-243">
+http://page99test.com                <span id="dsq-author-user-243">Joanna</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-243" class="dsq-comment-body">
+            <div id="dsq-comment-message-243" class="dsq-comment-message"><p>This is so helpful, Paul &#8211; thank you. We have a startup in Canada, and as much as we believe it&#8217;s a kick-ass idea, we&#8217;d very likely lean towards self-deprecation (or at least some serious humility) if asked about it. That one tip alone &#8211; that we should be confident about what we&#8217;re doing &#8211; is worth a post; of course, the other tips are stellar, too.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-242">
+        <div id="dsq-comment-header-242" class="dsq-comment-header">
+            <cite id="dsq-cite-242">
+http://gumption.typepad.com                <span id="dsq-author-user-242">Joe McCarthy</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-242" class="dsq-comment-body">
+            <div id="dsq-comment-message-242" class="dsq-comment-message"><p>Paul: thanks for offering such a thorough and honest assessment of the lessons you learned through the challenges you faced at NewsTilt. I have not encountered such a helpful post for current or prospective entrepreneurs since <a href="http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/" rel="nofollow">Paul Bragiel wrote about the lessons he learned from Meetro&#8217;s failure</a>. </p>
+<p>As another former founder of a failed venture, I can relate to much of what you (and Paul Bragiel) have shared, and wish I&#8217;d taken the time to share more of the lessons I learned &#8230; which probably would have helped me better understand them (regardless of whether they would have helped others). In my judgment, I / we only learn through our failures.</p>
+<p>Reading your article, thinking about my own experience, and reflecting on the perspective you articulate near the end, I was reminded of Rainer Maria Rilke&#8217;s poem, The Man Watching, which ends with the following verses:</p>
+<blockquote><p>Winning does not tempt that man.<br />
+This is how he grows: by being defeated, decisively,<br />
+by constantly greater beings.</p></blockquote>
+<p>Thanks for sharing!</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-241">
+        <div id="dsq-comment-header-241" class="dsq-comment-header">
+            <cite id="dsq-cite-241">
+http://twitter.com/ChristopheLloyd                <span id="dsq-author-user-241">Christopher Lloyd</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-241" class="dsq-comment-body">
+            <div id="dsq-comment-message-241" class="dsq-comment-message"><p>Paul, I have a longer response at my blog, but here&#8217;s the opener.</p>
+<p>Thanks for finally posting your promised postmortem on NewsTilt. Although as one of your former contributors, I wonder why it took three months to summarize the death of a company that only lived for two.</p>
+<p>Eulogies are meant to be delivered when the corpse is still relatively fresh, not already in the ground and the worms busy plying their trade. They&#8217;re like news in that way; perhaps that&#8217;s why the term &#8220;deadline&#8221; has always seemed apropos.</p>
+<p>Still, I&#8217;m appreciative that you took the time &#8212; eventually &#8212; to describe your thoughts, motivations and analysis. I think you&#8217;re spot-on with most of it, especially the limitations Facebook placed on the site and especially its users. When they&#8217;re reading a newspaper or magazine, people understand that they&#8217;re getting a bookended experience that has been pre-molded for them. On the Web, they want to roam unfettered, and anything that places restrictions on that soon falls out of their daily loop of browsing.</p>
+<p><a href="http://captaincritic.blogspot.com/2010/09/my-postmortem-on-newstilt.html" rel="nofollow">http://captaincritic.blogspot.com/2010/09/my-postmortem-on-newstilt.html</a></p>
+<p>Christopher Lloyd</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-261">
+        <div id="dsq-comment-header-261" class="dsq-comment-header">
+            <cite id="dsq-cite-261">
+                <span id="dsq-author-user-261">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-261" class="dsq-comment-body">
+            <div id="dsq-comment-message-261" class="dsq-comment-message"><p>A good read, though I disagree in many places. I&#8217;ve responded on Christopher&#8217;s blog.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-240">
+        <div id="dsq-comment-header-240" class="dsq-comment-header">
+            <cite id="dsq-cite-240">
+                <span id="dsq-author-user-240">Simone Gianni</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-240" class="dsq-comment-body">
+            <div id="dsq-comment-message-240" class="dsq-comment-message"><p>Hi Paul,<br />
+I really really appreciated this post, can identify myself a lot, and will try to make something out of your good &#8220;lessons&#8221;. </p>
+<p>I liked the part of &#8220;we can do it ourself, it&#8217;s a 5 minutes thing&#8221; until you end up with 5 thousands 5 minutes things, and just one life &#8230;.. I do it that all the time, no really, all the time.</p>
+<p>You know, geeks like to make software, it&#8217;s fun for us to make software &#8230; if someone arrives and tells us there is a software already done, that we can save a couple of weeks of hard work, and many more weeks of bug fixing, enhancing etc&#8230; we can understand that rationally, that it means making money (less time, better product), but it also means not making software .. where is the fun? It would be like having a &#8220;win now&#8221; button in your favorite videogame, the video is there, but where is the game?</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-251">
+        <div id="dsq-comment-header-251" class="dsq-comment-header">
+            <cite id="dsq-cite-251">
+http://smcnally.myopenid.com/                <span id="dsq-author-user-251">smcnally</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-251" class="dsq-comment-body">
+            <div id="dsq-comment-message-251" class="dsq-comment-message"><p>Understood &#8211; </p>
+<p>But how many more &#8220;5-minute&#8221; things can you get done when you start from a platform that&#8217;s already handling the nuts and bolts effectively?</p>
+<p>There&#8217;s plenty of game left to make the nuts &amp; bolts work, look and feel the way you want them to &#8211;  </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-239">
+        <div id="dsq-comment-header-239" class="dsq-comment-header">
+            <cite id="dsq-cite-239">
+                <span id="dsq-author-user-239">Bernard Biggar</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-239" class="dsq-comment-body">
+            <div id="dsq-comment-message-239" class="dsq-comment-message"><p>Hi Paul </p>
+<p>Very interesting article. A few thoughts for what it is worth :</p>
+<p>1 As a total outsider I am still not quite sure what your business model was! However the questions to be answered are the same no matter the business! Maybe this will help for the next time!<br />
+2 What were your future revenue stream ? &#8211; advertising income or paying customers ? Probably the former!<br />
+3 Who are your real customers? The people who will pay you for the product! In this case that is probably the advertising agencies or paying customers! You hit the nail on the head when you said that you should have paid more attention to the readers requirements!  Possibly the Business Angels who have invested into the company! Certainly not the journalists!<br />
+4 The journalists seem to be in this case  your suppliers of content! They are the product developers and not your customer! They effectively need to be kept happy, &#8211; either you pay them ( established journalists) or you give them an outlet to ear their views( new up and coming journalists) ! Did you ever consider hiring both types?<br />
+5 What is the product ? I have a strong suspicion in your business model that it was effectively the articles written by the journalists .<br />
+6 Identifying and securing the proper sub-distribution channels ! Did you have an alternative outlet to Facebook?<br />
+7 Presumably you had a business plan which showed the business to be profitable in the long run- Things don&#8217;t generally work out as planned so these need to be reviewed on a regular basis ! The application that you invented ( if that is the right terminology ) was if I understand it correctly a new invention to distribute news- the product-  in an instateneous, independent and cost effective way to the market . If that is  the case then can you sell the licence for this tool ( presumably it is patented!) to people who could use it ( producers of content)  and can afford to pay for it like  news agencies &#8211; e.g. Reuters who are finding competition from Twitter very tough! That would be a totally new business model to the one you initially set up but maybe less expensive to set up  and allows you to concentrate on what you are good at &#8211; developing and selling compilers rather than selling news- i.e; you don&#8217;t have to worry about content and whether journalism is an art or a science. In fact it is a business- ask Rupert Murdoch!</p>
+<p>In conclusion- All is not lost &#8211; use the above analysis ( your own analysis)  to maybe change your business model and start afresh. By the way I think the fact  that you have been able to analyse what went wrong with the business  and take a decision ( whether right or wrong in hindsight)  seems to me like what a good CEO is all about!   </p>
+<p>Bernard </p>
+<p>7 Staffing- </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-238">
+        <div id="dsq-comment-header-238" class="dsq-comment-header">
+            <cite id="dsq-cite-238">
+http://publicmind.in/blog/                <span id="dsq-author-user-238">Nitin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-238" class="dsq-comment-body">
+            <div id="dsq-comment-message-238" class="dsq-comment-message"><p>&#8220;Long pieces online are difficult to make a success of, as the online attention span is very low.&#8221;</p>
+<p>That&#8217;s happening with your this post as well, I guess. Anyway, nice read and honest analysis.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-237">
+        <div id="dsq-comment-header-237" class="dsq-comment-header">
+            <cite id="dsq-cite-237">
+http://twitter.com/TweetDeckTV                <span id="dsq-author-user-237">TweetDeckTV</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-237" class="dsq-comment-body">
+            <div id="dsq-comment-message-237" class="dsq-comment-message"><p>I think your candor is admirable. Your observation that you should have gone with writers who were hungry to succeed is dead on. Those new journalists &#8211; or writers with the aptitude and savvy to become journalists &#8211; would not only have been fueled by their aspirations for their own personal success, but also would have taken personal pride in the success of a new evolving company which depends upon their talent.</p>
+<p>Feigned confidence can never replace stubborn determination. You did something right to gain the trust of investors. But presenting a mindset that your product is fail-proof is actually NOT showing good judgment. NO business is guaranteed to succeed. And anyone admitting this fact shows that they have their wits about them, and are aware, agile, and prepared to dig in their heels and fight for success. </p>
+<p>Doing some things ad hoc is inevitable. But when the founders have not already worked out a mutually agreeable foundation, the odds are against them. You must have worked hard to get those investors. Here&#8217;s hoping you can work things out amicably with them so they will still be open to your future endeavors. </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-234">
+        <div id="dsq-comment-header-234" class="dsq-comment-header">
+            <cite id="dsq-cite-234">
+                <span id="dsq-author-user-234">John S.</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-234" class="dsq-comment-body">
+            <div id="dsq-comment-message-234" class="dsq-comment-message"><p>Hello Paul, </p>
+<p>Out of curiosity, what is happening to your core technology? Even if there are some problems with the code, I would think that it might be of interest to anyone who cares about news. Perhaps an open source model or a wiki news model might work on top of the platform/engine.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-2" id="dsq-comment-260">
+        <div id="dsq-comment-header-260" class="dsq-comment-header">
+            <cite id="dsq-cite-260">
+                <span id="dsq-author-user-260">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-260" class="dsq-comment-body">
+            <div id="dsq-comment-message-260" class="dsq-comment-message"><p>I don&#8217;t think the platform is developed enough to be helpful to others. As I said in the piece, better to go with WordPress. I&#8217;m a big fan of open source, but I don&#8217;t think open sourcing this would be helpful to anyone.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-232">
+        <div id="dsq-comment-header-232" class="dsq-comment-header">
+            <cite id="dsq-cite-232">
+http://twitter.com/kikabink                <span id="dsq-author-user-232">Kikabink</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-232" class="dsq-comment-body">
+            <div id="dsq-comment-message-232" class="dsq-comment-message"><p>Thank you Paul for sharing your learnings from the failure of NewsTilt. What you&#8217;ve written here are invaluable lessons for all startup entrepreneurs. I have no doubt that, after your much deserved break, you&#8217;ll get back into the fray and be all the more successful having gone through this experience. </p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-230">
+        <div id="dsq-comment-header-230" class="dsq-comment-header">
+            <cite id="dsq-cite-230">
+                <span id="dsq-author-user-230">Wilscoop</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-230" class="dsq-comment-body">
+            <div id="dsq-comment-message-230" class="dsq-comment-message"><p>I admire the honesty and analytical rigour of this post.</p>
+<p>Still, it seems the site was essentially a content mill. Had you hired hungry, inexperienced journalists and didn&#8217;t pay them either, they would have flaked fast too. &#8216;Payment in exposure&#8217; is useless.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-231">
+        <div id="dsq-comment-header-231" class="dsq-comment-header">
+            <cite id="dsq-cite-231">
+                <span id="dsq-author-user-231">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-231" class="dsq-comment-body">
+            <div id="dsq-comment-message-231" class="dsq-comment-message"><p>I don&#8217;t think it fair to describe the site as a content mill. But you raise a good point: if we had attracted the hungry inexperienced journalists, would we have appeared as much more parasitic than we were? Interesting thought.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-3" id="dsq-comment-233">
+        <div id="dsq-comment-header-233" class="dsq-comment-header">
+            <cite id="dsq-cite-233">
+http://www.collegetextbooknews.com                <span id="dsq-author-user-233">Clyde Smith</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-233" class="dsq-comment-body">
+            <div id="dsq-comment-message-233" class="dsq-comment-message"><p>Payment in exposure is useless if you can&#8217;t provide the exposure.</p>
+<p>When I initially read what you guys promised, it struck me as overoptimistic but I gave you the benefit of the doubt.  Now I see you overhyped the project, basically overpromising and underdelivering.</p>
+<p>Obviously if two founders can&#8217;t communicate, there&#8217;s a limit to what can happen  (I&#8217;ve been there and it sucks).  But blaming the journalists for not being motivated when you weren&#8217;t doing what you said you could do?</p>
+<p>Those of use that are minor but really motivated are building our own brands on our own sites.  We know better than to build other people&#8217;s brands with our content unless they are really on top of their game.</p>
+<p>You sounded like you had game.  Apparently you did not.  And, hey, I&#8217;ve been there too!</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-4" id="dsq-comment-235">
+        <div id="dsq-comment-header-235" class="dsq-comment-header">
+            <cite id="dsq-cite-235">
+                <span id="dsq-author-user-235">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-235" class="dsq-comment-body">
+            <div id="dsq-comment-message-235" class="dsq-comment-message"><p>The journalists should never have felt that they were building our brand instead of theirs &#8211; our mistake. If I were to do it again, I&#8217;m not sure we&#8217;d even have a newstilt.com site and brand.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-5" id="dsq-comment-236">
+        <div id="dsq-comment-header-236" class="dsq-comment-header">
+            <cite id="dsq-cite-236">
+http://www.collegetextbooknews.com                <span id="dsq-author-user-236">Clyde Smith</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-236" class="dsq-comment-body">
+            <div id="dsq-comment-message-236" class="dsq-comment-message"><p>Whatever you do again, you did a nice job opening things up and sharing your lessons.  Lots of food for thought here.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-229">
+        <div id="dsq-comment-header-229" class="dsq-comment-header">
+            <cite id="dsq-cite-229">
+http://twitter.com/tony_aa                <span id="dsq-author-user-229">Tony Abou-Assaleh</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-229" class="dsq-comment-body">
+            <div id="dsq-comment-message-229" class="dsq-comment-message"><p>I really appreciate the time you took to put all this in writing. It has helped me a lot in understanding what we&#8217;re doing wrong, and also gave me confidence in moving forward knowing that I&#8217;m doing at least some things right.</p>
+<p>All the best at Mozilla and I hope to see you lead a startup to success one day.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-even depth-1" id="dsq-comment-228">
+        <div id="dsq-comment-header-228" class="dsq-comment-header">
+            <cite id="dsq-cite-228">
+http://fortes.com/                <span id="dsq-author-user-228">Fortes</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-228" class="dsq-comment-body">
+            <div id="dsq-comment-message-228" class="dsq-comment-message"><p>Great write up, my condolences that it didn&#8217;t work out.</p>
+<p>I&#8217;m amazed you went and found another job so quickly, congratulations!</p>
+<p>What&#8217;s Nathan going to do next? If he has any interest in some short-term freelance, I&#8217;d love to hear from him :)</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-226">
+        <div id="dsq-comment-header-226" class="dsq-comment-header">
+            <cite id="dsq-cite-226">
+                <span id="dsq-author-user-226">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-226" class="dsq-comment-body">
+            <div id="dsq-comment-message-226" class="dsq-comment-message"><p>Good writeup, Paul &#8211; sorry it didn&#8217;t work out. I did end up re-starting The Printed Blog with a subscription model, and I&#8217;m pleased to say, things are going very, very well. We don&#8217;t need to raise any money (assuming we hit our minimum number of 3,000 subscribers, which we will), and the response from the community has been overwhelming. Best, Josh</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-2" id="dsq-comment-227">
+        <div id="dsq-comment-header-227" class="dsq-comment-header">
+            <cite id="dsq-cite-227">
+                <span id="dsq-author-user-227">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-227" class="dsq-comment-body">
+            <div id="dsq-comment-message-227" class="dsq-comment-message"><p>Hi Joshua, that&#8217;s fantastic. The Printed Blog seemed like a great idea when you told me about it, glad it&#8217;s working out.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+    <li class="comment odd alt thread-even depth-1" id="dsq-comment-225">
+        <div id="dsq-comment-header-225" class="dsq-comment-header">
+            <cite id="dsq-cite-225">
+http://twitter.com/tahpot                <span id="dsq-author-user-225">tahpot</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-225" class="dsq-comment-body">
+            <div id="dsq-comment-message-225" class="dsq-comment-message"><p>Great post. It&#8217;s almost motivated me to write up my experiences trying to launch a real-time search engine last year &#8211; lots of parallels. Best of luck in the future.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-224">
+        <div id="dsq-comment-header-224" class="dsq-comment-header">
+            <cite id="dsq-cite-224">
+                <span id="dsq-author-user-224">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-224" class="dsq-comment-body">
+            <div id="dsq-comment-message-224" class="dsq-comment-message"><p>Your credentials to run a news organization: &#8220;I&#8217;m a compiler geek, with a slant towards scripting languages. I work on the Javascript team at Mozilla. Before that I did a PhD in compiler optimizations, static analysis and scripting languages.&#8221;</p>
+<p>Why is it that every web geek in the world thinks he can run a journalism operation better than journalists?  Journalism is an art, not a science.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-2" id="dsq-comment-246">
+        <div id="dsq-comment-header-246" class="dsq-comment-header">
+            <cite id="dsq-cite-246">
+                <span id="dsq-author-user-246">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-246" class="dsq-comment-body">
+            <div id="dsq-comment-message-246" class="dsq-comment-message"><p>There&#8217;s so much to say on this topic, but I don&#8217;t want to get into it yet. However, I will say that it&#8217;s somewhat unlikely that the sort of transformational change that journalism needs to survive or be reborn, will come from people who live inside the existing journalism bubble. </p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment even depth-3" id="dsq-comment-252">
+        <div id="dsq-comment-header-252" class="dsq-comment-header">
+            <cite id="dsq-cite-252">
+                <span id="dsq-author-user-252">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-252" class="dsq-comment-body">
+            <div id="dsq-comment-message-252" class="dsq-comment-message"><p>It&#8217;s that kind of facepalm-inducing hubris that doomed your venture from the start.  And in spite of squandering your investors&#8217; money, you apparently you haven&#8217;t learned a thing.</p>
+<p>Let&#8217;s put your logic to use: Let&#8217;s have journalists write the next big AJAX library.  After all, they live outside the existing dot-com bubble, so they must know what&#8217;s best, right?  You have no idea the kinds of &#8220;transformational changes&#8221; an industry you&#8217;ve never worked in needs.</p>
+<p>If you think journalists are what&#8217;s killing journalism, you&#8217;re even more poorly informed and equipped than you&#8217;ve already demonstrated.</p>
+</div>
+        </div>
+    </li>
+
+    <ul class='children'>
+    <li class="comment odd alt depth-4" id="dsq-comment-253">
+        <div id="dsq-comment-header-253" class="dsq-comment-header">
+            <cite id="dsq-cite-253">
+                <span id="dsq-author-user-253">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-253" class="dsq-comment-body">
+            <div id="dsq-comment-message-253" class="dsq-comment-message"><p>&gt; It&#8217;s that kind of facepalm-inducing hubris that doomed your venture from the start. And in spite of squandering your investors&#8217; money, you apparently you haven&#8217;t learned a thing.</p>
+<p>Try to tone down the hyperbole if you wish to be taken seriously.</p>
+<p>&gt; Let&#8217;s put your logic to use: Let&#8217;s have journalists write the next big AJAX library. </p>
+<p>If you apply your analogy to our situation, we come to a place where due to bad writing on behalf of journalists, we put computer programmers to the task. Which is not what we did.</p>
+<p>&gt; If you think journalists are what&#8217;s killing journalism, you&#8217;re even more poorly informed and equipped than you&#8217;ve already demonstrated. </p>
+<p>Journalism is neither being killed nor saved by journalists. It&#8217;s being killed by its revenue models vanishing. Advertising was killed by craigslist, customers refuse to pay for content (and could not pay enough to prop up the current news institutions), and news competes with lots of other content for people&#8217;s attention and money.</p>
+<p>Journalists have absolutely no idea how to save it, and neither does anyone else. Having spent my entire time at NewsLabs talking to journalists, I have seen no evidence that their salvation will come from inside. In fact, only a small minority really seem to understand their problems, with the majority trying to cling to their old business models, blaming craiglist and google for their woes.</p>
+</div>
+        </div>
+    </li>
+
+    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/';
+    var disqus_identifier = '66 http://blog.paulbiggar.com/?p=66';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'badnomenclature';
+    var disqus_title = "Why we shut NewsTilt down";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            DISQUS.request.get('?cf_action=sync_comments&post_id=66');
+        });
+                    };
+    var facebookXdReceiverPath = 'http://blog.paulbiggar.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/blog.paulbiggar.com\/archive\/why-we-shut-newstilt-down\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.72';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="text-7" class="widget-container widget_text">			<div class="textwidget"><img src="http://paulbiggar.com/speaking-medium.jpg"></div>
+		</li><li id="text-8" class="widget-container widget_text">			<div class="textwidget">paul.biggar [at] gmail.com
+<br/>
+<img src="http://twitter.com/favicon.ico">
+<a href="http://twitter.com/paulbiggar">Follow me on twitter</a></div>
+		</li><li id="text-9" class="widget-container widget_text">			<div class="textwidget">Check out <a href="https://circleci.com">Circle</a> Continuous Integration made easy</div>
+		</li>		<li id="recent-posts-3" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+				<li><a href="http://blog.paulbiggar.com/archive/trychooser/" title="TryChooser">TryChooser</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/cc-lists-and-openness/" title="CC-lists and openness">CC-lists and openness</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/helping-new-contributors-part-2-mentoring/" title="Helping new contributors &#8211; Part 2 &#8211; Mentoring">Helping new contributors &#8211; Part 2 &#8211; Mentoring</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/helping-new-contributors-part-1-meta/" title="Helping New Contributors &#8211; Part 1 &#8211; Meta">Helping New Contributors &#8211; Part 1 &#8211; Meta</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/dev-planning-contributor-engagement-summary/" title="Summary of Contributor Engagement threads on dev-planning">Summary of Contributor Engagement threads on dev-planning</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/great-commit-messages/" title="Great commit messages">Great commit messages</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/" title="Why we shut NewsTilt down">Why we shut NewsTilt down</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/a-rant-about-php-compilers-in-general-and-hiphop-in-particular/" title="A rant about PHP compilers in general and HipHop in particular.">A rant about PHP compilers in general and HipHop in particular.</a></li>
+				<li><a href="http://blog.paulbiggar.com/archive/introducing-malicious-code-reviews/" title="Introducing Malicious Code Reviews">Introducing Malicious Code Reviews</a></li>
+				</ul>
+		</li><li id="archives-4" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://blog.paulbiggar.com/archive/2011/07/' title='July 2011'>July 2011</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2011/05/' title='May 2011'>May 2011</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2011/04/' title='April 2011'>April 2011</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.paulbiggar.com/archive/2008/12/' title='December 2008'>December 2008</a></li>
+		</ul>
+</li><li id="linkcat-3" class="widget-container widget_links"><h3 class="widget-title">Links</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.youtube.com/watch?v=kKySEUrP7LA">Google Tech Talk: Compiling and Optimizing Scripting Languages</a></li>
+<li><a href="http://paulbiggar.com/research/#wip-phd-dissertation">PhD Thesis: Design and Implementation of an Ahead-of-time Compiler for PHP</a></li>
+
+	</ul>
+</li>
+			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://blog.paulbiggar.com/" title="Bad Nomenclature" rel="home">
+					Bad Nomenclature				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress.</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Minified using disk: basic
+Page Caching using disk: enhanced
+Database Caching using disk: basic
+Object Caching 705/887 objects using disk: basic
+
+Served from: blog.paulbiggar.com @ 2015-06-11 10:50:52 -->

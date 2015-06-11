@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://www.startupnews.com.au/cntnt/themes/wt_metro/style.css" />
+<link rel="pingback" href="http://www.startupnews.com.au/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://www.startupnews.com.au/cntnt/themes/wt_metro/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<script type="text/javascript">
+	var themeDir = "http://www.startupnews.com.au/cntnt/themes/wt_metro";
+</script>
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Startup Post-mortem: Keep Fit Stay Sane | //Startup News</title>
+<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="Keep Fit Stay Sane was a startup looking at mental/emotional health and fitness, with the aim of preventing depression/anxiety disorders."/>
+<link rel="canonical" href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Startup Post-mortem: Keep Fit Stay Sane | //Startup News" />
+<meta property="og:description" content="Keep Fit Stay Sane was a startup looking at mental/emotional health and fitness, with the aim of preventing depression/anxiety disorders." />
+<meta property="og:url" content="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/" />
+<meta property="og:site_name" content="//Startup News" />
+<meta property="article:tag" content="failure,Keep Fit Stay Sane,post mortem,startup story" />
+<meta property="article:section" content="Startups" />
+<meta property="article:published_time" content="2014-10-29T11:39:38+00:00" />
+<meta property="article:modified_time" content="2014-11-12T14:36:57+00:00" />
+<meta property="og:updated_time" content="2014-11-12T14:36:57+00:00" />
+<meta property="og:image" content="http://www.startupnews.com.au/cntnt/uploads/2014/10/keepfitstaysane2.jpg" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.startupnews.com.au\/","name":"\/\/Startup News"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="//Startup News &raquo; Feed" href="http://www.startupnews.com.au/feed/" />
+<link rel="alternate" type="application/rss+xml" title="//Startup News &raquo; Comments Feed" href="http://www.startupnews.com.au/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="//Startup News &raquo; iCal Feed" href="http://www.startupnews.com.au/newevents/?ical=1" />
+<link rel="alternate" type="application/rss+xml" title="//Startup News &raquo; Startup Post-mortem: Keep Fit Stay Sane Comments Feed" href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.startupnews.com.au\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='mailchimpSF_main_css-css'  href='http://www.startupnews.com.au/?mcsf_action=main_css&#038;ver=4.2.2' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='mailchimpSF_ie_css-css'  href='http://www.startupnews.com.au/cntnt/plugins/mailchimp/css/ie.css?ver=4.2.2' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='bbp-default-css'  href='http://www.startupnews.com.au/cntnt/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.7-5693' type='text/css' media='screen' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.startupnews.com.au/cntnt/plugins/contact-form-7/includes/css/styles.css?ver=4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-colorbox.css-css'  href='http://www.startupnews.com.au/cntnt/plugins/m-wp-popup/css/colorbox/colorbox.css?ver=0.5.23' type='text/css' media='all' />
+<link rel='stylesheet' id='staff-list-custom-css-css'  href='http://www.startupnews.com.au/cntnt/themes/wt_metro/simple-staff-list-custom.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='social_comments-css'  href='http://www.startupnews.com.au/cntnt/plugins/social/assets/comments.css?ver=3.1.1' type='text/css' media='screen' />
+<link rel='stylesheet' id='tribe-events-calendar-style-css'  href='http://www.startupnews.com.au/cntnt/plugins/the-events-calendar/resources/tribe-events-full.min.css?ver=3.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-events-calendar-mobile-style-css'  href='http://www.startupnews.com.au/cntnt/plugins/the-events-calendar/resources/tribe-events-full-mobile.min.css?ver=3.9.3' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='chosen-css'  href='http://www.startupnews.com.au/cntnt/plugins/wp-job-manager/assets/css/chosen.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-frontend-css'  href='http://www.startupnews.com.au/cntnt/plugins/wp-job-manager/assets/css/frontend.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-polls-css'  href='http://www.startupnews.com.au/cntnt/plugins/wp-polls/polls-css.css?ver=2.69' type='text/css' media='all' />
+<style id='wp-polls-inline-css' type='text/css'>
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('http://www.startupnews.com.au/cntnt/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+
+</style>
+<link rel='stylesheet' id='slb_core-css'  href='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/client/css/app.css?ver=2.4.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.startupnews.com.au/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/mailchimp/js/scrollTo.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mailchimpSF = {"ajax_url":"http:\/\/www.startupnews.com.au\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/mailchimp/js/mailchimp.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/m-wp-popup/js/wpp-popup-frontend.js?ver=0.5.23'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/hoverIntent.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/superfish.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/flexslider-min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/lightbox.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/jflickrfeed.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/jquery.mobilemenu.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/jcarousellite_1.0.1.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/jquery.easing.1.3.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/jquery.mousewheel.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/MetroJs.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/themes/wt_metro/js/custom.js?ver=4.2.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.startupnews.com.au/xmlrpc.php?rsd" />
+<link rel='shortlink' href='http://www.startupnews.com.au/?p=5708' />
+<link rel="shortcut icon" href="http://www.startupnews.com.au/cntnt/uploads/2014/06/favicon1.ico" />	
+<meta name="keywords" content=" perth, startup, start-up, start up, news, interviews, opinions, events."  />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45264510-1', 'startupnews.com.au');
+  ga('send', 'pageview');
+
+</script>
+<!-- Custom CSS Styles -->
+<style type="text/css"> 
+a:link {
+    color: #24BAF9;
+}
+
+a:visited {
+    color: #24BAF9;
+}
+
+ 
+</style>
+<!-- /Custom CSS Styles -->
+
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body class="single single-post postid-5708 single-format-standard metro-magazine tribe-theme-wt_metro page-template-single-php">
+
+<div id="container" class="hfeed">	
+		<header id="header" role="banner">			
+		<div class="wrap">						
+			<div class="logo">
+							<h1>
+					<a href="http://www.startupnews.com.au" title="//Startup News">
+						<img src="http://www.startupnews.com.au/cntnt/uploads/2014/06/SN_logo5-800x1131-300x42.png" alt="//Startup News" />
+					</a>
+				</h1>	
+				
+			</div>	<!-- /logo -->	
+		
+			<div class="date">				
+				Thursday, 11th June 2015			</div>
+			
+			<div class="search">
+					<form method="get" id="searchform" action="http://www.startupnews.com.au/">
+		<input type="text" class="searchfield" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			</div>
+			
+			<div class="social">
+				<ul>
+											<li><a class="twitter" href="https://twitter.com/StartupNewsAus">Twitter</a></li>
+										
+											<li><a class="fb" href="https://www.facebook.com/startupnewsaus">Facebook</a></li>
+										
+											<li><a class="gplus" href="https://plus.google.com/+StartupnewsAus">Google+</a></li>
+										
+											<li><a class="rss" href="http://www.startupnews.com.au/feed/">RSS</a></li>
+										
+				</ul>
+			</div>
+		
+		
+		</div> <!-- /wrap -->		
+		
+		<div id="main-menu">
+			<ul id="menu-main-menu" class="menu"><li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://startupnews.com.au/"><i class="icon-home"></i>Home</a></li>
+<li id="menu-item-1292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1292"><a href="http://www.startupnews.com.au/about/"><i class="icon-user"></i>AboutUs</a>
+<ul class="sub-menu">
+	<li id="menu-item-1104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1104"><a href="http://www.startupnews.com.au/contact/"><i class="icon-envelope"></i>Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-3621" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3621"><a href="http://www.startupnews.com.au/2014/02/05/the-perth-startup-scene-what-you-need-to-know/">TheScene</a></li>
+<li id="menu-item-7894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7894"><a href="http://www.startupnews.com.au/support/">Support</a></li>
+<li id="menu-item-2179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2179"><a href="http://www.startupnews.com.au/startup-jobs/"><i class="icon-tasks"></i>Jobs</a>
+<ul class="sub-menu">
+	<li id="menu-item-2180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2180"><a href="http://www.startupnews.com.au/post-job/">Post Job</a></li>
+	<li id="menu-item-2181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2181"><a href="http://www.startupnews.com.au/jobs-dashboard/">Jobs Dashboard</a></li>
+</ul>
+</li>
+<li id="menu-item-3226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3226"><a href="/start">Login</a></li>
+</ul>	
+		</div>
+		
+		<div class="clearfix"></div>
+			
+	</header>
+
+	<div id="main">
+<section id="primary">
+	<div id="content" role="main">
+	
+					
+<article id="post-5708" class="post-5708 post type-post status-publish format-standard has-post-thumbnail hentry category-startups tag-failure tag-keep-fit-stay-sane tag-post-mortem tag-startup-story">
+		<header class="entry-header">
+		<h1 class="entry-title">Startup Post-mortem: Keep Fit Stay Sane</h1>
+		<div class="entry-meta">			
+			<span class="date">October 29, 2014 </span>
+			<span class="author"><a href="http://www.startupnews.com.au/author/gentleman-tech/" title="Posts by Marcus Holmes" rel="author">Marcus Holmes</a></span>
+			<span class="category"><a href="http://www.startupnews.com.au/category/startups/" rel="category tag">Startups</a></span>
+							<span class="comments"><a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comments">6 comments</a></span>		
+				
+		</div><!-- /entry-meta -->		
+	</header><!-- /entry-header -->
+	
+	<div class="entry-content">	
+		<h2><a title="http://keepfitstaysane.com" href="http://keepfitstaysane.com" target="_blank" rel="nofollow">Keep Fit Stay Sane</a> was a startup looking at mental/emotional health and fitness, with the aim of preventing depression/anxiety disorders through the concept of &#8220;emotional fitness&#8221;.</h2>
+<p><span id="more-5708"></span></p>
+<h3>What happened:</h3>
+<p>I first pitched Keep Fit Stay Sane at the 2nd Perth Startup Weekend (March 2013). I had practiced the 1-minute pitch over and over again and had it down perfect, right up until I actually went up on stage, forgot everything and dribbled some crap at the audience. Needless to say I didn&#8217;t get a team formed around it, but it stuck in my head as a good idea. The original idea was to create a &#8220;gym for depression&#8221;, an online site that implemented a few of the psych things I&#8217;d learned during my depression, because there wasn&#8217;t (and still isn&#8217;t) anything out there on the interwebs that actually helps with depression.<img class="alignright wp-image-5768 size-thumbnail" src="http://www.startupnews.com.au/wp-content/uploads/2014/10/simpsons-110x150.jpg" alt="simpsons" width="110" height="150" /></p>
+<p>Around October 2013 I decided that I should just do this on my own. Within a couple of weeks I had a basic site engine together in Go &#8211; it handled logins and templates and storing stuff on the database and everything. Of course, the actual HTML it served looked like crap because I&#8217;m a colour-blind code monkey and can&#8217;t design for toffee 😉 By January I&#8217;d got a slightly better version together with some basic functionality in place, and I officially launched it on January 30th by putting the code live and sending out a link to my friends &amp; family on Facebook (yes, that was it).</p>
+<p>My sister qualified as a counselor around this time, and she helped out a lot with advice on the psych aspects, and I had a volunteer, David Perich, who helped out with the marketing plan (more on that later). Around this time I got more involved with //Startup News, and that example of real growth provided a real contrast to the anemic increase in interest I was seeing. I figured part of the problem is that there&#8217;s a huge stigma around mental health and although everyone thought it was a great idea, it was a great idea for <em>someone else</em>, not them. Classic startup fail indicator number 1. So I pivoted the pitch slightly to &#8220;emotional fitness&#8221; and the need for everyone to maintain a level of emotional fitness, which seemed to go over better. I went through Sam Birmingham&#8217;s excellent Pollenizer workshop and refined the pitch down to something people responded to and &#8220;got&#8221; quickly.</p>
+<div id="attachment_5773" style="width: 310px" class="wp-caption alignleft"><a href="http://www.startupnews.com.au/wp-content/uploads/2014/10/code.jpg" data-slb-group="5708" data-slb-active="1" data-slb-internal="0"><img class="wp-image-5773 size-medium" src="http://www.startupnews.com.au/wp-content/uploads/2014/10/code-300x160.jpg" alt="code" width="300" height="160" /></a><p class="wp-caption-text">too much time spent staring at this!</p></div>
+<p>But taking people through the site showed I still knew nothing about design, and while people got the idea the actual site made no sense to them and looked ugly. Finally around June, Patrick Green finally talked some sense into me and got me to implement a ready-made theme, which worked brilliantly. I applied for the NEIS program to get some basic revenue going while I pushed through, and started getting the actual functionality into shape now I had the landing page sorted (yes, six months in and I&#8217;ve just got the landing page sorted!). Around this time I hit the <a title="The Trough of Despond – Startup Nightmares" href="http://www.startupnews.com.au/2014/07/03/the-trough-of-despond/" target="_blank">Trough of Despond</a>; realising how much work was involved and how little I knew. Tough times. Then I really hit the wall trying to get the basic site functionality working. After pitching this to the Silicon Beach crowd one night, Marcus Tan really drove this home to me; without a working exercise I really didn&#8217;t have a product, and without a product all the rest was just useless scenery. I&#8217;d assumed the functionality would be the easy bit, but actually it was really hard.</p>
+<p>Around this time my research  showed  that while people got the idea behind emotional fitness once they&#8217;d had it explained to them, it was still something that they thought other people needed, not them. And people kept telling me that Employee Assistance Programs (EAPs) really sucked hard and the concepts behind Keep Fit Stay Sane could be applied to that to make a really nice B2B product&#8230; if I could get the interface working.</p>
+<p>I redoubled my efforts to create a decent interface, but just found that more and more I not only couldn&#8217;t actually get something that worked, but didn&#8217;t want to deal with it. My focus moved more to //Startup News (at this point only six months old and getting 10K page views!) and I found myself talking about Keep Fit Stay Sane but not actually doing anything with it. This was my indicator that actually I wasn&#8217;t interested in creating a B2B EAP enterprise product, and that the project was actually dead and I&#8217;d better dispose of it before it stank the place up.</p>
+<p><a href="http://www.startupnews.com.au/wp-content/uploads/2014/10/keepfitstaysane.png" data-slb-group="5708" data-slb-active="1" data-slb-internal="0"><img class="alignnone size-medium wp-image-5769" src="http://www.startupnews.com.au/wp-content/uploads/2014/10/keepfitstaysane-300x237.png" alt="keepfitstaysane" width="300" height="237" /></a></p>
+<h3>What went wrong:</h3>
+<ul>
+<li>Typical techie stuff: I got way too attached to the code and spent much too much time building nice RESTful API&#8217;s instead of hacking together front-end prototypes out of nastiness and duct tape</li>
+<li>Too slow. It took me a year to work out where the idea would actually work and how. I could have found this out in weeks if I&#8217;d been more enthusiastic about engaging customers early.</li>
+<li>Ignored marketing: I had a whole marketing plan written up by David Perich, and didn&#8217;t follow through on it. Marketing isn&#8217;t my thing, but it needs to happen so I&#8217;d better get used to it!</li>
+<li>No email. As David Smit keeps reminding me: I still haven&#8217;t send a single email to the mailing list I created and asked people to sign up to.</li>
+<li>Not getting to revenue. I messed about with the business model and pitching and all that. If I&#8217;d just focused on getting the product to revenue I would have failed faster and moved on.</li>
+</ul>
+<h3>What went right:</h3>
+<ul>
+<li>Talked to other people: it took me too long, but I did actually engage with people and customers, listened to them and pivoted the idea.</li>
+<li>I launched early, way before I thought I was ready. It was fine, and if I&#8217;d waited longer this would be in the &#8220;what I did wrong&#8221; section.</li>
+<li>Using the resources available. Although it took me a while, using a template and MailChimp was quicker, better, faster. Yes, I tried rolling my own mailing list server&#8230; see &#8220;typical techie stuff&#8221; above.</li>
+</ul>
+<h3>What I learned from this attempt:</h3>
+<ul>
+<li>Finding an audience is really important, but having something to show them when you find them is also really important. It&#8217;s a tough call whether it&#8217;s better to waste time writing code for an audience that may not exist, or finding an audience for a product you can&#8217;t build.</li>
+<li>Don&#8217;t do this solo. Working with Patrick on //Startup News and comparing that experience with doing it solo for Keep Fit Stay Sane is a revelation. I work better in teams, and trying to do a startup solo is a mistake. I should have had a psychologist and a marketing expert on the team with me for this one.</li>
+<li>If I&#8217;m not enthusiastic about it, dig down and find out why. I could have killed this three months ago and been on to the next thing already if I&#8217;d just admitted it was dead.</li>
+<li>Focus is important. Doing Keep Fit Stay Sane plus //Startup News plus SNAP plus Startup Weekend plus Rails Girls plus PerthJS plus Just Start IT plus Startup West was probably a stupid idea. I need to learn to say No (or at least Not Yet) to things that I want to do if I&#8217;ve got a project on.</li>
+<li>The money trap is real. There was a lot of resistance to killing Keep Fit Stay Sane because the government is paying me (a pittance) to do it through the NEIS program. Although killing it will allow me to go find some decently-paid work, it also does remove a consistent income and that&#8217;s scary.</li>
+<li>Taking feedback: I learned how to take feedback impersonally without getting defensive.</li>
+</ul>
+<h3>What I&#8217;ll do different next time:</h3>
+<ul>
+<li>BUILD, measure, learn. Hack together a prototype and then show it to people, instead of seeing if anyone likes the idea first. I work better in code, and I think I&#8217;d learn more about the idea from hacking together some code for it and then seeing how people react, rather than finding the audience first.</li>
+<li>Get co-founders first. My first pitches next time will be to potential co-founders who may be interested in the idea. I won&#8217;t even think of going near customers without some skilled, trustworthy, committed people beside me.</li>
+<li>Give it a fixed time to get to revenue and pay its way. If it can&#8217;t make revenue within a couple of months at most then it&#8217;s probably a bad idea.</li>
+</ul>
+<h3>What I&#8217;m going to do now:</h3>
+<ul>
+<li>Look for some paid work &#8211; I&#8217;m all out of money and need to rebuild the runway. If anyone needs a failed entrepreneur  for something, email me at mh@marcusholmes.biz</li>
+<li>I normally open-source my failed projects so others can use them, but in this case I&#8217;m going to take the core of this project and turn it into my standard tech stack for all new projects. I did some cool things with this one, and I think I can turn it into something flexible yet fast for use on new stuff. A nice little hobby project to keep my hack on <img src="http://www.startupnews.com.au/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+</ul>
+<p>Shuttering Keep Fit Stay Sane is hard, because this was my baby, and I&#8217;ve really invested a lot in it. But at the same time there&#8217;s a huge sense of relief that I won&#8217;t have to keep banging my head on this brick wall and can finally move on to something else.</p>
+<p><!--more--></p>
+<h3><em>Startup Post-Mortems are an irregular feature on //Startup News. Let us know if you&#8217;ve recently shuttered a project and want to share what you learned.</em></h3>
+<p>&nbsp;</p>
+
+<div style="display: block !important; margin:0 !important; padding: 0 !important" id="wpp_popup_post_end_element"></div>			</div><!-- /entry-content -->
+
+	<footer class="entry-footer">
+		
+		<div class="entry-tags">
+			<a href="http://www.startupnews.com.au/tag/failure/" rel="tag">failure</a><a href="http://www.startupnews.com.au/tag/keep-fit-stay-sane/" rel="tag">Keep Fit Stay Sane</a><a href="http://www.startupnews.com.au/tag/post-mortem/" rel="tag">post mortem</a><a href="http://www.startupnews.com.au/tag/startup-story/" rel="tag">startup story</a> 
+		</div>
+		
+	</footer><!-- /entry-footer -->
+	
+</article><!-- /post-5708 -->
+
+					<div class="entry-author">	
+				<h3 class="title">About Marcus Holmes</h3>
+				<div class="author-avatar">
+					<img src="http://www.startupnews.com.au/cntnt/uploads/2015/01/photo-100x150.jpg" width="45" height="68" alt="Marcus Holmes" class="avatar avatar-68 wp-user-avatar wp-user-avatar-68 alignnone photo" />				</div><!-- /author-avatar -->				
+				<div class="author-description">					
+					Gentleman Technologist - working hard to make //Startup News a sustainable media cheerleader for the startup community.					<div id="author-link">
+						<a href="http://www.startupnews.com.au/author/gentleman-tech/" rel="author">
+							View all posts by Marcus Holmes <span class="meta-nav">&rarr;</span>						</a>
+					</div><!-- /author-link	-->
+				</div><!-- /author-description -->
+			</div><!-- /author-info -->
+		
+				
+				
+		<div class="entry-social">			
+			<span class="fb">
+				<div id="fb-root"></div>
+				<script>
+					(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+				<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+			</span>
+			
+			<span class="twitter">			
+				<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+				<a href="http://twitter.com/share" class="twitter-share-button"
+					data-url="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/"
+					data-text="Startup Post-mortem: Keep Fit Stay Sane"
+					data-count="horizontal">Tweet
+				</a>
+			</span>
+			
+			<span class="gplus">	
+				<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+				<div class="g-plusone" data-size="medium"></div>
+			</span>
+			
+			<span class="pinterest">
+				<a href="http://pinterest.com/pin/create/button/?url=http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/&media=http://www.startupnews.com.au/cntnt/uploads/2014/10/keepfitstaysane2-150x112.jpg&description=Startup Post-mortem: Keep Fit Stay Sane" class="pin-it-button" count-layout="horizontal">Pin It</a><script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+			</span>
+			
+			<span class="linkedin">	
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				<script type="IN/Share" data-counter="right"></script>
+			</span>	
+	  
+		</div><!-- /entry-social -->
+		
+					
+		
+		
+					<div id="social">
+		<div class="social-post">
+		<div id="loading" style="display:none">
+			<input type="hidden" id="reload_url" value="http://www.startupnews.com.au/index.php?social_controller=auth&#038;social_action=reload_form&#038;redirect_to=http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/&#038;post_id=5708" />
+			Logging In...		</div>
+								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Profile <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#respond" style="display:none;">cancel</a></small></h3>
+									<form action="http://www.startupnews.com.au/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+						<div class="social-sign-in-links social-clearfix">
+		<a class="social-twitter social-imr social-login comments" href="http://www.startupnews.com.au/index.php?social_controller=auth&#038;social_action=authorize&#038;key=twitter&#038;post_id=5708" id="twitter_signin" target="_blank">Sign in with Twitter</a>
+		<a class="social-facebook social-imr social-login comments" href="http://www.startupnews.com.au/index.php?social_controller=auth&#038;social_action=authorize&#038;key=facebook&#038;post_id=5708" id="facebook_signin" target="_blank">Sign in with Facebook</a>
+	</div>
+<div class="social-divider">
+	<span>or</span>
+</div>
+																				<p class="social-input-row social-input-row-author"><label for="author" class="social-label">Name</label><input id="author" name="author" class="social-input" required="required" type="text" value="" /></p>
+<p class="social-input-row social-input-row-email"><label for="email" class="social-label">Email</label><input id="email" name="email" class="social-input" required="required" type="text" value="" /><small class="social-help">Not published</small></p>
+<p class="social-input-row social-input-row-url"><label for="url" class="social-label">Website</label><input id="url" name="url" class="social-input" type="text" value="" /></p>
+												<p class="social-input-row social-input-row-comment"><label for="comment" class="social-label">Comment</label><textarea id="comment" name="comment" class="social-input" required="required"></textarea></p>						
+						<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post It" /> <input type='hidden' name='comment_post_ID' value='5708' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+<input type="hidden" id="use_twitter_reply" name="use_twitter_reply" value="0" /><input type="hidden" id="in_reply_to_status_id" name="in_reply_to_status_id" value="" /></p><div id="commentform-extras"><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6befee9841" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="187"/></p></div>					</form>
+							</div><!-- #respond -->
+				</div>
+	<div id="social-tabs-comments">
+				<ul class="social-nav social-clearfix">
+			<li class="social-all social-tab-main social-current-tab"><a href="#" rel="social-all"><span>6 Replies</span></a></li>
+			<li class="social-wordpress"><a href="#" rel="wordpress"><span>5 Comments</span></a></li>
+			<li class="social-twitter"><a href="#" rel="social-twitter"><span>0 Tweets</span></a></li>
+			<li class="social-facebook"><a href="#" rel="social-facebook"><span>0 Facebook</span></a></li>
+			<li class="social-pingback"><a href="#" rel="social-pingback"><span>1 Pingback</span></a></li>
+		</ul>
+
+		<!-- panel items -->
+		<div id="social-comments-tab-all" class="social-tabs-panel social-tabs-first-panel">
+			<div id="comments" class="social-comments">
+				<div class="social-last-reply-when">Last reply was 7 months ago</div><div class="cf-clearfix"></div>				<ol class="social-commentlist">
+				<li class="wordpress even thread-even depth-1 social-comment social-clearfix social-wordpress" id="li-comment-22538">
+<div class="social-comment-inner social-clearfix" id="comment-22538">
+	<div class="social-comment-header">
+		<div class="social-comment-author vcard">
+			<img src="http://2.gravatar.com/avatar/52b2fca0469b5719e5b8babd8551cfac?s=40&#038;d=mm&#038;r=pg" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" /><cite class="social-fn fn"><a href='http://trisle.net' rel='external nofollow' class='url'>Tris Le</a></cite>		</div>
+		<!-- .comment-author .vcard -->
+		<div class="social-comment-meta social-comment-meta-wordpress">
+			<span class="social-posted-from">
+								<span>View</span>
+							</span>
+			<a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comment-22538" class="social-posted-when" target="_blank">7 months ago</a>
+		</div>
+	</div>
+	<div class="social-comment-body">
+				<p>Good article there Marcus. One thing I learned a hard way is the 50-50 rule when building  MVP. It means we should always keep our eyes on testing/preparing traction channels in parallel with product development. That way the road path to beta would be less error-prone.</p>
+<p>I was there at the March 2013&#8217;s startup weekend with Swapthingy.com but didn&#8217;t succeed with the 1-minute pitching. Never love doing that. Anyway I&#8217;m coming back to the next one with a few pals to give it another go.</p>
+	</div>
+			<div class="social-actions entry-meta">
+		<a class='comment-reply-link' href='/2014/10/29/startup-post-mortem-keep-fit-stay-sane/?replytocom=22538#respond' onclick='return addComment.moveForm( "comment-22538", "22538", "respond", "5708" )' aria-label='Reply to Tris Le'>Reply</a>	</div>
+		<!-- .reply -->
+</div><!-- #comment-22538 -->
+</li><!-- #comment-## -->
+<li class="pingback odd alt thread-odd thread-alt depth-1 social-comment social-clearfix social-pingback" id="li-comment-22567">
+<div class="social-comment-inner social-clearfix" id="comment-22567">
+	<div class="social-comment-header">
+		<div class="social-comment-author vcard">
+			<cite class="social-fn fn"><a href='http://runwhere.com/?p=95' rel='external nofollow' class='url'>1p – I killed my startup and published the post-mortem &#8211; RunWhere.com</a></cite>		</div>
+		<!-- .comment-author .vcard -->
+		<div class="social-comment-meta social-comment-meta-pingback">
+			<span class="social-posted-from">
+								<span>View</span>
+							</span>
+			<a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comment-22567" class="social-posted-when" target="_blank">7 months ago</a>
+		</div>
+	</div>
+	<div class="social-comment-body">
+				<p>[&#8230;] <a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/" rel="nofollow">http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/</a> [&#8230;]</p>
+	</div>
+			<div class="social-actions entry-meta">
+		<a class='comment-reply-link' href='/2014/10/29/startup-post-mortem-keep-fit-stay-sane/?replytocom=22567#respond' onclick='return addComment.moveForm( "comment-22567", "22567", "respond", "5708" )' aria-label='Reply to 1p – I killed my startup and published the post-mortem &#8211; RunWhere.com'>Reply</a>	</div>
+		<!-- .reply -->
+</div><!-- #comment-22567 -->
+</li><!-- #comment-## -->
+<li class="wordpress even thread-even depth-1 social-comment social-clearfix social-wordpress" id="li-comment-22682">
+<div class="social-comment-inner social-clearfix" id="comment-22682">
+	<div class="social-comment-header">
+		<div class="social-comment-author vcard">
+			<img src="http://0.gravatar.com/avatar/ff669ba6a123b26bac92f20a06bb9df4?s=40&#038;d=mm&#038;r=pg" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" /><cite class="social-fn fn">David</cite>		</div>
+		<!-- .comment-author .vcard -->
+		<div class="social-comment-meta social-comment-meta-wordpress">
+			<span class="social-posted-from">
+								<span>View</span>
+							</span>
+			<a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comment-22682" class="social-posted-when" target="_blank">7 months ago</a>
+		</div>
+	</div>
+	<div class="social-comment-body">
+				<p>Solid article Marcus! Still a great idea (that other people need.. not me)</p>
+	</div>
+			<div class="social-actions entry-meta">
+		<a class='comment-reply-link' href='/2014/10/29/startup-post-mortem-keep-fit-stay-sane/?replytocom=22682#respond' onclick='return addComment.moveForm( "comment-22682", "22682", "respond", "5708" )' aria-label='Reply to David'>Reply</a>	</div>
+		<!-- .reply -->
+</div><!-- #comment-22682 -->
+<ul class='social-children'>
+<li class="wordpress byuser comment-author-gentleman-tech bypostauthor odd alt depth-2 social-comment social-clearfix social-wordpress" id="li-comment-22684">
+<div class="social-comment-inner social-clearfix" id="comment-22684">
+	<div class="social-comment-header">
+		<div class="social-comment-author vcard">
+			<img src="http://www.startupnews.com.au/cntnt/uploads/2015/01/photo-100x150.jpg" width="27" height="40" alt="Marcus Holmes" class="avatar avatar-40 wp-user-avatar wp-user-avatar-40 alignnone photo" /><cite class="social-fn fn"><a href='http://marcusholmes.biz' rel='external nofollow' class='url'>Marcus Holmes</a></cite><span class="social-replied social-imr">replied:</span>		</div>
+		<!-- .comment-author .vcard -->
+		<div class="social-comment-meta social-comment-meta-wordpress">
+			<span class="social-posted-from">
+								<span>View</span>
+							</span>
+			<a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comment-22684" class="social-posted-when" target="_blank">7 months ago</a>
+		</div>
+	</div>
+	<div class="social-comment-body">
+				<p>and thanks so much for your help with it! Next time I&#8217;ll actually implement the marketing plan <img src="http://www.startupnews.com.au/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+	</div>
+			<div class="social-actions entry-meta">
+		<a class='comment-reply-link' href='/2014/10/29/startup-post-mortem-keep-fit-stay-sane/?replytocom=22684#respond' onclick='return addComment.moveForm( "comment-22684", "22684", "respond", "5708" )' aria-label='Reply to Marcus Holmes'>Reply</a>	</div>
+		<!-- .reply -->
+</div><!-- #comment-22684 -->
+</li><!-- #comment-## -->
+</ul>
+</li>
+</li><!-- #comment-## -->
+<li class="wordpress even thread-odd thread-alt depth-1 social-comment social-clearfix social-wordpress" id="li-comment-24481">
+<div class="social-comment-inner social-clearfix" id="comment-24481">
+	<div class="social-comment-header">
+		<div class="social-comment-author vcard">
+			<img src="http://2.gravatar.com/avatar/8734f0d96acf19640e688d65eb1fc00d?s=40&#038;d=mm&#038;r=pg" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" /><cite class="social-fn fn">Raf</cite>		</div>
+		<!-- .comment-author .vcard -->
+		<div class="social-comment-meta social-comment-meta-wordpress">
+			<span class="social-posted-from">
+								<span>View</span>
+							</span>
+			<a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comment-24481" class="social-posted-when" target="_blank">7 months ago</a>
+		</div>
+	</div>
+	<div class="social-comment-body">
+				<p>Great article, thanks for sharing Marcus.</p>
+	</div>
+			<div class="social-actions entry-meta">
+		<a class='comment-reply-link' href='/2014/10/29/startup-post-mortem-keep-fit-stay-sane/?replytocom=24481#respond' onclick='return addComment.moveForm( "comment-24481", "24481", "respond", "5708" )' aria-label='Reply to Raf'>Reply</a>	</div>
+		<!-- .reply -->
+</div><!-- #comment-24481 -->
+</li><!-- #comment-## -->
+<li class="wordpress odd alt thread-even depth-1 social-comment social-clearfix social-wordpress" id="li-comment-24559">
+<div class="social-comment-inner social-clearfix" id="comment-24559">
+	<div class="social-comment-header">
+		<div class="social-comment-author vcard">
+			<img src="http://0.gravatar.com/avatar/3e6dca8f842531799ede3a399f59226b?s=40&#038;d=mm&#038;r=pg" width="40" height="40" alt="" class="avatar avatar-40wp-user-avatar wp-user-avatar-40 alignnone photo avatar-default" /><cite class="social-fn fn"><a href='http://www.decimal.com.au' rel='external nofollow' class='url'>chris webb</a></cite>		</div>
+		<!-- .comment-author .vcard -->
+		<div class="social-comment-meta social-comment-meta-wordpress">
+			<span class="social-posted-from">
+								<span>View</span>
+							</span>
+			<a href="http://www.startupnews.com.au/2014/10/29/startup-post-mortem-keep-fit-stay-sane/#comment-24559" class="social-posted-when" target="_blank">7 months ago</a>
+		</div>
+	</div>
+	<div class="social-comment-body">
+				<p>really great article and shared learnings thanks</p>
+	</div>
+			<div class="social-actions entry-meta">
+		<a class='comment-reply-link' href='/2014/10/29/startup-post-mortem-keep-fit-stay-sane/?replytocom=24559#respond' onclick='return addComment.moveForm( "comment-24559", "24559", "respond", "5708" )' aria-label='Reply to chris webb'>Reply</a>	</div>
+		<!-- .reply -->
+</div><!-- #comment-24559 -->
+</li><!-- #comment-## -->
+				</ol>
+							</div>
+		</div>
+			</div>
+	<!-- #Comments Tabs -->
+	</div>
+				
+	</div><!-- /content -->
+</section><!-- /primary -->
+
+ 
+<div id="left-sidebar" class="sidebar">
+		<aside id="wellthemes_recent_posts_text_widget-2" class="widget widget_posts"><h3>Recent Posts</h3>              
+		<div class="item-post">		
+			
+				<h3>
+					<a href="http://www.startupnews.com.au/2015/06/11/innovation-bay-finds-funding-scancam/" rel="bookmark" title="Permanent Link to Innovation Bay Finds Funding For Scancam">
+						Innovation Bay Finds Funding For Scancam	
+					</a>
+				</h3>
+				<div class="entry-meta">
+					<span class="date">Jun 11</span>
+											<span class="comments"><a href="http://www.startupnews.com.au/2015/06/11/innovation-bay-finds-funding-scancam/#respond">0</a></span>
+									</div>			   
+  
+		</div><!-- /item-post -->
+	  
+	         
+		<div class="item-post">		
+			
+				<h3>
+					<a href="http://www.startupnews.com.au/2015/06/10/life-inside-a-technology-accelerator-week-one/" rel="bookmark" title="Permanent Link to Life inside a Technology Accelerator: Week One">
+						Life inside a Technology Accelerator: Week One	
+					</a>
+				</h3>
+				<div class="entry-meta">
+					<span class="date">Jun 10</span>
+											<span class="comments"><a href="http://www.startupnews.com.au/2015/06/10/life-inside-a-technology-accelerator-week-one/#respond">0</a></span>
+									</div>			   
+  
+		</div><!-- /item-post -->
+	  
+	         
+		<div class="item-post">		
+			
+				<h3>
+					<a href="http://www.startupnews.com.au/2015/06/08/new-things-in-the-community/" rel="bookmark" title="Permanent Link to New Things In The Community">
+						New Things In The Community	
+					</a>
+				</h3>
+				<div class="entry-meta">
+					<span class="date">Jun 8</span>
+											<span class="comments"><a href="http://www.startupnews.com.au/2015/06/08/new-things-in-the-community/#respond">0</a></span>
+									</div>			   
+  
+		</div><!-- /item-post -->
+	  
+	         
+		<div class="item-post">		
+			
+				<h3>
+					<a href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/" rel="bookmark" title="Permanent Link to 13 Lessons I Have Learnt Launching a Startup">
+						13 Lessons I Have Learnt Launching a Startup	
+					</a>
+				</h3>
+				<div class="entry-meta">
+					<span class="date">Jun 5</span>
+											<span class="comments"><a href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/#comments">1</a></span>
+									</div>			   
+  
+		</div><!-- /item-post -->
+	  
+	         
+		<div class="item-post">		
+			
+				<h3>
+					<a href="http://www.startupnews.com.au/2015/06/04/payment-outages/" rel="bookmark" title="Permanent Link to Recent Payment Outages">
+						Recent Payment Outages	
+					</a>
+				</h3>
+				<div class="entry-meta">
+					<span class="date">Jun 4</span>
+											<span class="comments"><a href="http://www.startupnews.com.au/2015/06/04/payment-outages/#respond">0</a></span>
+									</div>			   
+  
+		</div><!-- /item-post -->
+	  
+	         
+	   </aside><aside id="wellthemes_carousel_widget-2" class="widget widget_carousel">								<h3>Featured Posts</h3>					
+							<div class="sidebar-carousel-posts" >
+					<ul>
+												
+															
+								<li>									
+									<a href="http://www.startupnews.com.au/2015/06/11/innovation-bay-finds-funding-scancam/"><img width="270" height="270" src="http://www.startupnews.com.au/cntnt/uploads/2015/06/innovation-bay-270x270.png" class="attachment-wt-tile-large wp-post-image" alt="innovation bay" /></a>
+									<h4>
+										<a href="http://www.startupnews.com.au/2015/06/11/innovation-bay-finds-funding-scancam/" rel="bookmark" title="Permanent Link to Innovation Bay Finds Funding For Scancam">
+										Innovation Bay Finds Funding For Scancam	
+										</a>
+									</h4>									
+								</li>														
+														
+												
+															
+								<li>									
+									<a href="http://www.startupnews.com.au/2015/06/10/life-inside-a-technology-accelerator-week-one/"><img width="270" height="270" src="http://www.startupnews.com.au/cntnt/uploads/2015/06/amcom-circadyn-270x270.png" class="attachment-wt-tile-large wp-post-image" alt="amcom-circadyn" /></a>
+									<h4>
+										<a href="http://www.startupnews.com.au/2015/06/10/life-inside-a-technology-accelerator-week-one/" rel="bookmark" title="Permanent Link to Life inside a Technology Accelerator: Week One">
+										Life inside a Technology Accelerator: Week One	
+										</a>
+									</h4>									
+								</li>														
+														
+												
+															
+								<li>									
+									<a href="http://www.startupnews.com.au/2015/06/08/new-things-in-the-community/"><img width="270" height="270" src="http://www.startupnews.com.au/cntnt/uploads/2014/10/PA240298-270x270.jpg" class="attachment-wt-tile-large wp-post-image" alt="OLYMPUS DIGITAL CAMERA" /></a>
+									<h4>
+										<a href="http://www.startupnews.com.au/2015/06/08/new-things-in-the-community/" rel="bookmark" title="Permanent Link to New Things In The Community">
+										New Things In The Community	
+										</a>
+									</h4>									
+								</li>														
+														
+												
+															
+								<li>									
+									<a href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/"><img width="270" height="270" src="http://www.startupnews.com.au/cntnt/uploads/2015/04/Lauren-Trlin-Buzzy_Fotor-270x270.jpg" class="attachment-wt-tile-large wp-post-image" alt="Lauren Trlin Buzzy_Fotor" /></a>
+									<h4>
+										<a href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/" rel="bookmark" title="Permanent Link to 13 Lessons I Have Learnt Launching a Startup">
+										13 Lessons I Have Learnt Launching a Startup	
+										</a>
+									</h4>									
+								</li>														
+														
+												
+															
+								<li>									
+									<a href="http://www.startupnews.com.au/2015/06/04/payment-outages/"><img width="270" height="270" src="http://www.startupnews.com.au/cntnt/uploads/2015/06/closed-sign-270x270.jpg" class="attachment-wt-tile-large wp-post-image" alt="closed-sign" /></a>
+									<h4>
+										<a href="http://www.startupnews.com.au/2015/06/04/payment-outages/" rel="bookmark" title="Permanent Link to Recent Payment Outages">
+										Recent Payment Outages	
+										</a>
+									</h4>									
+								</li>														
+														
+												
+															
+								<li>									
+									<a href="http://www.startupnews.com.au/2015/06/03/inside-a-startup-accelerator-0/"><img width="270" height="270" src="http://www.startupnews.com.au/cntnt/uploads/2015/06/amcom-circadyn-270x270.png" class="attachment-wt-tile-large wp-post-image" alt="amcom-circadyn" /></a>
+									<h4>
+										<a href="http://www.startupnews.com.au/2015/06/03/inside-a-startup-accelerator-0/" rel="bookmark" title="Permanent Link to Inside A Startup Accelerator: Hello World!">
+										Inside A Startup Accelerator: Hello World!	
+										</a>
+									</h4>									
+								</li>														
+														
+											</ul>
+				</div>
+							
+				</aside>
+			
+		<aside id="text-6" class="widget widget_text"><h3>Special Feature: Funding</h3>			<div class="textwidget"><h5>Our first Special Feature looks at funding options for Perth Startups</h5>
+<p><a href="/2015/04/02/funding-special-overview/">Overview</a><br />
+<a href="http://www.startupnews.com.au/2015/04/02/funding-special-venture-capital/">Venture Capital</a><br />
+<a href="http://www.startupnews.com.au/2015/04/09/funding-special-angel-investors/">Angel Investors</a><br />
+<a href="http://www.startupnews.com.au/2015/04/14/funding-special-rd-tax-credit/">R&D Tax Credit</a></p>
+</div>
+		</aside>		
+</div><!-- /sidebar -->
+		 
+<div id="right-sidebar" class="sidebar">
+		
+		<aside id="mailchimpsf_widget-4" class="widget widget_mailchimpsf_widget"><h3>Weekly Newsletter</h3>
+<style>
+	.widget_mailchimpsf_widget .widget-title {
+		line-height: 1.4em;
+		margin-bottom: 0.75em;
+	}
+	#mc_subheader {
+		line-height: 1.25em;
+		margin-bottom: 18px;
+	}
+	.mc_merge_var {
+		margin-bottom: 1.0em;
+	}
+	.mc_var_label,
+	.mc_interest_label {
+		display: block;
+		margin-bottom: 0.5em;
+	}
+	.mc_input {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	.mc_input.mc_phone {
+		width: auto;
+	}
+	select.mc_select {
+		margin-top: 0.5em;
+		width: 100%;
+	}
+	.mc_address_label {
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+		display: block;
+	}
+	.mc_address_label ~ select {
+		width: 100%;		
+	}
+	.mc_list li {
+		list-style: none;
+		background: none !important;
+	}
+	.mc_interests_header {
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+	}
+	.mc_interest label,
+	.mc_interest input {
+		margin-bottom: 0.4em;
+	}
+	#mc_signup_submit {
+		margin-top: 1.5em;
+		width: 80%;
+	}
+	#mc_unsub_link a {
+		font-size: 0.75em;
+	}
+	#mc_unsub_link {
+		margin-top: 1.0em;
+	}
+	.mc_header_address,
+	.mc_email_format {
+		display: block;
+		font-weight: bold;
+		margin-top: 1.0em;
+		margin-bottom: 0.5em;
+	}
+	.mc_email_options {
+		margin-top: 0.5em;
+	}
+	.mc_email_type {
+		padding-left: 4px;
+	}
+</style>
+
+<div id="mc_signup">
+	<form method="post" action="#mc_signup" id="mc_signup_form">
+		<input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html" />
+		<input type="hidden" name="mcsf_action" value="mc_submit_signup_form" />
+		<input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="933c093a1d" />		
+			<div id="mc_subheader">
+			Register now for the Startup News weekly newsletter, for all the latest startup profiles, news and events from the Perth Startup scene.		</div><!-- /mc_subheader -->
+			
+	<div class="mc_form_inside">
+		
+		<div class="updated" id="mc_message">
+					</div><!-- /mc_message -->
+
+		
+<div class="mc_merge_var">
+		<label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email Address<span class="mc_required">*</span></label>
+	<input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input"/>
+</div><!-- /mc_merge_var -->
+<div class="mc_merge_var">
+		<label for="mc_mv_FNAME" class="mc_var_label mc_header mc_header_text">First Name</label>
+	<input type="text" size="18" placeholder="Subscriber" name="mc_mv_FNAME" id="mc_mv_FNAME" class="mc_input"/>
+</div><!-- /mc_merge_var -->
+<div class="mc_merge_var">
+		<label for="mc_mv_READERTYPE" class="mc_var_label mc_header mc_header_dropdown">Reader Type</label>
+		<select id="mc_mv_READERTYPE" name="mc_mv_READERTYPE" class="mc_select">
+		<option value="Startup/Entrepreneur">Startup/Entrepreneur</option>
+		<option value="Angel/VC/Investor">Angel/VC/Investor</option>
+		<option value="Service Provider">Service Provider</option>
+		<option value="General Reader">General Reader</option>
+	</select>
+</div><!-- /mc_merge_var -->			<div id="mc-indicates-required">
+				* = required field			</div><!-- /mc-indicates-required -->
+			
+		<div class="mc_signup_submit">
+			<input type="submit" name="mc_signup_submit" id="mc_signup_submit" value="Subscribe" class="button" />
+		</div><!-- /mc_signup_submit -->
+	
+	
+				
+	</div><!-- /mc_form_inside -->
+	</form><!-- /mc_signup_form -->
+</div><!-- /mc_signup_container -->
+	</aside><aside id="polls-widget-3" class="widget widget_polls-widget"><h3>Polls</h3><div id="polls-3" class="wp-polls">
+	<form id="polls_form_3" class="wp-polls-form" action="/index.php" method="post">
+		<p style="display: none;"><input type="hidden" id="poll_3_nonce" name="wp-polls-nonce" value="4d3b1f34bb" /></p>
+		<p style="display: none;"><input type="hidden" name="poll_id" value="3" /></p>
+		<p style="display: none;"><input type="hidden" id="poll_multiple_ans_3" name="poll_multiple_ans_3" value="4" /></p>
+		<p style="text-align: center;"><strong>What can we give you more of?</strong></p><div id="polls-3-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+		<li><input type="checkbox" id="poll-answer-11" name="poll_3" value="11" /> <label for="poll-answer-11">Startup interviews?</label></li>
+		<li><input type="checkbox" id="poll-answer-12" name="poll_3" value="12" /> <label for="poll-answer-12">How-to articles?</label></li>
+		<li><input type="checkbox" id="poll-answer-13" name="poll_3" value="13" /> <label for="poll-answer-13">Opinions?</label></li>
+		<li><input type="checkbox" id="poll-answer-14" name="poll_3" value="14" /> <label for="poll-answer-14">Events?</label></li>
+		</ul><p style="text-align: center;"><input type="button" name="vote" value="   Vote   " class="Buttons" onclick="poll_vote(3);" /></p><p style="text-align: center;"><a href="#ViewPollResults" onclick="poll_result(3); return false;" title="View Results Of This Poll">View Results</a></p></div>
+	</form>
+</div>
+<div id="polls-3-loading" class="wp-polls-loading"><img src="http://www.startupnews.com.au/cntnt/plugins/wp-polls/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="wp-polls-image" />&nbsp;Loading ...</div>
+</aside><aside id="categories-2" class="widget widget_categories"><h3>Topics</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="http://www.startupnews.com.au/category/comment/" >Comment</a> (72)
+</li>
+	<li class="cat-item cat-item-2"><a href="http://www.startupnews.com.au/category/events/" >Events</a> (120)
+</li>
+	<li class="cat-item cat-item-207"><a href="http://www.startupnews.com.au/category/featured-2/" title="This is a featured post">Featured</a> (60)
+</li>
+	<li class="cat-item cat-item-789"><a href="http://www.startupnews.com.au/category/hints-tips/" >Hints &amp; Tips</a> (1)
+</li>
+	<li class="cat-item cat-item-458"><a href="http://www.startupnews.com.au/category/interview/" >Interview</a> (14)
+</li>
+	<li class="cat-item cat-item-177"><a href="http://www.startupnews.com.au/category/links/" >Links</a> (7)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.startupnews.com.au/category/news/" >News</a> (266)
+</li>
+	<li class="cat-item cat-item-255"><a href="http://www.startupnews.com.au/category/roundupvideo/" >RoundupVideo</a> (1)
+</li>
+	<li class="cat-item cat-item-751"><a href="http://www.startupnews.com.au/category/special/" >Special</a> (7)
+</li>
+	<li class="cat-item cat-item-202"><a href="http://www.startupnews.com.au/category/sponsored/" >Sponsored</a> (33)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.startupnews.com.au/category/startups/" >Startups</a> (69)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.startupnews.com.au/category/uncategorized/" >Uncategorized</a> (3)
+</li>
+		</ul>
+</aside><aside id="wellthemes_recent_comments_widget-2" class="widget widget_comments"><h3>Recent Comments</h3>       	    <ul>
+                                   <li>
+							<img src="http://1.gravatar.com/avatar/488af99bf2e38f68e69a2a339cd5f88e?s=65&#038;d=mm&#038;r=pg" width="65" height="65" alt="" class="avatar avatar-65wp-user-avatar wp-user-avatar-65 alignnone photo avatar-default" />							<div class="comment">
+								<div class="comment-author"><h4>Dave Kynaston</h4></div>
+								<div class="comment-text">
+									<a class="first" href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/#comment-49001">Brilliant article, thanks for sharing your insigh...</a>
+								</div>
+								<div class="comment-time">
+									5 days ago								</div>
+							</div>
+						</li>
+                                   <li>
+														<div class="comment">
+								<div class="comment-author"><h4>Funding Special - Overview | ...</h4></div>
+								<div class="comment-text">
+									<a href="http://www.startupnews.com.au/2015/05/07/funding-special-accelerators/#comment-48394">[&#8230;] Accelerators [&#8230;]</a>
+								</div>
+								<div class="comment-time">
+									1 week ago								</div>
+							</div>
+						</li>
+                                   <li>
+														<div class="comment">
+								<div class="comment-author"><h4>Funding Special: Government F...</h4></div>
+								<div class="comment-text">
+									<a href="http://www.startupnews.com.au/2015/04/14/funding-special-rd-tax-credit/#comment-48393">[&#8230;] you incurred while developing a new pro...</a>
+								</div>
+								<div class="comment-time">
+									1 week ago								</div>
+							</div>
+						</li>
+                                   <li>
+														<div class="comment">
+								<div class="comment-author"><h4>Funding Special: Government F...</h4></div>
+								<div class="comment-text">
+									<a href="http://www.startupnews.com.au/2014/07/07/neis-invisible-government-startup-funding/#comment-48392">[&#8230;] to be collecting benefits for any lengt...</a>
+								</div>
+								<div class="comment-time">
+									1 week ago								</div>
+							</div>
+						</li>
+                                   <li>
+							<img src="http://www.startupnews.com.au/cntnt/uploads/2015/01/photo-100x150.jpg" width="43" height="65" alt="Marcus Holmes" class="avatar avatar-65 wp-user-avatar wp-user-avatar-65 alignnone photo" />							<div class="comment">
+								<div class="comment-author"><h4>Marcus Holmes</h4></div>
+								<div class="comment-text">
+									<a href="http://www.startupnews.com.au/2015/05/26/startup-weekend-perth-6-wrap-up/#comment-48252">yeah, the video is going to appear at some point....</a>
+								</div>
+								<div class="comment-time">
+									2 weeks ago								</div>
+							</div>
+						</li>
+                    </ul>
+		
+	   </aside><aside id="archives-4" class="widget widget_archive"><h3>Archives</h3>		<ul>
+	<li><a href='http://www.startupnews.com.au/2015/06/'>June 2015</a>&nbsp;(7)</li>
+	<li><a href='http://www.startupnews.com.au/2015/05/'>May 2015</a>&nbsp;(14)</li>
+	<li><a href='http://www.startupnews.com.au/2015/04/'>April 2015</a>&nbsp;(19)</li>
+	<li><a href='http://www.startupnews.com.au/2015/03/'>March 2015</a>&nbsp;(18)</li>
+	<li><a href='http://www.startupnews.com.au/2015/02/'>February 2015</a>&nbsp;(16)</li>
+	<li><a href='http://www.startupnews.com.au/2015/01/'>January 2015</a>&nbsp;(10)</li>
+	<li><a href='http://www.startupnews.com.au/2014/12/'>December 2014</a>&nbsp;(10)</li>
+	<li><a href='http://www.startupnews.com.au/2014/11/'>November 2014</a>&nbsp;(20)</li>
+	<li><a href='http://www.startupnews.com.au/2014/10/'>October 2014</a>&nbsp;(20)</li>
+	<li><a href='http://www.startupnews.com.au/2014/09/'>September 2014</a>&nbsp;(25)</li>
+	<li><a href='http://www.startupnews.com.au/2014/08/'>August 2014</a>&nbsp;(41)</li>
+	<li><a href='http://www.startupnews.com.au/2014/07/'>July 2014</a>&nbsp;(30)</li>
+	<li><a href='http://www.startupnews.com.au/2014/06/'>June 2014</a>&nbsp;(30)</li>
+	<li><a href='http://www.startupnews.com.au/2014/05/'>May 2014</a>&nbsp;(35)</li>
+	<li><a href='http://www.startupnews.com.au/2014/04/'>April 2014</a>&nbsp;(34)</li>
+	<li><a href='http://www.startupnews.com.au/2014/03/'>March 2014</a>&nbsp;(29)</li>
+	<li><a href='http://www.startupnews.com.au/2014/02/'>February 2014</a>&nbsp;(31)</li>
+	<li><a href='http://www.startupnews.com.au/2014/01/'>January 2014</a>&nbsp;(15)</li>
+	<li><a href='http://www.startupnews.com.au/2013/11/'>November 2013</a>&nbsp;(5)</li>
+		</ul>
+</aside>		
+</div><!-- /sidebar -->
+			</div><!-- /main -->
+
+	<footer id="footer" role="contentinfo">
+		
+		<div class="footer-widgets">
+			
+			<aside id="text-4" class="widget widget_text"><h3>About</h3>			<div class="textwidget">Startup News, the local Perth Startup News site that has all the latest news on local events and startups.  We hope to continuously bring good informative startup stories and news to you.</br>
+<strong>Our Sponsors:</strong>
+<a href="http://www.spacecubed.com/" target="_blank"><img src="http://www.spacecubed.com/wp-content/uploads/2014/06/IM_Squarewhiteback_1.png" border="0" alt=" photo IM_Squarewhiteback_1_zps0c189408.png"/></a></div>
+		</aside><aside id="categories-4" class="widget widget_categories"><h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="http://www.startupnews.com.au/category/comment/" >Comment</a> (72)
+</li>
+	<li class="cat-item cat-item-2"><a href="http://www.startupnews.com.au/category/events/" >Events</a> (120)
+</li>
+	<li class="cat-item cat-item-207"><a href="http://www.startupnews.com.au/category/featured-2/" title="This is a featured post">Featured</a> (60)
+</li>
+	<li class="cat-item cat-item-789"><a href="http://www.startupnews.com.au/category/hints-tips/" >Hints &amp; Tips</a> (1)
+</li>
+	<li class="cat-item cat-item-458"><a href="http://www.startupnews.com.au/category/interview/" >Interview</a> (14)
+</li>
+	<li class="cat-item cat-item-177"><a href="http://www.startupnews.com.au/category/links/" >Links</a> (7)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://www.startupnews.com.au/category/news/" >News</a> (266)
+</li>
+	<li class="cat-item cat-item-255"><a href="http://www.startupnews.com.au/category/roundupvideo/" >RoundupVideo</a> (1)
+</li>
+	<li class="cat-item cat-item-751"><a href="http://www.startupnews.com.au/category/special/" >Special</a> (7)
+</li>
+	<li class="cat-item cat-item-202"><a href="http://www.startupnews.com.au/category/sponsored/" >Sponsored</a> (33)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.startupnews.com.au/category/startups/" >Startups</a> (69)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.startupnews.com.au/category/uncategorized/" >Uncategorized</a> (3)
+</li>
+		</ul>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3>Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://www.startupnews.com.au/2015/06/11/innovation-bay-finds-funding-scancam/">Innovation Bay Finds Funding For Scancam</a>
+						</li>
+					<li>
+				<a href="http://www.startupnews.com.au/2015/06/10/life-inside-a-technology-accelerator-week-one/">Life inside a Technology Accelerator: Week One</a>
+						</li>
+					<li>
+				<a href="http://www.startupnews.com.au/2015/06/08/new-things-in-the-community/">New Things In The Community</a>
+						</li>
+					<li>
+				<a href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/">13 Lessons I Have Learnt Launching a Startup</a>
+						</li>
+					<li>
+				<a href="http://www.startupnews.com.au/2015/06/04/payment-outages/">Recent Payment Outages</a>
+						</li>
+				</ul>
+		</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3>Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Dave Kynaston</span> on <a href="http://www.startupnews.com.au/2015/06/05/13-lessons-learnt-launching-a-startup/#comment-49001">13 Lessons I Have Learnt Launching a Startup</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.startupnews.com.au/2015/04/02/funding-special-overview/' rel='external nofollow' class='url'>Funding Special - Overview | //Startup News</a></span> on <a href="http://www.startupnews.com.au/2015/05/07/funding-special-accelerators/#comment-48394">Funding Special: Perth Accelerators</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.startupnews.com.au/2015/06/02/funding-special-government-funding-schemes/' rel='external nofollow' class='url'>Funding Special: Government Funding for Startups</a></span> on <a href="http://www.startupnews.com.au/2015/04/14/funding-special-rd-tax-credit/#comment-48393">Funding Special: R&#038;D Tax Credit</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.startupnews.com.au/2015/06/02/funding-special-government-funding-schemes/' rel='external nofollow' class='url'>Funding Special: Government Funding for Startups</a></span> on <a href="http://www.startupnews.com.au/2014/07/07/neis-invisible-government-startup-funding/#comment-48392">NEIS &#8211; Invisible Government Startup Funding</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://marcusholmes.biz' rel='external nofollow' class='url'>Marcus Holmes</a></span> on <a href="http://www.startupnews.com.au/2015/05/26/startup-weekend-perth-6-wrap-up/#comment-48252">Startup Weekend Perth #6 Wrap-up</a></li></ul></aside>	
+		
+		</div><!-- /footer widgets -->
+		
+		<div class="footer-info">
+			 
+				<div class="footer-left">
+					©2014 //Startup News			
+				</div>
+						
+						
+        </div> <!--/foote-info -->
+		
+	</footer><!-- /footer -->
+
+</div><!-- /container -->
+
+    <!-- Start of StatCounter Code -->
+    <script>
+    <!-- 
+        var sc_project=9528584; 
+        var sc_security="0308f2bc"; 
+      var sc_invisible=1;
+        var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    //-->
+document.write("<sc"+"ript src='" +scJsHost +"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/"><img class="statcounter" src="http://c.statcounter.com/9528584/0/0308f2bc/1/" alt="web analytics" /></a></div></noscript>   
+    <!-- End of StatCounter Code -->
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/akismet/_inc/form.js?ver=3.1.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/wp-includes/js/comment-reply.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/bbpress/templates/default/js/editor.js?ver=2.5.7-5693'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.startupnews.com.au\/cntnt\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/contact-form-7/includes/js/scripts.js?ver=4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Sociali18n = {"commentReplyTitle":"Post a Reply"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/social/assets/social.js?ver=3.1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"http:\/\/www.startupnews.com.au\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/wp-polls/polls-js.js?ver=2.69'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/client/js/prod/lib.core.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/client/js/prod/lib.view.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/themes/baseline/js/prod/client.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/themes/default/js/prod/client.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/template-tags/item/js/prod/tag.item.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/template-tags/ui/js/prod/tag.ui.js?ver=2.4.0'></script>
+<script type='text/javascript' src='http://www.startupnews.com.au/cntnt/plugins/simple-lightbox/content-handlers/image/js/prod/handler.image.js?ver=2.4.0'></script>
+<script type="text/javascript" id="slb_footer">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB && SLB.has_child('View.init') ) { SLB.View.init({"ui_autofit":true,"ui_animate":true,"slideshow_autostart":true,"slideshow_duration":"6","group_loop":true,"ui_overlay_opacity":"0.8","ui_title_default":false,"theme_default":"slb_default","ui_labels":{"loading":"Loading","close":"Close","nav_next":"Next","nav_prev":"Previous","slideshow_start":"Start slideshow","slideshow_stop":"Stop slideshow","group_status":"Item %current% of %total%"}}); }
+if ( !!window.SLB && SLB.has_child('View.assets') ) { {$.extend(SLB.View.assets, {"http:\/\/www.startupnews.com.au\/wp-content\/uploads\/2014\/10\/code.jpg":{"id":null,"_entries":[],"type":"image","source":"http:\/\/www.startupnews.com.au\/wp-content\/uploads\/2014\/10\/code.jpg","internal":true},"http:\/\/www.startupnews.com.au\/wp-content\/uploads\/2014\/10\/keepfitstaysane.png":{"id":null,"_entries":[],"type":"image","source":"http:\/\/www.startupnews.com.au\/wp-content\/uploads\/2014\/10\/keepfitstaysane.png","internal":true}});} }
+/* THM */
+if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_baseline',{"name":"Baseline","parent":"","styles":[{"handle":"base","uri":"http:\/\/www.startupnews.com.au\/cntnt\/plugins\/simple-lightbox\/themes\/baseline\/css\/style.css","deps":[]}],"layout_raw":"<div class=\"slb_container\"><div class=\"slb_content\">{{item.content}}<div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><div class=\"slb_controls\"><span class=\"slb_close\">{{ui.close}}<\/span><span class=\"slb_slideshow\">{{ui.slideshow_control}}<\/span><\/div><div class=\"slb_loading\">{{ui.loading}}<\/div><\/div><div class=\"slb_details\"><div class=\"inner\"><div class=\"slb_data\"><div class=\"slb_data_content\"><span class=\"slb_data_title\">{{item.title}}<\/span><span class=\"slb_group_status\">{{ui.group_status}}<\/span><div class=\"slb_data_desc\">{{item.description}}<\/div><\/div><\/div><div class=\"slb_nav\"><span class=\"slb_prev\">{{ui.nav_prev}}<\/span><span class=\"slb_next\">{{ui.nav_next}}<\/span><\/div><\/div><\/div><\/div>"}); }if ( !!window.SLB && SLB.has_child('View.extend_theme') ) { SLB.View.extend_theme('slb_default',{"name":"Default (Light)","parent":"slb_baseline","styles":[{"handle":"font","uri":"http:\/\/fonts.googleapis.com\/css?family=Yanone+Kaffeesatz","deps":[]},{"handle":"base","uri":"http:\/\/www.startupnews.com.au\/cntnt\/plugins\/simple-lightbox\/themes\/default\/css\/style.css","deps":[]}]}); }})})(jQuery);}/* ]]> */</script>
+<script type="text/javascript" id="slb_context">/* <![CDATA[ */if ( !!window.jQuery ) {(function($){$(document).ready(function(){if ( !!window.SLB ) { {$.extend(SLB, {"context":["public","user_guest"]});} }})})(jQuery);}/* ]]> */</script>
+<script>
+jQuery(function ($) {
+
+	var id = "1302";
+
+	var uniq_id = "55795d7523c49";
+
+	var submit_url = "http://www.startupnews.com.au/wp-admin/admin-ajax.php?action=wpp_store_email";
+
+	var options = {"enabled":true,"theme":"default_theme","delay_time":"1000","mask_color":"#000","border_color":"#000","transition":"elastic","rules":{"show_on_homepage":true,"hide_on_mobile_devices":true,"use_cookies":true,"cookie_expiration_time":"30","show_only_on_homepage":false,"show_to_logged_in_users":false,"show_only_to_search_engine_visitors":false,"exit_popup":false,"when_post_end_rule":false}};
+
+	var rules = options.rules;
+	
+	if ( ! wpp_check_rules( rules, id ) )
+		return false;
+
+	var do_popup_function = function() {
+		$.colorbox({
+			inline: true,
+			fixed: true,
+			width: "450px",
+			href: "#default_theme-auto_popup-1302",
+			className: 'cbox_wpp_default_theme',
+			overlayClose: false,
+			escKey: false,
+			transition: options.transition,
+			
+
+			/*onOpen: function() {
+				$("#colorbox").css("opacity", 0);
+			},
+
+			onComplete: function() {
+				$("#colorbox").css("opacity", 1);
+			},*/
+
+			onClosed: function() {
+
+				if ( rules.use_cookies )
+					wpp_place_popup_close_cookie( id, rules.cookie_expiration_time );
+			}
+		});
+
+		$('#cboxOverlay.cbox_wpp_default_theme').css( 'background', options.mask_color );
+
+		$('.cbox_wpp_default_theme #cboxLoadedContent').css( 'border-color', options.border_color );
+
+		//$('#cboxOverlay.cbox_wpp_default_theme').css( 'opacity', 0.8 );
+
+	
+	};
+
+	if ( rules.exit_popup ) {
+
+		wpp_do_exit_popup( do_popup_function );
+
+	} else if ( rules.when_post_end_rule ) {
+
+		wpp_check_when_post_rule( do_popup_function );
+
+	} else {
+
+		setTimeout( do_popup_function, options.delay_time );
+	
+	}
+
+
+	if ( rules.comment_autofill ) {
+		
+		wpp_do_comment_autofill( uniq_id, '0e86310446b6a85c09a786b6dbcd4d74' );
+	
+	}
+
+	$('.' + uniq_id + ' input[type=submit]' ).click(function(e){
+		e.preventDefault();
+
+		wpp_handle_form_submit( id, uniq_id, submit_url, rules.cookie_expiration_time );
+	});
+
+});
+</script>
+
+
+<!-- This contains the hidden content for popup -->
+<div style='display:none'>
+	
+	<div id='default_theme-auto_popup-1302' style='padding:10px; background:#fff;' class="55795d7523c49">
+		
+		<div class="wpp_popup_default_theme">
+			
+			<div class="sub_content">
+				
+				<h3>Free Startup News Weekly Roundup</h3>
+				
+				<ul>
+	            	<li>Weekly newsletter with all the weeks news.</li>
+	                <li>Subscriber only content</li>
+	                <li>Early access to special features and promotions</li>	
+				</ul>
+				
+				<h4>Register now for the Startup News weekly newsletter, for all the latest startup profiles, news and events from the Perth Startup scene.</h4>
+				
+				<div class="form_cont">
+
+					<form method="POST" action="http://www.startupnews.com.au/wp-admin/admin-ajax.php?action=wpp_store_email">
+						<p><input type="text" name="name" size="40" placeholder="Enter your First Name.." value=""></p>
+						
+						<p><input style="" type="text"  name="email" size="40" value="" placeholder="Enter your Email Address.." required="required"></p>
+						
+			            <p><input type="submit" class="sbutton sorange" name="submit" value="Subscribe!"></p>
+
+						<input type="hidden" name="wpp_email_manager_nonce" value="d20dacf80f" />
+
+						<input type="hidden" name="theme_id" value="default_theme" />
+
+						<input type="hidden" name="popup_id" value="1302" />
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+<style type="text/css">
+
+.cbox_wpp_default_theme #cboxLoadedContent {
+	overflow: hidden !important;
+}
+
+.wpp_popup_default_theme .sub_content{
+	
+	width:370px !important;
+	font-family: "Segoe UI", "arial", "verdana", "lucida sans unicode", "tahoma", sans-serif !important;
+    line-height: 1.5em;
+    margin:5px;
+    
+    margin: auto;
+
+}
+.wpp_popup_default_theme .sub_content h3{
+	text-align:center;
+	font-weight:800;
+	font-size:18px;
+	padding-bottom:5px;
+}
+.wpp_popup_default_theme .sub_content h4{
+	text-align:center;
+	font-weight:800;
+	margin:5px;
+}
+.wpp_popup_default_theme .sub_content form{
+	text-align:center;
+}
+
+.wpp_popup_default_theme .sub_content form input[type="text"] {
+	height: 25px;
+	margin: 2px;
+}
+.wpp_popup_default_theme .sub_content ul{
+	font-size:13px;
+	margin-top:10px;
+	margin-bottom:10px;
+    margin-left:20px;
+    list-style-image: url('http://www.startupnews.com.au/cntnt/plugins/m-wp-popup/images/green-tick.png');
+    color: black;
+}
+.wpp_popup_default_theme .sub_content ul li{
+	color: black !important;
+}
+.sbutton {
+    background: #e05d22;
+	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%);
+	background: linear-gradient(to bottom, #e05d22 0%, #d94412 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e05d22', endColorstr='#d94412', GradientType=0);
+	display: inline-block;
+	padding: 11px 24px 10px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-bottom: 3px solid #b93207;
+	border-radius: 2px;
+    
+    
+    display: block;
+    margin: auto;
+}
+.sbutton:hover {
+    text-decoration: none;
+}
+.sbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+</style>
+</body>
+</html>

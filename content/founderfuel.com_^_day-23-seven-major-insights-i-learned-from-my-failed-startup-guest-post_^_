@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <title>
+            Day 23: Seven Major Insights I Learned from my Failed Startup (guest post) | FounderFuel        </title>
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="pingback" href="http://founderfuel.com/en/xmlrpc.php" />
+        <link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/founderfuel/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="FounderFuel English &raquo; Day 23: Seven Major Insights I Learned from my Failed Startup (guest post) Comments Feed" href="/feed/" />
+<link rel='stylesheet' id='mailchimpSF_main_css-css'  href='http://founderfuel.com/?mcsf_action=main_css&#038;ver=3.5.1' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='mailchimpSF_ie_css-css'  href='http://founderfuel.com/wp-content/plugins/mailchimp/css/ie.css?ver=3.5.1' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://founderfuel.com/en/wp-includes/js/comment-reply.min.js?ver=3.5.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://founderfuel.com/en/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://founderfuel.com/en/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Fill &#8216;er up. Destination Ottawa!' href='http://founderfuel.com/en/2011/06/16/fill-er-up-destination-ottawa/' />
+<link rel='canonical' href='' />
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-23482046-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <script type="text/javascript">var switchTo5x=true;</script>
+        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+        <script type="text/javascript">stLight.options({publisher: "7936c1b2-bfc8-4cc4-b2b3-73ca4a52bbf8"});</script>
+        
+        <meta name="google-site-verification" content="x7GbW8mmJH57R3fkTEAMuLBCyH3Mz8-3FG3NoVTjc0o" />
+        
+    </head>
+    <body class="single single-post postid-7014 single-format-standard no-js">
+        <div class="container">
+        <div class="head wrap">
+            <div class="logo">
+              <a href="http://founderfuel.com/en">FounderFuel</a>
+            </div>
+            <p class="lang-switch">
+                <a href="#" class="lang">Fran&ccedil;ais</a>
+            </p>
+            <p class="social">
+              <span>Keep in touch</span>
+              <a href="http://twitter.com/founderfuel" target="_blank" class="icon twitter">Twitter</a>
+              <a href="http://www.facebook.com/FounderFuel" target="_blank" class="icon facebook">Facebook</a>
+              <a href="http://www.slideshare.net/founderfuel" target="_blank" class="icon slideshare"></a>
+              <a href="http://www.flickr.com/photos/founderfuel/" target="_blank" class="icon flickr">Flickr</a>
+              <a href="https://angel.co/founderfuel" target="_blank" class="icon angellist">AngeList</a>
+              <a href="http://feeds.feedburner.com/founderfuel/feed" class="icon rss">Blog</a>
+              <a href="mailto:info@founderfuel.com" class="icon email">Email</a>
+              <a href="https://itunes.apple.com/ca/app/founderfuel/id566943467?ls=1&mt=8" class="icon iphone">iPhone</a>
+            </p>
+            <div class="header-line">
+                <a href="/en/apply" class="header-apply button">Apply</a>
+                <div id="sitemenu" class="menu-main-container"><ul id="menu-main" class="menu"><li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="http://founderfuel.com/en/">Home</a></li>
+<li id="menu-item-860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-860"><a href="http://founderfuel.com/en/about/">Program</a>
+<ul class="sub-menu">
+	<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://founderfuel.com/en/about/">About</a></li>
+	<li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-842"><a href="http://founderfuel.com/en/faq/">FAQ</a></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://founderfuel.com/en/schedule/">Schedule</a></li>
+	<li id="menu-item-851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-851"><a href="http://founderfuel.com/en/perks/">Perks</a></li>
+</ul>
+</li>
+<li id="menu-item-519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-519"><a href="/mentors/entrepreneurs">Mentors</a>
+<ul class="sub-menu">
+	<li id="menu-item-863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-863"><a href="/mentors/entrepreneurs">Entrepreneurs</a></li>
+	<li id="menu-item-861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-861"><a href="/mentors/execs">Execs</a></li>
+	<li id="menu-item-862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-862"><a href="/mentors/investors">Investors</a></li>
+</ul>
+</li>
+<li id="menu-item-996" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-996"><a href="http://founderfuel.com/en/schedule/events/">Events</a></li>
+<li id="menu-item-943" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-943"><a href="http://founderfuel.com/en/alumni/spring-2015">Alumni</a>
+<ul class="sub-menu">
+	<li id="menu-item-1611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1611"><a href="http://founderfuel.com/en/alumni/spring-2015/">Spring 2015</a></li>
+	<li id="menu-item-1535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1535"><a href="/en/alumni/fall-2014/">Fall 2014</a></li>
+	<li id="menu-item-1498" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1498"><a href="/en/alumni/spring-2014/">Spring 2014</a></li>
+	<li id="menu-item-1499" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1499"><a href="/en/alumni/summer-2013/">Summer 2013</a></li>
+	<li id="menu-item-925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-925"><a href="/en/alumni/fall-2012">Fall 2012</a></li>
+	<li id="menu-item-868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-868"><a href="/en/alumni/spring-2012">Spring 2012</a></li>
+	<li id="menu-item-867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-867"><a href="/en/alumni/fall-2011">Fall 2011</a></li>
+</ul>
+</li>
+<li id="menu-item-728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-728"><a href="http://founderfuel.com/en/press/">Press</a>
+<ul class="sub-menu">
+	<li id="menu-item-1025" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1025"><a href="http://founderfuel.com/press/2014">Press Coverage</a></li>
+	<li id="menu-item-1024" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1024"><a href="http://founderfuel.com/en/press-kit">Press Kit</a></li>
+	<li id="menu-item-1339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1339"><a href="http://founderfuel.com/en/press-releases/">Press Releases</a></li>
+</ul>
+</li>
+<li id="menu-item-508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-508"><a href="http://founderfuel.com/blog">Blog</a></li>
+</ul></div>            </div>
+        </div>
+        <div class="body"><div class="home-banner"></div><div class="wrap"><div class="content">	<div class="entry single" id="post-7014">
+        <h1 class="entry-title">Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)</h1>
+        <p class="meta">March 5, 2014 at 11:26 am</p>
+        <div class="the-content">
+            <p dir="ltr">“This is a guest post by <a href="http://founderfuel.com/mentor/sebastien-provencher/">Sebastien Provencher</a>, VP Product Innovation at <a href="http://www.homeadvisor.com/">HomeAdvisor</a>”</p>
+<p dir="ltr"><a href="http://founderfuel.com/wp-content/uploads/2013/03/sebastienprovencher_photo-200x200.jpg"><img class="alignnone size-full wp-image-5331" alt="sebastienprovencher_photo 200x200" src="http://founderfuel.com/wp-content/uploads/2013/03/sebastienprovencher_photo-200x200.jpg" width="200" height="200" /></a></p>
+<p dir="ltr">Founded in 2006 and <a href="http://gigaom.com/2007/09/26/419-local-search-startup-praized-media-raises-1-million/">vc-funded in 2007</a>, my most recent startup Praized Media / <a href="http://vimeo.com/25995991">Needium</a> went through multiple iterations including 2 pivots before shutting down in the summer of 2012. Through this amazing six-year rollercoaster ride, I probably learned something new every day. We did a lot of things right (especially after we pivoted to Needium in 2010) but if I could go back, I’d change a few things. Here are seven insights I recently shared at a <a href="http://mtlnewtech.com/post/72896307018/montreal-newtech-with-syme-modreal-listrunner-bylls">Montreal New Tech</a> event.</p>
+<p dir="ltr">-Ship early, ship often</p>
+<p dir="ltr">By now, in a minimum viable product world, this advice sounds almost cliché but, in 2007, it took us 9 months to get to a <a href="http://sebprovencher.com/2008/07/09/praized-media-news-praized-media-introduces-first-community-focused-local-search-platform-for-social-media-sites/">first release</a>. We over-complexified our first product launch (in July 2008) and should have been in the market sooner, gathering important learnings from our target customers.</p>
+<p dir="ltr">-Focus on what’s working, kill the rest</p>
+<p dir="ltr">As mentioned above, we shipped multiple products at the same time when we launched. Only one of them really took off: our Facebook application “<a href="http://www.studioworx.com/2008/07/praizing-praized.html">Praize ‘n Raize</a>”. It went viral very quickly, generating huge usage in Montreal. It had all the winning elements (local search, voting, reviews, gaming elements, etc.) that Foursquare would introduce on mobile 9 months later. We should have focussed on this and killed the rest of our product stack.</p>
+<p dir="ltr">-Trust your product/market instinct. You are the expert.</p>
+<p dir="ltr">When you run a startup, you often get confronted by elements you don’t control. In our case, it was the financial crisis of September 2008. As we were raising a new round based on our early success, all funding dried up. The “<a href="http://www.slideshare.net/eldon/sequoia-capital-on-startups-and-the-economic-downturn-presentation?type=powerpoint">Rip Good Times</a>” presentation from Sequoia scared everyone. Our VCs asked us to reduce our burn as much as possible by increasing revenues and reducing costs very quickly. We fired half our team and did our first pivot. We thought we could generate short-term revenues by licensing our technology stack to local media companies, in effect becoming an enterprise social platform provider. But 9 to 12-month sales cycles did not solve our revenue problem. We eventually signed a few customers but, in reality, we should have followed our original vision and focussed on our Facebook app. By moving it to mobile (as we were planning to do), we might have become Foursquare before Foursquare.</p>
+<p dir="ltr">-Your self worth is not the same as your startup worth</p>
+<p dir="ltr">The September 2008 to early 2010 period was extremely difficult for us. We barely survived. When you launch your own company, your personal emotions often follow the same path as your startup. Up, down, up, down, up, down. Sometimes during the same day! I eventually realized that this wasn’t good for my physical and mental health and I learned to uncouple my emotions from the rollercoaster that we were riding. I also realized that, even though this was a difficult year for my company, my professional reputation in the market was improving all the time. You are not your company.</p>
+<p dir="ltr">-Always step up to the plate</p>
+<p dir="ltr">That period was also difficult for one of our co-founders &amp; CEO who had to leave the company for health reasons. In hindsight, I should have raised my hand when that happened and taken the CEO role but I felt I wasn’t ready. Instead, we hired an external CEO. From that, I learned that you should always step up to the plate when you’re needed, even though you might feel uncomfortable about the move.</p>
+<p dir="ltr">-Hire slowly, fire fast</p>
+<p dir="ltr">Another advice that sounds cliché, but is also true. Even though you might feel the pressure to fill positions quickly, take your time when hiring. In a small team, everyone plays a critical role. It can make or break the company in the long run. Hire only A-players. And if you make a hiring mistake, don’t wait multiple months before making the required change.</p>
+<p dir="ltr">-Watch your capitalization table</p>
+<p dir="ltr">When you’re iterating, pivoting and taking follow-up funding rounds over 6 years, you’re slowly diluting your ownership of your own company. As I often tell entrepreneurs, it’s better to own 10% of a company worth $100 million than 50% of one worth $1 million, but without explosive growth and value creation, all that dilution eventually catches up to you. Don’t get to a point where you feel you don’t “own” your company anymore.</p>
+                    </div>
+
+        <span st_url="http://founderfuel.com/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post/" st_title="Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)" class='st_facebook_hcount' displayText='Facebook'></span>
+        <span st_url="http://founderfuel.com/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post/" st_title="Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)" class='st_twitter_hcount' st_via='founderfuel' displayText='Tweet'></span>
+        <span st_url="http://founderfuel.com/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post/" st_title="Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)" class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        <span st_url="http://founderfuel.com/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post/" st_title="Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)" class='st_googleplus_hcount' displayText='Google +'></span>
+        <span st_url="http://founderfuel.com/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post/" st_title="Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)" class='st_email_hcount' displayText='Email'></span>
+
+        <p>&nbsp;</p>
+
+        
+        
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://founderfuel.com/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post/';
+    var disqus_identifier = '7014 http://founderfuel.com/?p=7014';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'founderfuel';
+    var disqus_title = "Day 23: Seven Major Insights I Learned from my Failed Startup (guest post)";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=7014';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/founderfuel.com\/day-23-seven-major-insights-i-learned-from-my-failed-startup-guest-post\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+    </div>
+
+        </div></div>        </div>
+        </div>
+
+        <div class="foot">
+            <div class="wrap">
+                <p class="copyright">&copy; FounderFuel 2015</p>
+                <div class="menu"><ul><li class="page_item page-item-64 current_page_parent"><a href="http://founderfuel.com/blog/">Blog</a></li><li class="page_item page-item-4269"><a href="http://founderfuel.com/f6s/">f6s</a></li><li class="page_item page-item-6"><a href="http://founderfuel.com/mentors/">Mentors</a></li><li class="page_item page-item-537"><a href="http://founderfuel.com/">Redirect</a></li></ul></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        if (typeof jQuery == 'undefined')
+            document.write(unescape("%3Cscript src='/wp-content/themes/founderfuel/js/jquery/jquery-1.6.1.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type='text/javascript' src="/wp-content/themes/founderfuel/js/founderfuel.js"></script>
+    </body>
+</html>

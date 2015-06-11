@@ -1,0 +1,832 @@
+	<!DOCTYPE HTML>
+<html lang="en-US">
+ <head>
+  <title>Co-Founder Potts Shares Lessons Learned from Backfence Bust | Mediashift | PBS</title>
+  <link rel="stylesheet" href="http://www.pbs.org/mediashift/wp-content/themes/mediashift/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://www.pbs.org/mediashift/wp-content/themes/mediashift/css/main.css">
+  <meta name="google-site-verification" content="f5k5VOaUaC2wwQFjFC8f512RuFabfMe0miCsbi8tSyk" />
+  
+<!-- BEGIN Metadata added by Add-Meta-Tags WordPress plugin -->
+<meta name="description" content="Mark Potts We asked Mark Potts, the co-founder of startup company Backfence, to try to set the record straight about why the series of Backfence hyper-local community sites recently closed up shop. What went wrong? What lessons could be learned? In this guest blog post, Potts explains what happened." />
+<meta name="keywords" content="social media, backfence, hyper-local, websites" />
+<!-- END Metadata added by Add-Meta-Tags WordPress plugin -->
+
+<link rel="alternate" type="application/rss+xml" title="Mediashift &raquo; Feed" href="http://www.pbs.org/mediashift/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mediashift &raquo; Comments Feed" href="http://www.pbs.org/mediashift/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Mediashift &raquo; Co-Founder Potts Shares Lessons Learned from Backfence Bust Comments Feed" href="http://www.pbs.org/mediashift/2007/07/co-founder-potts-shares-lessons-learned-from-backfence-bust197/feed/" />
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='http://www.pbs.org/mediashift/wp-content/plugins/captcha/css/style.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cntctfrm_form_style-css'  href='http://www.pbs.org/mediashift/wp-content/plugins/contact-form-plugin/css/form_style.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contextly-kit-widgets--page-view-css'  href='http://contextlysitescripts.contextly.com/kit/assets/2.4/widgets--page-view.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://www.pbs.org/mediashift/wp-content/themes/mediashift/style.css?ver=4.1.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://www.pbs.org/mediashift/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://www.pbs.org/mediashift/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://www.pbs.org/mediashift/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.pbs.org/mediashift/wp-includes/js/json2.min.js?ver=2011-02-23'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.pbs.org/mediashift/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.pbs.org/mediashift/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Why My Smartphone Is Dumb About the Net' href='http://www.pbs.org/mediashift/2007/07/why-my-smartphone-is-dumb-about-the-net194/' />
+<link rel='next' title='Marketers Grapple with Giving Teens More Control Online' href='http://www.pbs.org/mediashift/2007/07/marketers-grapple-with-giving-teens-more-control-online198/' />
+<meta name="generator" content="WordPress 4.1.1" />
+<link rel='canonical' href='http://www.pbs.org/mediashift/2007/07/co-founder-potts-shares-lessons-learned-from-backfence-bust197/' />
+<link rel='shortlink' href='http://www.pbs.org/mediashift/?p=78241' />
+<meta name='contextly-page' id='contextly-page' content='{"title":"Co-Founder Potts Shares Lessons Learned from Backfence Bust","url":"http:\/\/www.pbs.org\/mediashift\/2007\/07\/co-founder-potts-shares-lessons-learned-from-backfence-bust197\/","pub_date":"2007-07-16 00:01:27","mod_date":"2007-07-16 00:01:27","type":"post","post_id":78241,"author_id":"4421","author_name":null,"author_display_name":"Mark Glaser","tags":["backfence","hyper-local","websites"],"categories":["Social Media"],"image":null}' />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+   var jq = jQuery.noConflict();
+   var _sf_startpt=(new Date()).getTime()
+   var axel = Math.random() + "";
+   var ord = axel * 1000000000000000000;
+   var PBS_CHROME_CONFIG = {'api_key': '60920b8e-bc55-404f-aac0-164b95977960'};</script><script type="text/javascript" src="http://pbs.global-chrome-prod.cdn.s3.amazonaws.com/media/js/gc.js">
+  </script>
+  <script src="http://www.pbs.org/mediashift/wp-content/themes/mediashift/js/core.js"></script>
+  <script src="http://www.pbs.org/mediashift/wp-content/themes/mediashift/js/springMessage.js"></script>
+  <script src="http://www.pbs.org/mediashift/wp-content/themes/mediashift/js/jquery.slides.min.js"></script>
+  <script type="text/javascript">
+   var _sf_async_config={uid:28805,domain:"mediashift.pbs.org"};
+   jq(function(){
+    function loadChartbeat() {
+     window._sf_endpt=(new Date()).getTime();
+     var e = document.createElement('script');
+     e.setAttribute('language', 'javascript');
+     e.setAttribute('type', 'text/javascript');
+     e.setAttribute('src', (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js");
+     document.body.appendChild(e);
+    }
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); };
+   });
+  </script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <script type="text/javascript">
+     jq(function() {
+       var track = function() {
+         if(!GA_obj.trackEvent("Category Content View", "social-media"))
+          setTimeout(track, 1000);
+       }
+       track();
+      });
+    </script>
+     </head>
+ <body class="article">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=348097258604563";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
+      <script type="application/javascript" src="http://www-tc.pbs.org/includes/localize.js"></script>
+
+
+
+<link rel="stylesheet" href="/includes/common/pbs-adbanner.css" type="text/css" />
+<div class="adbanner-container" id="pbs-adbanner-container-main-div">
+    <div class="adbanner">
+        <!-- SERVER=(none):127.0.0.1 -->
+        <!-- AD_PROG: n6735.PBS|728x90|technology_communications_MediashiftIdealab|mediashift -->
+        <!-- SCRIPT_NAME: /mediashift/2007/07/co-founder-potts-shares-lessons-learned-from-backfence-bust197 -->
+        <script type="text/javascript">
+        <!--
+        (function() {
+        var page_script_name = encodeURI('/mediashift/2007/07/co-founder-potts-shares-lessons-learned-from-backfence-bust197');
+
+        var full_ad_info = 'n6735.PBS|728x90|technology_communications_MediashiftIdealab|mediashift';
+        var parts = full_ad_info.split('|');
+        var ad_host = parts[0];
+        var ad_size = parts[1];
+        var ad_zone = parts[2];
+        var ad_prefix = parts[3];
+
+        if(page_script_name.indexOf(ad_prefix) != 1) {
+            var img_url="/images/log/bad-adbanner.gif?map=" + ad_prefix + "&real=" + window.location.pathname;
+            var img_obj = new Image();
+            img_obj.src = img_url;
+            document.getElementById("pbs-adbanner-container-main-div").style.display="none";
+        } else if(!document.addisplayed) {
+            var ord = Math.floor(Math.random() * 1000000000);
+            if(!document.hidesupportimg) {
+                document.write('<di' + 'v class="adbanner-header">');
+                document.write('<di' + 'v class="support-message">');
+                document.write('<p' + '>Support for PBS.org provided by:</p' + '>');
+                document.write('</d' + 'iv>');
+                document.write('<di' + 'v class="whatsthis-link">');
+                document.write('<p' + '><a href="http://www.pbs.org/about/faqs/sponsored-links/" title="What\'s this\?">What\'s this\?</a></p' + '>');
+                document.write('</d' + 'iv>');
+                document.write('</d' + 'iv>'); 
+            }
+            var dc_url = 'http://ad.doubleclick.net/adj/' + ad_host + '/' + ad_zone + ';tile=1;sz=' + ad_size + ';ord=' + ord + '?';
+            document.write('<scr' + 'ipt language="javascript" src="' + dc_url + '"></scr' + 'ipt>');
+        } 
+        document.addisplayed=1;
+        })();
+        // -->
+        </script>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+var GA_env = { ua_list: "UA-4005067-1,UA-1996666-1,UA-3963924-1,UA-3978692-1,ET-3978692-2" };
+
+GA_env.vars = { localized: 0 };
+
+var GA_jshost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + GA_jshost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="/js/ga-current.js" type="text/javascript"></script>
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+    GTMDataLayer = [];
+</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TWTDGH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','GTMDataLayer','GTM-TWTDGH');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Begin comScore Tag --> 
+<script> 
+  var _comscore = _comscore || []; 
+  _comscore.push({ c1: "2", c2: "3005420" }); 
+  (function() { 
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; 
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; 
+    el.parentNode.insertBefore(s, el); 
+  })(); 
+</script> 
+<noscript> 
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=3005420&cv=2.0&cj=1" /> 
+</noscript> 
+<!-- End comScore Tag --> 
+
+    <style>layer { position: absolute; }</style>
+<script type='text/javascript' language='JavaScript' src='/includes/javascript/elqNow/elqCfg.js'></script>
+<script type='text/javascript' language='JavaScript' src='/includes/javascript/elqNow/elqImg.js'></script> 
+
+    <script type="text/javascript" src="/foresee/foresee-trigger.js"></script>
+
+
+
+  <div id="banner">
+   <div id="skybox" class="clearfix">
+    <div class="wrapper">
+     <div class="skybox-module clearfix first">
+      <p>Quick Links:</p>
+     </div>
+            <div class="skybox-module clearfix">
+        <div class="skybox-content">
+         <p class="section-title">Business</p>
+         <p><a href="http://www.pbs.org/mediashift/2015/06/8-ways-that-having-a-startup-is-like-having-a-baby/">8 Ways that Having a Startup Is Like Having a Baby</a></p>
+        </div>
+       </div>
+              <div class="skybox-module clearfix">
+        <div class="skybox-content">
+         <p class="section-title">Online Video</p>
+         <p><a href="http://www.pbs.org/mediashift/2015/06/why-stitching-is-becoming-table-stakes-for-tv-everywhere/">Why ‘Stitching’ is Becoming Table Stakes for TV Everywhere</a></p>
+        </div>
+       </div>
+              <div class="skybox-module clearfix">
+        <div class="skybox-content">
+         <p class="section-title">Global View</p>
+         <p><a href="http://www.pbs.org/mediashift/2015/06/mission-journal-in-nepal-finding-solutions-to-better-protect-press/">Mission Journal: In Nepal, Finding Solutions to Better Protect Press</a></p>
+        </div>
+       </div>
+           </div>
+   </div>
+   <div class="wrapper clearfix">
+    <div id="banner-identity" class="clearfix">
+     <h1><a href="http://www.pbs.org/mediashift/">MediaShift</a></h1>
+     <p id="tagline">Your guide to the digital media revolution</p>
+    </div>
+    <div id="banner-mark" class="clearfix">
+     <a href="http://www.pbs.org/mediashift/about/#markglaser">
+      <div class="headshot"></div>
+      <p>With your host<br /><strong>Mark Glaser</strong></p>
+     </a>
+    </div>
+   </div>
+   <div id="nav">
+    <div class="wrapper">
+     <div id="banner-nav" class="clearfix">
+      <ul class="fmenu jd_menu">
+       <li class="first" id="menu-home"><a href="http://www.pbs.org/mediashift/">HOME</a></li>
+       <li id="menu-social"><a href="http://www.pbs.org/mediashift/social-media/">SOCIAL MEDIA</a>
+        <ul>
+         <li><a href="http://www.pbs.org/mediashift/social-media/social-networking/">Social Networking</a></li>
+         <li><a href="http://www.pbs.org/mediashift/?s=facebook">Facebook</a></li>
+         <li><a href="http://www.pbs.org/mediashift/?s=twitter">Twitter</a></li>
+         <li><a href="http://www.pbs.org/mediashift/social-media/weblogs/">Weblogs</a></li>
+         <li><a href="http://www.pbs.org/mediashift/social-media/citizen-journalism/">Citizen Journalism</a></li>
+        </ul>
+       </li>
+       <li id="menu-business"><a href="http://www.pbs.org/mediashift/business">BUSINESS</a>
+        <ul>
+         <li><a href="http://www.pbs.org/mediashift/business/advertisingshift/">AdvertisingShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/business/hyper-local/">Hyper-Local</a></li>
+         <li><a href="http://www.pbs.org/mediashift/business/marketingshift/">MarketingShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/business/public-relations/">Public Relations</a></li>
+         <li><a href="http://www.pbs.org/mediashift/business/technology/">Technology</a></li>
+         <li><a href="http://www.pbs.org/mediashift/collaborationcentral/">Collaboration</a></li>
+        </ul>
+       </li>
+       <li id="menu-education"><a href="http://www.pbs.org/mediashift/education/">EDUCATION</a>
+        <ul>
+          <li><a href="http://www.pbs.org/mediashift/education/innovation-education">Innovation</a></li>
+          <li><a href="http://www.pbs.org/mediashift/education/entrepreneurship-education">Entrepreneurship</a></li>
+          <li><a href="http://www.pbs.org/mediashift/education/ethics">Law &amp; Ethics</a></li>
+          <li><a href="http://www.pbs.org/mediashift/education/tools-tips">Tools &amp; Tips</a></li>
+          <li><a href="http://www.pbs.org/mediashift/education/perspectives">Perspectives</a></li>
+          <li><a href="http://www.pbs.org/mediashift/education/edshift-chats">#EdShift Chats</a></li>
+        </ul>
+       </li>
+       <li id="menu-legacy"><a href="http://www.pbs.org/mediashift/legacy-media/">LEGACY MEDIA</a>
+        <ul>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/bookshift/">BookShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/magazineshift/">MagazineShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/movieshift/">MovieShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/musicshift/">MusicShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/newspapershift/">NewspaperShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/public-media/">Public MediaShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/radioshift/">RadioShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/legacy-media/tvshift/">TVShift</a></li>
+        </ul>
+       </li>
+       <li id="menu-global"><a href="http://www.pbs.org/mediashift/global-view/">GLOBAL VIEW</a>
+        <ul>
+         <li><a href="http://www.pbs.org/mediashift/global-view/europe/">Europe</a></li>
+         <li><a href="http://www.pbs.org/mediashift/global-view/world-view/">World View</a></li>
+         <li><a href="http://www.pbs.org/mediashift/global-view/free-speech/">Free Speech</a></li>
+         <li><a href="http://www.pbs.org/mediashift/global-view/environment/">Environment</a></li>
+         <li><a href="http://www.pbs.org/mediashift/global-view/politicalshift/">Politics</a></li>
+        </ul>
+       </li>
+       <li id="menu-events"><a href="http://www.pbs.org/mediashift/mediashift-events">EVENTS</a>
+        <ul>
+         <li><a href="http://www.pbs.org/mediashift/mediashift-events">MediaShift Events</a></li>
+        </ul>
+       </li>
+       <li id="menu-digitaled"><a href="http://www.pbs.org/mediashift/digitaled/">DIGITALED</a>
+        <ul>
+          <li><a href="http://www.pbs.org/mediashift/digitaled/rji">DigitalEd@RJI</a></li>
+          <li><a href="http://www.pbs.org/mediashift/digitaled/atmediashift">DigitalEd@MediaShift</a></li>
+          <li><a href="http://www.pbs.org/mediashift/digitaled/asu">DigitalEd@ASU</a></li>
+        </ul>
+       </li>
+      </ul>
+      <ul class="fmenu jd_menu">
+       <li id="menu-more">
+        More Topics
+        <ul>
+         <li><a href="http://www.pbs.org/mediashift/culture/mediatwits">Mediatwits</a></li>
+         <li><a href="http://www.pbs.org/mediashift/culture/mobileshift">MobileShift</a></li>
+         <li><a href="http://www.pbs.org/mediashift/culture/legal-drama/">Legal Drama</a></li>
+         <li><a href="http://www.pbs.org/mediashift/culture/media-usage/">Media Usage</a></li>
+         <li><a href="http://www.pbs.org/mediashift/culture/your-take/">Your Take</a></li>
+         <li><a href="http://www.pbs.org/mediashift/mediashift-guides/">MediaShift Guides</a></li>
+        </ul>
+       </li>
+      </ul>
+      <div id="idealab-link"><a href="http://www.pbs.org/idealab/">See Also: IdeaLab</a></div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="content-color"></div>
+  <div id="section-color"></div>
+  <div id="content">
+   <div class="wrapper clearfix"> <div class="main">
+  <div id="center-bar">
+   <div class="article-header clearfix">
+    <h2 class="article-title">Co-Founder Potts Shares Lessons Learned from Backfence Bust</h2>
+    <div class="article-tools">
+      <a href="mailto:?subject=Thought you would like this&amp;body=http%3A%2F%2Fwww.pbs.org%2Fmediashift%2F2007%2F07%2Fco-founder-potts-shares-lessons-learned-from-backfence-bust197%2F." title="Share by Email"><img src="http://www.pbs.org/mediashift/wp-content/themes/mediashift/img/mail.png"/></a>
+      <div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="pbsmediashift" data-lang="en" data-size="medium" data-count="vertical">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <!-- Place this tag where you want the +1 button to render. -->
+      <div class="g-plusone" data-size="tall"></div>
+
+      <!-- Place this tag after the last +1 button tag. -->
+      <script type="text/javascript">
+        (function() {
+          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+          po.src = 'https://apis.google.com/js/plusone.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+      </script>
+      <script src="//platform.linkedin.com/in.js" type="text/javascript">
+       lang: en_US
+      </script>
+      <script type="IN/Share" data-counter="top"></script>
+    </div>
+    <div class="article-details">
+     <div class="author-image"><img alt='' src='http://0.gravatar.com/avatar/a620db67255d4cfab69a33f354c91786?s=60&amp;d=identicon&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' /></div>
+     <div class="author-name">By <a href="http://www.pbs.org/mediashift/author/markglaser/" title="Posts by Mark Glaser" rel="author">Mark Glaser</a><a class="twitter" href="http://www.twitter.com/@mediatwit"></a></div>
+     <div class="article-date">July 16, 2007</div>
+    </div>
+   </div>
+   <div class="post-sponsor"></div>
+   <div class="article-body">
+    <p>
+<div class="wp-caption alignleft"><img src="http://ec2-23-21-180-28.compute-1.amazonaws.com/mediashift/wp-content/uploads/sites/8/import/i-f59e599edaa4aaf3f4808e23f43aec2d-Mark Potts.jpg" alt="i-f59e599edaa4aaf3f4808e23f43aec2d-Mark Potts.jpg" />
+<div class="wp-caption-text">Mark Potts</div>
+</div>
+<p>
+<em>We asked Mark Potts, the co-founder of startup company Backfence, to try to set the record straight about why the series of Backfence hyper-local community sites recently closed up shop. What went wrong? What lessons could be learned? In this guest blog post, Potts explains what happened.</em></p>
+<p>There has been a lot of speculation about what went wrong at <a  <br />
+href=&#8221;http://backfence.com&#8221;>Backfence</a>. To date, the company&#8217;s investors and I have tried to stay out of the second-guessing in the blogosphere and the trade press, largely because there are private business matters involved that we&#8217;ve chosen not to discuss.</p>
+<p>Indeed, as with many early-stage companies, some of Backfence&#8217;s problems were internal and self-inflicted, and actually had little or nothing to do with the many reasons wildly speculated about in industry blogs and in the trade press in recent days.</p>
+<p>However, as Backfence&#8217;s co-founder, I thought it would be helpful to discuss some of what we learned from Backfence &#8212; and why I&#8217;m still  very optimistic that a similar model can and will succeed. As a pioneer in the user-generated, hyper-local field, Backfence hopefully will pave the way for many other efforts to create locally focused online communities that ultimately will become profitable businesses.</p>
+<p>Over the past couple of years, we&#8217;ve seen the appearance of a large number of different variations and models for creating and operating  user-generated, citizens media or hyper-local sites. Steve Outing wrote an excellent <a href="http://http://www.poynter.org/content/content_view.asp?id=83126">essay</a> in 2005 on the 11 layers of citizen journalism &#8212;there surely are more by now. Plus, there is an excellent recent <a href="http://http://www.kcnn.org/research/citizen_media_report/">overview</a> of citizens media by Jan Schaffer and the University of Maryland&#8217;s J-Lab.</p>
+<h2>What&#8217;s Essential for Success</h2>
+<p>Like Backfence, all of these nascent efforts are fascinating laboratories &#8212; and also like Backfence, none has yet proven to be a successful, sustainable long-term business model. So it&#8217;s difficult at this juncture to say what&#8217;s &#8220;right&#8221; and what&#8217;s &#8220;wrong.&#8221; But based on the Backfence experience, here are are a few things I believe are essential for the success of a user-generated hyper-local site:</p>
+<p>&gt; <strong>Engage the community.</strong> This may be the single most critical element. It&#8217;s not about technology, it&#8217;s not about journalism, it&#8217;s not about whiz-bang Web 2.0 features. It&#8217;s about bringing community members together to share what they know about what&#8217;s going on around town. A top-down, &#8220;if you build it, they will come&#8221; strategy absolutely does not work, and that&#8217;s not what Backfence did &#8212; otherwise, we&#8217;d have launched in a lot more than 13 communities in two years. Instead, Backfence employed a group of talented journalists and community representatives who sought out and interacted constantly with members of each of our communities to encourage them to participate.</p>
+<p>Over time, in our more mature communities, this really bore fruit. Could we have done more? Absolutely. It&#8217;s essential to success. You have to get a critical mass of community participation and eyeballs coming to the site. Also essential: engaging existing local bloggers, Flickr members and other existing local voices. All of these must come together to make a successful hyper-local site. You have to get the community involved. There&#8217;s no substitute for that.</p>
+<p>&gt; <strong>It&#8217;s not journalism &#8212; it&#8217;s a conversation.</strong> Actually, it&#8217;s whatever the community wants it to be. The magic of hyper-local sites, be they Backfence, other startups, Yahoo Groups or local blogs, is that they provide a forum for community members to share and discuss what&#8217;s going on around town. The back-and-forth of a good online conversation can be as rich, deep and interesting &#8212; or more so &#8212; than traditional journalism. In fact, the role of journalists in this process is overrated &#8212; except maybe by journalists! The less involved site managers are, aside from lightly moderating the conversation, the better. </p>
+<p>Proponents of some other citizens media models argue that journalists are essential to hyper-local sites as thought leaders and examples of professional reporting. But that adds considerable expense, and in our conversations with community members we learned that the intrusion of an all-knowing journalist would tend to stifle, not enhance, community conversation, by setting top-down agendas and crowding out community members. Let the audience decide what&#8217;s  important and choose its own leaders.</p>
+<p>&gt; <strong>Hyperlocal content is really mundane. </strong>We heard this criticism all the time. You bet it is &#8212; if you&#8217;re an outsider looking in. To members of the community who actually live with these local issues, it&#8217;s vitally important. It&#8217;s precisely that mundane content, and the conversations around it, that brings life to hyper-local sites. I find that when I look at supposedly thriving hyper-local sites, they seem boring and pedestrian to me. Exception: <a href="http://www.westportnow.com">WestportNow.com</a>. Why? Because I grew up there and know the place and its players. It&#8217;s that simple: It&#8217;s relevant to me. </p>
+<p>From outside, hyper-local content all looks mundane. But it&#8217;s information and conversation that&#8217;s important to a specific local audience and flat-out unavailable anywhere else &#8212; the far end of <a href="http://www.thelongtail.com/">the Long Tail</a>. That&#8217;s not mundane, it&#8217;s a competitive advantage.</p>
+<p>&gt; <strong> Trust the audience.</strong> We were asked all the time, mostly by nervous journalists, how we avoided having Backfence become a nasty free-for-all. There were many answers: We installed profanity filters, required registration in order to post or comment, asked members to use their real names and we put &#8220;report misconduct&#8221; buttons on every post and comment. But most of all, we trusted the audience to do the right thing &#8212; and invariably they did. All of that is why we can boast that, aside from removing the usual offshore classifieds spam (English bulldogs or capuchin monkeys, anyone?), we very, very rarely had to police Backfence by deleting content. It happened just a handful of times over two-plus years. </p>
+<p>The audience took responsibility for what went on at each local Backfence site and debated local issues in a civil manner because it was about <em>their</em> community. And as in their physical community, they were proud of it and took care of it.</p>
+<p>&gt; <strong>Focus on strong, well-defined communities. </strong>We chose the communities in which Backfence launched based on demographics, population density, local governance, commercial viability and competition, among other factors. But as much as any of these, we chose them because they had a strong, well-focused sense of place and community pride: &#8220;I live <em>here</em>, I don&#8217;t live over <em>there</em>.&#8221; </p>
+<p>Moreover, they were well-defined geographically. Beyond a certain size, communities lose their focus. There are too many different governmental bodies, local organizations, schools and people to get a clear grip on what it means to be a community. It&#8217;s possible to argue, in fact, that a hyper-local site ideally should operate at the neighborhood level, and that even a town is too big. Trying to create a hyper-local site that covers a large area increases the potential population and spreads the focal points of interest too broadly. You only care about the high school your kid goes to; the one across town might as well be 3,000 miles away. It&#8217;s all about focus: local, local, local.</p>
+<p>&gt; <strong>Leverage social networking. </strong>The rise of MySpace, Flickr, YouTube and the commercial version of Facebook &#8212; virtually all of which have  <br />
+happened since Backfence launched more than two years ago &#8212; demonstrates the power of social media. Local communities are social beehives anyway. Why not take advantage of existing local connections and the virality and marketing reach of social tools such as member profiles, &#8220;friending&#8221; tools, widgets and the ability of members to exchange messages with each other? This was an element we unfortunately were unable to get off the drawing board at Backfence, because of business issues and other priorities.</p>
+<p>&gt; <strong>There is most certainly a robust hyper-local advertising business.</strong> Indeed, local advertisers are eager for new online advertising vehicles. I&#8217;ve seen it suggested repeatedly that Backfence failed because it couldn&#8217;t sell advertising to local merchants. Not true. In fact, we sold ads to more than 400 advertisers, more than any other similarly sized hyper-local effort that I&#8217;m aware of. It was clear that we had staked out an affordable and lucrative corner of the local ad market. </p>
+<p>Ads in local newspapers (even community weeklies) are too expensive for many small local businesses. Alternatives like the Yellow Pages, Val-Pak-style coupon flyers and local radio are similarly pricey. And most small businesses don&#8217;t know from AdSense. That presents a ripe target for a talented, hard-working ad sales team concentrating on offering low-cost ads to local businesses who want to reach members of their communities through hyper-local sites.  It&#8217;s a rich, untapped marketplace.</p>
+<p>&gt; <strong>Keep costs down.</strong> To become a successful business, hyper-local citizens media efforts have to be lightweight and lean. Many hyper-local sites today are one-off labors of love, with little or no hope of becoming profitable. Nothing wrong with that, unless you want to make a living at it. To make a successful business, a hyper-local operation has to be run as much more than a hobby. More than likely, the costs (and revenue) need to be spread among many sites to create a successful business model. The Backfence formula averaged about one staffer per community site, and in retrospect, that probably was too rich. </p>
+<p>Oh, and you don&#8217;t necessarily have to pay community members to contribute to and participate on the sites. That&#8217;s not their primary motivation. They want to be seen among their neighbors as sources of local knowledge and opinion, and thatâs more valuable to them than being paid. Indeed, we never had a single member ask for compensation. And when we offered coffee cards in exchange for posts, Backfence users actually rebelled. They thought we were making the site too commercial, even though ads didn&#8217;t seem to bother them at all &#8212; because local ads are local information.</p>
+<p>&gt; <strong> Partner with a media company or some other distribution source.</strong> Because of the critical need to market to and engage the community, it&#8217;s better to piggyback on a print or broadcast partner&#8217;s existing community relationships and marketing power. It&#8217;s very, very difficult to start from scratch in a community and get to critical mass without help. For a variety of reasons that made sense at the time, Backfence chose not to go the media partner route. But as newspapers and broadcasters have become more savvy in the past few months about their need for hyper-local efforts, it makes more sense for hyper-local entrepreneurs to hook up with media partners &#8212; or for media companies to start their own, dedicated hyper-local efforts.</p>
+<p>&gt; <strong> Hyper-local works.</strong> You need patience and hard work to embed yourself in a community and become a vital cog in the life of that community. But when a community comes together, it&#8217;s striking. We saw it happening in Backfence&#8217;s more mature communities after a couple of years. In fact, even after cutbacks earlier this year left us with no day-to-day community outreach, site traffic and posting activity continued unabated, and even rose. Were they at the levels we wanted?  Of course not (they never are). But that proves that once the community gets involved, a successful community site can almost run itself. I said &#8220;almost!&#8221;</p>
+<p>&gt; <strong> Hyper-local is really hard. </strong> Don&#8217;t kid yourself. You don&#8217;t just open the doors and hit critical mass. We knew that from the jump. It takes a lot of work to build a community. Look carefully at most hyper-local sites and see just how much posting is really being done, especially by members of the community as opposed to be the sites&#8217; operators. Anybody who&#8217;s run a hyper-local site will tell you that it takes a couple of years just to get to a point where you&#8217;ve truly got a vibrant online community. It takes even longer to turn that into a viable business. Unfortunately, for a variety of reasons, Backfence was unable to sustain itself long enough to reach that point. </p>
+<h2>Citizen Media Concept Is Sound</h2>
+<p>In an entrepreneurial startup, there&#8217;s a blend between capital raised and a point of self-sustainability. Typically, that takes many years. Even though it raised &#8212; and spent &#8212; $3 million, Backfence was unable to make that leap. Ultimately, the investors and I determined that the company&#8217;s fundamental internal problems made it impossible for us to reach that transition point, which is what led to our decision to shut down. It happens; most start-ups fail, unfortunately.</p>
+<p>And yes, Backfence was one of those startups. I&#8217;d like to thank the talented, hard-working employees who spent so much time trying to make Backfence a success &#8212; reaching out to the community, interacting with members, selling ads, keeping the site running and adding new features. They were the backbone of the company, and unfortunately lost their jobs earlier this year because of issues beyond their control. I&#8217;d also like to thank our venture-capital investors at <span class="caps">SAS</span> Investors and Omidyar Network, who took a big risk on an unproven concept and then took a large financial loss when we were unable to successfully execute on that concept. The investors have been consistently helpful and supportive and even now are continuing to explore ways to possibly revive the company in some form, even if there&#8217;s no remaining financial benefit to them.</p>
+<p>Most importantly, we all believe that the core Backfence concept &#8212; user- <br />
+generated hyper-local citizens media &#8212; is sound. Someday soon, somebody will make it work and turn it into a successful business. If there&#8217;s anything I&#8217;ve learned from Backfence, it&#8217;s that the power and potential of local communities still is waiting to be tapped. In the end, Backfence was a well-intended experiment that unfortunately was not successful in the form it took and at the time it was launched. I hope many other hyper-local citizens media efforts can learn from  <br />
+what we did and rise in our wake.</p>
+<p>We&#8217;ll see you around the neighborhood.</p>
+<p><em>Mark Potts is a media and Internet consultant and entrepreneur  <br />
+who co-founded Backfence and WashingtonPost.Newsweek Interactive. He blogs about new and old media at <a href="http://www.recoveringjournalist.com">www.recoveringjournalist.com</a>.<br />
+</em></p>
+<div id='ctx-sl-subscribe' class='ctx-clearfix'></div><div id='ctx-module' class='ctx-module-container ctx-clearfix'></div>
+        <div class="post-sponsor"></div>
+   </div>
+   <div class="article-footer">
+    <div class="article-more"></div>
+    <div class="author-bio"></div>
+    <div class="article-tools"></div>	
+    <div class="comments">
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-69157">
+        <div id="dsq-comment-header-69157" class="dsq-comment-header">
+            <cite id="dsq-cite-69157">
+                <span id="dsq-author-user-69157">Former colleague</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-69157" class="dsq-comment-body">
+            <div id="dsq-comment-message-69157" class="dsq-comment-message"><p>Oh puhleez. Anyone who has ever worked with Mark Potts knows exactly what went wrong with Backfence: Mark Potts. His association with a long line of the online industry&#8217;s most cataclysmic failures is not a coincidence. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-69158">
+        <div id="dsq-comment-header-69158" class="dsq-comment-header">
+            <cite id="dsq-cite-69158">
+http://www.religionWriter.com                <span id="dsq-author-user-69158">Andrea Useem</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-69158" class="dsq-comment-body">
+            <div id="dsq-comment-message-69158" class="dsq-comment-message"><p>For a posting that was supposed to be a post-mortem of what went wrong, it didn&#8217;t offer much. Potts&#8217; opening points on &#8220;what&#8217;s essential for success&#8221; read like the usual citizen-journalism boosterism. If all those points are true, then why didn&#8217;t Backfence succeed? Sounds like &#8220;Communism didn&#8217;t work in Soviet Union experiment, but the principles are still sound.&#8221; </p>
+<p>Can anyone point us to meatier dissection of Backfence&#8217;s failure so that we can indeed learn some lessons here? </p>
+<p>Andrea Useem</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-69162">
+        <div id="dsq-comment-header-69162" class="dsq-comment-header">
+            <cite id="dsq-cite-69162">
+http://www.dcblogs.com                <span id="dsq-author-user-69162">kob</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-69162" class="dsq-comment-body">
+            <div id="dsq-comment-message-69162" class="dsq-comment-message"><p>I was impressed with Mark Potts and his effort. To the commenter above looking for a &#8220;meatier dissection&#8221; I&#8217;ll offer this uninformed opinion: </p>
+<p>If Backfence was still publishing, today&#8217;s topic would have been whether it could compete against the Washington Post&#8217;s just launched hyperlocal effort, LoudonExtra.com</p>
+<p>What the Washington Post is doing in Loudon County is very similar to what Backfence pioneered. The Post is planning to launch its own version of hyperlocal throughout the Metro area. </p>
+<p>The Backfence model is very much alive. </p>
+<p>I think Mark does a pretty good job in spelling out what happened. Sure, his points may appear as conventional wisdom to the wags but the big difference is Backfence actually executed on it. </p>
+<p>Even if Mark provided every ounce of detail about what was right and wrong with meeting its vision, it still wouldn&#8217;t tell you whether the vision is flawed. And that&#8217;s really what it&#8217;s about, isn&#8217;t it? </p>
+<p>I know nothing about what may have gone right or wrong with Backfence, but I know from my own experiences in this that it&#8217;s rarely the vision that will cause the most grief, but the hundreds of other things you have bring in place to make it happen. </p>
+<p>But to the point about the Post: The Post&#8217;s hyperlocal efforts can be mundane to the point of sleepy and still drive mountains of traffic to its site. Backfence didn&#8217;t have that luxury, and as Mark pointed out one of the issues that hyperlocal content has is, well, it&#8217;s hyperlocal. </p>
+<p>So really, the question again is how do you create a hyperlocal site that can compete against a major media outlet? Not such a new question here, is it?  </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-69382">
+        <div id="dsq-comment-header-69382" class="dsq-comment-header">
+            <cite id="dsq-cite-69382">
+                <span id="dsq-author-user-69382">Tom Grubisich</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-69382" class="dsq-comment-body">
+            <div id="dsq-comment-message-69382" class="dsq-comment-message"><p>Ms. Useem is right.  But maybe Mark is too close to what happened, and too sure the model he helped developed is absolutely right, to give a useful postmortem.  A clue to what went wrong with Backfence, I think, is Mark&#8217;s persistent claim that local-local content anywhere is and ought to be &#8220;mundane.&#8221;  A browsing of Mike    Orren&#8217;s pegasusnews.com, which covers the communities of Dallas/Fort Worth, shows that local-local can be out of the ordinary, fresh and imaginative &#8212; all antonyms for &#8220;mundane.&#8221;  Some of the subjects Pegasus News covers may indeed be ordinary, but Mike and his staff bring energy, and a sassy-edged humor, to their site.  They are not sitting back with their feet on the desk, waiting for contributors to decide what shall be written about, and how.  They roll up their sleeves and get engaged.  They proclaim their passionate feelings for Dallas/Fort Worth.  They have a love-hate relationship &#8212; mostly, to be sure, love &#8212; with their communities, and  that courses through the site.  It&#8217;s one reasons, I&#8217;m sure, that Fisher Communications swooped down and bought Pegasus News at about the same time that Backfence was going out of business.  </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-70272">
+        <div id="dsq-comment-header-70272" class="dsq-comment-header">
+            <cite id="dsq-cite-70272">
+                <span id="dsq-author-user-70272">Roger</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-70272" class="dsq-comment-body">
+            <div id="dsq-comment-message-70272" class="dsq-comment-message"><p>I just happened to run into this blog entry from  a search for &#8216;failed startup post mortem&#8217; and truth be told I don&#8217;t feel like I&#8217;ve really learned why this  particular startup failed. One of the entries is called &#8220;trust the audience&#8221;? how did &#8216;trusting the audience&#8217; contribute to the success/failure of the site? &#8216;keep costs down&#8217;?</p>
+<p>All in all, it feels like a &#8220;hey we gave our best shot, we tried x,y,z (all the feel good entries above) but it&#8217;s really really hard and we didn&#8217;t make it&#8221;. I still don&#8217;t know why.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-71490">
+        <div id="dsq-comment-header-71490" class="dsq-comment-header">
+            <cite id="dsq-cite-71490">
+http://www.mediaspainting.com                <span id="dsq-author-user-71490">Claudio</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-71490" class="dsq-comment-body">
+            <div id="dsq-comment-message-71490" class="dsq-comment-message"><p>The Backfence model is still alive. I think many developers applied this model in developing hyper local marketing.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-71919">
+        <div id="dsq-comment-header-71919" class="dsq-comment-header">
+            <cite id="dsq-cite-71919">
+http://www.mediaspainting.com                <span id="dsq-author-user-71919">A Painter</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-71919" class="dsq-comment-body">
+            <div id="dsq-comment-message-71919" class="dsq-comment-message"><p>I got good results from backfence site. It has an important tool in SEO .</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+var disqus_url = 'http://www.pbs.org/mediashift/2007/07/co-founder-potts-shares-lessons-learned-from-backfence-bust197/';
+var disqus_identifier = '78241 http://www.pbs.org/mediashift/2007/07/co-founder-potts-shares-lessons-learned-from-backfence-bust197.html';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'mediashift-wp';
+var disqus_title = "Co-Founder Potts Shares Lessons Learned from Backfence Bust";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=78241';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+</div>
+   </div>
+  </div>
+  <div id="right-bar" class="widgets">
+    <div class="article-image widget"></div>
+        <div class="article-tags widget clearfix">
+      <label>Tagged: </label> <a href="http://www.pbs.org/mediashift/tag/backfence/" rel="tag">backfence</a>, <a href="http://www.pbs.org/mediashift/tag/hyper-local-2/" rel="tag">hyper-local</a>, <a href="http://www.pbs.org/mediashift/tag/websites/" rel="tag">websites</a>    </div>
+        <div class="widget">
+      <div class="widget-content">
+        <div id="sponsorship_widget">
+	<script type="text/javascript">
+	  ord=Math.random()*10000000000000000;
+	  document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/n6735.PBS/technology_communications_mediashift;sz=300x250;ord=' + ord + '?"><\/script>');
+	</script>
+	<noscript><a href="http://ad.doubleclick.net/jump/n6735.PBS/technology_communications_mediashift;sz=300x250;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/n6735.PBS/technology_communications_mediashift;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript>
+	<hr />
+	<p id="sponsorship_opportunities"><strong><a href="http://www.pbs.org/mediashift/sponsorships">Check out MediaShift Sponsorship opportunities!</a></strong></p>
+</div>      </div>
+    </div>
+
+    <div class="widget">
+      <h3>Multimedia</h3>
+      <div class="widget-content">
+        <p><a href="http://www.pbs.org/mediashift/2015/06/mediatwits-163-can-we-slow-online-harassment-without-curbing-free-speech/">Mediatwits #163: Can We Slow Online Harassment Without Curbing Free Speech?</a></p>
+
+	<h4>Mediatwits Google Hangout</h4>
+	<iframe src="http://www.youtube.com/embed/K7DKtXzxQIU" height="169" width="300" allowfullscreen="" frameborder="0"></iframe>
+	<p class="feed-link"><a href="http://www.youtube.com/pbsmediashift">Subscribe in YouTube</a></p>
+	<p class="feed-link"><a href="http://feeds.feedburner.com/mediatwits">Subscribe in RSS</a></p>
+
+	<h4>Mediatwits on SoundCloud</h4>
+	<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F208875886"></iframe>
+	<p class="feed-link"><a href="https://soundcloud.com/mediashift">Subscribe in SoundCloud</a></p>
+	<p class="feed-link"><a href="http://itunes.apple.com/us/podcast/the-mediatwits-pbs/id434716661">Subscribe in iTunes</a></p>
+      </div>
+    </div>
+
+    <div class="widget">
+      <div class="widget-content">
+        <script type="text/javascript">
+  google_ad_client = "ca-pub-4367588818573017";
+  google_ad_slot = "9346900179";
+  google_ad_width = 300;
+  google_ad_height = 250;
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>      </div>
+    </div>
+
+    <div class="widget">
+      <h3>Newsletters</h3>
+      <div class="widget-content">
+        <p>MediaShift delivers the best news on media and technology directly to your in-box.</p>
+<ul id="newsletter_option_list">
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=5371aa94a8" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>Daily Must-Reads</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=146ff8b44e" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>E-Books and Self-Publishing Roundup</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage1.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=2bd70a1dcb" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>Journalism Education Roundup</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage2.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=70e55682fc" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>MediaShift Daily</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=0296664a95" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>Idea Lab Daily</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage2.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=cca0d0b84f" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>Collaboration Central</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+  <li>
+    <form class="mailchimp" action="http://pbs.us2.list-manage.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=0cfe4ab3ac" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+      <label>
+        <u>MediaShift Events</u>
+      </label>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+      <input type="submit" value="Subscribe" name="subscribe" class="button">
+    </form>
+  </li>
+</ul>
+<div id="newsletter_dynamic_forms"></div>
+<script type="text/javascript">
+(function($) {
+  $(function() {
+    var forms = $("#newsletter_option_list form.mailchimp");
+    var new_form = $("<form></form>");
+    var email_input = $('<input id="newsletter_uber_email" type="email" value="" name="EMAIL" class="email" placeholder="email address" required>');
+    var option_list = $("<ul id='newsletter_lists'></ul>");
+    var submit_button = $('<input type="button" value="Subscribe" name="subscribe" class="button">');
+
+    new_form.submit(function() { return false; });
+
+    submit_button.click(function() {
+      var email = $("#newsletter_uber_email").val();
+      var count = 0;
+      $('#newsletter_lists input:checked').each(function() {
+        count++;
+        var form_id = $(this).val();
+        var form = $("#newsletter_form" + form_id);
+        var form_email = form.find("input.email");
+        form_email.val(email);
+        form.submit();
+      });
+
+      if(count>0)
+        new_form.replaceWith($("<div><strong>Thank you!  Check your email to confirm your subscription.</strong></div>"));
+    });
+
+    new_form.append(email_input);
+    var x = 0;
+    forms.each(function() {
+      var form = $(this);
+      form.attr("id", "newsletter_form" + x);
+      var action = form.attr("action");
+      var option_label = form.find("label").detach().attr("for","newsletter_list" + x);
+      var option = $('<li></li>');
+      var option_checkbox = $('<input type="checkbox" name="lists[]" value="' + x + '" id="newsletter_list' + x + '"/>');
+      option.append(option_checkbox);
+      option.append(option_label);
+      option_list.append(option);
+
+      var ifr = $("<iframe>");
+      ifr.attr("name", "newsletter_signup_iframe" + x);
+      $(ifr).hide();
+      $("body").append(ifr);
+      form.attr("target", ifr.attr("name"));
+
+      x++;
+    });
+    new_form.append(option_list);
+    new_form.append(submit_button);
+    $("#newsletter_option_list").hide();
+    $("#newsletter_dynamic_forms").append(new_form);
+  });
+})(jq);
+</script>      </div>
+    </div>
+
+    <div class="widget">
+      <h3>Best of Mediashift</h3>
+      <div class="widget-content">
+        <ul>
+					<li><a href="http://www.pbs.org/mediashift/2015/04/cutting-the-cord-2015-a-special-series-on-streaming-tv/">Cutting the Cord 2015: A Special Series on Streaming TV</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/04/your-guide-to-cutting-the-cord-to-cable-tv/">Your Guide to Cutting the Cord to Cable TV</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/03/why-it-takes-more-than-unplugging-to-solve-modern-stress/">Why It Takes More than Unplugging to Solve Modern Stress</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/03/how-to-unplug-your-kids-despite-schools-pushing-tech-with-common-core/">How to Unplug Your Kids Despite Schools Pushing Tech with Common Core</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/03/special-series-unplugging-from-technology-2015/">Special Series: Unplugging from Technology 2015</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/04/digitaled-how-to-manage-verify-eyewitness-media-on-social/">DigitalEd: How to Manage, Verify Eyewitness Media on Social</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/04/iphone-audio-reporting-101/">DigitalEd: iPhone Audio Reporting 101</a></li>
+								<li><a href="http://www.pbs.org/mediashift/2015/05/digitaled-how-publishers-can-engage-on-social-drive-revenue/">DigitalEd: How Publishers Can Engage on Social & Drive Revenue</a></li>
+				</ul>      </div>
+    </div>
+
+    <div class="widget stay-informed">
+  <h3>Stay Informed</h3>
+  <div class="widget-content">
+    <h4>Get MediaShift Daily via Email</h4>
+    <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:200px;}
+    </style>
+    <div id="mc_embed_signup">
+      <form action="http://pbs.us2.list-manage.com/subscribe/post?u=f32534a334b03264ce60a3732&amp;id=70e55682fc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </form>
+    </div>
+
+    <h4>Follow us on Social</h4>
+    <ul class="social-links">
+      <li class="twitter"><a href="http://www.twitter.com/pbsmediashift"></a></li>
+      <li class="facebook"><a href="http://www.facebook.com/mediashift"></a></li>
+      <li class="google"><a href="https://plus.google.com/b/102271488505503964526/102271488505503964526/posts"></a></li>
+      <li class="youtube"><a href="http://www.youtube.com/pbsmediashift"></a></li>
+      <li class="soundcloud"><a href="http://www.soundcloud.com/mediashift"></a></li>
+      <li class="instagram"><a href="http://instagram.com/mediashift"></a></li>
+    </ul>
+  </div>
+</div>
+
+    <div class="widget">
+      <h3>Who we Are</h3>
+      <div class="widget-content">
+        <p>MediaShift explains how traditional media such as newspapers, magazines, radio, TV, music and movies are changing with digital disruption and adapting their business models for a more mobile, networked world.</p>
+<p>If you're interested in submitting a guest column, <a href="http://www.pbs.org/mediashift/submitting-guest-posts-to-mediashift/">see our guidelines here.</a></p>
+<ul>
+  <li><a href="http://www.pbs.org/mediashift/about">Find out more &raquo;</a></li>
+  <li><a href="http://www.pbs.org/mediashift/contact">Contact us &raquo;</a></li>
+  <li><a href="http://www.pbs.org/mediashift/sponsorships">Sponsor MediaShift &raquo;</a></li>
+</ul>      </div>
+    </div>
+
+    <div class="widget">
+      <h3>Reader Poll</h3>
+      <div class="widget-content">
+        
+<script type="text/javascript" charset="utf-8" src="http://static.polldaddy.com/p/8589272.js"></script>
+<noscript><a href="http://polldaddy.com/poll/8589272/">Should news organizations run the new cover of Charlie Hebdo?</a></noscript>
+
+      </div>
+    </div>
+  </div>
+   </div>
+ </div>
+ <div id="footer">
+  <div class="wrapper clearfix">
+   <div id="footer-nav">
+    <a href="http://www.pbs.org/mediashift/">Home</a> |
+    <a href="http://www.pbs.org/mediashift/social-media/">Social Media</a> |
+    <a href="http://www.pbs.org/mediashift/business">Business</a> |
+    <a href="http://www.pbs.org/mediashift/education/">Education</a> |
+    <a href="http://www.pbs.org/mediashift/legacy-media/">Legacy Media</a> |
+    <a href="http://www.pbs.org/mediashift/global-view/">Global View</a> |
+    <a href="http://www.pbs.org/mediashift/events/">Events</a> |
+    <a href="http://www.pbs.org/mediashift/digitaled/">DigitalEd</a>
+   </div>
+   <div id="footer-links">
+    <a href="http://www.pbs.org/aboutsite/aboutsite_privacy.html">Privacy Policy</a>
+    <a href="http://www.pbs.org/aboutsite/aboutsite_rules.html">Terms of Use</a>
+    <a href="http://www.pbs.org/aboutsite/aboutsite_rules.html">Sponsor MediaShift</a>
+    Copyright 2015, Public Broadcasting Service (PBS)
+   </div>
+  </div>
+  
+
+
+        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'mediashift-wp';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <!-- EUREKA KING PLUGIN SCRIPT --><script>eurekaKingID="mediashift"</script><script src="https://s3-us-west-1.amazonaws.com/eurekaking-plugin/go.js"></script><!-- END EUREKA KING PLUGIN SCRIPT --><script type='text/javascript' src='http://contextlysitescripts.contextly.com/kit/assets/2.4/libraries--easy-xdm.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Contextly = [];
+Contextly = {"ajax_url":"http:\/\/www.pbs.org\/mediashift\/wp-admin\/admin-ajax.php","api_server":"http:\/\/rest.contextly.com\/","main_server":"https:\/\/contextly.com\/","editor_url":"http:\/\/www.pbs.org\/mediashift\/wp-admin\/admin.php?page=contextly_overlay_dialog&noheader","app_id":"232118028mediashift","settings":{"link_type":"","target_id":"related-links","block_position":"after","display_type":["post"],"publish_confirmation":"0"},"admin":false,"mode":"live","https":false,"version":"1.4.2","ajax_nonce":"85714374d8","render_link_widgets":true};;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://contextlysitescripts.contextly.com/kit/assets/2.4/widgets--page-view.js'></script>
+<script type='text/javascript' src='http://contextlysitescripts.contextly.com/wp_plugin/1.4.2/js/contextly-wordpress.js'></script>
+<script type='text/javascript' src='http://www.pbs.org/mediashift/wp-includes/js/comment-reply.min.js?ver=4.1.1'></script>
+<script type='text/javascript' src='http://www.pbs.org/mediashift/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+ </body>
+</html>

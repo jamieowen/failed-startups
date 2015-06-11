@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+        
+        <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+        <!-- DEFAULT COLORS -->
+        <meta name="color:Background" content="#666"/>
+        <meta name="color:Content Background" content="#fff"/>
+        <meta name="color:Header Background" content="#4AADF0"/>
+        <meta name="color:Title" content="#fff"/>
+        <meta name="color:Description" content="#094E7C"/>
+        <meta name="color:Date" content="#666"/>
+        <meta name="color:Permalinks" content="#4AADF0"/>
+        <meta name="color:Post Title" content="#222"/>    
+        <meta name="color:Text" content="#222"/>
+        <meta name="color:Inline Link" content="#ff9900"/>
+        <meta name="color:Quote" content="#333"/>
+        <meta name="color:Quote Source" content="#666"/>
+        <meta name="color:Link Post" content="#ff9900"/>
+        <meta name="color:Conversation Background 1" content="#f4f4f4"/>
+        <meta name="color:Conversation Background 2" content="#e8e8e8"/>
+        <meta name="color:Conversation Border" content="#ccc"/>
+        <meta name="color:Conversation Text" content="#000"/>
+        <meta name="color:Photo Background" content="#ccc"/>   
+        <meta name="color:Video Background" content="#eee"/>   
+        <!-- END DEFAULT COLORS -->
+
+        <!-- DEFAULT SETTINGS -->
+        <meta name="image:Background" content="" />
+        <meta name="image:Header" content="" />
+        <meta name="font:Body" content="Helvetica" />
+        <meta name="if:Show Notes" content="1" />
+        <meta name='text:Disqus Shortname' content='' />
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Information Arbitrage - Monitor110: A Post Mortem</title>
+        <style type="text/css">figure {margin: 0;}</style>
+<link rel="icon" href="http://33.media.tumblr.com/avatar_71a15f1fe926_128.png"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://informationarbitrage.com/rss"/>
+        <meta name="viewport" content="width=675"/> <!-- iPhone -->
+        
+        <meta name="description" content="Monitor110: A Post Mortem Turning Failure into Learning Writing a post mortem is hard, particularly when the result is failure: a failed deal; a failed investment; a failed concept. That said, without..." />
+        
+        <style type="text/css">
+
+            body {
+    color:            #333;
+    background-color: #EEF4FB;
+    font-family:      Helvetica, Arial, sans-serif;
+    margin: 0px;
+	padding: 0px;
+            }
+            
+            #content {
+	width:            570px;
+	padding:          0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8px;
+            }
+						#content2 {
+	width:            570px;
+	padding:          0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 8px;
+	position: relative;
+	z-index: 200;
+            }
+ 
+            a {
+	color:            #7299ED;
+            }
+						a:hover {
+	color:            #000000;
+            }
+ 
+            h1 {
+                padding:          0px;
+                margin:           0px;
+                font:             Normal 30px Helvetica, Arial, sans-serif;
+                line-height:      33px;
+                letter-spacing:   -1px;
+            }
+            
+            h1 a {
+                color:            #fff;
+                text-decoration:  none;
+            }
+ 
+            div#header {
+	background-color: #FFFFFF;
+            }
+ 
+            div#description {
+                font-size:        15px;
+                margin-top:       10px;
+                color:            #094E7C;
+            }
+            
+            div#description a {
+                color:            #094E7C;
+            }
+ 
+                        <!-- div#search {
+	text-align:             right;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+                        }
+												div#searchContainer{
+	<!--position: absolute;
+    position: relative;
+	vertical-align: top;
+	margin-top: 28px;
+	padding: 0px;
+	top: 142px;
+	width: 100%;
+}
+-->
+            
+            .date {
+	color:            #666;
+	line-height:      32px;
+	height:           28px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	position: relative;
+	left: -132px;
+	width: 130px;
+	top: 20px;
+            }
+            
+            .post {
+	margin-bottom:    10px;
+	position:         relative;
+            }
+ 
+            .post h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	letter-spacing: -1px;
+	font-weight: bold;
+	color: #7299ED;
+	line-height: 24px;
+	margin:           0px 0px 10px 0px;	
+            }
+ 
+            .post h2 a {
+         	color: #7299ED;
+                text-decoration:  none;
+            }
+						.post h2 a:hover {
+                color:            #222;
+                text-decoration:  none;
+            }
+            
+            /* Regular Post */
+            .post .regular {
+	font-size:        13px;
+	line-height:      18px;
+	font-family: Arial, Helvetica, sans-serif;
+            }
+ 
+            .post .regular blockquote {
+                font-style:       italic;
+            }
+            
+            .post img {
+                max-width:        500px;
+            }
+ 
+            .post blockquote img {
+                max-width:        150px;
+            }
+            
+            /* Photo Post */
+            .post .photo {
+                padding:          18px;
+                background-color: #ccc;
+            }
+            
+            .post .photo img {
+                border:           solid 17px #fff;
+            }
+ 
+            .post .photo .caption {
+                font-size:        13px;
+                margin-top:       17px;
+            }
+            
+            .post .photo .caption a {
+                color:            #222;
+            }
+            
+            /* Quote Post */
+            .post div.quote {
+                padding: 0px 30px 0px 30px;
+            }
+            
+            .post div.quote span.quote {
+                font-size:        18px;
+                
+                color:            #333;
+		font-family: Arial, Helvetica, sans-serif;
+            }
+ 
+            .post div.quote span.quote a {
+                color:            #333;
+            }
+ 
+            .post div.quote span.quote big.quote {
+                font-weight:      bold;
+                font-size:        60px;
+                line-height:      0px;
+                vertical-align:   -28px;
+                opacity:          0.5;
+                -moz-opacity:     0.5;
+                filter:           alpha(opacity=50);
+		font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .post div.quote .source {
+                font-size:        16px;
+                color:            #666;
+            }
+ 
+            .post div.quote .source a {
+                color:            #666;
+            }
+            
+            /* Link Post */
+            .post .link a.link {
+                font:             Bold 24px Helvetica, Arial, sans-serif;
+                letter-spacing:   -1px;
+                color:            #ffaa00;
+                text-decoration:  none;
+                border-bottom:    dotted 1px #ff9900;
+                line-height:      30px;
+            }
+ 
+            .post .link .description {
+                font-weight:      normal;
+                font-size:        14px;
+                margin-top:       5px;
+            }
+            
+            /* Conversation Post */
+            .post .conversation ul {
+                list-style-type:  none;
+                margin:           0px 0px 5px 0px;
+                padding:          1px;
+                border:           solid 5px #ccc;
+            }
+            
+            .post .conversation ul li {
+                font-size:        12px;
+                padding:          4px 0px 4px 8px;
+                color:            #000;
+            }
+            
+            .post .conversation ul li span.label {
+                font-weight:      bold;
+            }
+            
+            .post .conversation ul li.odd {
+                background-color: #f4f4f4;
+            }
+            
+            .post .conversation ul li.even {
+                background-color: #e8e8e8;
+            }
+            
+            /* Audio Post */
+            .post .audio .caption {
+                margin-top:       5px;
+                font-size:        11px;
+                color:            #222;
+            }
+            
+            .post .audio .caption a {
+                color:            #222;
+            }
+            
+            /* Video Post */
+            .post .video {
+                width:            500px;
+                margin:           auto;
+                padding:          35px;
+                background-color: #eee;
+            }
+ 
+            .post .video .caption {
+                margin-top:       15px;
+                font-size:        13px;
+                color:            #222;
+            }
+            
+            .post .video .caption a {
+                color:            #222;
+            }
+ 
+            /* Footer */
+            #footer {
+                margin:           20px 0px 0px 0px;
+                text-align:       center;
+                font-size:        18px;
+            }
+            
+            #footer a {
+                text-decoration:  none;
+                color:            #222;
+            }
+            
+            #footer a:hover {
+                text-decoration:  underline;
+            }
+ 
+            #footer p.tiny {
+	font-size:        11px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+            }
+            
+            #footer p.tiny a {
+                text-decoration:  underline;
+                color:            #222;
+                font-weight:      bold;
+            }
+            
+            #footer p.tiny .dim {
+                filter:           alpha(opacity=50); 
+                -moz-opacity:     0.5; 
+                opacity:          0.5;
+            }
+            
+            /* Permalinks */
+            .post a.permalink,
+            .post .audio .caption a.permalink,
+            .post .quote .source a.permalink {
+	font-size:        12px;
+	
+	font-weight:      normal;
+	color:            #7299ED;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+            }
+						.post a:hover.permalink{
+	font-size:        12px;
+	font-weight:      normal;
+	color:            #133E95;
+	text-decoration: none;
+            }
+ 
+ 
+                        .searchresultcount {
+                                text-align:             center;
+                        }
+                        
+                        .query {
+                                font-weight:            bold;
+                        }
+            
+            ol.notes {
+                padding: 0px;
+                margin: 25px 0px;
+                list-style-type: none;
+                border-bottom: solid 1px #ccc;
+            }
+ 
+            ol.notes li.note {
+                border-top: solid 1px #ccc;
+                padding: 10px;
+            }
+ 
+            ol.notes li.note img.avatar {
+                vertical-align: -4px;
+                margin-right: 10px;
+                width: 16px;
+                height: 16px;
+            }
+ 
+            ol.notes li.note span.action {
+                font-weight: bold;
+            }
+ 
+            ol.notes li.note .answer_content {
+                font-weight: normal;
+            }
+ 
+            ol.notes li.note blockquote {
+                border-color: #eee;
+                padding: 4px 10px;
+                margin: 10px 0px 0px 25px;
+            }
+ 
+            ol.notes li.note blockquote a {
+                text-decoration: none;
+            }
+            
+            #rColumn{
+	width: 130px;
+	float: right;
+	vertical-align: top;
+	margin-top: 28px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	#rColumnContainer{
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+h4{
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 7px;
+	padding-left: 0px;
+}
+.topics{
+	font-size: 13px;
+	line-height: 20px;
+
+}
+#tag_cloud li, #tag_cloud ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#rColumn a, #rColumn a:hover{
+	text-decoration: none;
+	
+}
+h5{
+	color:            #666;
+	line-height:      32px;
+	height:           28px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	position: absolute;
+	left: -132px;
+	width: 130px;
+	top: -18px;
+	float:left;
+}
+	.divider{	color:            #133E95;}
+	
+
+	
+	#socialContainer{
+	width:            570px;
+	height: 30px;
+	display: block;
+	clear: both;
+}
+	
+#twitter {
+	float:left;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 14px;
+	margin-left: 2px;
+}
+#linkedin {
+	float:left;
+	margin-top: 2px;
+	margin-right: 14px;
+	margin-bottom: 14px;
+	margin-left: 2px;
+	position: relative;
+	top: 1px;
+}
+#facebook{
+	float:left;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 14px;
+	margin-left: 2px;
+	width: 120px;
+}
+#stocktwits{
+	float:left;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 14px;
+	margin-left: 2px;
+	width: 20px;
+}
+
+#postEnd{
+	width: 570px;
+}
+        </style>
+    <script src="http://www.iaventures.com/InformationArbitrage/Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.iaventures.com/InformationArbitrage/favicon.ico">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7386568-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=1890207; 
+var sc_invisible=1; 
+var sc_security="9e00f8ff"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="tumblr visitor stats"
+href="http://statcounter.com/tumblr/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/1890207/0/9e00f8ff/1/"
+alt="tumblr visitor stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script>
+  FB.init({
+    //appId  : 'YOUR APP ID',
+    status : true,  check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml  : true  // parse XFBML
+  });
+</script>
+ 
+ <script type="text/javascript">
+ 
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-25933726-2']);
+   _gaq.push(['_trackPageview']);
+ 
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+ 
+ </script>
+ 
+ <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=informationarbitrage%26postID=698402433" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://informationarbitrage.com/post/698402433/monitor110-a-post-mortem" title="Monitor110: A Post Mortem
+Turning Failure into Learning
+Writing a post mortem is hard, particularly when the result is failure: a failed deal; a failed investment; a failed concept. That said, without a post mortem, without deep reflection, honesty..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="Evergreen,Principles,Investing" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="Monitor110: A Post Mortem" /><meta property="og:url" content="http://informationarbitrage.com/post/698402433/monitor110-a-post-mortem" /><meta property="og:description" content="Turning Failure into Learning
+Writing a post mortem is hard, particularly when the result is failure: a failed deal; a failed investment; a failed concept. That said, without a post mortem, without..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://assets.tumblr.com/images/og/text_200.png" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=informationarbitrage&amp;postID=698402433" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=informationarbitrage&amp;postID=698402433" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="Turning Failure into Learning
+ Writing a post mortem is hard, particularly when the result is failure: a failed deal; a failed investment; a failed concept. That said, without a post mortem, without deep reflection, honesty and introspection, how can we get better and do better the next time? Quite simply, we can&amp;rsquo;t. My involvement with Monitor110, as an investor, Board member and leader, was one of the most interesting and informative experiences of my life. I learned about areas I never dreamed of. I worked with a terrific group of young, exceptionally bright people who believed in the vision. Ultimately, we failed. But why did we fail, and what could we have done differently?&nbsp; Some of the stuff is pure 20:20 hindsight. These observations aren&amp;rsquo;t worth much. But the interpersonal dynamics, the issues of organizational structure, the need to change strategy in light of new information, the relationship with key investors, all of these are very instructive. I will endeavor to be as honest and candid as possible.
+ Let me say that I deeply respect everybody involved with Monitor110 from the original founder, Jeff Stewart, to our investors, employees and customers. Everyone tried very hard to make things work, and this post is not an indictment of anyone. There are no &amp;ldquo;bad actors&amp;rdquo; in this story. But a confluence of factors made success an uphill struggle.
+ The Seven Deadly Sins
+ While we certainly made more than seven mistakes during the nearly four-year life of Monitor110, I think these top the list.
+ The lack of a single, &amp;ldquo;the buck stops here&amp;rdquo; leader until too late in the game
+ No separation between the technology organization and the product organization
+ Too much PR, too early
+ Too much money
+ Not close enough to the customer
+ Slow to adapt to market reality
+ Disagreement on strategy both within the Company and with the Board
+ A Little Background
+ I was initially approached in early 2005 by Jeff Stewart, who had the original idea for Monitor110. It was a compelling idea. The thesis: more and better information is being put out on the Internet every day, information that can be valuable to Institutional investors who are constantly looking for an edge. And these investors were not very sophisticated about how to best access this information; Monitor110 would use technology to help them get that edge. Jeff and a few guys had hacked together a version 1.0 of the system, which was based on a boolean matching engine with rules corresponding to each company and investment theme. It was fast. It worked ok. We spent some time working with PubSub, who had built a scalable matching engine but was not focused on the financial services industry.
+ By mid-2005 the system worked, but spam was becoming more prevalent and caused the matching results to deteriorate, e.g., too much junk clogging the output. Around the same time we started to dig into natural language processing and the statistical processing of text, thinking that this might be a better way to address the spam issue and to get more targeted, relevant results. This prompted us to not push version 1.0, instead wanting to see if we could come up with a more powerful release using NLP to mark the kick-off. In retrospect, this was a big mistake. Mistake #5, to be precise. We should have gotten it out there, been kicked in the head by tough customers, and iterated like crazy to address their needs. Woulda, shoulda, coulda. Didn&amp;rsquo;t.
+ An Unusual Leadership Structure
+ The idea was that Jeff was the technology guy and I was the business guy. Jeff focused on technology and product and I focused on fund raising, HR, controls and client access (given my Wall Street and hedge fund rolodex). On paper, made sense. Jeff was a successful three-time entrepreneur, I was an experienced senior Wall Street executive. The problem was, however, that when it came time to make hard decisions the two-headed structure really didn&amp;rsquo;t work. It was a technology company working to solve a complex problem, and ultimately technology dominated the discussion. Ultimately, we ended up building something that the business side was not happy with, which made selling it difficult. An indication of Mistake #2. Neither Jeff nor I had the power, real or perceived, to simply change direction. The Board was supportive of this management structure. This was also a mistake. Mistake #1.
+ A Real Product versus a Science Project
+ We talked about &amp;ldquo;release early/release often,&amp;rdquo; but were scared of looking like idiots in front of major Wall Street and hedge fund clients. Is it better to wait a bit before releasing to have a more compelling product or to begin getting feedback on a less impressive offering? We chose #1; in retrospect I think we should have chosen #2. By choosing to wait we lost our intimacy with the customer (Mistake #5 again), falling into the classic (as a &amp;ldquo;green&amp;rdquo; entrepreneur I didn&amp;rsquo;t know this, but as a seasoned four-year venture investor I know this now) trap of pursuing a &amp;ldquo;science project,&amp;rdquo; not building a commercially salable product. Dumb. Another problem: technology and product management were effectively bundled together, with the same decision-makers for both. This was another crucial error, #2 again. Instead of having product management as the advocate for the customer and the product evangelist, we had technology running the show in a vacuum. Huge mistake. This allowed us to perpetuate the science project for much, much longer than we should have. There were no checks-and-balances built into the system. This was a recipe for failure. I intuitively knew it then but as an inexperienced entrepreneur didn&amp;rsquo;t feel empowered to act. Really, really stupid. After 20 years of making consistently good business decisions why didn&amp;rsquo;t I throw a fit and and be more assertive in communicating my concerns? No good answer here.
+ And these bad behaviors were reinforced by an unplanned event that sharply impacted our psyche: being on the front page of the Financial Times. It is hard to call it a mistake since we didn&amp;rsquo;t seek to get such exposure, but I put it down as Mistake #3. To be honest, this single fact was a very meaningful factor in our failure. It raised the level of expectations so high that it made us reluctant to release anything that wasn&amp;rsquo;t earth-shattering. It was also catalyst for us raising our last and largest round of capital. So the net effect was that it enabled to raise all this money that kept us far from the customer. Truth be told, we were probably afraid of customers at this point because we didn&amp;rsquo;t want to disappoint them or look bad. Oh, we&amp;rsquo;d build something they&amp;rsquo;d love. We just wouldn&amp;rsquo;t show it to them until it was done. Ugh. Just so stupid.
+ Too Much Money
+ Too much money is like too much time; work expands to fill the time allotted, and ways to spend money multiply when abundant financial resources are available. By being simply too good at raising money, it enabled us to perpetuate poor organizational structure and suboptimal strategic decisions. Mistake #4. We weren&amp;rsquo;t forced early on to be scrappy and revenue focused. We wanted to build something that was so good from the get-go that the market would simply eat it up. Problem was, with all that money we hid from the market while we were building, almost ensuring that we would come up with something that the market wouldn&amp;rsquo;t accept. And then there were technology issues that came up along the way, very substantive issues, that because of so much money we simply didn&amp;rsquo;t face into nearly fast enough. And this drove a wedge in the company between those that were more plugged into the market (and felt we weren&amp;rsquo;t building the right thing or addressing the data issues the right way) and those who were building the product (and felt very convinced that what they were building was responsive to the market). I would almost argue that too much money enabled the other six mistakes to be made again and again and again. Seems counter-intuitive, right? It&amp;rsquo;s not. And believe me, I am super sensitive to this issue now as an investor. If a company wants to raise significantly more money than I think they need to get to revenue, I push back. Hard.
+ Investor Expectations versus Market Reality
+ We raised money based on a vision of a scalable web portal, a tool that would eventually be the web-enabled side of Bloomberg. We never believed we&amp;rsquo;d replace Bloomberg, Reuters or Thomson for market data and mainstream news, but that we&amp;rsquo;d eventually become a necessary part of the Institutional investor research mosaic. We were positioned as a technology company, not as an alternative research provider or a services business. And it was the deep belief in Monitor110 as a pure technology company that created a rift between the business side of the company and powerful members of the Board. Mistakes #6 and #7, as you&amp;rsquo;ll soon see.
+ We did an angel round in the latter part of 2005 followed by an institutional round early in 2006, enough money, we thought, to help us build the new version 1.0 of the product. We then did another institutional round in Q3 2006 to further execute against this vision, because the money was offered to us on a pre-emptive basis and around six months earlier than we were planning to do a raise. The new release would be whizzy, fast, comprehensive and use all that neat technology to analyze unstructured data in real time, and to score each data element by reputation and relevance. Easy to filter, discover and analyze. Super cool, right? Sure. Problem was, we started out trying to analyze most of the dynamic web (probably up to 100 million sources by now) in real-time, and using technology (NLP, pattern matching, etc.) to do the filtering, indexing and categorization. This was no mean engineering feat. We had a very, very large and complex back-end. And even with this, the quality of the data coming through to the end-user was just not that good. Too much spam, still. Duplicate posts. Sometimes mis-categorized. Difficulty applying our reputation algorithms. Not good.
+ Those closer to the customer wanted to effectively chuck this approach and to build up a high-value corpus of data from the bottom up, using our deep knowledge of the source universe to assemble a body of data from publishers of high reputation. Really more akin to a &amp;ldquo;Bloomberg for the Web&amp;rdquo; than the original product, as the sources would be of high-quality and indexed correctly. They also wanted to build a research capability, where a desk could generate customized reports for clients leveraging our technology and data. But making this fundamental change to our approach towards data and the business model resulted in a fight. Almost a jihad, where certain parts of the company were vehemently in favor of changing our approach while others said &amp;ldquo;improvement to the current system is right around the corner.&amp;rdquo; This could only happen because of Mistakes #1 and #2, where nobody could pound the table and say &amp;ldquo;this is the way we&amp;rsquo;re going to do it and here&amp;rsquo;s why,&amp;rdquo; nor could the business side simply say &amp;ldquo;this is what our clients want. This is why we should do it.&amp;rdquo; We were one big, passionate, driven, dysfunctional family. This argument played out over months and months, and cost us an enormous amount of money. Eventually we did change our approach to data, but it was a fight that spiritually damaged the company and morale and had a financial impact that substantially depleted our coffers.
+ And in Conclusion
+ The good news for me personally is that I now invest in a way that actively seeks to avoid the seven deadly sins listed above, and the performance of my portfolio companies bears this out. But I simply wasn&amp;rsquo;t smart enough or experienced enough to see all of these mistakes or to feel empowered to do something about them until it was too late. I would like to thank all of our investors for having the confidence in us to pursue the Monitor110 vision, and I&amp;rsquo;m sorry that we weren&amp;rsquo;t financially successful. I&amp;rsquo;d also like to thank the people with whom I worked during my tenure at Monitor110. Not a bad apple in the lot. Smart, hard-working, highly motivated professionals. They will invariably do extremely well in their post-Monitor110 lives.
+ The market for alternative information and tools is very, very challenging, and the current market environment isn&amp;rsquo;t making it any easier. But there are clear needs out there that should and will be addressed. I will write a post on the alternative information market at a later time. Thanks for listening." /><meta name="twitter:title" content="Monitor110: A Post Mortem" /><meta name="twitter:url" content="http://informationarbitrage.com/post/698402433/monitor110-a-post-mortem" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="infoarbitrage" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=informationarbitrage&amp;postID=698402433&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=informationarbitrage&amp;postID=698402433&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=informationarbitrage&amp;postID=698402433&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/informationarbitrage.com\/post\/698402433\/monitor110-a-post-mortem","mainEntityOfPage":true,"datePublished":"2008-07-18T18:14:00-04:00","author":"informationarbitrage","headline":"Monitor110: A Post Mortem","articleBody":"Turning Failure into Learning\nWriting a post mortem is hard, particularly when the result is failure: a failed deal; a failed investment; a failed concept. That said, without a post mortem, without deep reflection, honesty and introspection, how can we get better and do better the next time? Quite simply, we can\u2019t. My involvement with Monitor110, as an investor, Board member and leader, was one of the most interesting and informative experiences of my life. I learned about areas I never dreamed of. I worked with a terrific group of young, exceptionally bright people who believed in the vision. Ultimately, we failed. But why did we fail, and what could we have done differently? Some of the stuff is pure 20:20 hindsight. These observations aren\u2019t worth much. But the interpersonal dynamics, the issues of organizational structure, the need to change strategy in light of new information, the relationship with key investors, all of these are very instructive. I will endeavor to be as honest and candid as possible.\nLet me say that I deeply respect everybody involved with Monitor110 from the original founder, Jeff Stewart, to our investors, employees and customers. Everyone tried very hard to make things work, and this post is not an indictment of anyone. There are no \u201cbad actors\u201d in this story. But a confluence of factors made success an uphill struggle.\nThe Seven Deadly Sins\nWhile we certainly made more than seven mistakes during the nearly four-year life of Monitor110, I think these top the list.\n\u2022 The lack of a single, \u201cthe buck stops here\u201d leader until too late in the game\n\u2022 No separation between the technology organization and the product organization\n\u2022 Too much PR, too early\n\u2022 Too much money\n\u2022 Not close enough to the customer\n\u2022 Slow to adapt to market reality\n\u2022 Disagreement on strategy both within the Company and with the Board\nA Little Background\nI was initially approached in early 2005 by Jeff Stewart, who had the original idea for Monitor110. It was a compelling idea. The thesis: more and better information is being put out on the Internet every day, information that can be valuable to Institutional investors who are constantly looking for an edge. And these investors were not very sophisticated about how to best access this information; Monitor110 would use technology to help them get that edge. Jeff and a few guys had hacked together a version 1.0 of the system, which was based on a boolean matching engine with rules corresponding to each company and investment theme. It was fast. It worked ok. We spent some time working with PubSub, who had built a scalable matching engine but was not focused on the financial services industry.\nBy mid-2005 the system worked, but spam was becoming more prevalent and caused the matching results to deteriorate, e.g., too much junk clogging the output. Around the same time we started to dig into natural language processing and the statistical processing of text, thinking that this might be a better way to address the spam issue and to get more targeted, relevant results. This prompted us to not push version 1.0, instead wanting to see if we could come up with a more powerful release using NLP to mark the kick-off. In retrospect, this was a big mistake. Mistake #5, to be precise. We should have gotten it out there, been kicked in the head by tough customers, and iterated like crazy to address their needs. Woulda, shoulda, coulda. Didn\u2019t.\nAn Unusual Leadership Structure\nThe idea was that Jeff was the technology guy and I was the business guy. Jeff focused on technology and product and I focused on fund raising, HR, controls and client access (given my Wall Street and hedge fund rolodex). On paper, made sense. Jeff was a successful three-time entrepreneur, I was an experienced senior Wall Street executive. The problem was, however, that when it came time to make hard decisions the two-headed structure really didn\u2019t work. It was a technology company working to solve a complex problem, and ultimately technology dominated the discussion. Ultimately, we ended up building something that the business side was not happy with, which made selling it difficult. An indication of Mistake #2. Neither Jeff nor I had the power, real or perceived, to simply change direction. The Board was supportive of this management structure. This was also a mistake. Mistake #1.\nA Real Product versus a Science Project\nWe talked about \u201crelease early\/release often,\u201d but were scared of looking like idiots in front of major Wall Street and hedge fund clients. Is it better to wait a bit before releasing to have a more compelling product or to begin getting feedback on a less impressive offering? We chose #1; in retrospect I think we should have chosen #2. By choosing to wait we lost our intimacy with the customer (Mistake #5 again), falling into the classic (as a \u201cgreen\u201d entrepreneur I didn\u2019t know this, but as a seasoned four-year venture investor I know this now) trap of pursuing a \u201cscience project,\u201d not building a commercially salable product. Dumb. Another problem: technology and product management were effectively bundled together, with the same decision-makers for both. This was another crucial error, #2 again. Instead of having product management as the advocate for the customer and the product evangelist, we had technology running the show in a vacuum. Huge mistake. This allowed us to perpetuate the science project for much, much longer than we should have. There were no checks-and-balances built into the system. This was a recipe for failure. I intuitively knew it then but as an inexperienced entrepreneur didn\u2019t feel empowered to act. Really, really stupid. After 20 years of making consistently good business decisions why didn\u2019t I throw a fit and and be more assertive in communicating my concerns? No good answer here.\nAnd these bad behaviors were reinforced by an unplanned event that sharply impacted our psyche: being on the front page of the Financial Times. It is hard to call it a mistake since we didn\u2019t seek to get such exposure, but I put it down as Mistake #3. To be honest, this single fact was a very meaningful factor in our failure. It raised the level of expectations so high that it made us reluctant to release anything that wasn\u2019t earth-shattering. It was also catalyst for us raising our last and largest round of capital. So the net effect was that it enabled to raise all this money that kept us far from the customer. Truth be told, we were probably afraid of customers at this point because we didn\u2019t want to disappoint them or look bad. Oh, we\u2019d build something they\u2019d love. We just wouldn\u2019t show it to them until it was done. Ugh. Just so stupid.\nToo Much Money\nToo much money is like too much time; work expands to fill the time allotted, and ways to spend money multiply when abundant financial resources are available. By being simply too good at raising money, it enabled us to perpetuate poor organizational structure and suboptimal strategic decisions. Mistake #4. We weren\u2019t forced early on to be scrappy and revenue focused. We wanted to build something that was so good from the get-go that the market would simply eat it up. Problem was, with all that money we hid from the market while we were building, almost ensuring that we would come up with something that the market wouldn\u2019t accept. And then there were technology issues that came up along the way, very substantive issues, that because of so much money we simply didn\u2019t face into nearly fast enough. And this drove a wedge in the company between those that were more plugged into the market (and felt we weren\u2019t building the right thing or addressing the data issues the right way) and those who were building the product (and felt very convinced that what they were building was responsive to the market). I would almost argue that too much money enabled the other six mistakes to be made again and again and again. Seems counter-intuitive, right? It\u2019s not. And believe me, I am super sensitive to this issue now as an investor. If a company wants to raise significantly more money than I think they need to get to revenue, I push back. Hard.\nInvestor Expectations versus Market Reality\nWe raised money based on a vision of a scalable web portal, a tool that would eventually be the web-enabled side of Bloomberg. We never believed we\u2019d replace Bloomberg, Reuters or Thomson for market data and mainstream news, but that we\u2019d eventually become a necessary part of the Institutional investor research mosaic. We were positioned as a technology company, not as an alternative research provider or a services business. And it was the deep belief in Monitor110 as a pure technology company that created a rift between the business side of the company and powerful members of the Board. Mistakes #6 and #7, as you\u2019ll soon see.\nWe did an angel round in the latter part of 2005 followed by an institutional round early in 2006, enough money, we thought, to help us build the new version 1.0 of the product. We then did another institutional round in Q3 2006 to further execute against this vision, because the money was offered to us on a pre-emptive basis and around six months earlier than we were planning to do a raise. The new release would be whizzy, fast, comprehensive and use all that neat technology to analyze unstructured data in real time, and to score each data element by reputation and relevance. Easy to filter, discover and analyze. Super cool, right? Sure. Problem was, we started out trying to analyze most of the dynamic web (probably up to 100 million sources by now) in real-time, and using technology (NLP, pattern matching, etc.) to do the filtering, indexing and categorization. This was no mean engineering feat. We had a very, very large and complex back-end. And even with this, the quality of the data coming through to the end-user was just not that good. Too much spam, still. Duplicate posts. Sometimes mis-categorized. Difficulty applying our reputation algorithms. Not good.\nThose closer to the customer wanted to effectively chuck this approach and to build up a high-value corpus of data from the bottom up, using our deep knowledge of the source universe to assemble a body of data from publishers of high reputation. Really more akin to a \u201cBloomberg for the Web\u201d than the original product, as the sources would be of high-quality and indexed correctly. They also wanted to build a research capability, where a desk could generate customized reports for clients leveraging our technology and data. But making this fundamental change to our approach towards data and the business model resulted in a fight. Almost a jihad, where certain parts of the company were vehemently in favor of changing our approach while others said \u201cimprovement to the current system is right around the corner.\u201d This could only happen because of Mistakes #1 and #2, where nobody could pound the table and say \u201cthis is the way we\u2019re going to do it and here\u2019s why,\u201d nor could the business side simply say \u201cthis is what our clients want. This is why we should do it.\u201d We were one big, passionate, driven, dysfunctional family. This argument played out over months and months, and cost us an enormous amount of money. Eventually we did change our approach to data, but it was a fight that spiritually damaged the company and morale and had a financial impact that substantially depleted our coffers.\nAnd in Conclusion\nThe good news for me personally is that I now invest in a way that actively seeks to avoid the seven deadly sins listed above, and the performance of my portfolio companies bears this out. But I simply wasn\u2019t smart enough or experienced enough to see all of these mistakes or to feel empowered to do something about them until it was too late. I would like to thank all of our investors for having the confidence in us to pursue the Monitor110 vision, and I\u2019m sorry that we weren\u2019t financially successful. I\u2019d also like to thank the people with whom I worked during my tenure at Monitor110. Not a bad apple in the lot. Smart, hard-working, highly motivated professionals. They will invariably do extremely well in their post-Monitor110 lives.\nThe market for alternative information and tools is very, very challenging, and the current market environment isn\u2019t making it any easier. But there are clear needs out there that should and will be addressed. I will write a post on the alternative information market at a later time. Thanks for listening.","@context":"http:\/\/schema.org"}</script>
+</head>
+<body >
+    <div id="header">
+  <script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','100%','height','195','src','http://www.iaventures.com/InformationArbitrage/main','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','wmode','transparent','allowscriptaccess','always','movie','http://www.iaventures.com/InformationArbitrage/main' ); //end AC code
+                  </script>
+  <noscript>
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="100%" height="195">
+    <param name="movie" value="http://www.iaventures.com/InformationArbitrage/main.swf" />
+    <param name="quality" value="high" />
+    <param name="wmode" value="transparent" />
+    <param name="AllowScriptAccess" value="always" />
+    <embed src="http://www.iaventures.com/InformationArbitrage/main.swf" width="100%" height="195" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" wmode="transparent" allowscriptaccess="always"></embed>
+  </object>
+  </noscript>
+
+  
+</div>
+  <div id="rColumnContainer">
+
+    
+  	<div id="rColumn">
+    <h4>Connect</h4>
+    <span class="topics">
+    <a href="http://informationarbitrage.com/contact" ><img src="http://www.iaventures.com/wp-content/uploads/2012/04/em.png" width="25" height="25" hspace="5" border="0" /><span style="	position: relative; top: -6px;">Email</span></a><br />
+    <a href="http://twitter.com/infoarbitrage" target="_blank"><img src="http://www.iaventures.com/wp-content/uploads/2012/04/tw.png" width="25" height="25" hspace="5" border="0" /><span style="	position: relative; top: -6px;">Twitter</span></a><br />
+    <a href="http://www.linkedin.com/in/rehrenberg" target="_blank"><img src="http://www.iaventures.com/wp-content/uploads/2012/04/li.png" width="25" height="25" hspace="5" border="0" /><span style="	position: relative; top: -6px;">LinkedIn</span></a><br />
+    <a href="http://www.quora.com/Roger-Ehrenberg" target="_blank"><img src="http://www.iaventures.com/wp-content/uploads/2012/04/qu.png" width="25" height="25" hspace="5" border="0" /><span style="	position: relative; top: -6px;">Quora</span></a><br />
+    <a href="http://feeds.feedburner.com/informationarbitrage" target="_blank"><img src="http://www.iaventures.com/wp-content/uploads/2012/04/rs.png" width="25" height="25" hspace="5" border="0" /><span style="	position: relative; top: -6px;">RSS</span></a><br />
+    </span><br /><br />
+
+    </div>
+</div>
+      <div id="content2"><div align="left">
+       <div id="cse" style="float:left;"></div>
+      </div></div>
+  <div id="content">
+
+      
+
+        
+
+            
+                
+      <div class="date">
+                        July 18, 2008
+      </div>
+                
+            
+                <div class="post">
+                    
+                        <div class="regular">
+                            <h2><a href="http://informationarbitrage.com/post/698402433/monitor110-a-post-mortem">Monitor110: A Post Mortem</a></h2>
+                            <p><strong>Turning Failure into Learning</strong></p>
+<p>Writing a post mortem is hard, particularly when the result is failure: a failed deal; a failed investment; a failed concept. That said, without a post mortem, without deep reflection, honesty and introspection, how can we get better and do better the next time? Quite simply, we can&rsquo;t. My involvement with Monitor110, as an investor, Board member and leader, was one of the most interesting and informative experiences of my life. I learned about areas I never dreamed of. I worked with a terrific group of young, exceptionally bright people who believed in the vision. Ultimately, we failed. But why did we fail, and what could we have done differently?&nbsp; Some of the stuff is pure 20:20 hindsight. These observations aren&rsquo;t worth much. But the interpersonal dynamics, the issues of organizational structure, the need to change strategy in light of new information, the relationship with key investors, all of these are very instructive. I will endeavor to be as honest and candid as possible.</p>
+<p>Let me say that I deeply respect everybody involved with Monitor110 from the original founder, Jeff Stewart, to our investors, employees and customers. Everyone tried very hard to make things work, and this post is not an indictment of anyone. There are no &ldquo;bad actors&rdquo; in this story. But a confluence of factors made success an uphill struggle.</p>
+<p><strong>The Seven Deadly Sins</strong></p>
+<p>While we certainly made more than seven mistakes during the nearly four-year life of Monitor110, I think these top the list.</p>
+<ol><li>The lack of a single, &ldquo;the buck stops here&rdquo; leader until too late in the game</li>
+<li>No separation between the technology organization and the product organization</li>
+<li>Too much PR, too early</li>
+<li>Too much money</li>
+<li>Not close enough to the customer</li>
+<li>Slow to adapt to market reality</li>
+<li>Disagreement on strategy both within the Company and with the Board</li>
+</ol><p><strong>A Little Background</strong></p>
+<p>I was initially approached in early 2005 by Jeff Stewart, who had the original idea for Monitor110. It was a compelling idea. The thesis: more and better information is being put out on the Internet every day, information that can be valuable to Institutional investors who are constantly looking for an edge. And these investors were not very sophisticated about how to best access this information; Monitor110 would use technology to help them get that edge. Jeff and a few guys had hacked together a version 1.0 of the system, which was based on a boolean matching engine with rules corresponding to each company and investment theme. It was fast. It worked ok. We spent some time working with PubSub, who had built a scalable matching engine but was not focused on the financial services industry.</p>
+<p>By mid-2005 the system worked, but spam was becoming more prevalent and caused the matching results to deteriorate, e.g., too much junk clogging the output. Around the same time we started to dig into natural language processing and the statistical processing of text, thinking that this might be a better way to address the spam issue and to get more targeted, relevant results. This prompted us to <em>not </em>push version 1.0, instead wanting to see if we could come up with a more powerful release using NLP to mark the kick-off. In retrospect, this was a big mistake. Mistake #5, to be precise. We should have gotten it out there, been kicked in the head by tough customers, and iterated like crazy to address their needs. Woulda, shoulda, coulda. Didn&rsquo;t.</p>
+<p><strong>An Unusual Leadership Structure</strong></p>
+<p>The idea was that Jeff was the technology guy and I was the business guy. Jeff focused on technology and product and I focused on fund raising, HR, controls and client access (given my Wall Street and hedge fund rolodex). On paper, made sense. Jeff was a successful three-time entrepreneur, I was an experienced senior Wall Street executive. The problem was, however, that when it came time to make hard decisions the two-headed structure really didn&rsquo;t work. It was a technology company working to solve a complex problem, and ultimately technology dominated the discussion. Ultimately, we ended up building something that the business side was not happy with, which made selling it difficult. An indication of Mistake #2. Neither Jeff nor I had the power, real or perceived, to simply change direction. The Board was supportive of this management structure. This was also a mistake. Mistake #1.</p>
+<p><strong>A Real Product versus a Science Project</strong></p>
+<p>We talked about &ldquo;release early/release often,&rdquo; but were scared of looking like idiots in front of major Wall Street and hedge fund clients. Is it better to wait a bit before releasing to have a more compelling product or to begin getting feedback on a less impressive offering? We chose #1; in retrospect I think we should have chosen #2. By choosing to wait we lost our intimacy with the customer (Mistake #5 again), falling into the classic (as a &ldquo;green&rdquo; entrepreneur I didn&rsquo;t know this, but as a seasoned four-year venture investor I know this now) trap of pursuing a &ldquo;science project,&rdquo; not building a commercially salable product. Dumb. Another problem: technology and product management were effectively bundled together, with the same decision-makers for both. This was another crucial error, #2 again. Instead of having product management as the advocate for the customer and the product evangelist, we had technology running the show in a vacuum. Huge mistake. This allowed us to perpetuate the science project for much, much longer than we should have. There were no checks-and-balances built into the system. This was a recipe for failure. I intuitively knew it then but as an inexperienced entrepreneur didn&rsquo;t feel empowered to act. Really, really stupid. After 20 years of making consistently good business decisions why didn&rsquo;t I throw a fit and and be more assertive in communicating my concerns? No good answer here.</p>
+<p>And these bad behaviors were reinforced by an unplanned event that sharply impacted our psyche: being on the front page of the <em>Financial Times</em>. It is hard to call it a mistake since we didn&rsquo;t seek to get such exposure, but I put it down as Mistake #3. To be honest, this single fact was a very meaningful factor in our failure. It raised the level of expectations so high that it made us reluctant to release anything that wasn&rsquo;t earth-shattering. It was also catalyst for us raising our last and largest round of capital. So the net effect was that it enabled to raise all this money that kept us far from the customer. Truth be told, we were probably afraid of customers at this point because we didn&rsquo;t want to disappoint them or look bad. Oh, we&rsquo;d build something they&rsquo;d love. We just wouldn&rsquo;t show it to them until it was done. Ugh. Just so stupid.</p>
+<p><strong>Too Much Money</strong></p>
+<p>Too much money is like too much time; work expands to fill the time allotted, and ways to spend money multiply when abundant financial resources are available. By being simply too good at raising money, it enabled us to perpetuate poor organizational structure and suboptimal strategic decisions. Mistake #4. We weren&rsquo;t forced early on to be scrappy and revenue focused. We wanted to build something that was so good from the get-go that the market would simply eat it up. Problem was, with all that money we hid from the market while we were building, almost ensuring that we would come up with something that the market wouldn&rsquo;t accept. And then there were technology issues that came up along the way, very substantive issues, that because of so much money we simply didn&rsquo;t face into nearly fast enough. And this drove a wedge in the company between those that were more plugged into the market (and felt we weren&rsquo;t building the right thing or addressing the data issues the right way) and those who were building the product (and felt very convinced that what they were building was responsive to the market). I would almost argue that too much money enabled the other six mistakes to be made again and again and again. Seems counter-intuitive, right? It&rsquo;s not. And believe me, I am super sensitive to this issue now as an investor. If a company wants to raise significantly more money than I think they need to get to revenue, I push back. Hard.</p>
+<p><strong>Investor Expectations versus Market Reality</strong></p>
+<p>We raised money based on a vision of a scalable web portal, a tool that would eventually be the web-enabled side of Bloomberg. We never believed we&rsquo;d replace Bloomberg, Reuters or Thomson for market data and mainstream news, but that we&rsquo;d eventually become a necessary part of the Institutional investor research mosaic. We were positioned as a technology company, not as an alternative research provider or a services business. And it was the deep belief in Monitor110 as a pure technology company that created a rift between the business side of the company and powerful members of the Board. Mistakes #6 and #7, as you&rsquo;ll soon see.</p>
+<p>We did an angel round in the latter part of 2005 followed by an institutional round early in 2006, enough money, we thought, to help us build the new version 1.0 of the product. We then did another institutional round in Q3 2006 to further execute against this vision, because the money was offered to us on a pre-emptive basis and around six months earlier than we were planning to do a raise. The new release would be whizzy, fast, comprehensive and use all that neat technology to analyze unstructured data in real time, and to score each data element by reputation and relevance. Easy to filter, discover and analyze. Super cool, right? Sure. Problem was, we started out trying to analyze most of the dynamic web (probably up to 100 million sources by now) in real-time, and using technology (NLP, pattern matching, etc.) to do the filtering, indexing and categorization. This was no mean engineering feat. We had a very, very large and complex back-end. And even with this, the quality of the data coming through to the end-user was just not that good. Too much spam, still. Duplicate posts. Sometimes mis-categorized. Difficulty applying our reputation algorithms. Not good.</p>
+<p>Those closer to the customer wanted to effectively chuck this approach and to build up a high-value corpus of data from the bottom up, using our deep knowledge of the source universe to assemble a body of data from publishers of high reputation. Really more akin to a &ldquo;Bloomberg for the Web&rdquo; than the original product, as the sources would be of high-quality and indexed correctly. They also wanted to build a research capability, where a desk could generate customized reports for clients leveraging our technology and data. But making this fundamental change to our approach towards data and the business model resulted in a fight. Almost a jihad, where certain parts of the company were vehemently in favor of changing our approach while others said &ldquo;improvement to the current system is right around the corner.&rdquo; This could only happen because of Mistakes #1 and #2, where nobody could pound the table and say &ldquo;this is the way we&rsquo;re going to do it and here&rsquo;s why,&rdquo; nor could the business side simply say &ldquo;this is what our clients want. This is why we should do it.&rdquo; We were one big, passionate, driven, dysfunctional family. This argument played out over months and months, and cost us an enormous amount of money. Eventually we did change our approach to data, but it was a fight that spiritually damaged the company and morale and had a financial impact that substantially depleted our coffers.</p>
+<p><strong>And in Conclusion</strong></p>
+<p>The good news for me personally is that I now invest in a way that actively seeks to avoid the seven deadly sins listed above, and the performance of my portfolio companies bears this out. But I simply wasn&rsquo;t smart enough or experienced enough to see all of these mistakes or to feel empowered to do something about them until it was too late. I would like to thank all of our investors for having the confidence in us to pursue the Monitor110 vision, and I&rsquo;m sorry that we weren&rsquo;t financially successful. I&rsquo;d also like to thank the people with whom I worked during my tenure at Monitor110. Not a bad apple in the lot. Smart, hard-working, highly motivated professionals. They will invariably do extremely well in their post-Monitor110 lives.</p>
+<p>The market for alternative information and tools is very, very challenging, and the current market environment isn&rsquo;t making it any easier. But there are clear needs out there that should and will be addressed. I will write a post on the alternative information market at a later time. Thanks for listening.</p>
+                            
+                            <div id="socialContainer">
+                            <div id="twitter">
+                            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="infoarbitrage" data-related="iaventures:IA Ventures">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+                            <div id="linkedin">
+                            <script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-counter="right"></script>
+                            </div>
+                            <div id="facebook">
+														<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+                            <fb:like layout="button_count" show_faces="false" width="150" action="recommend" font="arial"></fb:like>
+                            </div>
+                            <div id="stocktwits">
+                            <a href="http://stocktwits.com/infoarbitrage">
+                            <img src="http://stocktwits.com/images/badges/ST_SMALL.png" style="width: 20px; height: 20px; alt="Follow me on StockTwits" title="Follow me on StockTwits" border="0" />
+                            </a>
+                            </div>
+                            </div>
+                                                   </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+    </div>
+                
+                
+                
+
+
+            
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'informationarbitrage'; // required: replace example with your Disqus site shortname 'informationarbitrage';
+    var disqus_url = 'http://informationarbitrage.com/post/698402433/monitor110-a-post-mortem';
+    var disqus_title = 'Monitor110: A Post Mortem';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+
+            <div id="footer">
+                
+                
+                
+
+                <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                  <tr>
+                    <td width="88%" align="left" valign="middle"><p class="tiny">© 2012 IA - <a href="/">Home</a> | <a href="/about">About</a> | <a href="http://www.iaventures.com">IA Ventures</a>  | <a href="/IACapital">IA Capital</a> | 
+                      <a href="/archive">Archive</a> | <a href="http://feeds.feedburner.com/informationarbitrage">RSS</a></p></td>                  </tr>
+                </table>
+               
+    </div>
+</div>
+
+   <script type="text/javascript">
+var _sf_async_config={uid:86,domain:"informationarbitrage.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>    
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://informationarbitrage.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/698402433/monitor110-a-post-mortem?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017191&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvaW5mb3JtYXRpb25hcmJpdHJhZ2UuY29tXC9wb3N0XC82OTg0MDI0MzNcL21vbml0b3IxMTAtYS1wb3N0LW1vcnRlbSIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5In0=&U=EDPGCDAFAH&K=bdd013b95b1939f3e49030266bbf1e4eb8b2e9a9b6e5460ab13c25d99a000d92&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017191&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvaW5mb3JtYXRpb25hcmJpdHJhZ2UuY29tXC9wb3N0XC82OTg0MDI0MzNcL21vbml0b3IxMTAtYS1wb3N0LW1vcnRlbSIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5Iiwibm9zY3JpcHQiOjF9&U=EDPGCDAFAH&K=cd6d9260c7dd9027b14abb3fb3de02015749243a54fbb17b5917b0b2e0f9b554&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017191&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2luZm9ybWF0aW9uYXJiaXRyYWdlLmNvbVwvcG9zdFwvNjk4NDAyNDMzXC9tb25pdG9yMTEwLWEtcG9zdC1tb3J0ZW0iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiI2OTg0MDI0MzMiLCJibG9naWQiOiI1NTA5NDA3Iiwic291cmNlIjozM31dfQ==&U=IHIFAEALKD&K=0d6a7c50c96867abc096dde2454a646fc0a347e72aadab838731411a3a3b9fb1&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017191&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2luZm9ybWF0aW9uYXJiaXRyYWdlLmNvbVwvcG9zdFwvNjk4NDAyNDMzXC9tb25pdG9yMTEwLWEtcG9zdC1tb3J0ZW0iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiI2OTg0MDI0MzMiLCJibG9naWQiOiI1NTA5NDA3Iiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=IHIFAEALKD&K=4b48a1f000ed3fe1c06e1a9838b32cd22426286d240a7cbcaa89dd997cc90731&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:5509407,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Finformationarbitrage.com%2Fpost%2F698402433%2Fmonitor110-a-post-mortem&amp;pid=698402433&amp;rk=xv2NXgpD&amp;lang=en_US&amp;name=informationarbitrage&amp;avatar=http%3A%2F%2F31.media.tumblr.com%2Favatar_71a15f1fe926_64.png&amp;title=Information+Arbitrage&amp;url=http%3A%2F%2Finformationarbitrage.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Finformationarbitrage.com%2Fpost%2F698402433%2Fmonitor110-a-post-mortem&amp;pid=698402433&amp;rk=xv2NXgpD&amp;lang=en_US&amp;name=informationarbitrage&amp;avatar=http%3A%2F%2F31.media.tumblr.com%2Favatar_71a15f1fe926_64.png&amp;title=Information+Arbitrage&amp;url=http%3A%2F%2Finformationarbitrage.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

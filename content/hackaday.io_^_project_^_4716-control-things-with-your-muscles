@@ -1,0 +1,2112 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Control Things With Your Muscles &bull; Hackaday.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    
+
+
+        <meta name="description" content="Building a Wearable Sensor suite that Reads Muscle signals (SEMG), and other physiological signals, and use that to control stuff.">
+        <link rel="canonical" href="http://hackaday.io/project/4716-control-things-with-your-muscles" />
+
+
+
+    <link rel="stylesheet" href="//cdn.hackaday.io/lib/redactor/redactor1006/redactor.css?version=0.44.12" />
+    <link rel="stylesheet" href="//cdn.hackaday.io/css/style.css?version=0.44.12" />
+        <script type="text/javascript">
+        function getCommentIdFromUrl() {
+            if(window.location.hash) {
+                var hash = window.location.hash.substring(1);
+                var commentId = parseInt(hash.replace('j-discussion-', ''));
+                if (commentId) {
+                    return commentId;
+                }
+            }
+            return null;
+        }
+
+        var commentId = getCommentIdFromUrl();
+        if (commentId) {
+            var url = window.location.href;
+            if (url.indexOf('?') > -1) {
+                url = url.substring(0, url.indexOf('?'));
+            }
+            if (url.indexOf('#') > -1) {
+                url = url.substring(0, url.indexOf('#'));
+            }
+            url += '/discussion-' + commentId;
+            window.location.href = url;
+        }
+    </script>
+    <script type="text/javascript" src="//use.typekit.net/ymb0lgk.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hackadayio">
+    <meta name="twitter:title" content="Control Things With Your Muscles">
+    
+        <meta name="twitter:description" content="This is an SEMG pod that measures the level of muscle activation when you work out. Been working on this for almost 5 years now. It was the first step towards the eventual goal of creating a wearable, synthetic spinal/neural networked, body sensing platform, which you can read more about in the project logs.
+
+This was the basis of my startup that went completely bust. Ran out of money for further development, and got dicked around by people who I formerly trusted for far too long. Still, I learned a ton from that experience. Like who to trust, not to trust, what advice is solid, and what advice is pure crap. In anycase, I figure documenting your failures so you learn from them, is far more important than successes. 
+
+My loss is your gain.
+
+If you have any questions about the pod, etc, you can contact me at nghiemdesigns [at] gmail [dot] com. Or if you&#39;re a member of the hackaday site, just send me an email...">
+    
+    
+        <meta name="twitter:image" content="https://cdn.hackaday.io/images/resize/600x600/935231426185640436.jpg">
+    
+
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Control Things With Your Muscles">
+    <meta property="og:url" content="http://hackaday.io/project/4716-control-things-with-your-muscles">
+    
+        <meta property="og:description" content="This is an SEMG pod that measures the level of muscle activation when you work out. Been working on this for almost 5 years now. It was the first step towards the eventual goal of creating a wearable, synthetic spinal/neural networked, body sensing platform, which you can read more about in the project logs.
+
+This was the basis of my startup that went completely bust. Ran out of money for further development, and got dicked around by people who I formerly trusted for far too long. Still, I learned a ton from that experience. Like who to trust, not to trust, what advice is solid, and what advice is pure crap. In anycase, I figure documenting your failures so you learn from them, is far more important than successes. 
+
+My loss is your gain.
+
+If you have any questions about the pod, etc, you can contact me at nghiemdesigns [at] gmail [dot] com. Or if you&#39;re a member of the hackaday site, just send me an email...">
+    
+    
+        <meta property="og:image" content="https://cdn.hackaday.io/images/resize/600x600/935231426185640436.jpg">
+    
+
+    <script>
+        var HIO = {};
+    </script>
+
+</head>
+<body class="project-detail ">
+
+    <!--
+############################################################################################
+############################################################################################
+############################################################################################
+#####################Kt;tL#######################################Kti,E######################
+#######################;   .###################################G    E#######################
+#######################K    f##################################    ;########################
+########################Wj   E###############################K:  .W#########################
+##########################.  :E##############################:  .L##########################
+#########################D    f##############################.   .##########################
+########################,     ;##############################     :E#######K################
+################f######K      ,##############################      ,######Lt################
+################  W###W       i##############################       t####j t################
+################:  E#L.        f###########################L.        f#Ki .E################
+################j  ;E.          j##########################.         .G;  i#################
+#################L               i#######################K                ##################
+#################W                E#####################K;               ;##################
+###################:               .###################D               :f###################
+#####################DLfGD           G####WEEEEKW####W           ;GffGK#####################
+##########################i         iD##Kfi    :jKW##D          iE##########################
+###########################W      ,G##f            jE#E;       j############################
+############################L     D##D              ,##K       W############################
+#############################D:  G#W                  K#E,   G##############################
+###############################;i#L                    j## ,E###############################
+###############################KK#.                     ##iE################################
+#################################j                      ;K##################################
+################################W                        ,##################################
+################################E                         ##################################
+###############################Ki                         D#################################
+###############################E.                         L#################################
+###############################f    iD##W;       D###D    :#################################
+###############################i   i######K     K#####K;   #################################
+###############################;  .E#######     #######D   #################################
+###############################;  L########     ########   #################################
+###############################i  G#######K     K#######   #################################
+###############################j  L#####E,       fE#####   #################################
+###############################D  .E##j            .t##E  ;#################################
+###############################E:  ;##.              #Wt  j#################################
+################################G   ;t      tWi      t    E#################################
+#############################KL##           K#K;          #K:K##############################
+#############################i ##:          ###t         j#f ;K#############################
+############################:  G#K          #E#L        L##    D############################
+###########################D   ;W#:         #;#L        W#K    .############################
+#####################KKEKK      :##L        ; ..      :D##.      fKEEK######################
+###################t.            ;##G:               ,##E,             tD###################
+##################G               E##E               i##;               :###################
+#################D                W##W    iL    E.    ###D                ##################
+################W,               G###W    tG    K.    ####:               K#################
+################;  LW;         ,E#####:  ;W#    #G   f#####;         ;KG  :K################
+################  D###E       ;########WW####WW####WW#######W       :####: j################
+################ ,#####:      ;##############################       G####E i################
+################K#######.     ;##############################      L######WG################
+########################f     i##############################     j#########################
+#########################W   .D##############################.   i##########################
+#########################E   G###############################D   ,##########################
+########################G:   #################################j   G#########################
+#######################f    K##################################j    W#######################
+#####################Kt :iE#####################################KL:  K######################
+############################################################################################
+############################################################################################
+############################################################################################
+-->
+
+<div class="header" id="header">
+    <div class="container">
+        <h1 class="logo">
+            <a href="/" title="Hackaday.io Home" class="home" onclick="CT(this, 'Menu', 'Home'); return false;"></a>
+            <a href="/" title="Hackaday.io Home" class="brand" onclick="CT(this, 'Menu', 'Home'); return false;">Hack a Day</a>
+        </h1>
+
+        <a href="javascript:void(0);" class="responsive-menu">Menu</a>
+
+        <ul class="nav" role="navigation">
+            <li><a href="/projects" class="">Projects</a></li>
+            <li><a href="/lists" class="">Lists</a></li>
+            <li><a href="/stack" class="">Stack</a></li>
+            <li class="dropdown more-nav j-more-open">
+                <a href="javascript:void(0)" class="dropdown-link icon-dropdown">More</a>
+                <ul role="menu" class="dropdown-menu more-menu" id="j-more">
+                    <li><a href="http://hackaday.com/blog/" target="_blank">Blog</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/hackerspaces">Hackerspaces</a></li>
+                    <li><a href="/hackers">Hackers</a></li>
+                    <li><a href="/contests">Contests</a></li>
+                    <li><a href="/prize" target="_blank">The Hackaday Prize</a></li>
+                    <li><a href="/submissions/prize2015/list">2015 Prize Entries</a></li>
+                </ul>
+            </li>
+            <li class="menu-last-child">
+                <div class="search-holder show">
+                    <form id="search-form" action="/search" onsubmit="return submitSearch();" method="GET">
+                        <input type="text" placeholder="Search" name="term" class="input-search j-add-search" id="j-add-search" value="" autocomplete="off" pattern=".{3,}" required title="3 characters minimum" />
+                        <input type="submit" class="search-button" />
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        
+
+            <ul class="nav pull-right" role="navigation">
+                <li><a href="/signup" class="grey-white-button become-member">Sign up</a></li>
+                <li><a href="/signin?returnUrl=%2Fproject%2F4716-control-things-with-your-muscles">Sign in</a></li>
+            </ul>
+
+        
+    </div>
+</div>
+
+<div id="topMessage" class="alert"><span class="j-top-content"></span><a href="javascript:void(0);" class="alert-close j-top-message-close">Close</a></div>
+
+
+
+
+    
+
+    
+        <div class="page-basic-info-static guest-message-signup">
+            
+                <h2>Does this project spark your interest?</h2>
+                <p class="page-basic-info-text">Become a member to follow this project and don't miss any updates</p>
+
+            
+
+            <div class="signup-holder">
+                <form method="POST" action="/signup">
+                    <input type="hidden" name="_csrf" value="h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU" />
+                    <input type="text" class="input-field input-email" placeholder="Your email address"  name="email"  /><input type="password" class="input-field input-password" placeholder="Password"  name="password" /><button class="black-gold-button signup" type="submit">Become a member</button>
+                    <input class="input-field" placeholder="Invitation Code" required name="invitation_code" value="5Ad0ix2-b96J" type="hidden" />
+                </form>
+            </div>
+
+        </div>
+    
+
+
+    
+
+    <div class="header-photo" >
+        <div class="overlay"></div>
+    </div>
+
+    <div class="headline">
+        <div class="container">
+            
+
+            <h2><a href="/project/4716-control-things-with-your-muscles">Control Things With Your Muscles</a></h2>
+            <p class="description">Building a Wearable Sensor suite that Reads Muscle signals (SEMG), and other physiological signals, and use that to control stuff.</p>
+
+            
+
+            
+                <div class="author">
+                    <a href="/hacker/56227">
+                        <img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" />
+                        
+                            <div class="author-details">
+                                <div class="author-name">David Nghiem</div>
+                            </div>
+                        
+                    </a>
+                </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-left">
+
+            
+                <ul class="submissions-icons">
+                    
+                        
+                        
+                    
+                </ul>
+            
+
+            
+                <a href="/project/4716/gallery#42ea1384e0bd1ddd1880a441d981b35b" id="project-image" class="image-holder" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/935231426185640436.jpg)" data-image="https://cdn.hackaday.io/images/resize/600x600/935231426185640436.jpg">
+                </a>
+            
+
+            <div class="thumbs-holder">
+                
+                        <a href="/project/4716/gallery#42ea1384e0bd1ddd1880a441d981b35b" class="image-holder thumb" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/935231426185640436.jpg)" data-image="https://cdn.hackaday.io/images/resize/600x600/935231426185640436.jpg">
+                    </a>
+                
+                        <a href="/project/4716/gallery#a43b86255fd421a1544e80b392cda605" class="image-holder thumb" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/8185411426185665789.jpg)" data-image="https://cdn.hackaday.io/images/resize/600x600/8185411426185665789.jpg">
+                    </a>
+                
+                        <a href="/project/4716/gallery#3cee6b4b1cc4af2dd0b10df71f6a91aa" class="image-holder thumb thumb-last" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/6158501426185816854.jpg)" data-image="https://cdn.hackaday.io/images/resize/600x600/6158501426185816854.jpg">
+                    </a>
+                
+                        <a href="/project/4716/gallery#0ed0fa1a0b29256e334322849068f997" class="image-holder thumb" style="background-image: url(https://cdn.hackaday.io/images/resize/600x600/4701151427767056226.jpg)" data-image="https://cdn.hackaday.io/images/resize/600x600/4701151427767056226.jpg">
+                    </a>
+                
+            </div>
+
+            
+                <div class="view-gallery-holder">
+                    <a href="/project/4716/gallery">
+                        <div class="view-gallery grey-gold-button very-small-button">View Gallery</div>
+                    </a>
+                </div>
+            
+
+            
+
+            
+
+            
+
+                <div class="project-following-container ">
+                    <a href="javascript:void(0)" data-href="/project/4716/event/unfollow" class="gold-gold-button unfollow text-changing-button" data-before="<span class='icon-checkmark-gray'>Following</span>" data-after="Unfollow?"><span class="icon-checkmark-gray">Following</span></a>
+                    <a href="javascript:void(0)" data-href="/project/4716/event/follow" class="gold-gold-button follow">Follow project</a>
+                </div>
+
+                <div id="similars">
+                    <div class="similars-header">
+                        Similar projects worth following
+                        <a href="javascript:void(0)" class="submissions-close"></a>
+                    </div>
+                </div>
+
+                
+                    <div class="project-skulling-container ">
+                        <a href="javascript:void(0)" data-href="/project/4716/event/unskull" class="gold-gold-button unskulled text-changing-button" data-before="<span class='icon-skull'>You</span>" data-after="Unskull?"><span class="icon-skull">You</span></a>
+                        <a href="javascript:void(0)" data-href="/project/4716/event/skull" class="gold-gold-button skulled"><span class="icon-skull">Give a</span></a>
+                    </div>
+                
+
+            
+
+            
+            
+
+            <div class="section section-project-stats">
+                
+                    <span class="icon-view-count" title="View Count">2.2k</span>
+                
+                <a>
+                    <span class="icon-comment-with-hover oi-font-color-grey" title="Comments" id="comment_count">25</span>
+                </a>
+                
+                    <a href="/hackers/all/project/4716/following">
+                
+                    <span class="icon-view oi-font-color-grey" title="Followers" id="follower_count">38</span>
+                
+                    </a>
+                
+
+                
+                    
+                        <a href="/hackers/all/project/4716/likers">
+                    
+                            <span class="icon-skull oi-font-color-grey" title="Skulls" id="like_count">19</span>
+                    
+                        </a>
+                    
+                
+            </div>
+
+            
+                <div class="section section-team">
+                    <h5>
+                        
+                            Team
+                        
+                    </h5>
+
+                    <ul>
+                        
+                            
+                                <li>
+                                    <img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" class="team-photo"/>
+                                    <a class="team-link" href="/hacker/56227-david-nghiem">David Nghiem</a>
+
+                                    
+
+                                    
+                                </li>
+                            
+                        
+                            
+                        
+                    </ul>
+
+                    <div class="error-message hide" id="team-error"><p></p></div>
+
+                    
+                    <input type="hidden" name="HADPrizeSubmission" value="false"/>
+                        
+                            <a href="javascript:void(0)"
+                               
+                                    class="login-button"
+                               
+                            >Request to join this project</a>
+                        
+                    
+
+                </div>
+            
+
+            
+
+            
+
+
+            
+                
+                    <div class="section section-tags">
+                        
+                            <div class="special-tags">
+                                <a href="/projects/tag/ongoing%20project" class="tag tag-ongoing">ongoing project</a>
+                            </div>
+                        
+                        
+                            <a href="/projects/tag/neurons" class="tag">neurons</a>
+                        
+                            <a href="/projects/tag/arduino" class="tag">arduino</a>
+                        
+                            <a href="/projects/tag/electronics" class="tag">electronics</a>
+                        
+                            <a href="/projects/tag/wearable" class="tag">wearable</a>
+                        
+                            <a href="/projects/tag/microcontroller" class="tag">microcontroller</a>
+                        
+                            <a href="/projects/tag/muscle" class="tag">muscle</a>
+                        
+                            <a href="/projects/tag/machine%20learning" class="tag">machine learning</a>
+                        
+                            <a href="/projects/tag/C%2FC%2B%2B" class="tag">C/C++</a>
+                        
+                            <a href="/projects/tag/biosensor" class="tag">biosensor</a>
+                        
+                            <a href="/projects/tag/Prosthetics" class="tag">Prosthetics</a>
+                        
+                            <a href="/projects/tag/cyborg" class="tag">cyborg</a>
+                        
+                            <a href="/projects/tag/neural%20network" class="tag">neural network</a>
+                        
+                            <a href="/projects/tag/avr" class="tag">avr</a>
+                        
+                            <a href="/projects/tag/Weight%20lifting" class="tag">Weight lifting</a>
+                        
+                            <a href="/projects/tag/ANN" class="tag">ANN</a>
+                        
+                            <a href="/projects/tag/SEMG" class="tag">SEMG</a>
+                        
+                            <a href="/projects/tag/power%20lifting" class="tag">power lifting</a>
+                        
+                            <a href="/projects/tag/athletics" class="tag">athletics</a>
+                        
+                            <a href="/projects/tag/muscle%20sensor" class="tag">muscle sensor</a>
+                        
+                            <a href="/projects/tag/surface%20electromyoography" class="tag">surface electromyoography</a>
+                        
+                            <a href="/projects/tag/Artificial%20neural%20network" class="tag">Artificial neural network</a>
+                        
+                            <a href="/projects/tag/spinal%20cord" class="tag">spinal cord</a>
+                        
+                            <a href="/projects/tag/borg" class="tag">borg</a>
+                        
+                            <a href="/projects/tag/cyborgs" class="tag">cyborgs</a>
+                        
+                    </div>
+                
+            
+
+            <div class="section section-share">
+                <h5>
+                    
+                        Enjoy this project?
+                    
+                </h5>
+                
+                <a href="https://twitter.com/intent/tweet?url=http://hackaday.io/project/4716-control-things-with-your-muscles&text=Control%20Things%20With%20Your%20Muscles by david-nghiem&related=hackadayio&via=hackadayio" target="_blank" class="icon-twitter icon-twitter-notext gray-link">Share on twitter</a> &nbsp; <a href="https://www.facebook.com/sharer/sharer.php?u=http://hackaday.io/project/4716-control-things-with-your-muscles" target="_blank" class="icon-facebook icon-facebook-notext gray-link">Share on Facebook</a> &nbsp; <a href="https://plus.google.com/share?url=http://hackaday.io/project/4716-control-things-with-your-muscles&h1=en-US" target="_blank" class="icon-google icon-google-notext gray-link">Share on Google+</a>
+            </div>
+
+            
+            
+
+            <div class="section section-project-time">
+                <p class="project-time">
+                    This project was
+                        
+                            created on 03/12/2015
+                            
+                                 and last updated 9 days ago.
+                            
+                        
+                </p>
+            </div>
+
+            
+
+        </div>
+
+        <div class="content-right">
+
+            
+                <div class="section section-description">
+                    <h5>Description</h5>
+                    <div class="description">This is an SEMG pod that measures the level of muscle activation when you work out. Been working on this for almost 5 years now. It was the first step towards the eventual goal of creating a wearable, synthetic spinal/neural networked, body sensing platform, which you can read more about in the project logs.<br /><br />This was the basis of my startup that went completely bust. Ran out of money for further development, and got dicked around by people who I formerly trusted for far too long. Still, I learned a ton from that experience. Like who to trust, not to trust, what advice is solid, and what advice is pure crap. In anycase, I figure documenting your failures so you learn from them, is far more important than successes. <br /><br />My loss is your gain.<br /><br />If you have any questions about the pod, etc, you can contact me at nghiemdesigns [at] gmail [dot] com. Or if you're a member of the hackaday site, just send me an email...</div>
+                </div>
+            
+
+            
+                <div class="section section-details">
+                    <h5>
+                        
+                            Details
+                        
+                    </h5>
+                    
+
+                    
+                        <div class="post-content details-content">
+                            <p><p>My product goal was to get an integrated microcontroller digital/analog SEMG pod put together to measure the electrical signals coming from your muscles when you innervate them. In that aspect, I succeeded. The unit combines an Arduino to control the digital circuitry, mainly a digital pot, which adjusted the gain for the analog circuitry, which is a bunch of diff amp and op amp circuits, to read in the SEMG signal (Surface ElectroMyographic) signal from the skin. A half wave rectifier took care of the negative aspects of the signal, and then it was further smoothed with filters to create something that you can use in digital circuitry. The arduino's primary function is to control the digital pot, and to map and output the resulting signal to an LED driver, which displayed your muscle signal level on the LED's.<br><br>It was the first step towards the eventual goal of creating a wearable, synthetic spinal/neural networked, body sensing platform, which you can read more about here:<br><br><a href="http://hackaday.io/project/4716-control-things-with-your-muscles/log/15855-the-wearable-synthetic-spine-and-the-school-of-hardware-startup-hard-knocks-lesson-1">The Wearable Synthetic Spine, and the School of Hardware Startup Hard Knocks - Lesson 1</a><br><br>You can see the circuit design progression from start to finish here.<br><br><img src="https://cdn.hackaday.io/images/5152221426533945615.jpg"><br>The basis of this product is my Senior Design Project, titled, <a target="_blank" href="http://transanthro.com/wp-content/uploads/2015/04/IT2000.pdf">A Smart Suit for Microgravity Environments</a> which I worked on with the MIT Aero Astro Lab, and the Boston University Neuromuscular Research Center from 1997 to 2000! Holy crap that was a long time ago. <br><br>What I built at the time was an SEMG activated force arm, essentially a robotic arm that was strapped to an Astronaut's arm, and it used nitinol wires, SMA's, as artificial muscles to apply an opposing force to the arm. The whole idea was to stress the arm in the opposite direction of movement so that the astronaut's muscles didn't deteriorate. </p><p>I used the Hill muscle model to build an artificial muscle arm, and the SEMG signals I collected were processed at the time in Matlab and Simulink. <br><br>You can see it in action here.</p><iframe style="width: 500px; height: 281px;" src="//www.youtube.com/embed/qGaYVagVw0Q" allowfullscreen="" frameborder="0" height="281" width="500"></iframe>
+                                
+                            </p>
+                        </div>
+                    
+                    <div class="detail-btns">
+                    
+                            
+                    
+                    </div>
+                </div>
+
+            
+
+            
+                
+                    <div class="section section-components">
+                        <h5>
+                            
+                                Components
+                            
+                        </h5>
+                        
+                            <ul class="section-component-list">
+                                
+                                    
+    <li class="component-41377">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            Arduino layout for Atmel328P
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-41378">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            TLC5940NT LED driver
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-41379">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            MCP Digital 100kOhm pot
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-41380">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            A whole bunch of instrumentation op amps
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+    <li class="component-41381">
+        <span class="component-number">1</span>
+        <span class="component-x">×</span>
+        <span class="component-content">
+            INA121 Differential Amplifier
+            <span class="component-description"></span>
+       </span>
+    </li>
+
+                                
+                            </ul>
+                        <p>
+                            
+                            
+                        </p>
+                    </div>
+                
+            
+
+            
+                <div class="section section-buildlogs">
+
+                    <h5>Project logs</h5>
+                    
+                    <ul class="buillogs-list post-content details-content">
+                    
+                        <li>
+                            <h2><a href="/project/4716/log/16756-algorithms-code-and-cases">Algorithms, Code, and Cases</a></h2>
+                            <small class="authorship">2 months ago  &bull;
+                            <a class="gray-link" href="/project/4716/log/16756#discussion-list">
+                                0 comments
+                            </a>
+                            </small>
+                            <p><p>This week we address algorithms, code, and appearance. Or cases. <br></p><p>Let's start with code. For a device like this, where we're not interested in doing any kind of medical work - plus we don't want nor need to deal with the FDA - and it's just involved in controlling digital outputs for lights, artificial muscles, servos, etc, you don't need a lot of accuracy. The Arduino's 10 bit ADC is sufficient for most project needs when it comes to that. That greatly simplifies our processing. The basic functional requirement is to read in the SEMG signal, map the signal out to the PWM ports of the TLC5940NT in ascending order, and allow for software interrupts using soft IRQ's for button push instances so that when the button is pushed, the MCP42XX digital pot either lowers the resistance or increases the resistance to increase or decrease the gain so we don't oversaturate the final output signal. </p><p><br>The Atmega328P we're using is the low powered one, which works at 3.3V. Obviously if our signal overshoots 3.3V, we won't get a useful reading, so having the gain adjustable on the fly is necessary. </p><p><br>Right now, as it is, the program is a hack, due to the preliminary board being manufactured proof of concept. So, a lot of the dedicated serial channels that the Arduino uses isn't standardized across the board. Instead of the I2C port, which is the Analog 4 and 5 ports, we have it occupied by the switches for the MCP42XX, which is the SPI digital Pot. For the SPI, which typically is PWM 11, 12, and 13, we have that taken up by the TLC5940NT. </p><p><br>That's a real mess.<br><br>Anyway, here is the flowchart program for the circuitry. <br><br></p><p><img src="https://cdn.hackaday.io/images/1322071429564388199.jpeg"></p><p>And here's the code. Starting with the main function in the Arduino.<br><br></p><pre class="hljs cpp"><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;PinChangeInt.h&gt;</span><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;DigiPot.h&gt;</span><span class="hljs-preprocessor">#<span class="hljs-keyword">include</span> &lt;Tlc5940.h&gt;</span><span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> Int_Pin1 A1  <span class="hljs-comment">// assign Analog1 to be the Interrupt Pin 1, Up Pin</span></span><span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> Int_Pin2 A2  <span class="hljs-comment">// assign Analog2 to be the Interrupt Pin 2, Down Pin</span></span><span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> analogPin A0  <span class="hljs-comment">// select Pin 0 for analog input</span></span><span class="hljs-keyword">volatile</span> <span class="hljs-keyword">int</span> state = LOW;<span class="hljs-keyword">volatile</span> <span class="hljs-keyword">int</span> state2 = LOW;<span class="hljs-keyword">int</span> StateUp;  <span class="hljs-comment">// the button up state</span><span class="hljs-keyword">int</span> StateDn;  <span class="hljs-comment">// the button down state</span><span class="hljs-keyword">int</span> PressUpNum;  <span class="hljs-comment">// the number of button presses for the up button</span><span class="hljs-keyword">int</span> PressDnNum;  <span class="hljs-comment">// the number of button presses for the down button</span><span class="hljs-keyword">int</span> valueUp;  <span class="hljs-comment">// The previous value of the Up button</span><span class="hljs-keyword">int</span> valueDn;  <span class="hljs-comment">// The previous value of the Down button</span><span class="hljs-keyword">int</span> slider = <span class="hljs-number">5</span>;  <span class="hljs-comment">//setup variables for the digital pot 0</span><span class="hljs-keyword">int</span> val;<span class="hljs-function">DigiPot <span class="hljs-title">mcp4251</span><span class="hljs-params">(5, 6, 7)</span></span>;  <span class="hljs-comment">// Start instance mcp4251</span><span class="hljs-comment">/* Format: DigiPot &lt;instance&gt;(CS, SCK, SDI) */</span><span class="hljs-keyword">uint8_t</span> latest_interrupted_pin;<span class="hljs-keyword">uint8_t</span> interrupt_count[<span class="hljs-number">2</span>]={<span class="hljs-number">0</span>};  <span class="hljs-comment">// Setup two interrupt pins</span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{  StateUp = digitalRead(Int_Pin1);  <span class="hljs-comment">// Read in the initial state</span>  StateDn = digitalRead(Int_Pin2);  <span class="hljs-comment">// of the Interrupt Pins</span>    PCintPort::attachInterrupt(Int_Pin1, digipot_slider, CHANGE);  <span class="hljs-comment">// Call the Interrupt  </span>  PCintPort::attachInterrupt(Int_Pin2, digipot_slider, CHANGE);  <span class="hljs-comment">// Call the Interrupt</span>    mcp4251.clear(<span class="hljs-number">0</span>);  <span class="hljs-comment">// Clear the pot 0</span>  mcp4251.clear(<span class="hljs-number">1</span>);  <span class="hljs-comment">// Clear the pot 1</span>    Tlc.init();  Tlc.clear();  <span class="hljs-comment">//Serial.begin(9600);</span>  }<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{    muscle_semg_read();  <span class="hljs-comment">//Serial.println(slider);</span>}</pre><pre class="hljs cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">digipot_slider</span><span class="hljs-params">()</span> </span>{    valueUp = digitalRead(Int_Pin1);  <span class="hljs-comment">// read in the current state </span>                                 <span class="hljs-comment">// of the button up pin</span>  valueDn = digitalRead(Int_Pin2);  <span class="hljs-comment">// read in the current state</span>    <span class="hljs-comment">/* Start of the Decision Tree for Up and Down Buttons */</span>    <span class="hljs-keyword">if</span> (valueUp != StateUp) {  <span class="hljs-comment">// if the value changed</span>    <span class="hljs-keyword">if</span> (valueUp == HIGH) {        <span class="hljs-comment">// and if the button is on</span>      <span class="hljs-keyword">if</span> (<span class="hljs-number">0</span> &lt; slider &lt; <span class="hljs-number">10</span>) {      <span class="hljs-comment">// PressUpNum++;            // Add one to the number of presses</span>      slider++;            <span class="hljs-comment">// Serial.println(PressUpNum);</span>      <span class="hljs-comment">// Serial.println(slider);</span>      }     }  }  StateUp = valueUp;        <span class="hljs-comment">// make the buttState current</span>    <span class="hljs-keyword">if</span> (valueDn != StateDn) {  <span class="hljs-comment">// if the value changed</span>    <span class="hljs-keyword">if</span> (valueDn == HIGH) {    <span class="hljs-comment">// and the button returned (pull up)</span>       <span class="hljs-keyword">if</span> (<span class="hljs-number">0</span> &lt; slider &lt; <span class="hljs-number">10</span>) {         <span class="hljs-comment">// PressDnNum++;</span>         slider--;         <span class="hljs-comment">// Serial.println(PressDnNum);</span>         <span class="hljs-comment">// Serial.println(slider);</span>       }     }  }  StateDn = valueDn;      <span class="hljs-comment">// make the buttState current</span>    <span class="hljs-keyword">if</span> (slider &lt; <span class="hljs-number">0</span>) {...</pre>
+                                
+                                    <a class="readmore" href="/project/4716/log/16756-algorithms-code-and-cases">Read more &raquo;</a>
+                                
+                            </p>
+                        </li>
+                    
+                        <li>
+                            <h2><a href="/project/4716/log/16267-honey-i-shrunk-the-semg-pod-and-artificial-muscle-madness">Honey, I shrunk the SEMG Pod, and Artificial Muscle Madness</a></h2>
+                            <small class="authorship">2 months ago  &bull;
+                            <a class="gray-link" href="/project/4716/log/16267#discussion-list">
+                                0 comments
+                            </a>
+                            </small>
+                            <p><p>Ah, weight. It's the perennial First World problem, in an overly politically correct society. And it's the part of the circuit that we want to vastly reduce and size down.</p><p>After we refined the circuitry, it was time to lay out the board and manufacture the PCB. We got to this point because as I attempted to make another basement, wire jumpered, ghetto board, my left over solder slag caused shorts and fried chips. I talked to Al, and he said to not even bother, since the proof of concept was solid, and I extensively tested my other hand made board. It was time to make something cleaner, smaller, and better. </p><p>I'm a total dunce when it comes to PCB board design and software, like Altium Designer or EagleCAD, which is what Aleks had access to. However, for circuit schematics, I used gEDA, which is an excellent piece of software for anyone who isn't rolling in cash to do their circuit schematic.<br><br><strong>Artificial Muscle Control</strong><br><br></p><p>It's about this time that I really started thinking through the applications for my concept, and the first concept that came to my mind, was in robotics. Which brings me back to my ancient 1990's thesis, <a href="http://transanthro.com/wp-content/uploads/2015/04/IT2000.pdf">A Smart Suit for Microgravity Environments</a></p><p>Digital control of artificial muscles is a tricky problem. The problem with the current solutions out on the market today for artificial muscles, at least the kinds that make me think of an artificial muscle, is that they're not really digitally controllable. That's Shape Memory Alloys, IE. Nitinol wire, or shape memory polymers. Every Shape Memory substance requires heat or heat production for it to do the bending and contorting that makes it a muscle. And the problem with heat is the lag time for the material to absorb enough heat to result in a hysteresis, where the crystal structure, or whatever structure starts to rearrange itself into a different geometric form, resulting in a contracting element.</p><p>And because the hysteresis is heat dependent, and depends on the overall amorphous shape of the SMA/SMP, you don't get good control over the element. Now contrast that with biological muscles.</p><p><strong>The Digital Nature of Biological Muscles</strong></p><p><img src="https://cdn.hackaday.io/images/7794521428509365508.jpg"></p><p>Biological muscles are formed of muscle fibers that ratchet against each other, with a myosin and actin element. Think car jack hoists. Much like a ratchet, they work in discrete steps with each other. You know what the crazy thing is about biological muscles? They're far better structurally for something resembling digital control. </p><p><img src="https://cdn.hackaday.io/images/8717401428509442180.jpg"></p><p>That's because muscle fibers have a discrete nature. They use calcium ions, which have a defined energetic value, to initiate the muscle innervation. Basically, the entire muscle fiber is in a potential state, except it's covered with a sheet of tropomyosin. Each calcium ion tugs a bit of that sheet away, exposing binding sites on myosin. The actin filament instantly latches onto those myosin sites, creating a muscle ratcheting effect, aka the contraction.</p><p><img src="https://cdn.hackaday.io/images/2122941428509472609.jpg"></p><p>You can read more about how the muscle works here.</p><p><a href="http://mollythrodahl.com/2012/02/28/skeletal-muscle-physiology/">How Skeletal Muscles Work</a><br></p><p>Each calcium ion, and each actin/myosin unit makes a defined, structural, energetically activated biomechanical unit. Say that 6 times fast. Anyway, that makes it a clear analog to digital.</p><p>On top of that, not all of your muscle fibers activate at once when you innervate them. The only time you really see your muscles innervate almost at once is when you induce a massive shock to the muscle. That's why you hear stories of people who accidentally touched a massive circuit, get knocked out and find themselves 15 feet away. It wasn't a massive spark or explosion that knocked them back there. It was the shock that triggered their muscles to contract violently all at once. Now, if the contraction caused them to rigidly hold the electrical source, most likely they'd be dead. If the contraction caused them to leap back and let go of the source, more likely they'll still be alive. And when they woke up, that is, if they weren't dead, they felt really really sore. I know I did when I got hit!<br><br><strong>Working with Artificial...</strong></p>
+                                
+                                    <a class="readmore" href="/project/4716/log/16267-honey-i-shrunk-the-semg-pod-and-artificial-muscle-madness">Read more &raquo;</a>
+                                
+                            </p>
+                        </li>
+                    
+                        <li>
+                            <h2><a href="/project/4716/log/15992-a-lesson-in-semg-and-analog-physiological-sensing-electronics">A Lesson in SEMG and Analog Physiological Sensing Electronics.</a></h2>
+                            <small class="authorship">2 months ago  &bull;
+                            <a class="gray-link" href="/project/4716/log/15992#discussion-list">
+                                0 comments
+                            </a>
+                            </small>
+                            <p><p>So now we get into the meat of the tech. The good stuff. The Biomedical Engineering coke. It's where the silicon meets the carbon road, where synthetic "life" meets organic "life."<br><br>The blending of biology and physics was what got me into biomedical engineering in the first place. Meshing organic with inorganic has this perverse pull for me. Yes, I was the one who found the Borg queen in Star Trek Voyager, the Matrix human batteries, and anime cyborgs sexy as hell, especially with all the attachments put on em. Do I have a sick fetish? Maybe. Is it Visionary? Absolutely.</p><p><img src="https://cdn.hackaday.io/images/7243081427990299834.jpg"></p><p><br>I started down this path when I was 5 years old, and licked a nine volt battery. That buzz was what got me going. When I was ten, I dissected disposable cameras, and gave myself severe shocks from the flash capacitor as an experiment, and for fun. I also got hit by lightning when I was in college, but that's a story for another day. Since day one, I've had this strange predeliction for electricity and the body, and attaching hardware to my body, for good or bad, is very natural for me.<br><br>Naturally I gravitated to muscles and electronics. So what better thing to work with than SEMG? Let's sing the Body Electric.<br><strong><br>And now for a lesson in Surface Electromyography, or SEMG for short. </strong><br></p><p><img src="http://www.austincc.edu/apreview/NursingPics/PNSefferentPics/Picture16.jpg"></p><p><br>An SEMG signal is an electrical wave that cascades down your muscle. That wave is generated when something called a Motor Unit Action Potential, MUAP, which is a combination of muscle neurons (Motor Neuron) and muscle fibers, starts with a discharge of a set of neuron potentials. <br><br>Those potentials are formed from the separation of sodium and potassium - which are positive ions - and chloride ions - which are negative ions - inside of the neural cell synapse, which is that long, tenuous line in the neural cell circuit. At the end point of the neural cell, where the neural electrical discharge ends, it releases neurotransmitters into the muscle cells, which in turn releases cascades of calcium ions, and that triggers the muscle fibers to contract. Now you know why salt, bananas, milk and leafy greens are important for your diet.<br><br>That discharge wave cascades down your muscle, creating what's called a Motor Unit Action Potential Train, which is a long line of MUAP's discharging to the end of the muscle. That end, is where the muscle is attached to ligaments or tendons, which in turn are attached to skeletal bone. And that's why you need a ground near bone to complete the circuit. <br><br>The full electrical discharge is both motor neural cells discharging, and muscle potentials discharging, ending with one giant, cascade of voltages coming out from your muscles. Which gets really messy, and complicated looking. Like this.</p><p><img src="https://cdn.hackaday.io/images/2121631427989487794.jpg"></p><p><br>What the electrode is measuring is the muscle discharge from the calcium ions. Lost somewhere in that signal are the motor neuron cells, but those aren't that important to look at for our purposes.</p><p>To read electrical signals from muscles, we start with a differential amplifier, aka a diff amp. You need the diff amp because it subtracts the voltage values measured between the two electrodes.</p><p>All the diff amp does is it measures a point in the wave, versus another point in the wave, while the ground provides a base reference. When it subtracts those values, you have a voltage value from the muscle, and that's the signal you're working with.</p><p>Now, some SEMG circuits use a single electrode, and a ground. Others, like the one we're using, use the belly of the muscle, the ending of the muscle (right where it attaches to tendons), and the ground. You can also get crazier with triple, quad electrodes to get as much signal value as possible. </p><p>This improves the resolution of the signal, because of the number of contact points on the skin. But it also gets a lot more uncomfortable. There's a lot of metal shafing on your skin all in a concentrated point.</p><p><br>Good instrumentation diff amps meet these minimum parameters. </p><ol><li> Low internal noise (&lt;0.5 mV)</li><li>High input impedance (&gt;100 MΩ)</li><li>Flat bandwidth and sharp high...</li></ol>
+                                
+                                    <a class="readmore" href="/project/4716/log/15992-a-lesson-in-semg-and-analog-physiological-sensing-electronics">Read more &raquo;</a>
+                                
+                            </p>
+                        </li>
+                    
+                    </ul>
+                    <p class="log-btns">
+                        
+                        
+                            <a href="/project/4716/logs" class="grey-gold-button medium-button show">
+                            
+                                View all 7 project logs
+                            
+                            </a>
+                        
+                    </p>
+                </div>
+            
+
+            
+                
+                    <div class="section section-instructions">
+                        <h5>Build instructions</h5>
+                        
+                        
+                            <ul class="post-content section-instructions-list">
+                                
+                                    <li>
+                                        <span class="instruction-number">1</span>
+                                        <div class="instruction-list-item"><p>1.) READ THE PROJECT LOGS!</p></div>
+                                    </li>
+                                
+                                    <li>
+                                        <span class="instruction-number">2</span>
+                                        <div class="instruction-list-item"><p>2.) READ RULE 1!!</p></div>
+                                    </li>
+                                
+                            </ul>
+                        
+                        <p>
+                            
+                            
+                                <a href="/project/4716/instructions" class="grey-gold-button medium-button show">See all instructions</a>
+                            
+                        </p>
+                    </div>
+                
+            
+            
+            <div class="section section-discussions last">
+        <h5 id="j-discussions-title" class="j-discussions-title">Discussions</h5>
+
+    <form id="j-discussion-add-top" action="/discussions/add" name="add-comment" method="POST" class="skip-global-form j-discussion-add hide">
+        <div class="textarea-holder">
+            <textarea placeholder="Add your comment" name="comment" class="editable input-comment"></textarea>
+        </div>
+        <input type="hidden" name="categoryId" value="4716" />
+        <input type="hidden" name="category" value="project" />
+        <input type="hidden" name="_csrf" value="h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU" />
+        <input type="hidden" name="replyTo" value="0" />
+        <input type="submit" class="grey-gold-button medium-button" value="Post comment" />
+    </form>
+
+    <div id="discussion-list">
+        
+<p>
+    <div class="signup-holder textarea-holder">
+        <textarea placeholder="Sign in or become a member to leave your comment" name="comment" class="editable input-comment"></textarea>
+    </div>
+    <a href="#" class="login-button grey-gold-button medium-button half show">Sign in/up to comment</a>
+</p>
+<div class="modal-content-holder login-modal" id="login-modal">
+    <div class="submissions-close modal-cancel"></div>
+    <div class="signup-holder">
+        <h2>Become a member</h2>
+        <p>In order to follow projects & hackers or give skulls
+        <br />you need to create an account.</p>
+        <form action="/signup" method="POST">
+            <fieldset class="form-left">
+                <input type="text" class="input-field" placeholder="Enter your email address" required name="email"  />
+                <input type="password" class="input-field" placeholder="Pick a secure password" required name="password"  />
+            </fieldset>
+            <fieldset class="form-right">
+              <button class="gold-gold-button signup" type="submit">Sign up</button>
+          </fieldset>
+          <input type="hidden" name="_csrf" value="h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU" />
+          <input class="input-field" placeholder="Invitation Code" required name="invitation_code" value="5Ad0ix2-b96J" type="hidden" />
+        </form>
+        <a id="login-modal-signin" href="/signin">Already a member?</a>
+    </div>
+</div>
+
+
+
+
+
+    
+    
+
+    <div id="j-discussion-20436" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/28790"><img src="https://cdn.hackaday.io/images/resize/100x100/6438611426218082356.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/28790">LloydTCannonIII</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20436">3 months ago</a>
+
+                <span id="comment-points-holder-20436" class="hide">
+                    &bull; <span id="comment-points-20436">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20436-content">
+                    <p>You are a god damn genius! No really great project, towards the end of this year we should definitely team up and make prosthesis for amputees, that is if you are down with it. &nbsp;</p>
+                </div>
+                <p id="comment-20436-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20436">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20447" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20447">3 months ago</a>
+
+                <span id="comment-points-holder-20447" class="hide">
+                    &bull; <span id="comment-points-20447">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20447-content">
+                    <p>Oh, I am totally down with that. Sheeeeet, Hellz yeah. Besides, I need something better than nitinol for artificial muscles. Want to know what's cool about nitinol as artificial muscles? They can contract. Hard. Want to know what's not cool about nitinol as artificial muscles?<br><br>They start&nbsp;smokin&nbsp;when there's enough current going through em... Oh yeah, can you imagine a prosthetic powered by nitinol? Poor wearer could&nbsp;have a barbecue on his arm... You'd have to give em the instruction manual, and some BBQ sauce (maybe some Sriracha too) along with it...</p><br><p>So hell yeah, I'm interested in the stuff you're cranking.</p>
+                </div>
+                <p id="comment-20447-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20447">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20448" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/28790"><img src="https://cdn.hackaday.io/images/resize/100x100/6438611426218082356.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/28790">LloydTCannonIII</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20448">3 months ago</a>
+
+                <span id="comment-points-holder-20448" class="hide">
+                    &bull; <span id="comment-points-20448">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20448-content">
+                    <p>Ooh that's so morbid... Lol I like it, but the wearer may not. &nbsp;I am really glad to see you working on this, there are alternatives, but cost being a factor i think you will win the race to wearable muscle sensors for the masses. &nbsp;I'll get to the point soon where I can put together a raptor hand and hopefully send it to you for the electronics hardware. &nbsp;</p><p>Maybe we start another project for this silly ass prize, I will keep in touch over the next few months, what you are doing and have done excites the hell out of me.</p>
+                </div>
+                <p id="comment-20448-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20448">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20463" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20463">3 months ago</a>
+
+                <span id="comment-points-holder-20463" class="hide">
+                    &bull; <span id="comment-points-20463">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20463-content">
+                    <p>Actually, along the lines of what you're doing, I have an experimental setup in the garage for making those fishingline muscles. I wanted to try those out in conjunction&nbsp;with the SEMG to see if I can make an artifical controlled twitch muscle. I don't suppose you're producing and selling them right now? Or got any you can send over to play with? I also looked at soft robotics muscles as a possibility, but having grown up playing Battletech, and spending hours on their tech read outs, I'm much more predisposed to the fiber muscle concept.</p>
+                </div>
+                <p id="comment-20463-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20463">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20472" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/28790"><img src="https://cdn.hackaday.io/images/resize/100x100/6438611426218082356.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/28790">LloydTCannonIII</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20472">3 months ago</a>
+
+                <span id="comment-points-holder-20472" class="hide">
+                    &bull; <span id="comment-points-20472">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20472-content">
+                    <p>Yes, this is pretty much your myomer muscle, be prepared to dump&nbsp;coolant! &nbsp;I will think about selling them soon, I would like to be able to produce large quantities&nbsp;first as keeping this open makes it more likely to be taken over by competition.</p><p>I really can't believe Dallas nanotech released the info for those muscles. All they needed to do was develop them a little to have a useful actuator. &nbsp;Better for us I guess.</p><p>Give it a few months and I will probably just send some to you for free, especially if you can provide information on SEMG and how you went about driving the nitinol wires.</p><p>I really would prefer working together though. &nbsp;Especially if this prosthesis will be entered into the hackaday 2015 prize. &nbsp;It would fairly give us both another chance to win.</p>
+                </div>
+                <p id="comment-20472-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20472">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20474" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20474">3 months ago</a>
+
+                <span id="comment-points-holder-20474" class="hide">
+                    &bull; <span id="comment-points-20474">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20474-content">
+                    <p>Hey man, I'm down with collaborating. Tell you what, give me an idea of what the spec out is for driving your muscles, and I'll go ahead and prototype something along those lines that I can control with the sensor that we can attach it to. And I'll send it to you to mess around with. <br></p><p><br>When I did it with nitinol, the problem was the nitinol had a threshold current, in other words, you were either on, or you were off, at least to get the force you wanted. So I controlled it with a relay. Course, at some point, the heat was so great through the wires that they started to cook and smoke. You know what's funny? I built that thing for astronauts to use. Can you imagine the person on a space station goin, "Holy $#!T! I'm SMOKIN! And not in a good way!"<br><br>So, yeah, I'm looking for a muscle I can control with digital steps, or shoot, analog steps. <br><br>I don't suppose you live anywhere in the USA near, say, the D.C. area? Cause face to face collaboration is way, WAY easier.</p>
+                </div>
+                <p id="comment-20474-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20474">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20582" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/28790"><img src="https://cdn.hackaday.io/images/resize/100x100/6438611426218082356.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/28790">LloydTCannonIII</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20582">3 months ago</a>
+
+                <span id="comment-points-holder-20582" class="hide">
+                    &bull; <span id="comment-points-20582">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20582-content">
+                    <p>I am still tweaking CNT loading from .05% to 3% by weight&nbsp;and have no idea what will work better as far as driving it with current. &nbsp;&nbsp;The trade off for higher resistance is a slower cooling rate, and cooling&nbsp;is obviously variable based upon filament diameter, and thermally conductive material&nbsp;loading. &nbsp;</p><p>1.25 ohms resistance per inch for the 6-mil wire is standard for nitinol. Should I shoot for something in this area?</p><p>I guess what I am asking is that higher resistance will allow more&nbsp;efficient&nbsp;use of current&nbsp;correct? &nbsp;</p><p>A&nbsp;muscle that can&nbsp;oscillate at around 10 hz would be phenomenal but it will have lower resistance. &nbsp;I am looking at adding diamond dust to the filament which should allow&nbsp;for&nbsp;increased&nbsp;resistance and increased&nbsp;thermal conductivity.&nbsp;</p><p>Sorry If I sound like an idiot, I study materials science and chemistry so my electrical knowledge has been entirely neglected. &nbsp;&nbsp;It would be great to get your input on this as I can produce better muscles and through&nbsp;collaboration&nbsp;help us both out&nbsp;with a better actuator package.</p>
+                </div>
+                <p id="comment-20582-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20582">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20971" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20971">3 months ago</a>
+
+                <span id="comment-points-holder-20971" class="hide">
+                    &bull; <span id="comment-points-20971">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20971-content">
+                    <p>Here's what I think. Instead of using higher resistance, have you <br>done any tests using oscillating current in alternating fibers? When it <br>comes to our muscles, not every single fiber activates on innervation. <br>What's your experimental setup and control, and procedure? I'm thinking <br>along the lines if you can do some basic experiments with the fibers to <br>see how they act with oscillating current, around, say 1-30HZ, and then <br>create a setup where you have, for example, 2 fibers, 1 innervated, the <br>other not, both attached to the weight that your testing it on. I don't <br>know how much you know about muscles, but that was my bread an butter <br>back in the day with making artificial muscles, and we used the Hill <br>Muscle model, which had a compressive element, and a spring element. <br>What I would try to replicate is something along those lines, where one <br>fiber is active, that's your compressible, and the other is not, that's <br>your spring, and they work in tandem with each other.&nbsp;<br>If you can <br>shoot me a mesg with your email, I can sketch up a drawing for you <br>regarding what I'm talking about. A picture is worth a thousand words...</p><p><br><br>Shoot, you know what? I'll just put that concept in one of the blog posts, about the artifiicial muscles I built.</p>
+                </div>
+                <p id="comment-20971-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20971">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-21270" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-21270">2 months ago</a>
+
+                <span id="comment-points-holder-21270" class="hide">
+                    &bull; <span id="comment-points-21270">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-21270-content">
+                    <p>Hey Dude, (You're a dude, right?)&nbsp;<br>Went through some of your <br>stuff. I was wondering, since at the moment you don't have a full <br>prototype, have you done any tests on the filament muscles by cycling <br>heat at frequency intervals? Reason I ask is it seems like so far, we <br>only have results to what happens when you apply heat at a slow cycle. <br>But nothing in the Hertz range on down. One idea I've toyed with is to <br>get heating element wire (like the stuff in toasters), and weaving that <br>into the fishing line to see what that does. Have you tried that or do <br>you know if anyone else has tried that? Cause once you can apply current<br> directly, then we can start applying my tech to it.</p>
+                </div>
+                <p id="comment-21270-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-21270">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-21282" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/28790"><img src="https://cdn.hackaday.io/images/resize/100x100/6438611426218082356.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/28790">LloydTCannonIII</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-21282">2 months ago</a>
+
+                <span id="comment-points-holder-21282" class="hide">
+                    &bull; <span id="comment-points-21282">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-21282-content">
+                    <p>Sorry I had some problems with my breaker plate was letting air bubbles into my filament, Filament kept breaking. &nbsp;I have been driving it with PWM DC current up to ten amps, so yah in a way it was a frequency. &nbsp;So I had to order some tighter screen in-order to get solid filament. &nbsp;I am still waiting on the 80 mesh screen might even have to go down to 50 mesh.&nbsp;</p><p>The muscles do have a variable amount of pull based on temperature, I am still waiting on thermistors to measure more accurately. &nbsp;Sorry I haven't got back to you yet it's just such an incredibly complicated endeavor with hundreds of&nbsp;variables. &nbsp;</p><p>I will get some filament out to you as soon as I get a high life useful filament and you can experiment yourself with driving it with AC PWM. &nbsp;</p><p>I also am working on passive cooling down a tube using air flow, I think it will work better than water, or heatsink cooling because the surface area is higher in a bundle of filament than will be on the outside of a heatsink. &nbsp;&nbsp;<br></p><p>The wire does work but I want the filament to be self contained no&nbsp;addition of wire in the twist as it does not heat evenly. &nbsp;Yah you get the effect of current traveling down the outside of filament I forget what that's called but its much more even than a wire wrapping around it. &nbsp;</p><p>I have also been experimenting with a different wind with many very fine filaments but it was also breaking. &nbsp;I don't know yet it will probably be another month before I get it nailed down. &nbsp;I am charging forward</p>
+                </div>
+                <p id="comment-21282-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-21282">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-21284" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/28790"><img src="https://cdn.hackaday.io/images/resize/100x100/6438611426218082356.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/28790">LloydTCannonIII</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-21284">2 months ago</a>
+
+                <span id="comment-points-holder-21284" class="hide">
+                    &bull; <span id="comment-points-21284">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-21284-content">
+                    <p>Also I can maybe send you some sketchup files on what I really want to put these into that I am also working on. PM sent for my email. and no I'm not a dude, I actually have worked on ranches as a hand;) But I am a male.</p>
+                </div>
+                <p id="comment-21284-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-21284">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-21429" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-21429">2 months ago</a>
+
+                <span id="comment-points-holder-21429" class="hide">
+                    &bull; <span id="comment-points-21429">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-21429-content">
+                    <p>I rode a bull (2 yr old) on a ranch in Brazil. Twice. And that's all I'll ever need to do... :D</p>
+                </div>
+                <p id="comment-21429-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-21429">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20420" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/44491"><img src="//gravatar.com/avatar/92b90092ce6ec604c343f79d2b9575d8?d=https://hackaday.io/img/default-avatar.png&amp;r=x&amp;s=100" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/44491">suicidal.banana</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20420">3 months ago</a>
+
+                <span id="comment-points-holder-20420" class="hide">
+                    &bull; <span id="comment-points-20420">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20420-content">
+                    <p>Interesting stuff!</p><p>I was recently thinking about a set of gloves (that go up past the elbow, and maybe even to the shoulder) that would be used to give 'hand input' too VR, looks like you have everything needed already working? :P</p><p>If so, you should just jump the KickStarter bandwagon&nbsp;and make a VR controller ;)</p>
+                </div>
+                <p id="comment-20420-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20420">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20434" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20434">3 months ago</a>
+
+                <span id="comment-points-holder-20434" class="hide">
+                    &bull; <span id="comment-points-20434">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20434-content">
+                    <p>HAH. Kickstarter. The hipster crowdfunder... Well, as is, SEMG ain't a great way to get a control signal. Don't get me wrong, you'll get a SIGNAL, just not a great one to control stuff with. We're partnering it with some other sensors to make it more accurate in that regard. <br><br>Once it's partnered properly, I think it would be a lot better, and far more functional for VR. I grew up with the freaking Nintendo POWERGLOVE. Shoot, it's been what, over 20 years? I'm sure this would be far better than that this day and age for VR...<br><br><br> </p>
+                </div>
+                <p id="comment-20434-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20434">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20111" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/16337"><img src="https://cdn.hackaday.io/images/resize/100x100/5919201429659899223.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/16337">DainBramage</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20111">3 months ago</a>
+
+                <span id="comment-points-holder-20111" class="hide">
+                    &bull; <span id="comment-points-20111">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20111-content">
+                    <p>Fascinating video, David. Have you considered adding an audio output to the device? Still, watching the LED indicators is quite interesting. I suppose that I have more reason to be curious than most with this particular subject, but that doesn't take anything away from your accomplishments. &nbsp;</p>
+                </div>
+                <p id="comment-20111-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20111">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20197" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20197">3 months ago</a>
+
+                <span id="comment-points-holder-20197" class="hide">
+                    &bull; <span id="comment-points-20197">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20197-content">
+                    <p>Hey DainBramage,</p><p>That's actually an interesting idea. I also play the fiddle, so my only thing, is well, will hurt to hear or would it be pleasant to listen to? I've never thought of trying that. It sounds like something I'd pump through a nintendo gameboy for chip tune effects.</p>
+                </div>
+                <p id="comment-20197-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20197">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20204" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/16337"><img src="https://cdn.hackaday.io/images/resize/100x100/5919201429659899223.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/16337">DainBramage</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20204">3 months ago</a>
+
+                <span id="comment-points-holder-20204" class="hide">
+                    &bull; <span id="comment-points-20204">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20204-content">
+                    <p>That would be an interesting way of doing it! The ones at the doctor's office just play a click with each muscle impulse detected, so it sounds a bit like a radiation counter. It's not unpleasant, though not what I would consider to be musical. It is interesting, however.&nbsp;</p><p>This leads me to another question, is your device sensitive enough to pick up individual muscle impulses? I know that sensitivity is an issue due to detecting through the skin, I'm just curious if it's possible to pick up the individual impulses like a needle type EMG can. I noticed a few quick pulses on the LED bar in your video. Do those represent individual pulses or many?</p><p>Sorry to keep pelting you with questions. <br></p>
+                </div>
+                <p id="comment-20204-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20204">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20209" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20209">3 months ago</a>
+
+                <span id="comment-points-holder-20209" class="hide">
+                    &bull; <span id="comment-points-20209">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20209-content">
+                    <p>Hmm. Well, the way your muscles work is you have to start with the most basic unit, and that's what's called the MUAP, or Motor Unit Action Potential. That's a group of muscles signaled by a set of neurons. So, if you mean impulse as in one of those, then you "might" get the impulse. What you see on the LED display is basically a cascading wave of energy released and running down the muscle. So, it's not an impulse per say, but more like watching a wave. Ever watch a wave roll down the coast before slamming into the beach? That's a lot like what watching an SEMG signal is like. I wouldn't be able to say that any one of those points is an impulse, but if we took out all the filters I have on my thing, and the half wave rectifier, than yeah, you can see the impulse. But the problem is just having that SEMG signal itself isn't all that useful for anything other than diagnostic purposes (like determining if your muscles are tired, degraded). Whereas the way I have it set up now, it's designed to use variable voltage to control stuff, kinda like when you roll a digital pot clockwise and counter clockwise.&nbsp;<br><br>I can imagine that if I hooked up the LED driver instead to say, a music chip where each level of voltage goes with a piano key, it's like running your finger on the piano keyboard up and down.&nbsp;<br><br>Course, that could be more pleasant than the "Holy crapcakes Batman, your muscles sound like nuclear waste!" sound that you get from the Doc's instruments.<br><br>This sounds interesting though. Gonna have to dig up some sound chips to stick on this sucka...<br><br><br></p>
+                </div>
+                <p id="comment-20209-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20209">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20210" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20210">3 months ago</a>
+
+                <span id="comment-points-holder-20210" class="hide">
+                    &bull; <span id="comment-points-20210">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20210-content">
+                    <p>Don't be sorry about the questions! Keep hitting me with em! You have no idea how long I've been navel gazing at this crap, that at some point, you gotta have fresh perspectives.&nbsp;<br><br>Based on your suggestion, I just ordered a bunch of&nbsp;YM2149 chips to interface with it. Now i'm curious as to what this will turn into. Keep hammering me with questions man! Nothing sucks worse than being stuck inside an echo chamber/navel gazer's mirror.</p>
+                </div>
+                <p id="comment-20210-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20210">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20212" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/16337"><img src="https://cdn.hackaday.io/images/resize/100x100/5919201429659899223.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/16337">DainBramage</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20212">3 months ago</a>
+
+                <span id="comment-points-holder-20212" class="hide">
+                    &bull; <span id="comment-points-20212">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20212-content">
+                    <p>Glad I could be helpful in some way. I had to Google the YM2149, looks like an impressive piece of silicon. I hope they didn't cost you too much. I am very interested to see the result of them being integrated into your project, especially since this is way above my skill level.&nbsp;</p><p>I'll be certain to ask any more questions I come up with, but at the moment my mind is blank (which is its normal state, of course).<br></p>
+                </div>
+                <p id="comment-20212-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20212">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-19961" data-level="1" class="discussions-item" style="margin-left: 0px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/16337"><img src="https://cdn.hackaday.io/images/resize/100x100/5919201429659899223.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/16337">DainBramage</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-19961">3 months ago</a>
+
+                <span id="comment-points-holder-19961" class="hide">
+                    &bull; <span id="comment-points-19961">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-19961-content">
+                    <p>Awesome project!</p><p>I find myself wondering if this technology might have a use in helping people with muscle disorders. Any thoughts?<br></p>
+                </div>
+                <p id="comment-19961-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-19961">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-19963" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-19963">3 months ago</a>
+
+                <span id="comment-points-holder-19963" class="hide">
+                    &bull; <span id="comment-points-19963">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-19963-content">
+                    <p>Well, my Dad, who had hip replacement surgery, and was undergoing quite a lot of physical therapy would fall into that class. I did a few experiments with his leg and the sensors just to monitor the level of innervation. Unfortunately, SEMG has two massive technical issues. The first major issue is you're not going to get an overall picture of the muscle innervation. The sensor only picks up parts of the signal at the surface of the skin. To get a much higher fidelity signal, you need insertable needle sensors. I don't know a lot of people who'd be willing to have needles inserted into their muscles to pick up the signal. The other major technical issue with SEMG is noise that comes from the contact of the electrode to the skin, if it shifts, and the noise that appears when the muscles move and rub under the skin. So, you're not going to get a very good picture of the muscle disorder. That said, you will discern a noticeable difference in SEMG signals between a healthy muscle, and a muscle that's effected by a disorder. With some signal processing, you'd also see some frequency shifts between a muscle that's healthy, vs. a muscle that has the disorder.&nbsp;<br>I see SEMG as just one sensor in what should be a broad suite of sensors, each one used to compensate for the deficiencies in each other. It's just I've spent so much of my time just on SEMG.</p><p><br><br>Not sure if I answered your question, but in a nutshell, it "might" help, but that depends on your application and what you're going for.</p>
+                </div>
+                <p id="comment-19963-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-19963">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-19964" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/16337"><img src="https://cdn.hackaday.io/images/resize/100x100/5919201429659899223.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/16337">DainBramage</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-19964">3 months ago</a>
+
+                <span id="comment-points-holder-19964" class="hide">
+                    &bull; <span id="comment-points-19964">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-19964-content">
+                    <p>You've answered my question quite nicely, thank you!</p><p>I have had several EMG studies&nbsp;done in an attempt to narrow down the idiopathic myopathy I have been dealing with for the last few years, and possibly for many years before then.</p><p>You've also answered a question that I hadn't asked, which was about  the difference in resolution between SEMG and conventional EMG. I think it would be extremely valuable to develop a system of pattern recognition to aid in diagnosis of muscular disorders, but I can imagine that there would be huge roadblocks in the way of creating such a system, not the least of which is getting the information needed to establish a database of patterns in the first place.</p><p>Truthfully, I'm surprised that it is possible to pick up the electrical signals from the muscles from the skin's surface at all. I think I may try some experiments in that direction, though it won't be nearly as sophisticated as what you are doing, if I do it at all.</p><p>Again, you have an awesome project and I wish you all the success in the world. And thank you also for taking the time to answer my question. :)<br></p>
+                </div>
+                <p id="comment-19964-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-19964">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20043" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/56227"><img src="https://cdn.hackaday.io/images/resize/100x100/2839591426109083348.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/56227">David Nghiem</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20043">3 months ago</a>
+
+                <span id="comment-points-holder-20043" class="hide">
+                    &bull; <span id="comment-points-20043">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20043-content">
+                    <p>Hmm, if you have the studies done before the myopathy got bad, you "might" have a control that you can compare it too. The problem with approaching this with SEMG is because everyone is different, you don't have a baseline SEMG signal of when you were "healthy", vs. now. In fact, for all you know, you've been living with this the whole time, so getting a healthy muscle SEMG signal is, um, a long shot. Myopathy, at least from what I read, means inflammation and a lot more creatine enzymes floating around. So, you'll be burning off a lot more energy, which would mean you'd have more noisy muscles. Maybe a good way to figure out your myopathy would be to have SEMG only as a supplement, but a kinetic motion analysis of the muscle system in question. You can see a lot more from gait and compensation when you're moving, as your muscles will be a lot more innervated than normal folks. At least, that's what I'm guessing based on what I've just read about your condition.&nbsp;<br><br>This could be a fun project in that regard. I'd be down with making something that does that...<br><br></p>
+                </div>
+                <p id="comment-20043-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20043">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <div id="j-discussion-20052" data-level="2" class="discussions-item" style="margin-left: 25px;">
+        <div class="discussions-item-image">
+
+            <a href="/hacker/16337"><img src="https://cdn.hackaday.io/images/resize/100x100/5919201429659899223.jpg" alt=""></a>
+
+
+            
+        </div>
+        <div class="discussions-item-body">
+            <small class="authorship">
+
+                <a href="/hacker/16337">DainBramage</a>
+
+                wrote <a class="gray-link" href="/project/4716-control-things-with-your-muscles/discussion-20052">3 months ago</a>
+
+                <span id="comment-points-holder-20052" class="hide">
+                    &bull; <span id="comment-points-20052">
+                              point
+                    </span>
+                </span>
+
+            </small>
+            <div>
+                <div id="comment-20052-content">
+                    <p>Inflammation is right. My CRP level (an <br>inflammation indicator) was 25 the last time it was checked, and was at <br>15 for at least 10 years before that. Normal is 1 or less, and between 2<br> and 3 usually means that an infection is present. At least that's the <br>way I understand it.&nbsp;I'm not a physician or even someone who's studied <br>medicine. I have tried to educate myself on the things I'm dealing with,<br> however, so much of the terminology is familiar to me.<br>As for my <br>gait, I walk with a cane, so it's certain to be abnormal. You can also <br>add peripheral neuropathy to the myopathy, which is believed to be one <br>of the verities of metabolic myopathy. In other words, the tips of my <br>nerves don't work and my skeletal muscles are starving. I have other <br>issues, but those are the two that affect my muscles the most.</p><p><br><br>You<br> are correct about not having a healthy baseline, but I think it would <br>be interesting to see what SEMG measurements would turn up in my case. <br>However, I think this will have to remain a theoretical idea.</p>
+                </div>
+                <p id="comment-20052-editor" class="hide"></p>
+            </div>
+            <p>
+                <span class="delete-options" id="actions-20052">
+                    
+                    
+                </span>
+                <span class="delete-confirm hide"><span class="delete-q">Are you sure?</span> <a href="#" class="delete-yes"><small>[yes]</small></a> / <a href="#" class="delete-no"><small>[no]</small></a></span>
+            </p>
+        </div>
+    </div>
+
+    
+
+
+
+
+<script type="text/javascript">
+
+    var pageIndex = 0;
+
+
+</script>
+    </div>
+
+    
+
+</div>
+
+
+
+        </div>
+
+    </div>
+
+    
+        <div class="container">
+            <div class="section-recommendations">
+                <h2>Similar projects</h2>
+                
+                    
+
+<div class="project-item   ">
+
+    
+
+    <a href="/project/581-tiny-robot-family" class="item-link">
+        <div title="Tiny robot family by shlonkin" class="project-item-cover"
+                
+             style="background-image:url(https://cdn.hackaday.io/images/resize/600x600/9029961395449862310.jpg)"
+                
+                >
+
+        </div>
+
+        
+                <div class="project-item-stats">
+                    
+                    
+                        <span class="icon-view-count" title="View Count">24.4k</span>
+                    
+                    <span class="icon-comment-with-hover" title="Comments">65</span>
+                    <span class="icon-view" title="Followers">615</span>
+                    
+                        <span class="icon-skull" title="Skulls">253</span>
+                    
+                </div>
+         
+
+        <div class="project-item-title ">
+            A family of tiny robots, each with their own way of life.
+        </div>
+    </a>
+    <div class="project-item-headline">
+        <span class="project-owner hide">Project Owner</span>
+        <span class="project-owner hide">Contributor</span>
+        <h3><a href="/project/581-tiny-robot-family" title="Tiny robot family">Tiny robot family</a></h3>
+        <p>by <a href="/hacker/894">shlonkin</a></p>
+    </div>
+</div>
+                
+                    
+
+<div class="project-item m-last-child  ">
+
+    
+        <ul class="submissions-icons">
+            
+                
+                    <li>
+                        <a href="/submissions/prize2015/list" class="submission-icon submission-icon-5">
+                            The 2015 Hackaday Prize
+                        </a>
+                    </li>
+                
+            
+        </ul>
+    
+
+    <a href="/project/6050-tote-affordable-spider-robot" class="item-link">
+        <div title="Tote, affordable spider robot by Radomir Dopieralski" class="project-item-cover"
+                
+             style="background-image:url(https://cdn.hackaday.io/images/resize/600x600/7315931433077594582.jpg)"
+                
+                >
+
+        </div>
+
+        
+                <div class="project-item-stats">
+                    
+                    
+                    <span class="icon-comment-with-hover" title="Comments">6</span>
+                    <span class="icon-view" title="Followers">31</span>
+                    
+                        <span class="icon-skull" title="Skulls">22</span>
+                    
+                </div>
+         
+
+        <div class="project-item-title hasBadge">
+            A walking quadruped robot with full inverse kinematics for less than $50
+        </div>
+    </a>
+    <div class="project-item-headline">
+        <span class="project-owner hide">Project Owner</span>
+        <span class="project-owner hide">Contributor</span>
+        <h3><a href="/project/6050-tote-affordable-spider-robot" title="Tote, affordable spider robot">Tote, affordable spider robot</a></h3>
+        <p>by <a href="/hacker/35249">Radomir Dopieralski</a></p>
+    </div>
+</div>
+                
+                    
+
+<div class="project-item  b-last-child ">
+
+    
+
+    <a href="/project/3300-kubik-quadruped-robot" class="item-link">
+        <div title="µKubik quadruped robot by Radomir Dopieralski" class="project-item-cover"
+                
+             style="background-image:url(https://cdn.hackaday.io/images/resize/600x600/1206291414960240002.jpg)"
+                
+                >
+
+        </div>
+
+        
+                <div class="project-item-stats">
+                    
+                    
+                        <span class="icon-view-count" title="View Count">822</span>
+                    
+                    <span class="icon-comment-with-hover" title="Comments">3</span>
+                    <span class="icon-view" title="Followers">43</span>
+                    
+                        <span class="icon-skull" title="Skulls">12</span>
+                    
+                </div>
+         
+
+        <div class="project-item-title ">
+            Cheap and simple tabletop quadruped robot controlled with Python.
+        </div>
+    </a>
+    <div class="project-item-headline">
+        <span class="project-owner hide">Project Owner</span>
+        <span class="project-owner hide">Contributor</span>
+        <h3><a href="/project/3300-kubik-quadruped-robot" title="µKubik quadruped robot">µKubik quadruped robot</a></h3>
+        <p>by <a href="/hacker/35249">Radomir Dopieralski</a></p>
+    </div>
+</div>
+                
+            </div>
+
+        </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+<div class="footer" id="footer">
+  <a href="#header" class="back-to-top" onClick="CT(this, 'Footer', 'GoingUp');">^ Going up? ^</a>
+    <div class="container">
+        <p><a href="http://hackaday.com/about/">About Us</a> <a href="mailto:projects-contact@hackaday.com">Contact Us</a> <a href="/project/37">Give Feedback</a>&copy; 2015 Hackaday <a href="/tos">Terms of Use</a> <a href="/privacy-policy">Privacy Policy</a></p>
+        <a href="/" class="had-skull"  onClick="CT(this, 'Footer', 'Home' ); return false;">Hackaday.io</a>
+    </div>
+</div>
+
+<script>
+
+    var csrftoken = 'h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU';
+
+</script>
+
+    <script type="text/javascript">
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47229708-1', 'auto');
+
+    var dimensionValue = 'nonregistered';
+    ga('set', 'dimension1', dimensionValue);
+    ga('require', 'displayfeatures');
+
+    ga('send', 'pageview');
+
+    </script>
+
+<img src="//analytics.supplyframe.com/trackingservlet/impression?action=pageImpression&amp;zone=HIO_project&amp;extra=logged%3Dfalse%7ChaveAccountCookie%3D0%7C&amp;ab=undefined" class="sf-impression" />
+    <div class="j-modal-confirmation modal-background"></div>
+<div class="j-modal-confirmation modal-content-holder">
+    <p class="align-center" id="modal-message"></p>
+    <p class="align-center"><a class="medium-button gold-gold-button delete-project-button" id="modal-yes" href="">Yes, delete it</a> <a class="medium-button grey-gold-button cancel-button" id="modal-cancel">Cancel</a> </p>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <script src="//cdn.hackaday.io/build/h%2FydgsYIeDTf7pqgYQEKK8Ngblw0IkZCDqfJ9S2tk7zsBoxIHt5iOd49Qp%2BF4vdxEuRj%2BGpGDLbX4aGOQGmbjaOxUZvklg4ReFk68R95OQshFrGKebvogKGQOiB5Hi1xym9KC54c9Ps0WpzuNydLk4B%2FbKi91KhV40Uxhl38XXb1IVAxAI8iW%2BoQUPCFkHVWZxD0B%2BMZ%2BuEXJTlWuBmopNMxTHRK5yleITPZODT6evYhvPcTNHjcVmLti9HxMVov4N%2FG0Vb08G3dKHr8dVQWzXej5t18RehizqZ8wIVJ7qCSmA5v7VaFjCQENYTT0gaQoyhjrODHsQk5JUVvz7t44M%2BuN2BDHNkMvVP1xDbPbRTIohtMGgB8V%2FIxmi5nfjkNue9PutbnEqcmNyiiR905HSeXXidqaoMv3%2Bjk2gMKm8TsbsZcy1piSKB9yn6y5ODWER2wInoh1ul2XDwT2xDb6hULSpG4iAh0y8x0xoRPEXc%3D-0.44.12.js"></script>
+
+    <style>
+        .mediumInsert-buttons {
+            display: none !important;
+        }
+    </style>
+
+    <div id="submission-popup-back"></div>
+    <div id="submission-popup"></div>
+
+    <div id="modal-report-back" class="modal-background"></div>
+    <div id="modal-report" class="modal-content-holder container">
+        <a href="javascript:void(0);" class="modal-close"></a>
+        <form action="/report/project" class="j-modal-form">
+            <h2>Report project as inappropriate</h2>
+
+            <p class="intro-text">
+                You are about to report the project "<b>Control Things With Your Muscles</b>", please tell us the reason.
+            </p>
+
+            <textarea name="comment" class="j-report-comment" placeholder="Why do you report the project as inappropriate"></textarea>
+
+            <input type="hidden" name="_csrf" value="h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU" />
+            <input type="hidden" name="projectId" value="4716" />
+            <div class="modal-footer">
+                <input type="submit" value="Report" class="gold-gold-button"/>
+            </div>
+            <div class='j-modal-form-message'></div>
+        </form>
+        <div class='j-modal-message hide'></div>
+    </div>
+
+
+
+    <div id="modal-contributor-apply-back" class="modal-background"></div>
+    <div id="modal-contributor-apply" class="modal-content-holder container">
+        <a href="javascript:void(0);" class="modal-close"></a>
+        <form id="contributor-apply-form">
+            <h2>Send message</h2>
+
+            <textarea name="message" class="j-report-comment">
+Hello,
+
+I really like your project and I think I have skills to help you.
+            </textarea>
+            <p class="application-success">Your application has been submitted.</p>
+            <input type="hidden" name="_csrf" value="h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU" />
+            <input type="hidden" name="projectId" value="4716" />
+
+            <div class="modal-footer">
+                <input type="submit" value="Send" class="gold-gold-button"/>
+            </div>
+        </form>
+
+    </div>
+
+
+    <div id="modal-contributor-remove-back" class="modal-background"></div>
+    <div id="modal-contributor-remove" class="modal-content-holder container">
+        <a href="javascript:void(0);" class="modal-close"></a>
+        <form id="contributor-remove-form">
+            <h2>Remove Contributor</h2>
+            <p>
+                Are you sure you want to remove yourself as a contributor for this project?
+            </p>
+            <p>Project owner will be notified upon removal.</p>
+            <input type="hidden" name="_csrf" value="h7iyHWFq-pjo2qZ0TD-f5-QSNYYimen9gAsU" />
+            <input type="hidden" name="projectId" value="4716" />
+            <input type="hidden" name="remove_contributor_id" id="remove_contributor_id"/>
+
+            <div class="modal-footer">
+                <input type="submit" value="Remove" class="gold-gold-button"/>
+                <input value="Nevermind" class="gold-gold-button"/>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        HIO.projectId = 4716;
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	
+			
+	
+	<link rel="pingback" href="http://chrishoog.com/xmlrpc.php" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://chrishoog.com/wp-content/themes/theme/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<meta property="og:image" content="http://chrishoog.com/wp-content/uploads/2013/09/cemetery-645x250-300x116.jpg"/>
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Part Two of a failed parking startup&#039;s postmortem: a new perspective</title>
+<meta name="description" content="More than two years ago, I shut down HelloParking. We never managed to find product-market fit, and we were having trouble scaling. Here&#039;s what happened:"/>
+<link rel="canonical" href="http://chrishoog.com/the-helloparking-postmortem-a-look-back-and-a-new-perspective/" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="More than two years ago, I shut down HelloParking. We never managed to find product-market fit, and we were having trouble scaling. Here&#039;s what happened:"/>
+<meta name="twitter:title" content="Part Two of a failed parking startup&#039;s postmortem: a new perspective"/>
+<meta name="twitter:site" content="@chris_hoog"/>
+<meta name="twitter:domain" content="Chris Hoogewerff"/>
+<meta name="twitter:image:src" content="http://chrishoog.com/wp-content/uploads/2013/09/cemetery-645x250.jpg"/>
+<meta name="twitter:creator" content="@chris_hoog"/>
+<meta name="twitter:url" content="http://chrishoog.com/the-helloparking-postmortem-a-look-back-and-a-new-perspective/"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<meta content="Nimble v.1.4" name="generator"/><link rel='stylesheet' id='flick-css'  href='http://chrishoog.com/wp-content/plugins/mailchimp//css/flick/flick.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimpSF_main_css-css'  href='http://chrishoog.com/?mcsf_action=main_css&#038;ver=4.0.5' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='mailchimpSF_ie_css-css'  href='http://chrishoog.com/wp-content/plugins/mailchimp/css/ie.css?ver=4.0.5' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='hupso_css-css'  href='http://chrishoog.com/wp-content/plugins/hupso-share-buttons-for-twitter-facebook-google/style.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='nimble-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,800italic,400,300,700,800&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='nimble-style-css'  href='http://chrishoog.com/wp-content/themes/theme/style.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='upprev-css-css'  href='http://chrishoog.com/wp-content/plugins/upprev/styles/upprev.css?ver=3.3.27' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='http://chrishoog.com/wp-content/themes/theme/epanel/shortcodes/css/shortcodes.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-responsive-css-css'  href='http://chrishoog.com/wp-content/themes/theme/epanel/shortcodes/css/shortcodes_responsive.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='photonic-slideshow-css'  href='http://chrishoog.com/wp-content/plugins/photonic/include/scripts/fancybox/jquery.fancybox-1.3.4.css?ver=1.45' type='text/css' media='all' />
+<link rel='stylesheet' id='photonic-css'  href='http://chrishoog.com/wp-content/plugins/photonic/include/css/photonic.css?ver=1.45' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-author-bio-css'  href='http://chrishoog.com/wp-content/plugins/wp-about-author/wp-about-author.css?ver=4.0.5' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://chrishoog.com/wp-content/themes/theme/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='et_page_templates-css'  href='http://chrishoog.com/wp-content/themes/theme/epanel/page_templates/page_templates.css?ver=1.8' type='text/css' media='screen' />
+<script type="text/javascript">
+var iworks_upprev = { animation: 'fade', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'category', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'Part Two of the HelloParking postmortem: a look back, and a new perspective' };
+</script>
+<script type='text/javascript' src='http://chrishoog.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/mailchimp/js/scrollTo.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-includes/js/jquery/jquery.form.min.js?ver=3.37.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mailchimpSF = {"ajax_url":"http:\/\/chrishoog.com\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/mailchimp/js/mailchimp.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/mailchimp//js/datepicker.js?ver=4.0.5'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/upprev/scripts/upprev.js?ver=3.3.27'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Photonic_JS = {"ajaxurl":"http:\/\/chrishoog.com\/wp-admin\/admin-ajax.php","fbox_show_title":"1","fbox_title_position":"inside","flickr_collection_set_title_display":"tooltip","flickr_gallery_title_display":"tooltip","flickr_photo_title_display":"tooltip","picasa_photo_title_display":"tooltip","picasa_photo_pop_title_display":"tooltip","wp_thumbnail_title_display":"tooltip","Dpx_photo_title_display":"tooltip","smug_photo_title_display":"tooltip","smug_photo_pop_title_display":"tooltip","smug_albums_album_title_display":"tooltip","instagram_photo_title_display":"tooltip","instagram_user_title_display":"tooltip","zenfolio_photo_title_display":"tooltip","zenfolio_set_title_display":"tooltip","slideshow_library":"fancybox","slideshow_mode":"","slideshow_interval":"5000","pphoto_theme":"pp_default","gallery_panel_width":"800","gallery_panel_items":"20"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/photonic/include/scripts/photonic.js?ver=1.45'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/photonic/include/scripts/jquery.cycle.all.min.js?ver=1.45'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/photonic/include/scripts/jquery.fancybox-1.3.4.pack.js?ver=1.45'></script>
+<meta name="generator" content="WordPress 4.0.5" />
+
+<!-- Generated with Facebook Meta Tags plugin by Shailan ( http://shailan.com/ ) --> 
+	<meta property="og:title" content="Part Two of the HelloParking postmortem: a look back, and a new perspective" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://chrishoog.com/the-helloparking-postmortem-a-look-back-and-a-new-perspective/" />
+	<meta property="og:image" content="http://chrishoog.com/wp-content/uploads/2013/09/cemetery-645x250.jpg" />
+	<meta property="og:site_name" content="Chris Hoogewerff" />
+	<meta property="og:description"
+          content="More than two years ago, Neil and I shut down HelloParking. We never managed to find product-market fit, and we were having trouble scaling. Before heading back to class and moving on, I wrote about our experience. In a rather long-winded essay, I exposed our triumphs, our failures, and told the story of HelloParking, a failed..." />
+	<meta property="article:section" content="Product &amp; entrepreneurship" />
+	<meta property="article:tag" content="" />
+<!-- End of Facebook Meta Tags -->
+	<script type="text/javascript">
+		jQuery(function($) {
+			$('.date-pick').each(function() {
+				var format = $(this).data('format') || 'mm/dd/yyyy';
+				format = format.replace(/yyyy/i, 'yy');
+				$(this).datepicker({
+					autoFocusNextInput: true,
+					constrainInput: false,
+					changeMonth: true,
+					changeYear: true,
+					beforeShow: function(input, inst) { $('#ui-datepicker-div').addClass('show'); },
+					dateFormat: format.toLowerCase(),
+				});
+			});
+			d = new Date();
+			$('.birthdate-pick').each(function() {
+				var format = $(this).data('format') || 'mm/dd';
+				format = format.replace(/yyyy/i, 'yy');
+				$(this).datepicker({
+					autoFocusNextInput: true,
+					constrainInput: false,
+					changeMonth: true,
+					changeYear: false,
+					minDate: new Date(d.getFullYear(), 1-1, 1),
+					maxDate: new Date(d.getFullYear(), 12-1, 31),
+					beforeShow: function(input, inst) { $('#ui-datepicker-div').removeClass('show'); },
+					dateFormat: format.toLowerCase(),
+				});
+
+			});
+
+		});
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type="text/css">
+.photonic-pad-photosets { margin: 15px; }
+.photonic-pad-galleries { margin: 15px; }
+.photonic-flickr-stream .photonic-pad-photos { margin: 0 15px; }
+.photonic-picasa-stream .photonic-pad-photos { margin: 0 15px; }
+.photonic-picasa-stream img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-panel .photonic-picasa-image img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-500px-stream .photonic-pad-photos { margin: 0 15px; }
+.photonic-500px-stream img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-zenfolio-stream .photonic-pad-photos { margin: 0 15px; }
+.photonic-zenfolio-stream .photonic-pad-photosets { margin: 0 15px; }
+.photonic-zenfolio-photo img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-zenfolio-set-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-instagram-stream .photonic-pad-photos { margin: 0 15px; }
+.photonic-instagram-photo img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-instagram-stream .photonic-pad-users { margin: 0 15px; }
+.photonic-instagram-user img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-pad-albums { margin: 15px; }
+.photonic-smug-stream .photonic-pad-photos { margin: 0 15px; }
+.photonic-smug-stream img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-panel .photonic-smug-image img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-panel { background:  rgb(17,17,17) ;
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
+ }
+.photonic-panel .photonic-flickr-image img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-flickr-panel .photonic-pad-photos { margin: 0 15px; }
+.photonic-picasa-panel .photonic-pad-photos { margin: 0 15px; }
+.photonic-smug-panel .photonic-pad-photos { margin: 0 15px; }
+.photonic-flickr-coll-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-flickr-set .photonic-flickr-set-solo-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-flickr-set-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-flickr-set-pop-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-flickr-gallery-pop-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+.photonic-smug-album-thumb img { 	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+ }
+
+</style>
+<style type="text/css">
+#upprev_box{bottom:5px;width:360px;right:5px;display:none;display:none;}
+ </style>
+</head>
+<body class="single single-post postid-898 single-format-standard unknown et_includes_sidebar et_color_scheme_orange">
+	
+		
+	<header id="main-header">
+		<div class="container">
+			<div id="top-area" class="clearfix">
+								<a href="http://chrishoog.com"><img src="http://chrishoog.com/wp-content/uploads/2014/04/monogram21.png" alt="Chris Hoogewerff" id="logo"/></a>
+				
+				<div id="mobile_links"><a href="#" class="mobile_nav closed">Pages Menu</a></div>				
+				<nav id="top-menu">
+												<ul class="nav">
+																	<li ><a href="http://chrishoog.com">Home</a></li>
+								
+								<li class="page_item page-item-496"><a href="http://chrishoog.com/about/">About me</a></li>
+<li class="page_item page-item-342"><a href="http://chrishoog.com/adventures/">my adventures&#8230;</a></li>
+<li class="page_item page-item-551"><a href="http://chrishoog.com/product-and-entrepreneurship/">thoughts on product and entrepreneurship&#8230;</a></li>
+															</ul>
+									</nav>	
+			</div> <!-- end #top-area -->
+			
+			<div id="page-name">	
+	<hgroup class="section-title">
+		<h1>Part Two of the HelloParking postmortem: a look back, and a new perspective</h1>
+		<p class="main_post_info">Posted  by <a href="http://chrishoog.com/author/mailchrishoog-com/" title="Posts by Chris Hoogewerff" rel="author">Chris Hoogewerff</a> on Sep 6, 2013 in <a href="http://chrishoog.com/category/product/" rel="category tag">Product &amp; entrepreneurship</a></p>	</hgroup>
+</div> <!-- end #page-name -->		</div> <!-- end .container -->
+		
+				
+		<div id="breadcrumbs">
+	<div class="container clearfix">
+		<div id="breadcrumbs_box">
+							<a href="http://chrishoog.com" class="breadcrumbs_home">Home</a> <span class="raquo">&raquo;</span>
+					
+											<a href="http://chrishoog.com/category/product/">Product &amp; entrepreneurship</a> <span class="raquo">&raquo;</span> Part Two of the HelloParking postmortem: a look back, and a new perspective									</div> <!-- end #breadcrumbs_box -->
+	</div> <!-- end .container -->
+</div> <!-- end #breadcrumbs -->		
+	</header> <!-- end #main-header -->
+
+<div id="main-area">
+	<div class="container">
+		<div id="content-area" class="clearfix">
+			<div id="left-area">	
+					
+	<article id="post-898" class="post-898 post type-post status-publish format-standard has-post-thumbnail hentry category-product clearfix">
+	
+		
+			<div class="post-thumbnail">
+		<img src="http://chrishoog.com/wp-content/uploads/et_temp/cemetery-645x250-58582_621x250.jpg" alt='Part Two of the HelloParking postmortem: a look back, and a new perspective' width='621' height='320' />			<span class="overlay"></span>
+		</div> 	<!-- end .post-thumbnail -->
+			
+		<div class="post_content">
+			<p><em>More than two years ago, Neil and I shut down HelloParking. We never managed to find product-market fit, and we were having trouble scaling. Before heading back to class and moving on, I wrote about our experience. In a rather long-winded essay, I exposed our triumphs, our failures, and<a href="http://chrishoog.com/from-beginning-to-end-the-story-of-a-failed-parking-startup/"> told the story of HelloParking, a failed parking startup, </a>to anyone who felt compelled to read it.</em></p>
+<p><em>To my surprise, those who felt compelled numbered in the tens of thousands, and I&#8217;ve been contacted by many ever since publishing our story. As it turns out, we weren&#8217;t the only ones wanted to disrupt the parking industry. And as it turns out, where I thought we went wrong two years ago isn&#8217;t the full story.</em></p>
+<p><em>After writing HelloParking&#8217;s postmortem, I&#8217;ve since moved on &#8211; I&#8217;ve learned about Lean Startups and Customer Development. I&#8217;ve ripened my understanding of how to shape products. And as all things on the internet have a tendency to do, my original post has lived on.  Because this one morsel of my past life continues to attract readership, I&#8217;ve decided it&#8217;s time to share an epilogue.</em></p>
+<h2></h2>
+<h2>New insights:</h2>
+<p>To save the average reader from the toils of reading through the pages that follow, I&#8217;ve compiled my summary of new insights in the bullets below:</p>
+<ul>
+<li><em><strong>I</strong><strong>n the University of Entrepreneurship, Customer Development is a pre-requisite, and there&#8217;s no such thing as graduation</strong></em>. What you think you know is probably wrong. You can&#8217;t getting inside your customer&#8217;s head without getting out of the building. Any attitude otherwise is doomed to fail.</li>
+<li><em><strong>It&#8217;s not that the parking industry wasn&#8217;t ready for us. We weren&#8217;t ready, and didn&#8217;t know how to speak their language. </strong></em></li>
+<li><em><strong>Pivoting for pivoting&#8217;s sake is worthless.</strong></em><strong> </strong>It should be a calculated affair, where changes to the business model are made, hypotheses are tested, and results are measured. Otherwise, you can&#8217;t learn anything.</li>
+<li><em><strong>When it comes to entrepreneurship education, nothing beats a good reading list and personal experience.</strong></em> Having graduated with a degree in Entrepreneurship, I thought I was ready to fire on all cylinders. I was wrong. Nothing has prepared me more for success in the startup world than a handful (a roomful, rather) of good books. Works by Steve Blank (Customer Development Guru), Eric Ries (Lean Startup Guru), and the Heath Brothers (Applied Psychology Gurus) are great places to start.</li>
+<li><em><strong>Ignore the hype. Focus on product-market fit, earlyvangelists, and bright spots.</strong></em><strong> </strong>Along our journey, lots of really cool stuff happened. We got featured in the press (<a href="http://www.inc.com/millennial-entrepreneurs/why-being-unreasonable-pays-off.html">press</a>, <a href="http://upstart.bizjournals.com/companies-executives/2011/02/28/innovative-student-startups-at-kairos-global-summit.html">press</a>, <a href="http://bostinno.streetwise.co/2011/05/24/hello-parking-looks-to-make-parking-in-boston-less-painful/">press</a>, and more <a href="http://www.cbsnews.com/8301-505143_162-41841675/ten-college-startups-that-want-to-change-the-world/">press</a>). We were finalists in business showcases. We (nearly) made it to TechStars. I confused this excitement with success, and I should have seen it as a distraction.</li>
+<li><b><i>Broadcast knowledge, and share failure. It opens doors and is helpful to others.</i> </b>Failure doesn&#8217;t need to be guarded, and shouldn&#8217;t be a source of embarrassment. Writing about what we learned attracted new connections and got me recruited into my current position, where I have been for two years.</li>
+</ul>
+<p><span id="more-898"></span></p>
+<h2>&#8220;Why do you think you failed?&#8221; is a question I continue to get asked.</h2>
+<p>Years have passed, and with them I&#8217;ve grown a deeper understanding to the answer here. Our first model (&#8220;AirBnb for parking spaces&#8221;), has since sprouted dozens of fellow upstart imitations, without much success. Just like ours, many who started in this model have since graduated to the commercial parking space. It seems that the reason the AirBnb model hasn&#8217;t quite worked yet is the difficulty in collecting enough supply. Some have found marginal success at the hyper-local level, but none have found a model that works at scale.</p>
+<p><strong>More folks are hunting for parking spaces than exist parking space owners who are willing to share</strong>. This is the problem we weren&#8217;t able to solve, and a problem that still exists today for folks taking their own stab at the driveway sharing business. That&#8217;s not to say it&#8217;s a problem that can&#8217;t be solved, but rather it&#8217;s a tough one that has <em>yet</em> to be solved at scale (that I&#8217;ve seen, anyway).</p>
+<p>&nbsp;</p>
+<h2>And then we pivoted. And pivoted. And pivoted&#8230;</h2>
+<p>Our failed attempts at the &#8220;ZipCar for parking&#8221;, &#8220;Priceline for Parking&#8221; and &#8220;Groupon for parking&#8221; models followed in the months thereafter. <strong>And then we gave up.</strong> At the time, I was convinced that the industry wasn&#8217;t ready for our innovations. I was convinced that property managers and parking operators didn&#8217;t &#8220;get it&#8221; or just didn&#8217;t care.</p>
+<p>That just can&#8217;t be the case. And it wasn&#8217;t.</p>
+<p>I&#8217;m now the product manager at QuickPay, where I have been for two years. I know from first hand experience that parking operators are willing to innovate. They&#8217;re looking for ways to grow their businesses. But at the time, I just didn&#8217;t know how to speak their language. <strong>I didn&#8217;t know a lot of things. </strong></p>
+<p>&nbsp;</p>
+<h2>I did everything wrong.</h2>
+<p>First of all, I didn&#8217;t have a good understanding of the Customer Development model. And though I didn&#8217;t realize it at the time, doing &#8220;xyz for parking&#8221; isn&#8217;t the way to build product and discover value. <strong>The transitive property doesn&#8217;t apply as well in the startup world</strong>. (&#8220;<del>If <em>x</em> worked for industry <em>y</em>, then <em>x</em> must work for industry <em>z</em></del>&#8220;)</p>
+<p>The truth is, as co-founders of HelloParking we huddled together to decide on ideas that sounded nice, built prototypes, put on our salesman hats, and didn&#8217;t understand why we weren&#8217;t closing deals. And then we rinsed and repeated. <strong>We pivoted because pivoting seemed like the right thing to do</strong>.</p>
+<p>But we never defined clear hypotheses, developed experiments, and we rarely had meaningful conversations with our target end-users. And while we had some wonderful advisors in the parking industry, we should have met with everyone we could get our hands on. <strong>Worst, we rarely got out of the building</strong>.</p>
+<p>But at the end of the day, I&#8217;m fortunate to have had the opportunity to learn from my mistakes in my early twenties. And I&#8217;m fortunate to have been given a second chance as an early employee at QuickPay. I&#8217;m better for the experience, and have learned from it. I only hope that some of you out there can learn from my mistakes as well.</p>
+<p>&nbsp;</p>
+<h2></h2>
+<div style="padding-bottom:20px; padding-top:10px;" class="hupso-share-buttons"><!-- Hupso Share Buttons - http://www.hupso.com/share/ --><a class="hupso_counters" href="http://www.hupso.com/share/"><img src="http://static.hupso.com/share/buttons/share-small.png" style="border:0px; padding-top:2px; float:left;" alt="Share Button"/></a><script type="text/javascript">var hupso_services_c=new Array("twitter","facebook_like","facebook_send","pinterest","linkedin");var hupso_twitter_via = "chris_hoog";var hupso_counters_lang = "en_US";var hupso_image_folder_url = "";var hupso_twitter_via="chris_hoog";var hupso_url_c="";var hupso_title_c="Part Two of the HelloParking postmortem: a look back, and a new perspective";</script><script type="text/javascript" src="http://static.hupso.com/share/js/counters.js"></script><!-- Hupso Share Buttons --></div><div class="wp-about-author-containter-around" style="background-color:#FFEAA8;"><div class="wp-about-author-pic"><img alt='' src='http://1.gravatar.com/avatar/3fd96cc4c4dd8a765137a1fe9f1216ab?s=100&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D100&amp;r=G' class='avatar avatar-100 photo' height='100' width='100' /></div><div class="wp-about-author-text" style="margin-left:140px"><h3><a href='http://chrishoog.com/author/mailchrishoog-com/' title='Chris Hoogewerff'>Chris Hoogewerff</a></h3><p>Product manager @Raizlabs. Enthusiastic about building products that influence positive behavior change. Energized by outdoor adventure.</p><p><a href='http://chrishoog.com/author/mailchrishoog-com/' title='More posts by Chris Hoogewerff'>More Posts</a> </p><p class="wpa-nomargin">Follow Me:<br /><a class='wpa-social-icons' href='http://www.twitter.com/chris_hoog'><img src='http://chrishoog.com/wp-content/plugins/wp-about-author/images/twitter.png' alt='Twitter'/></a><a class='wpa-social-icons' href='http://www.linkedin.com/in/chrishoog'><img src='http://chrishoog.com/wp-content/plugins/wp-about-author/images/linkedin.png' alt='LinkedIn'/></a><a class='wpa-social-icons' href='110285044048158046526?rel=author'><img src='http://chrishoog.com/wp-content/plugins/wp-about-author/images/googleplus.png' alt='Google Plus'/></a></p></div></div>								</div> 	<!-- end .post_content -->
+	
+	</article> <!-- end .post -->
+	
+			
+		
+	<!-- You can start editing here. -->
+<p>Thanks for reading! <a href="http://eepurl.com/ELxwj">Subscribe here</a> to get new posts sent to your inbox. <a href="mailto:mail@chrishoog.com">Get in touch</a> if you'd like to connect! I'm also on <a href="http://linkedin.com/in/chrishoog" target="_blank">LinkedIn</a>, <a href="http://twitter.com/chris_hoog" target="_blank">Twitter</a> and <a href="https://plus.google.com/u/0/110285044048158046526?rel=author">Google+</p>
+<!-- Some pasted code starts. -->
+<!-- Some pasted code ends. -->
+
+
+
+
+
+
+
+<section id="comment-wrap">
+			<h1 id="comments" class="page_title">3 Comments</h1>
+			
+				
+					<ol class="commentlist clearfix">
+					<li class="comment even thread-even depth-1" id="li-comment-275">
+		<article id="comment-275" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt='' src='http://0.gravatar.com/avatar/add9673ac94c7437913b4d19c4dd5635?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div> <!-- end .comment_avatar -->
+			
+			<div class="comment_postinfo">
+				<span class="fn">jeremy seitz</span>				<span class="comment_date">
+					September 8, 2013				</span>		
+							</div> <!-- end .comment_postinfo -->
+				
+			<div class="comment_area">
+																				
+				<div class="comment-content clearfix">
+					<p>Your posts don&#8217;t seem to have a date visible anywhere. I read the first part of this story via HN, but saw in the comments the post was two years old. I don&#8217;t even know when this post was made. Adding a date would really help your readers.</p>
+					
+					<div class="reply-container"><a class='comment-reply-link' href='/the-helloparking-postmortem-a-look-back-and-a-new-perspective/?replytocom=275#respond' onclick='return addComment.moveForm("comment-275", "275", "respond", "898")'>Reply</a></div>				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- end comment-body -->
+<ul class="children">
+	<li class="comment byuser comment-author-mailchrishoog-com bypostauthor odd alt depth-2" id="li-comment-276">
+		<article id="comment-276" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/3fd96cc4c4dd8a765137a1fe9f1216ab?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div> <!-- end .comment_avatar -->
+			
+			<div class="comment_postinfo">
+				<span class="fn">Chris Hoogewerff</span>				<span class="comment_date">
+					September 9, 2013				</span>		
+							</div> <!-- end .comment_postinfo -->
+				
+			<div class="comment_area">
+																				
+				<div class="comment-content clearfix">
+					<p>Jeremy, </p>
+<p>Thanks for the heads up! I found that the feature had  been disabled by default on my theme. It&#8217;s back up now.<br />
+Cheers, and thanks for reading.</p>
+					
+					<div class="reply-container"><a class='comment-reply-link' href='/the-helloparking-postmortem-a-look-back-and-a-new-perspective/?replytocom=276#respond' onclick='return addComment.moveForm("comment-276", "276", "respond", "898")'>Reply</a></div>				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- end comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1" id="li-comment-332">
+		<article id="comment-332" class="comment-body clearfix">
+			<div class="comment_avatar">
+				<img alt='' src='http://1.gravatar.com/avatar/1d505a83ebc17da30d266b82fd1a364d?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=G' class='avatar avatar-60 photo' height='60' width='60' />			</div> <!-- end .comment_avatar -->
+			
+			<div class="comment_postinfo">
+				<span class="fn"><a href='http://www.parkinghood.com' rel='external nofollow' class='url'>Joan Viladomat</a></span>				<span class="comment_date">
+					September 19, 2013				</span>		
+							</div> <!-- end .comment_postinfo -->
+				
+			<div class="comment_area">
+																				
+				<div class="comment-content clearfix">
+					<p>Hello Chris! Nice to meet you. Actually, really nice! We are developing the same project like your original one: &#8220;An Airbnb for parking spaces&#8221;. It&#8217;s called Parkinghood and we will start in Barcelona. Your 2 articles were a huge learning for me! Thank you very much for sharing.</p>
+<p>Actually, it seems that I&#8217;m following your steps because some months ago the responsible of another project, more focused in parking lots, asked for my collaboration. He is the owner of a parking lot and knows a lot about the industry (he speaks their language), so helping him I&#8217;m also learning a lot.  As you know, when you try things, other opportunities will appear on the way. </p>
+<p>Right now, we are in the early stage of both projects. I know the Airbnb model will be hard (after reading your articles, I know it even more) but I don&#8217;t give up yet. I know about Lean Startup and Customer Development and I hope these tools will help me go further. If not, I will write an article and go for another project! <img src="http://chrishoog.com/wp-includes/images/smilies/icon_wink.gif" alt=";)" class="wp-smiley" /></p>
+<p>BTW I liked a lot the iniative of &#8220;Startup Obituaries&#8221; (I knew about you because of it).</p>
+<p>Keep in touch and good luck with QuickPay!</p>
+					
+					<div class="reply-container"><a class='comment-reply-link' href='/the-helloparking-postmortem-a-look-back-and-a-new-perspective/?replytocom=332#respond' onclick='return addComment.moveForm("comment-332", "332", "respond", "898")'>Reply</a></div>				</div> <!-- end comment-content-->
+			</div> <!-- end comment_area-->
+		</article> <!-- end comment-body -->
+</li><!-- #comment-## -->
+			</ol>
+				
+					
+					<div id="trackbacks">
+				<h3 id="trackbacks-title">Trackbacks/Pingbacks</h3>
+				<ol class="pinglist">
+							<li id="comment-224"><a href='http://chrishoog.com/from-beginning-to-end-the-story-of-a-failed-parking-startup/' rel='external nofollow' class='url'>From beginning to end, the story of a failed parking startup - Chris Hoogewerff</a> - [&#8230;] shared some new insight in a more recent post: The HelloParking postmortem Part Two: a look back, and a &hellip;	</li><!-- #comment-## -->
+		<li id="comment-235"><a href='http://www.rocketboom.com/news/part-two-of-a-failed-parking-startups-postmortem-a-new-perspective/' rel='external nofollow' class='url'>Part Two of a failed parking startup&#8217;s postmortem: a new perspective &#124; Rocketboom</a> - [&#8230;] Part Two of a failed parking startup&#8217;s postmortem: a new perspective  Source: http://chrishoog.com/the-helloparking-postmortem-a-look-back-and-a-new-perspective/ 0 &nbsp;&nbsp; [&#8230;] 	</li><!-- #comment-## -->
+		<li id="comment-574"><a href='http://undertheradar.co.kr/2014/02/05/101-%eb%a7%8c%ec%95%bd%ec%97%90-51%ea%b0%9c%ec%9d%98-%ec%8a%a4%ed%83%80%ed%8a%b8%ec%97%85%ec%9d%b4-%ec%9d%b4%ec%95%bc%ea%b8%b0%ed%95%98%eb%8a%94-%ec%8b%a4%ed%8c%a' rel='external nofollow' class='url'>[101] &#8216;만약에&#8217; 51개의 스타트업이 이야기하는 실패 요인 분석 (51 Startup Failure Post-Mortems) | Under the Radar</a> - [&#8230;] 헬로우파킹(HelloParking) 사후 분석 파트 II: 회상 그리고 새로운 관점 Title: Part Two of the HelloParking postmortem: a look back, &hellip;	</li><!-- #comment-## -->
+		<li id="comment-590"><a href='http://www.cbinsights.com/blog/trends/startup-failure-post-mortem' rel='external nofollow' class='url'>51 Startup Failure Post-Mortems</a> - [&#8230;] Title: Part Two of the HelloParking postmortem: a look back, and a new perspective [&#8230;] 	</li><!-- #comment-## -->
+		<li id="comment-606"><a href='http://innovation-action.com/lessons-learned-of-failed-parking-startups-postmortem/' rel='external nofollow' class='url'>Parking Start-up failure: lessons learned | Innovation in action</a> - [&#8230;] See on chrishoog.com [&#8230;] 	</li><!-- #comment-## -->
+		<li id="comment-2546"><a href='http://tech.co/50-startups-share-startups-failed-2014-10' rel='external nofollow' class='url'>30 Founders Share Why Their Startups Failed</a> - [&#8230;] 15. HelloParking [&#8230;] 	</li><!-- #comment-## -->
+				</ol>
+			</div>
+				
+												<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title"><span>Submit a Comment</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/the-helloparking-postmortem-a-look-back-and-a-new-perspective/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://chrishoog.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Submit" />
+							<input type='hidden' name='comment_post_ID' value='898' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3c8a26f35f" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="224"/></p>					</form>
+							</div><!-- #respond -->
+					
+</section>		
+
+</div> <!-- end #left-area -->
+				<div id="sidebar">
+				<div id="recent-posts-2" class="widget widget_recent_entries">		<h4 class="widgettitle">You might also like&#8230;</h4>		<ul>
+					<li>
+				<a href="http://chrishoog.com/designing-lasting-habits-takeaways-habit-summit/">Designing Lasting Habits &#8211; Takeaways from the Habit Summit</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/product-managers-guide-shipping-happiness/">A product manager&#8217;s guide to shipping happiness</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/wisestamp-focusing-revenue-forgetting-product/">WiseStamp: focusing on revenue but forgetting about product</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/hey-apps-daily-reminders-youre-wrong/">Hey apps with daily reminders: you&#8217;re doing it wrong</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/reinventing-screenshot-sharing-experience/">Reinventing the screenshot sharing experience</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/3-reasons-to-love-square-cash-and-1-thing-they-could-be-doing-better/">3 reasons to love Square Cash and 1 thing they could be doing better</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/mobile-first-referral-programs-explored/">Mobile-first referral programs explored</a>
+						</li>
+					<li>
+				<a href="http://chrishoog.com/kauai-adventure-guide/">Kauai Adventure Guide: hiking, backpacking, kayaking and snorkeling</a>
+						</li>
+				</ul>
+		</div> <!-- end .widget --><div id="archives-2" class="widget widget_archive"><h4 class="widgettitle">Archives</h4>		<ul>
+	<li><a href='http://chrishoog.com/2014/12/'>December 2014</a></li>
+	<li><a href='http://chrishoog.com/2014/03/'>March 2014</a></li>
+	<li><a href='http://chrishoog.com/2014/02/'>February 2014</a></li>
+	<li><a href='http://chrishoog.com/2014/01/'>January 2014</a></li>
+	<li><a href='http://chrishoog.com/2013/12/'>December 2013</a></li>
+	<li><a href='http://chrishoog.com/2013/11/'>November 2013</a></li>
+	<li><a href='http://chrishoog.com/2013/09/'>September 2013</a></li>
+	<li><a href='http://chrishoog.com/2013/08/'>August 2013</a></li>
+	<li><a href='http://chrishoog.com/2013/07/'>July 2013</a></li>
+	<li><a href='http://chrishoog.com/2013/05/'>May 2013</a></li>
+	<li><a href='http://chrishoog.com/2011/08/'>August 2011</a></li>
+	<li><a href='http://chrishoog.com/2010/12/'>December 2010</a></li>
+	<li><a href='http://chrishoog.com/2010/11/'>November 2010</a></li>
+	<li><a href='http://chrishoog.com/2010/08/'>August 2010</a></li>
+	<li><a href='http://chrishoog.com/2010/07/'>July 2010</a></li>
+		</ul>
+</div> <!-- end .widget --><div id="pages-2" class="widget widget_pages"><h4 class="widgettitle">Pages</h4>		<ul>
+			<li class="page_item page-item-496"><a href="http://chrishoog.com/about/">About me</a></li>
+<li class="page_item page-item-342"><a href="http://chrishoog.com/adventures/">my adventures&#8230;</a></li>
+<li class="page_item page-item-551"><a href="http://chrishoog.com/product-and-entrepreneurship/">thoughts on product and entrepreneurship&#8230;</a></li>
+		</ul>
+		</div> <!-- end .widget -->	</div> <!-- end #sidebar -->
+			
+		</div> <!-- end #content-area -->
+	</div> <!-- end .container -->
+</div> <!-- end #main-area -->
+	
+	<footer id="main-footer">
+	
+<div id="footer-widgets" class="clearfix container">
+<div class="footer-widget"><div id="text-5" class="footer-widget widget_text"><h4 class="widgettitle"> </h4>			<div class="textwidget"></div>
+		</div> <!-- end .footer-widget --></div> <!-- end .footer-widget --><div class="footer-widget"><div id="text-2" class="footer-widget widget_text"><h4 class="widgettitle"> </h4>			<div class="textwidget"><p align="center"><a href="http://linkedin.com/in/chrishoog" target="_blank"><img src="http://i.imgur.com/zJAl08C.png"></a>
+
+<a href="http://twitter.com/chris_hoog" target="_blank"><img src="http://i.imgur.com/Na0jalH.png"></a>
+
+
+<a href="http://chrishoog.com/about"><img src="http://i.imgur.com/z8nLVjC.png"></a></p>
+<br>
+<p align="center"><a href="http://eepurl.com/ELxwj" target="_blank">Subscribe to my posts</a></p></div>
+		</div> <!-- end .footer-widget --></div> <!-- end .footer-widget --></div> <!-- end #footer-widgets -->	
+		<div id="footer-bottom">
+
+		</div> <!-- end #footer-bottom -->
+	</footer> <!-- end #main-footer -->
+<script type="text/javascript">
+var iworks_upprev = { animation: 'fade', position: 'right', offset_percent: 75, offset_element: '#comments', css_width: 360, css_side: 5, compare: 'category', url_new_window: 0, ga_track_views: 1, ga_track_clicks: 1, ga_opt_noninteraction: 1, title: 'Part Two of the HelloParking postmortem: a look back, and a new perspective' };
+</script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/plugins/akismet/_inc/form.js?ver=3.0.3'></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41110835-1', 'chrishoog.com');
+  ga('send', 'pageview');
+
+</script><script type='text/javascript' src='http://chrishoog.com/wp-includes/js/comment-reply.min.js?ver=4.0.5'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/js/superfish.js?ver=1.0'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/js/jquery.fitvids.js?ver=1.0'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/js/modernizr-min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/js/custom.js?ver=1.0'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/epanel/page_templates/js/fancybox/jquery.easing-1.3.pack.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
+var et_ptemplates_strings = {"captcha":"Captcha","fill":"Fill","field":"field","invalid":"Invalid email"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://chrishoog.com/wp-content/themes/theme/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
+<div id="upprev_box"><h6>More in <a href="http://chrishoog.com/category/product/" rel="Part Two of the HelloParking postmortem: a look back, and a new perspective">Product &amp; entrepreneurship</a></h6><div class="upprev_excerpt upprev_thumbnail"><a href="http://chrishoog.com/ask-yourself-every-day-what-would-it-take-to-convince-me-im-wrong/" title="Ask yourself every day: &#8220;What would it take to convince me I&#8217;m wrong?&#8221;" class="upprev_thumbnail" rel="Part Two of the HelloParking postmortem: a look back, and a new perspective"><img width="48" height="48" src="http://chrishoog.com/wp-content/uploads/2013/08/Crystal-ball-150x150.jpg" class="iworks_upprev_thumb wp-post-image" alt="Crystal-ball" title="Ask yourself every day: &#8220;What would it take to convince me I&#8217;m wrong?&#8221;" /></a><h5><a href="http://chrishoog.com/ask-yourself-every-day-what-would-it-take-to-convince-me-im-wrong/" rel="Part Two of the HelloParking postmortem: a look back, and a new perspective">Ask yourself every day: &#8220;What would it take to convince me I&#8217;m wrong?&#8221;</a></h5><p>I recently came acro...</p></div><a id="upprev_close" href="#" rel="close">Close</a></div></body>
+</html>

@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html>
+<html>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+        <title>The Ambitious Life — YouCastr - A Post-Mortem</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="YouCastr - A Post-Mortem" />
+
+        <meta name="color:Accent" content="#4EA3D0"/>
+        <meta name="font:Body" content="'Helvetica Neue', Helvetica, Arial, sans-serif"/>
+        <meta name="if:Two column posts" content="1"/>
+
+        <!-- Appearance option -->
+        <meta name="if:Show bar on top" content="1"/>
+        <meta name="if:Show blog title" content="1"/>
+        <meta name="if:Show blog description" content="1"/>
+        <meta name="if:Show profile photo" content="1"/>
+        <meta name="if:Use endless scrolling" content="1"/>
+
+
+        <meta name="if:Show right column" content="1"/>
+        <meta name="if:Place timestamp in left column" content="1"/>
+        <meta name="if:Use larger font for quotes" content="0"/>
+        <meta name="if:Show image shadows" content="1"/>
+        <meta name="if:Show tags" content="1"/>
+        <meta name="if:Show post notes" content="1"/>
+        <meta name="if:Show copyright in footer" content="1"/>
+        <meta name="text:Disqus Shortname" content="" />
+        <meta name="text:Google Analytics ID" content=""/>
+
+        <style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://38.media.tumblr.com/avatar_17c1f929e7f2_128.png" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://theambitiouslife.com/rss"/>
+
+        <!-- HTML5 Shiv -->
+        <!--[if lt IE 9]>
+                <script src="http://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="http://static.tumblr.com/thpaaos/DIcklyl4z/reset.css" type="text/css">
+
+        <!-- Theme CSS -->
+        <style type="text/css" media="screen">
+            body {
+                -webkit-font-smoothing: antialiased;
+                font-size: 15px;
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                line-height: 24px;
+                margin: 0;
+                padding: 0;
+            }
+
+            *:active, *:focus { outline-width: 0px; }
+            img { max-width: 100% }
+            .post .top.media img { width: 100%; }
+            a { text-decoration: none; color: #4EA3D0; }
+            a img { border-width: 0px; }
+            strong { font-weight: bold; }
+            em { font-style: italic; }
+
+            .group:after {
+                visibility: hidden;
+                display: block;
+                content: "";
+                clear: both;
+                height: 0;
+                }
+            * html .group             { zoom: 1; } /* IE6 */
+            *:first-child+html .group { zoom: 1; } /* IE7 */
+
+            iframe#tumblr_controls {
+                top: 12px !important;
+            }
+
+            #color_bar {
+                height: 12px;
+                background: #4EA3D0;
+            }
+
+            #container {
+                width: 950px;
+                margin: 0 auto;
+                padding: 60px 20px;
+            }
+
+            #header {
+                height: 48px;
+                margin: 0 0 60px 0;
+            }
+
+            #blog_info {
+                width: 700px;
+                margin: 0 60px 0 0;
+                float: left;
+            }
+
+            #blog_info h1 {
+                font-size: 36px;
+                font-weight: bold;
+                letter-spacing: -1px;
+                line-height: 36px;
+                margin: 8px 0 0 0;
+            }
+
+            #blog_info h1 a {
+                color: #333333;
+            }
+                            
+            #blog_info h1 a:hover {
+                color: #000;
+            }
+
+            #blog_info h1 a:active {
+                position: relative;
+                top: 1px;
+            }
+
+            #blog_info p, #blog_info .cont {
+                color: #646464;
+                margin-top: 7px;
+            }
+
+            .cont {
+                margin-bottom: 7px;
+            }
+
+            #blog_avatar {
+                width: 188px;
+                position: relative;
+                float: right;
+                
+            }
+
+            #blog_avatar a {
+                width: 48px;
+                height: 48px;
+                
+                    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .21);
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, .21);
+                  
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+            }
+
+            #blog_avatar img {
+                width: 48px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+            }
+
+            #blog_avatar a::before {
+                content: " ";
+                width: 46px;
+                height: 46px;
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                border: 1px solid rgba(0,0,0,.1);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 999;
+                display: block;
+            }
+
+            #blog_avatar:hover a {
+                width: 64px;
+                height: 64px;
+                top: -8px;
+                left: -8px;
+            }
+
+            #blog_avatar:hover a img {
+                width: 64px;
+            }
+
+            #blog_avatar:hover a::before {
+                width: 62px;
+                height: 62px;
+            }
+
+            #blog_avatar:active a {
+                top: -7px;
+                -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, .21);
+                box-shadow: 0px 0px 1px rgba(0, 0, 0, .21);
+            }
+
+            #posts {
+                width: 700px;
+                color: #4C4C4C;
+                margin: 0 60px 0 0;
+                float: left;
+            }
+
+            #posts .post {
+                list-style-type: none;
+                border-bottom: 1px solid #E6E6E6;
+                margin: 0 0 45px 0;
+                padding: 0 0 45px 0;
+            }
+
+
+
+            .top.audio * {
+                width: 700px;
+                height: 91px
+            }
+
+            .top.media {
+                line-height: 0;
+                
+                    -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+                    box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, .27);
+                
+                position: relative;
+                display: inline-block;
+            }
+
+            .top.media.photoset {
+                line-height: 0;
+                
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                
+                position: relative;
+                display: inline-block;
+            }
+
+            .media img {
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+            }
+
+            .link_post .link {
+                color: #4EA3D0;
+                font-size: 21px;
+                font-weight: bold;
+                border: 1px solid rgba(78,163,208, 0.13);
+                background: rgba(78,163,208, 0.13);
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                padding: 15px 53px 15px 20px;
+                position: relative;
+                display: block;
+            }
+
+            .link .arrow {
+                width: 0; 
+                height: 0; 
+                border-top: 8px solid transparent;
+                border-bottom: 8px solid transparent;
+                border-left: 12px solid #4EA3D0;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                margin-top: -8px;
+                display: block;
+            }
+
+            .link_post .link:hover {
+                border: 1px solid rgba(78,163,208, 0.2);
+                background: rgba(78,163,208, 0.2);
+            }
+
+            .link_post .link:active {
+                position: relative;
+                top: 1px;
+            }
+
+            #posts .post .caption_and_post_info.after_top_part {
+                border-top: 0;
+                margin: 30px auto auto auto;
+                padding-top: 0;
+            }
+
+            .post .caption {
+                width: auto;
+                float: none;
+            }
+
+            
+            .post .caption {
+                width: 513px;
+                float: right;
+            }
+            
+
+            .content_source {
+                margin-bottom: 20px;
+            }
+
+            .content_source img {
+                margin: 0 0 0 4px !important;
+                opacity: 0.7;
+                vertical-align: middle;
+            }
+
+            .caption a, .description a {
+                color: #4EA3D0;
+                padding: 0 1px;
+            }
+
+            .caption a:hover, .description a:hover {
+                background: rgba(78,163,208, 0.13);
+            }
+
+            .caption a:active, .description a:active {
+                background: rgba(78,163,208, 0.2);
+            }
+
+            .caption h2 {
+                font-size: 32px;
+                line-height: 33px;
+                margin: 0 0 18px 0;
+            }
+
+            .caption h2 a {
+                color: #333;
+                font-weight: bold;
+                letter-spacing: -1px;
+            }
+
+            .caption h2 a:hover {
+                color: #4EA3D0;
+                background: transparent;
+            }
+                                
+            .caption blockquote {
+                border-left: 2px solid #E6E6E6;
+                padding: 1px 0 1px 20px;
+            }
+
+            .caption pre {
+                background: #eee;
+                font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Anonymous Pro", "Courier New", monospace, serif;
+                overflow: scroll;
+                padding: 10px;
+                border-radius: 3px;
+                font-size: 13px;
+                line-height: 19px;
+            }
+
+            .caption p,
+            .caption ol,
+            .caption ul,
+            .caption pre,
+            .caption h1,
+            .caption h2,
+            .post h3,
+            .caption h4,
+            .caption h5,
+            .caption blockquote,
+            .caption img,
+            .caption embed,
+            .caption object {
+                margin: 0 0 20px 0;
+            }
+
+            .caption p:empty {
+                display: none;
+            }
+
+            .caption iframe {
+                display: block !important;
+            }
+
+            .post .caption ul,
+            .post .caption ol {
+                margin-left: 18px;
+            }
+
+            .caption .question {
+                display: block;
+                padding: 15px;
+                font-size: 15px;
+            }
+
+            .caption .answer {
+                margin-top: 20px;
+            }
+
+            .caption .asker {
+                line-height: 24px;
+                margin: 25px 20px 0 23px;
+            }
+
+            .caption .asker img {
+                float: left;
+                margin: 0 7px 0 0;
+            }
+
+            .caption .asker a {
+                margin-left: 0;
+            }
+
+            .caption .quote {
+                color: #333;
+                font-weight: bold;
+            }
+
+            .quote span {
+                display: inline-block;
+            }
+
+            .quote.short_text {
+                font-size: 50px;
+                letter-spacing: -2px;
+                line-height: 48px;
+                margin: 0 0 18px 0;
+            }
+
+            .quote.short_text span {
+                margin: 0 0 0 -22px;
+            }
+
+            .quote.medium_text {
+                font-size: 36px;
+                letter-spacing: -1px;
+                line-height: 36px;
+                margin: 0 0 20px 0;
+            }
+
+            .quote.medium_text span {
+                margin: 0 0 0 -13px;
+            }
+
+            .quote.long_text,
+            .quote.text {
+                font-size: 24px;
+                line-height: 27px;
+                margin: 0 0 20px 0;
+            }
+
+            .quote.long_text span {
+                margin: 0 0 0 -9px;
+            }
+
+            .quote.larger_text {
+                font-size: 50px !important;
+                letter-spacing: -2px !important;
+                line-height: 48px !important;
+                margin: 0 0 18px 0 !important;
+            }
+
+            .quote.larger_text span {
+                margin: 0 0 0 -22px !important;
+            }
+
+            .quote_source {
+                margin: 0 0 20px 0 !important;
+            }
+
+            .caption .conversation {
+                margin-left: 0 !important;
+                margin-bottom: 30px;
+                list-style-type: none;
+            }
+
+            .conversation .chat_line {
+                padding: 10px 16px;
+            }
+
+            .conversation .chat_line.user1 {
+                background: #f5f5f5;
+            }
+
+            .conversation .chat_line.user2 {
+                background: #fff;
+            }
+
+            .conversation .chat_line.user3 {
+                background: #ddd;
+            }
+
+            .conversation .chat_line.user4 {
+                background: #ccc;
+            }
+
+            .post .post_info {
+                width: auto;
+                font-size: 12px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                list-style-type: none;
+                -webkit-font-smoothing: subpixel-antialiased;
+                margin: 1px 0 0 -3px;
+                overflow: hidden;
+            }
+
+            .post_info li {
+                line-height: 14px;
+                margin: 10px 0;
+                float: left;
+            }
+
+            .post_info li a {
+                margin: 0 10px 0 0;
+                padding: 0 2px 0 5px;
+            }
+
+            .post_info .timestamp {
+                color: #4c4c4c;
+                padding: 0 2px 0 5px;
+                display: inline-block;
+            }
+
+            .post_info .timestamp:hover {
+                background: rgba(0,0,0,.08);
+            }
+
+            .post_info .timestamp:active {
+                background: rgba(0,0,0,.1);
+            }
+
+            .post_info .notecount {
+                color: #4c4c4c;
+                padding: 0 2px 0 5px;
+                display: inline-block;
+            }
+
+            .post_info .notecount:hover {
+                background: rgba(0,0,0,.08);
+            }
+
+            .post_info .notecount:active {
+                background: rgba(0,0,0,.1);
+            }
+            
+            /* Post controls */
+
+            .post_controls {
+                border: 1px solid #e8e8e8;
+                border-radius: 3px;
+                float: left;
+                list-style: none;
+                margin: -10px 15px 15px 0;
+            }
+    
+            /* requires high specificity */
+            .post .post_info .post_controls li,
+            .post .post_info.floating .post_controls li {
+                float: left;
+                margin: 0;
+                padding: 7px 15px;
+                height: 21px;
+            }
+
+            .post_controls li:first-child {
+                border-right: 1px solid #e8e8e8;
+            }
+
+            .post .post_info .post_controls li a,
+            .post .post_info.floating .post_controls li a {
+                margin: 0;
+                padding: 0;
+            }
+            
+
+            /* Baselines */
+
+            .tag {
+                color: #4EA3D0;
+                display: table;
+            }
+
+            .tag span {
+                color: #4c4c4c;
+                display: table-cell;
+            }
+
+            .tag:hover {
+                background: rgba(78,163,208, 0.13);
+            }
+
+            .tag:hover span {
+                color: #4EA3D0;
+            }
+
+            .tag:active {
+                background: rgba(78,163,208, 0.2);
+            }
+
+            .post .post_info.floating {
+                width: 157px;
+                float: left;
+            }
+
+            .post .post_info.floating li {
+                float: none;
+            }
+
+            .post_notes {
+                clear: both;
+            }
+
+            ol.notes {
+                color: #4C4C4C;
+                font-size: 13px;
+                text-shadow: 0px 1px 0px rgba(255,255,255,.7);
+                text-align: left;
+                list-style-type: none;
+                border-top: solid 1px #E6E6E6;
+                -webkit-font-smoothing: subpixel-antialiased !important;
+                margin: 40px auto auto auto;
+            }
+
+            ol.notes li.note {
+                border-bottom: solid 1px #E6E6E6;
+                padding: 9px 0 10px 0;
+            }
+
+            ol.notes li.note img.avatar {
+                width: 16px;
+                height: 16px;
+                border-radius: 3px;
+                vertical-align: -4px;
+                margin-right: 6px;
+            }
+
+            ol.notes a {
+                color: #4C4C4C;
+                text-decoration: underline;
+            }
+
+                ol.notes a:hover {
+                    color: #4C4C4C;
+                }
+
+            ol.notes li.note blockquote {
+                border-color: #eee;
+                padding: 4px 10px;
+                margin: 10px 0px 0px 25px;
+            }
+
+            ol.notes li.note blockquote a {
+                text-decoration: none;
+            }
+
+            ol.notes li.note:last-child {
+                border-width: 0px;
+            }
+
+            #sidebar {
+                width: 188px;
+                color: #4c4c4c;
+                font-size: 14px;
+                margin: -8px 0 0 0;
+                float: right;
+            }
+
+            #sidebar .description {
+                line-height: 21px;
+                border-bottom: 1px solid #E6E6E6;
+                margin: 3px 0 20px 0;
+                padding: 0 0 20px 0;
+            }
+
+            #sidebar .links {
+                font-size: 12px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                list-style-type: none;
+                -webkit-font-smoothing: subpixel-antialiased;
+                margin: 0 0 20px 0;
+                line-height: 20px;
+            }
+
+            #sidebar .links a {
+                color: #4c4c4c;
+            }
+
+            #sidebar .links a:hover {
+                color: #4EA3D0;
+            }
+
+            .links .icon {
+                width: 12px;
+                height: 12px;
+                background: #383838 url('http://static.tumblr.com/thpaaos/1xRm66voi/icons_sprite.png');
+                margin: 0 8px 0 0;
+                display: inline-block;
+            }
+
+            .links a:hover .icon {
+                background-color: #4EA3D0;
+            }
+
+            .ask .icon { background-position: 0 0; margin-bottom: -2px; }
+            .submit .icon { background-position: 0 -12px; margin-bottom: -1px; }
+            .rss .icon { background-position: 0 -24px; }
+            .archive .icon { background-position: 0 -36px; }
+
+            .bubble {
+                color: #6f6f6f;
+                font-size: 13px;
+                line-height: 20px;
+                background: #f5f5f5;
+                border: 1px solid #d5d5d5;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                padding: 8px 12px;
+                position: relative;
+                display: none;
+            }
+
+            #twitter_container .bubble:first-child {
+                display: block;
+            }
+
+            .bubble .arrow {
+                width: 0; 
+                height: 0; 
+                position: absolute;
+                display: block;
+            }
+
+            .bubble .arrow.fill {
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid #f5f5f5;
+                bottom: -8px;
+                left: 25px;
+            }
+
+            .bubble .arrow.border {
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid #d5d5d5;
+                bottom: -10px;
+                left: 23px;
+            }
+
+            .bubble:hover {
+                background: #f2f2f2;
+                border-color: #CFCFCF;
+            }
+
+            .bubble:hover .arrow.fill {
+                border-top-color: #F1F1F1;
+            }
+
+            .bubble:hover .arrow.border {
+                border-top-color: #d5d5d5;
+            }
+
+            .twitter_username {
+                max-width: 166px;
+                color: #4c4c4c;
+                font-size: 12px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: 0.4em;
+                text-transform: uppercase;
+                text-overflow: ellipsis;
+                -webkit-font-smoothing: subpixel-antialiased;
+                margin: 11px 0 0 22px;
+                overflow: hidden;
+                display: inline-block;
+                opacity: 1;
+            }
+
+            .twitter_username:hover {
+                color: #4EA3D0;
+            }
+
+            #footer {
+                width: 700px;
+                color: #4C4C4C;
+                font-size: 12px;
+                font-family: 'Times New Roman', Times, serif;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                -webkit-font-smoothing: subpixel-antialiased;
+            }
+
+            #footer .copyright {
+                width: 50%;
+                float: left;
+            }
+
+            #footer .pagination {
+                width: 230px;
+                text-align: right;
+                float: right;
+                position: relative;
+            }
+
+            .pagination .count {
+                float: left;
+            }
+
+            .pagination .buttons {
+                width: 113px;
+                height: 30px;
+                margin: -2px 0 0 30px;
+                float: right;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 10;
+            }
+
+            .pagination .buttons.disabled {
+                z-index: 9;
+            }
+
+            .buttons a,
+            .buttons li {
+                width: 56px;
+                height: 28px;
+                line-height: 999px;
+                text-align: center;
+                border: 1px solid #C8C8C8;
+                -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+                box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+                background: #f1f1f1; /* Old browsers */
+                background: -moz-linear-gradient(top,  #f1f1f1 0%, #e8e8e8 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1f1f1), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* IE10+ */
+                background: linear-gradient(top,  #f1f1f1 0%,#e8e8e8 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e8e8e8',GradientType=0 );/* IE6-9 */
+                list-style-type: none;
+                overflow: hidden;
+                position: relative;
+                display: block;
+            }
+
+            .buttons.disabled li {
+                background: #f5f5f5;
+            }
+
+            .buttons a:active {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                background: #E6E6E6;
+            }
+
+            .buttons .arrow {
+                width: 10px;
+                height: 14px;
+                position: absolute;
+                top: 50%;
+                display: block;
+                background-image: url(http://static.tumblr.com/ogedyaw/xu1m8jxnf/arrow_sprite.png);
+            }
+
+            .buttons .left {
+                -webkit-border-top-left-radius: 2px;
+                -webkit-border-bottom-left-radius: 2px;
+                -moz-border-radius-topleft: 2px;
+                -moz-border-radius-bottomleft: 2px;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                position: absolute;
+                left: 0;
+            }
+
+            .left .arrow {
+                background-position: 0 15px;
+                margin: -7px auto auto 20px;
+            }
+                
+            .disabled .left .arrow {
+                background-position: 0 0;
+            }
+
+            .buttons .right {
+                border-left-width: 1px;
+                -webkit-border-top-right-radius: 2px;
+                -webkit-border-bottom-right-radius: 2px;
+                -moz-border-radius-topright: 2px;
+                -moz-border-radius-bottomright: 2px;
+                border-top-right-radius: 2px;
+                border-bottom-right-radius: 2px;
+                position: absolute;
+                right: 0;
+            }
+
+            .right .arrow {
+                background-position: 10px -71px;
+                margin: -7px auto auto 24px;
+            }
+
+            .disabled .right .arrow {
+                background-position: 10px -56px;
+            }
+
+            /* Protection for parents that have floating children */
+            #header:after,
+            #container:after,
+            .caption_and_post_info:after,
+            #footer:after
+            .buttons:after {
+                content: ".";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+        </style>
+
+        
+            <!-- Simplified permalink pages (Hides right column) -->
+            <style type="text/css" media="screen">
+                #container {
+                    width: 700px;
+                }
+
+                #header {
+                    width: 700px;
+                }
+
+                #blog_info {
+                    width: 513px;
+                    margin: 0;
+                }
+
+                #blog_avatar {
+                    width: 48px;
+                    height: 48px;
+                    backround-color: red;
+                }
+
+                #blog_avatar a {
+                    position: absolute;
+                    left: auto;
+                    right: 0;
+                }
+
+                #blog_avatar:hover a {
+                    left: auto;
+                    right: -8px;
+                }
+
+                #sidebar {
+                    display: none;
+                }
+
+                #blog_info {
+                    
+                }
+
+                #blog_info .description {
+                    margin-bottom: 60px;
+                }
+
+                .post .post_info,
+                .post .post_info.floating,
+                .post .caption {
+                    width: auto !important;
+                    float: none;
+                }
+
+                .post .post_info {
+                    margin-top: 45px;
+                }
+
+                .post .post_info li,
+                .post .post_info.floating li {
+                    line-height: 14px;
+                    margin-bottom: 10px;
+                    float: left;
+                }
+
+                .post .post_info li a,
+                .post .post_info.floating li a {
+                    margin: 0 10px 0 0;
+                    padding: 0 2px 0 5px;
+                }
+            </style>
+        
+
+        
+
+        <!-- Custom CSS -->
+        <style type="text/css" media="screen">
+            
+        </style>
+
+    <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=therealambitiouslife%26postID=48691070654" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://theambitiouslife.com/post/48691070654/youcastr-a-post-mortem" title="YouCastr - A Post-Mortem
+Introduction: Why I&rsquo;m writing this There are many post-mortems from failed startups out there, mainly because there are a lot of failed startups, and the people that start them tend to be very introspective and public about..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="technology" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="YouCastr - A Post-Mortem" /><meta property="og:url" content="http://theambitiouslife.com/post/48691070654/youcastr-a-post-mortem" /><meta property="og:description" content="Introduction: Why I&rsquo;m writing this There are many post-mortems from failed startups out there, mainly because there are a lot of failed startups, and the people that start them tend to be very..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://assets.tumblr.com/images/og/text_200.png" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=therealambitiouslife&amp;postID=48691070654" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=therealambitiouslife&amp;postID=48691070654" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="Introduction: Why I&rsquo;m writing this
+ There are many post-mortems from failed startups out there, mainly because there are a lot of failed startups, and the people that start them tend to be&nbsp;very introspective and public about their successes and failures. I&rsquo;m no different. &nbsp;This post-mortem will serve to get things off my chest, organize my&nbsp;thoughts, get the most out of the experience, and share my experience with others.
+ I&rsquo;m also writing this to be able to point to a single, detailed, lengthy answer to the inevitable questions I&rsquo;ll be getting from friends and colleagues about what&nbsp;happened with YouCastr. Now people can read to their heart&rsquo;s content.&nbsp;
+ As I write about my experiences, people who know startups will see many common themes. &nbsp;Most of the conclusions here are consistent with&nbsp;Paul&nbsp;Graham&rsquo;s analysis and understanding of startups, what&rsquo;s challenging, and why they fail (if you&rsquo;re planning on starting a company, especially in tech, read&nbsp;every single one of his&nbsp;essays). But no matter how many times you read or hear certain lessons, you have to do it yourself to really understand. Here are&nbsp;my specific and personal experiences to add color to that advice.
+A Brief History
+YouCastr is Born
+ The idea for YouCastr was hatched about three and a half years ago, during a car ride down from Jay Peak with my good friend Jeff Dwyer. &nbsp;Throughout&nbsp;the entire ride we were throwing ideas back and forth about cool companies, fun ideas, and stuff that bothered us. &nbsp;One in particular stuck with me, which&nbsp;was the idea of bringing Mystery Science Theater 3000 to the modern age, and&nbsp;let anyone provide their own comments. &nbsp;After exploring this some more, I&nbsp;ended up settling on sports as the logical market. This would mean the commentary would have to be live, because otherwise it would have been just a&nbsp;podcast platform, which was not very interesting technologically. &nbsp;A couple of days later I shared the idea with my soon to be co-founder Jeff Hebert, and&nbsp;we continued thinking about it. &nbsp;Within a few months we put together a team of 4, created our initial plans, and began building an alpha version.&nbsp;
+Initial progress
+ As we were getting off the ground, three of the four founders (including myself) were mainly working on building the actual product, since we couldn&rsquo;t do&nbsp;much of anything without that. We learned Ruby on Rails, did our own designing, worked nights and weekend on the startup as a complement to our&nbsp;management consulting day-jobs, and clawed our way to our initial alpha and private beta.&nbsp;
+Building the company
+ We then spent the next three years building the company, quitting our jobs, raising money,&nbsp;&nbsp;opening our office, hiring people, firing people, going back to&nbsp;bootstrap mode, and finally, pulling the plug.&nbsp;&nbsp;
+Pivoting
+ Startups are all about&nbsp;pivoting. It&rsquo;s like a word game where you start with HURT, change one letter at a time, then end with LOVE, with many other four-letter words along the way (btw,&nbsp;you really can do that in 6 moves). In our case, we started as a virtual sports bar where people could chime in audio commentary and ended up as a do-it-yourself pay-per-view video platform. &nbsp;Seems like a radical change, but each pivot was the equivalent of changing one letter.
+ Our first pivot was to focus&nbsp;on live audio sports broadcasting of games that weren&rsquo;t being televised (instead of adding commentary to nationally televised games), in response to what&nbsp;customers were doing. Then we added video broadcasting to that same market, focusing on broadcasting sports that weren&rsquo;t covered (primarily high&nbsp;school and college). &nbsp;And finally we expanded beyond sports, mainly by de-emphasizing the sports branding on our platform, and adding a few features&nbsp;more geared towards video producers than to schools and teams. All of these were&nbsp;natural pivots, not jumps.
+Shutting Down - The Reasons and Need
+1 - Ran out of cash
+ The single biggest reason we are closing down (a common one) is running out of cash. Despite putting the company in an EXTREMELY lean position,&nbsp;generating revenue, and holding out as long as we could, we didn&rsquo;t have the cash to keep going. The next few reasons shed more light as to why we chose&nbsp;to shut down instead of finding more cash.
+2 - The market was not there
+ The thesis of our current business model (startups are all about testing theses) was that there was a need for video producers and content owners to&nbsp;make money from their videos, and that they could do that by charging their audience. We found both sides of that equation didn&rsquo;t really work. I validated&nbsp;this in my conversations with companies with more market reach than us, that had tried similar products (ppv video platform), but pulled the plug because&nbsp;they didn&rsquo;t see the demand for it.&nbsp;
+ Video producers are afraid of charging for content, because they don&rsquo;t think people will pay. And they&rsquo;re largely right. Consumers still don&rsquo;t like paying for&nbsp;stuff, period.&nbsp;We did find some specific industry verticals where the model works (some high schools, some boxing and mixed martial arts events, some exclusive&nbsp;conferences), but not enough to warrant a large market and an independent company.
+3 - The team was ready to move on
+ The core team of 5 of us has already made significant personal, financial, and emotional investment over the past three years. We have had our share of&nbsp;tough breaks, not to mention almost two years without salary. &nbsp;
+4 - No light at the end of the tunnel
+ Given the industry trends we were seeing, we just didn&rsquo;t see a light at the end of the tunnel worth surviving for. &nbsp;This market may get slightly better, but it&rsquo;s&nbsp;not going to be a big company.&nbsp;&nbsp;
+5 - We need to put a stake in the ground
+ We&rsquo;re survivors. We hate giving up, and have tenaciously survived for a long time.&nbsp;&nbsp;We survived the worst economic environment in generations (during&nbsp;which we also tried to raise money), and knew&nbsp;how not to die.&nbsp;&nbsp;But it was time to shut down and move on.&nbsp;
+A Retrospective - Why we failed
+ In most of the following points I say we, but as CEO, many of the mistakes below can be placed directly on my shoulders, which I will take as a valuable&nbsp;experience as I move on.
+Didn&rsquo;t pivot fast enough
+ We did a pretty good job of pivoting, but we didn&rsquo;t make the hard choices quickly enough. Our first pivot, towards broadcasting of original sports content,&nbsp;took us 6 months. &nbsp;We had legacy users and web traffic that we were afraid of losing. We had a brand in one area. We had a story for investors,&nbsp;customers, and the community. All of that made it harder for us to quickly change our focus and apply all resources to the new area, which we knew was&nbsp;the long term future. We iterated our product quickly, but didn&rsquo;t&nbsp;pivot fast enough.&nbsp;
+ Didn&rsquo;t love it We started the company because we liked the idea and wanted to do something entrepreneurial. We weren&rsquo;t in love with the idea or market we were going&nbsp;after, and weren&rsquo;t core users of our product. We worked really hard getting it off the ground despite this, but it made it more difficult to sustain the energy&nbsp;and to understand the best product choices.
+Made hiring mistakes
+ Hire slow, fire fast. That&rsquo;s how the saying goes. We made a mistake when hiring. We hired too early (before&nbsp;product-market fit), and we rushed into it by foolishly setting an internal deadline to make the hiring&nbsp;decision, which drove us to ignore some gut reactions by some of the core team members.&nbsp;Eric Ries&nbsp;has a great overview of how not to make these mistakes in his&nbsp;Lean Hiring Tips&nbsp;post.
+Spent too much time raising money
+ Almost immediately after our private beta we started trying to raise money, and saw many of the typical challenges when&nbsp;raising money for the first time. &nbsp;This was late 2007 remember, when plenty of Web 2.0 companies were getting&nbsp;funded, and we got caught up in the spirit. &nbsp;We spent 6 months raising our angel round, and finally closed it after launching our public beta in February&nbsp;2008. &nbsp;We raised less than we should have (Chris Dixon&nbsp;notes that&nbsp;the worst thing a seed-stage company can do is raise too little money and only reach part way to a milestone, which is great advice). We spent 3 months getting ready for raising our next round, then 6 months&nbsp;beating our head against a wall trying to raise money during the financial collapse.&nbsp;Finally we regrouped, but had serious short term cash issues that we&nbsp;had to resolve with additional investment from current investors and cutting of costs. We then focused on the product and made some solid progress, with&nbsp;the plan on giving it another go. By the time we got there, though, we realized we didn&rsquo;t have the metrics we wanted, so pulled back our fundraising efforts&nbsp;and decided to go back to bootstrap mode.&nbsp;
+Never quite figured out customer acquisition
+ We never seriously figured out customer acquisition, and had trouble growing throughout our various pivots. Customer acquisition is hard and more&nbsp;expensive than most people realize when starting a company. There has been a lot of good analysis, including&nbsp;Andrew Chen&rsquo;s overview of&nbsp;calculating cost per customer acquisition&nbsp;and&nbsp;David Skok&rsquo;s warning about how it can be a&nbsp;startup killer, but it takes firsthand experience to understand that.&nbsp;
+Too many founders
+ We started the company with four co-founders. I believe&nbsp;Dharmesh Shah&nbsp;nailed it in his analysis of the&nbsp;optimal number of co-founders. In our case, the advantage of having 4 co-founders was that had more people and resources willing to work for sweat equity. But it also presented&nbsp;challenges, including slowing down decisions, as everyone naturally wants to chime in with their opinion. &nbsp;As CEO, a lot of this falls on me, as I should have&nbsp;been stronger in making decisions. I tend to be a consensus builder, but in my next startup I will have to improve my ability to make bold unpopular decisions while still&nbsp;motivating everyone and building consensus after the decision is made.&nbsp;&nbsp;On the plus side, the entire founding team was incredibly committed through the&nbsp;entire time, and we never had any of the fundamental&nbsp;founder issues&nbsp;that many people complain about become a major problem.&nbsp;
+Counted on big partnerships to close (when they didn&rsquo;t) and to help more than they did
+ We initiated some very interesting high level partnership and business development discussions with large companies. We put some hope into these&nbsp;deals, but large companies move much slower than startups, and every deal took much longer than we needed. Marc Andreesen even draws a parallel that going after large partnerships is like&nbsp;chasing Moby Dick.&nbsp;
+ We put too much stock and hope into closing some of these. And for the ones we did close, we expected more results than we got. It&rsquo;s an interesting dilemma, because&nbsp;partners are often the best acquirers, but the downfalls can even lead people to suggest to&nbsp;NOT partner with big and powerful companies.&nbsp;
+What I Learned and some of the positives
+ I&rsquo;m an optimist by nature, which you have to be to start a company given the odds and challenges. Given that, it&rsquo;s good to look back and think about the positives of the entire experience. It&rsquo;s incredibly satisfying to create a revenue-generating company that is flirting with cash-flow positive, especially having started with a crazy idea. The experience of building a company and tasting success was incredible, and though we didn&rsquo;t quite get over the hump, we have tasted it, and it will only motivate me more to get there again, through all the hardships.
+ On a personal level, I&rsquo;ve learned more about business, people, life, and myself over the past three years than I ever have.&nbsp;I have made life-long friends with whom I can share these experiences with.&nbsp;I have come closer to understanding how to reach my limits, which is one of my fundamentals goals in life. &nbsp;Startups let you try and find those limits &nbsp;in a way that most jobs wouldn&rsquo;t, and I&rsquo;ll keep pushing.&nbsp;And best of all, I have realized that my true passion is entrepreneurship. I have a very addictive personality, and therefore only do things where I am comfortable with the extreme case, like starting companies or running&nbsp;ultra-marathons.&nbsp;
+ We built a great culture, including some great parties for the local tech-scene, competitive ping-pong matches, and late night coding sessions with house music blasting.&nbsp;We converted three lifelong PC people to Mac, all of whom are happier for it. &nbsp;And most satisfying, we helped kick start two young and promising careers, those of our designer and community manager.
+Moving Forward
+ My long term goal is to continue starting companies. &nbsp;There&rsquo;s no question I&rsquo;m in a better position&nbsp;now to start another company than I was when I first started YouCastr. &nbsp;It&rsquo;s almost like thinking back at how much more fun high school would have been had you&nbsp;known what you knew when you graduated back when you started. Practically speaking, though, after having gone almost 2 years without a salary, I&rsquo;m not in a financial position to&nbsp;bootstrap another company, which is the way I would really want to start a company. &nbsp;
+ In the short term I&rsquo;m working on various projects for my consulting company,&nbsp;Scenario4. We are working with some great people on some fun projects across the tech world. &nbsp;I am also pursuing several side projects, including the recently launched&nbsp;BooksforBits, a non-profit company designed to help accelerate the transition to ebooks while getting books to communities in need.
+ It&rsquo;s an incredibly exciting time in technology. We are on the cusp of the&nbsp;post-pc era, which includes a revolution in the mobile space, and in how we interact with and perceive computers. We are in a world where startups can be more capital efficient than ever before. And most interestingly for me, as a society we are going to be facing challenges unlike any we have ever seen.&nbsp;
+ With every ending is a new beginning, and I&rsquo;m excited about what lies ahead. &nbsp;" /><meta name="twitter:title" content="YouCastr - A Post-Mortem" /><meta name="twitter:url" content="http://theambitiouslife.com/post/48691070654/youcastr-a-post-mortem" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="arieldiaz" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=therealambitiouslife&amp;postID=48691070654&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=therealambitiouslife&amp;postID=48691070654&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=therealambitiouslife&amp;postID=48691070654&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/theambitiouslife.com\/post\/48691070654\/youcastr-a-post-mortem","mainEntityOfPage":true,"datePublished":"2010-06-03T18:25:00-04:00","author":"therealambitiouslife","headline":"YouCastr - A Post-Mortem","articleBody":"Introduction: Why I\u2019m writing this There are many post-mortems from failed startups out there, mainly because there are a lot of failed startups, and the people that start them tend to be very introspective and public about their successes and failures. I\u2019m no different. This post-mortem will serve to get things off my chest, organize my thoughts, get the most out of the experience, and share my experience with others.\nI\u2019m also writing this to be able to point to a single, detailed, lengthy answer to the inevitable questions I\u2019ll be getting from friends and colleagues about what happened with YouCastr. Now people can read to their heart\u2019s content.\nAs I write about my experiences, people who know startups will see many common themes. Most of the conclusions here are consistent with Paul Graham\u2019s analysis and understanding of startups, what\u2019s challenging, and why they fail (if you\u2019re planning on starting a company, especially in tech, read every single one of his essays). But no matter how many times you read or hear certain lessons, you have to do it yourself to really understand. Here are my specific and personal experiences to add color to that advice.\nA Brief History YouCastr is Born The idea for YouCastr was hatched about three and a half years ago, during a car ride down from Jay Peak with my good friend Jeff Dwyer. Throughout the entire ride we were throwing ideas back and forth about cool companies, fun ideas, and stuff that bothered us. One in particular stuck with me, which was the idea of bringing Mystery Science Theater 3000 to the modern age, and let anyone provide their own comments. After exploring this some more, I ended up settling on sports as the logical market. This would mean the commentary would have to be live, because otherwise it would have been just a podcast platform, which was not very interesting technologically. A couple of days later I shared the idea with my soon to be co-founder Jeff Hebert, and we continued thinking about it. Within a few months we put together a team of 4, created our initial plans, and began building an alpha version.\nInitial progress As we were getting off the ground, three of the four founders (including myself) were mainly working on building the actual product, since we couldn\u2019t do much of anything without that. We learned Ruby on Rails, did our own designing, worked nights and weekend on the startup as a complement to our management consulting day-jobs, and clawed our way to our initial alpha and private beta.\nBuilding the company We then spent the next three years building the company, quitting our jobs, raising money, opening our office, hiring people, firing people, going back to bootstrap mode, and finally, pulling the plug.\nPivoting Startups are all about pivoting. It\u2019s like a word game where you start with HURT, change one letter at a time, then end with LOVE, with many other four-letter words along the way (btw, you really can do that in 6 moves). In our case, we started as a virtual sports bar where people could chime in audio commentary and ended up as a do-it-yourself pay-per-view video platform. Seems like a radical change, but each pivot was the equivalent of changing one letter.\nOur first pivot was to focus on live audio sports broadcasting of games that weren\u2019t being televised (instead of adding commentary to nationally televised games), in response to what customers were doing. Then we added video broadcasting to that same market, focusing on broadcasting sports that weren\u2019t covered (primarily high school and college). And finally we expanded beyond sports, mainly by de-emphasizing the sports branding on our platform, and adding a few features more geared towards video producers than to schools and teams. All of these were natural pivots, not jumps.\nShutting Down - The Reasons and Need 1 - Ran out of cash The single biggest reason we are closing down (a common one) is running out of cash. Despite putting the company in an EXTREMELY lean position, generating revenue, and holding out as long as we could, we didn\u2019t have the cash to keep going. The next few reasons shed more light as to why we chose to shut down instead of finding more cash.\n2 - The market was not there The thesis of our current business model (startups are all about testing theses) was that there was a need for video producers and content owners to make money from their videos, and that they could do that by charging their audience. We found both sides of that equation didn\u2019t really work. I validated this in my conversations with companies with more market reach than us, that had tried similar products (ppv video platform), but pulled the plug because they didn\u2019t see the demand for it.\nVideo producers are afraid of charging for content, because they don\u2019t think people will pay. And they\u2019re largely right. Consumers still don\u2019t like paying for stuff, period. We did find some specific industry verticals where the model works (some high schools, some boxing and mixed martial arts events, some exclusive conferences), but not enough to warrant a large market and an independent company.\n3 - The team was ready to move on The core team of 5 of us has already made significant personal, financial, and emotional investment over the past three years. We have had our share of tough breaks, not to mention almost two years without salary.\n4 - No light at the end of the tunnel Given the industry trends we were seeing, we just didn\u2019t see a light at the end of the tunnel worth surviving for. This market may get slightly better, but it\u2019s not going to be a big company.\n5 - We need to put a stake in the ground We\u2019re survivors. We hate giving up, and have tenaciously survived for a long time. We survived the worst economic environment in generations (during which we also tried to raise money), and knew how not to die. But it was time to shut down and move on.\nA Retrospective - Why we failed In most of the following points I say we, but as CEO, many of the mistakes below can be placed directly on my shoulders, which I will take as a valuable experience as I move on.\nDidn\u2019t pivot fast enough We did a pretty good job of pivoting, but we didn\u2019t make the hard choices quickly enough. Our first pivot, towards broadcasting of original sports content, took us 6 months. We had legacy users and web traffic that we were afraid of losing. We had a brand in one area. We had a story for investors, customers, and the community. All of that made it harder for us to quickly change our focus and apply all resources to the new area, which we knew was the long term future. We iterated our product quickly, but didn\u2019t pivot fast enough.\nDidn\u2019t love it\nWe started the company because we liked the idea and wanted to do something entrepreneurial. We weren\u2019t in love with the idea or market we were going after, and weren\u2019t core users of our product. We worked really hard getting it off the ground despite this, but it made it more difficult to sustain the energy and to understand the best product choices.\nMade hiring mistakes Hire slow, fire fast. That\u2019s how the saying goes. We made a mistake when hiring. We hired too early (before product-market fit), and we rushed into it by foolishly setting an internal deadline to make the hiring decision, which drove us to ignore some gut reactions by some of the core team members. Eric Ries has a great overview of how not to make these mistakes in his Lean Hiring Tips post.\nSpent too much time raising money Almost immediately after our private beta we started trying to raise money, and saw many of the typical challenges when raising money for the first time. This was late 2007 remember, when plenty of Web 2.0 companies were getting funded, and we got caught up in the spirit. We spent 6 months raising our angel round, and finally closed it after launching our public beta in February 2008. We raised less than we should have (Chris Dixon notes that the worst thing a seed-stage company can do is raise too little money and only reach part way to a milestone, which is great advice). We spent 3 months getting ready for raising our next round, then 6 months beating our head against a wall trying to raise money during the financial collapse. Finally we regrouped, but had serious short term cash issues that we had to resolve with additional investment from current investors and cutting of costs. We then focused on the product and made some solid progress, with the plan on giving it another go. By the time we got there, though, we realized we didn\u2019t have the metrics we wanted, so pulled back our fundraising efforts and decided to go back to bootstrap mode.\nNever quite figured out customer acquisition We never seriously figured out customer acquisition, and had trouble growing throughout our various pivots. Customer acquisition is hard and more expensive than most people realize when starting a company. There has been a lot of good analysis, including Andrew Chen\u2019s overview of calculating cost per customer acquisition and David Skok\u2019s warning about how it can be a startup killer, but it takes firsthand experience to understand that.\nToo many founders We started the company with four co-founders. I believe Dharmesh Shah nailed it in his analysis of the optimal number of co-founders. In our case, the advantage of having 4 co-founders was that had more people and resources willing to work for sweat equity. But it also presented challenges, including slowing down decisions, as everyone naturally wants to chime in with their opinion. As CEO, a lot of this falls on me, as I should have been stronger in making decisions. I tend to be a consensus builder, but in my next startup I will have to improve my ability to make bold unpopular decisions while still motivating everyone and building consensus after the decision is made. On the plus side, the entire founding team was incredibly committed through the entire time, and we never had any of the fundamental founder issues that many people complain about become a major problem.\nCounted on big partnerships to close (when they didn\u2019t) and to help more than they did We initiated some very interesting high level partnership and business development discussions with large companies. We put some hope into these deals, but large companies move much slower than startups, and every deal took much longer than we needed. Marc Andreesen even draws a parallel that going after large partnerships is like chasing Moby Dick.\nWe put too much stock and hope into closing some of these. And for the ones we did close, we expected more results than we got. It\u2019s an interesting dilemma, because partners are often the best acquirers, but the downfalls can even lead people to suggest to NOT partner with big and powerful companies.\nWhat I Learned and some of the positives I\u2019m an optimist by nature, which you have to be to start a company given the odds and challenges. Given that, it\u2019s good to look back and think about the positives of the entire experience. It\u2019s incredibly satisfying to create a revenue-generating company that is flirting with cash-flow positive, especially having started with a crazy idea. The experience of building a company and tasting success was incredible, and though we didn\u2019t quite get over the hump, we have tasted it, and it will only motivate me more to get there again, through all the hardships.\nOn a personal level, I\u2019ve learned more about business, people, life, and myself over the past three years than I ever have. I have made life-long friends with whom I can share these experiences with. I have come closer to understanding how to reach my limits, which is one of my fundamentals goals in life. Startups let you try and find those limits in a way that most jobs wouldn\u2019t, and I\u2019ll keep pushing. And best of all, I have realized that my true passion is entrepreneurship. I have a very addictive personality, and therefore only do things where I am comfortable with the extreme case, like starting companies or running ultra-marathons.\nWe built a great culture, including some great parties for the local tech-scene, competitive ping-pong matches, and late night coding sessions with house music blasting. We converted three lifelong PC people to Mac, all of whom are happier for it. And most satisfying, we helped kick start two young and promising careers, those of our designer and community manager.\nMoving Forward My long term goal is to continue starting companies. There\u2019s no question I\u2019m in a better position now to start another company than I was when I first started YouCastr. It\u2019s almost like thinking back at how much more fun high school would have been had you known what you knew when you graduated back when you started. Practically speaking, though, after having gone almost 2 years without a salary, I\u2019m not in a financial position to bootstrap another company, which is the way I would really want to start a company.\nIn the short term I\u2019m working on various projects for my consulting company, Scenario4. We are working with some great people on some fun projects across the tech world. I am also pursuing several side projects, including the recently launched BooksforBits, a non-profit company designed to help accelerate the transition to ebooks while getting books to communities in need.\nIt\u2019s an incredibly exciting time in technology. We are on the cusp of the post-pc era, which includes a revolution in the mobile space, and in how we interact with and perceive computers. We are in a world where startups can be more capital efficient than ever before. And most interestingly for me, as a society we are going to be facing challenges unlike any we have ever seen.\nWith every ending is a new beginning, and I\u2019m excited about what lies ahead.","@context":"http:\/\/schema.org"}</script>
+</head>
+    <body>
+        <section id="color_bar"></section>
+
+        <section id="container" class="group">            
+            <header id="header">
+                <section id="blog_info">
+                    <h1><a href="/">The Ambitious Life</a></h1>
+                    
+                    
+                </section>
+
+                
+                    <section id="blog_avatar">
+                        <a href="/" class="avatar"><img src="http://38.media.tumblr.com/avatar_17c1f929e7f2_64.png"></a>
+                    </section>
+                
+            </header>
+
+            <aside id="sidebar">
+                
+
+                
+
+                <ul class="links" style="display:none; display:block;">
+                    <li><a href="/ask" class="ask"><span class="icon"></span>ask me anything</a></li>
+                    
+                </ul>
+
+                <ul class="links">
+                    <li><a href="http://theambitiouslife.com/rss" class="rss"><span class="icon"></span>rss</a></li>
+                    <li><a href="/archive" class="archive"><span class="icon"></span>archive</a></li>
+                </ul>
+
+                
+                    <aside id="twitter_container" style="display:none"></aside>
+
+                    <script type="text/javascript">
+                        function recent_tweets(data) {
+                            document.getElementById("twitter_container").innerHTML =
+                            document.getElementById("twitter_container").innerHTML +
+                            '<a class="bubble" href="http://twitter.com/arieldiaz/status/' +
+                            (data[0].id_str ? data[0].id_str : data[0].id) +
+                            '">' + data[0].text +
+                            '<span class="arrow border"></span><span class="arrow fill"></span></a>' +
+                            '<a href="http://twitter.com/arieldiaz" class="twitter_username">@arieldiaz</a>';
+
+                            document.getElementById("twitter_container").style.display = 'block';
+                        }
+                    </script>
+                
+            </aside>
+
+            <ul id="posts">
+                <!-- START POSTS -->
+                
+
+                        <li class="post group"   style="padding:0" >  
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        
+
+                        <section class="group caption_and_post_info
+                            
+                            
+                            
+                            
+                            
+                        ">
+                            
+                                <section class="caption group">
+                                    <h2><a href="http://theambitiouslife.com/post/48691070654/youcastr-a-post-mortem">YouCastr - A Post-Mortem</a></h2>
+                                    <div class="cont group"><h3>Introduction: Why I&rsquo;m writing this</h3>
+<p>There are many post-mortems from failed startups out there, mainly because there are a lot of failed startups, and the people that start them tend to be&nbsp;very introspective and public about their successes and failures. I&rsquo;m no different. &nbsp;This post-mortem will serve to get things off my chest, organize my&nbsp;thoughts, get the most out of the experience, and share my experience with others.</p>
+<p>I&rsquo;m also writing this to be able to point to a single, detailed, lengthy answer to the inevitable questions I&rsquo;ll be getting from friends and colleagues about what&nbsp;happened with YouCastr. Now people can read to their heart&rsquo;s content.&nbsp;</p>
+<p>As I write about my experiences, people who know startups will see many common themes. &nbsp;Most of the conclusions here are consistent with&nbsp;<a href="http://paulgraham.com/">Paul&nbsp;Graham</a>&rsquo;s analysis and understanding of startups, what&rsquo;s challenging, and why they fail (if you&rsquo;re planning on starting a company, especially in tech, read&nbsp;every single one of his&nbsp;<a href="http://paulgraham.com/articles.html">essays</a>). But no matter how many times you read or hear certain lessons, you have to do it yourself to really understand. Here are&nbsp;my specific and personal experiences to add color to that advice.</p>
+<h3>A Brief History</h3>
+<h4>YouCastr is Born</h4>
+<p>The idea for YouCastr was hatched about three and a half years ago, during a car ride down from Jay Peak with my good friend Jeff Dwyer. &nbsp;Throughout&nbsp;the entire ride we were throwing ideas back and forth about cool companies, fun ideas, and stuff that bothered us. &nbsp;One in particular stuck with me, which&nbsp;was the idea of bringing Mystery Science Theater 3000 to the modern age, and&nbsp;let anyone provide their own comments. &nbsp;After exploring this some more, I&nbsp;ended up settling on sports as the logical market. This would mean the commentary would have to be live, because otherwise it would have been just a&nbsp;podcast platform, which was not very interesting technologically. &nbsp;A couple of days later I shared the idea with my soon to be co-founder Jeff Hebert, and&nbsp;we continued thinking about it. &nbsp;Within a few months we put together a team of 4, created our initial plans, and began building an alpha version.&nbsp;</p>
+<h4>Initial progress</h4>
+<p>As we were getting off the ground, three of the four founders (including myself) were mainly working on building the actual product, since we couldn&rsquo;t do&nbsp;much of anything without that. We learned Ruby on Rails, did our own designing, worked nights and weekend on the startup as a complement to our&nbsp;management consulting day-jobs, and clawed our way to our initial alpha and private beta.&nbsp;</p>
+<h4>Building the company</h4>
+<p>We then spent the next three years building the company, quitting our jobs, raising money,&nbsp;&nbsp;opening our office, hiring people, firing people, going back to&nbsp;bootstrap mode, and finally, pulling the plug.&nbsp;&nbsp;</p>
+<h4>Pivoting</h4>
+<p>Startups are all about&nbsp;<a href="http://steveblank.com/2010/04/12/why-startups-are-agile-and-opportunistic-%E2%80%93-pivoting-the-business-model/">pivoting</a>. It&rsquo;s like a word game where you start with HURT, change one letter at a time, then end with LOVE, with many other four-letter words along the way (btw,&nbsp;you really can do that in 6 moves). In our case, we started as a virtual sports bar where people could chime in audio commentary and ended up as a do-it-yourself pay-per-view video platform. &nbsp;Seems like a radical change, but each pivot was the equivalent of changing one letter.</p>
+<p>Our first pivot was to focus&nbsp;on live audio sports broadcasting of games that weren&rsquo;t being televised (instead of adding commentary to nationally televised games), in response to what&nbsp;customers were doing. Then we added video broadcasting to that same market, focusing on broadcasting sports that weren&rsquo;t covered (primarily high&nbsp;school and college). &nbsp;And finally we expanded beyond sports, mainly by de-emphasizing the sports branding on our platform, and adding a few features&nbsp;more geared towards video producers than to schools and teams. All of these were&nbsp;<a href="http://www.startuplessonslearned.com/2009/06/pivot-dont-jump-to-new-vision.html">natural pivots, not jumps</a>.</p>
+<h3>Shutting Down - The Reasons and Need</h3>
+<h4>1 - Ran out of cash</h4>
+<p>The single biggest reason we are closing down (a common one) is running out of cash. Despite putting the company in an EXTREMELY lean position,&nbsp;generating revenue, and holding out as long as we could, we didn&rsquo;t have the cash to keep going. The next few reasons shed more light as to why we chose&nbsp;to shut down instead of finding more cash.</p>
+<h4>2 - The market was not there</h4>
+<p>The thesis of our current business model (startups are all about testing theses) was that there was a need for video producers and content owners to&nbsp;make money from their videos, and that they could do that by charging their audience. We found both sides of that equation didn&rsquo;t really work. I validated&nbsp;this in my conversations with companies with more market reach than us, that had tried similar products (ppv video platform), but pulled the plug because&nbsp;they didn&rsquo;t see the demand for it.&nbsp;</p>
+<p>Video producers are afraid of charging for content, because they don&rsquo;t think people will pay. And they&rsquo;re largely right. Consumers still don&rsquo;t like paying for&nbsp;stuff, period.&nbsp;We did find some specific industry verticals where the model works (some high schools, some boxing and mixed martial arts events, some exclusive&nbsp;conferences), but not enough to warrant a large market and an independent company.</p>
+<h4>3 - The team was ready to move on</h4>
+<p>The core team of 5 of us has already made significant personal, financial, and emotional investment over the past three years. We have had our share of&nbsp;tough breaks, not to mention almost two years without salary. &nbsp;</p>
+<h4>4 - No light at the end of the tunnel</h4>
+<p>Given the industry trends we were seeing, we just didn&rsquo;t see a light at the end of the tunnel worth surviving for. &nbsp;This market may get slightly better, but it&rsquo;s&nbsp;not going to be a big company.&nbsp;&nbsp;</p>
+<h4>5 - We need to put a stake in the ground</h4>
+<p>We&rsquo;re survivors. We hate giving up, and have tenaciously survived for a long time.&nbsp;&nbsp;We survived the worst economic environment in generations (during&nbsp;which we also tried to raise money), and knew&nbsp;<a href="http://www.paulgraham.com/die.html">how not to die</a>.&nbsp;&nbsp;But it was time to shut down and move on.&nbsp;</p>
+<h3>A Retrospective - Why we failed</h3>
+<p>In most of the following points I say we, but as CEO, many of the mistakes below can be placed directly on my shoulders, which I will take as a valuable&nbsp;experience as I move on.</p>
+<h4>Didn&rsquo;t pivot fast enough</h4>
+<p>We did a pretty good job of pivoting, but we didn&rsquo;t make the hard choices quickly enough. Our first pivot, towards broadcasting of original sports content,&nbsp;took us 6 months. &nbsp;We had legacy users and web traffic that we were afraid of losing. We had a brand in one area. We had a story for investors,&nbsp;customers, and the community. All of that made it harder for us to quickly change our focus and apply all resources to the new area, which we knew was&nbsp;the long term future. We iterated our product quickly, but didn&rsquo;t&nbsp;<a href="http://www.instigatorblog.com/10-startup-to-dos/2010/03/17/">pivot fast enough</a>.&nbsp;</p>
+<p><strong>Didn&rsquo;t love it</strong><br>We started the company because we liked the idea and wanted to do something entrepreneurial. We weren&rsquo;t in love with the idea or market we were going&nbsp;after, and weren&rsquo;t core users of our product. We worked really hard getting it off the ground despite this, but it made it more difficult to sustain the energy&nbsp;and to understand the best product choices.</p>
+<h4>Made hiring mistakes</h4>
+<p>Hire slow, fire fast. That&rsquo;s how the saying goes. We made a mistake when hiring. We hired too early (before&nbsp;<a href="http://pmarca-archive.posterous.com/the-pmarca-guide-to-startups-part-4-the-only">product-market fit</a>), and we rushed into it by foolishly setting an internal deadline to make the hiring&nbsp;decision, which drove us to ignore some gut reactions by some of the core team members.&nbsp;<a href="http://twitter.com/ericries">Eric Ries</a>&nbsp;has a great overview of how not to make these mistakes in his&nbsp;<a href="http://www.startuplessonslearned.com/2009/01/lean-hiring-tips.html">Lean Hiring Tips</a>&nbsp;post.</p>
+<h4>Spent too much time raising money</h4>
+<p>Almost immediately after our private beta we started trying to raise money, and saw many of the typical challenges when&nbsp;<a href="http://venturehacks.com/articles/first-time">raising money for the first time</a>. &nbsp;This was late 2007 remember, when plenty of Web 2.0 companies were getting&nbsp;funded, and we got caught up in the spirit. &nbsp;We spent 6 months raising our angel round, and finally closed it after launching our public beta in February&nbsp;2008. &nbsp;We raised less than we should have (<a href="http://cdixon.org/">Chris Dixon</a>&nbsp;notes that&nbsp;<a href="http://cdixon.org/2009/12/28/whats-the-right-amount-of-seed-money-to-raise/">the worst thing a seed-stage company can do is raise too little money and only reach part way to a milestone</a>, which is great advice). We spent 3 months getting ready for raising our next round, then 6 months&nbsp;beating our head against a wall trying to raise money during the financial collapse.&nbsp;Finally we regrouped, but had serious short term cash issues that we&nbsp;had to resolve with additional investment from current investors and cutting of costs. We then focused on the product and made some solid progress, with&nbsp;the plan on giving it another go. By the time we got there, though, we realized we didn&rsquo;t have the metrics we wanted, so pulled back our fundraising efforts&nbsp;and decided to go back to bootstrap mode.&nbsp;</p>
+<h4>Never quite figured out customer acquisition</h4>
+<p>We never seriously figured out customer acquisition, and had trouble growing throughout our various pivots. Customer acquisition is hard and more&nbsp;expensive than most people realize when starting a company. There has been a lot of good analysis, including&nbsp;<a href="http://andrewchenblog.com/">Andrew Chen</a>&rsquo;s overview of&nbsp;<a href="http://andrewchenblog.com/2008/11/17/how-to-calculate-cost-per-acquisition-for-startups-relying-on-freemium-subscription-or-virtual-items-biz-models/">calculating cost per customer acquisition</a>&nbsp;and&nbsp;<a href="http://www.matrixpartners.com/site/team_detail/david_skok/">David Skok</a>&rsquo;s warning about how it can be a&nbsp;<a href="http://www.forentrepreneurs.com/startup-killer/">startup killer</a>, but it takes firsthand experience to understand that.&nbsp;</p>
+<h4>Too many founders</h4>
+<p>We started the company with four co-founders. I believe&nbsp;<a href="http://onstartups.com/About/AboutDharmeshShah/tabid/4147/Default.aspx">Dharmesh Shah</a>&nbsp;nailed it in his analysis of the&nbsp;<a href="http://onstartups.com/tabid/3339/bid/1242/What-s-The-Optimal-Number-Of-Co-Founders-For-A-Startup-2-09.aspx">optimal number of co-founders</a>. In our case, the advantage of having 4 co-founders was that had more people and resources willing to work for sweat equity. But it also presented&nbsp;challenges, including slowing down decisions, as everyone naturally wants to chime in with their opinion. &nbsp;As CEO, a lot of this falls on me, as I should have&nbsp;been stronger in making decisions. I tend to be a consensus builder, but in my next startup I will have to improve my ability to make bold unpopular decisions while still&nbsp;motivating everyone and building consensus after the decision is made.&nbsp;&nbsp;On the plus side, the entire founding team was incredibly committed through the&nbsp;entire time, and we never had any of the fundamental&nbsp;<a href="http://onstartups.com/tabid/3339/bid/2984/Entrepreneurs-Co-Founder-Issues-Driving-You-Crazy-7-Simple-Insights.aspx">founder issues</a>&nbsp;that many people complain about become a major problem.&nbsp;</p>
+<h4>Counted on big partnerships to close (when they didn&rsquo;t) and to help more than they did</h4>
+<p>We initiated some very interesting high level partnership and business development discussions with large companies. We put some hope into these&nbsp;deals, but large companies move much slower than startups, and every deal took much longer than we needed. Marc Andreesen even draws a parallel that going after large partnerships is like&nbsp;<a href="http://pmarca-archive.posterous.com/the-pmarca-guide-to-startups-part-5-the-moby">chasing Moby Dick</a>.&nbsp;</p>
+<p>We put too much stock and hope into closing some of these. And for the ones we did close, we expected more results than we got. It&rsquo;s an interesting dilemma, because&nbsp;<a href="http://www.instigatorblog.com/startups-acquired-by-partners/2010/04/07/">partners are often the best acquirers</a>, but the downfalls can even lead people to suggest to&nbsp;<a href="http://onstartups.com/tabid/3339/bid/6889/Advice-On-Partnering-With-The-Big-and-Powerful-Don-t.aspx">NOT partner with big and powerful companies</a>.&nbsp;</p>
+<h3>What I Learned and some of the positives</h3>
+<p>I&rsquo;m an optimist by nature, which you have to be to start a company given the odds and challenges. Given that, it&rsquo;s good to look back and think about the positives of the entire experience. It&rsquo;s incredibly satisfying to create a revenue-generating company that is flirting with cash-flow positive, especially having started with a crazy idea. The experience of building a company and tasting success was incredible, and though we didn&rsquo;t quite get over the hump, we have tasted it, and it will only motivate me more to get there again, through all the hardships.</p>
+<p>On a personal level, I&rsquo;ve learned more about business, people, life, and myself over the past three years than I ever have.&nbsp;I have made life-long friends with whom I can share these experiences with.&nbsp;I have come closer to understanding how to reach my limits, which is one of my fundamentals goals in life. &nbsp;Startups let you try and find those limits &nbsp;in a way that most jobs wouldn&rsquo;t, and I&rsquo;ll keep pushing.&nbsp;And best of all, I have realized that my true passion is entrepreneurship. I have a very addictive personality, and therefore only do things where I am comfortable with the extreme case, like starting companies or running&nbsp;<a href="http://theambitiouslife.com/my-first-ultra-marathon-50-miles-of-glory">ultra-marathons</a>.&nbsp;</p>
+<p>We built a great culture, including some great parties for the local tech-scene, competitive ping-pong matches, and late night coding sessions with house music blasting.&nbsp;We converted three lifelong PC people to Mac, all of whom are happier for it. &nbsp;And most satisfying, we helped kick start two young and promising careers, those of our designer and community manager.</p>
+<h3>Moving Forward</h3>
+<p>My long term goal is to continue starting companies. &nbsp;There&rsquo;s no question I&rsquo;m in a better position&nbsp;now to start another company than I was when I first started YouCastr. &nbsp;It&rsquo;s almost like thinking back at how much more fun high school would have been had you&nbsp;known what you knew when you graduated back when you started. Practically speaking, though, after having gone almost 2 years without a salary, I&rsquo;m not in a financial position to&nbsp;bootstrap another company, which is the way I would really want to start a company. &nbsp;</p>
+<p>In the short term I&rsquo;m working on various projects for my consulting company,&nbsp;<a href="http://scenario4.com">Scenario4</a>. We are working with some great people on some fun projects across the tech world. &nbsp;I am also pursuing several side projects, including the recently launched&nbsp;<a href="http://booksforbits.org">BooksforBits</a>, a non-profit company designed to help accelerate the transition to ebooks while getting books to communities in need.</p>
+<p>It&rsquo;s an incredibly exciting time in technology. We are on the cusp of the&nbsp;<a href="http://blogs.techrepublic.com.com/hiner/?p=4701">post-pc era</a>, which includes a revolution in the mobile space, and in how we interact with and perceive computers. We are in a world where startups can be more capital efficient than ever before. And most interestingly for me, as a society we are going to be facing challenges unlike any we have ever seen.&nbsp;</p>
+<p>With every ending is a new beginning, and I&rsquo;m excited about what lies ahead. &nbsp;</p></div>
+                                    
+                                </section>
+                            
+
+                            
+                            
+                            
+
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+
+                            
+                            
+                            
+
+                            <ul class="
+                                post_info
+                                
+                                     floating
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                            ">
+                                 
+                                <li>
+                                    <ul class="post_controls group">
+                                        <li><a href="https://www.tumblr.com/reblog/48691070654/byMWRUMm" class="reblog_button"style="display: block;width:21px;height:21px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ccc"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+                                        <li><div class="like_button" data-post-id="48691070654" id="like_button_48691070654"><iframe id="like_iframe_48691070654" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=1af0c0fbf0ad9b4dc38445698d099106#name=therealambitiouslife&amp;post_id=48691070654&amp;rk=byMWRUMm" scrolling="no" width="21" height="21" frameborder="0" class="like_toggle" allowTransparency="true"></iframe></div></li>
+                                    </ul>
+                                </li>
+                                 
+                                <li><a href="http://theambitiouslife.com/post/48691070654/youcastr-a-post-mortem" class="
+                                    timestamp
+                                    has_caption with_title
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                ">June 3, 2010 (2:25 pm)</a></li>
+
+                                
+                                    
+                                       <li><a class="notecount" href="http://theambitiouslife.com/post/48691070654/youcastr-a-post-mortem#notes">3 notes</a></li>
+                                   
+                                
+
+                                
+                                    
+                                        <li><a class="tag" href="http://theambitiouslife.com/tagged/technology"><span>#</span>technology</a></li>
+                                    
+                                
+                                </ul>
+                                
+                                    <section class="post_notes">
+                                        <a name="notes">
+                                            <ol class="notes"><!-- START NOTES --><li class="note reblog tumblelog_startupmemory with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://startupmemory.tumblr.com/" title="Startup memory"><img src="http://33.media.tumblr.com/avatar_744a00423bc3_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://startupmemory.tumblr.com/post/121067811811"><a rel="nofollow" href="http://startupmemory.tumblr.com/" class="tumblelog" title="Startup memory">startupmemory</a> reblogged this from <a rel="nofollow" href="http://theambitiouslife.com/" class="source_tumblelog" title="The Ambitious Life">therealambitiouslife</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://startupmemory.tumblr.com/post/121067811811" title="View post">Preciso me conscientizar sobre o que ele fala sobre consenso, pois eu tamb&eacute;m o favore&ccedil;o demais. Apesar de se chegar a...</a></blockquote></li><li class="note like tumblelog_patucao without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://patucao.tumblr.com/" title="Patuca " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_c148d3244a71_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://patucao.tumblr.com/" title="Patuca" rel="nofollow">patucao</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_therealambitiouslife original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://theambitiouslife.com/" title="The Ambitious Life"><img src="http://33.media.tumblr.com/avatar_17c1f929e7f2_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://theambitiouslife.com/post/48691070654"><a rel="nofollow" href="http://theambitiouslife.com/" class="tumblelog" title="The Ambitious Life">therealambitiouslife</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+                                        </a>
+                                    </section>
+                                
+
+                                
+                                
+
+                                </section>
+                    </li>
+
+                
+                <!-- END POSTS -->
+            </ul>
+            
+            
+
+            <footer id="footer">
+                
+                    <section class="copyright">&copy; 2013–2015 The Ambitious Life</section>
+                
+                
+            </footer>
+        </section>
+
+        
+        <script type="text/javascript" src="http://assets.tumblr.com/assets/scripts/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">
+            var Tumblelog = {};
+
+            // AJAX
+            Tumblelog.Ajax = (function(url, callbackFunction) {
+                this.bindFunction = function (caller, object) {
+                    return function() {
+                        return caller.apply(object, [object]);
+                    };
+                };
+
+                this.stateChange = function (object) {
+                    if (this.request.readyState==4) this.callbackFunction(this.request.responseText);
+                };
+
+                this.getRequest = function() {
+                    if (window.ActiveXObject)
+                        return new ActiveXObject('Microsoft.XMLHTTP');
+                    else if (window.XMLHttpRequest)
+                        return new XMLHttpRequest();
+                    return false;
+                };
+
+                this.postBody = (arguments[2] || "");
+                this.callbackFunction=callbackFunction;
+                this.url=url;
+                this.request = this.getRequest();
+
+                if(this.request) {
+                    var req = this.request;
+                    req.onreadystatechange = this.bindFunction(this.stateChange, this);
+
+                    if (this.postBody!=="") {
+                        req.open("POST", url, true);
+                        req.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                        req.setRequestHeader('Connection', 'close');
+                    } else {
+                        req.open("GET", url, true);
+                    }
+
+                    req.send(this.postBody);
+                }
+            });
+            
+            // Infinite Scroll
+            Tumblelog.Infinite = (function() {
+
+                var _$window          = $(window);
+                var _$posts           = $('#posts');
+                var _trigger_post     = null;
+
+                var _current_page     = 1;
+                var _total_pages      = 1;
+                var _url              = document.location.href.split("#")[0];
+                var _infinite_timeout = null;
+                var _is_loading       = false;
+                var _posts_loaded     = false;
+                
+                var _Ajax = Tumblelog.Ajax;
+
+                function init() {            
+                    set_trigger();
+                    enable_scroll();
+                }
+
+                function set_trigger () {
+                    var $all_posts = _$posts.find('li.post');
+                
+                    if (!_posts_loaded) {
+                        _posts_loaded = $all_posts.length;
+                    }
+
+                    if (_posts_loaded >= 4) {
+                        _trigger_post = _$posts.find('li.post:eq(' + ($all_posts.length - 4) + ')').get(0);
+                    } else if (_posts_loaded >= 3) {
+                        _trigger_post = _$posts.find('li.post:eq(' + ($all_posts.length - 3) + ')').get(0);
+                    } else {
+                        _trigger_post = _$posts.find('li.post:last').get(0);
+                    }
+                };
+
+                function in_viewport (el) {
+                    if (el == null) return;
+                    var top = el.offsetTop;
+                    var height = el.offsetHeight;
+
+                    while (el.offsetParent) {
+                        el = el.offsetParent;
+                        top += el.offsetTop;
+                    }
+
+                    return (top < (window.pageYOffset + window.innerHeight));
+                };
+
+                function enable_scroll() {
+                    $('#footer .pagination').hide();
+                    _$window.scroll(function(){
+                        clearTimeout(_infinite_timeout);
+                        infinite_timeout = setTimeout(infinite_scroll, 100);
+                    });
+                }
+
+                function disable_scroll() {
+                    clearTimeout(_infinite_timeout);
+                    $(window).unbind('scroll');
+                }
+
+                function infinite_scroll() {
+                    if (_is_loading) return;
+
+                    if (in_viewport(_trigger_post)) {
+                        load_more_posts(); // w00t
+                    }
+                };
+
+                function load_more_posts() {
+                    if (_is_loading) return;
+                    _is_loading = true;
+
+                    // Build URL
+                    if (_url.charAt(_url.length - 1) != '/') _url += '/';
+                    if (_current_page === 1) _url += 'page/1';
+                    _current_page++;
+                    _url = _url.replace('page/' + (_current_page - 1), 'page/' + _current_page);
+
+                    // Fetch
+                    _Ajax(_url, function(data) {
+                        var new_posts_html = data.split('<!-- START' + ' POSTS -->')[1].split('<!-- END' + ' POSTS -->')[0];
+                        var $new_posts = $('#posts', data);
+
+                        // Insert posts and update counters
+                        $('#posts').append(new_posts_html);
+                        _posts_loaded = $new_posts.find('li.post').length;
+
+                        if (_posts_loaded) {
+                            var post_ids = [];
+                            var like_buttons = $('#posts', data).find('.like_button');
+                            for (var i = 0; i < like_buttons.length; i++) {
+                                var button = like_buttons[i];
+                                if ($(button).attr('data-post-id')) {
+                                    post_ids.push($(button).attr('data-post-id'));
+                                }
+                            }
+                            if (post_ids.length > 0) Tumblr.LikeButton.get_status_by_post_ids(post_ids);
+                        }
+
+                        if ((_posts_loaded > 0) && (_current_page < _total_pages)) {
+                            set_trigger();
+                            _is_loading = false;
+
+                        } else {
+                            disable_scroll();
+                        }
+                    });
+
+                    // Stats
+                    
+                }
+
+                return {
+                    init: init
+                };
+            });
+
+            $(function() {
+                
+            });
+        </script>
+        
+
+        
+            <script type="text/javascript" src="/tweets.js"></script>
+        
+
+        
+    <!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://theambitiouslife.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/48691070654/youcastr-a-post-mortem?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017185&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvdGhlYW1iaXRpb3VzbGlmZS5jb21cL3Bvc3RcLzQ4NjkxMDcwNjU0XC95b3VjYXN0ci1hLXBvc3QtbW9ydGVtIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkifQ==&U=BHEAAAMBOF&K=6929679b5561084bfc51d73c9e2619d9276b6e0aa069fefd684d52ce67bda796&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017185&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvdGhlYW1iaXRpb3VzbGlmZS5jb21cL3Bvc3RcLzQ4NjkxMDcwNjU0XC95b3VjYXN0ci1hLXBvc3QtbW9ydGVtIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJub3NjcmlwdCI6MX0=&U=BHEAAAMBOF&K=dff6f4b2336e6f0b3c9e6f57702ef3f7b0cdda4e975c231b7cdf0ebd83f45862&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017185&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3RoZWFtYml0aW91c2xpZmUuY29tXC9wb3N0XC80ODY5MTA3MDY1NFwveW91Y2FzdHItYS1wb3N0LW1vcnRlbSIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjQ4NjkxMDcwNjU0IiwiYmxvZ2lkIjoiMTA0MDgwOTgwIiwic291cmNlIjozM31dfQ==&U=PGKAFJKIPH&K=93f38e2697f1c2dd607f77a3bcc9e85db360bee1f46ba1e103efa1cd233e354f&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017185&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3RoZWFtYml0aW91c2xpZmUuY29tXC9wb3N0XC80ODY5MTA3MDY1NFwveW91Y2FzdHItYS1wb3N0LW1vcnRlbSIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjQ4NjkxMDcwNjU0IiwiYmxvZ2lkIjoiMTA0MDgwOTgwIiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=PGKAFJKIPH&K=2746e147e056c36554e22c9137c7c68a93e4aea669a479074103b00a16506e98&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:104080980,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Ftheambitiouslife.com%2Fpost%2F48691070654%2Fyoucastr-a-post-mortem&amp;pid=48691070654&amp;rk=byMWRUMm&amp;lang=en_US&amp;name=therealambitiouslife&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_17c1f929e7f2_64.png&amp;title=The+Ambitious+Life&amp;url=http%3A%2F%2Ftheambitiouslife.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Ftheambitiouslife.com%2Fpost%2F48691070654%2Fyoucastr-a-post-mortem&amp;pid=48691070654&amp;rk=byMWRUMm&amp;lang=en_US&amp;name=therealambitiouslife&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_17c1f929e7f2_64.png&amp;title=The+Ambitious+Life&amp;url=http%3A%2F%2Ftheambitiouslife.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

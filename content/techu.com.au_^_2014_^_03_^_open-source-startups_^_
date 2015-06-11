@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<title>Why I&#039;m Open Sourcing My Failed Startup | Tech U | Tech U</title>
+<link rel="profile" href="http://gmpg.org/xfn/11"/>
+<link rel="pingback" href="http://techu.com.au/xmlrpc.php"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif" type="text/css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" type="text/css">
+<link rel="stylesheet" href="http://techu.com.au/wp-content/themes/WPMedium-14-13/css/basic.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="http://techu.com.au/wp-content/themes/WPMedium-14-13/style.css" type="text/css" media="all"/>
+<style type="text/css">body,.site{background:#f9f9f9!important;}#WP{background:#d3d3d3!important;}body,.site{color:#1d1d1d!important;}.hentry a:link,.hentry a:visited{color:#f48f4b!important;}.hentry a:hover{color:#ea5600!important;}.site-header-overlay{background:#000000!important;}.header-sidebar{color:#ffffff!important;}.entry-header .entry-title a{color:#444444!important;}.entry-header .entry-title a:hover{color:#ef9e4c!important;}</style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-35276624-1";
+</script>
+ 
+<link rel="canonical" href="http://techu.com.au/2014/03/open-source-startups/"/>
+<link rel="author" href="https://plus.google.com/u/1/110889763673254221618/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Why I&#039;m Open Sourcing My Failed Startup | Tech U"/>
+<meta property="og:description" content="Not every startup is a success. In fact, as I&#8217;m sure you&#8217;re well aware if you&#8217;re reading this post: the majority of startups fail. Some, like World Burrow  started product development too early and never made it to market. I originally had the idea for World Burrow towards the end of last year when I was &hellip;"/>
+<meta property="og:url" content="http://techu.com.au/2014/03/open-source-startups/"/>
+<meta property="og:site_name" content="Tech U"/>
+<meta property="article:author" content="nathan"/>
+<meta property="article:tag" content="ccmpp"/>
+<meta property="article:tag" content="Collaborative Consumption Marketplace Platform Project"/>
+<meta property="article:tag" content="fail"/>
+<meta property="article:tag" content="flearning"/>
+<meta property="article:tag" content="github"/>
+<meta property="article:tag" content="laravel"/>
+<meta property="article:tag" content="open source"/>
+<meta property="article:tag" content="php"/>
+<meta property="article:tag" content="startups"/>
+<meta property="article:section" content="Startup Life"/>
+<meta property="article:section" content="Web Development"/>
+<meta property="article:published_time" content="2014-03-02T11:34:25+00:00"/>
+<meta property="article:modified_time" content="2014-03-03T12:03:31+00:00"/>
+<meta property="og:updated_time" content="2014-03-03T12:03:31+00:00"/>
+<meta property="fb:admins" content="1389330661"/>
+<meta property="og:image" content="http://techu.com.au/wp-content/uploads/2014/03/Screen-Shot-2014-03-02-at-12.31.39-pm.png"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@technewsu"/>
+<meta name="twitter:domain" content="Tech U"/>
+<meta name="twitter:creator" content="@nfeiglin"/>
+ 
+<link rel="alternate" type="application/rss+xml" title="Tech U &raquo; Feed" href="http://techu.com.au/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Tech U &raquo; Comments Feed" href="http://techu.com.au/comments/feed/"/>
+<script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.5 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-35276624-1']);
+				            _gaq.push(['_setCustomVar',1,'post_type','post',3],['_setCustomVar',2,'author','nathan-feiglin',3],['_setCustomVar',3,'tags','ccmpp collaborative-consumption-marketplace-platform-project',3],['_setCustomVar',4,'category','startup-life',3],['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+<link rel="alternate" type="application/rss+xml" title="Tech U &raquo; Why I&#8217;m Open Sourcing My Failed Startup Comments Feed" href="http://techu.com.au/2014/03/open-source-startups/feed/"/>
+<link rel='stylesheet' id='socialshare-styles-css' href='http://techu.com.au/wp-content/plugins/SocialShare/Styles.css?ver=1' type='text/css' media='screen'/>
+<script type='text/javascript' src='http://techu.com.au/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://techu.com.au/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"http:\/\/techu.com.au\/wp-admin\/admin-ajax.php","loadmore":"Load More"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://techu.com.au/wp-content/themes/WPMedium-14-13/js/jquery.wpmedium.js?ver=4.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://techu.com.au/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://techu.com.au/wp-includes/wlwmanifest.xml"/>
+<meta name="generator" content="WordPress 4.0"/>
+<link rel='shortlink' href='http://techu.com.au/?p=771'/>
+<meta name="apple-itunes-app" content="app-id=649357594">
+</head>
+<body class="single single-post postid-771 single-format-standard">
+<a id="WP" href="http://techu.com.au"><img src="http://technewsu.com.au/wp-content/uploads/2013/09/icon2.png" alt="W"/></a>
+<div id="single" class="hfeed site">
+<div id="main" class="wrapper">
+<div id="primary" class="site-content">
+<div id="content" role="main">
+<div class="entry-author entry-author-side">
+<div class="author-avatar">
+<img alt='' src='http://0.gravatar.com/avatar/61edda91cfe26138c09a9d4886f6feaa?s=96&amp;d=identicon&amp;r=G' class='avatar avatar-96 photo' height='96' width='96'/> </div> 
+<div class="author-description">
+<h6>Nathan Feiglin</h6>
+<p>Nathan is a technology enthusiast and founder of <a href="http://sailr.co"> Sailr</a> – a social network for Ecommerce
+<a href="https://twitter.com/nfeiglin"><strong>Follow @nfeiglin</strong></a></p>
+</div> 
+<div class="entry-date">
+<h6>Published</h6> <span class="date">March 2, 2014</span> </div>
+<div style="clear:both"></div>
+</div> 
+<article id="post-771" class="post-771 post type-post status-publish format-standard has-post-thumbnail hentry category-startup-life category-web-development tag-ccmpp tag-collaborative-consumption-marketplace-platform-project tag-fail tag-flearning tag-github tag-laravel tag-open-source tag-php tag-startups">
+<header class="entry-header">
+<div class="entry-thumb">
+<img src="http://techu.com.au/wp-content/uploads/2014/03/Screen-Shot-2014-03-02-at-12.31.39-pm-640x337.png" alt="Why I&#8217;m Open Sourcing My Failed Startup" class="attachment-post-thumbnail wp-post-image landscape"/> </div>
+<div class="entry-meta">
+<span class="by-author">By Nathan Feiglin</span> In <span class="in-taxonomy"><a href="http://techu.com.au/category/startup-life/" rel="tag">Startup Life</a>, <a href="http://techu.com.au/category/web-development/" rel="tag">Web Development</a></span> </div> 
+<h1 class="entry-title">
+<a href="http://techu.com.au/2014/03/open-source-startups/" title="Permalink to Why I&#8217;m Open Sourcing My Failed Startup" rel="bookmark">Why I&#8217;m Open Sourcing My Failed Startup</a>
+</h1>
+</header> 
+<div class="entry-content">
+<div itemscope itemtype="http://schema.org/BlogPosting"><p>Not every startup is a success. In fact, as I&#8217;m sure you&#8217;re well aware if you&#8217;re reading this post: the majority of startups fail. Some, like <a href="http://worldburrow.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://worldburrow.com']);"><em>World Burrow</em> </a> started product development too early and never made it to market.</p>
+<p>I originally had the idea for <em>World Burrow</em> towards the end of last year when I was on work experience. I noticed that the work experience workplace often had a few unused meeting rooms. After noticing the rise of coworking spaces, I thought wouldn&#8217;t it be great if entrepreneurs like myself were able to hold meetings in these spaces? I was sure there were offices with unused office or desk space as well. So I charged ahead, I taught myself the Laravel PHP framework and started coding. I was about pretty much finished creating the initial website platform to support the model when <a href="http://hotdesk.com.au">Hotdesk</a> launched. Hotdesk is (almost) everything I&#8217;d hoped World Burrow to be. Unbeknown to me when I had the idea, Hotdesk had already run a crowdfunding campaign months prior for their idea. Soon after, other key player in this space, <a href="https://liquidspace.com/au" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://liquidspace.com/au']);">LiquidSpace</a>, launched in Australia.</p>
+<p>What was I going to do? With some other players now in this space I needed a point of difference and thus decided I&#8217;d change the focus.  <em>There&#8217;s always </em><i>enterprise</i> I thought.  My plan was to rather focus on large (1B+ annual revenue) companies wanting to do good with their local entrepreneur &amp; freelancer community. The idea was that they give their unused space and meeting rooms to these people for free, and <em>World Burrow </em>will promote their space, get some positive publicity for them, cover insurance and keep their competitors from using the space. In hindsight, the model is clearly not scaleable. I emailed the people responsible for CSR at these companies and of those that responded, they all said that it would not work with their workplace due to their security restrictions.</p>
+<p>So I let <em>World Burrow </em>go.</p>
+<blockquote><p><span style="color: #3366ff;"><a href="http://bit.ly/1kEVMHh" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://bit.ly/1kEVMHh']);"><span style="color: #3366ff;">Check out my latest project, Sailr. Buy and sell online as simply as you tweet.</span></a></span></p><div class="wpInsert wpInsertInPostAd wpInsertMiddle" style="margin: 5px; padding: 0px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-8417437845331944";
+/* AdHomepage11 */
+google_ad_slot = "5784781419";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div></blockquote>
+<p>I&#8217;d already written a substantial amount of code for the platform and rather than leaving it to rot on my hard drive, I&#8217;m open sourcing it for anyone to use. It&#8217;s called the <a href="https://github.com/nfeiglin/collab-consumption/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com/nfeiglin/collab-consumption/']);" target="_blank">The Collaborative Consumption Marketplace Platform Project</a> (CCMPP.) I&#8217;m sure the CCMP will be an excellent starting point and will save a collaborative consumption (or other) startups some time in development. I know I would have appreciated it if something like this existed when I started development.</p>
+<p>And I ask you to do the same, do you have any products you have developed that didn&#8217;t make it to market? I&#8217;m sure there will be someone out there that will appreciate your code.  Upload your code to Github and help someone out.</p>
+<hr/>
+<p><em>Nathan Feiglin is a 15 year-old entrepreneur from Sydney, Australia.</em></p>
+<p>&nbsp;</p>
+</div><div class="wpInsert wpInsertInPostAd wpInsertBelow" style="margin: 5px; padding: 0px;"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-8417437845331944";
+/* Bottom of post banner */
+google_ad_slot = "6322297419";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div> </div> 
+<div class="entry-tags">
+This post also appears in<a href="http://techu.com.au/tag/ccmpp/">ccmpp</a>, <a href="http://techu.com.au/tag/collaborative-consumption-marketplace-platform-project/">Collaborative Consumption Marketplace Platform Project</a>, <a href="http://techu.com.au/tag/fail/">fail</a>, <a href="http://techu.com.au/tag/flearning/">flearning</a>, <a href="http://techu.com.au/tag/github/">github</a>, <a href="http://techu.com.au/tag/laravel/">laravel</a>, <a href="http://techu.com.au/tag/open-source/">open source</a>, <a href="http://techu.com.au/tag/php/">php</a>, <a href="http://techu.com.au/tag/startups/">startups</a> </div> 
+<div class="entry-author entry-author-bottom">
+<div class="author-avatar">
+<img alt='' src='http://0.gravatar.com/avatar/61edda91cfe26138c09a9d4886f6feaa?s=96&amp;d=identicon&amp;r=G' class='avatar avatar-96 photo' height='96' width='96'/> </div> 
+<div class="author-description">
+<h6>Nathan Feiglin</h6>
+<p>Nathan is a technology enthusiast and founder of <a href="http://sailr.co"> Sailr</a> – a social network for Ecommerce
+<a href="https://twitter.com/nfeiglin"><strong>Follow @nfeiglin</strong></a></p>
+</div> 
+<div class="entry-date">
+<h6>Published</h6> <span class="date">March 2, 2014</span> </div>
+<div style="clear:both"></div>
+</div> 
+<div class="entry-comment">
+<a class="toggle-comments" id="show_comments" href="#comments">Show Comments</a>
+<a class="toggle-comments" id="hide_comments" href="#comments">Hide Comments</a>
+<div id="comments" class="comments-area">
+<h2 class="comments-title">
+8 thoughts on <span>Why I&#8217;m Open Sourcing My Failed Startup</span> </h2>
+<ol class="commentlist">
+<li class="pingback even thread-even depth-1" id="comment-207">
+<div id="div-comment-207" class="comment-body">
+<div class="comment-author vcard">
+<cite class="fn"><a href="http://www.crapkin.net/crapkin-blog/im-open-sourcing-my-failed-startup-2/" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.crapkin.net/crapkin-blog/im-open-sourcing-my-failed-startup-2/']);" rel='external nofollow' class='url'>I&#8217;m Open Sourcing My Failed Startup | Crapkin News</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-207">
+March 3, 2014 at 2:26 am</a> </div>
+<p>[&#8230;] I wrote about it on my blog at <a href="http://techu.com.au/2014/03/open-source-startups/" rel="nofollow">http://techu.com.au/2014/03/open-source-startups/</a> [&#8230;]</p>
+<div class="reply">
+</div>
+</div>
+</li> 
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-230">
+<div id="div-comment-230" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/951e7bd5123f45e33e47367c0bb15488?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn"><a href="http://www.ccmpp.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.ccmpp.com']);" rel='external nofollow' class='url'>ccmpp</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-230">
+March 27, 2014 at 5:08 pm</a> </div>
+<p>are you mean the ccmpp.com?</p>
+<div class="reply">
+</div>
+</div>
+</li> 
+<li class="comment byuser comment-author-nathan bypostauthor even thread-even depth-1" id="comment-233">
+<div id="div-comment-233" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/61edda91cfe26138c09a9d4886f6feaa?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn">Nathan Feiglin</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-233">
+March 27, 2014 at 6:27 pm</a> </div>
+<p>@ccmp &#8211; I&#8217;m not quite sure what you mean.</p>
+<div class="reply">
+</div>
+</div>
+</li> 
+<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-294">
+<div id="div-comment-294" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/f5dd82b7d2dad27b65c1243f126ecdcd?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn"><a href="http://www.ccmpp.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.ccmpp.com']);" rel='external nofollow' class='url'>ccmpp</a></cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-294">
+April 19, 2014 at 11:26 pm</a> </div>
+<p>for Nathan Feiglin<br/>
+I&#8217;m run the code which you share at github,but a lots of ploblem,i don&#8217;t know if the Configuration of appserv was wrong or the code you write have some bug.<br/>
+ps:what&#8217;s the venture you do now？</p>
+<div class="reply">
+</div>
+</div>
+<ol class="children">
+<li class="comment byuser comment-author-nathan bypostauthor even depth-2" id="comment-295">
+<div id="div-comment-295" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/61edda91cfe26138c09a9d4886f6feaa?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn">Nathan Feiglin</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-295">
+April 19, 2014 at 11:47 pm</a> </div>
+<p>Hi there,</p>
+<p>Sorry about the issues. The migrations are currently not working. I&#8217;ve been flat out with the new venture, <a href="http://sailr.co" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','http://sailr.co']);" rel="nofollow">Sailr (sailr.co)</a> so I haven&#8217;t had a chance to fix them yet!</p>
+<p>Hopefully I&#8217;ll get around to it soon!<br/>
+Nathan</p>
+<div class="reply">
+</div>
+</div>
+</li> 
+</ol> 
+</li> 
+<li class="comment odd alt thread-even depth-1" id="comment-299">
+<div id="div-comment-299" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/e3324f11e4045aa039d50d7ae94d4a73?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn">Stefan</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-299">
+April 22, 2014 at 5:25 am</a> </div>
+<p>Hey Nathan!</p>
+<p>I could really use the CCMPP software as a starting point for a startup idea. If there is anything I can help you with regarding fixing the migration bug, just message me.</p>
+<p>Thanks,<br/>
+Stefan.</p>
+<div class="reply">
+</div>
+</div>
+</li> 
+<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-318">
+<div id="div-comment-318" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/a8c30e1544ea1e10ab1de5bcd656f466?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn">Stefan</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-318">
+May 4, 2014 at 11:06 pm</a> </div>
+<p>C&#8217;mon mate, it can&#8217;t be that difficult to fix a couple of lines of code. The migration error is only happening due to an incorrect re-naming of a column. If you could just upload the SQL database or atleast the database schema I would love to resolve the issue myself and push it to github.<br/>
+Kind regards.</p>
+<div class="reply">
+</div>
+</div>
+<ol class="children">
+<li class="comment byuser comment-author-nathan bypostauthor odd alt depth-2" id="comment-319">
+<div id="div-comment-319" class="comment-body">
+<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/61edda91cfe26138c09a9d4886f6feaa?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32 photo' height='32' width='32'/> <cite class="fn">Nathan Feiglin</cite> <span class="says">says:</span> </div>
+<div class="comment-meta commentmetadata"><a href="http://techu.com.au/2014/03/open-source-startups/#comment-319">
+May 4, 2014 at 11:30 pm</a> </div>
+<p>Sorry about the delay. I&#8217;ll see if I can find the sql file and I&#8217;ll upload it.</p>
+<div class="reply">
+</div>
+</div>
+</li> 
+</ol> 
+</li> 
+</ol> 
+</div>  </div>
+</article>
+</div> 
+</div> 
+</div> 
+</div> 
+<script type='text/javascript' src='http://techu.com.au/wp-includes/js/comment-reply.min.js?ver=4.0'></script>
+<script type='text/javascript' src='http://techu.com.au/wp-includes/js/masonry.min.js?ver=3.1.2'></script>
+<script type='text/javascript' src='http://techu.com.au/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2'></script>
+</body>
+</html>
+ 

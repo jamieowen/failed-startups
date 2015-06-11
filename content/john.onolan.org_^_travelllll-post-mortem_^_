@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Travelllll Post-Mortem</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=af0b26fdc6" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://john.onolan.org/travelllll-post-mortem/" />
+    
+    <meta property="og:site_name" content="John O'Nolan" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Travelllll Post-Mortem" />
+    <meta property="og:description" content="Every story has a beginning, a middle and an end. While Ghost is very much at the beginning of its journey, a few months ago I closed the book on my previous venture: Travelllll.com. As a culture obsessed with..." />
+    <meta property="og:url" content="http://john.onolan.org/travelllll-post-mortem/" />
+    <meta property="article:published_time" content="2013-10-02T10:00:00.000Z" />
+    <meta property="article:modified_time" content="2013-11-27T19:17:23.000Z" />
+    <meta property="article:tag" content="Startup Life" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Travelllll Post-Mortem" />
+    <meta name="twitter:description" content="Every story has a beginning, a middle and an end. While Ghost is very much at the beginning of its journey, a few months ago I closed the book on my previous venture: Travelllll.com. As a culture obsessed with..." />
+    <meta name="twitter:url" content="http://john.onolan.org/travelllll-post-mortem/" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "John O'Nolan",
+    "author": {
+        "@type": "Person",
+        "name": "John O'Nolan",
+        "image": "http://john.onolan.org/content/images/2015/02/gravatar-j8.jpg",
+        "url": "http://john.onolan.org/author/john",
+        "sameAs": "http://twitter.com/JohnONolan",
+        "description": "Founder at Ghost.org. Writes about open source, startup life, non-profits, and publishing platforms. Travels the world with a bag of kites."
+    },
+    "headline": "Travelllll Post-Mortem",
+    "url": "http://john.onolan.org/travelllll-post-mortem/",
+    "datePublished": "2013-10-02T10:00:00.000Z",
+    "dateModified": "2013-11-27T19:17:23.000Z",
+    "keywords": "Startup Life",
+    "description": "Every story has a beginning, a middle and an end. While Ghost is very much at the beginning of its journey, a few months ago I closed the book on my previous venture: Travelllll.com. As a culture obsessed with..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.6" />
+    <link rel="alternate" type="application/rss+xml" title="John O&#x27;Nolan" href="http://john.onolan.org/rss/" />
+    <link rel="me" href="https://twitter.com/johnonolan" />
+<link rel="me" href="https://github.com/johnonolan" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2670693-18', 'onolan.org');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body class="post-template tag-startup-life">
+
+    
+
+<nav class="main-nav clearfix">
+    <a class="back-button icon-arrow-left" href="http://john.onolan.org">Home</a>
+    <a class="subscribe-button icon-feed" href="http://john.onolan.org/rss/">Subscribe</a>
+</nav>
+
+<main class="content" role="main">
+
+    <article class="post tag-startup-life">
+
+        <header class="post-header">
+            <h1 class="post-title">Travelllll Post-Mortem</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2013-10-02">02 October 2013</time>  on <a href="/tag/startup-life/">Startup Life</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p><em>Every story has a beginning, a middle and an end. While Ghost is very much at the beginning of its journey, a few months ago I closed the book on my previous venture: Travelllll.com. As a culture obsessed with success stories, I think there's a great deal to be learned by sharing the stories which don't have such happy endings.</em></p>
+
+<p>A few weeks ago I read an incredible startup post-mortem by the team at <a href="http://flowtab.com/">FlowTab</a>, an iPhone app for ordering drinks at a bar. They analysed their successes, their failures, and the reasons for their ultimate demise. They also proceeded to Open Source their entire codebase so that their two years of work would not go to waste. </p>
+
+<p>Today I'm going to try and do the same.</p>
+
+<h2 id="thebeginning">The Beginning</h2>
+
+<p><em>I appreciate that <del>some</del>, <del>many</del>, most of you reading this will never have seen or even heard of Travelllll.com - so, let's start with some context.</em></p>
+
+<p>In the summer of 2010 I was doing a lot of work in the travel industry. One client lead to another, and my most recent piece of work had been to build the travel blog for one of Virgin Atlantic's latest digital ventures. Having completed the site, Virgin invited me to attend a press trip on their behalf and write about it on the blog I'd created for them. The deal was a 1-week, all expenses paid, 5-star trip to Valencia, Spain - and a free ticket to the Formula One Grand Prix. Not a hard decision.</p>
+
+<p>On this trip I met a fantastic group of people and discovered that the travel industry was, in effect, trying to catch up with the rest of the world when it came to social media. I was on the trip with a group of about 18 travel bloggers and representatives from Spain's tourism department, all discussing how this "social media stuff" was the next big thing.</p>
+
+<p>Now, as a web designer in mid-2010, I was already pretty bored with Twitter. It was already what I refer to as <em>"Post Vaynerchuk Era"</em> - where mainstream social media had pretty much peaked... But these guys seemed to be just catching up to it. </p>
+
+<p>Over the following year I attended (on my own this time, rather than for Virgin Atlantic) many more of these types of trips - and spoke at a great deal of conferences about social media, customer service, marketing and - of course - WordPress, in the travel industry.</p>
+
+<p>By summer of 2011 it seemed like the travel industry had barely moved along at all - but I'd met a good bunch of other people who seemed to "get it" and were moving in the right direction. It seemed obvious to me, at the time, that what was really missing from this industry was a Mashable. A site to cover the technology and startup trends within the travel industry and promote new media to an industry very much stuck in tradition.</p>
+
+<p><em>I made some mockups, talked to a few other people about the idea, and a couple of months later we launched Travelllll.com.</em></p>
+
+<p><img src="/content/images/2013/Nov/t5home.jpg" alt="The design for Travelllll" /></p>
+
+<h2 id="themiddle">The Middle</h2>
+
+<p>The first few months of the site went reasonably well. Traffic was decent and, because the travel industry was scrambling to find any way of "engaging with new media" it was very easy for us to do some small partnership deals with big brands. By the end of the year we'd worked with Expedia, KLM, Travora, TravelZoo, Guoman Hotels, Four BGB, World Travel Market, TBEX, and countless tourist boards.</p>
+
+<p>After that, we just didn't grow. We had a small but loyal following of [every travel blogger in the world], which consisted of roughly 5,000 people - being generous. We had the digital "travel inspiration" market covered. The commerical/financial/booking side of the market was already being covered by a competitor, <a href="http://tnooz.com">TNooz</a>, and the harsh reality was that we didn't really have anywhere to go.</p>
+
+<p><em>So we pivoted. Several times.</em></p>
+
+<p><img src="/content/images/2013/Nov/departures_1.jpg" alt="Departure board" /></p>
+
+<p>One thing we tried was to offer a kind of real-time tracking service for all the press trips happening around the world. This was an interesting use of technology, but even if it had been much more developed than it was - there was still no real audience for it.</p>
+
+<p>Other things included a jobs board, to help travel brands and travel journalists connect with each other. A tourism guide, to try and create a sort of international directory of tourism boards - Our own events and press trips - and our own video/media coverage of conferences and press trips.</p>
+
+<p>The last one was probably the most fun, but again, it was entirely pointless due to there being no real audience for it.</p>
+
+<iframe src="//player.vimeo.com/video/39255851?title=0&byline=0&portrait=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<h2 id="theend">The End</h2>
+
+<p><em>By the beginning of 2013 things had reached a head. Several people had left (or given up) after working long hours for many months and not really getting anything in return.</em></p>
+
+<p>The people who remained, myself included, were frustrated and - frankly - out of ideas. Our content publication schedule (and quality) had gone down the drain, and our traffic was dwindling.</p>
+
+<p>We'd made a little bit of money, but really just enough to cover the costs of running the site. Our monetisation strategy had always been to get a fuck-ton of traffic and then put ads on the site but, as you may have noticed due to repeated mentions, there was no real audience to get this traffic from. This was when we eventually realised the great truth. The thing we missed right from the start.</p>
+
+<p>Travel isn't just lagging behind other industries when it comes to social media because it's a bit slow to catch on. It's a fundamentally different market. The average consumer - not including business travel - purchases travel related products just once or twice a year. Compare this to the other industries where new media has been successful and the difference is overwhelming: Tech, food, fashion, publishing, photography... these are things people do and use every single day. The majority of consumers research travel just once or twice per year before booking a trip - and then not again for another 12 months. </p>
+
+<p>This is the reason we see a huge amount of failed "travel inspiration" startups. I got into this industry through Virgin Atlantic's "vtravelled" startup which was a travel-inspiration app which ultimately shut down.</p>
+
+<p>The same thing has been repeated over and over again by others like <a href="http://trippy.com">Trippy</a> which has pivoted 3 or 4 times now (despite <a href="http://techcrunch.com/2011/11/15/disrupt-alum-trippy-raises-1-75-million-thanks-to-ribs-and-fried-chicken/">millions</a> in VC funding) due to not being able to find a big enough market. There was also Gowalla - which went for a travel-inspiration angle where Foursquare went for a social paradigm, and eventually shut down and had its staff merged into Facebook. But people keep spotting this "gap" in the market and chasing after it, and travel blogging falls into the same space. Trying to provide "travel inspiration" and encourage people to want to travel.</p>
+
+<p>The reality is that most people don't make a hobby out of travel. It's pretty expensive, and it's pretty hard to fit in around work. People take a holiday - and then they don't think about travel again until the next holiday. Eventually we accepted that we were trying to write about and cover the "news" in a tiny market which was simply never going to get any bigger.</p>
+
+<h2 id="lessonslearned">Lessons Learned</h2>
+
+<p><strong>We didn't know what traction was, and by that measure we didn't know that we didn't have any.</strong> Our first media pack boasted our "10,000 page views in just 48 hours of launch" and our monthly traffic was 3-4x that of any travel blog we knew about. We knew we were a big fish... we just didn't know how small the pond was. For reference, <a href="http://ghost.org">Ghost</a> got roughly 300,000 page views in its first 48 hours, and by the end of its first week it had accumulated more traffic than T5 got in its entire 2 year lifespan. </p>
+
+<p><strong>If your montisation strategy is advertising, you need to be marketing to an <em>enormous</em> audience.</strong> It's possible to make a little money from a lot of people, or a lot of money from a few people. Making a little money from a few people doesn't add up. If you're not selling something, you better have a LOT of eyeballs. We didn't.</p>
+
+<p><strong>Running a magazine/news site is <em>hard</em>.</strong> Probably the biggest hurdle between us and publishing quality content, more often, was struggling endlessly to find an effective editorial workflow. It was incredibly, incredibly hard to commission, manage, and edit multiple authors through WordPress. Ultimately, this frustration was one of the largest catalysts that lead to me starting to talk about and write about the idea for Ghost. (Silver lining)</p>
+
+<p><strong>When you don't know an industry, it's very easy to spot a gap in it.</strong> It took us (largely people from a tech background) two years to fully understand the market we were entering. When we did, we realised that the gap we were trying to fill didn't actually exist. If you haven't been working in an industry, full time, for more than 24 months - it's pretty safe to say you probably don't understand it. Think carefully about that before you dive into your "I can't believe nobody has done this yet" startup idea.</p>
+
+<p><strong>Moderate success is worse than failure.</strong> This is the most important lesson that I learned from the entire venture, summed up perfectly by <a href="https://twitter.com/dcurtis/status/220347986948009984">Dustin Curtis</a>:</p>
+
+<blockquote>
+  <p>Moderate success is the worst place for a startup. It's worse than failure. There's some validation, but no growth. Endless paralysis.</p>
+</blockquote>
+
+<p>It took us forever to realise that we weren't actually as successful as we thought we were. I think the same is true for many others in this space.</p>
+
+<h2 id="ifihadtodoitalloveragain">If I Had to Do it All Over Again</h2>
+
+<p><em>It's not so much a question of what I'd do differently so much as it is a one of whether I'd do anything at all. Probably not.</em></p>
+
+<p>There are interesting gaps in the travel market, but "trip inspiration" via social network, blog, or app is not one of them. If I had to focus on a space in the travel industry right now, it would be one of two choices:</p>
+
+<ol>
+<li><p>Activity based travel. There's a growing market of people who travel as a means to do an activity. They may not search for travel inspiration every day, but they do obsessively search for "the best places to… [activity]" every. Single. Day.  Eg. Kiteboarding, surfing, golf, rock climbing, skydiving, scuba diving, paragliding. The list goes on. These people have money, and they will travel to do these things.</p></li>
+<li><p>Destination based travel guides. Most travel bloggers right now market themselves as the brand, and the destinations they go to as the content. This doesn't work, because consumers don't research "places Tom has been" - they search for "[place] I want to go". A travel blog where the destination is the brand and the blogger is the content might work. A new-age, expert guide to a specific location could quite easily become the go-to resource for people researching that destination. A destination blog, rather than a travel blog.</p></li>
+</ol>
+
+<h2 id="settingitfree">Setting it Free</h2>
+
+<p><em>Despite not finding an audience, and ultimately closing down - the design and development work which I did on Travelllll.com remains one of my proudest accomplishments.</em></p>
+
+<p>It was an incredibly powerful WordPress site with functionality that put it on a technical level equivalent to some of the biggest news/magazine blogs out there.</p>
+
+<p>Today I am making the Travelllll.com theme (which basically housed both the design and functionality of the entire site) available for free to everyone under the GPLv2 license.</p>
+
+<p><a href="https://github.com/JohnONolan/Travelllll">Download it here on Github</a></p>
+
+<p>Please note, however, that this is <strong>not</strong> a usable theme which you can simply drop onto any WordPress install. It is not user friendly - it is not set up to "just work" on any site. This is the theme in the exact state it was in when it was running T5. Some references are hard-coded, others require configuration. This theme is most suitable to WordPress developers looking for a base to start with when building a magazine/news site. </p>
+
+<p>It also contains a lot of incredibly handy individual functions (in functions.php) which can be re-used individually. Some written by me, some written by others, and a few even written by a couple of the lead developers of WordPress.</p>
+
+<p>I hope some of our two years of hard work can live on and help someone else. It was a fun ride.</p>
+        </section>
+
+        <aside class="email-box">
+            <h3 class="email-box-heading">Thoughts on open source, non-profit, distributed startup life.</h3>
+            <h4 class="email-box-subheading">and all the bumps and bruises along the way</h4>
+            <form class="email-box-form" action="http://tryghost.createsend.com/t/t/s/tudrx/" method="post">
+                <input id="fieldEmail" name="cm-tudrx-tudrx" type="email" placeholder="Your email address..." required />
+                <button type="submit">Send me the good stuff.</button>
+            </form>
+            <p class="email-box-description">If I write shit, you get it in your inbox a maximum of 1 time per week.<br>
+                If I don't then nothing happens. (Weird)</p>
+        </aside>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <A class="img" href="/author/john/" style="background-image: url(/content/images/2015/02/gravatar-j8.jpg)"><span class="hidden">John O&#x27;Nolan's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="/author/john/">John O&#x27;Nolan</a></h4>
+
+                    <p>Founder at Ghost.org. Writes about open source, startup life, non-profits, and publishing platforms. Travels the world with a bag of kites.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">El Gouna, Egypt</span>
+                    <span class="author-link icon-link"><a href="http://twitter.com/JohnONolan">http://twitter.com/JohnONolan</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Travelllll%20Post-Mortem&amp;url=http://john.onolan.org/travelllll-post-mortem/"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://john.onolan.org/travelllll-post-mortem/"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://john.onolan.org/travelllll-post-mortem/"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+
+</main>
+
+
+    <footer class="site-footer clearfix">
+         <section class="copyright"><a href="http://john.onolan.org">John O&#x27;Nolan</a> &copy; 2015</section>
+         <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+    </footer>
+
+    <script src="/public/jquery.min.js?v=af0b26fdc6"></script>
+
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=af0b26fdc6"></script>
+    <script type="text/javascript" src="/assets/js/index.js?v=af0b26fdc6"></script>
+
+<img src="/view.gif?page=/travelllll-post-mortem/" alt="" style="display:none" hidden />
+</body>
+</html>

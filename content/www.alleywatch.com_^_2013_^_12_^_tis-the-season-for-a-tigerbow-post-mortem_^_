@@ -1,0 +1,756 @@
+<!DOCTYPE html><!--[if lt IE 7 ]><html
+lang="en" class="no-js ie6"> <![endif]--><!--[if IE 7 ]><html
+lang="en" class="no-js ie7"> <![endif]--><!--[if IE 8 ]><html
+lang="en" class="no-js ie8"> <![endif]--><!--[if IE 9 ]><html
+lang="en" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html
+lang="en-US" class="no-js"> <!--<![endif]--><head> <script>/*<![CDATA[*/window.mrf={host:"b.marfeel.com",dt:3},function(e,t,o,i,a,n,r){function d(){e.cookie="fromt=yes;path=/;expires="+new Date(Date.now()+18e5).toGMTString(),o.reload()}if((/(ipad.*?OS )(?!1_|2_|3_|4_0|4_1|4_2|X)|mozilla.*android (?!(1|2|3)\.)[0-9](?!.*mobile)|\bSilk\b/i.test(i)&&2&r.dt||/(ip(hone|od).*?OS )(?!1_|2_|3_|4_0|4_1|4_2|X)|mozilla.*android (?!(1|2|3)\.)[0-9].*mobile|bb10/i.test(i)&&1&r.dt||/marfeelgarda=off/i.test(n))&&t===t.top){!/marfeelgarda=no|fromt=yes/i.test(n+";"+a)&&e.write('<plaintext style="display:none">');var l="script",s=setTimeout(d,1e4),m=e.createElement(l),c=e.getElementsByTagName(l)[0];m.src="//"+r.host+"/statics/marfeel/gardac.js",m.onerror=d,m.onload=function(){clearTimeout(s)},c.parentNode.insertBefore(m,c)}}(document,window,location,navigator.userAgent,document.cookie,location.search,window.mrf);/*]]>*/</script><title> Tis the Season for a Tigerbow Post Mortem - AlleyWatch</title><meta
+name="viewport" content="width=device-width, initial-scale=.33"><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link
+rel="shortcut icon" href="http://cdn.alleywatch.com/wp-content/uploads/2013/01/favicon.ico" /><link
+rel="apple-touch-icon" href="http://cdn.alleywatch.com/wp-content/uploads/2012/12/144x144.png" /><link
+rel="alternate" title="AlleyWatch RSS Feed" href="http://feeds.feedburner.com/Alleywatch" /><link
+rel="alternate" title="RSS .92" href="http://www.alleywatch.com/feed/rss/" /><link
+rel="alternate" title="Atom 0.3" href="http://www.alleywatch.com/feed/atom/" /><link
+rel="pingback" href="http://www.alleywatch.com/xmlrpc.php" /><link
+rel="canonical" href="http://www.alleywatch.com/2013/12/tis-the-season-for-a-tigerbow-post-mortem/" /><link
+rel="dns-prefetch" href="//connect.facebook.net" /><link
+rel="stylesheet" href="http://www.alleywatch.com/wp-content/cache/scripts/162474e095fb9099ccd42e93c4933560.css" type="text/css" media="all" /><link
+rel='stylesheet' id='font-awesome-styles-css'  href='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/font-awesome-4.3.0/css/font-awesome.min.css' type='text/css' media='all' /><link
+rel="stylesheet" href="http://www.alleywatch.com/wp-content/cache/scripts/4b27e9b96d5ceaa1179292c32453c8e6.css" type="text/css" media="all" /><link
+rel='stylesheet' id='mashbar-css'  href='http://cdn.alleywatch.com/wp-content/plugins/mashshare-sharebar/assets/css/mashbar.min.css' type='text/css' media='all' /><style id='mashbar-inline-css' type='text/css'>#mashbar-header {
+top:0;
+background-color:#fff;
+z-index:999999;
+}
+
+@media min-width 630px {
+#mashbar-header .mashbar-inner {
+max-width:1200px;
+margin:0 auto;
+}
+}</style><script type='text/javascript' src='http://cdn.alleywatch.com/wp-includes/js/jquery/jquery.js'></script><script type='text/javascript' src='http://cdn.alleywatch.com/wp-includes/js/jquery/jquery-migrate.min.js'></script><script type='text/javascript'>var fm_user_I18n={"ajaxurl":"http:\/\/www.alleywatch.com\/wp-admin\/admin-ajax.php"};</script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/wordpress-form-manager/js/userscripts.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/mailchimp-widget/js/mailchimp-widget-min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/arscode-ninja-popups/js/jquery.ck.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/arscode-ninja-popups/fancybox2/jquery.fancybox.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/arscode-ninja-popups/js/jquery.placeholder.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/arscode-ninja-popups/js/ninjapopups.min.js'></script><script type='text/javascript' src='http://cdn.alleywatch.com/wp-content/plugins/google-custom-search/js/gsc.js'></script><script type='text/javascript' src='http://www.google.com/jsapi'></script><script type='text/javascript'>var mashsb={"shares":"106","round_shares":"","animate_shares":"0","share_url":"http:\/\/www.alleywatch.com\/2013\/12\/tis-the-season-for-a-tigerbow-post-mortem\/","title":"Tis+the+Season+for+a+Tigerbow+Post+Mortem","image":"http:\/\/www.alleywatch.com\/wp-content\/uploads\/2013\/12\/Tis-the-Season-3.jpg","desc":"Every holiday season, folks reach out to talk to me about the gifting market because of my first startup. It was called Tigerbow, and it let people send real gifts to email addresses (and Facebook \u2026","hashtag":"alleywatch","subscribe":"link","subscribe_url":"http:\/\/www.alleywatch.com\/email\/","activestatus":"1","singular":"1","twitter_popup":"1"};</script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/mashsharer/assets/js/mashsb.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/theia-post-slider/js/balupton-history.js/jquery.history.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/theia-post-slider/js/async.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/theia-post-slider/js/tps.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/theia-post-slider/js/tps-transition-slide.js'></script><script type='text/javascript'>var mashnet={"body":"Check out this article: ","subject":"I thought this AlleyWatch article would be of interest to you"};</script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/mashshare-networks/assets/js/mashnet.min.js'></script><script type='text/javascript'>var mashbar={"scroll_distance":"100"};</script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/mashshare-sharebar/assets/js/mashbar.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/modernizr.js'></script><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.alleywatch.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn.alleywatch.com/wp-includes/wlwmanifest.xml" /><link
+rel='shortlink' href='http://www.alleywatch.com/?p=18976' /><link
+rel="stylesheet" type="text/css" media="all" href="http://cdn.alleywatch.com/wp-content/plugins/floating-nextprev/css/default.css" /><script type="text/javascript" src="http://cdn.alleywatch.com/wp-content/plugins/floating-nextprev/js/default.js"></script><style>.theiaPostSlider_nav.fontTheme ._title,.theiaPostSlider_nav.fontTheme ._text {
+line-height:48px;
+}
+
+.theiaPostSlider_nav.fontTheme ._button {
+color:#f08100;
+}
+
+.theiaPostSlider_nav.fontTheme ._button ._2 span {
+font-size:48px;
+line-height:48px;
+}
+
+.theiaPostSlider_nav.fontTheme ._button:hover,.theiaPostSlider_nav.fontTheme ._button:focus {
+color:#ffa338;
+}
+
+.theiaPostSlider_nav.fontTheme ._disabled {
+color:#777!important;
+}</style><meta
+property="og:site_name" content="AlleyWatch" /><meta
+property="og:type" content="article" /><meta
+property="og:locale" content="en_US" /><meta
+property="fb:app_id" content="1384096905167663" /><meta
+property="og:url" content="http://www.alleywatch.com/2013/12/tis-the-season-for-a-tigerbow-post-mortem/" /><meta
+property="og:title" content="Tis the Season for a Tigerbow Post Mortem - AlleyWatch" /><meta
+property="og:description" content="Every holiday season, folks reach out to talk to me about the gifting market because of my first startup. It was called Tigerbow, and it let people send real gifts to email addresses (and Facebook profiles, Twitter accounts, mobile phones, etc.). I poured my heart and soul into it for 2-3 years, and it failed. Facebook’s (re)launch of Gifts and the holiday season got me thinking that I ought to finally do a post mortem. It’s been a few years and another startup, so forgive my memory, but here goes… Let me first dispense with some of the more obvious insights: Founders..." /><meta
+property="article:published_time" content="2013-12-19T15:27:13+00:00" /><meta
+property="article:modified_time" content="2013-12-19T04:12:50+00:00" /><meta
+property="article:author" content="http://www.alleywatch.com/author/david-levy/" /><meta
+property="article:section" content="Advice" /><meta
+property="article:tag" content="Resources" /><meta
+property="article:tag" content="Atari 2600" /><meta
+property="article:tag" content="dating" /><meta
+property="article:tag" content="Facebook" /><meta
+property="article:tag" content="Online dating service" /><meta
+property="article:tag" content="Passions Network" /><meta
+property="article:tag" content="Relationships" /><meta
+property="article:tag" content="Tigerbow" /><meta
+property="article:tag" content="Twitter" /><meta
+property="og:image" content="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-3.jpg" /><meta
+property="og:image:width" content="262" /><meta
+property="og:image:height" content="192" /><style>body {
+background:#fcfcfc url() center center repeat scroll;
+}
+
+a,.tabs ul.nav li a:hover,.tabs ul.nav li.active a,.dropcap,.toggle.hover .toggle-title,li.comment cite a:hover,h3.widget-title,.post-meta .meta-title:hover,.the-latest a:hover h4,.aw_socialcounter_widget li a:hover,.aw_tabbed_widget #tab-latest-comments a:hover {
+color:#09c;
+}
+
+a:hover {
+color:#b30000;
+}
+
+input:focus,textarea:focus {
+border-color:#09c;
+}
+
+#searchsubmit,.highlight,.aw_tabbed_widget .tabs ul.nav li.active a,footer .aw_tabbed_widget .tabs ul.nav li.active a,#top .aw_tabbed_widget .tabs ul.nav li.active a,.aw_tabbed_widget .tabs ul.nav li a:hover,footer .aw_tabbed_widget .tabs ul.nav li a:hover,#top .aw_tabbed_widget .tabs ul.nav li a:hover,.aw_twitter_widget .twitter-icon,.testimonial-icon,#top-closed:hover,.flex-control-nav a:hover,.flex-control-nav a.flex-active {
+background-color:#09c;
+}
+
+.submit {
+background-color:#09c;
+border-color:#007399;
+}
+
+.submit:hover {
+background-color:#b30000;
+border-color:#860000;
+}
+
+#searchsubmit:hover {
+background-color:#b30000;
+}
+
+.toggle.hover .toggle-icon {
+border-top-color:#09c;
+}
+
+.toggle.hover.active .toggle-icon {
+border-bottom-color:#09c;
+}
+
+.flex-direction-nav li .flex-prev:hover {
+border-right-color:#09c;
+}
+
+.flex-direction-nav li .flex-next:hover {
+border-left-color:#09c;
+}
+
+::selection,::-moz-selection {
+background:#09c;
+}
+
+@media only screen and min-width 768px and max-width 959px {
+.aw_tabbed_widget .tabs ul.nav li a:hover,.tabs ul.nav li.active a {
+color:#09c;
+}
+}
+
+@media screen and max-width 767px {
+.tabs ul.nav li a:hover,.tabs ul.nav li.active a {
+color:#09c;
+}
+}</style><!--[if IE 8]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script><![endif]--><link
+rel="alternate" type="application/rss+xml" title="AlleyWatch RSS Feed" href="http://www.alleywatch.com/feed/" /><link
+rel="alternate" type="text/xml" title="RSS .92" href="http://www.alleywatch.com/feed/rss/" /><link
+rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://www.alleywatch.com/feed/atom/" /><link
+rel="pingback" href="http://www.alleywatch.com/xmlrpc.php" /> <script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script><script type='text/javascript'>googletag.cmd.push(function(){googletag.defineSlot('/13379614/aw_main_lb_1',[728,90],'div-gpt-ad-1394933678846-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_lb_2',[728,90],'div-gpt-ad-1394933678846-1').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_1',[300,250],'div-gpt-ad-1394933678846-2').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_2',[300,250],'div-gpt-ad-1394933678846-3').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_3',[300,250],'div-gpt-ad-1394933678846-4').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_4',[300,250],'div-gpt-ad-1409958809266-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_5',[300,250],'div-gpt-ad-1410752289659-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_6',[300,250],'div-gpt-ad-1409958943273-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_ws_2',[300,600],'div-gpt-ad-1409959094898-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_7_new',[300,250],'div-gpt-ad-1397337492548-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_8',[300,250],'div-gpt-ad-1404766392739-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_mr_9',[300,250],'div-gpt-ad-1404766392739-1').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_10',[300,250],'div-gpt-ad-1410299040110-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_11',[300,250],'div-gpt-ad-1410299040110-1').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_12',[300,250],'div-gpt-ad-1410299040110-2').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_13',[300,250],'div-gpt-ad-1410299040110-3').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_14',[300,250],'div-gpt-ad-1410299040110-4').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_lb_1_rep',[728,90],'div-gpt-ad-1428361490564-0').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_1_rep',[300,250],'div-gpt-ad-1428361490564-1').addService(googletag.pubads());googletag.defineSlot('/13379614/aw_main_mr_2_rep',[300,250],'div-gpt-ad-1428361490564-2').addService(googletag.pubads());googletag.enableServices();});</script>
+<script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt);})();_qevents.push({qacct:"p-WXNG0udwx3eLM"});</script><noscript><div
+style="display:none;"> <img
+src="//pixel.quantserve.com/pixel/p-WXNG0udwx3eLM.gif" border="0" height="1" width="1" alt="Quantcast"/></div> </noscript> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-35587200-4','alleywatch.com');ga('send','pageview');</script><style>#mid-nav ul a {
+padding:5px 14px;
+}</style></head><body
+class="single single-post postid-18976 single-format-standard wpsocialite-scroll unknown"> <nav
+id="top-nav" class="menu-nav"><div
+class=""><div
+class="menu-top-navi-container"><ul
+id="menu-top-navi" class="menu"><li
+id="menu-item-593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-593"><a
+href="http://www.alleywatch.com/about-us/">ABOUT US</a><ul
+class="sub-menu"><li
+id="menu-item-594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-594"><a
+href="http://www.alleywatch.com/about-us/team/">TEAM</a></li></ul></li><li
+id="menu-item-596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-596"><a
+href="http://www.alleywatch.com/contact-us/">CONTACT US</a></li><li
+id="menu-item-1598" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1598"><a
+href="http://www.alleywatch.com/contribute-to-alleywatch/">APPLY TO CONTRIBUTE TO ALLEYWATCH</a><ul
+class="sub-menu"><li
+id="menu-item-1251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1251"><a
+href="http://www.alleywatch.com/write-for-alley-watch/">Write for Us</a></li></ul></li><li
+id="menu-item-1259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1259"><a
+href="http://www.alleywatch.com/tell-us-about-your-startup/">TELL US ABOUT YOUR STARTUP</a></li><li
+id="menu-item-31823" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31823"><a
+href="http://www.alleywatch.com/email/">EMAIL SIGNUP</a></li><li
+id="menu-item-22886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22886"><a
+title="Advertise with AlleyWatch" href="http://www.alleywatch.com/advertising/">ADVERTISE ON ALLEYWATCH</a></li></ul></div><div
+style="float: right; padding-right: 66px;"><div
+class="ribbon"> <a
+target="_blank" href="http://feeds.feedburner.com/Alleywatch"><i
+class="fa fa-rss fa-2x"></i></a> <a
+target="_blank" href="http://www.linkedin.com/company/alleywatch"><i
+class="fa fa-linkedin-square fa-2x"></i></a> <a
+target="_blank" href="http://twitter.com/alleywatch"><i
+class="fa fa-twitter-square fa-2x"></i></a> <a
+target="_blank" href="http://facebook.com/alleywatch"><i
+class="fa fa-facebook-square fa-2x"></i></a></div></div><div
+class="clear"></div></div> </nav><div
+id="wrapper" class="container"> <header><div
+id="logo" class="grid-12" style="margin-top: -20px; margin-bottom: -20px;"><div
+style="float:left;"> <a
+href="http://www.alleywatch.com"><img
+src="http://www.alleywatch.com/wp-content/themes/deadline-responsive/_assets/img/logo.svg" alt="AlleyWatch" /></a></div><div
+class="header-wrapper" style="float: right;"><div
+id="leaderboard" style="border: 1px solid #E8E8E8; padding: 2px; margin-top: 1px;"><div
+class="textwidget"><div
+id='div-gpt-ad-1394933678846-0' style='width:728px; height:90px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1394933678846-0');});</script></div></div></div><div
+class="clear"></div></div></div><div
+class="clear"></div> <nav
+id="mid-nav" class="grid-12 mid-nav"><div
+class="menu-mid-navi-container"><ul
+id="mid-nav-menu" class="menu"><li
+id="menu-item-1193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1193"><a
+href="http://www.alleywatch.com/advertising/">Advertise</a></li><li
+id="menu-item-1194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1194"><a
+href="http://www.alleywatch.com/services/">Services</a><ul
+class="sub-menu"><li
+id="menu-item-14830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14830"><a
+href="http://www.alleywatch.com/event-listing/">AlleyWatch Event Listing</a></li><li
+id="menu-item-1197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1197"><a
+href="http://www.alleywatch.com/services/development/">Development</a></li><li
+id="menu-item-20402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20402"><a
+href="http://www.alleywatch.com/2014/01/the-complete-guide-to-coworking-in-nyc/">Coworking Spaces</a></li></ul></li><li
+id="menu-item-18179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18179"><a
+title="NYC Tech and Startup Events" href="http://events.alleywatch.com/nyc-tech-startup-events/">NYC Tech Events</a></li><li
+id="menu-item-20567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20567"><a
+title="NYC Coworking Spaces" href="http://www.alleywatch.com/2014/01/the-complete-guide-to-coworking-in-nyc/">NYC Coworking</a></li><li
+id="menu-item-21266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21266"><a
+href="http://www.alleywatch.com/2013/08/14-new-york-based-accelerators-to-help-you-launch-your-company/">NYC Accelerators</a></li><li
+id="menu-item-21263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21263"><a
+href="http://www.alleywatch.com/angel/">NYC Angels</a></li><li
+id="menu-item-29601" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29601"><a
+href="http://www.alleywatch.com/vc/">NYC VC</a></li></ul></div><div
+class="clear"></div> </nav> <nav
+id="main-nav" class="grid-12 menu-nav"><div
+class="menu-main-navi-container"><ul
+id="main-nav-menu" class="menu"><li
+id="menu-item-537" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-537"><a
+href="http://www.alleywatch.com/category/business/">Business</a><ul
+class="sub-menu"><li
+id="menu-item-7488" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7488"><a
+href="http://www.alleywatch.com/category/business/industry/advertising-business/">Advertising</a></li><li
+id="menu-item-24610" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24610"><a
+href="http://www.alleywatch.com/category/business/big-data-business/">Big Data</a></li><li
+id="menu-item-7487" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7487"><a
+href="http://www.alleywatch.com/category/business/industry/fashion-industry/">Fashion</a></li><li
+id="menu-item-24609" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24609"><a
+href="http://www.alleywatch.com/category/business/industry/finance/">Finance</a></li><li
+id="menu-item-24611" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24611"><a
+href="http://www.alleywatch.com/category/business/industry/healthcare/">Healthcare</a></li><li
+id="menu-item-24612" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24612"><a
+href="http://www.alleywatch.com/category/business/legalwatch/">LegalWatch</a></li></ul></li><li
+id="menu-item-880" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-880"><a
+href="http://www.alleywatch.com/category/startups/">Startups</a></li><li
+id="menu-item-896" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-896"><a
+href="http://www.alleywatch.com/category/funding/">Funding</a><ul
+class="sub-menu"><li
+id="menu-item-31280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31280"><a
+href="http://www.alleywatch.com/vc/">AlleyWatch NYC Venture Capital Resources</a></li><li
+id="menu-item-13668" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13668"><a
+href="http://www.alleywatch.com/category/funding/accelerators/">Accelerators</a></li><li
+id="menu-item-7490" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7490"><a
+href="http://www.alleywatch.com/category/funding/angel/">Angel/Seed</a></li><li
+id="menu-item-13669" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13669"><a
+href="http://www.alleywatch.com/category/funding/an-angel-in-new-york/">An Angel in New York</a></li><li
+id="menu-item-7491" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7491"><a
+href="http://www.alleywatch.com/category/funding/funding-news/">Funding News</a></li><li
+id="menu-item-7492" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7492"><a
+href="http://www.alleywatch.com/category/funding/venture-capital-funding/">Venture Capital</a></li><li
+id="menu-item-13670" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-13670"><a
+href="http://www.alleywatch.com/category/funding/new-york-vc-spotlight/">New York VC Spotlight</a></li></ul></li><li
+id="menu-item-887" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-887"><a
+href="http://www.alleywatch.com/category/tech/">Tech</a><ul
+class="sub-menu"><li
+id="menu-item-14754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14754"><a
+href="http://www.alleywatch.com/category/tech/apps/">Apps</a></li><li
+id="menu-item-14755" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14755"><a
+href="http://www.alleywatch.com/category/tech/cool-tech/">Cool Tech</a></li><li
+id="menu-item-14756" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14756"><a
+href="http://www.alleywatch.com/category/tech/inside-the-code/">Inside the Code</a></li><li
+id="menu-item-14757" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14757"><a
+href="http://www.alleywatch.com/category/tech/mobile/">Mobile</a></li></ul></li><li
+id="menu-item-547" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-547"><a
+href="http://www.alleywatch.com/category/tech-and-the-city/">Techs and the City</a></li><li
+id="menu-item-892" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-892"><a
+href="http://www.alleywatch.com/category/resources/">Resources</a><ul
+class="sub-menu"><li
+id="menu-item-5710" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-5710"><a
+href="http://www.alleywatch.com/category/resources/advice/">Advice</a></li><li
+id="menu-item-14753" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14753"><a
+href="http://www.alleywatch.com/category/resources/lifestyle/">Lifestyle</a></li><li
+id="menu-item-7552" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7552"><a
+href="http://www.alleywatch.com/category/resources/management/">Management</a></li><li
+id="menu-item-7553" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7553"><a
+href="http://www.alleywatch.com/category/resources/strategic/">Strategic</a></li><li
+id="menu-item-5711" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5711"><a
+href="http://www.alleywatch.com/category/resources/coworking/">Coworking</a></li></ul></li><li
+id="menu-item-525" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-525"><a
+href="http://www.alleywatch.com/category/alleytalk/">AlleyTalk</a><ul
+class="sub-menu"><li
+id="menu-item-35290" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35290"><a
+href="http://events.alleywatch.com/nyc-tech-startup-events/">NYC Tech and Startup Events</a></li><li
+id="menu-item-7489" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7489"><a
+href="http://www.alleywatch.com/category/alleytalk/interviews/">Interviews</a></li><li
+id="menu-item-7222" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7222"><a
+href="http://www.alleywatch.com/category/alleytalk/made-in-ny/">Made in NY</a></li><li
+id="menu-item-5202" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5202"><a
+href="http://www.alleywatch.com/category/alleytalk/pulse-of-the-alley/">Pulse of the Alley</a></li><li
+id="menu-item-5203" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5203"><a
+href="http://www.alleywatch.com/category/alleytalk/the-watch/">The Watch</a></li><li
+id="menu-item-31282" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31282"><a
+href="http://www.alleywatch.com/category/alleytalk/the-watch/nyc-tech-week-in-review/">NYC Tech Week in Review</a></li></ul></li><li
+id="menu-item-13126" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-13126"><a
+href="http://www.alleywatch.com/category/videos/">Video</a><ul
+class="sub-menu"><li
+id="menu-item-16440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16440"><a
+href="http://www.alleywatch.com/startup-tv/">Startup TV</a></li><li
+id="menu-item-21663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21663"><a
+href="http://www.alleywatch.com/bitcoin-tv/">Bitcoin TV</a></li><li
+id="menu-item-16445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16445"><a
+href="http://www.alleywatch.com/fashiontech-tv/">FashionTech TV</a></li><li
+id="menu-item-16442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16442"><a
+href="http://www.alleywatch.com/mobile-tv/">Mobile TV</a></li><li
+id="menu-item-16443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16443"><a
+href="http://www.alleywatch.com/app-tv/">App TV</a></li><li
+id="menu-item-16441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16441"><a
+href="http://www.alleywatch.com/edtech-tv/">EdTech TV</a></li><li
+id="menu-item-16444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16444"><a
+href="http://www.alleywatch.com/healthtech-tv/">HealthTech TV</a></li></ul></li></ul></div><div
+style="float: right; margin-top: 3px; margin-right: -10px;"><div
+id="cse-search-form14" style="width: 100%;"></div><script type="text/javascript">google.load('search','1',{language:'en_US'});google.setOnLoadCallback(function(){var customSearchControl=new google.search.CustomSearchControl('007405450184452071247:ghdmg3olpn4');customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);customSearchControl.enableAds('2496164227');var options=new google.search.DrawOptions();options.setSearchFormRoot('cse-search-form14');options.setAutoComplete(true);customSearchControl.draw('dialog',options);customSearchControl.setSearchCompleteCallback(this,CallBackDisplayDialog);},true);function CallBackDisplayDialog(result){jQuery('#dialog').dialog('open');}</script><div
+id="dialog" title="Search Results"><p></p></div></div> </nav><div
+class="clear"></div> </header><div
+class="grid-8" style="width: 850px;" ><div
+class="post-18976 post type-post status-publish format-standard has-post-thumbnail hentry category-advice category-resources tag-atari-2600 tag-dating tag-facebook tag-online-dating-service tag-passions-network tag-relationships tag-tigerbow tag-twitter odd" id="post-18976"><div
+class="entry-header"><h1>Tis the Season for a Tigerbow Post Mortem</h1></div><div
+class="entry-meta"><p>By <b><a
+href="http://www.alleywatch.com/author/david-levy/" title="Posts by David Levy" rel="author">David Levy</a></b> &middot; December 19, 2013 <span
+class="comments-link"> &nbsp;&middot; <a
+class="comments-number" href="http://www.alleywatch.com/2013/12/tis-the-season-for-a-tigerbow-post-mortem/#comments" >7</a> </span></p><p> <a
+href="http://www.alleywatch.com/category/resources/advice/" title="View all posts in Advice" >Advice</a>, <a
+href="http://www.alleywatch.com/category/resources/" title="View all posts in Resources" >Resources</a></p></div><div
+class="entry"><div
+id="aw_anchor">&nbsp;</div> <aside
+class="mashsb-container"><div
+class="mashsb-box"><div
+class="mashsb-count"><div
+class="counts mashsbcount">106</div><span
+class="mashsb-sharetext">SHARES</span></div><div
+class="mashsb-buttons"><a
+style="" class="mashicon-facebook" href="http://www.facebook.com/sharer.php?u=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Facebook</span></a><a
+style="" class="mashicon-twitter" href="https://twitter.com/intent/tweet?text=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;via=alleywatch&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Twitter</span></a><div
+class="onoffswitch"></div><div
+class="secondary-shares" style="display:none;"><a
+style="" class="mashicon-subscribe" href="#" target="_blank"><span
+class="icon"></span><span
+class="text">Subscribe</span></a><a
+style="" class="mashicon-google" href="https://plus.google.com/share?text=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Google</span></a><a
+style="display:none;" class="mashicon-whatsapp" href="whatsapp://send?text=Tis%20the%20Season%20for%20a%20Tigerbow%20Post%20Mortem%20http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Whatsapp</span></a><a
+style="" class="mashicon-pinterest" href="http://www.pinterest.com/pin/create/bookmarklet/?pinFave=1&amp;url=http://alleywat.ch/1eqMOOL&amp;media=http://www.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-3.jpg&amp;description=Every+holiday+season%2C+folks+reach+out+to+talk+to+me+about+the+gifting+market+because+of+my+first+startup.+It+was+called+Tigerbow%2C+and+it+let+people+send+real+gifts+to+email+addresses+%28and+Facebook+%E2%80%A6" target="_blank"><span
+class="icon"></span><span
+class="text">Pinterest</span></a><a
+style="" class="mashicon-digg" href="http://digg.com/submit?phase=2%20&amp;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Digg</span></a><a
+style="" class="mashicon-linkedin" href="https://www.linkedin.com/shareArticle?trk=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Linkedin</span></a><a
+style="" class="mashicon-reddit" href="http://www.reddit.com/submit?url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Reddit</span></a><a
+style="" class="mashicon-stumbleupon" href="http://www.stumbleupon.com/submit?url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Stumbleupon</span></a><a
+style="" class="mashicon-print" href="http://www.printfriendly.com/print/?url=http://alleywat.ch/1eqMOOL&amp;item=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Print</span></a><a
+style="" class="mashicon-delicious" href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Delicious</span></a><a
+style="" class="mashicon-buffer" href="https://bufferapp.com/add?url=http://alleywat.ch/1eqMOOL&amp;text=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Buffer</span></a><a
+style="" class="mashicon-pocket" href="https://getpocket.com/save?title=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Pocket</span></a><a
+style="" class="mashicon-xing" href="https://www.xing.com/social_plugins/share?h=1;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Xing</span></a><a
+style="" class="mashicon-tumblr" href="https://www.tumblr.com/share?v=3&amp;u=http://alleywat.ch/1eqMOOL&amp;t=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Tumblr</span></a><a
+style="" class="mashicon-mail" href="mailto:?subject=I thought this AlleyWatch article would be of interest to you&amp;body=Check out this article: http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Mail</span></a><div
+class="onoffswitch2" style="display:none;"></div></div></div></div><div
+style="clear:both;"></div></aside><p></p><p
+style="text-align: center;"><a
+href="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-1.jpg"><img
+class="aligncenter size-full wp-image-18977" alt="Tis the Season 1" src="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-1.jpg" /></a></p><p>Every holiday season, folks reach out to talk to me about the gifting market because of my first startup. It was called Tigerbow, and it let people send real gifts to email addresses (and Facebook profiles, Twitter accounts, mobile phones, etc.). I poured my heart and soul into it for 2-3 years, and it failed. Facebook’s (re)launch of Gifts and the holiday season got me thinking that I ought to finally do a post mortem. It’s been a few years and another startup, so forgive my memory, but here goes…</p><p>Let me first dispense with some of the more obvious insights:</p><ul><li><b>Founders need to be full-time.</b> If you’re not full-time, you’re not a founder. Until you are. (Duh.)</li><li><b>You need full-time tech talent.</b> You can outsource some stuff, but you’re going to rebuild it. Learn to build a product, code a little or find a tech co-founder. (Duh again.)</li><li><b>Market timing is critical.</b> We tried raising money for our company during the financial crisis of 2007-08. Needless to say, we were running up against stiff headwinds. (Duh?)</li><li><b>Execution is way more critical.</b> I cannot attribute our failure to market conditions. We were unable to execute on a strategy to drive early traction. (Duhhhh.)</li><li><b>Don’t raise money from people who don’t invest in startups.</b> We raised a (comparatively) small amount of money from friends and family. For the most part they were very supportive, but there were exceptions. Aside from the fact that we got little (non-monetary) value added from these investors, people who are unfamiliar with investing in startups and the risks and challenges of building a company will drive you bananas. (Tempting, but don’t / duh.)</li><li><b>Too early is wrong.</b> After Facebook’s acquisition of Karma and subsequent relaunch of its new Gifts product, a handful of people told me how “smart” and “early” we were with Tigerbow. But too early is wrong. Early / good timing plus building great products and solid execution are right. (Some people will think you’re smart, but who cares. Duh.)</li></ul><p>And now some more things we learned that were a bit more specific to Tigerbow, ecommerce, gifting, etc….</p><p><b>My Awesome Math. (It’s awesome because I made it up.)</b></p><p>The gifting market is indeed large. We estimated that more than 20 percent of merchandise purchased was with the intent to give that merchandise to someone else (i.e., a gift). That estimate was predicated on the idea that online retailers see 40 percent of sales in the fourth quarter (so about a 20 percent bump compared to other quarters). Assuming that entire bump is holiday gifting and that there is no additional gifting during the year (wanna know what the biggest gifting event each year is? hint: it’s birthdays) gives you 20 percent. Yeah, it’s kind of a BS analysis, but it sounds good and, luckily, compares well to other statistics, so I’m sticking with it.</p><p>The problem <i>we</i> were trying to solve, however, was when someone wants to buy a gift but doesn’t because they don’t know how to get it to the recipient (i.e., there is shopping cart abandonment). Stats will show you that shoppers abandon carts something like 60 percent of the time, and one of the top reasons, though not <i>the</i> top reason, is because checkout is too complex. Figuring we could increase the bottom of the retail funnel by streamlining checkout, we would bring retailers more money.</p><p>But how does a user know that this feature exists until they reach checkout? And was it a big enough issue? And was it a big enough issue for retailers to focus on it at the expense of focusing on other issues? In retrospect, the answer was no (at the time), but to figure that out we tried a bunch of stuff (that I’ll describe in reverse chronological order because I’m feeling acrobatic…)</p><p><b>Partnering with Retailers.</b></p><p>After one of the first times I presented Tigerbow at an event, someone walked up to me and suggested I reach out to Amazon for an integration opportunity. It was at this point that I became retroactively mortified for every piece of “advice” I ever delivered to former banking clients and investments. Really? I should think about partnering with Amazon? Well, gee, why didn’t I think about making that call? Grr.</p><p>Of <i>course</i> we thought the best course of action would be to integrate our technology (a double blind set of databases matching a virtual address with a physical address using a key that only we knew) into merchant checkout. First thing to learn: merchants do <b>NOT</b> screw with checkout. This is how they make their money, people. No matter how good your clever plan sounds to help them increase the bottom of the funnel and generate more revenue, they are extremely reluctant to reconfigure any onscreen real estate, let alone implement a new technology or order flow. This one was pretty obvious in retrospect, but you’d be surprised how many companies believe they’ve got a solution for solving a checkout problem that retailers are dying to implement. There’s a reason you only see credit card, Paypal and maybe a few other checkout options from extremely powerful companies like Google and Amazon. And even <i>they</i> have had significant trouble penetrating here.</p><p>Second point on this (and a corollary): retailers are way more focused on the top of the funnel (getting traffic to their site) than the bottom. They know their conversion metrics, and there are simple, well-known and inexpensive ways to increase the top of the funnel (e.g., affiliate deals). So we knew we would have to prove our value-add elsewhere before approaching big retailers.</p><p><b>Partnering with Dating Sites (and the unfortunate discovery of the “freenis.”)</b></p><p>We had already built a rudimentary (Atari 2600-looking, and not in a good way) online store that I’ll talk more about in a bit. We hustled and got some decent press (including my favorite, a headline from Mashable: “Big Idea or Just Creepy?”) so we had some people visiting the store and buying books and flowers and such. I’ll spare the details of how we figured this out, but we noticed that we were seeing some Tigerbow gifting via Second Life. (Remember them? They still exist &#8211; swear.) Aha &#8211; seemed like a natural fit to integrate our platform into dating sites so that guys could entice dates by sending real flowers rather than some pixels. (Not something I would do, but I also wouldn’t wear a freenis &#8211; I promise I’ll explain the freenis soon.) We had some (very) limited success integrating our platform into some dating sites such as Passions Network, a collection of 100+ niche dating sites, including what I believe was the largest Native American dating site as well as a niche community for (and I swear I’m not making this up) lesbian amputees, but the harsh reality was that gaining incremental revenue from or enhancing the user experience with real gifts wasn’t compelling enough for most online dating sites to make any meaningful changes to their properties. They could more easily use that real estate for additional advertising or other engagement opportunities.</p><p>So we determined the only way we could truly present our unique value proposition was to build out our own store, which we did… before we learned the definition of a freenis. Without further ado, here is that story:</p><p
+style="text-align: center;"><a
+href="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-3.jpg"><img
+class="aligncenter size-full wp-image-18979" alt="Tis the Season 3" src="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-3.jpg" /></a></p><p>On April 18, 2009, I received an email from my co-founder titled: “dude [Second Life] is weird.” We both knew Second Life was weird, so for him to feel compelled to elaborate on this was alarming. His email directed me to this guide for getting started on Second Life. The guide includes 30+ things every newbie should know, including this gem:</p><p>&#8220;One for the guys: don’t bug every female you see for sex. Especially don’t attach your ‘freenis’ (freebie penis) and run around everywhere. You WILL get laughed at.&#8221;</p><p>Freenis. Now you know.</p><p><b>Building an Online Store.</b></p><p>My co-founder started the company by building a very basic online store that allowed people to send books as gifts with only an email address. You picked a book, entered an email address and a message, and your recipient would receive a message asking them if they wanted to receive or reject the gift. If it was rejected, the transaction unwound (no harm no foul), and if the gift were accepted the recipient would enter shipping details (which were kept private from the sender), and the gift would arrive.</p><p
+style="text-align: center;"><a
+href="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-4.png"><img
+class="aligncenter size-full wp-image-18981" alt="Tis the Season 4" src="http://cdn.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-4.png" /></a></p><p>We started with books because they make decent/easy gifts for any occasion, they’re relatively inexpensive, there are drop shippers like Ingram that will allow you to integrate and fulfill orders easily and, well, it worked out pretty well for Amazon as a starting point.</p><p>Books worked out OK for us, too. In fact, the only hitch I recall was when I was testing sending a book to my then girlfriend (now wife &#8211; bless her heart). I selected a book that would make her laugh when it showed up (recipients didn’t necessarily know what they were receiving). The book showed up, and the test was a success (seemingly). It wasn’t until we were at dinner with my co-founder and his then girlfriend (now wife) when my brave soulmate asked me what on Earth she would do with the children’s bible I sent her. Evidently she didn’t think that book was that funny. And neither did I because I sent her a book of lesbian erotica. When we realized that the gift note that accompanied her children’s bible was from an aunt to a nephew we were very curious to see the reaction on the little boy’s face when he got his collection of lesbian erotic stories. Can anyone say world’s greatest aunt? (True story.)</p><p>We added flowers because they’re one of the most obvious gift categories (and matched nicely with our dating partnership strategy) and because we found a drop shipper called Grower Flowers that was willing and eager to have us integrate our platform. Evidently they had tried something similar with Plenty of Fish a while back. And evidently we and they weren’t the only ones to try this real gifting thing. Jared Polis, who founded Bluemountain.com and ProFlowers &#8211; both of which sold for a bajillion dollars &#8211; before he became a congressman, started FrogMagic, which did essentially the same thing as Tigerbow. Who knew.</p><p>It became clear pretty quickly, though, that we would need to build a full-fledged online gift store if we wanted to prove our value proposition. That would require a full catalog (which we tried to sneak by via adding things we could do ourselves like greeting cards and affiliate deals with select retailers that we could fulfill manually), a spectacular user experience and prolific marketing (all of which required lots of money, expertise and resources that we didn’t have). And still, it would be extremely difficult to convey to people that they could utilize our key feature (yes, feature) &#8211; the ability to send a gift to someone’s email address.</p><p><b>In Conclusion…</b></p><p>Start a company with a simple idea. But also remember that you absolutely must have a simple, clear and effective way to build early traction and demonstrate your value proposition to derisk your project for potential investors. Otherwise, it’s like running around everywhere with your freenis attached &#8211; you might not get laughed at, but you will fail.</p><p><a
+href="http://porchdog.co/post/38580470497/tis-the-season-for-a-tigerbow-post-mortem"target="_blank"rel=""class="snppopup">Reprinted by permission</a>.</p><div
+class="zemanta-pixie" style="margin-top: 10px; height: 15px;"><img
+class="zemanta-pixie-img" style="border: none; float: right;" alt="" src="http://img.zemanta.com/pixy.gif?x-id=1cb3e0ee-8945-45b1-9e31-9e6619b8915e" /></div><p></p><aside
+class="mashsb-container"><div
+class="mashsb-box"><div
+class="mashsb-count"><div
+class="counts mashsbcount">106</div><span
+class="mashsb-sharetext">SHARES</span></div><div
+class="mashsb-buttons"><a
+style="" class="mashicon-facebook" href="http://www.facebook.com/sharer.php?u=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Facebook</span></a><a
+style="" class="mashicon-twitter" href="https://twitter.com/intent/tweet?text=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;via=alleywatch&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Twitter</span></a><div
+class="onoffswitch"></div><div
+class="secondary-shares" style="display:none;"><a
+style="" class="mashicon-subscribe" href="#" target="_blank"><span
+class="icon"></span><span
+class="text">Subscribe</span></a><a
+style="" class="mashicon-google" href="https://plus.google.com/share?text=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Google</span></a><a
+style="display:none;" class="mashicon-whatsapp" href="whatsapp://send?text=Tis%20the%20Season%20for%20a%20Tigerbow%20Post%20Mortem%20http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Whatsapp</span></a><a
+style="" class="mashicon-pinterest" href="http://www.pinterest.com/pin/create/bookmarklet/?pinFave=1&amp;url=http://alleywat.ch/1eqMOOL&amp;media=http://www.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-3.jpg&amp;description=Every+holiday+season%2C+folks+reach+out+to+talk+to+me+about+the+gifting+market+because+of+my+first+startup.+It+was+called+Tigerbow%2C+and+it+let+people+send+real+gifts+to+email+addresses+%28and+Facebook+%E2%80%A6" target="_blank"><span
+class="icon"></span><span
+class="text">Pinterest</span></a><a
+style="" class="mashicon-digg" href="http://digg.com/submit?phase=2%20&amp;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Digg</span></a><a
+style="" class="mashicon-linkedin" href="https://www.linkedin.com/shareArticle?trk=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Linkedin</span></a><a
+style="" class="mashicon-reddit" href="http://www.reddit.com/submit?url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Reddit</span></a><a
+style="" class="mashicon-stumbleupon" href="http://www.stumbleupon.com/submit?url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Stumbleupon</span></a><a
+style="" class="mashicon-print" href="http://www.printfriendly.com/print/?url=http://alleywat.ch/1eqMOOL&amp;item=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Print</span></a><a
+style="" class="mashicon-delicious" href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Delicious</span></a><a
+style="" class="mashicon-buffer" href="https://bufferapp.com/add?url=http://alleywat.ch/1eqMOOL&amp;text=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Buffer</span></a><a
+style="" class="mashicon-pocket" href="https://getpocket.com/save?title=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Pocket</span></a><a
+style="" class="mashicon-xing" href="https://www.xing.com/social_plugins/share?h=1;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Xing</span></a><a
+style="" class="mashicon-tumblr" href="https://www.tumblr.com/share?v=3&amp;u=http://alleywat.ch/1eqMOOL&amp;t=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Tumblr</span></a><a
+style="" class="mashicon-mail" href="mailto:?subject=I thought this AlleyWatch article would be of interest to you&amp;body=Check out this article: http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Mail</span></a><div
+class="onoffswitch2" style="display:none;"></div></div></div></div><div
+style="clear:both;"></div></aside></div></div><div
+class="clear"></div><div
+class="navigation margin-20"><div
+class="alignleft prev page-numbers"><a
+href="http://www.alleywatch.com/2013/12/3-creative-ways-to-get-more-email-opt-ins/" rel="prev">&laquo; PREV</a></div><div
+class="alignright next page-numbers"><a
+href="http://www.alleywatch.com/2013/12/what-is-warrant-coverage-in-a-convertible-note-financing/">NEXT &raquo;</a></div><div
+class="clear"></div></div><div
+id="author-bio"><div
+style="float:right;"> <a
+href="https://twitter.com/dslevy" class="twitter-follow-button" data-show-count="false">Follow @David Levy</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div><h3 class="widget-title">About the author: <a
+href="http://www.alleywatch.com/author/david-levy/">David Levy</a></h3><div
+class="alignleft"><a
+href="http://www.alleywatch.com/author/david-levy/"> <img
+src="http://cdn.alleywatch.com/wp-content/uploads/2013/12/david_levy.jpg" width="50" height="50" /> </a></div><p><p>David Levy is an Entrepreneur-in-Residence for Comcast Ventures and the founder of Tigerbow and Philo. He is also an advisor for various startups, including Admitted.ly and eduClipper, as well as a venture partner with the Entrepreneurs Roundtable Accelerator.</p></p><div
+class="clear"></div></div><div
+id="disqus_thread"><div
+id="dsq-content"><ul
+id="dsq-comments"><li
+class="post pingback"><p>Pingback: <a
+href='http://undertheradar.co.kr/2014/02/05/101-%eb%a7%8c%ec%95%bd%ec%97%90-51%ea%b0%9c%ec%9d%98-%ec%8a%a4%ed%83%80%ed%8a%b8%ec%97%85%ec%9d%b4-%ec%9d%b4%ec%95%bc%ea%b8%b0%ed%95%98%eb%8a%94-%ec%8b%a4%ed%8c%a' rel='external nofollow' class='url'>[101] &#8216;만약에&#8217; 51개의 스타트업이 이야기하는 실패 요인 분석 (51 Startup Failure Post-Mortems) | Under the Radar</a></p></li></li><li
+class="post pingback"><p>Pingback: <a
+href='http://www.cbinsights.com/blog/trends/startup-failure-post-mortem' rel='external nofollow' class='url'>51 Startup Failure Post-Mortems</a></p></li></li><li
+class="post pingback"><p>Pingback: <a
+href='http://www.retrogidi.com/10-lessons-to-learn-from-failing-startups-including-my-own/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own) | RetroGidi</a></p></li></li><li
+class="post pingback"><p>Pingback: <a
+href='http://videosoftwarefreedownload.co.uk/10-lessons-to-learn-from-failing-startups-including-my-own/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own)</a></p></li></li><li
+class="post pingback"><p>Pingback: <a
+href='http://tech.co/50-startups-share-startups-failed-2014-10' rel='external nofollow' class='url'>30 Founders Share Why Their Startups Failed</a></p></li></li><li
+class="post pingback"><p>Pingback: <a
+href='http://www.wilbertrogers.com/2014/11/13/10-lessons-to-learn-from-failing-startups-including-my-own-entrepreneur-com-by-john-rampton/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own) entrepreneur.com &#8211; by John Rampton | WILBERTROGERS.COM</a></p></li></li><li
+class="post pingback"><p>Pingback: <a
+href='http://xoellexo.wordpress.com/2014/12/14/10-lessons-to-learn-from-failing-startups-including-my-own/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own) | Elle&#039;s Writing, Film &amp; Life Observation Tidibits</a></p></li></li></ul></div></div><script type="text/javascript">/*<![CDATA[*/var disqus_url='http://www.alleywatch.com/2013/12/tis-the-season-for-a-tigerbow-post-mortem/';var disqus_identifier='18976 http://www.alleywatch.com/?p=18976';var disqus_container_id='disqus_thread';var disqus_domain='disqus.com';var disqus_shortname='alleywatch';var disqus_title="Tis the Season for a Tigerbow Post Mortem";var disqus_config=function(){var config=this;config.language='';config.callbacks.preData.push(function(){document.getElementById(disqus_container_id).innerHTML='';});config.callbacks.onReady.push(function(){var script=document.createElement('script');script.async=true;script.src='?cf_action=sync_comments&post_id=18976';var firstScript=document.getElementsByTagName("script")[0];firstScript.parentNode.insertBefore(script,firstScript);});};/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/var DsqLocal={'trackbacks':[{'author_name':"[101] &#8216;만약에&#8217; 51개의 스타트업이 이야기하는 실패 요인 분석 (51 Startup Failure Post-Mortems) | Under the Radar",'author_url':"http:\/\/undertheradar.co.kr\/2014\/02\/05\/101-%eb%a7%8c%ec%95%bd%ec%97%90-51%ea%b0%9c%ec%9d%98-%ec%8a%a4%ed%83%80%ed%8a%b8%ec%97%85%ec%9d%b4-%ec%9d%b4%ec%95%bc%ea%b8%b0%ed%95%98%eb%8a%94-%ec%8b%a4%ed%8c%a",'date':"02\/05\/2014 02:38 AM",'excerpt':"[&#8230;] 타이거보우(Tigerbow) 사후 분석에 적합한 시기입니다. Title: Tis the Season for a Tigerbow Post [&#8230;] ",'type':"pingback"},{'author_name':"51 Startup Failure Post-Mortems",'author_url':"http:\/\/www.cbinsights.com\/blog\/trends\/startup-failure-post-mortem",'date':"02\/09\/2014 06:54 PM",'excerpt':"[&#8230;] Title: Tis the Season for a Tigerbow Post Mortem [&#8230;] ",'type':"pingback"},{'author_name':"10 Lessons to Learn From Failing Startups (Including My Own) | RetroGidi",'author_url':"http:\/\/www.retrogidi.com\/10-lessons-to-learn-from-failing-startups-including-my-own\/",'date':"07\/15\/2014 04:34 PM",'excerpt':"[&#8230;] don’t click with the entrepreneur personally, professionally or understand the business? Consider David Levy&#8217;s experience with his failed startup &hellip;",'type':"pingback"},{'author_name':"10 Lessons to Learn From Failing Startups (Including My Own)",'author_url':"http:\/\/videosoftwarefreedownload.co.uk\/10-lessons-to-learn-from-failing-startups-including-my-own\/",'date':"07\/16\/2014 07:31 PM",'excerpt':"[&#8230;] don’t click with the entrepreneur personally, professionally or understand the business? Consider David Levy&#8217;s experience with his failed startup Tigerbow. &#8220;We &hellip;",'type':"pingback"},{'author_name':"30 Founders Share Why Their Startups Failed",'author_url':"http:\/\/tech.co\/50-startups-share-startups-failed-2014-10",'date':"10\/15\/2014 04:44 PM",'excerpt':"[&#8230;] 12. Tigerbow [&#8230;] ",'type':"pingback"},{'author_name':"10 Lessons to Learn From Failing Startups (Including My Own) entrepreneur.com &#8211; by John Rampton | WILBERTROGERS.COM",'author_url':"http:\/\/www.wilbertrogers.com\/2014\/11\/13\/10-lessons-to-learn-from-failing-startups-including-my-own-entrepreneur-com-by-john-rampton\/",'date':"11\/13\/2014 04:07 PM",'excerpt':"[&#8230;] don’t click with the entrepreneur personally, professionally or understand the business? Consider David Levy&#8217;s experiencewith his failed startup Tigerbow. &#8220;We raised a &hellip;",'type':"pingback"},{'author_name':"10 Lessons to Learn From Failing Startups (Including My Own) | Elle&#039;s Writing, Film &amp; Life Observation Tidibits",'author_url':"http:\/\/xoellexo.wordpress.com\/2014\/12\/14\/10-lessons-to-learn-from-failing-startups-including-my-own\/",'date':"12\/14\/2014 09:17 AM",'excerpt':"[&#8230;] don’t click with the entrepreneur personally, professionally or understand the business? Consider David Levy&#8217;s experience with his failed startup Tigerbow. &#8220;We &hellip;",'type':"pingback"}],'trackback_url':"http:\/\/www.alleywatch.com\/2013\/12\/tis-the-season-for-a-tigerbow-post-mortem\/trackback\/"};/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.'+'disqus.com'+'/embed.js?pname=wordpress&pver=2.74';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();/*]]>*/</script></div><div
+id="sidebar" class="grid-4" style="width:300px; float: right;"><div
+id="text-4" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1394933678846-2' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1394933678846-2');});</script></div></div></div><div
+id="text-5" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1394933678846-3' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1394933678846-3');});</script></div></div></div><div
+id="text-18" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1394933678846-4' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1394933678846-4');});</script></div></div></div><div
+id="text-19" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1409958809266-0' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1409958809266-0');});</script></div></div></div><div
+id="text-17" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1410752289659-0' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1410752289659-0');});</script></div></div></div><div
+id="text-6" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1409958943273-0' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1409958943273-0');});</script></div></div></div><div
+id="text-14" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1409959094898-0' style='width:300px; height:600px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1409959094898-0');});</script></div></div></div><div
+id="text-15" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1397337492548-0' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1397337492548-0');});</script></div></div></div><div
+id="text-13" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1404766392739-0' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1404766392739-0');});</script></div></div></div><div
+id="text-12" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1404766392739-1' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1404766392739-1');});</script></div></div></div><div
+id="text-10" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1410299040110-0' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1410299040110-0');});</script></div></div></div><div
+id="text-11" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1410299040110-1' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1410299040110-1');});</script></div></div></div><div
+id="text-9" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1410299040110-2' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1410299040110-2');});</script></div></div></div><div
+id="text-8" class="widget widget_text"><div
+class="textwidget"><p></p><div
+id='div-gpt-ad-1410299040110-3' style='width:300px; height:250px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1410299040110-3');});</script></div></div></div><div
+class="container"><div
+class="grid-2"></div><div
+class="grid-2"></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+id="footer_wrapper" class="container"><div
+class="footer-leaderboard"><div
+class="textwidget"><div
+id='div-gpt-ad-1394933678846-1' style='width:728px; height:90px;'><script type='text/javascript'>googletag.cmd.push(function(){googletag.display('div-gpt-ad-1394933678846-1');});</script></div></div></div></div> <footer><div
+class="container"><div
+class="grid-4"><div
+id="text-3" class="widget widget_text"><h3 class="widget-title">About AlleyWatch</h3><div
+class="textwidget"><p>AlleyWatch is the destination for startup news; opinions and reviews; investment and product information; events experienced, seen, heard and overheard here in New York.</p></div></div></div><div
+class="grid-4"><div
+id="widgets-reloaded-categories-2" class="widget categories"><h3 class="widget-title">Channels</h3><ul
+class="xoxo categories"><li
+class="cat-item cat-item-59"><a
+href="http://www.alleywatch.com/category/alleytalk/" >AlleyTalk</a></li><li
+class="cat-item cat-item-6"><a
+href="http://www.alleywatch.com/category/funding/" >Funding</a></li><li
+class="cat-item cat-item-74"><a
+href="http://www.alleywatch.com/category/op-ed/" >Op-ED</a></li><li
+class="cat-item cat-item-4"><a
+href="http://www.alleywatch.com/category/startups/" >Startups</a></li><li
+class="cat-item cat-item-5"><a
+href="http://www.alleywatch.com/category/tech/" >Tech</a></li></ul></div></div><div
+class="grid-4"><div
+id="linkcat-105" class="linkcat widget bookmarks"><h3 class="widget-title">Social</h3><ul
+class='xoxo blogroll'><li><a
+href="https://www.facebook.com/alleywatch">Facebook</a></li><li><a
+href="https://www.twitter.com/alleywatch">Twitter</a></li><li><a
+href="http://www.linkedin.com/company/alleywatch">Linked In</a></li><li><a
+href="http://pinterest.com/alleywatch/">Pinterest</a></li><li><a
+href="http://instagram.com/alleywatch">Instagram</a></li></ul></div></div><div
+style="float: right; margin-top: -140px; margin-right: 20px;"><a
+href="http://www.wearemadeinny.com" target="_blank"><img
+src="http://cdn.alleywatch.com/wp-content/uploads/2013/07/Made_In_NY_Mark_sm.png" alt="AlleyWatch"/></a></div><div
+class="clear"></div></div></footer><div
+id="bottom"><div
+class="container"><div
+class="grid-12"><p><div
+style="float: left;"> &copy; 2015 <a
+href="http://www.alleywatch.com">AlleyWatch</a> All Rights Reserved</div><div
+style="float: right;"> <a
+href="http://nytm.org/made-in-nyc/" target="_blank">PROUDLY MADE FOR NYC</a> &middot; <a
+href="http://www.alleywatch.com/legal/">LEGAL</a>&middot; <a
+href="http://www.alleywatch.com/privacy-policy/">PRIVACY POLICY</a>&middot; <a
+href="http://www.alleywatch.com/terms-and-conditions/">TERMS OF USE</a></div></p></div><div
+class="clear"></div></div></div> <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key="></script><div
+id="fnp-nav"><div
+class="fnp-previous"><a
+href="http://www.alleywatch.com/2013/12/how-women-have-shaped-technology/" rel="prev"><div
+class="fnp-box-left"><div
+class="fnp-content-left"><div
+class="fnp-content-border"></div><div
+class="fnp-nav-title">Previous Post</div><div
+class="fnp-nav-link">How Women Have Shaped Technology</div></div></div></a></div><div
+class="fnp-next"><a
+href="http://www.alleywatch.com/2013/12/what-is-warrant-coverage-in-a-convertible-note-financing/" rel="next"><div
+class="fnp-box-right"><div
+class="fnp-content-right"><div
+class="fnp-content-border"></div><div
+class="fnp-nav-title">Next Post</div><div
+class="fnp-nav-link">What is “Warrant Coverage” in a Convertible Note Financing</div></div></div></a></div></div> <header
+id="mashbar-header"><div
+class="mashbar-inner"><div
+class="mashbar-logo"><a
+href="/"> <span
+class="desktop"><img
+alt="Logo" src="http://cdn.alleywatch.com/wp-content/uploads/2014/10/awemaillogo.png"></span> <span
+class="mobile"></span></a></div> <aside
+class="mashsb-container"><div
+class="mashsb-box"><div
+class="mashsb-count"><div
+class="counts mashsbcount">106</div><span
+class="mashsb-sharetext">SHARES</span></div><div
+class="mashsb-buttons"><a
+style="" class="mashicon-facebook" href="http://www.facebook.com/sharer.php?u=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Facebook</span></a><a
+style="" class="mashicon-twitter" href="https://twitter.com/intent/tweet?text=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;via=alleywatch&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Twitter</span></a><div
+class="onoffswitch"></div><div
+class="secondary-shares" style="display:none;"><a
+style="" class="mashicon-subscribe" href="#" target="_blank"><span
+class="icon"></span><span
+class="text">Subscribe</span></a><a
+style="" class="mashicon-google" href="https://plus.google.com/share?text=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Google</span></a><a
+style="display:none;" class="mashicon-whatsapp" href="whatsapp://send?text=Tis%20the%20Season%20for%20a%20Tigerbow%20Post%20Mortem%20http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Whatsapp</span></a><a
+style="" class="mashicon-pinterest" href="http://www.pinterest.com/pin/create/bookmarklet/?pinFave=1&amp;url=http://alleywat.ch/1eqMOOL&amp;media=http://www.alleywatch.com/wp-content/uploads/2013/12/Tis-the-Season-3.jpg&amp;description=Every+holiday+season%2C+folks+reach+out+to+talk+to+me+about+the+gifting+market+because+of+my+first+startup.+It+was+called+Tigerbow%2C+and+it+let+people+send+real+gifts+to+email+addresses+%28and+Facebook+%E2%80%A6" target="_blank"><span
+class="icon"></span><span
+class="text">Pinterest</span></a><a
+style="" class="mashicon-digg" href="http://digg.com/submit?phase=2%20&amp;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Digg</span></a><a
+style="" class="mashicon-linkedin" href="https://www.linkedin.com/shareArticle?trk=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Linkedin</span></a><a
+style="" class="mashicon-reddit" href="http://www.reddit.com/submit?url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Reddit</span></a><a
+style="" class="mashicon-stumbleupon" href="http://www.stumbleupon.com/submit?url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Stumbleupon</span></a><a
+style="" class="mashicon-print" href="http://www.printfriendly.com/print/?url=http://alleywat.ch/1eqMOOL&amp;item=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Print</span></a><a
+style="" class="mashicon-delicious" href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Delicious</span></a><a
+style="" class="mashicon-buffer" href="https://bufferapp.com/add?url=http://alleywat.ch/1eqMOOL&amp;text=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Buffer</span></a><a
+style="" class="mashicon-pocket" href="https://getpocket.com/save?title=Tis+the+Season+for+a+Tigerbow+Post+Mortem&amp;url=http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Pocket</span></a><a
+style="" class="mashicon-xing" href="https://www.xing.com/social_plugins/share?h=1;url=http://alleywat.ch/1eqMOOL&amp;title=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Xing</span></a><a
+style="" class="mashicon-tumblr" href="https://www.tumblr.com/share?v=3&amp;u=http://alleywat.ch/1eqMOOL&amp;t=Tis+the+Season+for+a+Tigerbow+Post+Mortem" target="_blank"><span
+class="icon"></span><span
+class="text">Tumblr</span></a><a
+style="" class="mashicon-mail" href="mailto:?subject=I thought this AlleyWatch article would be of interest to you&amp;body=Check out this article: http://alleywat.ch/1eqMOOL" target="_blank"><span
+class="icon"></span><span
+class="text">Mail</span></a><div
+class="onoffswitch2" style="display:none;"></div></div></div></div><div
+style="clear:both;"></div></aside></div></header><div
+style="display: none;"><div
+id="fb-root"></div> <input
+type="hidden" id="snp_popup" value="" /> <input
+type="hidden" id="snp_popup_id" value="" /> <input
+type="hidden" id="snp_popup_theme" value="" /> <input
+type="hidden" id="snp_exithref" value="" /> <input
+type="hidden" id="snp_exittarget" value="" /><div
+id="snppopup-welcome" class="snp-pop-16814 snppopup"><input
+type="hidden" class="snp_optin_redirect_url" value="" /><input
+type="hidden" class="snp_show_cb_button" value="yes" /><input
+type="hidden" class="snp_popup_id" value="16814" /><input
+type="hidden" class="snp_popup_theme" value="theme8" /><input
+type="hidden" class="snp_overlay" value="default" /><input
+type="hidden" class="snp_cookie_conversion" value="30" /><input
+type="hidden" class="snp_cookie_close" value="10" /><div
+class="snp-fb snp-theme8"> <header
+class="snp-header"><h1>You are seconds away from signing up for the hottest list in Silicon Alley!</h1> </header><div
+class="snp-body"><p>Don't miss any of the stories shaping entrepreneurship. Sign up today.</p><div
+class="snp-form"><form
+action="#" method="post" class="snp-subscribeform snp_subscribeform"><fieldset><div
+class="snp-field"> <input
+type="text" name="email" id="snp_email" placeholder="Your E-mail..." class="snp-field snp-field-email" /></div> <button
+type="submit" data-loading="Please wait..." data-success="" class="snp-submit">Subscribe Now!</button></fieldset></form></div><div
+class="snp-close"><a
+href="#" class="snp_nothanks">Close this popup</a></div></div></div><style>.snp-pop-16814 .snp-theme8 {
+width:700px;
+}
+
+.snp-pop-16814 .snp-theme8 h1 {
+font-size:37px;
+color:#000;
+}
+
+.snp-pop-16814 .snp-theme8 .snp-body p {
+font-size:19px;
+}
+
+.snp-pop-16814 .snp-theme8 .snp-body {
+color:#969696;
+background-color:#d4d4d4;
+}
+
+.snp-pop-16814 .snp-theme8 .snp-submit {
+color:#fff;
+background-color:#2146ff;
+}
+
+.snp-pop-16814 .snp-theme8 .snp-header {
+background-color:#fff;
+}</style><style>.snp-pop-16814-wrap .fancybox-close {
+width:33px;
+height:33px;
+top:-16px;
+right:-16px;
+background:url(http://cdn.alleywatch.com/wp-content/plugins/arscode-ninja-popups/img/close_3.png);
+}</style></div></div><script type="text/javascript">var snp_timer;var snp_timer_o;var snp_ajax_url='http://www.alleywatch.com/wp-admin/admin-ajax.php';var snp_ignore_cookies=false;var snp_is_interal_link;jQuery(document).ready(function(){jQuery('[placeholder]').placeholder();jQuery(".snp_nothanks, .snp_closelink").click(function(){jQuery.fancybox2.close();return false;});jQuery(".snp_subscribeform").submit(function(){return snp_onsubmit(jQuery(this));});var snp_open_after=jQuery('#snppopup-welcome .snp_open_after').val();if(snp_open_after)
+{snp_timer_o=setTimeout("snp_open_popup('','','snppopup-welcome','welcome');",snp_open_after*1000);}
+else
+{snp_open_popup('','','snppopup-welcome','welcome');}});</script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/wpsocialite/Socialite/socialite.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/plugins/wpsocialite/wpsocialite.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/core.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/widget.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/mouse.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/resizable.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/draggable.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/button.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/position.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/jquery/ui/dialog.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/easing.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/superfish.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/validate.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/gmap.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/selectnav.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-includes/js/comment-reply.min.js'></script><script type='text/javascript' defer src='http://cdn.alleywatch.com/wp-content/themes/deadline-responsive/_assets/js/effects.js'></script><script type='text/javascript'>/*<![CDATA[*/var FB_WP=FB_WP||{};FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn;fn=FB_WP.queue._methods.shift();){fn()}FB_WP.queue.flushed=true}};window.fbAsyncInit=function(){FB.init({"channelUrl":"http:\/\/www.alleywatch.com\/wp-content\/plugins\/facebook\/channel.php","xfbml":true,"appId":"1384096905167663"});if(FB_WP&&FB_WP.queue&&FB_WP.queue.flush){FB_WP.queue.flush()}}/*]]>*/</script><div
+id="fb-root"></div><script type="text/javascript">(function(d){var id="facebook-jssdk";if(!d.getElementById(id)){var js=d.createElement("script"),ref=d.getElementsByTagName("script")[0];js.id=id,js.async=true,js.src="http:\/\/connect.facebook.net\/en_US\/all.js",ref.parentNode.insertBefore(js,ref)}})(document)</script><script type="text/javascript">Socialite.setup({facebook:{lang:'en_US',appId:null},twitter:{lang:'en'},googleplus:{lang:'en'}});</script><style>form.gsc-search-box {
+margin-bottom:0;
+padding:0;
+}
+
+table.gsc-search-box tbody tr {
+border-bottom:none;
+}
+
+table.gsc-search-box tbody tr td {
+padding:0 0 0 5px;
+}
+
+.gsc-search-button {
+width:60px;
+}
+
+.gsc-input {
+width:233px;
+font-size:9px;
+padding:0 6px;
+}
+
+.fc-event-list-description {
+font:13px/20px 'Droid Serif';
+}</style></body></html>

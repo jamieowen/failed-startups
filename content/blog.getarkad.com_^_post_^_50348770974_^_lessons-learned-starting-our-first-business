@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lte-ie8"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7 lte-ie8"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8 lte-ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- 
+===========================================================================
+ ____                     ___       __  __                                
+/\  _`\  __              /\_ \     /\ \/\ \          __                   
+\ \ \L\ \\_\  __  _    __\//\ \    \ \ \ \ \    ___ /\_\    ___    ___    
+ \ \ ,__//\ \/\ \/'\ /'__`\\ \ \    \ \ \ \ \ /' _ `\/\ \  / __`\/' _ `\  
+  \ \ \/ \ \ \/>  <//\  __/ \_\ \_   \ \ \_\ \/\ \/\ \ \ \/\ \L\ \\ \/\ \ 
+   \ \_\  \ \_\\_/\_\ \____\/\____\   \ \_____\ \_\ \_\ \_\ \____/ \_\ \_\
+    \/_/   \/_///\/_/\/____/\/____/    \/_____/\/_/\/_/\/_/\/___/ \/_/\/_/
+===========================================================================
+Version: 1.3.2
+Effector Theme
+Tumblr: http://tumblr.com/themes/by/pixelunion
+Website: http://www.pixelunion.net
+Support: support@pixelunion.net
+===========================================================================
+-->
+
+	<title>Arkad: Blog
+	</title>
+    <style type="text/css">figure {margin: 0;}</style>
+<link rel=”shortcut icon” href=”http://i45.tinypic.com/fk4kup.png”>
+	
+	<meta name="description" content="Lessons Learned Starting Our First Business We founded Arkad in August 2012 to provide companies with a simple investor and lender relationship tool. Initially, we started with venture-backed..."/>
+	
+	
+	<meta name="color:Background" content="#e6ebea"/>
+	<meta name="color:Colored Area Text" content="#fffadc"/>
+	<meta name="color:Colored Area Text Shadow" content="#bf4402"/>
+	<meta name="color:Inside Link" content="#f55b2c"/>	
+	<meta name="color:Main Theme" content="#f55b2c"/>
+	<meta name="color:Outside Link" content="#f55b2c"/>
+	<meta name="color:Outside Link Hover" content="#131313"/>
+	<meta name="color:Outside Text" content="#616566"/>
+	<meta name="font:Inside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+	<meta name="font:Inside Text" content="Georgia, serif"/>
+	<meta name="font:Outside Heading" content="Helvetica Neue, Arial, sans-serif"/>	
+	<meta name="font:Outside Text" content="Helvetica Neue, Arial, sans-serif"/>
+	<meta name="image:Background" content=""/>
+	<meta name="image:Banner" content=""/>
+	<meta name="image:Large Sidebar Portrait" content=""/>
+	<meta name="image:Logo" content=""/>	
+	<meta name="if:Align Top Menu Left" content="0"/>
+	<meta name="if:Automatic Headings" content="0"/>
+	<meta name="if:Blog Title in Page Header" content="0"/>
+	<meta name="if:Blog Title in Sidebar" content="0"/>
+	<meta name="if:Blog Title in Top bar" content="1"/>
+	<meta name="if:Centered Layout" content="1"/>
+	<meta name="if:Collapse Notes" content="1"/>
+	<meta name="if:Content Width 500" content="0"/>
+	<meta name="if:Content Width 600" content="0"/>
+	<meta name="if:Content Width 700" content="1"/>
+	<meta name="if:Custom Photosets" content="1"/>
+	<meta name="if:Fixed Background" content="0"/>	
+	<meta name="if:Fixed Top Bar" content="1"/>
+	<meta name="if:Hide Sidebar" content="0"/>
+	<meta name="if:Infinite Scrolling" content="0"/>
+	<meta name="if:Invert" content="0"/>
+	<meta name="if:Invert Top Bar" content="0"/>
+	<meta name="if:Large Social Icons" content="1"/>
+	<meta name="if:Left Sidebar" content="0"/>
+	<meta name="if:Logo in Top bar" content="0"/>	
+	<meta name="if:Pages In Top Bar" content="0"/>
+	<meta name="if:Rounded Post Corners" content="0"/>
+	<meta name="if:Scale Images" content="1"/>
+	<meta name="if:Search Box In Sidebar" content="0"/>
+	<meta name="if:Show About Heading" content="1"/>
+	<meta name="if:Show Blogs I Follow" content="0"/>
+	<meta name="if:Show Description" content="1"/>
+	<meta name="if:Show Group Blog Info" content="0"/>
+	<meta name="if:Show Instagram" content="0"/>
+	<meta name="if:Show Likes" content="0"/>
+	<meta name="if:Show Likes in Sidebar" content="0"/>	
+	<meta name="if:Show Pages Heading" content="1"/>
+	<meta name="if:Show Portrait" content="0"/>
+	<meta name="if:Show Random Post Icon" content="0"/>
+	<meta name="if:Show Social Icons Widget" content="0"/>
+	<meta name="if:Show Tweets" content="1"/>
+	<meta name="if:Show Twitter Profile" content="1"/>
+	<meta name="if:Top Menu With Labels" content="0"/>
+	<meta name="text:Behance Username" content=""/>
+	<meta name="text:Cargo URL" content=""/>
+	<meta name="text:Copyright Text" content=""/>
+	<meta name="text:Default Search Text" content="Search"/>	
+	<meta name="text:Delicious Username" content=""/>
+	<meta name="text:Disqus Shortname" content=""/>
+	<meta name="text:Dribbble Username" content=""/>	
+	<meta name="text:FFFFound Username" content=""/>
+	<meta name="text:Facebook Username" content=""/>
+	<meta name="text:Flickr Username" content=""/>
+	<meta name="text:Forrst Username" content=""/>
+	<meta name="text:Foursquare Username" content=""/>	
+	<meta name="text:GetClicky Site ID" content=""/>
+	<meta name="text:Google Analytics Web Property ID" content=""/>
+	<meta name="text:Google URL" content=""/>
+	<meta name="text:Grooveshark Username" content=""/>
+	<meta name="text:Instagram Heading" content="Instagram"/>
+	<meta name="text:Instagram Access Token" content=""/>
+	<meta name="text:Instagram Count Max 4" content="4"/>
+	<meta name="text:Lastfm Username" content=""/>
+	<meta name="text:Liked Posts Heading" content="I Dig These Posts"/>	
+	<meta name="text:Linkedin Profile URL" content=""/>
+	<meta name="text:Myspace Friend ID" content=""/>
+	<meta name="text:Num Tweets Max 4" content="4"/>
+	<meta name="text:Pinboard Username" content=""/>
+	<meta name="text:Pinterest Username" content=""/>
+	<meta name="text:Rdio Username" content=""/>
+	<meta name="text:Rows of Followed Avatars" content="3"/>
+	<meta name="text:Skype Username" content=""/>
+	<meta name="text:Social Icons Heading" content="Me, Elsewhere"/>
+	<meta name="text:Soundcloud Username" content=""/>
+	<meta name="text:Tagline" content=""/>
+	<meta name="text:Twitter Heading" content="Twitter"/>
+	<meta name="text:Twitter Username" content=""/>
+	<meta name="text:Vimeo Username" content=""/>
+	<meta name="text:Xbox Live Profile URL" content=""/>
+	<meta name="text:Youtube Username" content=""/>
+	<meta name="text:github Username" content=""/>
+	
+
+	<!-- FACEBOOK OPEN GRAPH -->
+	<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+		
+	<meta property="og:site_name" content=""/>
+	
+	
+	
+		<meta property="og:url" content="http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business"/>
+		<meta property="og:type" content="article"/>
+		
+			
+				
+					<meta property="og:title" content="Lessons Learned Starting Our First Business"/>
+					<meta property="og:description" content="We founded Arkad in August 2012 to provide companies with a simple investor and lender relationship tool.&nbsp; Initially, we started with venture-backed companies, but our broader goal was to change how businesses communicate their data.&nbsp;
+
+
+Unfortunately, we officially shut down Arkad on May 1, but we want to share some of the many lessons we learned throughout the process of launching our first business.
+
+
+The 80-20 Rule Doesn&rsquo;t Apply to Workflow Products
+
+
+The problem with workflow products is that if you don&rsquo;t solve the entire workflow, you end up creating more work for your customers.
+
+
+For many people, Excel has become their go-to database.&nbsp; This is definitely true for most financial and operating data at companies.&nbsp; Arkad replaced this and made it extremely easy to compare companies across the portfolio, communicate with those companies, and perform basic analysis.&nbsp;
+
+
+The current version of our product didn&rsquo;t capture the entire workflow &ndash; investors also needed to perform valuations, manage cap tables, and a variety of other tasks.&nbsp; We were addressing 80% of what people needed, but to get the last 20% would&rsquo;ve meant at least another year of development.&nbsp;
+
+
+One way to avoid this trap is to build something that addresses a very specific aspect of the workflow. From there, you can build other features that creep into other aspects of the workflow.&nbsp; Eventually, your product captures the entire workflow, and you&rsquo;ve built the solution your customers wanted.
+
+
+Our customers wanted every part of their workflow to be built into Arkad because we were selling a workflow solution. &nbsp;It was how we positioned the product from the beginning, and this hurt our ability to sell something that wasn&rsquo;t a complete solution.
+
+
+Building a Product vs. Service Business
+
+
+From day one, we should&rsquo;ve been offering Arkad as a service rather than as a product. &nbsp;It would&rsquo;ve enabled us to make early sales and build the products with clients actually using them, not to mention we could&rsquo;ve validated our idea sooner.
+
+
+As a service, you can walk into the customer&rsquo;s office and say we will take care of everything.&nbsp; Meanwhile, you can create products to scale and automate those services.&nbsp; This may have worked for our market initially, but the professional investor market is not large enough and doesn&rsquo;t value portfolio monitoring enough to justify providing a high-touch service.&nbsp; Eventually, we would&rsquo;ve needed to productize the services and move into other markets that didn&rsquo;t need a high-touch service.&nbsp; We were planning to introduce our product to the small business lending, crowdfunding, and real estate investment markets.&nbsp;
+
+
+Focus on a Deep Well
+
+
+Paul Graham recently argued that businesses should aim to build a &ldquo;deep well&rdquo;, focusing on delivering a lot of value to a small market. We always intended to start with a deep well for professional investors and then expand into small business lending, crowdfunding, and other asset classes.&nbsp;
+
+
+In order to dig this deep well, we should have built a product to solve a specific need in the workflow.&nbsp; Focusing would&rsquo;ve enabled us to build something that is 10x better than the current solution.&nbsp; From there, we could&rsquo;ve slowly added functionality to capture different parts of the workflow.
+
+
+Instead, we built an entire platform that wasn&rsquo;t necessarily amazing at any specific aspect of the workflow. &nbsp;As an entire portfolio management tool, we didn&rsquo;t commit enough time to develop Arkad into a product worth changing behavior for.
+
+
+Changing Behavior is Really Difficult
+
+
+We were basically replacing Excel-based workflows, and to replace any existing workflow you need to be 10x better than that workflow.
+
+
+Arkad was trying to change an ingrained behavior of CEOs/CFOs and investors.&nbsp; The companies were used to providing data in Excel files they were already using, while investors were familiar with manipulating the information within Excel.&nbsp; Each month, this workflow would inevitably breakdown as companies changed their financial models, were slow to respond to requests for the data, and investors scrambled to quickly pull together the monthly &ldquo;tear sheets&rdquo; on each company.&nbsp;
+
+
+We believed that Arkad would improve this entire workflow, but it required a behavior change. Unfortunately, although the investors saw benefit, most were afraid to be the &ldquo;bad guy&rdquo; and ask their companies to change behavior.
+
+
+To overcome this behavior change, we should&rsquo;ve focused on making it extremely easy to get data into the platform through API calls to Quickbooks, Google Analytics, Salesforce, and other products.&nbsp;
+
+
+Two-Sided Workflow Problem
+
+
+From the very beginning, we recognized that we were building a product that would help two groups &ndash; investors and portfolio companies. &nbsp;At first, the investors would get the most value from the product because it helped them track all of the data spread across their companies. But we were always dependent on the portfolio companies loading their data.&nbsp; We strived to find ways to make the product more useful to portfolio companies, but struggled to come up with something.&nbsp; We ended up counting on investors pushing the product onto portfolio companies, rather than building features that were specifically useful to the portfolio company.&nbsp;
+
+
+If your platform doesn&rsquo;t return value to the person inputting information, you need to find a way to collect that data automatically and remove the person from the equation.&nbsp; Salesforce and Github have used different tactics to make their products valuable to the person inputting data.
+
+
+Companies get a ton of value from Salesforce, but the sales people are reluctant to add information to the product. To solve for this, companies use the data entered into Salesforce to calculate a salesperson&rsquo;s commission. Essentially, Salesforce resorted to the collectors of data (companies) pushing the product onto the salesperson by aligning the incentive structure of the salesperson to the goal of data input.&nbsp;
+
+
+Ideally, the person that inputs the data gets as much value from the product as the aggregator of data.&nbsp;&nbsp; Github for companies is a great example of this.&nbsp; The users get an enormous amount of value through version control and companies get all of the aggregate data they want.&nbsp; This is all in the background for the people entering the data (the software developers), but it is extremely valuable to the aggregator (product manager or company).
+
+
+Data First&hellip;Then Build the Platform
+
+
+At its core, Arkad was a data collection tool.&nbsp; The asset that was most important to the success of the platform was the operational and financial data of each portfolio company.&nbsp; Some of the most exciting value we planned to provide would be on benchmarking and analysis of data.&nbsp; In order to provide this value, however, we needed a lot of data to be entered first &ndash; it was the catch-22 of our offering.
+
+
+Essentially, we didn&rsquo;t convince our potential customers that Arkad was valuable without the benchmarking that they were excited to see.&nbsp; We either had to go out and collect publicly available data or provide an extraordinarily simple way for users to load data into the platform.&nbsp; Once they loaded their operational intelligence, Arkad needed to provide analysis and insights that were not possible with the old collection techniques.
+
+
+We started to believe that the key to successfully launching a product dependent on a critical mass of data is collecting as much information as possible upfront.&nbsp; SinglePlatform nailed this with their launch.&nbsp;&nbsp;
+
+
+SinglePlatform allows small businesses to publish their menus and pricing across content sites.&nbsp; The product was only valuable to content sites like the New York Times if they had data from restaurants.&nbsp; To get the data, they could&rsquo;ve built a platform and tried to get businesses to sign up and input their data.&nbsp; The small business would get no value from this, however, because the content sites would not partner with SinglePlatform without the data.&nbsp; The solution was to manually collect menus from approximately 10,000 restaurants.&nbsp; When a restaurant signed up to the site, they were editing their menu rather than entering the original data.&nbsp; The content sites loved it because they now had access to 10,000 menus on day one.&nbsp; It was a brilliant plan to get content sites excited while making the site valuable to its initial users - the first restaurants that paid to list and manage their menus online.&nbsp;
+
+
+If having data is going to be the most valuable part of a platform, your first customers must get something in return when they provide you with their data.&nbsp; This requires seeding your database with something to begin with rather than being dependent on your first customers.
+
+
+Understanding Customer Incentives
+
+
+You must understand your customers&rsquo; incentives to know why they would purchase your product.&nbsp;
+
+
+We believed that the partners would pay for a product to help them manage their portfolio and improve their internal processes.&nbsp; A very smart venture capitalist pointed out that the incentive scheme in venture and private equity is different from any other type of company.&nbsp; He said that most investors do not reinvest in their funds like a business because they don&rsquo;t consider a fund to be a business.&nbsp;
+
+
+Companies will invest in a product that improves processes to help them scale the business.&nbsp; A fund probably won&rsquo;t make this same investment because they are not trying to grow like a normal business.&nbsp; One prominent exception to this rule is First Round Capital.&nbsp; They actually built a product very similar to Arkad in-house because processes are so important to their growth.
+
+
+The majority of a partner&rsquo;s income comes from his 20% carry on successful exits.&nbsp; Improving portfolio data collection is unlikely to improve his chances of having a large exit in his portfolio.&nbsp; Smart venture capitalists make the right investments upfront to earn the benefits later.&nbsp; Since the incentive is to find the right deal from the beginning, a product more aligned with investor incentives would identify opportunities rather than monitoring them after the transaction.
+
+
+Understanding the Customer vs the Buyer
+
+
+Arkad had multiple customers and one buyer.&nbsp; Our customers were the portfolio company CEOs/CFOs and the analysts and associates at the investment funds.&nbsp; The buyer was the general partner of those investment fund.&nbsp; As Steve Blank discusses in Four Steps to the Epiphany, it is crucial to understand the distinction between a customer and buyer early in customer development.&nbsp;
+
+
+It took us time to realize this difference.&nbsp; We believe that the reason we were blinded by our customer need but not aware of our buyers&rsquo; needs was that we were so acutely aware of our customers&rsquo; needs.&nbsp; We were associates and analysts, and we knew the pain that portfolio tracking caused for the analysts and associates and for the portfolio company management teams.
+
+
+The incentives were strongly in favor for implementing Arkad for the users.&nbsp; The buyers, however, did not have a strong enough incentive to implement it - all of the pain was felt elsewhere.&nbsp; They got the data when they needed it because an analyst or associate took care of it.
+
+
+To get the partners excited, we could&rsquo;ve built a product to target something that they would perceive valuable on day one.
+
+
+Collecting Financial Data Only Happens After the Fact
+
+
+Arkad was built to present financial and operational data at the end of each month to investors.&nbsp; We tried to make the argument that Arkad would help portfolio companies manage their business while investors monitored performance.&nbsp; The pushback was that the data collected in the system was already old and decisions were made weeks before it hit Arkad.
+
+
+End of month data is ancient relative to the data businesses use to make daily decisions. &nbsp;One CFO explained correctly that his financial statements are important to look at and understand, but you are already one month behind when analyzing the information.&nbsp; To manage his business, he looks at operational data every day.
+
+
+If you are building a platform for data collection, you must collect data immediately, present it in an actionable format, and make suggestions that a manager can use to improve his business that moment.&nbsp; Presenting old information doesn&rsquo;t help someone take action and your suggestions could be 6 weeks old by the time the books are closed at most small companies.
+
+
+Startups Fail Because Founders Lose Enthusiasm
+
+
+&nbsp;&nbsp;
+
+
+We collectively believe that there is still a good business opportunity in investor and lender relationship management.&nbsp; In fact, this opportunity only gets better with crowdfunding because entrepreneurs will quickly realize how difficult it is to manage 100s of investors when they were struggling to manage just a few dozen.&nbsp; The fact is, however, that we started losing enthusiasm in our idea and company.&nbsp;
+
+
+In March, we began discussing why we were struggling to close sales (that&rsquo;s where a lot of these lessons learned originated).&nbsp; This discussion definitely accelerated our decision to close the business.&nbsp; Of course, it&rsquo;s imperative that every startup reflects on why they aren&rsquo;t achieving their goals.&nbsp; If you want the company to survive these conversations, however, it&rsquo;s extremely important to also set new goals and refocus on the next tasks to accomplish.&nbsp;
+
+
+Negativity saps energy from anyone, no matter how optimistic you are.&nbsp; We started running out of energy when our conversations about Arkad turned negative.&nbsp;
+
+
+When starting a company you must realize that there will be plenty of days where you lose excitement because things aren&rsquo;t going well.&nbsp; Make sure you are enthusiastic about your idea or mission.&nbsp; It will be the only thing that helps you overcome the early negative days.&nbsp; You need this enthusiasm about your mission or idea, so you can refocus on accomplishing your goals.
+
+
+&nbsp;Measure, even at the beginning
+
+
+Momentum early on can be deceiving.&nbsp; Throughout development, we continuously met with potential customers to collect their feedback and to hear if our newest features would help them manage investor relations.
+
+
+Every time we met with someone, we should&rsquo;ve asked, &ldquo;will you buy this product?&rdquo;&nbsp; We should&rsquo;ve set a goal from the beginning that if x% of our potential customers weren&rsquo;t excited to use our product, we would need to change something or pivot to another idea.&nbsp; We didn&rsquo;t do this.&nbsp; Instead, we took the positive meetings and the negative ones in stride.&nbsp; We would evaluate the conversations, but in the end we just said &ldquo;enough people are excited about this feature or that one, let&rsquo;s continue to build.&rdquo; When you are building a product, you cannot just accept a user saying &ldquo;yes I will use this product."&nbsp; The next time we start a company, we will get those users committed.&nbsp; If the product isn&rsquo;t built, sign them up for the future.&nbsp; If the product is even in a simple form, sign them up and get them using your product.&nbsp; The feedback is tremendously valuable.
+
+
+The discipline to set a goal is extremely important.&nbsp; It may seem arbitrary to say &ldquo;50% of the people we meet with need to tell us they will buy this product, or we need to change something.&rdquo;&nbsp; The exact metrics that are important to measure depend on your business model and market.&nbsp; For Arkad, our percentage of likely buyers at each stage should&rsquo;ve been somewhere near 30-50%.&nbsp; Our market was small, and we needed to convert most of our potential customers to buyers to be successful.&nbsp;
+
+
+Whatever your goal is: come up with a hypothesis for that goal; measure it; and evaluate what potential customers are really saying.&nbsp; If you aren&rsquo;t hitting the goal, figure out why and either change your sales approach, product, or business plan.&nbsp; Don&rsquo;t let the momentum of good meetings carry you forward without precisely measuring how you&rsquo;re doing.
+
+
+Thank you for reading this long blog post.&nbsp; We hope you got a fraction of the benefit that we did while writing it.&nbsp; If you have other lessons learned to share, let us know.&nbsp; We&rsquo;d love to keep the conversation going to help future entrepreneurs succeed where we failed.&nbsp; Leave a comment below or reach out to us with a topic suggestion.&nbsp; Our email address is contact at getarkad.
+
+
+Benjy, Kenny, and Micah.&nbsp;"/>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			
+			
+	
+	
+	
+
+
+	<link rel="shortcut icon" href="http://38.media.tumblr.com/avatar_8bee46204db1_128.png" />
+	<link rel="apple-touch-icon" href="http://38.media.tumblr.com/avatar_8bee46204db1_128.png" />
+	<link rel="alternate" type="application/rss+xml" href="http://blog.getarkad.com/rss"/>
+	<link rel="stylesheet" href="http://static.tumblr.com/hugxd2w/aJVmax7qn/style.min.css" media="screen"/>
+	<link rel="stylesheet" href="http://static.tumblr.com/xgwqnql/MF5lbpkr4/jquery.fancybox-1.3.1.css" media="screen"/>	 
+	
+	
+	<script type="text/javascript">
+		tumblrUsername = 'team-arkad';
+		searchValue = "Search";
+		themeColor = "#7aa935";
+		
+		
+		contentWidth = 700;
+		customPhotosets = true;
+		
+		collapseNotes = true;
+	
+		disqusEnabled = true;
+		disqusShortname = "arkad";
+	
+		twitterUsername = "Team_Arkad";
+		fixedBar = true;
+	
+		showTweets = true;
+		numTweets = parseInt(3);
+		showTwitterProfile = true;
+	
+	var showInstagram = false;
+	
+	var accessToken = '';
+	var instaCount = '4';
+	
+		
+		isPermalink = true;
+		photosets = {};
+	</script>
+	<style type="text/css">
+		 body { font-family:Helvetica Neue, Arial, sans-serif; color:#333333; background-color:#e6ebea;background-image:url(http://static.tumblr.com/4b44d18bc751e67e01609ed06e595c5b/udjiib3/urDmfvl9u/tumblr_static_concrete_wall_3_texture.png); background-repeat:repeat; }
+		.blog-title, #sidebar h1, #sidebar h2, #sidebar h3, #footer h1, #footer h2, #footer h3  { font-family:Helvetica Neue, Arial, sans-serif; }
+		.copy { font-family:Georgia, serif; }
+		.copy h1, .copy h2, .copy h3, .copy h4, .copy h5, .copy h6, .auto-headings .copy p:first-child strong:first-child, #notes h2, #disqus h2, .speaker {font-family:Helvetica Neue, Arial, sans-serif;}
+
+		#tabs #tabs-nav h2 span.active { background:#e6ebea; }
+
+		
+		
+		/* Main Theme Color */
+		.colored-panel, .type-answer .user-question, .pages a:hover, .invert .fixed .pages a:hover, .invert .pinned .pages a:hover, .invert #sidebar .pages a:hover, .more-likes:hover, .invert-topbar .fixed .pages a:hover, .like_link a:hover, .type-photoset .navi a:hover, #pagination .nextprev a:hover, #group-members li span, #followed li span { background-color:#7aa935; }
+		.corners .tl { border-left-color:#7aa935; }
+		.corners .tr { border-right-color:#7aa935; }
+		.corners .bl, .corners .br { border-bottom-color:#7aa935; }
+		#group-members li span:after, #followed li span:after { border-top-color:#7aa935; }
+
+		/* Outside Link Color */
+		a, #footer-end a:hover { color:#7aa935; }
+
+		/* Outside Link Hover */
+		a:hover { color:#49651f; }
+
+		/* Inside Link Color */
+		.copy a, .copy li:before, .type-chat .speaker, .no-touch #notes-toggle:hover, .touch #notes-toggle.up, ol.notes a, #disqus a { color:#7aa935; }
+		.copy a:hover, ol.notes a:hover { border-color:#7aa935; }
+		.no-touch #notes-toggle:hover .icon, .touch #notes-toggle.up .icon, .photo-btns a:hover, #back-to-top .icon { background-color:#7aa935; }
+
+		/* Colored Area */
+		.colored-panel, .colored-panel a, .colored-panel a:hover, .colored-panel .user-question, .pages a:hover, .invert-topbar .fixed .pages a:hover, .invert #sidebar .pages a:hover, .more-likes:hover, .like_link a:hover, #pagination .nextprev a:hover, #group-members li span, #followed li span { color:#ffffff; }
+
+		/* Colored Area Text Shadow */		
+		.type-quote .quote-text,.type-audio .audio-meta,.type-answer .user-question,.pages a:hover, .more-likes:hover, .like_link a:hover, #pagination .nextprev a:hover, #group-members li span, #followed li span { text-shadow:1px 1px #596573; }
+		
+		ol.notes li.tumblelog_team-arkad { background-color:#fbfbfb; }
+		ol.notes li.tumblelog_team-arkad .action { font-weight:bold; }
+		#page, .inner { margin:0 auto; } 
+		
+		.description{
+width: 175px;
+text-align: justify;'
+}
+	</style>
+
+	<script src="http://static.tumblr.com/hugxd2w/6Cpm8gh20/modernizr.2.6.1.min.js"></script>
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822/US/benbox-20/8005/a596d338-60e9-4f6d-89d7-a7eaec4e7d27"> </SCRIPT> <NOSCRIPT><A HREF="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fbenbox-20%2F8005%2Fa596d338-60e9-4f6d-89d7-a7eaec4e7d27&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=team-arkad%26postID=50348770974" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business" title="Lessons Learned Starting Our First Business
+We founded Arkad in August 2012 to provide companies with a simple investor and lender relationship tool. Initially, we started with venture-backed companies, but our broader goal was to change how..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="startup,lessons learned,post mortem,entrepreneurship" />
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="We founded Arkad in August 2012 to provide companies with a simple investor and lender relationship tool.&nbsp; Initially, we started with venture-backed companies, but our broader goal was to change how businesses communicate their data.&nbsp;
+Unfortunately, we officially shut down Arkad on May 1, but we want to share some of the many lessons we learned throughout the process of launching our first business.
+The 80-20 Rule Doesn&rsquo;t Apply to Workflow Products
+The problem with workflow products is that if you don&rsquo;t solve the entire workflow, you end up creating more work for your customers.
+For many people, Excel has become their go-to database.&nbsp; This is definitely true for most financial and operating data at companies.&nbsp; Arkad replaced this and made it extremely easy to compare companies across the portfolio, communicate with those companies, and perform basic analysis.&nbsp;
+The current version of our product didn&rsquo;t capture the entire workflow &ndash; investors also needed to perform valuations, manage cap tables, and a variety of other tasks.&nbsp; We were addressing 80% of what people needed, but to get the last 20% would&rsquo;ve meant at least another year of development.&nbsp;
+One way to avoid this trap is to build something that addresses a very specific aspect of the workflow. From there, you can build other features that creep into other aspects of the workflow.&nbsp; Eventually, your product captures the entire workflow, and you&rsquo;ve built the solution your customers wanted.
+Our customers wanted every part of their workflow to be built into Arkad because we were selling a workflow solution. &nbsp;It was how we positioned the product from the beginning, and this hurt our ability to sell something that wasn&rsquo;t a complete solution.
+Building a Product vs. Service Business
+From day one, we should&rsquo;ve been offering Arkad as a service rather than as a product. &nbsp;It would&rsquo;ve enabled us to make early sales and build the products with clients actually using them, not to mention we could&rsquo;ve validated our idea sooner.
+As a service, you can walk into the customer&rsquo;s office and say we will take care of everything.&nbsp; Meanwhile, you can create products to scale and automate those services.&nbsp; This may have worked for our market initially, but the professional investor market is not large enough and doesn&rsquo;t value portfolio monitoring enough to justify providing a high-touch service.&nbsp; Eventually, we would&rsquo;ve needed to productize the services and move into other markets that didn&rsquo;t need a high-touch service.&nbsp; We were planning to introduce our product to the small business lending, crowdfunding, and real estate investment markets.&nbsp;
+Focus on a Deep Well
+Paul Graham recently argued that businesses should aim to build a &ldquo;deep well&rdquo;, focusing on delivering a lot of value to a small market. We always intended to start with a deep well for professional investors and then expand into small business lending, crowdfunding, and other asset classes.&nbsp;
+In order to dig this deep well, we should have built a product to solve a specific need in the workflow.&nbsp; Focusing would&rsquo;ve enabled us to build something that is 10x better than the current solution.&nbsp; From there, we could&rsquo;ve slowly added functionality to capture different parts of the workflow.
+Instead, we built an entire platform that wasn&rsquo;t necessarily amazing at any specific aspect of the workflow. &nbsp;As an entire portfolio management tool, we didn&rsquo;t commit enough time to develop Arkad into a product worth changing behavior for.
+Changing Behavior is Really Difficult
+We were basically replacing Excel-based workflows, and to replace any existing workflow you need to be 10x better than that workflow.
+Arkad was trying to change an ingrained behavior of CEOs/CFOs and investors.&nbsp; The companies were used to providing data in Excel files they were already using, while investors were familiar with manipulating the information within Excel.&nbsp; Each month, this workflow would inevitably breakdown as companies changed their financial models, were slow to respond to requests for the data, and investors scrambled to quickly pull together the monthly &ldquo;tear sheets&rdquo; on each company.&nbsp;
+We believed that Arkad would improve this entire workflow, but it required a behavior change. Unfortunately, although the investors saw benefit, most were afraid to be the &ldquo;bad guy&rdquo; and ask their companies to change behavior.
+To overcome this behavior change, we should&rsquo;ve focused on making it extremely easy to get data into the platform through API calls to Quickbooks, Google Analytics, Salesforce, and other products.&nbsp;
+Two-Sided Workflow Problem
+From the very beginning, we recognized that we were building a product that would help two groups &ndash; investors and portfolio companies. &nbsp;At first, the investors would get the most value from the product because it helped them track all of the data spread across their companies. But we were always dependent on the portfolio companies loading their data.&nbsp; We strived to find ways to make the product more useful to portfolio companies, but struggled to come up with something.&nbsp; We ended up counting on investors pushing the product onto portfolio companies, rather than building features that were specifically useful to the portfolio company.&nbsp;
+If your platform doesn&rsquo;t return value to the person inputting information, you need to find a way to collect that data automatically and remove the person from the equation.&nbsp; Salesforce and Github have used different tactics to make their products valuable to the person inputting data.
+Companies get a ton of value from Salesforce, but the sales people are reluctant to add information to the product. To solve for this, companies use the data entered into Salesforce to calculate a salesperson&rsquo;s commission. Essentially, Salesforce resorted to the collectors of data (companies) pushing the product onto the salesperson by aligning the incentive structure of the salesperson to the goal of data input.&nbsp;
+Ideally, the person that inputs the data gets as much value from the product as the aggregator of data.&nbsp;&nbsp; Github for companies is a great example of this.&nbsp; The users get an enormous amount of value through version control and companies get all of the aggregate data they want.&nbsp; This is all in the background for the people entering the data (the software developers), but it is extremely valuable to the aggregator (product manager or company).
+Data First&hellip;Then Build the Platform
+At its core, Arkad was a data collection tool.&nbsp; The asset that was most important to the success of the platform was the operational and financial data of each portfolio company.&nbsp; Some of the most exciting value we planned to provide would be on benchmarking and analysis of data.&nbsp; In order to provide this value, however, we needed a lot of data to be entered first &ndash; it was the catch-22 of our offering.
+Essentially, we didn&rsquo;t convince our potential customers that Arkad was valuable without the benchmarking that they were excited to see.&nbsp; We either had to go out and collect publicly available data or provide an extraordinarily simple way for users to load data into the platform.&nbsp; Once they loaded their operational intelligence, Arkad needed to provide analysis and insights that were not possible with the old collection techniques.
+We started to believe that the key to successfully launching a product dependent on a critical mass of data is collecting as much information as possible upfront.&nbsp; SinglePlatform nailed this with their launch.&nbsp;&nbsp;
+SinglePlatform allows small businesses to publish their menus and pricing across content sites.&nbsp; The product was only valuable to content sites like the New York Times if they had data from restaurants.&nbsp; To get the data, they could&rsquo;ve built a platform and tried to get businesses to sign up and input their data.&nbsp; The small business would get no value from this, however, because the content sites would not partner with SinglePlatform without the data.&nbsp; The solution was to manually collect menus from approximately 10,000 restaurants.&nbsp; When a restaurant signed up to the site, they were editing their menu rather than entering the original data.&nbsp; The content sites loved it because they now had access to 10,000 menus on day one.&nbsp; It was a brilliant plan to get content sites excited while making the site valuable to its initial users - the first restaurants that paid to list and manage their menus online.&nbsp;
+If having data is going to be the most valuable part of a platform, your first customers must get something in return when they provide you with their data.&nbsp; This requires seeding your database with something to begin with rather than being dependent on your first customers.
+Understanding Customer Incentives
+You must understand your customers&rsquo; incentives to know why they would purchase your product.&nbsp;
+We believed that the partners would pay for a product to help them manage their portfolio and improve their internal processes.&nbsp; A very smart venture capitalist pointed out that the incentive scheme in venture and private equity is different from any other type of company.&nbsp; He said that most investors do not reinvest in their funds like a business because they don&rsquo;t consider a fund to be a business.&nbsp;
+Companies will invest in a product that improves processes to help them scale the business.&nbsp; A fund probably won&rsquo;t make this same investment because they are not trying to grow like a normal business.&nbsp; One prominent exception to this rule is First Round Capital.&nbsp; They actually built a product very similar to Arkad in-house because processes are so important to their growth.
+The majority of a partner&rsquo;s income comes from his 20% carry on successful exits.&nbsp; Improving portfolio data collection is unlikely to improve his chances of having a large exit in his portfolio.&nbsp; Smart venture capitalists make the right investments upfront to earn the benefits later.&nbsp; Since the incentive is to find the right deal from the beginning, a product more aligned with investor incentives would identify opportunities rather than monitoring them after the transaction.
+Understanding the Customer vs the Buyer
+Arkad had multiple customers and one buyer.&nbsp; Our customers were the portfolio company CEOs/CFOs and the analysts and associates at the investment funds.&nbsp; The buyer was the general partner of those investment fund.&nbsp; As Steve Blank discusses in Four Steps to the Epiphany, it is crucial to understand the distinction between a customer and buyer early in customer development.&nbsp;
+It took us time to realize this difference.&nbsp; We believe that the reason we were blinded by our customer need but not aware of our buyers&rsquo; needs was that we were so acutely aware of our customers&rsquo; needs.&nbsp; We were associates and analysts, and we knew the pain that portfolio tracking caused for the analysts and associates and for the portfolio company management teams.
+The incentives were strongly in favor for implementing Arkad for the users.&nbsp; The buyers, however, did not have a strong enough incentive to implement it - all of the pain was felt elsewhere.&nbsp; They got the data when they needed it because an analyst or associate took care of it.
+To get the partners excited, we could&rsquo;ve built a product to target something that they would perceive valuable on day one.
+Collecting Financial Data Only Happens After the Fact
+Arkad was built to present financial and operational data at the end of each month to investors.&nbsp; We tried to make the argument that Arkad would help portfolio companies manage their business while investors monitored performance.&nbsp; The pushback was that the data collected in the system was already old and decisions were made weeks before it hit Arkad.
+End of month data is ancient relative to the data businesses use to make daily decisions. &nbsp;One CFO explained correctly that his financial statements are important to look at and understand, but you are already one month behind when analyzing the information.&nbsp; To manage his business, he looks at operational data every day.
+If you are building a platform for data collection, you must collect data immediately, present it in an actionable format, and make suggestions that a manager can use to improve his business that moment.&nbsp; Presenting old information doesn&rsquo;t help someone take action and your suggestions could be 6 weeks old by the time the books are closed at most small companies.
+Startups Fail Because Founders Lose Enthusiasm
+&nbsp;&nbsp;
+We collectively believe that there is still a good business opportunity in investor and lender relationship management.&nbsp; In fact, this opportunity only gets better with crowdfunding because entrepreneurs will quickly realize how difficult it is to manage 100s of investors when they were struggling to manage just a few dozen.&nbsp; The fact is, however, that we started losing enthusiasm in our idea and company.&nbsp;
+In March, we began discussing why we were struggling to close sales (that&rsquo;s where a lot of these lessons learned originated).&nbsp; This discussion definitely accelerated our decision to close the business.&nbsp; Of course, it&rsquo;s imperative that every startup reflects on why they aren&rsquo;t achieving their goals.&nbsp; If you want the company to survive these conversations, however, it&rsquo;s extremely important to also set new goals and refocus on the next tasks to accomplish.&nbsp;
+Negativity saps energy from anyone, no matter how optimistic you are.&nbsp; We started running out of energy when our conversations about Arkad turned negative.&nbsp;
+When starting a company you must realize that there will be plenty of days where you lose excitement because things aren&rsquo;t going well.&nbsp; Make sure you are enthusiastic about your idea or mission.&nbsp; It will be the only thing that helps you overcome the early negative days.&nbsp; You need this enthusiasm about your mission or idea, so you can refocus on accomplishing your goals.
+&nbsp;Measure, even at the beginning
+Momentum early on can be deceiving.&nbsp; Throughout development, we continuously met with potential customers to collect their feedback and to hear if our newest features would help them manage investor relations.
+Every time we met with someone, we should&rsquo;ve asked, &ldquo;will you buy this product?&rdquo;&nbsp; We should&rsquo;ve set a goal from the beginning that if x% of our potential customers weren&rsquo;t excited to use our product, we would need to change something or pivot to another idea.&nbsp; We didn&rsquo;t do this.&nbsp; Instead, we took the positive meetings and the negative ones in stride.&nbsp; We would evaluate the conversations, but in the end we just said &ldquo;enough people are excited about this feature or that one, let&rsquo;s continue to build.&rdquo; When you are building a product, you cannot just accept a user saying &amp;ldquo;yes I will use this product.&amp;quot;&nbsp; The next time we start a company, we will get those users committed.&nbsp; If the product isn&amp;rsquo;t built, sign them up for the future.&nbsp; If the product is even in a simple form, sign them up and get them using your product.&nbsp; The feedback is tremendously valuable.
+The discipline to set a goal is extremely important.&nbsp; It may seem arbitrary to say &ldquo;50% of the people we meet with need to tell us they will buy this product, or we need to change something.&rdquo;&nbsp; The exact metrics that are important to measure depend on your business model and market.&nbsp; For Arkad, our percentage of likely buyers at each stage should&rsquo;ve been somewhere near 30-50%.&nbsp; Our market was small, and we needed to convert most of our potential customers to buyers to be successful.&nbsp;
+Whatever your goal is: come up with a hypothesis for that goal; measure it; and evaluate what potential customers are really saying.&nbsp; If you aren&rsquo;t hitting the goal, figure out why and either change your sales approach, product, or business plan.&nbsp; Don&rsquo;t let the momentum of good meetings carry you forward without precisely measuring how you&rsquo;re doing.
+Thank you for reading this long blog post.&nbsp; We hope you got a fraction of the benefit that we did while writing it.&nbsp; If you have other lessons learned to share, let us know.&nbsp; We&rsquo;d love to keep the conversation going to help future entrepreneurs succeed where we failed.&nbsp; Leave a comment below or reach out to us with a topic suggestion.&nbsp; Our email address is contact at getarkad.
+Benjy, Kenny, and Micah.&nbsp;" /><meta name="twitter:title" content="Lessons Learned Starting Our First Business" /><meta name="twitter:url" content="http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="Team_Arkad" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=team-arkad&amp;postID=50348770974&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=team-arkad&amp;postID=50348770974&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=team-arkad&amp;postID=50348770974&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/blog.getarkad.com\/post\/50348770974\/lessons-learned-starting-our-first-business","mainEntityOfPage":true,"datePublished":"2013-05-13T16:34:00-04:00","author":"team-arkad","image":"http:\/\/media.tumblr.com\/165b095159770c46f6aa125fab2af885\/tumblr_inline_mmqw16v1fK1qz4rgp.png","headline":"Lessons Learned Starting Our First Business","articleBody":"We founded Arkad in August 2012 to provide companies with a simple investor and lender relationship tool. Initially, we started with venture-backed companies, but our broader goal was to change how businesses communicate their data.\nUnfortunately, we officially shut down Arkad on May 1, but we want to share some of the many lessons we learned throughout the process of launching our first business.\nThe 80-20 Rule Doesn\u2019t Apply to Workflow Products\nThe problem with workflow products is that if you don\u2019t solve the entire workflow, you end up creating more work for your customers.\nFor many people, Excel has become their go-to database. This is definitely true for most financial and operating data at companies. Arkad replaced this and made it extremely easy to compare companies across the portfolio, communicate with those companies, and perform basic analysis.\nThe current version of our product didn\u2019t capture the entire workflow \u2013 investors also needed to perform valuations, manage cap tables, and a variety of other tasks. We were addressing 80% of what people needed, but to get the last 20% would\u2019ve meant at least another year of development.\nOne way to avoid this trap is to build something that addresses a very specific aspect of the workflow. From there, you can build other features that creep into other aspects of the workflow. Eventually, your product captures the entire workflow, and you\u2019ve built the solution your customers wanted.\nOur customers wanted every part of their workflow to be built into Arkad because we were selling a workflow solution. It was how we positioned the product from the beginning, and this hurt our ability to sell something that wasn\u2019t a complete solution.\nBuilding a Product vs. Service Business\nFrom day one, we should\u2019ve been offering Arkad as a service rather than as a product. It would\u2019ve enabled us to make early sales and build the products with clients actually using them, not to mention we could\u2019ve validated our idea sooner.\nAs a service, you can walk into the customer\u2019s office and say we will take care of everything. Meanwhile, you can create products to scale and automate those services. This may have worked for our market initially, but the professional investor market is not large enough and doesn\u2019t value portfolio monitoring enough to justify providing a high-touch service. Eventually, we would\u2019ve needed to productize the services and move into other markets that didn\u2019t need a high-touch service. We were planning to introduce our product to the small business lending, crowdfunding, and real estate investment markets.\nFocus on a Deep Well\nPaul Graham recently argued that businesses should aim to build a \u201cdeep well\u201d, focusing on delivering a lot of value to a small market. We always intended to start with a deep well for professional investors and then expand into small business lending, crowdfunding, and other asset classes.\nIn order to dig this deep well, we should have built a product to solve a specific need in the workflow. Focusing would\u2019ve enabled us to build something that is 10x better than the current solution. From there, we could\u2019ve slowly added functionality to capture different parts of the workflow.\nInstead, we built an entire platform that wasn\u2019t necessarily amazing at any specific aspect of the workflow. As an entire portfolio management tool, we didn\u2019t commit enough time to develop Arkad into a product worth changing behavior for.\nChanging Behavior is Really Difficult\nWe were basically replacing Excel-based workflows, and to replace any existing workflow you need to be 10x better than that workflow.\nArkad was trying to change an ingrained behavior of CEOs\/CFOs and investors. The companies were used to providing data in Excel files they were already using, while investors were familiar with manipulating the information within Excel. Each month, this workflow would inevitably breakdown as companies changed their financial models, were slow to respond to requests for the data, and investors scrambled to quickly pull together the monthly \u201ctear sheets\u201d on each company.\nWe believed that Arkad would improve this entire workflow, but it required a behavior change. Unfortunately, although the investors saw benefit, most were afraid to be the \u201cbad guy\u201d and ask their companies to change behavior.\nTo overcome this behavior change, we should\u2019ve focused on making it extremely easy to get data into the platform through API calls to Quickbooks, Google Analytics, Salesforce, and other products.\nTwo-Sided Workflow Problem\nFrom the very beginning, we recognized that we were building a product that would help two groups \u2013 investors and portfolio companies. At first, the investors would get the most value from the product because it helped them track all of the data spread across their companies. But we were always dependent on the portfolio companies loading their data. We strived to find ways to make the product more useful to portfolio companies, but struggled to come up with something. We ended up counting on investors pushing the product onto portfolio companies, rather than building features that were specifically useful to the portfolio company.\nIf your platform doesn\u2019t return value to the person inputting information, you need to find a way to collect that data automatically and remove the person from the equation. Salesforce and Github have used different tactics to make their products valuable to the person inputting data.\nCompanies get a ton of value from Salesforce, but the sales people are reluctant to add information to the product. To solve for this, companies use the data entered into Salesforce to calculate a salesperson\u2019s commission. Essentially, Salesforce resorted to the collectors of data (companies) pushing the product onto the salesperson by aligning the incentive structure of the salesperson to the goal of data input.\nIdeally, the person that inputs the data gets as much value from the product as the aggregator of data. Github for companies is a great example of this. The users get an enormous amount of value through version control and companies get all of the aggregate data they want. This is all in the background for the people entering the data (the software developers), but it is extremely valuable to the aggregator (product manager or company).\nData First\u2026Then Build the Platform\nAt its core, Arkad was a data collection tool. The asset that was most important to the success of the platform was the operational and financial data of each portfolio company. Some of the most exciting value we planned to provide would be on benchmarking and analysis of data. In order to provide this value, however, we needed a lot of data to be entered first \u2013 it was the catch-22 of our offering.\nEssentially, we didn\u2019t convince our potential customers that Arkad was valuable without the benchmarking that they were excited to see. We either had to go out and collect publicly available data or provide an extraordinarily simple way for users to load data into the platform. Once they loaded their operational intelligence, Arkad needed to provide analysis and insights that were not possible with the old collection techniques.\nWe started to believe that the key to successfully launching a product dependent on a critical mass of data is collecting as much information as possible upfront. SinglePlatform nailed this with their launch.\nSinglePlatform allows small businesses to publish their menus and pricing across content sites. The product was only valuable to content sites like the New York Times if they had data from restaurants. To get the data, they could\u2019ve built a platform and tried to get businesses to sign up and input their data. The small business would get no value from this, however, because the content sites would not partner with SinglePlatform without the data. The solution was to manually collect menus from approximately 10,000 restaurants. When a restaurant signed up to the site, they were editing their menu rather than entering the original data. The content sites loved it because they now had access to 10,000 menus on day one. It was a brilliant plan to get content sites excited while making the site valuable to its initial users - the first restaurants that paid to list and manage their menus online.\nIf having data is going to be the most valuable part of a platform, your first customers must get something in return when they provide you with their data. This requires seeding your database with something to begin with rather than being dependent on your first customers.\nUnderstanding Customer Incentives\nYou must understand your customers\u2019 incentives to know why they would purchase your product.\nWe believed that the partners would pay for a product to help them manage their portfolio and improve their internal processes. A very smart venture capitalist pointed out that the incentive scheme in venture and private equity is different from any other type of company. He said that most investors do not reinvest in their funds like a business because they don\u2019t consider a fund to be a business.\nCompanies will invest in a product that improves processes to help them scale the business. A fund probably won\u2019t make this same investment because they are not trying to grow like a normal business. One prominent exception to this rule is First Round Capital. They actually built a product very similar to Arkad in-house because processes are so important to their growth.\nThe majority of a partner\u2019s income comes from his 20% carry on successful exits. Improving portfolio data collection is unlikely to improve his chances of having a large exit in his portfolio. Smart venture capitalists make the right investments upfront to earn the benefits later. Since the incentive is to find the right deal from the beginning, a product more aligned with investor incentives would identify opportunities rather than monitoring them after the transaction.\nUnderstanding the Customer vs the Buyer\nArkad had multiple customers and one buyer. Our customers were the portfolio company CEOs\/CFOs and the analysts and associates at the investment funds. The buyer was the general partner of those investment fund. As Steve Blank discusses in Four Steps to the Epiphany, it is crucial to understand the distinction between a customer and buyer early in customer development.\nIt took us time to realize this difference. We believe that the reason we were blinded by our customer need but not aware of our buyers\u2019 needs was that we were so acutely aware of our customers\u2019 needs. We were associates and analysts, and we knew the pain that portfolio tracking caused for the analysts and associates and for the portfolio company management teams.\nThe incentives were strongly in favor for implementing Arkad for the users. The buyers, however, did not have a strong enough incentive to implement it - all of the pain was felt elsewhere. They got the data when they needed it because an analyst or associate took care of it.\nTo get the partners excited, we could\u2019ve built a product to target something that they would perceive valuable on day one.\nCollecting Financial Data Only Happens After the Fact\nArkad was built to present financial and operational data at the end of each month to investors. We tried to make the argument that Arkad would help portfolio companies manage their business while investors monitored performance. The pushback was that the data collected in the system was already old and decisions were made weeks before it hit Arkad.\nEnd of month data is ancient relative to the data businesses use to make daily decisions. One CFO explained correctly that his financial statements are important to look at and understand, but you are already one month behind when analyzing the information. To manage his business, he looks at operational data every day.\nIf you are building a platform for data collection, you must collect data immediately, present it in an actionable format, and make suggestions that a manager can use to improve his business that moment. Presenting old information doesn\u2019t help someone take action and your suggestions could be 6 weeks old by the time the books are closed at most small companies.\nStartups Fail Because Founders Lose Enthusiasm\nWe collectively believe that there is still a good business opportunity in investor and lender relationship management. In fact, this opportunity only gets better with crowdfunding because entrepreneurs will quickly realize how difficult it is to manage 100s of investors when they were struggling to manage just a few dozen. The fact is, however, that we started losing enthusiasm in our idea and company.\nIn March, we began discussing why we were struggling to close sales (that\u2019s where a lot of these lessons learned originated). This discussion definitely accelerated our decision to close the business. Of course, it\u2019s imperative that every startup reflects on why they aren\u2019t achieving their goals. If you want the company to survive these conversations, however, it\u2019s extremely important to also set new goals and refocus on the next tasks to accomplish.\nNegativity saps energy from anyone, no matter how optimistic you are. We started running out of energy when our conversations about Arkad turned negative.\nWhen starting a company you must realize that there will be plenty of days where you lose excitement because things aren\u2019t going well. Make sure you are enthusiastic about your idea or mission. It will be the only thing that helps you overcome the early negative days. You need this enthusiasm about your mission or idea, so you can refocus on accomplishing your goals.\nMeasure, even at the beginning\nMomentum early on can be deceiving. Throughout development, we continuously met with potential customers to collect their feedback and to hear if our newest features would help them manage investor relations.\nEvery time we met with someone, we should\u2019ve asked, \u201cwill you buy this product?\u201d We should\u2019ve set a goal from the beginning that if x% of our potential customers weren\u2019t excited to use our product, we would need to change something or pivot to another idea. We didn\u2019t do this. Instead, we took the positive meetings and the negative ones in stride. We would evaluate the conversations, but in the end we just said \u201cenough people are excited about this feature or that one, let\u2019s continue to build.\u201d When you are building a product, you cannot just accept a user saying \u201cyes I will use this product.\u0022 The next time we start a company, we will get those users committed. If the product isn\u2019t built, sign them up for the future. If the product is even in a simple form, sign them up and get them using your product. The feedback is tremendously valuable.\nThe discipline to set a goal is extremely important. It may seem arbitrary to say \u201c50% of the people we meet with need to tell us they will buy this product, or we need to change something.\u201d The exact metrics that are important to measure depend on your business model and market. For Arkad, our percentage of likely buyers at each stage should\u2019ve been somewhere near 30-50%. Our market was small, and we needed to convert most of our potential customers to buyers to be successful.\nWhatever your goal is: come up with a hypothesis for that goal; measure it; and evaluate what potential customers are really saying. If you aren\u2019t hitting the goal, figure out why and either change your sales approach, product, or business plan. Don\u2019t let the momentum of good meetings carry you forward without precisely measuring how you\u2019re doing.\nThank you for reading this long blog post. We hope you got a fraction of the benefit that we did while writing it. If you have other lessons learned to share, let us know. We\u2019d love to keep the conversation going to help future entrepreneurs succeed where we failed. Leave a comment below or reach out to us with a topic suggestion. Our email address is contact at getarkad.\nBenjy, Kenny, and Micah.","@context":"http:\/\/schema.org"}</script>
+</head>
+<body class="content-700 lg-icons scale-images singular ">
+	<div id="header" class="pinned">
+		<div class="inner">
+			
+				<a href="http://www.getarkad.com" title="http://static.tumblr.com/7285b4f41ec81f70a5921a253b9c2322/udjiib3/L96mfvl8v/tumblr_static_arkad_1122x336_-_large.png" class="logo"><img src="http://static.tumblr.com/7285b4f41ec81f70a5921a253b9c2322/udjiib3/L96mfvl8v/tumblr_static_arkad_1122x336_-_large.png" alt="Logo" /></a>
+			
+			
+			
+			<h1 class="blog-title"><a href="/"></a></h1>
+			
+			
+			
+			
+			
+			<div id="search">
+				<form id="search-form" method="get" action="/search">
+					<input type="text" name="q" value="Search" />
+				</form>
+			</div>
+			
+			<ul class="menu">
+ 				
+				<li><a class="archives" href="/archive" title="Archive"><span class="icon"></span><span class="label">Archive</span></a></li>
+				<li><a class="rss" href="http://blog.getarkad.com/rss" title="RSS feed"><span class="icon"></span><span class="label">RSS</span></a></li>
+				
+				
+			</ul>
+		</div><!-- .inner -->
+		<div class="shadow"><span></span></div>
+	</div><!-- /#header -->
+	
+	<!-- PAGE -->
+	<div id="page" class="right-sidebar clearfix">
+		
+		
+		
+		
+		<div id="content">
+		
+			<!-- BEGIN POSTS -->
+			
+			<article id="post-50348770974" class="post type-text tag_entrepreneurship tag_post+mortem tag_lessons+learned tag_startup ">
+				
+				
+				<div class="post-panel">
+					<div class="copy">
+						<h2 class="post-title">Lessons Learned Starting Our First Business</h2>
+						<p class="MsoNormal"><span>We founded Arkad in August 2012 to provide companies with a simple investor and lender relationship tool.&nbsp; Initially, we started with venture-backed companies, but our broader goal was to change how businesses communicate their data.</span><span>&nbsp;</span></p>
+<p class="MsoNormal"><span>Unfortunately, we officially shut down Arkad on May 1, but we want to share some of the many lessons we learned throughout the process of launching our first business.</span></p>
+<p class="MsoListParagraphCxSpFirst"><strong><span>The 80-20 Rule Doesn&rsquo;t Apply to Workflow Products</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle"><span>The problem with workflow products is that if you don&rsquo;t solve the entire workflow, you end up creating more work for your customers.</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>For many people, Excel has become their go-to database.&nbsp; This is definitely true for most financial and operating data at companies.&nbsp; Arkad replaced this and made it extremely easy to compare companies across the portfolio, communicate with those companies, and perform basic analysis.&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>The current version of our product didn&rsquo;t capture the entire workflow &ndash; investors also needed to perform valuations, manage cap tables, and a variety of other tasks.&nbsp; We were addressing 80% of what people needed, but to get the last 20% would&rsquo;ve meant at least another year of development.&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>One way to avoid this trap is to build something that addresses a very specific aspect of the workflow. From there, you can build other features that creep into other aspects of the workflow.&nbsp; Eventually, your product captures the entire workflow, and you&rsquo;ve built the solution your customers wanted.</span></p>
+<p class="MsoListParagraphCxSpLast"><span>Our customers wanted every part of their workflow to be built into Arkad because we were selling a workflow solution. &nbsp;It was how we positioned the product from the beginning, and this hurt our ability to sell something that wasn&rsquo;t a complete solution.</span></p>
+<p class="MsoListParagraph"><strong><span>Building a Product vs. Service Business</span></strong></p>
+<p class="MsoNormal"><span>From day one, we should&rsquo;ve been offering Arkad as a service rather than as a product. &nbsp;It would&rsquo;ve enabled us to make early sales and build the products with clients actually using them, not to mention we could&rsquo;ve validated our idea sooner.</span></p>
+<p class="MsoNormal"><span>As a service, you can walk into the customer&rsquo;s office and say we will take care of everything.&nbsp; Meanwhile, you can create products to scale and automate those services.&nbsp; This may have worked for our market initially, but the professional investor market is not large enough and doesn&rsquo;t value portfolio monitoring enough to justify providing a high-touch service.&nbsp; Eventually, we would&rsquo;ve needed to productize the services and move into other markets that didn&rsquo;t need a high-touch service.&nbsp; We were planning to introduce our product to the small business lending, crowdfunding, and real estate investment markets.</span><strong><span>&nbsp;</span></strong></p>
+<p class="MsoListParagraph"><strong><span>Focus on a Deep Well</span></strong></p>
+<p class="MsoNormal"><span>Paul Graham </span><a href="http://paulgraham.com/startupideas.html" target="_blank"><span>recently argued that</span></a><span> businesses should aim to build a &ldquo;deep well&rdquo;, focusing on delivering a lot of value to a small market. We always intended to start with a deep well for professional investors and then expand into small business lending, crowdfunding, and other asset classes.</span><span>&nbsp;</span></p>
+<p class="MsoNormal"><span>In order to dig this deep well, we should have built a product to solve a specific need in the workflow.&nbsp; Focusing would&rsquo;ve enabled us to build something that is 10x better than the current solution.&nbsp; From there, we could&rsquo;ve slowly added functionality to capture different parts of the workflow.</span></p>
+<p class="MsoNormal"><span>Instead, we built an entire platform that wasn&rsquo;t necessarily amazing at any specific aspect of the workflow. &nbsp;As an entire portfolio management tool, we didn&rsquo;t commit enough time to develop Arkad into a product worth changing behavior for.</span></p>
+<p class="MsoListParagraph"><strong><span>Changing Behavior is Really Difficult</span></strong></p>
+<p class="MsoNormal"><span>We were basically replacing Excel-based workflows, and to replace any existing workflow you need to be 10x better than that workflow.</span></p>
+<p class="MsoNormal"><span>Arkad was trying to change an ingrained behavior of CEOs/CFOs and investors.&nbsp; The companies were used to providing data in Excel files they were already using, while investors were familiar with manipulating the information within Excel.&nbsp; Each month, this workflow would inevitably breakdown as companies changed their financial models, were slow to respond to requests for the data, and investors scrambled to quickly pull together the monthly &ldquo;tear sheets&rdquo; on each company.</span><span>&nbsp;</span></p>
+<p class="MsoNormal"><span>We believed that Arkad would improve this entire workflow, but it required a behavior change. Unfortunately, although the investors saw benefit, most were afraid to be the &ldquo;bad guy&rdquo; and ask their companies to change behavior.</span></p>
+<p class="MsoNormal"><span>To overcome this behavior change, we should&rsquo;ve focused on making it extremely easy to get data into the platform through API calls to Quickbooks, Google Analytics, Salesforce, and other products.&nbsp;</span></p>
+<p class="MsoListParagraph"><strong><span>Two-Sided Workflow Problem</span></strong></p>
+<p class="MsoNormal"><span>From the very beginning, we recognized that we were building a product that would help two groups &ndash; investors and portfolio companies. &nbsp;At first, the investors would get the most value from the product because it helped them track all of the data spread across their companies. But we were always dependent on the portfolio companies loading their data.&nbsp; We strived to find ways to make the product more useful to portfolio companies, but struggled to come up with something.&nbsp; We ended up counting on investors pushing the product onto portfolio companies, rather than building features that were specifically useful to the portfolio company.&nbsp;</span></p>
+<p class="MsoNormal"><span>If your platform doesn&rsquo;t return value to the person inputting information, you need to find a way to collect that data automatically and remove the person from the equation.&nbsp; </span><a href="http://www.salesforce.com" target="_blank"><span>Salesforce</span></a><span> and </span><a href="http://www.github.com" target="_blank"><span>Github</span></a><span> have used different tactics to make their products valuable to the person inputting data.</span></p>
+<p class="MsoNormal"><span>Companies get a ton of value from Salesforce, but the sales people are reluctant to add information to the product. To solve for this, companies use the data entered into Salesforce to calculate a salesperson&rsquo;s commission. Essentially, Salesforce resorted to the collectors of data (companies) pushing the product onto the salesperson by aligning the incentive structure of the salesperson to the goal of data input.</span><span>&nbsp;</span></p>
+<p class="MsoNormal"><span>Ideally, the person that inputs the data gets as much value from the product as the aggregator of data.&nbsp;&nbsp; Github for companies is a great example of this.&nbsp; The users get an enormous amount of value through version control and companies get all of the aggregate data they want.&nbsp; This is all in the background for the people entering the data (the software developers), but it is extremely valuable to the aggregator (product manager or company).</span></p>
+<p class="MsoListParagraphCxSpFirst"><strong><span>Data First&hellip;Then Build the Platform</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle"><span>At its core, Arkad was a data collection tool.&nbsp; The asset that was most important to the success of the platform was the operational and financial data of each portfolio company.&nbsp; Some of the most exciting value we planned to provide would be on benchmarking and analysis of data.&nbsp; In order to provide this value, however, we needed a lot of data to be entered first &ndash; it was the catch-22 of our offering.</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>Essentially, we didn&rsquo;t convince our potential customers that Arkad was valuable without the benchmarking that they were excited to see.&nbsp; We either had to go out and collect publicly available data or provide an extraordinarily simple way for users to load data into the platform.&nbsp; Once they loaded their operational intelligence, Arkad needed to provide analysis and insights that were not possible with the old collection techniques.</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>We started to believe that the key to successfully launching a product dependent on a critical mass of data is collecting as much information as possible upfront.&nbsp; </span><a href="http://www.singleplatform.com" target="_blank"><span>SinglePlatform</span></a><span> nailed this with their launch.&nbsp;</span><span>&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>SinglePlatform allows small businesses to publish their menus and pricing across content sites.&nbsp; The product was only valuable to content sites like the New York Times if they had data from restaurants.&nbsp; To get the data, they could&rsquo;ve built a platform and tried to get businesses to sign up and input their data.&nbsp; The small business would get no value from this, however, because the content sites would not partner with SinglePlatform without the data.&nbsp; The solution was to manually collect menus from approximately 10,000 restaurants.&nbsp; When a restaurant signed up to the site, they were editing their menu rather than entering the original data.&nbsp; The content sites loved it because they now had access to 10,000 menus on day one.&nbsp; It was a brilliant plan to get content sites excited while making the site valuable to its initial users - the first restaurants that paid to list and manage their menus online.&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>If having data is going to be the most valuable part of a platform, your first customers must get something in return when they provide you with their data.&nbsp; This requires seeding your database with something to begin with rather than being dependent on your first customers.</span></p>
+<p class="MsoListParagraphCxSpLast"><strong><span>Understanding Customer Incentives</span></strong></p>
+<p class="MsoNormal"><span>You must understand your customers&rsquo; incentives to know why they would purchase your product.</span><span>&nbsp;</span></p>
+<p class="MsoNormal"><span>We believed that the partners would pay for a product to help them manage their portfolio and improve their internal processes.&nbsp; A very smart venture capitalist pointed out that the incentive scheme in venture and private equity is different from any other type of company.&nbsp; He said that most investors do not reinvest in their funds like a business because they don&rsquo;t consider a fund to be a business.&nbsp;</span></p>
+<p class="MsoNormal"><span>Companies will invest in a product that improves processes to help them scale the business.&nbsp; A fund probably won&rsquo;t make this same investment because they are not trying to grow like a normal business.&nbsp; One prominent exception to this rule is </span><a href="http://firstround.com/" target="_blank"><span>First Round Capital</span></a><span>.&nbsp; They actually built a product very similar to Arkad in-house because processes are so important to their growth.</span></p>
+<p class="MsoNormal"><span>The majority of a partner&rsquo;s income comes from his 20% carry on successful exits.&nbsp; Improving portfolio data collection is unlikely to improve his chances of having a large exit in his portfolio.&nbsp; Smart venture capitalists make the right investments upfront to earn the benefits later.&nbsp; Since the incentive is to find the right deal from the beginning, a product more aligned with investor incentives would identify opportunities rather than monitoring them after the transaction.</span></p>
+<p class="MsoListParagraph"><strong><span>Understanding the Customer vs the Buyer</span></strong></p>
+<p class="MsoNormal"><span>Arkad had multiple customers and one buyer.&nbsp; Our customers were the portfolio company CEOs/CFOs and the analysts and associates at the investment funds.&nbsp; The buyer was the general partner of those investment fund.&nbsp; As Steve Blank discusses in </span><a href="http://www.amazon.com/The-Four-Steps-Epiphany-Successful/dp/0976470705/ref=sr_1_1?ie=UTF8&amp;qid=1368391732" target="_blank"><em><span>Four Steps to the Epiphany</span></em></a><span>, it is crucial to understand the distinction between a customer and buyer early in customer development.&nbsp;</span></p>
+<p class="MsoNormal"><span>It took us time to realize this difference.&nbsp; We believe that the reason we were blinded by our customer need but not aware of our buyers&rsquo; needs was that we were so acutely aware of our customers&rsquo; needs.&nbsp; We were associates and analysts, and we knew the pain that portfolio tracking caused for the analysts and associates and for the portfolio company management teams.</span></p>
+<p class="MsoNormal"><span>The incentives were strongly in favor for implementing Arkad for the users.&nbsp; The buyers, however, did not have a strong enough incentive to implement it - all of the pain was felt elsewhere.&nbsp; They got the data when they needed it because an analyst or associate took care of it.</span></p>
+<p class="MsoNormal"><span>To get the partners excited, we could&rsquo;ve built a product to target something that they would perceive valuable on day one.</span></p>
+<p class="MsoListParagraph"><strong><span>Collecting Financial Data Only Happens After the Fact</span></strong></p>
+<p class="MsoNormal"><span>Arkad was built to present financial and operational data at the end of each month to investors.&nbsp; We tried to make the argument that Arkad would help portfolio companies manage their business while investors monitored performance.&nbsp; The pushback was that the data collected in the system was already old and decisions were made weeks before it hit Arkad.</span></p>
+<p class="MsoNormal"><span>End of month data is ancient relative to the data businesses use to make daily decisions. &nbsp;One CFO explained correctly that his financial statements are important to look at and understand, but you are already one month behind when analyzing the information.&nbsp; To manage his business, he looks at operational data every day.</span></p>
+<p class="MsoNormal"><span>If you are building a platform for data collection, you must collect data immediately, present it in an actionable format, and make suggestions that a manager can use to improve his business that moment.&nbsp; Presenting old information doesn&rsquo;t help someone take action and your suggestions could be 6 weeks old by the time the books are closed at most small companies.</span></p>
+<p class="MsoListParagraph"><strong><span>Startups Fail Because Founders Lose Enthusiasm</span></strong></p>
+<p class="MsoNormal"><span>&nbsp;</span><strong><span>&nbsp;<img alt="image" src="http://33.media.tumblr.com/165b095159770c46f6aa125fab2af885/tumblr_inline_mmqw16v1fK1qz4rgp.png"></span></strong></p>
+<p class="MsoNormal"><span>We collectively believe that there is still a good business opportunity in investor and lender relationship management.&nbsp; In fact, this opportunity only gets better with crowdfunding because entrepreneurs will quickly realize how difficult it is to manage 100s of investors when they were struggling to manage just a few dozen.&nbsp; The fact is, however, that we started losing enthusiasm in our idea and company.&nbsp;</span></p>
+<p class="MsoNormal"><span>In March, we began discussing why we were struggling to close sales (that&rsquo;s where a lot of these lessons learned originated).&nbsp; This discussion definitely accelerated our decision to close the business.&nbsp; Of course, it&rsquo;s imperative that every startup reflects on why they aren&rsquo;t achieving their goals.&nbsp; If you want the company to survive these conversations, however, it&rsquo;s extremely important to also set new goals and refocus on the next tasks to accomplish.</span><span>&nbsp;</span></p>
+<p class="MsoNormal"><span>Negativity saps energy from anyone, no matter how optimistic you are.&nbsp; We started running out of energy when our conversations about Arkad turned negative.&nbsp;</span></p>
+<p class="MsoNormal"><span>When starting a company you must realize that there will be plenty of days where you lose excitement because things aren&rsquo;t going well.&nbsp; Make sure you are enthusiastic about your idea or mission.&nbsp; It will be the only thing that helps you overcome the early negative days.&nbsp; You need this enthusiasm about your mission or idea, so you can refocus on accomplishing your goals.</span></p>
+<p class="MsoListParagraphCxSpFirst"><strong><span>&nbsp;Measure, even at the beginning</span></strong></p>
+<p class="MsoListParagraphCxSpMiddle"><span>Momentum early on can be deceiving.&nbsp; Throughout development, we continuously met with potential customers to collect their feedback and to hear if our newest features would help them manage investor relations.</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>Every time we met with someone, we should&rsquo;ve asked, &ldquo;will you buy this product?&rdquo;&nbsp; We should&rsquo;ve set a goal from the beginning that if x% of our potential customers weren&rsquo;t excited to use our product, we would need to change something or pivot to another idea.&nbsp; We didn&rsquo;t do this.&nbsp; Instead, we took the positive meetings and the negative ones in stride.&nbsp; We would evaluate the conversations, but in the end we just said &ldquo;enough people are excited about this feature or that one, let&rsquo;s continue to build.&rdquo; When you are building a product, you cannot just accept a user saying &ldquo;yes I will use this product."&nbsp; The next time we start a company, we will get those users committed.&nbsp; If the product isn&rsquo;t built, sign them up for the future.&nbsp; If the product is even in a simple form, sign them up and get them using your product.&nbsp; The feedback is tremendously valuable.</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>The discipline to set a goal is extremely important.&nbsp; It may seem arbitrary to say &ldquo;50% of the people we meet with need to tell us they will buy this product, or we need to change something.&rdquo;&nbsp; The exact metrics that are important to measure depend on your business model and market.&nbsp; For Arkad, our percentage of likely buyers at each stage should&rsquo;ve been somewhere near 30-50%.&nbsp; Our market was small, and we needed to convert most of our potential customers to buyers to be successful.&nbsp;</span></p>
+<p class="MsoListParagraphCxSpMiddle"><span>Whatever your goal is: come up with a hypothesis for that goal; measure it; and evaluate what potential customers are really saying.&nbsp; If you aren&rsquo;t hitting the goal, figure out why and either change your sales approach, product, or business plan.&nbsp; Don&rsquo;t let the momentum of good meetings carry you forward without precisely measuring how you&rsquo;re doing.</span></p>
+<p class="MsoNormal"><span>Thank you for reading this long blog post.&nbsp; We hope you got a fraction of the benefit that we did while writing it.&nbsp; If you have other lessons learned to share, let us know.&nbsp; We&rsquo;d love to keep the conversation going to help future entrepreneurs succeed where we failed.&nbsp; Leave a comment below or reach out to us with a topic suggestion.&nbsp; Our email address is contact at getarkad.</span></p>
+<p class="MsoNormal"><span>Benjy, Kenny, and Micah.&nbsp;</span></p>
+					</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+						
+						
+						<div class="meta">
+							<ul class="meta-list">
+								
+								<li class="tags">
+									<ul class="tag-list">
+										
+										<li><a href="http://blog.getarkad.com/tagged/entrepreneurship">#entrepreneurship</a></li>
+										
+										<li><a href="http://blog.getarkad.com/tagged/post-mortem">#post mortem</a></li>
+										
+										<li><a href="http://blog.getarkad.com/tagged/lessons-learned">#lessons learned</a></li>
+										
+										<li><a href="http://blog.getarkad.com/tagged/startup">#startup</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="date"><a href="http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business" title="Mon. May 13, 2013 @ 12:34 pm"><span class="icon"></span>2 years ago</a></li>
+								<li class="notes"><a href="http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business#notes"><span class="icon"></span>4</a></li>
+								<li class="comments hidden"><a id="dsq-50348770974" href="http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business#disqus_thread"><span class="icon"></span>Comments</a></li>
+								<li class="permalink"><a href="http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business"><span class="icon"></span>Permalink</a></li>
+							</ul><!--/.meta-list -->
+							<div class="share">
+								<span class="toggle">Share</span>
+								<div class="widget">
+									<div class="short-link">
+										<p>Short URL<br>
+											<input type="text" readonly="" value="http://tmblr.co/ZFMjXwkv1KQU"></p>
+									</div>
+									<div class="share-links"><a target="_new" href="https://twitter.com/intent/tweet?url=http://tmblr.co/ZFMjXwkv1KQU" class="share-twitter">Twitter</a><a target="_new" href="https://www.facebook.com/sharer.php?u=http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business&t=Lessons Learned Starting Our First Business" class="share-facebook">Facebook</a><a target="_new" href="http://pinterest.com/pin/create/button/?url=http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business&media=" class="share-pinterest">Pinterest</a><a target="_new" href="https://plusone.google.com/_/+1/confirm?hl=en&url=http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business" class="share-google">Google+</a></div>
+								</div>
+							</div>
+						</div><!-- /.meta -->
+						
+
+						
+						
+						<div id="notes">			
+							<h2>4 Notes<span class="sep">/</span> 
+							<a id="notes-toggle" href="#"><span class="label">Hide</span><span class="icon up"></span></a></h2>
+							<ol class="notes"><!-- START NOTES --><li class="note reblog tumblelog_kinkedup without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kinkedup.tumblr.com/" title="REALIST LIVING"><img src="http://33.media.tumblr.com/avatar_4aee2f9f4eae_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://kinkedup.tumblr.com/post/56292694317"><a rel="nofollow" href="http://kinkedup.tumblr.com/" class="tumblelog" title="REALIST LIVING">kinkedup</a> reblogged this from <a rel="nofollow" href="http://blog.getarkad.com/" class="source_tumblelog" title="">team-arkad</a></span><div class="clear"></div></li><li class="note reblog tumblelog_benjyboxer without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://benjyboxer.com/" title="Benjy Boxer&#039;s Blog"><img src="http://33.media.tumblr.com/avatar_f5f2a5c0ba13_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://benjyboxer.com/post/51167233003"><a rel="nofollow" href="http://benjyboxer.com/" class="tumblelog" title="Benjy Boxer&#039;s Blog">benjyboxer</a> reblogged this from <a rel="nofollow" href="http://blog.getarkad.com/" class="source_tumblelog" title="">team-arkad</a></span><div class="clear"></div></li><li class="note like tumblelog_akash-shah without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://akash-shah.tumblr.com/" title="sir+ " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_8b438114c905_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://akash-shah.tumblr.com/" title="sir+" rel="nofollow">akash-shah</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_team-arkad original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://blog.getarkad.com/" title=""><img src="http://38.media.tumblr.com/avatar_8bee46204db1_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://blog.getarkad.com/post/50348770974"><a rel="nofollow" href="http://blog.getarkad.com/" class="tumblelog" title="">team-arkad</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+						</div><!-- /.notes -->
+						
+						
+						
+						
+						<!-- DISQUS COMMENTS -->
+						<div id="disqus">
+							<h2>Recent comments</h2>
+							<script type="text/javascript">var disqus_url = "http://blog.getarkad.com/post/50348770974/lessons-learned-starting-our-first-business"; var disqus_title ="Lessons Learned Starting Our First Business";</script>
+							<div id="disqus_thread"></div>
+							<script type="text/javascript">
+							   var disqus_identifier = 50348770974;
+							  (function() {
+							   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							   dsq.src = 'http://' + disqusShortname + '.disqus.com/embed.js';
+							   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+							  })();
+							</script>
+							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=">comments powered by Disqus.</a></noscript>
+							<a href="http://disqus.com" class="dsq-brlink">Blog comments powered by <span class="logo-disqus">Disqus</span></a>
+						</div><!-- /#disqus -->
+						
+						
+						
+						
+					</div><!-- /.post-panel -->
+					<div class="post-shadow"></div>
+				</article><!-- /.post -->				
+			
+			<!-- END POSTS -->
+			
+			
+			
+			
+			
+			<div id="pagination">
+				<div class="nextprev">
+					<span>&larr; Previous</span> <span class="sep">&bull;</span>
+					<a class="next" href="http://blog.getarkad.com/post/44036801856"><span>Next &rarr;</span></a>
+				</div>
+			</div><!--/#pagination -->
+			
+
+		</div><!-- /#content -->
+
+		<!-- SIDEBAR -->
+		<div id="sidebar">
+			<div id="blog-info" class="side-box">
+				
+
+				
+				
+				
+				
+				
+				<div class="description">
+					<h2>About</h2>
+					
+					Growing businesses depend on strong partnerships. Arkad seamlessly shares information between companies and investors, lenders, and employees.			
+				</div><!--/.description-->
+					
+			</div><!--/#blog-info -->
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div id="tabs">
+				<div id="tabs-nav">
+					<h2><span id="tab-twitter" class="active">Twitter</span></h2>
+					
+				</div>
+
+				
+				
+				<div id="twitter" class="side-box tab">
+					<p class="loading-text">loading tweets&hellip;</p>
+				</div>
+				
+				
+
+				
+			</div><!-- close TABS -->
+			
+			
+			
+			
+			
+			
+
+		</div><!-- /#sidebar -->
+
+		
+		
+		<!-- FOOTER -->
+		<div id="footer">
+			
+			<div id="footer-end" class="ruled-top">
+				<div class="footer-copy">
+					<ul id="footer-links">
+						<li><a href="/rss">RSS</a></li>
+						<li><a href="/random">Random</a></li>
+						<li><a href="/archive">Archive</a></li>
+						
+						
+						<li><a href="/mobile">Mobile</a></li>
+					</ul>
+					
+				</div>
+				<div class="pixel-union"><a href="http://www.tumblr.com/theme/17403"><strong>Effector Theme</strong></a> by <a class="logo" href="http://www.pixelunion.net">Pixel Union</a></div>
+			</div><!-- /#footer-end -->
+		</div><!-- /#footer -->
+	</div><!-- /#page -->
+
+<!-- Footer Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://static.tumblr.com/hugxd2w/s4om61ic8/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="http://static.tumblr.com/hugxd2w/Xtema9ggk/plugins.min.js"></script>
+<script src="http://static.tumblr.com/hugxd2w/Fv7mavex8/script.min.js"></script>
+<script src="http://platform.twitter.com/widgets.js"></script>
+<script src="https://apis.google.com/js/plusone.js" type="text/javascript"></script>
+
+
+
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://blog.getarkad.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/50348770974/lessons-learned-starting-our-first-business?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017171&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5nZXRhcmthZC5jb21cL3Bvc3RcLzUwMzQ4NzcwOTc0XC9sZXNzb25zLWxlYXJuZWQtc3RhcnRpbmctb3VyLWZpcnN0LWJ1c2luZXNzIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkifQ==&U=BIDIOCAJDL&K=033e6994ebbcf7f4828af75f17e03c2b1e386d1af313b33641f74bd72273758a&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017171&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5nZXRhcmthZC5jb21cL3Bvc3RcLzUwMzQ4NzcwOTc0XC9sZXNzb25zLWxlYXJuZWQtc3RhcnRpbmctb3VyLWZpcnN0LWJ1c2luZXNzIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJub3NjcmlwdCI6MX0=&U=BIDIOCAJDL&K=d162fffb34f4549847e36cb3d48430bc4ea592e03945a6e9e978a6e6d64e9e04&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017171&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuZ2V0YXJrYWQuY29tXC9wb3N0XC81MDM0ODc3MDk3NFwvbGVzc29ucy1sZWFybmVkLXN0YXJ0aW5nLW91ci1maXJzdC1idXNpbmVzcyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjUwMzQ4NzcwOTc0IiwiYmxvZ2lkIjoiMzQ2NjMzNDEiLCJzb3VyY2UiOjMzfV19&U=NANOGINGFL&K=27f1d5200de02eb995d05428e20b2586488808613dccbb363b32a7efe43a0234&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017171&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuZ2V0YXJrYWQuY29tXC9wb3N0XC81MDM0ODc3MDk3NFwvbGVzc29ucy1sZWFybmVkLXN0YXJ0aW5nLW91ci1maXJzdC1idXNpbmVzcyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjUwMzQ4NzcwOTc0IiwiYmxvZ2lkIjoiMzQ2NjMzNDEiLCJzb3VyY2UiOjMzfV0sIm5vc2NyaXB0IjoxfQ==&U=NANOGINGFL&K=2ee0568a629323dd81b55b655c6ffea913aa9a72c53d711cc02f223533239298&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:34663341,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Fblog.getarkad.com%2Fpost%2F50348770974%2Flessons-learned-starting-our-first-business&amp;pid=50348770974&amp;rk=MaY01CCI&amp;lang=en_US&amp;name=team-arkad&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_8bee46204db1_64.png&amp;url=http%3A%2F%2Fblog.getarkad.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Fblog.getarkad.com%2Fpost%2F50348770974%2Flessons-learned-starting-our-first-business&amp;pid=50348770974&amp;rk=MaY01CCI&amp;lang=en_US&amp;name=team-arkad&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_8bee46204db1_64.png&amp;url=http%3A%2F%2Fblog.getarkad.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

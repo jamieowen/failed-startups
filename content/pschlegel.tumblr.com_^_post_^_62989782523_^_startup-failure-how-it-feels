@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Minimal Theme designed by Artur Kim (http://arturkim.com) for Tumblr | version 1.5 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>STARTUP FAILURE: how it feels</title>
+    <meta name="description" content="STARTUP FAILURE: how it feels Blogging to a following of what is probably no more a few friends, colleagues and business acquaintances is in essence either self-promotion or - in this case - a public..." />
+    <style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_bcae3ad0014e_128.png" />
+    <link rel="apple-touch-icon" href="http://33.media.tumblr.com/avatar_bcae3ad0014e_128.png"/>
+    <link rel="alternate" type="application/rss+xml" href="http://pschlegel.tumblr.com/rss" />
+
+    <!-- DEFAULT VARIABLES -->
+    <meta name="color:Post Type Text" content="#555555"/>
+    <meta name="color:Post Type Photo" content="#555555"/>
+    <meta name="color:Post Type Photoset" content="#555555"/>
+    <meta name="color:Post Type Quote" content="#555555"/>
+    <meta name="color:Post Type Link" content="#555555"/>
+    <meta name="color:Post Type Chat" content="#555555"/>
+    <meta name="color:Post Type Video" content="#555555"/>
+    <meta name="color:Post Type Audio" content="#555555"/>
+    <meta name="image:Header" content=""/>
+    <meta name="if:Show About Widget" content="1"/>
+    <meta name="if:Show Stuff I Like Widget" content="1"/>
+    <meta name="if:Show Latest Tweets Widget" content="0"/>
+    <meta name="if:Show People I Follow Widget" content="1"/>
+    <meta name="text:Number of Tweets" content="3"/>
+    <meta name="text:Google Analytics ID" content="" />
+    <meta name="text:Disqus Shortname" content="" />
+
+    <style type="text/css" media="screen">
+    /* Minimal Theme designed by Artur Kim (http://arturkim.com) for Tumblr | version 1.5 */
+
+    /* RESET */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;
+    }
+    body { line-height: 1; }
+    ol, ul { list-style: none; }
+    blockquote, q { quotes: none; }
+    blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+    :focus { outline: 0; }
+    del { text-decoration: line-through; }
+    table { border-collapse: collapse; border-spacing: 0; }
+
+    /* GLOBAL ELEMENTS */
+    body { background: #fff; }
+    body, input, textarea { color: #000; font: 14px/20px "helvetica neue",helvetica,arial,sans-serif; }
+    p, ul, ol, dd, pre { margin-bottom: 20px; }
+    pre, code { font: 12px Monaco,monospace; line-height: 20px; }
+    blockquote { border-left: 5px solid #ddd; color: #555; font-style: italic; margin-bottom: 20px; padding-left: 10px; }
+    table { border: 1px solid #ccc; border-width: 1px 1px 0 1px; font-size: 14px; line-height: 20px; margin: 0 0 22px 0; text-align: left; }
+    caption { text-align: left; }
+    tr { border-bottom: 1px solid #ccc; }
+    th, td { padding: .7em 1.25em; }
+    hr { background-color: #ccc; border: 0; color: #555; height: 1px; margin-bottom: 20px; }
+    a:link, a:visited { color: #555; }
+    a:focus, a:hover, a:active { color: #dd3333; }
+    h1, h2, h3, h4, h5, h6 {  font-weight:normal; clear:both; }
+    img { background: #eee; }
+    a img:focus, a img:hover, a img:active { background: #dd3333; }
+
+    /* DEFAULT CSS */
+    #header .menu {
+        border-bottom: 1px solid #ccc;
+        margin: 0 auto 3px;
+        overflow: hidden;
+        padding: 20px 0 10px;
+        width: 900px;
+    }
+        #header #pages {
+            float: left;
+            width: 580px;
+        }
+            #header #pages ul {
+                float: left;
+                margin-bottom: 0;
+            }
+                #header #pages li {
+                    float: left;
+                    margin-right: 10px;
+                    padding: 4px 10px 3px 0;
+                }
+                    #header #pages a, #header #pages a:visited {
+                        color: #555;
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                    #header #pages a:focus, #header #pages a:hover, #header #pages a:active {
+                        color: #dd3333;
+                    }
+        #header #search {
+            float: right;
+        }
+            #header #search input {
+                border: 1px solid #ccc;
+                line-height: 20px;
+                padding: 4px;
+            }
+            #header #search input.search-button {
+                background: #eee;
+                color: #555;
+                padding: 3px;
+                width: 60px;
+            }
+    #header #branding {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin: 0 auto 3px;
+        padding: 40px 0;
+        width: 900px;
+    }
+        #header h1 a {
+            color: #111;
+            font: 80px Georgia,serif;
+            font-weight: normal;
+            line-height: 100px;
+            text-decoration: none;
+        }
+        #header h1 a:focus, #header h1 a:hover, #header h1 a:active {
+            color: #dd3333;
+        }
+        #header img {
+            max-width: 900px;
+        }
+    #main {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        clear: both;
+        margin: 0 auto 3px;
+        overflow: hidden;
+        width: 900px;
+    }
+        #container {
+            border-right: 1px solid #ccc;
+            float: left;
+            min-height: 400px;
+            width: 580px;
+        }
+            .post-meta {
+                border-bottom: 1px solid #ccc;
+                color: #555;
+                overflow: hidden;
+                padding: 9px 0;
+            }
+                .post-meta .type {
+                    float: left;
+                }
+                    .post-meta .type a {
+                        border-bottom: 1px solid #ccc;
+                        font-weight: bold;
+                        padding: 0 10px 10px;
+                        text-decoration: none;
+                    }
+                    .post-type-text .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-photo .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-photoset .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-quote .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-link .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-chat .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-video .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-type-audio .post-meta .type a {
+                        border-bottom: 1px solid #555555;
+                        color: #555555;
+                    }
+                    .post-meta .type a:focus, .post-meta .type a:hover, .post-meta .type a:active {
+                        margin-left: 5px;
+                    }
+                .post-meta .date, .post-meta .comments, .post-meta .note-count {
+                    float: left;
+                    padding: 0 10px;
+                }
+            .post-content {
+                padding: 30px 30px 60px;
+            }
+            .post-content div:last-child, .post-content div:last-child p,
+            .post-content div:last-child ul, .post-content div:last-child ol,
+            .post-content div:last-child blockquote {
+                margin-bottom: 0;
+            }
+                .post-content h3 {
+                    font: 20px Georgia,serif;
+                    margin-bottom: 20px;
+                }
+                    .post-content h3 a, .post-content h3 a:visited {
+                        color: #111;
+                        text-decoration: none;
+                    }
+                    .post-content h3 a:focus, .post-content h3 a:hover, .post-content h3:active {
+                        color: #dd3333;
+                    }
+                .post-content img {
+                    margin-bottom: 20px;
+                    padding: 10px;
+                }
+                .post-type-text .post-content ul {
+                    padding-left: 30px;
+                }
+                    .post-type-text .post-content ul ul {
+                        margin-bottom: 0;
+                    }
+                    .post-type-text .post-content ul li {
+                        list-style-type: disc;
+                    }
+                        .post-type-text .post-content ul ul li {
+                            list-style-type: circle;
+                        }
+                .post-type-text .post-content ol {
+                    padding-left: 30px;
+                }
+                    .post-type-text .post-content ol ol {
+                        margin-bottom: 0;
+                    }
+                    .post-type-text .post-content ol li {
+                        list-style-type: upper-latin;
+                    }
+                        .post-type-text .post-content ol ol li {
+                            list-style-type: lower-latin;
+                        }
+                .post-type-photoset .post-content .html_photoset {
+                    background: #eee;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                }
+                .post-type-link .post-content .link-wrap {
+                    margin-bottom: 20px;
+                }
+                .post-type-chat .post-content .label {
+                    color: #333;
+                    font-weight: bold;
+                }
+                .post-type-video .post-content .video-wrap {
+                    background: #f0f0f0;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                }
+                .post-type-audio .post-content .caption {
+                    margin-top: 10px;
+                }
+                .tags {
+                    font-size: 13px;
+                }
+                .tags a {
+                    text-decoration: none;
+                }
+                .tags a:after {
+                    content: ",";
+                }
+                .tags a:last-child:after {
+                    content: "";
+                }
+            #disqus_thread {
+                border-top: 1px solid #ccc;
+                padding: 10px 30px 0;
+            }
+                #disqus_thread h3 {
+                    color: #111;
+                    font: 18px Georgia,serif;
+                    margin: 20px 0 10px;
+                }
+                #dsq-content .dsq-subscribe-menu {
+                    font-size: 12px;
+                }
+            #post-notes {
+                border-top: 1px solid #ccc;
+                padding: 30px;
+            }
+                #post-notes ol li {
+                    border-bottom: 1px dotted #ccc;
+                    padding: 10px 0;
+                }
+                    #post-notes ol li img {
+                        background: none;
+                        padding-right: 3px;
+                        vertical-align: middle;
+                    }
+            .pagination {
+                border-top: 1px solid #ccc;
+                overflow: hidden;
+                padding: 20px 0;
+            }
+                .pagination .previous-page {
+                    float: left;
+                }
+                .pagination .next-page {
+                    float: right;
+                    margin-right: 30px;
+                }
+                    .pagination a {
+                        font: 20px Georgia,serif;
+                        text-decoration: none;
+                    }
+        #sidebar {
+            float: left;
+            padding-bottom: 30px;
+            width: 319px;
+        }
+            #sidebar h3 {
+                border-bottom: 1px dotted #ccc;
+                color: #999;
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0 0 20px;
+                padding: 9px 20px;
+                text-transform: uppercase;
+            }
+                #sidebar h3 a, #sidebar h3 a:visited {
+                    color: #999;
+                    text-decoration: none;
+                }
+                #sidebar h3 a:focus, #sidebar h3 a:hover, #sidebar h3 a:active {
+                    color: #dd3333;
+                }
+
+            #sidebar ul {
+                margin-bottom: 0;
+            }
+            .widget {
+                border-bottom: 1px solid #ccc;
+                color: #333;
+                font-size: 13px;
+                padding: 0 20px 20px 20px;
+            }
+                .widget h3 {
+                    font: 20px Georgia,serif;
+                    margin-bottom: 20px;
+                }
+                    .widget h3 a, .widget h3 a:visited {
+                        color: #000;
+                        text-decoration: none;
+                    }
+                    .widget h3 a:focus, .widget h3 a:hover, .widget h3 a:active {
+                        color: #dd3333;
+                    }
+                .widget img {
+                    padding: 5px;
+                    max-width: 250px;
+                }
+                .widget p:last-child, .widget ul:last-child, .widget ol:last-child, .widget blockquote:last-child {
+                    margin-bottom: 0;
+                }
+            #about {
+                overflow: hidden;
+            }
+                #about img {
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    float: left;
+                    margin: 0 10px 0 0;
+                    padding: 3px;
+                }
+            .like_post {
+                border-bottom: 1px dotted #ccc;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+            .like_post:last-child {
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+                .like_post ul {
+                    padding-left: 20px;
+                }
+                    .like_post ul ul {
+                        margin-bottom: 0;
+                    }
+                    .like_post ul li {
+                        list-style-type: disc;
+                    }
+                        .like_post ul ul li {
+                            list-style-type: circle;
+                        }
+                .like_post ol {
+                    padding-left: 20px;
+                }
+                    .like_post ol ol {
+                        margin-bottom: 0;
+                    }
+                    .like_post ol li {
+                        list-style-type: upper-latin;
+                    }
+                        .like_post ol ol li {
+                            list-style-type: lower-latin;
+                        }
+                .like_post p:last-child, .like_post ul:last-child, .like_post ol:last-child, .like_post blockquote:last-child {
+                    margin-bottom: 0;
+                }
+            #tweets {
+                margin-bottom: 10px;
+            }
+                #tweets .content {
+                    margin-bottom: 10px;
+                }
+                    #tweets a {
+                        text-decoration: none;
+                    }
+            #following_container {
+                overflow: hidden;
+                padding-bottom: 20px;
+            }
+                #following_container li {
+                    display: inline;
+                    padding: 0;
+                    margin: 0;
+                }
+    #footer {
+        border-top: 1px solid #ccc;
+        clear: both;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 900px;
+    }
+        #colophon {
+            color: #555;
+            float: right;
+            font-size: 12px;
+            padding: 10px 0 20px;
+        }
+            #footer a {
+                border-bottom: 1px dotted #555;
+                text-decoration: none;
+            }
+    
+    </style>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=pschlegel%26postID=62989782523" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://pschlegel.tumblr.com/post/62989782523/startup-failure-how-it-feels" title="STARTUP FAILURE: how it feels
+Blogging to a following of what is probably no more a few friends, colleagues and business acquaintances is in essence either self-promotion or - in this case - a public therapy session. I&rsquo;m hoping, however, that an..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="STARTUP FAILURE: how it feels" /><meta property="og:url" content="http://pschlegel.tumblr.com/post/62989782523/startup-failure-how-it-feels" /><meta property="og:description" content="Blogging to a following of what is probably no more a few friends, colleagues and business acquaintances is in essence either self-promotion or - in this case - a public therapy session. I&rsquo;m hoping,..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://assets.tumblr.com/images/og/text_200.png" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=pschlegel&amp;postID=62989782523" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=pschlegel&amp;postID=62989782523" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="Blogging to a following of what is probably no more a few friends, colleagues and business acquaintances is in essence either self-promotion or - in this case - a public therapy session. I&amp;rsquo;m hoping, however, that an entrepreneur or two might find this post and see that the grief and suffering they&amp;rsquo;re feeling does not make them the only sobbing loser in the world.
+
+My startup, Admazely, has gone bankrupt. It has failed. It&amp;rsquo;s over. Done. We ran out of funding and didn&amp;rsquo;t manage to raise more money.
+
+I&amp;rsquo;m not writing this to get pity from anyone. Or to get even with anyone. Or to out anyone. Except for myself. Let me be very very clear: the failure that I&amp;rsquo;m writing about here is mine and mine alone. Were other people involved? Absolutely. Did their actions influence the outcome of Admazely? Sure. Was it their responsibility? Hell no! In the epic words of former Secretary of Defence, S&oslash;ren Gade, the buck stops here.
+
+I&amp;rsquo;ll try and find the energy to do a more analytical post mortem with root-cause analysis and everything at a later stage. But right now, I want to share how my failure felt. And feels.
+
+Admazely began informally in early 2011. Officailly, I began working on it in May (on a spare-time and hobby basis it was a few months earlier but my definition of when you start working on a startup is when you start doing it full time).
+
+My eventual cofounders, David and Sylwia, joined in August. Fourth and final cofounder, S&oslash;ren, made his commitment in March 2012.
+We raised a seed round in April 2012.
+And we formally filed for bankruptcy in May 2013.
+
+This is the story of how that ride felt. What it feels like to fail.
+
+
+ First signs Having a startup is an emotional roller coaster from the outset. Constant worry about finding cofounders, potential competitors, raising money, designing a product, building it, marketing it, finding a sustainable business model.
+
+ To me, the basic feelings associated with it are very similar to what I&amp;rsquo;ve experienced in previous jobs. I&amp;rsquo;m an &amp;ldquo;all in&amp;rdquo; kind of person, so I&amp;rsquo;ve felt a lot of responsibility towards my employers and my career in the past. But let me assure you that it pales in comparison to having my own startup. It&amp;rsquo;s the same basic emotions but they get amplified by a factor of thousand.
+ &nbsp;
+ I have interviewed hundreds of candidates for positions before founding Admazely. And sure, it&amp;rsquo;s been really frustrating when I couldn&amp;rsquo;t find the right person for the job. Or I&amp;rsquo;d be excited when I finally did. But interviewing people that I desperately wanted to be a good fit for Admazely, only to find out they weren&amp;rsquo;t good enough was misery. Finally finding someone, asking them to join and be rejected gave reason to fundamental self-doubt. Am I not the mythological founder that rock star people are eager to join and work for free for a fraction of the company?
+ &nbsp;
+ But it&amp;rsquo;s also insane joy. When those amazing candidates agreed to join despite more lucrative offers from companies I admire and respect, I was exhilarated to the point of shouting and performing those celebratory scenes you only do when you&amp;rsquo;re pretty sure no one is watching.
+ &nbsp;
+ Where am I going without this? Well, in the general direction that you get a little bit numb to pain. You teach yourself to shake it off as quickly as possible and move on. When a lot of shit happened in a short period of time, I&amp;rsquo;d go into a state of mild stress and depression. But I&amp;rsquo;d have to force myself out of it. That led to this slight numbness which in turn led to a certain degree of insensitivity to signals from the outside. Because I was forcing myself to ignore them in order to not go under in pain, stress and anxiety.
+ &nbsp;
+ And that slight numbness meant that I probably wasn&amp;rsquo;t seeing any first signs of failure.
+ &nbsp;
+ I obviously knew that we were fighting a multi-front war. We had a cash-out-date approaching from day one (end of April 2013). We had product problems. We had sales and marketing problems. We had people problems. We had process problems. Startups have problems. It&amp;rsquo;s a grind - that&amp;rsquo;s the nature of it.
+ &nbsp;
+ So retrospectively I don&amp;rsquo;t think that I was seeing any obstacles that I couldn&amp;rsquo;t overcome.
+
+ Emotinal distraction In February 2012 my wife, Kia, and I learned that she was expecting our first child. She was due in early October. Preparing for a baby takes up some emotional bandwidth. As it should. I&amp;rsquo;m pretty sure Kia thinks that it didn&amp;rsquo;t take up as much as it should have. Even writing the section headline &amp;ldquo;emotional distraction&amp;rdquo; makes me feel a little guilty. Was my son a distraction to my startup? I told myself I could just add bandwidth but that turned out to be false. So preparing for a baby diverted my focus a little. But actually it was just a little.
+
+ Kia gave birth on September 27 and that&amp;rsquo;s when the actual diversion of attention happened. For the last three months of 2012 I was doing a shitty job of being founder and CEO of Admazely. And an even shittier job of being a father and a husband. The latter is not the point of this post so I&amp;rsquo;ll leave it out. It&amp;rsquo;s probably the one I&amp;rsquo;ll feel more guilty about in the long run. The former, however, made me pretty aware that I started being one step behind on many things. I felt it and my colleagues felt it. It felt like failing at the micro level. It was a tough time.
+
+ During the Christmas holidays I decided to get one step ahead again and I kicked off 2013 with an all-hands meeting setting a stronger direction and honing up to my mistakes in the previous three months. The team responded really well. They all knew it and could feel that we&amp;rsquo;d been getting lost due to my lack of leadership. And the next 45 days were some of the most amazing in the two years that I was doing Admazely.
+ &nbsp;
+ The big blow As mentioned, our cash-out-date was approaching. We&amp;rsquo;d joined the Accelerace program based on a recommendation from our chairman and representative of our lead investor, SEED Capital. The program does a lot of good things. The reason we joined was that it has a loan option for program alumni companies. The people in the program has to recommend you, you jump through a few hoops, you pitch and negotiate and finally you present to their equivalent of the infamous partner meeting - the Investment Committee.
+
+ We had done all of it and everything was teed up for the Investment Committee presentation. The program manager, Jesper, endorsed us vigorously, the program consultant, Christian, who had worked with us was an enthusiastic ambassador. We had spoken bilaterally to most of the people on the committee and had received confirmation that they would support our loan application. SEED Capital had agreed to syndicate the loan, further endorsing it. Our chairman was on the Investment Committee (yeah that definitely could be seen as a conflict of interest but that wasn&amp;rsquo;t my headache) and had spoken to most of the members.
+ &nbsp;
+ I had all of my ducks in a row so to speak. Or so I thought.
+ &nbsp;
+ I went to present on Tuesday February 6 with confidence and less than two months of cash in the bank. It was snowing yet thawing. A disgusting day, typical Danish winter.
+ &nbsp;
+ My presentation was ok. The mandatory Q&amp;amp;A afterwards was horrible. The only two people in the room that we hadn&amp;rsquo;t gotten prior support from were skeptical to say the least. As I left the room I was shattered. And as my contact at Accelerace didn&amp;rsquo;t call me later on that day I knew where it was going. My chairman didn&amp;rsquo;t either. Not a good sign. I left messages and they didn&amp;rsquo;t return my calls.
+ &nbsp;
+ In the afternoon I had a speaking engagement in the other end of the country, pitching to a huge room full of potential customers. It was an absurd experience. I was crumbling on the inside but had to pose confidently. I had invited to of our customers to also speak at the event and after dropping them off I sat in the rental car staring at air. Crying. Feelings of fear, anger, self-righteousness and uncertainty overwhelmed me.
+ &nbsp;
+ A million thoughts were racing through my mind. Guilt towards Kia for asking her to let me jeopardize our personal finances and then failing to pay back on her trust. Self-doubt. But it all just got worse from there on.
+ &nbsp;
+ When Christian called Wednesday afternoon I knew the outline of the conversation before picking up the phone. I was oddly emotionally detached as we talked. Still kind of shell-shocked.
+ &nbsp;
+ The worst part at this stage was telling my team the news. I had been 100% transparent about our cash situation and our process with Accelerace so they were expecting good news. I waited until Monday at the weekly all-hands. I should have spoken to them faster. Most of them knew me well enough to know what was up based on my mood and body language in the days leading up.
+ &nbsp;
+ I told them that I would hustle to find other investors but that realistically it took more than the month-and-a-half of cash that we had left. Two and a half if we were all prepared to work up until a payday that we all knew would lead to bankruptcy, not pay. We all were, of course.
+ &nbsp;
+ Piling on December through March we were killing it in our sales team. After a lot of iteration we had finally gotten a small team in place that were converting leads into customers. The two core people on that team were Harriet and Nate, both Kiwis. A core element in my Hail Mary fundraising strategy was that we were finally getting sales traction and that we had found a model to build an international customer base through tele sales. Most Danish startups begin selling locally and then expand from there. We had chosen a pretty bold strategy (against the advice from our board) and gone for &amp;lsquo;instantly global&amp;rsquo;, meaning the bulk of our effort was in calling the UK. And for that you need native English speaking sales people. Hence my praise of Harriet and Nate (and Sophia, our Aussie sales supporter). We spend three months achieving what a successful startup like Trustpilot reportedly spent almost a year doing: making steady sales progress in the UK.
+
+ Mid-February - roughly two weeks after having our funding plan dissolve before my eyes - Harriet and Nate received news that they would not be granted permanent work visa in Denmark and were to leave the country within 30 days.
+ &nbsp;
+ It felt like the most unfair thing that could possibly happen at that point in time. I had less than two months to raise about 3 mdkk with a pitch that now had zero chance of delivering if an investor should decide to invest. I remember closing my eyes when I got the news, laughing manically for like 10 seconds while just feeling dizzy. Harriet, Nate, Sophia and our &amp;ldquo;growth hacker&amp;rdquo;, Daniel, had been busting their asses off for the last few months trying to crack the code to making it all work. And right there and then someone in SKAT decided that what Harriet and Nate were doing did &amp;ldquo;not qualify as the kind of work that a Danish citizen could not perform equally well&amp;rdquo;.
+ &nbsp;
+ What. The Fuck?!? I just couldn&amp;rsquo;t believe it. The eloquence, snappy responses, mastering of nuances within the language that makes a really talented sales rep is based on intimate knowledge of said language. Their skill set were not some that a Danish sales guy could pick up from learning English in school or even living abroad for a short while. I was flabbergasted. And I wanted to scream. But even at that point I felt the need to keep a straight face to the rest of the team. I&amp;rsquo;m pretty sure I didn&amp;rsquo;t manage. If only half the despair I was feeling shone through, I&amp;rsquo;m pretty sure my colleagues felt like packing up their shit and leave right there and then.
+ &nbsp;
+ They didn&amp;rsquo;t. Maybe they should have.
+ &nbsp;
+ As I thought things couldn&amp;rsquo;t get any worse, our CTO and cofounder, David, pulled me aside one day and told me that he and his fiance were moving back to Stockholm. It had been a long time coming. His fiance couldn&amp;rsquo;t get settled in Malm&ouml; and wanted to go back. David had been postponing the decision but had finally chosen not to jeopardize his relationship. A good decision and one in which I support him 100% as a friend. As a cofounder - I found his timing to be the worst possible.
+ &nbsp;
+ Anyone who have seen a cofounder leave their startup knows the feelings flying through my head at that point. Betrayal, sorrow, shock. Loneliness. Until that very moment it had felt as if David was the one person that would stay with me until the very end. But that wasn&amp;rsquo;t the case now. The weight on my shoulders already felt heavy but it just got a lot heavier. And I knew that even if we did manage to raise more money, we couldn&amp;rsquo;t realistically continue our upwards trajectory. Development speed would decrease dramatically and the driving force in getting shit done would be gone. No sales team and no CTO.
+ &nbsp;
+ I still struggled to keep a straight face to the rest of the team, to my board, to customers and suppliers and to potential investors. And it seems I half-managed. But only half-managed. I didn&amp;rsquo;t crumble completely on the surface but underneath it was the most taxing time of my life.
+ &nbsp;
+ I probably went and pitched somewhere between 10 and 20 potential angel investors after this point. And my pitch got weaker and weaker. Because I had lost faith myself. I remember one meeting in particular that our chairman, Niels Vejrup from SEED Capital had helped tee up. It was with Jesper Buch and Ditlev Bredahl who had been dancing in the shadows for a while and were now ready to talk. It was a Skype call and I had tried to prep for the meeting. Tried to find ways to frame our situation that would appeal to their hands-on approach to angel investing. Especially Jesper is known for investing heavily in the team and the founder(s). Which would -under normal circumstances - be great news. I&amp;rsquo;ve pretty consistently gotten good feedback from both VCs and angels. But this time I sucked in a major way. As I was pitching I knew I sucked. I felt like a dog that has been beaten to the point of scared submission. And I acted the role of a loser. Because I utterly felt like one. That meeting was an image of how I felt at the time and how my performance suffered from it.
+
+ Anyway - the list of potential investors got shorter and shorter as I got the &#039;thanks but no thanks&amp;rsquo; emails and calls.
+ &nbsp;
+ Bankruptcy We had a board meeting on May 14th 2013 where we formally decided to file for bankruptcy. I filed the paperwork, helped the lawyer, etc.
+
+ The morning after filing the papers, we all cleared out the office. Not much was said except for the occasional half-hearted joke trying to lighten the mood. We agreed to meet for a piss-up a couple of weeks later when the smoke had cleared.
+ &nbsp;
+ It was two weeks of extremely ambivalent emotions.
+ &nbsp;
+ On one hand I was crushed. Watching two years of my life go down the drain cannot be described to someone who hasn&amp;rsquo;t felt it.
+ But on the other hand I felt tremendous relief. Finally, it was over. Having known where it was heading and trying to stop us falling off a cliff was unbelievably tough. Fighting with all I had knowing that our faith was in the hands of someone else and that we needed something in the proximity of a miracle. Albert Camus writes in his self-proclaimed main work, The Myth of Sisyphus, that Sisyphus is only set free as he accepts and embraces the absurdity of his destiny. I tried to do that but didn&amp;rsquo;t manage.
+
+ When I had filed the papers and we were officially bankrupt and I wasn&amp;rsquo;t allowed to touch anything I felt relief. Relief that my struggle was over. Relief that finally I didn&amp;rsquo;t have to get up in the morning, put on a brave face and lie to everyone around me.
+ &nbsp;
+ And I felt shame. Immense shame BECAUSE I felt relieved. I was supposed to only be devastated. I was supposed to not have given up. The common narrative of startup founders is the one in which the founder overcomes. Where he endangers the financial health of himself and his family. Where his 20 credit cards are maxed out when he finally gets funded. I felt ashamed that I had given up too soon. That I had kept my promise to my wife and not gone beyond the financial limit that we had originally agreed. Ashamed that I had only spent half our life savings on my failure and not all of it. Logically it&amp;rsquo;s nonsense but the narrative that&amp;rsquo;s been created around startup life - one that I have bought into as well - is one of relentless pursuit.
+ &nbsp;
+ Sure, we had endured some hardship. Our first office space had leaky windows and no heating. Our desks were old garden furniture that I had borrowed from a friend of mine. We didn&amp;rsquo;t pay any rent, instead I would clean the kitchen of the shared office space that we were in. To cut personal living cost for us all, we ate lunch leftovers from one of the more established companies in the building and in return I did the dishes for the entire building. David rented a scrappy room in Malm&ouml; and occasionally took a weekend trip to Malm&ouml; to see his girlfriend. It wasn&amp;rsquo;t that we were too posh to endure hardship.
+ &nbsp;
+ But it still felt as if we should have done more. And shame still consumes a lot of my emotional bandwidth when I think back on Admazely.
+ &nbsp;
+ Aftermath I guess shame was also a major driver of my behavior in the past few months. I was afraid to admit my failure to the world. Afraid to tell people that we had gone bust. Publicly admitting it was like crossing into a whole new dimension. I had a lot of psychological equity invested in my identity as a startup founder. Now, I was just a bum without a job.
+
+ My friends would tell me to give it time and think about what I wanted to do. Don&amp;rsquo;t rush it, they said. Well, there were more perspectives to it than that.
+ &nbsp;
+ First off, there was nothing else I wanted to do. Maybe another startup at some point. But right there and then the idea of taking a job was inconceivable. I waded through job sites and talked to people and I simply could not get excited about anything.
+ &nbsp;
+ Secondly, there was the responsibility to my family. I hadn&amp;rsquo;t gotten a salary for a couple of months and my wife was on maternity leave - which despite Danish welfare left us with a gross monthly household income of around 14,000 Danish kroner. In other words, we were once again digging into our savings to pay the bills. So I needed to get off my ass and generate some kind of cash flow.
+ &nbsp;
+ Right around that time Martin Bochineck who was an angel investor and sat on the board of Admazely called me. He had had a front row seat when I lost a chunk of his money. Martin is one of the most decent and gracious people I have ever come across in my business life. I have witnessed it first hand and I have numerous accounts from others who have had similar experiences. Martin has a moral integrity that is extremely rare. I owe a lot to him as he helped me cope both during and after my failure.
+ &nbsp;
+ He offered to pay me a salary equivalent to my CEO salary in Admazely (which admittedly was pretty negligible) to come in and &amp;ldquo;help him out with stuff for a few months&amp;rdquo; while the dust settled. I had my doubts since I simply didn&amp;rsquo;t feel as if I had anything to offer at that point in time. But I eventually accepted. And that&amp;rsquo;s how I&amp;rsquo;ve ended up at Magnetix. It&amp;rsquo;s a great place with very talented people. My role here has become more permanent. I do what I did five or six years ago, handling client accounts and overseeing projects. It&amp;rsquo;s familiar ground and something I know I do well. It&amp;rsquo;s something I can do without investing my soul in it and still excel.
+ &nbsp;
+ Will I be doing this the next five or ten years? Probably not. But for the time being, it&amp;rsquo;s nice being around smart people doing great work. It&amp;rsquo;s a privilege to be part of a very successful company. To be able to contribute at a pace that suits where I&amp;rsquo;m at emotionally.
+ &nbsp;
+ Failure sucks monumentally. For a founder failing it needs to be ok to talk about how much it sucks. Both the small failures along the way and the huge ones that are definitive. Failure hurts emotionally. If it doesn&amp;rsquo;t, you&amp;rsquo;re either not really invested or simply a shallow person lacking the ability to reflect on what you&amp;rsquo;re doing. My failure has cost people money, it has put people&amp;rsquo;s personal relationships at risk, it has put people&amp;rsquo;s financial situations at risk and it has cost a lot of my personal credibility. I don&amp;rsquo;t celebrate failure, i hate failure.
+ &nbsp;
+ I&amp;rsquo;m still recovering from my failure. Some nights, suffering from occasional insomnia, I still sit alone in the living room thinking about what I could and should have done. My failure still haunts me and I suspect it will for a long time.
+ &nbsp;
+ If you&amp;rsquo;re a founder and you find yourself in a similar situation, feel free to get in touch. Drop me an email, ping me on Twitter or give me a call. I&amp;rsquo;ll be happy to spend an hour talking about how I cope (sometimes denial is an underrated survival strategy) and see if anything I&amp;rsquo;ve done might help you." /><meta name="twitter:title" content="STARTUP FAILURE: how it feels" /><meta name="twitter:url" content="http://pschlegel.tumblr.com/post/62989782523/startup-failure-how-it-feels" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="pschlegel" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=pschlegel&amp;postID=62989782523&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=pschlegel&amp;postID=62989782523&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=pschlegel&amp;postID=62989782523&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/pschlegel.tumblr.com\/post\/62989782523\/startup-failure-how-it-feels","mainEntityOfPage":true,"datePublished":"2013-10-03T12:31:00-04:00","author":"pschlegel","headline":"STARTUP FAILURE: how it feels","articleBody":"Blogging to a following of what is probably no more a few friends, colleagues and business acquaintances is in essence either self-promotion or - in this case - a public therapy session. I\u2019m hoping, however, that an entrepreneur or two might find this post and see that the grief and suffering they\u2019re feeling does not make them the only sobbing loser in the world.\nMy startup, Admazely, has gone bankrupt. It has failed. It\u2019s over. Done. We ran out of funding and didn\u2019t manage to raise more money.\nI\u2019m not writing this to get pity from anyone. Or to get even with anyone. Or to out anyone. Except for myself. Let me be very very clear: the failure that I\u2019m writing about here is mine and mine alone. Were other people involved? Absolutely. Did their actions influence the outcome of Admazely? Sure. Was it their responsibility? Hell no! In the epic words of former Secretary of Defence, S\u00f8ren Gade, the buck stops here.\nI\u2019ll try and find the energy to do a more analytical post mortem with root-cause analysis and everything at a later stage. But right now, I want to share how my failure felt. And feels.\nAdmazely began informally in early 2011. Officailly, I began working on it in May (on a spare-time and hobby basis it was a few months earlier but my definition of when you start working on a startup is when you start doing it full time).\nMy eventual cofounders, David and Sylwia, joined in August. Fourth and final cofounder, S\u00f8ren, made his commitment in March 2012.\nWe raised a seed round in April 2012.\nAnd we formally filed for bankruptcy in May 2013.\nThis is the story of how that ride felt. What it feels like to fail.\nFirst signs\nHaving a startup is an emotional roller coaster from the outset. Constant worry about finding cofounders, potential competitors, raising money, designing a product, building it, marketing it, finding a sustainable business model.\nTo me, the basic feelings associated with it are very similar to what I\u2019ve experienced in previous jobs. I\u2019m an \u201call in\u201d kind of person, so I\u2019ve felt a lot of responsibility towards my employers and my career in the past. But let me assure you that it pales in comparison to having my own startup. It\u2019s the same basic emotions but they get amplified by a factor of thousand.\nI have interviewed hundreds of candidates for positions before founding Admazely. And sure, it\u2019s been really frustrating when I couldn\u2019t find the right person for the job. Or I\u2019d be excited when I finally did. But interviewing people that I desperately wanted to be a good fit for Admazely, only to find out they weren\u2019t good enough was misery. Finally finding someone, asking them to join and be rejected gave reason to fundamental self-doubt. Am I not the mythological founder that rock star people are eager to join and work for free for a fraction of the company?\nBut it\u2019s also insane joy. When those amazing candidates agreed to join despite more lucrative offers from companies I admire and respect, I was exhilarated to the point of shouting and performing those celebratory scenes you only do when you\u2019re pretty sure no one is watching.\nWhere am I going without this? Well, in the general direction that you get a little bit numb to pain. You teach yourself to shake it off as quickly as possible and move on. When a lot of shit happened in a short period of time, I\u2019d go into a state of mild stress and depression. But I\u2019d have to force myself out of it. That led to this slight numbness which in turn led to a certain degree of insensitivity to signals from the outside. Because I was forcing myself to ignore them in order to not go under in pain, stress and anxiety.\nAnd that slight numbness meant that I probably wasn\u2019t seeing any first signs of failure.\nI obviously knew that we were fighting a multi-front war. We had a cash-out-date approaching from day one (end of April 2013). We had product problems. We had sales and marketing problems. We had people problems. We had process problems. Startups have problems. It\u2019s a grind - that\u2019s the nature of it.\nSo retrospectively I don\u2019t think that I was seeing any obstacles that I couldn\u2019t overcome.\nEmotinal distraction\nIn February 2012 my wife, Kia, and I learned that she was expecting our first child. She was due in early October. Preparing for a baby takes up some emotional bandwidth. As it should. I\u2019m pretty sure Kia thinks that it didn\u2019t take up as much as it should have. Even writing the section headline \u201cemotional distraction\u201d makes me feel a little guilty. Was my son a distraction to my startup? I told myself I could just add bandwidth but that turned out to be false. So preparing for a baby diverted my focus a little. But actually it was just a little.\nKia gave birth on September 27 and that\u2019s when the actual diversion of attention happened. For the last three months of 2012 I was doing a shitty job of being founder and CEO of Admazely. And an even shittier job of being a father and a husband. The latter is not the point of this post so I\u2019ll leave it out. It\u2019s probably the one I\u2019ll feel more guilty about in the long run. The former, however, made me pretty aware that I started being one step behind on many things. I felt it and my colleagues felt it. It felt like failing at the micro level. It was a tough time.\nDuring the Christmas holidays I decided to get one step ahead again and I kicked off 2013 with an all-hands meeting setting a stronger direction and honing up to my mistakes in the previous three months. The team responded really well. They all knew it and could feel that we\u2019d been getting lost due to my lack of leadership. And the next 45 days were some of the most amazing in the two years that I was doing Admazely.\nThe big blow\nAs mentioned, our cash-out-date was approaching. We\u2019d joined the Accelerace program based on a recommendation from our chairman and representative of our lead investor, SEED Capital. The program does a lot of good things. The reason we joined was that it has a loan option for program alumni companies. The people in the program has to recommend you, you jump through a few hoops, you pitch and negotiate and finally you present to their equivalent of the infamous partner meeting - the Investment Committee.\nWe had done all of it and everything was teed up for the Investment Committee presentation. The program manager, Jesper, endorsed us vigorously, the program consultant, Christian, who had worked with us was an enthusiastic ambassador. We had spoken bilaterally to most of the people on the committee and had received confirmation that they would support our loan application. SEED Capital had agreed to syndicate the loan, further endorsing it. Our chairman was on the Investment Committee (yeah that definitely could be seen as a conflict of interest but that wasn\u2019t my headache) and had spoken to most of the members.\nI had all of my ducks in a row so to speak. Or so I thought.\nI went to present on Tuesday February 6 with confidence and less than two months of cash in the bank. It was snowing yet thawing. A disgusting day, typical Danish winter.\nMy presentation was ok. The mandatory Q&A afterwards was horrible. The only two people in the room that we hadn\u2019t gotten prior support from were skeptical to say the least. As I left the room I was shattered. And as my contact at Accelerace didn\u2019t call me later on that day I knew where it was going. My chairman didn\u2019t either. Not a good sign. I left messages and they didn\u2019t return my calls.\nIn the afternoon I had a speaking engagement in the other end of the country, pitching to a huge room full of potential customers. It was an absurd experience. I was crumbling on the inside but had to pose confidently. I had invited to of our customers to also speak at the event and after dropping them off I sat in the rental car staring at air. Crying. Feelings of fear, anger, self-righteousness and uncertainty overwhelmed me.\nA million thoughts were racing through my mind. Guilt towards Kia for asking her to let me jeopardize our personal finances and then failing to pay back on her trust. Self-doubt. But it all just got worse from there on.\nWhen Christian called Wednesday afternoon I knew the outline of the conversation before picking up the phone. I was oddly emotionally detached as we talked. Still kind of shell-shocked.\nThe worst part at this stage was telling my team the news. I had been 100% transparent about our cash situation and our process with Accelerace so they were expecting good news. I waited until Monday at the weekly all-hands. I should have spoken to them faster. Most of them knew me well enough to know what was up based on my mood and body language in the days leading up.\nI told them that I would hustle to find other investors but that realistically it took more than the month-and-a-half of cash that we had left. Two and a half if we were all prepared to work up until a payday that we all knew would lead to bankruptcy, not pay. We all were, of course.\nPiling on\nDecember through March we were killing it in our sales team. After a lot of iteration we had finally gotten a small team in place that were converting leads into customers. The two core people on that team were Harriet and Nate, both Kiwis. A core element in my Hail Mary fundraising strategy was that we were finally getting sales traction and that we had found a model to build an international customer base through tele sales. Most Danish startups begin selling locally and then expand from there. We had chosen a pretty bold strategy (against the advice from our board) and gone for \u2018instantly global\u2019, meaning the bulk of our effort was in calling the UK. And for that you need native English speaking sales people. Hence my praise of Harriet and Nate (and Sophia, our Aussie sales supporter). We spend three months achieving what a successful startup like Trustpilot reportedly spent almost a year doing: making steady sales progress in the UK.\nMid-February - roughly two weeks after having our funding plan dissolve before my eyes - Harriet and Nate received news that they would not be granted permanent work visa in Denmark and were to leave the country within 30 days.\nIt felt like the most unfair thing that could possibly happen at that point in time. I had less than two months to raise about 3 mdkk with a pitch that now had zero chance of delivering if an investor should decide to invest. I remember closing my eyes when I got the news, laughing manically for like 10 seconds while just feeling dizzy. Harriet, Nate, Sophia and our \u201cgrowth hacker\u201d, Daniel, had been busting their asses off for the last few months trying to crack the code to making it all work. And right there and then someone in SKAT decided that what Harriet and Nate were doing did \u201cnot qualify as the kind of work that a Danish citizen could not perform equally well\u201d.\nWhat. The Fuck?!? I just couldn\u2019t believe it. The eloquence, snappy responses, mastering of nuances within the language that makes a really talented sales rep is based on intimate knowledge of said language. Their skill set were not some that a Danish sales guy could pick up from learning English in school or even living abroad for a short while. I was flabbergasted. And I wanted to scream. But even at that point I felt the need to keep a straight face to the rest of the team. I\u2019m pretty sure I didn\u2019t manage. If only half the despair I was feeling shone through, I\u2019m pretty sure my colleagues felt like packing up their shit and leave right there and then.\nThey didn\u2019t. Maybe they should have.\nAs I thought things couldn\u2019t get any worse, our CTO and cofounder, David, pulled me aside one day and told me that he and his fiance were moving back to Stockholm. It had been a long time coming. His fiance couldn\u2019t get settled in Malm\u00f6 and wanted to go back. David had been postponing the decision but had finally chosen not to jeopardize his relationship. A good decision and one in which I support him 100% as a friend. As a cofounder - I found his timing to be the worst possible.\nAnyone who have seen a cofounder leave their startup knows the feelings flying through my head at that point. Betrayal, sorrow, shock. Loneliness. Until that very moment it had felt as if David was the one person that would stay with me until the very end. But that wasn\u2019t the case now. The weight on my shoulders already felt heavy but it just got a lot heavier. And I knew that even if we did manage to raise more money, we couldn\u2019t realistically continue our upwards trajectory. Development speed would decrease dramatically and the driving force in getting shit done would be gone. No sales team and no CTO.\nI still struggled to keep a straight face to the rest of the team, to my board, to customers and suppliers and to potential investors. And it seems I half-managed. But only half-managed. I didn\u2019t crumble completely on the surface but underneath it was the most taxing time of my life.\nI probably went and pitched somewhere between 10 and 20 potential angel investors after this point. And my pitch got weaker and weaker. Because I had lost faith myself. I remember one meeting in particular that our chairman, Niels Vejrup from SEED Capital had helped tee up. It was with Jesper Buch and Ditlev Bredahl who had been dancing in the shadows for a while and were now ready to talk. It was a Skype call and I had tried to prep for the meeting. Tried to find ways to frame our situation that would appeal to their hands-on approach to angel investing. Especially Jesper is known for investing heavily in the team and the founder(s). Which would -under normal circumstances - be great news. I\u2019ve pretty consistently gotten good feedback from both VCs and angels. But this time I sucked in a major way. As I was pitching I knew I sucked. I felt like a dog that has been beaten to the point of scared submission. And I acted the role of a loser. Because I utterly felt like one. That meeting was an image of how I felt at the time and how my performance suffered from it.\nAnyway - the list of potential investors got shorter and shorter as I got the \u0027thanks but no thanks\u2019 emails and calls.\nBankruptcy\nWe had a board meeting on May 14th 2013 where we formally decided to file for bankruptcy. I filed the paperwork, helped the lawyer, etc.\nThe morning after filing the papers, we all cleared out the office. Not much was said except for the occasional half-hearted joke trying to lighten the mood. We agreed to meet for a piss-up a couple of weeks later when the smoke had cleared.\nIt was two weeks of extremely ambivalent emotions.\nOn one hand I was crushed. Watching two years of my life go down the drain cannot be described to someone who hasn\u2019t felt it.\nBut on the other hand I felt tremendous relief. Finally, it was over. Having known where it was heading and trying to stop us falling off a cliff was unbelievably tough. Fighting with all I had knowing that our faith was in the hands of someone else and that we needed something in the proximity of a miracle. Albert Camus writes in his self-proclaimed main work, The Myth of Sisyphus, that Sisyphus is only set free as he accepts and embraces the absurdity of his destiny. I tried to do that but didn\u2019t manage.\nWhen I had filed the papers and we were officially bankrupt and I wasn\u2019t allowed to touch anything I felt relief. Relief that my struggle was over. Relief that finally I didn\u2019t have to get up in the morning, put on a brave face and lie to everyone around me.\nAnd I felt shame. Immense shame BECAUSE I felt relieved. I was supposed to only be devastated. I was supposed to not have given up. The common narrative of startup founders is the one in which the founder overcomes. Where he endangers the financial health of himself and his family. Where his 20 credit cards are maxed out when he finally gets funded. I felt ashamed that I had given up too soon. That I had kept my promise to my wife and not gone beyond the financial limit that we had originally agreed. Ashamed that I had only spent half our life savings on my failure and not all of it. Logically it\u2019s nonsense but the narrative that\u2019s been created around startup life - one that I have bought into as well - is one of relentless pursuit.\nSure, we had endured some hardship. Our first office space had leaky windows and no heating. Our desks were old garden furniture that I had borrowed from a friend of mine. We didn\u2019t pay any rent, instead I would clean the kitchen of the shared office space that we were in. To cut personal living cost for us all, we ate lunch leftovers from one of the more established companies in the building and in return I did the dishes for the entire building. David rented a scrappy room in Malm\u00f6 and occasionally took a weekend trip to Malm\u00f6 to see his girlfriend. It wasn\u2019t that we were too posh to endure hardship.\nBut it still felt as if we should have done more. And shame still consumes a lot of my emotional bandwidth when I think back on Admazely.\nAftermath\nI guess shame was also a major driver of my behavior in the past few months. I was afraid to admit my failure to the world. Afraid to tell people that we had gone bust. Publicly admitting it was like crossing into a whole new dimension. I had a lot of psychological equity invested in my identity as a startup founder. Now, I was just a bum without a job.\nMy friends would tell me to give it time and think about what I wanted to do. Don\u2019t rush it, they said. Well, there were more perspectives to it than that.\nFirst off, there was nothing else I wanted to do. Maybe another startup at some point. But right there and then the idea of taking a job was inconceivable. I waded through job sites and talked to people and I simply could not get excited about anything.\nSecondly, there was the responsibility to my family. I hadn\u2019t gotten a salary for a couple of months and my wife was on maternity leave - which despite Danish welfare left us with a gross monthly household income of around 14,000 Danish kroner. In other words, we were once again digging into our savings to pay the bills. So I needed to get off my ass and generate some kind of cash flow.\nRight around that time Martin Bochineck who was an angel investor and sat on the board of Admazely called me. He had had a front row seat when I lost a chunk of his money. Martin is one of the most decent and gracious people I have ever come across in my business life. I have witnessed it first hand and I have numerous accounts from others who have had similar experiences. Martin has a moral integrity that is extremely rare. I owe a lot to him as he helped me cope both during and after my failure.\nHe offered to pay me a salary equivalent to my CEO salary in Admazely (which admittedly was pretty negligible) to come in and \u201chelp him out with stuff for a few months\u201d while the dust settled. I had my doubts since I simply didn\u2019t feel as if I had anything to offer at that point in time. But I eventually accepted. And that\u2019s how I\u2019ve ended up at Magnetix. It\u2019s a great place with very talented people. My role here has become more permanent. I do what I did five or six years ago, handling client accounts and overseeing projects. It\u2019s familiar ground and something I know I do well. It\u2019s something I can do without investing my soul in it and still excel.\nWill I be doing this the next five or ten years? Probably not. But for the time being, it\u2019s nice being around smart people doing great work. It\u2019s a privilege to be part of a very successful company. To be able to contribute at a pace that suits where I\u2019m at emotionally.\nFailure sucks monumentally. For a founder failing it needs to be ok to talk about how much it sucks. Both the small failures along the way and the huge ones that are definitive. Failure hurts emotionally. If it doesn\u2019t, you\u2019re either not really invested or simply a shallow person lacking the ability to reflect on what you\u2019re doing. My failure has cost people money, it has put people\u2019s personal relationships at risk, it has put people\u2019s financial situations at risk and it has cost a lot of my personal credibility. I don\u2019t celebrate failure, i hate failure.\nI\u2019m still recovering from my failure. Some nights, suffering from occasional insomnia, I still sit alone in the living room thinking about what I could and should have done. My failure still haunts me and I suspect it will for a long time.\nIf you\u2019re a founder and you find yourself in a similar situation, feel free to get in touch. Drop me an email, ping me on Twitter or give me a call. I\u2019ll be happy to spend an hour talking about how I cope (sometimes denial is an underrated survival strategy) and see if anything I\u2019ve done might help you.","@context":"http:\/\/schema.org"}</script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="access">
+                <div class="menu">
+                    <div id="pages">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            
+                            <li class="ask"><a href="/ask" class="page">Ask me anything</a></li>
+                            <li class="submit"><a href="/submit" class="page">Submit</a></li>
+                            <li class="archive"><a href="/archive">Archive</a></li>
+                            <li class="mobile"><a href="/mobile">Mobile</a></li>
+                            <li class="rss"><a href="http://pschlegel.tumblr.com/rss">RSS</a></li>
+                        </ul>
+                    </div><!-- #pages -->
+                    <div id="search">
+                        <form action="/search" method="get">
+                            <input type="text" name="q" value=""/>
+                            <input type="submit" value="Search" class="search-button"/>
+                        </form>
+                    </div><!-- #search -->
+                </div><!-- .menu -->
+            </div><!-- #access -->
+            <div id="branding">
+                <h1>
+                    
+                    <a href="/">Ramblings of an entrepreneur</a>
+                </h1>
+            </div><!-- #branding -->
+        </div><!-- #header -->
+        <div id="main">
+            <div id="container">
+                <div id="content">
+                
+                    <div id="post-62989782523" class="post post-type-text">
+                        <div class="post-meta">
+                            <div class="type">
+                                <a href="http://pschlegel.tumblr.com/post/62989782523/startup-failure-how-it-feels">Text</a>
+                            </div><!-- .type -->
+                        
+                            <div class="date">
+                                October 03, 2013
+                            </div><!-- .date -->
+                        
+                        
+                        
+                        </div><!-- .post-meta -->
+                        <div class="post-content">
+                        
+                            <h3><a href="http://pschlegel.tumblr.com/post/62989782523/startup-failure-how-it-feels">STARTUP FAILURE: how it feels</a></h3>
+                            <p class="p1">Blogging to a following of what is probably no more a few friends, colleagues and business acquaintances is in essence either self-promotion or - in this case - a public therapy session. I&rsquo;m hoping, however, that an entrepreneur or two might find this post and see that the grief and suffering they&rsquo;re feeling does not make them the only sobbing loser in the world.</p>
+
+<p class="p1"><span>My startup, Admazely, has gone bankrupt. It has failed. It&rsquo;s over. Done. We ran out of funding and didn&rsquo;t manage to raise more money.</span></p>
+
+<p class="p1">I&rsquo;m not writing this to get pity from anyone. Or to get even with anyone. Or to out anyone. Except for myself. Let me be very very clear: the failure that I&rsquo;m writing about here is mine and mine alone. Were other people involved? Absolutely. Did their actions influence the outcome of Admazely? Sure. Was it their responsibility? Hell no! In the epic words of former Secretary of Defence, S&oslash;ren Gade, <a href="http://www.youtube.com/watch?v=xpRDQ5_0AZM">the buck stops here</a>.</p>
+
+<p class="p1">I&rsquo;ll try and find the energy to do a more analytical post mortem with root-cause analysis and everything at a later stage. But right now, I want to share how my failure felt. And feels.</p>
+
+<p class="p1">Admazely began informally in early 2011. Officailly, I began working on it in May (on a spare-time and hobby basis it was a few months earlier but my definition of when you start working on a startup is when you start doing it full time).</p>
+
+<p class="p1"><span>My eventual cofounders, David and Sylwia, joined in August. Fourth and final cofounder, S&oslash;ren, made his commitment in March 2012.</span></p>
+<p class="p1"><span>We raised a seed round in April 2012.</span></p>
+<p class="p1"><span>And we formally filed for bankruptcy in May 2013.</span></p>
+
+<p class="p1">This is the story of how that ride felt. What it feels like to fail.</p>
+
+<p class="p1"></p>
+<p><strong>First signs</strong><br>Having a startup is an emotional roller coaster from the outset. Constant worry about finding cofounders, potential competitors, raising money, designing a product, building it, marketing it, finding a sustainable business model.</p>
+
+<p><span>To me, the basic feelings associated with it are very similar to what I&rsquo;ve experienced in previous jobs. I&rsquo;m an &ldquo;all in&rdquo; kind of person, so I&rsquo;ve felt a lot of responsibility towards my employers and my career in the past. But let me assure you that it pales in comparison to having my own startup. It&rsquo;s the same basic emotions but they get amplified by a factor of thousand.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I have interviewed hundreds of candidates for positions before founding Admazely. And sure, it&rsquo;s been really frustrating when I couldn&rsquo;t find the right person for the job. Or I&rsquo;d be excited when I finally did. But interviewing people that I desperately wanted to be a good fit for Admazely, only to find out they weren&rsquo;t good enough was misery. Finally finding someone, asking them to join and be rejected gave reason to fundamental self-doubt. Am I not the mythological founder that rock star people are eager to join and work for free for a fraction of the company?</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>But it&rsquo;s also insane joy. When those amazing candidates agreed to join despite more lucrative offers from companies I admire and respect, I was exhilarated to the point of shouting and performing those celebratory scenes you only do when you&rsquo;re pretty sure no one is watching.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Where am I going without this? Well, in the general direction that you get a little bit numb to pain. You teach yourself to shake it off as quickly as possible and move on. When a lot of shit happened in a short period of time, I&rsquo;d go into a state of mild stress and depression. But I&rsquo;d have to force myself out of it. That led to this slight numbness which in turn led to a certain degree of insensitivity to signals from the outside. Because I was forcing myself to ignore them in order to not go under in pain, stress and anxiety.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>And that slight numbness meant that I probably wasn&rsquo;t seeing any first signs of failure.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I obviously knew that we were fighting a multi-front war. We had a cash-out-date approaching from day one (end of April 2013). We had product problems. We had sales and marketing problems. We had people problems. We had process problems. Startups have problems. It&rsquo;s a grind - that&rsquo;s the nature of it.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>So retrospectively I don&rsquo;t think that I was seeing any obstacles that I couldn&rsquo;t overcome.</span></p>
+
+<p><strong>Emotinal distraction</strong><br>In February 2012 my wife, Kia, and I learned that she was expecting our first child. She was due in early October. Preparing for a baby takes up some emotional bandwidth. As it should. I&rsquo;m pretty sure Kia thinks that it didn&rsquo;t take up as much as it should have. Even writing the section headline &ldquo;emotional distraction&rdquo; makes me feel a little guilty. Was my son a distraction to my startup? I told myself I could just add bandwidth but that turned out to be false. So preparing for a baby diverted my focus a little. But actually it was just a little.</p>
+
+<p><span>Kia gave birth on September 27 and that&rsquo;s when the actual diversion of attention happened. For the last three months of 2012 I was doing a shitty job of being founder and CEO of Admazely. And an even shittier job of being a father and a husband. The latter is not the point of this post so I&rsquo;ll leave it out. It&rsquo;s probably the one I&rsquo;ll feel more guilty about in the long run. The former, however, made me pretty aware that I started being one step behind on many things. I felt it and my colleagues felt it. It felt like failing at the micro level. It was a tough time.</span></p>
+
+<p><span>During the Christmas holidays I decided to get one step ahead again and I kicked off 2013 with an all-hands meeting setting a stronger direction and honing up to my mistakes in the previous three months. The team responded really well. They all knew it and could feel that we&rsquo;d been getting lost due to my lack of leadership. And the next 45 days were some of the most amazing in the two years that I was doing Admazely.</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong>The big blow</strong><br>As mentioned, our cash-out-date was approaching. We&rsquo;d joined the Accelerace program based on a recommendation from our chairman and representative of our lead investor, SEED Capital. The program does a lot of good things. The reason we joined was that it has a loan option for program alumni companies. The people in the program has to recommend you, you jump through a few hoops, you pitch and negotiate and finally you present to their equivalent of the infamous partner meeting - the Investment Committee.</p>
+
+<p><span>We had done all of it and everything was teed up for the Investment Committee presentation. The program manager, Jesper, endorsed us vigorously, the program consultant, Christian, who had worked with us was an enthusiastic ambassador. We had spoken bilaterally to most of the people on the committee and had received confirmation that they would support our loan application. SEED Capital had agreed to syndicate the loan, further endorsing it. Our chairman was on the Investment Committee (yeah that definitely could be seen as a conflict of interest but that wasn&rsquo;t my headache) and had spoken to most of the members.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I had all of my ducks in a row so to speak. Or so I thought.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I went to present on Tuesday February 6 with confidence and less than two months of cash in the bank. It was snowing yet thawing. A disgusting day, typical Danish winter.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>My presentation was ok. The mandatory Q&amp;A afterwards was horrible. The only two people in the room that we hadn&rsquo;t gotten prior support from were skeptical to say the least. As I left the room I was shattered. And as my contact at Accelerace didn&rsquo;t call me later on that day I knew where it was going. My chairman didn&rsquo;t either. Not a good sign. I left messages and they didn&rsquo;t return my calls.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>In the afternoon I had a speaking engagement in the other end of the country, pitching to a huge room full of potential customers. It was an absurd experience. I was crumbling on the inside but had to pose confidently. I had invited to of our customers to also speak at the event and after dropping them off I sat in the rental car staring at air. Crying. Feelings of fear, anger, self-righteousness and uncertainty overwhelmed me.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>A million thoughts were racing through my mind. Guilt towards Kia for asking her to let me jeopardize our personal finances and then failing to pay back on her trust. Self-doubt. But it all just got worse from there on.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>When Christian called Wednesday afternoon I knew the outline of the conversation before picking up the phone. I was oddly emotionally detached as we talked. Still kind of shell-shocked.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>The worst part at this stage was telling my team the news. I had been 100% transparent about our cash situation and our process with Accelerace so they were expecting good news. I waited until Monday at the weekly all-hands. I should have spoken to them faster. Most of them knew me well enough to know what was up based on my mood and body language in the days leading up.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I told them that I would hustle to find other investors but that realistically it took more than the month-and-a-half of cash that we had left. Two and a half if we were all prepared to work up until a payday that we all knew would lead to bankruptcy, not pay. We all were, of course.</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong>Piling on</strong><br>December through March we were killing it in our sales team. After a lot of iteration we had finally gotten a small team in place that were converting leads into customers. The two core people on that team were Harriet and Nate, both Kiwis. A core element in my <a href="http://en.wikipedia.org/wiki/Hail_Mary_pass">Hail Mary</a> fundraising strategy was that we were finally getting sales traction and that we had found a model to build an international customer base through tele sales. Most Danish startups begin selling locally and then expand from there. We had chosen a pretty bold strategy (against the advice from our board) and gone for &lsquo;instantly global&rsquo;, meaning the bulk of our effort was in calling the UK. And for that you need native English speaking sales people. Hence my praise of Harriet and Nate (and Sophia, our Aussie sales supporter). We spend three months achieving what a successful startup like Trustpilot reportedly spent almost a year doing: making steady sales progress in the UK.</p>
+
+<p><span>Mid-February - roughly two weeks after having our funding plan dissolve before my eyes - Harriet and Nate received news that they would not be granted permanent work visa in Denmark and were to leave the country within 30 days.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>It felt like the most unfair thing that could possibly happen at that point in time. I had less than two months to raise about 3 mdkk with a pitch that now had zero chance of delivering if an investor should decide to invest. I remember closing my eyes when I got the news, laughing manically for like 10 seconds while just feeling dizzy. Harriet, Nate, Sophia and our &ldquo;growth hacker&rdquo;, Daniel, had been busting their asses off for the last few months trying to crack the code to making it all work. And right there and then someone in SKAT decided that what Harriet and Nate were doing did &ldquo;not qualify as the kind of work that a Danish citizen could not perform equally well&rdquo;.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>What. The Fuck?!? I just couldn&rsquo;t believe it. The eloquence, snappy responses, mastering of nuances within the language that makes a really talented sales rep is based on intimate knowledge of said language. Their skill set were not some that a Danish sales guy could pick up from learning English in school or even living abroad for a short while. I was flabbergasted. And I wanted to scream. But even at that point I felt the need to keep a straight face to the rest of the team. I&rsquo;m pretty sure I didn&rsquo;t manage. If only half the despair I was feeling shone through, I&rsquo;m pretty sure my colleagues felt like packing up their shit and leave right there and then.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>They didn&rsquo;t. Maybe they should have.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>As I thought things couldn&rsquo;t get any worse, our CTO and cofounder, David, pulled me aside one day and told me that he and his fiance were moving back to Stockholm. It had been a long time coming. His fiance couldn&rsquo;t get settled in Malm&ouml; and wanted to go back. David had been postponing the decision but had finally chosen not to jeopardize his relationship. A good decision and one in which I support him 100% as a friend. As a cofounder - I found his timing to be the worst possible.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Anyone who have seen a cofounder leave their startup knows the feelings flying through my head at that point. Betrayal, sorrow, shock. Loneliness. Until that very moment it had felt as if David was the one person that would stay with me until the very end. But that wasn&rsquo;t the case now. The weight on my shoulders already felt heavy but it just got a lot heavier. And I knew that even if we did manage to raise more money, we couldn&rsquo;t realistically continue our upwards trajectory. Development speed would decrease dramatically and the driving force in getting shit done would be gone. No sales team and no CTO.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I still struggled to keep a straight face to the rest of the team, to my board, to customers and suppliers and to potential investors. And it seems I half-managed. But only half-managed. I didn&rsquo;t crumble completely on the surface but underneath it was the most taxing time of my life.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I probably went and pitched somewhere between 10 and 20 potential angel investors after this point. And my pitch got weaker and weaker. Because I had lost faith myself. I remember one meeting in particular that our chairman, Niels Vejrup from SEED Capital had helped tee up. It was with <a href="http://www.jesperbuch.com/">Jesper Buch</a> and <a href="http://www.ditlev.dk/">Ditlev Bredahl</a> who had been dancing in the shadows for a while and were now ready to talk. It was a Skype call and I had tried to prep for the meeting. Tried to find ways to frame our situation that would appeal to their hands-on approach to angel investing. Especially Jesper is known for investing heavily in the team and the founder(s). Which would -under normal circumstances - be great news. I&rsquo;ve pretty consistently gotten good feedback from both VCs and angels. But this time I sucked in a major way. As I was pitching I knew I sucked. I felt like a dog that has been beaten to the point of scared submission. And I acted the role of a loser. Because I utterly felt like one. That meeting was an image of how I felt at the time and how my performance suffered from it.</span></p>
+
+<p><span>Anyway - the list of potential investors got shorter and shorter as I got the 'thanks but no thanks&rsquo; emails and calls.</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong>Bankruptcy</strong><br>We had a board meeting on May 14th 2013 where we formally decided to file for bankruptcy. I filed the paperwork, helped the lawyer, etc.</p>
+
+<p><span>The morning after filing the papers, we all cleared out the office. Not much was said except for the occasional half-hearted joke trying to lighten the mood. We agreed to meet for a piss-up a couple of weeks later when the smoke had cleared.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>It was two weeks of extremely ambivalent emotions.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>On one hand I was crushed. Watching two years of my life go down the drain cannot be described to someone who hasn&rsquo;t felt it.</span></p>
+<p>But on the other hand I felt tremendous relief. Finally, it was over. Having known where it was heading and trying to stop us falling off a cliff was unbelievably tough. Fighting with all I had knowing that our faith was in the hands of someone else and that we needed something in the proximity of a miracle. Albert Camus writes in his self-proclaimed main work, <a href="http://en.wikipedia.org/wiki/The_Myth_of_Sisyphus">The Myth of Sisyphus</a>, that Sisyphus is only set free as he accepts and embraces the absurdity of his destiny. I tried to do that but didn&rsquo;t manage.</p>
+
+<p><span>When I had filed the papers and we were officially bankrupt and I wasn&rsquo;t allowed to touch anything I felt relief. Relief that my struggle was over. Relief that finally I didn&rsquo;t have to get up in the morning, put on a brave face and lie to everyone around me.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>And I felt shame. Immense shame BECAUSE I felt relieved. I was supposed to only be devastated. I was supposed to not have given up. The common narrative of startup founders is the one in which the founder overcomes. Where he endangers the financial health of himself and his family. Where his 20 credit cards are maxed out when he finally gets funded. I felt ashamed that I had given up too soon. That I had kept my promise to my wife and not gone beyond the financial limit that we had originally agreed. Ashamed that I had only spent half our life savings on my failure and not all of it. Logically it&rsquo;s nonsense but the narrative that&rsquo;s been created around startup life - one that I have bought into as well - is one of relentless pursuit.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Sure, we had endured some hardship. Our first office space had leaky windows and no heating. Our desks were old garden furniture that I had borrowed from a friend of mine. We didn&rsquo;t pay any rent, instead I would clean the kitchen of the shared office space that we were in. To cut personal living cost for us all, we ate lunch leftovers from one of the more established companies in the building and in return I did the dishes for the entire building. David rented a scrappy room in Malm&ouml; and occasionally took a weekend trip to Malm&ouml; to see his girlfriend. It wasn&rsquo;t that we were too posh to endure hardship.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>But it still felt as if we should have done more. And shame still consumes a lot of my emotional bandwidth when I think back on Admazely.</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong>Aftermath</strong><br>I guess shame was also a major driver of my behavior in the past few months. I was afraid to admit my failure to the world. Afraid to tell people that we had gone bust. Publicly admitting it was like crossing into a whole new dimension. I had a lot of psychological equity invested in my identity as a startup founder. Now, I was just a bum without a job.</p>
+
+<p><span>My friends would tell me to give it time and think about what I wanted to do. Don&rsquo;t rush it, they said. Well, there were more perspectives to it than that.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>First off, there was nothing else I wanted to do. Maybe another startup at some point. But right there and then the idea of taking a job was inconceivable. I waded through job sites and talked to people and I simply could not get excited about anything.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Secondly, there was the responsibility to my family. I hadn&rsquo;t gotten a salary for a couple of months and my wife was on maternity leave - which despite Danish welfare left us with a gross monthly household income of around 14,000 Danish kroner. In other words, we were once again digging into our savings to pay the bills. So I needed to get off my ass and generate some kind of cash flow.</span></p>
+<p><span>&nbsp;</span></p>
+<p>Right around that time <a href="http://www.linkedin.com/pub/martin-bochineck/0/a43/b53">Martin Bochineck</a> who was an angel investor and sat on the board of Admazely called me. He had had a front row seat when I lost a chunk of his money. Martin is one of the most decent and gracious people I have ever come across in my business life. I have witnessed it first hand and I have numerous accounts from others who have had similar experiences. Martin has a moral integrity that is extremely rare. I owe a lot to him as he helped me cope both during and after my failure.</p>
+<p><span>&nbsp;</span></p>
+<p><span>He offered to pay me a salary equivalent to my CEO salary in Admazely (which admittedly was pretty negligible) to come in and &ldquo;help him out with stuff for a few months&rdquo; while the dust settled. I had my doubts since I simply didn&rsquo;t feel as if I had anything to offer at that point in time. But I eventually accepted. And that&rsquo;s how I&rsquo;ve ended up at Magnetix. It&rsquo;s a great place with very talented people. My role here has become more permanent. I do what I did five or six years ago, handling client accounts and overseeing projects. It&rsquo;s familiar ground and something I know I do well. It&rsquo;s something I can do without investing my soul in it and still excel.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Will I be doing this the next five or ten years? Probably not. But for the time being, it&rsquo;s nice being around smart people doing great work. It&rsquo;s a privilege to be part of a very successful company. To be able to contribute at a pace that suits where I&rsquo;m at emotionally.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Failure sucks monumentally. For a founder failing it needs to be ok to talk about how much it sucks. Both the small failures along the way and the huge ones that are definitive. Failure hurts emotionally. If it doesn&rsquo;t, you&rsquo;re either not really invested or simply a shallow person lacking the ability to reflect on what you&rsquo;re doing. My failure has cost people money, it has put people&rsquo;s personal relationships at risk, it has put people&rsquo;s financial situations at risk and it has cost a lot of my personal credibility. I don&rsquo;t celebrate failure, i hate failure.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>I&rsquo;m still recovering from my failure. Some nights, suffering from occasional insomnia, I still sit alone in the living room thinking about what I could and should have done. My failure still haunts me and I suspect it will for a long time.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>If you&rsquo;re a founder and you find yourself in a similar situation, feel free to get in touch. Drop me an email, ping me on Twitter or give me a call. I&rsquo;ll be happy to spend an hour talking about how I cope (sometimes denial is an underrated survival strategy) and see if anything I&rsquo;ve done might help you.</span></p>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div><!-- post-content -->
+                    </div><!-- .post -->
+                    
+                    
+                
+                
+                </div><!-- #content -->
+            </div><!-- #container -->
+            <div id="sidebar">
+            
+                <h3>About</h3>
+                <div id="about" class="widget">
+                    <img src="http://38.media.tumblr.com/avatar_bcae3ad0014e_64.png" alt="portrait" />
+                    <div class="description"><p>Peter V. Therkildsen Schlegel.<br />
+Entrepreneur and provocateur. Protagonist and humanist. I'm @pschlegel on Twitter.</p></div>
+                </div>
+            
+			
+            
+            
+            </div><!-- #sidebar -->
+        </div><!-- #main -->
+        <div id="footer">
+            <div id="colophon"><p>Powered by <a href="http://tumblr.com">Tumblr</a>. <a href="http://www.tumblr.com/theme/10375">Minimal Theme</a> designed by <a href="http://arturkim.com">Artur Kim</a>.</p></div>
+        </div><!-- #footer -->
+    </div><!-- #wrapper -->
+
+<script type="text/javascript" src="/tweets.js"></script>
+
+
+
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://pschlegel.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/62989782523/startup-failure-how-it-feels?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017166&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcHNjaGxlZ2VsLnR1bWJsci5jb21cL3Bvc3RcLzYyOTg5NzgyNTIzXC9zdGFydHVwLWZhaWx1cmUtaG93LWl0LWZlZWxzIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkifQ==&U=GKJJMHILEA&K=33c95efb305751b73d9ebbe45c1fe46eb4c505d7b18840ca762dd2274a778ba3&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017166&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcHNjaGxlZ2VsLnR1bWJsci5jb21cL3Bvc3RcLzYyOTg5NzgyNTIzXC9zdGFydHVwLWZhaWx1cmUtaG93LWl0LWZlZWxzIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJub3NjcmlwdCI6MX0=&U=GKJJMHILEA&K=cef4be0473ba9463d8951577dbb8fde302614bf6f8504303e9e4764e462e1e81&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017166&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3BzY2hsZWdlbC50dW1ibHIuY29tXC9wb3N0XC82Mjk4OTc4MjUyM1wvc3RhcnR1cC1mYWlsdXJlLWhvdy1pdC1mZWVscyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjYyOTg5NzgyNTIzIiwiYmxvZ2lkIjoiMTM5NzMxNjM2Iiwic291cmNlIjozM31dfQ==&U=IAIGABELHO&K=fffb9c2fb2e973de27d2609692863e85ecdc26a46c543ca12a7ceacee108fe4f&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017166&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3BzY2hsZWdlbC50dW1ibHIuY29tXC9wb3N0XC82Mjk4OTc4MjUyM1wvc3RhcnR1cC1mYWlsdXJlLWhvdy1pdC1mZWVscyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjYyOTg5NzgyNTIzIiwiYmxvZ2lkIjoiMTM5NzMxNjM2Iiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=IAIGABELHO&K=409df09806043826faa99ba4fd19f65f45af9936f9448336c194aeeadf5345d8&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:139731636,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Fpschlegel.tumblr.com%2Fpost%2F62989782523%2Fstartup-failure-how-it-feels&amp;pid=62989782523&amp;rk=NKxCECCL&amp;lang=en_US&amp;name=pschlegel&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_bcae3ad0014e_64.png&amp;title=Ramblings+of+an+entrepreneur&amp;url=http%3A%2F%2Fpschlegel.tumblr.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Fpschlegel.tumblr.com%2Fpost%2F62989782523%2Fstartup-failure-how-it-feels&amp;pid=62989782523&amp;rk=NKxCECCL&amp;lang=en_US&amp;name=pschlegel&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_bcae3ad0014e_64.png&amp;title=Ramblings+of+an+entrepreneur&amp;url=http%3A%2F%2Fpschlegel.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

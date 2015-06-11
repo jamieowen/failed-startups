@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Post-mortem | </title>
+<link rel="pingback" href="https://riotvine.wordpress.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://riotvine.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://riotvine.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Post-mortem Comments Feed" href="https://riotvine.wordpress.com/2010/08/09/post-mortem/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s1.wp.com/_static/??-eJx9j9FOwzAMRX+I4DEmBA+Ib2lSk6W1ayt2VO3vSUEIbUN9sXytc3RlWDUkWRwXB25BqeWyGBgXwotWmTD5dXpMZg/wv0ZlRoMJXYc0h+90h0eS/CdIzjhK8/ApRLLCWsaMux0VaXAcg4r5TdrTklTsd9bBN4JxLAMScsf2NNaXX2tbz/2v3ZpVOx1i1IpmoU8ujYOfe9G993MGbRHmFmtJM5hfCDfwg9+fTs/Ht+Ph9HqYvgD5Zp8z' type='text/css' media='all' />
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='kubrick-ie-css'  href='https://s0.wp.com/wp-content/themes/pub/kubrick/ie.css?m=1273203575g&#038;ver=4.2-RC4-32277' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-2' href='https://s1.wp.com/_static/??-eJx9jVEKwjAQRC9kXCyS4od4ljSNYctmpyQpvb4phaIo/iwzzHssrbPx0Bq0UlrMLEtkLRQSJt7v2ZdyIiZF5UaWI+zDbz8GGIF3laEfxTzFcf6n5jAIYouRGvVWv6RtOLQVeXRj+ywYnGzsI90v1852tre3fnoBMCRWbQ==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-3' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1387483371g' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-4' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423g' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFj+sKwjAMhV/IrmyrP8VnmWssqb3ZpBZ9ejtQwSkKgSTkOyeJrElgmF3RQNK2OBfI10fqLG3kL0B4NHli6DyGJzzHwBB4YVMk9kA0GfgyfV+F4YJQ/2IWOE3zSWQgvH24Hlw0IrliMJBstQEdC4tjdC5WWVEb4LXGl5cig2vPaLHcveqaau93vRrHbT+oQdk73sl1Tw=='></script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://riotvine.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Marketing at SXSW, and how we rocked&nbsp;it' href='https://riotvine.wordpress.com/2010/05/16/marketing-at-sxsw-and-how-we-rocked-it/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='https://riotvine.wordpress.com/2010/08/09/post-mortem/' />
+<link rel='shortlink' href='http://wp.me/pH6rC-hCJyC' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Friotvine.wordpress.com%2F2010%2F08%2F09%2Fpost-mortem%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Friotvine.wordpress.com%2F2010%2F08%2F09%2Fpost-mortem%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Post-mortem" />
+<meta property="og:url" content="https://riotvine.wordpress.com/2010/08/09/post-mortem/" />
+<meta property="og:description" content="RiotVine is closing. I genuinely want to thank everyone that ever signed up, posted an event, or used RiotVine to discover what was happening around town. Unfortunately, we never generated the trac..." />
+<meta property="article:published_time" content="2010-08-09T13:24:58+00:00" />
+<meta property="article:modified_time" content="2010-08-11T01:39:13+00:00" />
+<meta property="og:image" content="http://api.tweetmeme.com/imagebutton.gif?url=http://blog.riotvine.com" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="http://api.tweetmeme.com/imagebutton.gif?w=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/ac06c7d5b4adad107e2f88e92e0ddbd9?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/ac06c7d5b4adad107e2f88e92e0ddbd9?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/0eaa5bb194db7cce67cf93b9797eeedd?s=114" />
+<link rel='openid.server' href='https://riotvine.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://riotvine.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://riotvine.wordpress.com/osd.xml" title="" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+<style type='text/css'><!--
+body { background: url("https://s0.wp.com/wp-content/themes/pub/kubrick/images/kubrickbgcolor.gif"); }
+#page { background: url("https://s0.wp.com/wp-content/themes/pub/kubrick/images/kubrickbgwide.gif") repeat-y top !important; border: none; }
+#header { background: url("https://s0.wp.com/wp-content/themes/pub/kubrick/images/kubrickheader.gif") no-repeat bottom center; }
+#footer { background: url("https://s0.wp.com/wp-content/themes/pub/kubrick/images/kubrickfooter.gif") no-repeat bottom; border: none;}
+#header { margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg { margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: ; }
+#headerimg h1 a, #headerimg .description { display:  }
+
+	--></style>		<style type="text/css">
+			#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+			#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+			#flickr_icon_td {padding:0 5px 0 0 !important;}
+			.flickr_badge_image {text-align:center !important;}
+			.flickr_badge_image img {border: 1px solid black !important;}
+			#flickr_www {display:block; text-align:center; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+			#flickr_badge_uber_wrapper a:hover,
+			#flickr_badge_uber_wrapper a:link,
+			#flickr_badge_uber_wrapper a:active,
+			#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+			#flickr_badge_wrapper {background-color:#ffffff;border: solid 1px #000000}
+			#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+		</style>
+		<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="WordPress.com" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://riotvine.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/ac06c7d5b4adad107e2f88e92e0ddbd9?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="Post-mortem |  on WordPress.com" />
+<meta name="description" content="RiotVine is closing. I genuinely want to thank everyone that ever signed up, posted an event, or used RiotVine to discover what was happening around town. Unfortunately, we never generated the traction needed to continue. I&#039;m a big believer in learning from your failures, so I wanted to share my thoughts on building consumer web&hellip;" />
+<style type="text/css">
+#header     { margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg  { margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg { background: url(https://riotvine.files.wordpress.com/2009/12/rvblogheader-copy1.jpg) no-repeat top;}
+#header h1 a, #header h1 a:hover, #header .description {
+	color: #fff;
+}
+</style>
+
+<script type='text/javascript' src='//partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script>
+<script type="text/javascript" src="//c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try { amznads.getAds("3033","300x250"); } catch(e) { /* ignore */ }
+</script>
+<script type="text/javascript">
+var amznKeys = amznads.getKeys();
+if (typeof amznKeys != "undefined" && amznKeys != "") { for (var i =0; i < amznKeys.length; i++) { var key = amznKeys[i]; GA_googleAddAttr("amzn", key);} }
+document.close();
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post"); }
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 10272880, pt: 'permalink', wa: 0, as: 0, domain: 'riotvine.wordpress.com', url: 'https://riotvine.wordpress.com/2010/08/09/post-mortem/', gid: '', };
+</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+<body class="single single-post postid-260429302 single-format-standard mp6 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page">
+
+<div id="header">
+	<div id="headerimg" onclick=" location.href='https://riotvine.wordpress.com';" style="cursor: pointer;">
+		<h1><a href="https://riotvine.wordpress.com/"></a></h1>
+		<div class="description"></div>
+	</div>
+</div>
+<hr />
+
+	<div id="content" class="widecolumn">
+
+	
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="https://riotvine.wordpress.com/2010/05/16/marketing-at-sxsw-and-how-we-rocked-it/" rel="prev">Marketing at SXSW, and how we rocked&nbsp;it</a></div>
+			<div class="alignright"></div>
+		</div>
+
+		<div class="clear post-260429302 post type-post status-publish format-standard hentry category-uncategorized" id="post-260429302">
+			<h2>Post-mortem</h2>
+			<small class="single-by"></small>
+
+			<div class="entry">
+				<p>RiotVine is closing. I genuinely want to thank everyone that ever signed up, posted an event, or used RiotVine to discover what was happening around town. Unfortunately, we never generated the traction needed to continue. I&#8217;m a big believer in learning from your failures, so I wanted to share my thoughts on building consumer web products. Think of this as a business plan for consumer web companies:</p>
+<p><strong>Ask yourself how people are going to find out about your product</strong></p>
+<ul>
+<li>Write down an honest answer. If you answer word of mouth, social media, or press, you <em>need</em> to dig deeper. Press is a small bump in traffic that lasts about 3 hours. Social media is a full time job and that&#8217;s time you&#8217;re not spending building your product. If it&#8217;s word of mouth, what are they saying? &#8220;Check out this cool website I found&#8221;? Lame. This brings me to my next point..</li>
+</ul>
+<p><strong>It&#8217;s not about good ideas or bad ideas: it&#8217;s about ideas that make people talk.</strong></p>
+<ul>
+<li>And this worked really well for foursquare thanks to the mayorship. If I tell someone I&#8217;m the mayor of a spot, I&#8217;m in an instant conversation: &#8220;What makes you the mayor?&#8221; &#8220;That&#8217;s lame, I&#8217;m there way more than you&#8221; &#8220;What do you get for being mayor?&#8221;. Compare that to talking about Gowalla: &#8220;I just swapped this sticker of a bike for a sticker of a six pack of beer! What? Yes, I am still a virgin&#8221;. See the difference? Make some aspect of your product easy and fun to talk about, and make it unique.</li>
+</ul>
+<p><strong>Figure out the difference between a website, a service, a product, an application and a platform.</strong></p>
+<ul>
+<li>You need to figure out which one you&#8217;re building because what users do with each one and how you make money is very different. If you answer all of the above, you&#8217;ve got a problem because the answer determines why people use what you&#8217;re offering, and it says that your focus is scattershot. The difference between these is another post entirely, and one I&#8217;m probably not qualified to write yet.</li>
+</ul>
+<p><strong>Your first public product had better have a viral loop</strong>.</p>
+<ul>
+<li>Having a viral loop will stretch the traffic you get into more traffic, and ideally, more users. The only other option is to have a consistent and cheap social media strategy that drives traffic and this will easily suck up one person&#8217;s entire day, not ideal for a startup comprised of two people. If you don&#8217;t know what your viral loop is, STOP. Figure this out first. If there isn&#8217;t one, START OVER.</li>
+</ul>
+<p><strong>The best viral loops have two factors: they evoke an emotional response, and involve an element of surprise.</strong></p>
+<ul>
+<li>These factors make people share content online. Why do you think youtube is so massive? First you find a clip of two kids, and then &#8220;<a href="http://www.youtube.com/watch?v=_OBlgSz8sSM">Charlie bit me!</a>&#8221; happens and you&#8217;re laughing or going &#8220;Awww!&#8221; Video is the <strong>best</strong> medium to accomplish this. If you&#8217;re assuming people will share your content, think about how surprising or emotionally engaging that content is. If it&#8217;s neither, you&#8217;ll need to share it for them.</li>
+</ul>
+<p><strong>The best metric you should measure yourself against is whether you can make people feel something when using your product</strong>.</p>
+<ul>
+<li>At the end of the consumer web rainbow, it&#8217;s not about the features, it&#8217;s not about the design, it&#8217;s not about the usability, it&#8217;s not even about the real world pain you solve. All of these things matter, but think about the largest sites in the world that you waste time on—
+<ul>
+<li><strong>Facebook:</strong> People love seeing faces; this is a simple biological response that facebook excels at. If you spent one second looking at every facebook profile pic, you&#8217;d be at it for 158 years.</li>
+<li><strong>Craigslist:</strong> The design is completely underwhelming, which lowers your expectations.. but then you read something scary, weird or hilarious and you&#8217;re hooked. You keep reading hoping to find that next fix.</li>
+<li><strong>Ebay</strong>: If you&#8217;ve ever bought or sold anything on ebay, you know the thrill of hitting f5 until the auction ends. Even the aftermath where the person who bought from you is a nigerian scammer and paypal is a nightmare all involves an emotional response.</li>
+<li><strong>foursquare:</strong> Ever win a mayorship? Or had one stolen from you. Yeah.</li>
+</ul>
+</li>
+</ul>
+<p style="padding-left:30px;">Bottom Line: <strong>Build for an emotional response.</strong></p>
+<p><strong>So why&#8217;d RiotVine fail?</strong></p>
+<p>How often are you just searching for something to do? Once a month? That&#8217;s not nearly enough to generate the traffic you&#8217;d need. Then there&#8217;s the competition: Eventful, Going, Upcoming, and Facebook. All have had millions poured into them. The lucky ones were acquired.</p>
+<p>I&#8217;d argue that they are all pretty bad, but I blame that on the content; events are terrible content. If you already know about an event, you don&#8217;t need an event site. If you don&#8217;t know about it, you&#8217;re probably searching for something to do and the majority of events will not interest you. Even SEO is an issue; events expire and are pretty worthless after that.</p>
+<p>To be fair, I think it&#8217;s very possible to create a compelling product that addresses this. We mapped out our vision of it, but we would&#8217;ve spent another three months head down developing it, without a business model or any way to keep paying the rent.. and Facebook would just end up ripping it off.</p>
+<p>It&#8217;s hard to learn these lessons without first hand experience though so keep building your consumer web projects! I&#8217;d do it all over again, and in fact I am. Building RiotVine helped color my current design philosophy, and we&#8217;re taking all these lessons learned with us to <a href="http://gospotly.com">spotly</a>. Stay tuned for more <span class='wp-smiley wp-emoji wp-emoji-smile' title=':)'>:)</span></p>
+<p><em>Got questions about how these principles apply to major websites, or why some websites, products or apps made it and others didn&#8217;t? Feel free to ask in the comments; I&#8217;d be happy to share my thoughts.</em></p>
+<p><a href="http://api.tweetmeme.com/share?url=http://blog.riotvine.com"><img class="alignright" src="https://i0.wp.com/api.tweetmeme.com/imagebutton.gif" alt="" width="51" height="61" /></a></p>
+
+<div class="wpcnt">
+<div class="wpa">
+<a class="wpa-about" href="http://wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Kubrick";
+		var wpcom_adclk_slot = "wpcom_below_post";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "riotvine.wordpress.com");
+GA_googleAddAttr("BlogId", "10272880");
+GA_googleAddAttr("PageURL", "https://riotvine.wordpress.com/2010/08/09/post-mortem/");
+GA_googleAddAttr("Autotag", "technology");
+GA_googleAddAttr("theme_bg", "ffffff");
+GA_googleAddAttr("theme_text", "333333");
+GA_googleAddAttr("theme_link", "0066cc");
+GA_googleAddAttr("theme_border", "f9f9f9");
+GA_googleAddAttr("theme_url", "114477");
+GA_googleAddAdSensePageAttr("google_page_url", "https://riotvine.wordpress.com/2010/08/09/post-mortem/");
+GA_googleFillSlot("wpcom_below_post");
+}
+</script>
+</div>
+</div>
+
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='virool.com']").length > 0 || jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//pixel.wp.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled"><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-10272880-260429302-55795da0d300e' data-src='//widgets.wp.com/likes/#blog_id=10272880&amp;post_id=260429302&amp;origin=riotvine.wordpress.com&amp;obj_id=10272880-260429302-55795da0d300e' data-name='like-post-frame-10272880-260429302-55795da0d300e'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>
+								
+				<p class="postmetadata alt">
+					<small>
+												This entry was posted on August 9, 2010 at 1:24 pm and is filed under <a href="https://riotvine.wordpress.com/category/uncategorized/" rel="category tag">Uncategorized</a>.						You can follow any responses to this entry through the <a href='https://riotvine.wordpress.com/2010/08/09/post-mortem/feed/'>RSS 2.0</a> feed.
+													You can <a href="#respond">leave a response</a>, or <a href="https://riotvine.wordpress.com/2010/08/09/post-mortem/trackback/" rel="trackback">trackback</a> from your own site.
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+	<h3 id="comments">17 Responses to &#8220;Post-mortem&#8221;</h3>
+
+	<ol class="commentlist">
+					<li class="comment even thread-even depth-1 highlander-comment" id="comment-23">
+			<img alt='' src='https://0.gravatar.com/avatar/cea21ed2450b2ab9942c98bbb936763d?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite>Michael Sprague</cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-23" title="">August 9, 2010 at 1:50 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=23#respond' onclick='return addComment.moveForm( "comment-23", "23", "respond", "260429302" )' aria-label='Reply to Michael Sprague'>Reply</a> </small>
+
+			<p>Stand up article. Well done. Looking fwd to Spotly.</p>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-24">
+			<img alt='' src='https://1.gravatar.com/avatar/76097b7c1e284853ed07bb8b3d22e364?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://textaurant.com' rel='external nofollow' class='url'>Josh Bob</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-24" title="">August 9, 2010 at 2:22 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=24#respond' onclick='return addComment.moveForm( "comment-24", "24", "respond", "260429302" )' aria-label='Reply to Josh Bob'>Reply</a> </small>
+
+			<p>Great thoughts, Kabir. Definitely looking forward to Spotly &#8211; I just hope you capitalize the lead &#8220;S&#8221; before you get out of beta! <span class='wp-smiley wp-emoji wp-emoji-smile' title=':)'>:)</span></p>
+<ul class="children">
+			<li class="comment even depth-2 highlander-comment" id="comment-37">
+			<img alt='' src='https://2.gravatar.com/avatar/509c172aca60d03ad6bf52688ed5873a?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://bostinnovation.com' rel='external nofollow' class='url'>Kyle Psaty</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-37" title="">August 10, 2010 at 4:22 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=37#respond' onclick='return addComment.moveForm( "comment-37", "37", "respond", "260429302" )' aria-label='Reply to Kyle Psaty'>Reply</a> </small>
+
+			<p>Great post, Kabir. And thanks for taking the time to talk with BostInnovation about the downfalls of RiotVine, as well. We were pleased to cover every major step for that company, and look forward to doing the same with Spotly. Keep on truckin&#8217; as they say&#8230; </p>
+<p>Kyle</p>
+<p>PS) I must agree with Josh&#8230; lowercase letters at the beginning of a website&#8217;s name may be trendy, but they make for aweful looking copy. Think about your marketing team five years from now &#8212; they&#8217;ll thank you later.</p>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-even depth-1 highlander-comment" id="comment-25">
+			<img alt='' src='https://1.gravatar.com/avatar/dd3cddb81132208624e98cc877c05591?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://mikepk.com' rel='external nofollow' class='url'>Michael Kowalchik</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-25" title="">August 9, 2010 at 3:33 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=25#respond' onclick='return addComment.moveForm( "comment-25", "25", "respond", "260429302" )' aria-label='Reply to Michael Kowalchik'>Reply</a> </small>
+
+			<p>Nice post Kabir, sorry to see RiotVine go. I think having a list of startup-soul-searching questions like this is really valuable for building a company. It&#8217;s important to identify them as early as possibly so that you reality check yourself as you move through the process.</p>
+<p>I&#8217;d add one category to the &#8220;know what your building&#8221; point: know if you&#8217;re just building technology. It&#8217;s easy, especially for engineers, to lose site of the fact that technology != business. One danger sign: when asked why you&#8217;re building something, if the answer is &#8220;cause it&#8217;s cool&#8221; a red flag should go up. <span class='wp-smiley wp-emoji wp-emoji-smile' title=':)'>:)</span> Seems obvious but it took me a while to learn that lesson (the hard way).</p>
+<p>Looking forward to checking out spotly.</p>
+</li><!-- #comment-## -->
+			<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-26">
+			<img alt='' src='https://1.gravatar.com/avatar/1228cd03d7ef5dffe9bcd2771533e842?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.drewvolpe.com' rel='external nofollow' class='url'>Drew Volpe</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-26" title="">August 9, 2010 at 4:00 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=26#respond' onclick='return addComment.moveForm( "comment-26", "26", "respond", "260429302" )' aria-label='Reply to Drew Volpe'>Reply</a> </small>
+
+			<p>Sorry to hear RiotVine is closing.  Much respect to you, Kabir, for giving it a go and then being honest with yourself that it wasn&#8217;t working and was time for the next one.  That&#8217;s a hard thing for an entrepreneur to do.   </p>
+<p>Good luck with Spotly!</p>
+</li><!-- #comment-## -->
+			<li class="comment byuser comment-author-riotvine comment-author-is-site-member bypostauthor odd alt thread-even depth-1 highlander-comment" id="comment-27">
+			<img alt='' src='https://1.gravatar.com/avatar/1f19e998e7ba76f794c75b5b816b88d0?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='https://riotvine.wordpress.com' rel='external nofollow' class='url'>Kabir</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-27" title="">August 9, 2010 at 4:27 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=27#respond' onclick='return addComment.moveForm( "comment-27", "27", "respond", "260429302" )' aria-label='Reply to Kabir'>Reply</a> </small>
+
+			<p>Thanks for the support guys, will definitely pass along spotly invites fairly soon.</p>
+<p>And that&#8217;s a great point, Mike. @Yegg addressed it in this great post: <a href="http://www.gabrielweinberg.com/blog/2010/07/wannabe-entrepreneurs-symptoms-and-cures.html" rel="nofollow">http://www.gabrielweinberg.com/blog/2010/07/wannabe-entrepreneurs-symptoms-and-cures.html</a></p>
+</li><!-- #comment-## -->
+			<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-29">
+			<img alt='' src='https://0.gravatar.com/avatar/fd26df4ed4b6cf350dcd48fe5ba78958?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.sarahmerion.com' rel='external nofollow' class='url'>Sarah Merion</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-29" title="">August 9, 2010 at 6:35 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=29#respond' onclick='return addComment.moveForm( "comment-29", "29", "respond", "260429302" )' aria-label='Reply to Sarah Merion'>Reply</a> </small>
+
+			<p>Great post Kabir.  Talk about getting back on the horse &#8211; looking forward to what Spotly does.</p>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-even depth-1 highlander-comment" id="comment-34">
+			<img alt='' src='https://1.gravatar.com/avatar/a24cea92b469d4df025fb7d3a82b62aa?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.medicalrecords.com' rel='external nofollow' class='url'>ace bhattacharjya</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-34" title="">August 10, 2010 at 3:29 am</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=34#respond' onclick='return addComment.moveForm( "comment-34", "34", "respond", "260429302" )' aria-label='Reply to ace bhattacharjya'>Reply</a> </small>
+
+			<p>Kabir,</p>
+<p>Thoughtful post and it&#8217;s clear that you did a lot of great thinking and work on Riotvine.  But personally- I&#8217;m already excited about spotly.</p>
+<p>Can&#8217;t wait to see what you come up with next.  </p>
+<p>ace</p>
+</li><!-- #comment-## -->
+			<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-57">
+			<img alt='' src='https://1.gravatar.com/avatar/d6b1ad33bd1c8133279daf53d17bfe32?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.redgiantconsulting.com/blog' rel='external nofollow' class='url'>Tamara Gruber</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-57" title="">August 12, 2010 at 1:31 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=57#respond' onclick='return addComment.moveForm( "comment-57", "57", "respond", "260429302" )' aria-label='Reply to Tamara Gruber'>Reply</a> </small>
+
+			<p>Good luck Kabir! Glad to see the lessons learned and looking forward to watching Spotly.</p>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-even depth-1 highlander-comment" id="comment-58">
+			<img alt='' src='https://1.gravatar.com/avatar/779eedc08a1747302bc3021c753f9657?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://BostonTweetUp.com' rel='external nofollow' class='url'>@JoselinMane</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-58" title="">August 12, 2010 at 1:44 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=58#respond' onclick='return addComment.moveForm( "comment-58", "58", "respond", "260429302" )' aria-label='Reply to @JoselinMane'>Reply</a> </small>
+
+			<p>Kabeard,</p>
+<p>Hey bro! It&#8217;s not a failure if you learned from it. </p>
+<p>I think it part of a growing process.  When Edison was asked if he failed when it took over 1,000 tries to invent the light bulb, he said no I just found 1,000 that don&#8217;t work.</p>
+<p>I look forward to your next venture until you light that bulb!</p>
+<p>As you beard partner in crime (before you shaved <span class='wp-smiley wp-emoji wp-emoji-wink' title=';-)'>;-)</span> ), Kenny Rogers would say &#8220;You got to know when to hold &#8217;em, know when to fold &#8217;em<br />
+Know when to walk away, know when to run&#8221;</p>
+</li><!-- #comment-## -->
+			<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-59">
+			<img alt='' src='https://0.gravatar.com/avatar/0e5b40419253b8e9846c6fe129db6ab3?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://jamescoletti.com' rel='external nofollow' class='url'>James Coletti</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-59" title="">August 12, 2010 at 1:48 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=59#respond' onclick='return addComment.moveForm( "comment-59", "59", "respond", "260429302" )' aria-label='Reply to James Coletti'>Reply</a> </small>
+
+			<p>Great read and really valuable information, Kabir. Even though we already chatted about some of these points when I pestered you while you were trying to write it, it&#8217;s nice to revisit some of these points in a clear, concise blog post. It almost serves as a blueprint for starting something new. Thanks for posting this! Go Spotly!</p>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-even depth-1 highlander-comment" id="comment-64">
+			<img alt='' src='https://1.gravatar.com/avatar/d69ddc34b303c8070269c3c926353211?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.goby.com' rel='external nofollow' class='url'>Mark Watkins</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-64" title="">August 13, 2010 at 9:28 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=64#respond' onclick='return addComment.moveForm( "comment-64", "64", "respond", "260429302" )' aria-label='Reply to Mark Watkins'>Reply</a> </small>
+
+			<p>Hi Kabir, </p>
+<p>Sorry to hear that Riotvine is gone, but looking forward to seeing what you do with Spotly. Thanks for sharing your thoughts and experiences, that&#8217;s a tough thing to do, but the community will benefit from them.</p>
+</li><!-- #comment-## -->
+			<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-76">
+			<img alt='' src='https://0.gravatar.com/avatar/631427643e48a1d3c2233dfe1ffc92c2?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.chatterpop.com' rel='external nofollow' class='url'>Adam Webbee</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-76" title="">August 16, 2010 at 7:58 am</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=76#respond' onclick='return addComment.moveForm( "comment-76", "76", "respond", "260429302" )' aria-label='Reply to Adam Webbee'>Reply</a> </small>
+
+			<p>Thanks for the thoughtful and insightful post.<br />
+1. I was wondering if you could go further into your first point: &#8220;how will people discover your business ?&#8221; other than word of mouth, social networking &amp; viral loops, press release, networking with bloggers, what else do you suggest and wish you did more of and more efficientlly? </p>
+<p>And</p>
+<p>2. What did you learn about beta testing and getting users during your early testing period?</p>
+<p>Thanks in advance if you have time to address these questions. Best of luck with the new startup.</p>
+</li><!-- #comment-## -->
+			<li class="comment odd alt thread-even depth-1 highlander-comment" id="comment-95">
+			<img alt='' src='https://0.gravatar.com/avatar/3accd1eaf0f87ea489d3465ba8215971?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://wowize.com' rel='external nofollow' class='url'>Chris Requena</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-95" title="">August 20, 2010 at 11:03 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=95#respond' onclick='return addComment.moveForm( "comment-95", "95", "respond", "260429302" )' aria-label='Reply to Chris Requena'>Reply</a> </small>
+
+			<p>Kabir, Thanks for taking the time to put together a very informative post on your experiences with Riotvine.  I&#8217;m sorry to see it go, but look forward to checking out spotly.  Best of luck with your new venture!</p>
+</li><!-- #comment-## -->
+			<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="comment-154">
+			<img alt='' src='https://0.gravatar.com/avatar/f6a82b7958282c1aa4ce6418c6d58cc9?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite><a href='http://www.happeningmap.com' rel='external nofollow' class='url'>Ehsan</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-154" title="">September 7, 2010 at 8:15 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=154#respond' onclick='return addComment.moveForm( "comment-154", "154", "respond", "260429302" )' aria-label='Reply to Ehsan'>Reply</a> </small>
+
+			<p>Thanks for the advice Kabir.</p>
+</li><!-- #comment-## -->
+			<li class="pingback odd alt thread-even depth-1 highlander-comment" id="comment-159">
+						<cite><a href='http://www.chubbybrain.com/blog/2010/10/startup-failure-post-mortem/' rel='external nofollow' class='url'>25 Best Startup Failure Post-Mortems of All Time | ChubbyBrain Blog</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-159" title="">October 4, 2010 at 3:44 am</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=159#respond' onclick='return addComment.moveForm( "comment-159", "159", "respond", "260429302" )' aria-label='Reply to 25 Best Startup Failure Post-Mortems of All Time | ChubbyBrain Blog'>Reply</a> </small>
+
+			<p>[&#8230;] Title: RiotVine Post-Mortem Company: RiotVine Author: Kabir It’s not about good ideas or bad ideas: it’s about ideas that [&#8230;]</p>
+</li><!-- #comment-## -->
+			<li class="pingback even thread-odd thread-alt depth-1 highlander-comment" id="comment-160">
+						<cite><a href='http://foundersblock.com/featured/25-best-startup-failure-post-mortems/' rel='external nofollow' class='url'>Founders Block &raquo; Blog Archive &raquo; 25 Best Startup Failure Post-Mortems</a></cite> Says:						<br />
+
+			<small class="commentmetadata"><a href="#comment-160" title="">October 7, 2010 at 11:49 pm</a> | <a class='comment-reply-link' href='/2010/08/09/post-mortem/?replytocom=160#respond' onclick='return addComment.moveForm( "comment-160", "160", "respond", "260429302" )' aria-label='Reply to Founders Block &raquo; Blog Archive &raquo; 25 Best Startup Failure Post-Mortems'>Reply</a> </small>
+
+			<p>[&#8230;] Post-Mortem Title: RiotVine Post-Mortem [&#8230;]</p>
+</li><!-- #comment-## -->
+	</ol>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+
+
+						<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2010/08/09/post-mortem/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://riotvine.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="e785b4f749" /><input type="hidden" name="_wp_http_referer" value="/2010/08/09/post-mortem/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=https%3A%2F%2Friotvine.wordpress.com" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+						
+						<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='260429302' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="19ca7df02d" /></p>
+<input type="hidden" name="genseq" value="1434017184" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="230"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+
+	
+	</div>
+
+
+<hr />
+<div id="footer">
+	<p>
+		<a href="https://wordpress.com/themes/kubrick/" title="Learn more about this theme">The Kubrick Theme</a>. <a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com</a>.
+		<br /><a href="https://riotvine.wordpress.com/feed/">Entries (RSS)</a> and <a href="https://riotvine.wordpress.com/comments/feed/">Comments (RSS)</a>.	</p>
+</div>
+</div>
+
+<!-- wpcom_wp_footer -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201524x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-cea21ed2450b2ab9942c98bbb936763d">
+	</div>
+	<div class="grofile-hash-map-76097b7c1e284853ed07bb8b3d22e364">
+	</div>
+	<div class="grofile-hash-map-509c172aca60d03ad6bf52688ed5873a">
+	</div>
+	<div class="grofile-hash-map-dd3cddb81132208624e98cc877c05591">
+	</div>
+	<div class="grofile-hash-map-1228cd03d7ef5dffe9bcd2771533e842">
+	</div>
+	<div class="grofile-hash-map-1f19e998e7ba76f794c75b5b816b88d0">
+	</div>
+	<div class="grofile-hash-map-fd26df4ed4b6cf350dcd48fe5ba78958">
+	</div>
+	<div class="grofile-hash-map-a24cea92b469d4df025fb7d3a82b62aa">
+	</div>
+	<div class="grofile-hash-map-d6b1ad33bd1c8133279daf53d17bfe32">
+	</div>
+	<div class="grofile-hash-map-779eedc08a1747302bc3021c753f9657">
+	</div>
+	<div class="grofile-hash-map-0e5b40419253b8e9846c6fe129db6ab3">
+	</div>
+	<div class="grofile-hash-map-d69ddc34b303c8070269c3c926353211">
+	</div>
+	<div class="grofile-hash-map-631427643e48a1d3c2233dfe1ffc92c2">
+	</div>
+	<div class="grofile-hash-map-3accd1eaf0f87ea489d3465ba8215971">
+	</div>
+	<div class="grofile-hash-map-f6a82b7958282c1aa4ce6418c6d58cc9">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/riotvine.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/riotvine.wordpress.com\/wp-login.php?action=logout&_wpnonce=833ddfae10","homeURL":"https:\/\/riotvine.wordpress.com\/","postID":"260429302","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1424115551j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter your email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="10272880"/>
+			<input type="hidden" name="source" value="https://riotvine.wordpress.com/2010/08/09/post-mortem/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="086e1bec76" /><input type="hidden" name="_wp_http_referer" value="/2010/08/09/post-mortem/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+		<iframe src='https://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1404442431g'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJyNyzEOwjAMheELkRqqStABcRbkWpVN7FgkoeX2lCFDJ5je8H8PFg+YrJAVkAwTvRjJ107yAbbEhrFOlL8Nk+rGwpM8vjtla6j9tQaPdWbLQJqEoSy7/emFit/xEf7TTd30ehr6sR8vx+EsHyz+TOE='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "riotvine.wordpress.com";
+	</script>
+	<script type="text/javascript" src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script><script src="//stats.wp.com/w.js?47" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'10272880','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'10272880','v':'wpcom','tz':'0','user_id':'0','post':'260429302','subd':'riotvine'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWtpP0NsWnVkPS9sL0ViLndld3BNMGlIP3kvLj1XdFFoWDZhekdSY2R5T0xYK2JaUWtKXTdxQmlfQmlZfldLbUw3RFgrcnl6JTVvMTR+NGl3XWRtMU5fMG5EeWhBNEw5Yj9LRTNCal9wdTNtNXxlLzJKU0tdZHJEXyw0P3JTJi5Nb2JOWlpCNzh2ZCtFZz1nb1d0fkVNVXNKVFBaPTd6Yl1bTmZvQnlNdCs1KzFDZTM0TU1qdVJTbURYflQlOGZXXyZtWE1uMytbdl1YLk5SeXpsW2N4dUosK35Rc0IwWiZOSll3TnI3aCY4MnkxMUNyXUhzK3RMLUksOWc0cFl5UlgwNj9RZVhnNl1PKzRCOQ=='}]);
+_stq.push([ 'clickTrackerInit', '10272880', '260429302' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>
+<!--
+	generated in 0.223 seconds
+	69123 bytes batcached for 300 seconds
+-->

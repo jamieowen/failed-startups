@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+
+		<!-- Single A Theme 1.4.4 by Storyware -->
+
+		<title>Couldery Shouldery | @rafer #involvements</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="Couldery Shouldery From the Truman Presidential Library by Marshall Astor We&rsquo;re commencing an &ldquo;orderly shutdown&rdquo; of Lookery. We made the decision as late as possible without forgoing our..." />
+		<meta name="keywords" content="@rafer #involvements" />
+    <meta name="google-site-verification" content="" />
+
+		<!-- Colors -->
+		<meta name="color:Accent" content="#ffffff"/>
+		<meta name="color:Accent Background" content="#777777"/>
+		<meta name="color:Link" content="#6CA516"/>
+		<meta name="color:Title" content="#259096"/>
+
+
+		<!-- Images -->
+		<meta name="image:Logo" content="" />
+
+		<!-- Boolean -->
+		<meta name="if:Show Blog Title" content="1" />
+		<meta name="if:Show Blogs I Follow" content="0" />
+		<meta name="if:Show Group Features" content="0" />
+		<meta name="if:Show Home Link" content="1" />
+		<meta name="if:Show Likes" content="0" />
+		<meta name="if:Show Loading Indicator" content="1" />
+		<meta name="if:Show Recent Tweets" content="1" />
+		<meta name="if:Show Sharing Features" content="1" />
+		<meta name="if:Enable Like" content="1" />
+		<meta name="if:Enable Reblog" content="1" />
+		<meta name="if:Show Social Network Icons" content="0" />
+
+		<!-- Text -->
+		<meta name="text:AboutMe URL" content="" />
+		<meta name="text:Disqus Shortname" content="" />
+		<meta name="text:Dribble URL" content="" />
+		<meta name="text:Email Address" content="" />
+		<meta name="text:Facebook URL" content="" />
+		<meta name="text:Featured Heading" content="Featured Posts" />
+		<meta name="text:Featured Tag" content="" />
+		<meta name="text:Flickr URL" content="" />
+		<meta name="text:Following Heading" content="Who I Follow" />
+		<meta name="text:Foursquare URL" content="" />
+		<meta name="text:GA Tracking ID" content="" />
+		<meta name="text:GitHub URL" content="" />
+		<meta name="text:Google Plus URL" content="" />
+		<meta name="text:Google Web Fonts" content="Droid+Sans::latin|Yanone+Kaffeesatz::latin" />
+		<meta name="text:Group Heading" content="Contributing Authors" />
+		<meta name="text:Font Stack Primary" content="'Droid Sans'" />
+		<meta name="text:Font Stack Secondary" content="'Yanone Kaffeesatz'" />
+		<meta name="text:Instagram URL" content="" />
+		<meta name="text:Lastfm URL" content="" />
+		<meta name="text:Likes Heading" content="Posts I Like" />
+		<meta name="text:LinkedIn URL" content="" />
+		<meta name="text:Pinterest URL" content="" />
+		<meta name="text:Rdio URL" content="" />
+		<meta name="text:Soundcloud URL" content="" />
+		<meta name="text:Spotify URL" content="" />
+		<meta name="text:Sticky Label" content="" />
+		<meta name="text:Sticky Tag" content="" />
+		<meta name="text:Twitter URL" content="" />
+		<meta name="text:Vimeo URL" content="" />
+		<meta name="text:YouTube URL" content="" />
+		<meta name="text:Website URL" content="" />
+		<meta name="text:Google Webmaster Tools" content="" />
+
+		<!-- Theme Developer Options -->
+		<meta name="if:Developer Mode Enabled" content="0" />
+		<meta name="text:Developer Base URL" content="http://singlea.tumblr/core" />
+		<meta name="text:Developer Page Regex" content="" />
+
+		<style type="text/css">figure {margin: 0;}</style>
+<link href="http://33.media.tumblr.com/avatar_2c2bb88522ce_128.png" rel="shortcut icon" />
+		<link href="http://rafer.net/rss" rel="alternate" type="application/rss+xml" />
+    
+    
+    <link href="//static.tumblr.com/vgvvuod/PZanopwq7/theme.css" rel="stylesheet" type="text/css" />
+    
+
+		<style type="text/css">
+
+			
+			.themeloading,
+			.themeloaded.wf-loading {
+				background: url(//static.tumblr.com/41ljbbi/dZjlnvr8e/ajax-loader-1.gif) no-repeat center center;
+			}
+
+			.themeloading body,
+			.themeloaded.wf-loading body {
+				left: -99999px;
+				position: absolute;
+				*overflow: hidden;
+			}
+			
+
+			
+			
+			
+
+			.bF, .bF * { background-color: #777777; }
+			.lF a, a.lF, .tF { color: #ffffff; }
+			.bP { background-color: #6CA516; }
+			.lP a, a.lP, .lS a:hover, a:hover.lS, .like_post a, .blogsmore, #tumblr-tweets .date:hover { color: #6CA516; }
+			.lS a, a.lS, #tumblr-tweets .date { color: #6e6e6e; }
+			.bT { background-color: #259096; }
+			.lT a, a.lT, .like_link a { color: #259096; }
+
+			/* Fonts */
+			body {
+				font-family: 'Droid Sans';
+			}
+
+			.fS {
+  				font-family: 'Yanone Kaffeesatz';
+			}
+
+			
+
+		</style>
+
+		<script type="text/javascript">
+
+			var require = {
+				baseUrl: 'http://singlea.tumblr/core'
+			},
+
+			scaffold = {
+				features: {},
+				page: {
+					isIndex: false,
+					isSearch: false,
+					isTag: false,
+					isMain: false,
+					isPermalink: !false,
+					isPost: !("http://rafer.net/post/168541483/lookeryupdate".length > 0) === false,
+					isStandard: !("http://rafer.net/post/168541483/lookeryupdate".length === 0) === false,
+					isCustom: false
+				}
+			};
+
+			
+
+			
+
+
+			
+
+			scaffold.features['lib/tumbly/views/google/fonts'] = {
+				options: {
+					fontFamilies:								"Droid+Sans::latin|Yanone+Kaffeesatz::latin"
+				},
+				document:										{ wait: false }
+			};
+
+			
+			scaffold.features['lib/tumbly/views/misc/sharing'] = {
+				options: {
+					
+					showShareButton:							true,
+					
+					showLikeButton:								true,
+					showPinItButton:							true,
+					showPlusOneButton:							true,
+					showTweetButton:							true
+				}
+			};
+			
+
+			
+
+			
+
+			
+
+			
+			
+			scaffold.features['lib/tumbly/views/twitter/timeline'] = {
+				options: {
+					el:											"#tumblr-tweets"
+				}
+			};
+			
+			
+
+		</script>
+    
+    
+    <script src="//static.tumblr.com/tkqqpe9/Fjanfww7x/theme.js" type="text/javascript"></script>
+    
+	<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=rafer%26postID=168541483" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://rafer.net/post/168541483/lookeryupdate" title="Couldery Shouldery
+From the Truman Presidential Library by Marshall Astor
+We&rsquo;re commencing an &ldquo;orderly shutdown&rdquo; of Lookery. We made the decision as late as possible without forgoing our responsibilities to the various stakeholders, including and..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="OpenX,Verizon Wireless,Lookery,Online advertising,Mashery" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="Couldery Shouldery" /><meta property="og:url" content="http://rafer.net/post/168541483/lookeryupdate" /><meta property="og:description" content="From the Truman Presidential Library by Marshall Astor
+We&rsquo;re commencing an &ldquo;orderly shutdown&rdquo; of Lookery. We made the decision as late as possible without forgoing our responsibilities to the various..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://farm2.static.flickr.com/1184/704662937_b5b019b63a_m.jpg" /><meta property="og:image" content="http://img.zemanta.com/reblog_e.png?x-id=3e3cbf81-f113-440c-a109-2ccb9e15f0b9" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=rafer&amp;postID=168541483" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=rafer&amp;postID=168541483" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="From the Truman Presidential Library by Marshall Astor
+ We&rsquo;re commencing an &ldquo;orderly shutdown&rdquo; of Lookery. We made the decision as late as possible without forgoing our responsibilities to the various stakeholders, including and especially orderly disengagement from our customers. We&rsquo;re honored by their attention and support and regret that we couldn&rsquo;t have served them even better and for much, much longer.  I left Wouldery out of the post title as it&rsquo;s not relevant. The only information of value is what other choices were readily available to us and which ones I look back on with uncertainty. This is probably not my last public postmortem on the lessons learned, but I owe everyone near-immediate disclosure on the things I can put my finger on now. I&rsquo;m trying to keep a stiff upper lip during this process. Please avert your eyes if I falter. As co-founder and CEO of Lookery, the buck stops with me and no one else. I hope to have the opportunity to work again with each and every one of the dozen people who worked at Lookery since it was founded in July 2007. I hope I did as well by them as they did by Lookery and by me. Please take this post as a recommendation of each and all of them and never hesitate to get in touch with me for details. The huge majority of them went well beyond the call of duty to try and make the company succeed. So did Allen Morgan, the outside Director that represented the Preferred investors. There&rsquo;s no way we could have gotten this far or known how to behave well in the face of adversity without his guidance. He represented a great batch of angel investors on our Board and was one of the main reasons that they were so supportive of the company whenever I asked for anything. In May and June of this year, most of them agreed to participate in an inside round to keep us running through the next series of milestones. I cancelled the transaction a month ago, as I could not be as confident of reaching those milestones as &lsquo;good faith&rsquo; requires. Before delving into our market and product choices, I need to address our fundraising overall. On forming the company, David and I decided to pursue a low-cap model, postponing institutional investor involvement for the foreseeable future. It really sucks to be here right now, but I think it was the right call. Resigning politely at someone else&rsquo;s behest, as I&rsquo;ve done twice before, did not improve any of the stakeholders prospects in either case. Unless Lookery reached an expansion stage, where the sales model was known and repeatable, I&rsquo;m ever-more convinced that raising institutional capital would not have increased our chances of creating value for the existing shareholders. The company would have survived longer, but that&rsquo;s not the goal.  Going low-cap, David and I were careful to create a parsimonious and headcount-spare operation. Operating virtually was not a problem, nor was cutting corners on travel, schwag, and office rent. And, I&rsquo;ll still only work on cloud-hosted businesses. Those parts of Lookery were appropriate, repeatable, and did not bring us to this point. We did invest too much in building market share in the original ad-network business in the first half of 2008, but that error was a symptom rather than the disease. Moving on to our specific coulda-shoulda product and market choices, there are three key moments at which a different and defensible decision might have made all the difference. In chronological order, the sins Lookery committed under my leadership were continuing our dependency on a large partner (March 2008), not knowing when to cut bait on a failing asset (September 2008), and building ahead of the market (December 2008). I and we made any number of other mistakes, but all the rest were correctable. Avoiding even one of the three big errors might have been enough to get us over the hump. I believe David and I started Lookery in July 2007 in the right way and for the right reasons. Based partially on my F8-launch work for LendingClub (a company I&amp;rsquo;m thrilled to know) David and I decided to quickly offer a no-frills banner network for Facebook app publishers. We went from commitment to live service in well under two weeks using AWS and OpenAds, pulled in Rex Dixon almost immediately to manage the publishers and Todd Sawicki soon thereafter as we needed a real ad pro. Both David and I had been keen observers of, and vendors to, the online ad business from the outside, and Todd was the online advertising insider that completed the early team. By March 1, 2008, we were getting pretty close to a billion impressions a week, had moved the ad ops to Atlas, started spec&rsquo;ing Lookery&rsquo;s targeting technology, and closed out a &#36;1M convertible note financing that had been rolling in since October. So far so good on using an ephemeral opportunity to create a company, but this is where I place Coulda-Shoulda #1. We exposed ourselves to a huge single point of failure called Facebook. I&rsquo;ve ranted for years about how bad an idea it is for startups to be mobile-carrier dependent. In retrospect, there is no difference between Verizon Wireless and Facebook in this context. To succeed in that kind of environment requires any number of resources. One of them is clearly significant outside financing, which we&rsquo;d explicitly chosen to do without. We could have and should have used the proceeds of the convertible note to get out from under Facebook&rsquo;s thumb rather to invest further in the Facebook Platform.  Coulda-Shoulda #2. Predictably and reasonably, Facebook acted in their own interest rather than ours. Their Summer 2008 redesign supported Facebook&amp;rsquo;s goals elegantly but hurt our publishers and us in ways that became clear just weeks after we&rsquo;d raised another ~&#36;2M. At this point, we made a mistake endemic to startup people. We followed our natural inclination as problem solvers rather than getting out while the getting was good. If we&rsquo;d sold the ad network the minute we understood that we could no longer make it successful, we would have saved a couple hundred thousand dollars in working capital. Plus, the ad network would have fetched three to five times its low-six figure sale price less than 60 days later. That&rsquo;s a million dollar mistake I made in a very short period of time. I should understand sunk costs better than this.  To give credit where it&rsquo;s due, Todd closed the sale of the Lookery ad network to AdKnowledge in less than two weeks from the moment we decided it had to go. I was off promoting Lookery&rsquo;s targeting system to European demographic data sources and social networks and was not even in the country during those two weeks. Coulda-Shoulda #3. Once we sold the ad network, I fell into a bad old habit &amp;ndash; persuading my team to build something before the market was ready for it. Oren usually saves me from myself in this regard, but I didn&rsquo;t pull him away from Mashery for the day or two necessary to diagnose the problem. Mashery is doing so well that I clearly could have. Lookery&rsquo;s Profile SaaS/universal cookie mechanism is far more economic and effective than cookie exchange systems in a world where ad media and targeting data are separate commodities. That world is a year or more in the future.  This is the fourth blog post that I can find from a Lookery exec in which the primary theme is early = wrong. I felt pretty good when I wrote this one in December 2007 when Lookery was still doing all the right aka solely tactical things; the issue was weighing on me last month as I started to wonder if Lookery&rsquo;s inside round was a bad idea; but it hurts the worst to read this post of Todd Sawicki&rsquo;s from the day we met four months before Lookery was even founded. Within the bounds of confidentiality agreements and showing respect for the many people who treated Lookery and me well over the past two years, I&rsquo;m happy to respond to any questions that arise. My replies may sometimes take a day or two.
+ " /><meta name="twitter:title" content="Couldery Shouldery" /><meta name="twitter:url" content="http://rafer.net/post/168541483/lookeryupdate" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="rafer" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=rafer&amp;postID=168541483&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=rafer&amp;postID=168541483&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=rafer&amp;postID=168541483&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/rafer.net\/post\/168541483\/lookeryupdate","mainEntityOfPage":true,"datePublished":"2009-08-22T00:42:54-04:00","author":"rafer","headline":"Couldery Shouldery","articleBody":"From the Truman Presidential Library by Marshall Astor\nWe\u2019re commencing an \u201corderly shutdown\u201d of Lookery. We made the decision as late as possible without forgoing our responsibilities to the various stakeholders, including and especially orderly disengagement from our customers. We\u2019re honored by their attention and support and regret that we couldn\u2019t have served them even better and for much, much longer.\nI left Wouldery out of the post title as it\u2019s not relevant. The only information of value is what other choices were readily available to us and which ones I look back on with uncertainty. This is probably not my last public postmortem on the lessons learned, but I owe everyone near-immediate disclosure on the things I can put my finger on now. I\u2019m trying to keep a stiff upper lip during this process. Please avert your eyes if I falter.\nAs co-founder and CEO of Lookery, the buck stops with me and no one else. I hope to have the opportunity to work again with each and every one of the dozen people who worked at Lookery since it was founded in July 2007. I hope I did as well by them as they did by Lookery and by me. Please take this post as a recommendation of each and all of them and never hesitate to get in touch with me for details. The huge majority of them went well beyond the call of duty to try and make the company succeed.\nSo did Allen Morgan, the outside Director that represented the Preferred investors. There\u2019s no way we could have gotten this far or known how to behave well in the face of adversity without his guidance. He represented a great batch of angel investors on our Board and was one of the main reasons that they were so supportive of the company whenever I asked for anything. In May and June of this year, most of them agreed to participate in an inside round to keep us running through the next series of milestones. I cancelled the transaction a month ago, as I could not be as confident of reaching those milestones as \u2018good faith\u2019 requires.\nBefore delving into our market and product choices, I need to address our fundraising overall. On forming the company, David and I decided to pursue a low-cap model, postponing institutional investor involvement for the foreseeable future. It really sucks to be here right now, but I think it was the right call. Resigning politely at someone else\u2019s behest, as I\u2019ve done twice before, did not improve any of the stakeholders prospects in either case. Unless Lookery reached an expansion stage, where the sales model was known and repeatable, I\u2019m ever-more convinced that raising institutional capital would not have increased our chances of creating value for the existing shareholders. The company would have survived longer, but that\u2019s not the goal.\nGoing low-cap, David and I were careful to create a parsimonious and headcount-spare operation. Operating virtually was not a problem, nor was cutting corners on travel, schwag, and office rent. And, I\u2019ll still only work on cloud-hosted businesses. Those parts of Lookery were appropriate, repeatable, and did not bring us to this point. We did invest too much in building market share in the original ad-network business in the first half of 2008, but that error was a symptom rather than the disease.\nMoving on to our specific coulda-shoulda product and market choices, there are three key moments at which a different and defensible decision might have made all the difference. In chronological order, the sins Lookery committed under my leadership were continuing our dependency on a large partner (March 2008), not knowing when to cut bait on a failing asset (September 2008), and building ahead of the market (December 2008). I and we made any number of other mistakes, but all the rest were correctable. Avoiding even one of the three big errors might have been enough to get us over the hump.\nI believe David and I started Lookery in July 2007 in the right way and for the right reasons. Based partially on my F8-launch work for LendingClub (a company I\u2019m thrilled to know) David and I decided to quickly offer a no-frills banner network for Facebook app publishers. We went from commitment to live service in well under two weeks using AWS and OpenAds, pulled in Rex Dixon almost immediately to manage the publishers and Todd Sawicki soon thereafter as we needed a real ad pro. Both David and I had been keen observers of, and vendors to, the online ad business from the outside, and Todd was the online advertising insider that completed the early team. By March 1, 2008, we were getting pretty close to a billion impressions a week, had moved the ad ops to Atlas, started spec\u2019ing Lookery\u2019s targeting technology, and closed out a $1M convertible note financing that had been rolling in since October.\nSo far so good on using an ephemeral opportunity to create a company, but this is where I place Coulda-Shoulda #1. We exposed ourselves to a huge single point of failure called Facebook. I\u2019ve ranted for years about how bad an idea it is for startups to be mobile-carrier dependent. In retrospect, there is no difference between Verizon Wireless and Facebook in this context. To succeed in that kind of environment requires any number of resources. One of them is clearly significant outside financing, which we\u2019d explicitly chosen to do without. We could have and should have used the proceeds of the convertible note to get out from under Facebook\u2019s thumb rather to invest further in the Facebook Platform.\nCoulda-Shoulda #2. Predictably and reasonably, Facebook acted in their own interest rather than ours. Their Summer 2008 redesign supported Facebook\u2019s goals elegantly but hurt our publishers and us in ways that became clear just weeks after we\u2019d raised another ~$2M. At this point, we made a mistake endemic to startup people. We followed our natural inclination as problem solvers rather than getting out while the getting was good. If we\u2019d sold the ad network the minute we understood that we could no longer make it successful, we would have saved a couple hundred thousand dollars in working capital. Plus, the ad network would have fetched three to five times its low-six figure sale price less than 60 days later. That\u2019s a million dollar mistake I made in a very short period of time. I should understand sunk costs better than this.\nTo give credit where it\u2019s due, Todd closed the sale of the Lookery ad network to AdKnowledge in less than two weeks from the moment we decided it had to go. I was off promoting Lookery\u2019s targeting system to European demographic data sources and social networks and was not even in the country during those two weeks.\nCoulda-Shoulda #3. Once we sold the ad network, I fell into a bad old habit \u2013 persuading my team to build something before the market was ready for it. Oren usually saves me from myself in this regard, but I didn\u2019t pull him away from Mashery for the day or two necessary to diagnose the problem. Mashery is doing so well that I clearly could have. Lookery\u2019s Profile SaaS\/universal cookie mechanism is far more economic and effective than cookie exchange systems in a world where ad media and targeting data are separate commodities. That world is a year or more in the future.\nThis is the fourth blog post that I can find from a Lookery exec in which the primary theme is early = wrong. I felt pretty good when I wrote this one in December 2007 when Lookery was still doing all the right aka solely tactical things; the issue was weighing on me last month as I started to wonder if Lookery\u2019s inside round was a bad idea; but it hurts the worst to read this post of Todd Sawicki\u2019s from the day we met four months before Lookery was even founded.\nWithin the bounds of confidentiality agreements and showing respect for the many people who treated Lookery and me well over the past two years, I\u2019m happy to respond to any questions that arise. My replies may sometimes take a day or two.","@context":"http:\/\/schema.org"}</script>
+</head>
+	<body>
+		<div id="page-wrapper">
+			<div class="header" id="page-header">
+				<div class="content">
+						<ul class="actions nav clear bS lS">
+							<li class="follow">
+	    						<a href="http://www.tumblr.com/follow/rafer" title="Follow on Tumblr">Follow on Tumblr</a>
+	    					</li>
+	    					
+							<li class="ask">
+								<a href="/ask" title="Ask me anything">Ask me anything</a>
+							</li>
+	    					
+	    					
+							<li class="submit">
+								<a href="/submit" title="Submit">Submit</a>
+							</li>
+	    					
+	    					<li class="feed">
+	    						<a href="http://rafer.net/rss" title="RSS Feed">RSS Feed</a>
+	    					</li>
+	    					<li class="archive">
+	    						<a href="/archive" title="Archive">Archive</a>
+	    					</li>
+	    				</ul>
+				</div>
+			</div>
+    		<div class="section" id="page-content">
+    			<div class="content clear">
+    				<div id="tumblr-features">
+   						<div class="feature hasHome lS" id="tumblr-pages">
+       						<ul class="nav">
+       							
+								<li>
+									<a href="http://rafer.tumblr.com" title="Home">
+										<span>Home</span>
+									</a>
+								</li>
+       							
+       							
+       						</ul>
+       					</div>
+    					<div class="feature tS lP" id="tumblr-bio">
+    						<div class="content bS">
+    							
+    							
+								<h1 class="heading lT fS">
+									<a href="/" title="@rafer #involvements">@rafer #involvements</a>
+								</h1>
+       							
+    							
+    							<div class="description"><div id="links"><ul><br />
+<li><a href="http://addtoany.com/">AddToAny</a><br />
+<li><a href="http://boomset.com/">Boomset</a><br />
+<li><a href="http://Boostable.com/">Boostable</a><br />
+<li><a href="http://burnerapp.com/">Burner</a><br />
+<li><a href="http://clarkandkumar.com/">Clark&Kumar</a><br />
+<li><a href="http://delivr.com/">Delivr</a><br />
+<li><a href="http://doorman.it/">Doorman</a><br />
+<li><a href="http://kitcrm.com">KitCRM</a><br />
+<li><a href="http://http://luxerone.com/">LuxerOne</a><br />
+<li><a href="http://milezero.com">MileZero</a><br />
+<li><a href="http://mindfulmeats.com">Mindful Meats</a><br />
+<li><a href="http://mobiusmotors.com">Mobius Motors</a><br />
+<li><a href="http://www.Onfleet.com">Onfleet</a><br />
+<li><a href="http://www.nanigans.com">Nanigans</a><br />
+<li><a href="http://www.getpangea.com">Pangea</a><br />
+<li><a href="http://www.returnly.com">Returnly</a><br />
+<li><a href="http://theshoppad.com/">ShopPad</a><br />
+<li><a href="http://skimlinks.com/">Skimlinks</a><br />
+<li><a href="http://socialwire.com/">SocialWire</a><br />
+<li><a href="http://technicolor.com/">Technicolor</a><br />
+(<a href="http://bcodex.com/">BCodex</a>, <a href="http://helloenvoy.com/">Envoy</a>, <a href="http://localstoreidentity.com/">Local Store Identity</a>)<br />
+<li><a href="http://Zemanta.com/">Zemanta</a><br />
+</ul></div></div>
+    							
+    						</div>
+    					</div>
+    					<div class="feature tS lP" id="tumblr-search">
+		    	    		
+    	    				<form action="/search" method="get">
+    	    					<label for="q">Search Posts</label>
+    	    					<div class="fieldgroup clear">
+    	    						<input class="field text" id="q" name="q" title="Search" type="text" value="" />
+		    				    	<input class="field button submit" title="Search" type="submit" value="" />
+    	    					</div>
+		    				</form>
+    					</div>
+    					
+    					
+    					
+    					
+						<div class="feature lP" id="tumblr-tweets">
+							<div class="heading bS">
+								<span>Recent Tweets</span>
+								<a href="http://twitter.com/rafer" title="@rafer">@rafer</a>
+							</div>
+						</div>
+						
+    					
+    					
+						
+    				</div>
+    				<div id="tumblr-posts">
+	    				
+	    				
+    					<div class="posts">
+    						<!--wNMfuiLp4L2Mub-->
+    						
+							<div class="post regular" data-id="168541483" data-type="regular" id="post168541483">
+								<div class="data lP">
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									<div class="title fS lT">
+										<a href="http://rafer.net/post/168541483/lookeryupdate" title="Couldery Shouldery">Couldery Shouldery</a>
+									</div>
+									
+									<div class="body hasMarkup"><p class="zemanta-img" style="margin: 1em; float: right; display: block; width: 250px;"><a href="http://www.flickr.com/photos/15965815@N00/704662937"><img src="http://farm2.static.flickr.com/1184/704662937_b5b019b63a_m.jpg" alt="The Buck Stops Here - Harry S. Truman Presiden..." style="border: medium none; display: block;" width="240" height="181"></a>From the Truman Presidential Library by <a href="http://www.flickr.com/photos/15965815@N00/704662937">Marshall Astor</a></p>
+<p>We&rsquo;re commencing an &ldquo;orderly shutdown&rdquo; of <a class="zem_slink" href="http://www.lookery.com/" title="Lookery" rel="homepage">Lookery</a>. We made the decision as late as possible without forgoing our responsibilities to the various stakeholders, including and especially orderly disengagement from our customers. We&rsquo;re honored by their attention and support and regret that we couldn&rsquo;t have served them even better and for much, much longer. <br><br>I left Wouldery out of the post title as it&rsquo;s not relevant. The only information of value is what other choices were readily available to us and which ones I look back on with uncertainty. This is probably not my last public postmortem on the lessons learned, but I owe everyone near-immediate disclosure on the things I can put my finger on now. I&rsquo;m trying to keep a stiff upper lip during this process. Please avert your eyes if I falter.<br><br>As co-founder and CEO of Lookery, the buck stops with me and no one else. I hope to have the opportunity to work again with each and every one of the dozen people who worked at Lookery since it was founded in July 2007. I hope I did as well by them as they did by Lookery and by me. Please take this post as a recommendation of each and all of them and never hesitate to get in touch with me for details. The huge majority of them went well beyond the call of duty to try and make the company succeed.<br><br>So did <a href="http://allensblog.typepad.com/">Allen Morgan</a>, the outside Director that represented the Preferred investors. There&rsquo;s no way we could have gotten this far or known how to behave well in the face of adversity without his guidance. He represented a great batch of <a class="zem_slink" href="http://en.wikipedia.org/wiki/Angel_investor" title="Angel investor" rel="wikipedia">angel investors</a> on our Board and was one of the main reasons that they were so supportive of the company whenever I asked for anything. In May and June of this year, most of them agreed to participate in an inside round to keep us running through the next series of milestones. I cancelled the transaction a month ago, as I could not be as confident of reaching those milestones as &lsquo;good faith&rsquo; requires.<br><br>Before delving into our market and product choices, I need to address our fundraising overall. On forming the company, <a class="zem_slink" href="http://davidcancel.com" title="David Cancel" rel="homepage">David</a> and I decided to pursue a low-cap model, postponing institutional investor involvement for the foreseeable future. It really sucks to be here right now, but I think it was the right call. Resigning politely at someone else&rsquo;s behest, as I&rsquo;ve done twice before, did not improve any of the stakeholders prospects in either case. Unless Lookery reached an expansion stage, where the sales model was known and repeatable, I&rsquo;m ever-more convinced that raising institutional capital would not have increased our chances of creating value for the existing shareholders. The company would have survived longer, but that&rsquo;s not the goal. <br><br>Going low-cap, David and I were careful to create a parsimonious and headcount-spare operation. Operating virtually was not a problem, nor was cutting corners on travel, schwag, and office rent. And, I&rsquo;ll still only work on cloud-hosted businesses. Those parts of Lookery were appropriate, repeatable, and did not bring us to this point. We did invest too much in building market share in the original ad-network business in the first half of 2008, but that error was a symptom rather than the disease.<br><br>Moving on to our specific coulda-shoulda product and market choices, there are three key moments at which a different and defensible decision might have made all the difference. In chronological order, the sins Lookery committed under my leadership were continuing our dependency on a large partner (March 2008), not knowing when to cut bait on a failing asset (September 2008), and building ahead of the market (December 2008). I and we made any number of other mistakes, but all the rest were correctable. Avoiding even one of the three big errors might have been enough to get us over the hump.<br><br>I believe David and I started Lookery in July 2007 in the right way and for the right reasons. Based partially on my <a href="http://www.techcrunch.com/2007/05/24/facebook-launches-facebook-platform-they-are-the-anti-myspace/">F8</a>-launch work for LendingClub (a company I&rsquo;m thrilled to know) David and I decided to quickly offer a no-frills banner network for <a class="zem_slink" href="http://facebook.com" title="Facebook" rel="homepage">Facebook</a> app publishers. We went from commitment to live service in well under two weeks using AWS and <a class="zem_slink" href="http://www.openx.org/" title="OpenX" rel="homepage">OpenAds</a>, pulled in Rex Dixon almost immediately to manage the publishers and <a href="http://sawickipedia.com">Todd Sawicki</a> soon thereafter as we needed a real ad pro. Both David and I had been keen observers of, and vendors to, the online ad business from the outside, and Todd was the online advertising insider that completed the early team. By March 1, 2008, we were getting pretty close to a billion impressions a week, had moved the ad ops to <a href="http://www.atlassolutions.com/">Atlas</a>, started spec&rsquo;ing Lookery&rsquo;s targeting technology, and closed out a $1M <a href="http://blog.lookery.com/2008/08/14/convertible-note-form-for-techcrunch-post-comment/">convertible note financing</a> that had been rolling in since October.<br><br>So far so good on using an ephemeral opportunity to create a company, but this is where I place <b>Coulda-Shoulda #1</b>. We exposed ourselves to a huge single point of failure called Facebook. I&rsquo;ve ranted for years about how bad an idea it is for startups to be mobile-carrier dependent. In retrospect, there is no difference between <a class="zem_slink" href="http://www.verizonwireless.com" title="Verizon Wireless" rel="homepage">Verizon Wireless</a> and Facebook in this context. To succeed in that kind of environment requires any number of resources. One of them is clearly significant outside financing, which we&rsquo;d explicitly chosen to do without. We could have and should have used the proceeds of the convertible note to get out from under Facebook&rsquo;s thumb rather to invest further in the Facebook Platform. <br><br><b>Coulda-Shoulda #2</b>. Predictably and reasonably, Facebook acted in their own interest rather than ours. Their Summer 2008 redesign supported Facebook&rsquo;s goals elegantly but hurt our publishers and us in ways that became clear just weeks after we&rsquo;d raised another ~$2M. At this point, we made a mistake endemic to startup people. We followed our natural inclination as problem solvers rather than getting out while the getting was good. If we&rsquo;d sold the ad network the minute we understood that we could no longer make it successful, we would have saved a couple hundred thousand dollars in working capital. Plus, the ad network would have fetched three to five times its low-six figure sale price less than 60 days later. That&rsquo;s a million dollar mistake I made in a very short period of time. I should understand sunk costs better than this. <br><br>To give credit where it&rsquo;s due, Todd closed the sale of the Lookery ad network to <a class="zem_slink" href="http://en.wikipedia.org/wiki/Ad_serving" title="Ad serving" rel="wikipedia">AdKnowledge</a> in less than two weeks from the moment we decided it had to go. I was off promoting Lookery&rsquo;s targeting system to European demographic data sources and social networks and was not even in the country during those two weeks.<br><br><b>Coulda-Shoulda #3</b>. Once we sold the ad network, I fell into a bad old habit &ndash; persuading my team to build something before the market was ready for it. <a href="http://www.praxicom.com/">Oren</a> usually saves me from myself in this regard, but I didn&rsquo;t pull him away from <a class="zem_slink" href="http://www.mashery.com" title="Mashery" rel="homepage">Mashery</a> for the day or two necessary to diagnose the problem. Mashery is doing so well that I clearly could have. Lookery&rsquo;s Profile SaaS/universal cookie mechanism is far more economic and effective than cookie exchange systems in a world where ad media and targeting data are separate commodities. That world is a year or more in the future. <br><br>This is the fourth blog post that I can find from a Lookery exec in which the primary theme is <b>early = wrong</b>. I felt pretty good when I wrote <a href="http://blog.lookery.com/2007/12/21/aws-simpledb-linda-i-missed-ya/">this one</a> in December 2007 when Lookery was still doing all the right <i>aka</i> solely tactical things; the issue was <a href="http://rafer.tumblr.com/post/137293421/in-an-attempt-to-provide-fresher-search-results">weighing on me</a> last month as I started to wonder if Lookery&rsquo;s inside round was a bad idea; but it hurts the worst to read <a href="http://www.sawickipedia.com/blog/2007/03/14/too-early-wrong/">this post of Todd Sawicki&rsquo;s</a> from the day we met four months before Lookery was even founded.<br><br>Within the bounds of confidentiality agreements and showing respect for the many people who treated Lookery and me well over the past two years, I&rsquo;m happy to respond to any questions that arise. My replies may sometimes take a day or two.</p>
+<p><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/3e3cbf81-f113-440c-a109-2ccb9e15f0b9/" title="Reblog this post [with Zemanta]"><img style="border: medium none; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_e.png?x-id=3e3cbf81-f113-440c-a109-2ccb9e15f0b9" alt="Reblog this post [with Zemanta]"></a></p></div>
+									
+									
+								</div>
+								<div class="type bT">
+									<a>
+										<img alt=" Text" src="//static.tumblr.com/tkqqpe9/p0Zlixw1m/post-types-1.png" height="26" />
+									</a>
+								</div>
+								
+								<div class="meta bS tS lS">
+									<ul class="facts nav clear">
+										<li class="date">
+											<span><a class="permalink" href="http://rafer.net/post/168541483/lookeryupdate" title="Aug 21, 2009 5:42 pm">Aug 21, 2009 5:42 pm</a></span>
+										</li>
+										
+										<li class="notes">
+											<a href="http://rafer.net/post/168541483/lookeryupdate#tumblr_notes" title="66 notes">66 notes</a>
+										</li>
+										
+										
+										
+										<li class="likeit"><div class="like_button" data-post-id="168541483" id="like_button_168541483"><iframe id="like_iframe_168541483" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=1af0c0fbf0ad9b4dc38445698d099106#name=rafer&amp;post_id=168541483&amp;color=white&amp;rk=cFmZkrds" scrolling="no" width="14" height="14" frameborder="0" class="like_toggle" allowTransparency="true"></iframe></div></li>
+										
+										
+										<li class="reblogit"><a href="https://www.tumblr.com/reblog/168541483/cFmZkrds" class="reblog_button"style="display: block;width:14px;height:14px;"><svg width="100%" height="100%" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"><path d="M5.01092527,5.99908429 L16.0088498,5.99908429 L16.136,9.508 L20.836,4.752 L16.136,0.083 L16.1360004,3.01110845 L2.09985349,3.01110845 C1.50585349,3.01110845 0.979248041,3.44726568 0.979248041,4.45007306 L0.979248041,10.9999998 L3.98376463,8.30993634 L3.98376463,6.89801007 C3.98376463,6.20867902 4.71892527,5.99908429 5.01092527,5.99908429 Z"></path><path d="M17.1420002,13.2800293 C17.1420002,13.5720293 17.022957,14.0490723 16.730957,14.0490723 L4.92919922,14.0490723 L4.92919922,11 L0.5,15.806 L4.92919922,20.5103758 L5.00469971,16.9990234 L18.9700928,16.9990234 C19.5640928,16.9990234 19.9453125,16.4010001 19.9453125,15.8060001 L19.9453125,9.5324707 L17.142,12.203"></path></svg></a></li>
+										
+									</ul>
+									
+									<ul class="tags nav clear">
+										
+										<li>
+											<a href="http://rafer.net/tagged/Ad-serving" title="Ad serving">Ad serving</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Advertising" title="Advertising">Advertising</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Business" title="Business">Business</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/David-Cancel" title="David Cancel">David Cancel</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Facebook" title="Facebook">Facebook</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Mashery" title="Mashery">Mashery</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/OpenX" title="OpenX">OpenX</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Verizon-Wireless" title="Verizon Wireless">Verizon Wireless</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Lookery" title="Lookery">Lookery</a>
+										</li>
+										
+										<li>
+											<a href="http://rafer.net/tagged/Online-advertising" title="Online advertising">Online advertising</a>
+										</li>
+										
+									</ul>
+									
+								</div>
+								
+								<div class="meta share bS tS lS">
+									<ul class="networks nav clear">
+										<li class="service facebook">
+											<div class="fb-like" data-href="http://tmblr.co/ZX4JbyA2xqh" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="dark" data-font="arial"></div>
+										</li>
+										<li class="service twitter">
+											<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Couldery Shouldery" data-url="http://tmblr.co/ZX4JbyA2xqh"></a>
+										</li>
+										<li class="service plusone">
+											<div class="g-plusone" data-size="medium" data-href="http://tmblr.co/ZX4JbyA2xqh"></div>
+										</li>
+										
+										
+										
+										<li class="service tumblr">
+											<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:61px; height:20px; background:url('http://platform.tumblr.com/v1/share_2.png') top left no-repeat transparent;"></a>
+										</li>
+										
+									</ul>
+								</div>
+								
+								
+								
+								<div class="notes tS lP" id="tumblr_notes"><ol class="notes"><!-- START NOTES --><li class="note like tumblelog_anthonylawsonbaker without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://anthonylawsonbaker.tumblr.com/" title="ANTHONY BAKER " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_44ab895a3d2a_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://anthonylawsonbaker.tumblr.com/" title="ANTHONY BAKER" rel="nofollow">anthonylawsonbaker</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_lemongrasska without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://lemongrasska.tumblr.com/" title="WWW.ASIA-1.RU " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_e730f1381bac_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://lemongrasska.tumblr.com/" title="WWW.ASIA-1.RU" rel="nofollow">lemongrasska</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_apidexin without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://apidexin.tumblr.com/" title="Untitled"><img src="http://38.media.tumblr.com/avatar_4fed5c47231c_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://apidexin.tumblr.com/post/19954683945"><a rel="nofollow" href="http://apidexin.tumblr.com/" class="tumblelog" title="Untitled">apidexin</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a></span><div class="clear"></div></li><li class="note like tumblelog_design-for-tattoos without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://design-for-tattoos.tumblr.com/" title="Design for Tattoos " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://design-for-tattoos.tumblr.com/" title="Design for Tattoos" rel="nofollow">design-for-tattoos</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_zealotoverjo without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://zealotoverjo.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://zealotoverjo.tumblr.com/" title="Untitled" rel="nofollow">zealotoverjo</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_powered-by-pokredyt with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://powered-by-pokredyt.tumblr.com/" title="Kredyty"><img src="http://31.media.tumblr.com/avatar_3283c7694b86_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://powered-by-pokredyt.tumblr.com/post/14065466434"><a rel="nofollow" href="http://powered-by-pokredyt.tumblr.com/" class="tumblelog" title="Kredyty">powered-by-pokredyt</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://powered-by-pokredyt.tumblr.com/post/14065466434" title="View post">Kredyt Online bez Bik ***</a></blockquote></li><li class="note like tumblelog_last--minute without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://last--minute.tumblr.com/" title="last minute " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_a5da33bfaddb_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://last--minute.tumblr.com/" title="last minute" rel="nofollow">last--minute</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_thelittleworldoffashion without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://thelittleworldoffashion.tumblr.com/" title="The little world of fashion " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_ddf6c8d6ffca_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://thelittleworldoffashion.tumblr.com/" title="The little world of fashion" rel="nofollow">thelittleworldoffashion</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_audit-seo without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://audit-seo.tumblr.com/" title="Motercalo " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_460ecc866879_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://audit-seo.tumblr.com/" title="Motercalo" rel="nofollow">audit-seo</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sexy-niqab-burqa without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sexy-niqab-burqa.tumblr.com/" title="Sexy Burqa &amp; Hot Niqab " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_a07116b7dd68_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sexy-niqab-burqa.tumblr.com/" title="Sexy Burqa &amp; Hot Niqab" rel="nofollow">sexy-niqab-burqa</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sexy-black-hat without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sexy-black-hat.tumblr.com/" title="Sexy Black Hat " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sexy-black-hat.tumblr.com/" title="Sexy Black Hat" rel="nofollow">sexy-black-hat</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_dharmeshparikh without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dharmeshparikh.tumblr.com/" title="BangaloreParty"><img src="http://38.media.tumblr.com/avatar_375b1ae4e2cc_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://dharmeshparikh.tumblr.com/post/172716764"><a rel="nofollow" href="http://dharmeshparikh.tumblr.com/" class="tumblelog" title="BangaloreParty">dharmeshparikh</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a></span><div class="clear"></div></li><li class="note like tumblelog_frankgruber without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://frankgruber.me/" title="Frank Gruber " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_7fc1dac646aa_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://frankgruber.me/" title="Frank Gruber" rel="nofollow">frankgruber</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_tdx without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://tdx.tumblr.com/" title="The Dad Xperience " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_56161c89b8db_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://tdx.tumblr.com/" title="The Dad Xperience" rel="nofollow">tdx</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_heyitsnoah without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://heyitsnoah.tumblr.com/" title="hey, it&#039;s noah " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_92937732c082_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://heyitsnoah.tumblr.com/" title="hey, it&#039;s noah" rel="nofollow">heyitsnoah</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_kylewritescode without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kylewritescode.com/" title="Kyle Bragger " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_8a345d7ff066_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://kylewritescode.com/" title="Kyle Bragger" rel="nofollow">kylewritescode</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_innonate with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://innonate.tumblr.com/" title="innonate"><img src="http://38.media.tumblr.com/avatar_481079a0afef_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://innonate.tumblr.com/post/169122685"><a rel="nofollow" href="http://innonate.tumblr.com/" class="tumblelog" title="innonate">innonate</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://innonate.tumblr.com/post/169122685" title="View post">Put this in the Top Ten Postmortem list I keep in my head.</a></blockquote></li><li class="note reblog tumblelog_ags with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ags.tumblr.com/" title="ags"><img src="http://31.media.tumblr.com/avatar_213730be25b7_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://ags.tumblr.com/post/169058451"><a rel="nofollow" href="http://ags.tumblr.com/" class="tumblelog" title="ags">ags</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://ags.tumblr.com/post/169058451" title="View post">If you&rsquo;re an entrepreneur, a Facebook freak, or involved in online advertising, this is a must read. My favorite part:...</a></blockquote></li><li class="note like tumblelog_misstillytilly without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://misstillytilly.tumblr.com/" title="What&#039;s up buttercup? " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_280791f9ed70_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://misstillytilly.tumblr.com/" title="What&#039;s up buttercup?" rel="nofollow">misstillytilly</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_caterpillarcowboy without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://caterpillarcowboy.com/" title="Caterpillar Cowboy"><img src="http://38.media.tumblr.com/avatar_5adf5de0a27c_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://caterpillarcowboy.com/post/168940202"><a rel="nofollow" href="http://caterpillarcowboy.com/" class="tumblelog" title="Caterpillar Cowboy">caterpillarcowboy</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a></span><div class="clear"></div></li><li class="note like tumblelog_caterpillarcowboy without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://caterpillarcowboy.com/" title="Caterpillar Cowboy " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_5adf5de0a27c_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://caterpillarcowboy.com/" title="Caterpillar Cowboy" rel="nofollow">caterpillarcowboy</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_david-noel without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://david-noel.com/" title="David No&euml;l " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_b55ea50b91c7_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://david-noel.com/" title="David No&euml;l" rel="nofollow">david-noel</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_dfdeshom without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dfdeshom.tumblr.com/" title="Missives"><img src="http://33.media.tumblr.com/avatar_2e5597a3f463_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://dfdeshom.tumblr.com/post/168815487"><a rel="nofollow" href="http://dfdeshom.tumblr.com/" class="tumblelog" title="Missives">dfdeshom</a> reblogged this from <a rel="nofollow" href="http://rafer.net/" class="source_tumblelog" title="@rafer #involvements">rafer</a></span><div class="clear"></div></li><li class="note like tumblelog_joeyinc without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://joeyfernandez.com/" title="Joey Inc " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_4f50747cfce7_16.gif" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://joeyfernandez.com/" title="Joey Inc" rel="nofollow">joeyinc</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_nosnivelling without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nosnivelling.tumblr.com/" title="No Snivelling " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_fe22842e3740_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nosnivelling.tumblr.com/" title="No Snivelling" rel="nofollow">nosnivelling</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_christmasgorilla without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://christmasgorilla.com/" title="christmasgorilla - { chris muscarella } " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_7a44381283c6_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://christmasgorilla.com/" title="christmasgorilla - { chris muscarella }" rel="nofollow">christmasgorilla</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_rafer original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://rafer.net/" title="@rafer #involvements"><img src="http://33.media.tumblr.com/avatar_2c2bb88522ce_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://rafer.net/post/168541483"><a rel="nofollow" href="http://rafer.net/" class="tumblelog" title="@rafer #involvements">rafer</a> posted this</span><div class="clear"></div></li><li class="note more_notes_link_container" style="text-align:center;" id="more_notes_168541483"><a class="more_notes_link" rel="nofollow" href="#" onclick="this.style.display='none';document.getElementById('notes_loading_168541483').style.display = 'block';if(window.ActiveXObject)var tumblrReq=new ActiveXObject('Microsoft.XMLHTTP');else if(window.XMLHttpRequest)var tumblrReq=new XMLHttpRequest();else return false;tumblrReq.onreadystatechange=function(){if(tumblrReq.readyState==4){var notes_html=tumblrReq.responseText.split('<!-- START '+'NOTES -->')[1].split('<!-- END '+'NOTES -->')[0];
+if(window.tumblrNotesLoaded)if(tumblrNotesLoaded(notes_html)==false)return;var more_notes_link=document.getElementById('more_notes_168541483');var notes=more_notes_link.parentNode;notes.removeChild(more_notes_link);notes.innerHTML+=notes_html;if(window.tumblrNotesInserted)tumblrNotesInserted(notes_html);}};tumblrReq.open('GET','/notes/168541483/n1b19APf6?from_c=1250905269',true);tumblrReq.send();return false;">Show more notes</a><span class="notes_loading" id="notes_loading_168541483" style="display:none;">Loading...</span></li><!-- END NOTES --></ol>
+</div>
+								
+								
+								
+							
+							</div>
+		    				
+		    				<!--wNMfuiLp4L2Mub-->
+    					</div>
+	    			</div>
+    			</div>
+    			<div class="col"></div>
+    		</div>
+    		<div class="footer bF lF tF" id="page-footer">
+    			<div class="content">
+    				<ul class="actions nav">
+    					<li class="feed">
+    						<a href="http://rafer.net/rss" title="RSS Feed">RSS Feed</a>
+    					</li>
+    					
+  						<li class="ask">
+  							<a href="/ask" title="Ask me anything">Ask me anything</a>
+  						</li>
+    					
+    					
+  						<li class="submit">
+  							<a href="/submit" title="Submit">Submit</a>
+  						</li>
+    					
+    				</ul>
+    				
+    				<div class="theme">
+    					<a href="http://www.tumblr.com/theme/28638" target="_blank">Single A Theme</a>
+    					<a href="http://singleatheme.tumblr.com/versions">1.4.4</a>
+              <a href="http://storyware.us" target="_blank">By Storyware</a>
+              <span>::</span>
+              <a href="https://creativemarket.com/storyware/125534-Single-A-Premium-Tumblr-Theme#_=_" title="Single A Premium">Get Single A Premium</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+	<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://rafer.net";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/168541483/lookeryupdate?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017188&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcmFmZXIubmV0XC9wb3N0XC8xNjg1NDE0ODNcL2xvb2tlcnl1cGRhdGUiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=LMHDLHBDCM&K=1c1d2d9444724af27d9ac558cdc19e287430d6a1ba271e8c2511d3632fb8fc64&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017188&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvcmFmZXIubmV0XC9wb3N0XC8xNjg1NDE0ODNcL2xvb2tlcnl1cGRhdGUiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=LMHDLHBDCM&K=365ce9e8d5842257146dc00975e0a11984f75c579c1e6d6562f12d8eafa96247&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017188&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3JhZmVyLm5ldFwvcG9zdFwvMTY4NTQxNDgzXC9sb29rZXJ5dXBkYXRlIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiMTY4NTQxNDgzIiwiYmxvZ2lkIjoiMTY3OTYzIiwic291cmNlIjozM31dfQ==&U=EADMMICPJP&K=f7faed2222a27e8edcb13d28d4025e363394e57fa66dd92842486f4211c6c895&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017188&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL3JhZmVyLm5ldFwvcG9zdFwvMTY4NTQxNDgzXC9sb29rZXJ5dXBkYXRlIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiMTY4NTQxNDgzIiwiYmxvZ2lkIjoiMTY3OTYzIiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=EADMMICPJP&K=0f9c8459a2a9bcc150790eed085270daaabbc4105a78f351a325c32c5420f7d4&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:167963,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Frafer.net%2Fpost%2F168541483%2Flookeryupdate&amp;pid=168541483&amp;rk=cFmZkrds&amp;lang=en_US&amp;name=rafer&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_2c2bb88522ce_64.png&amp;title=%40rafer+%23involvements&amp;url=http%3A%2F%2Frafer.net%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Frafer.net%2Fpost%2F168541483%2Flookeryupdate&amp;pid=168541483&amp;rk=cFmZkrds&amp;lang=en_US&amp;name=rafer&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_2c2bb88522ce_64.png&amp;title=%40rafer+%23involvements&amp;url=http%3A%2F%2Frafer.net%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

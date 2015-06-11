@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lte-ie8"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7 lte-ie8"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8 lte-ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="keywords" content="christopher poole, chris poole, 4chan, moot, canvas networks, canvas, drawquest, startups" />
+
+<!--
+===========================================================================
+ ____                     ___       __  __
+/\  _`\  __              /\_ \     /\ \/\ \          __
+\ \ \L\ \\_\  __  _    __\//\ \    \ \ \ \ \    ___ /\_\    ___    ___
+ \ \ ,__//\ \/\ \/'\ /'__`\\ \ \    \ \ \ \ \ /' _ `\/\ \  / __`\/' _ `\
+  \ \ \/ \ \ \/>  <//\  __/ \_\ \_   \ \ \_\ \/\ \/\ \ \ \/\ \L\ \\ \/\ \
+   \ \_\  \ \_\\_/\_\ \____\/\____\   \ \_____\ \_\ \_\ \_\ \____/ \_\ \_\
+    \/_/   \/_///\/_/\/____/\/____/    \/_____/\/_/\/_/\/_/\/___/ \/_/\/_/
+===========================================================================
+Version: 2.2.0
+Effector Theme
+Tumblr: http://tumblr.com/themes/by/pixelunion
+Website: http://www.pixelunion.net
+Support: support@pixelunion.net
+===========================================================================
+-->
+
+	<title>Today my startup failed - Chris Hates Writing</title>
+	
+	<meta name="description" content="Today my startup failed No soft landing, no happy ending&mdash;we simply failed. It&rsquo;s been a long four year journey, full of highs and lows. I am simultaneously incredibly proud, and incredibly..."/>
+	
+
+	<meta name="color:Background" content="#e6ebea"/>
+	<meta name="color:Colored Area Text" content="#fffadc"/>
+	<meta name="color:Colored Area Text Shadow" content="#bf4402"/>
+	<meta name="color:Inside Link" content="#f55b2c"/>
+	<meta name="color:Inside Link Hover" content="#fff7a5"/>
+	<meta name="color:Main Theme" content="#f55b2c"/>
+	<meta name="color:Outside Link" content="#f55b2c"/>
+	<meta name="color:Outside Link Hover" content="#131313"/>
+	<meta name="color:Outside Text" content="#616566"/>
+	<meta name="font:Inside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+	<meta name="font:Inside Text" content="Georgia, serif"/>
+	<meta name="font:Outside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+	<meta name="font:Outside Text" content="Helvetica Neue, Arial, sans-serif"/>
+	<meta name="image:Background" content=""/>
+	<meta name="image:Banner" content=""/>
+	<meta name="image:Large Sidebar Portrait" content=""/>
+	<meta name="image:Logo" content=""/>
+	<meta name="if:Align Top Menu Left" content="0"/>
+	<meta name="if:Automatic Headings" content="0"/>
+	<meta name="if:Blog Title in Page Header" content="0"/>
+	<meta name="if:Blog Title in Sidebar" content="0"/>
+	<meta name="if:Blog Title in Top bar" content="1"/>
+	<meta name="if:Centered Layout" content="1"/>
+	<meta name="if:Collapse Notes" content="1"/>
+	<meta name="if:Content Width 500" content="0"/>
+	<meta name="if:Content Width 600" content="0"/>
+	<meta name="if:Content Width 700" content="1"/>
+	<meta name="if:Custom Photosets" content="1"/>
+	<meta name="if:Fixed Background" content="0"/>
+	<meta name="if:Fixed Top Bar" content="1"/>
+	<meta name="if:Hide Sidebar" content="0"/>
+	<meta name="if:Infinite Scrolling" content="0"/>
+	<meta name="if:Invert" content="0"/>
+	<meta name="if:Invert Top Bar" content="0"/>
+	<meta name="if:Large Social Icons" content="1"/>
+	<meta name="if:Left Sidebar" content="0"/>
+	<meta name="if:Logo in Top bar" content="0"/>
+	<meta name="if:Fullscreen Background" content="0"/>
+	<meta name="if:Pages In Top Bar" content="0"/>
+	<meta name="if:Rounded Post Corners" content="0"/>
+	<meta name="if:Scale Images" content="1"/>
+	<meta name="if:Search Box In Sidebar" content="0"/>
+	<meta name="if:Show About Heading" content="1"/>
+	<meta name="if:Show Blogs I Follow" content="0"/>
+	<meta name="if:Show Description" content="1"/>
+	<meta name="if:Show Group Blog Info" content="0"/>
+	<meta name="if:Show Instagram" content="0"/>
+	<meta name="if:Show Likes" content="0"/>
+	<meta name="if:Show Likes in Sidebar" content="0"/>
+	<meta name="if:Show Pages Heading" content="1"/>
+	<meta name="if:Show Portrait" content="0"/>
+	<meta name="if:Show Random Post Icon" content="0"/>
+	<meta name="if:Show Social Icons Widget" content="0"/>
+	<meta name="if:Show Tweets" content="1"/>
+	<meta name="if:Show Twitter Profile" content="1"/>
+	<meta name="if:Top Menu With Labels" content="0"/>
+	<meta name="text:Behance Username" content=""/>
+	<meta name="text:Cargo URL" content=""/>
+	<meta name="text:Copyright Text" content=""/>
+	<meta name="text:Default Search Text" content="Search"/>
+	<meta name="text:Delicious Username" content=""/>
+	<meta name="text:Disqus Shortname" content=""/>
+	<meta name="text:Dribbble Username" content=""/>
+	<meta name="text:FFFFound Username" content=""/>
+	<meta name="text:Facebook Username" content=""/>
+	<meta name="text:Flickr Username" content=""/>
+	<meta name="text:Forrst Username" content=""/>
+	<meta name="text:Foursquare Username" content=""/>
+	<meta name="text:GetClicky Site ID" content=""/>
+	<meta name="text:Google Analytics Web Property ID" content=""/>
+	<meta name="text:Google URL" content=""/>
+	<meta name="text:Grooveshark Username" content=""/>
+	<meta name="text:Instagram Heading" content="Instagram"/>
+	<meta name="text:Instagram Access Token" content=""/>
+	<meta name="text:Instagram Count Max 4" content="4"/>
+	<meta name="text:Lastfm Username" content=""/>
+	<meta name="text:Liked Posts Heading" content="I Dig These Posts"/>
+	<meta name="text:Linkedin Profile URL" content=""/>
+	<meta name="text:Myspace Friend ID" content=""/>
+	<meta name="text:Num Tweets Max 4" content="4"/>
+	<meta name="text:Pinboard Username" content=""/>
+	<meta name="text:Pinterest Username" content=""/>
+	<meta name="text:Rdio Username" content=""/>
+	<meta name="text:Rows of Followed Avatars" content="3"/>
+	<meta name="text:Skype Username" content=""/>
+	<meta name="text:Social Icons Heading" content="Elsewhere"/>
+	<meta name="text:Soundcloud Username" content=""/>
+	<meta name="text:Tagline" content=""/>
+	<meta name="text:Twitter Heading" content="Twitter"/>
+	<meta name="text:Twitter Username" content=""/>
+	<meta name="text:Vimeo Username" content=""/>
+	<meta name="text:Xbox Live Profile URL" content=""/>
+	<meta name="text:Youtube Username" content=""/>
+	<meta name="text:github Username" content=""/>
+
+
+	<!-- FACEBOOK OPEN GRAPH -->
+	<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+	<meta property="og:site_name" content="Chris Hates Writing"/>
+
+	
+
+		<meta property="og:url" content="http://chrishateswriting.com/post/74083032842/today-my-startup-failed"/>
+		<meta property="og:type" content="article"/>
+
+			
+				
+					<meta property="og:title" content="Today my startup failed"/>
+					<meta property="og:description" content="No soft landing, no happy ending&mdash;we simply failed.
+
+
+ It&rsquo;s been a long four year journey, full of highs and lows. I am simultaneously incredibly proud, and incredibly disappointed.
+
+
+ I&rsquo;m incredibly proud of an amazing team and all that they have accomplished. Our most recent product, DrawQuest, is by all accounts a success. In the past year it&rsquo;s been downloaded more than 1.4 million times, and is currently used by about 25,000 people a day, and 400,000 last month alone. Retention and engagement are great. And yet we still failed.
+
+
+ It may seem surprising that a seemingly successful product could fail, but it happens all the time. Although we arguably found product/market fit, we couldn&rsquo;t quite crack the business side of things.
+
+
+ Building any business is hard, but building a business with a single app offering and half of your runway is especially hard (we created DrawQuest after the failure of our first product, Canvas). I&rsquo;ve come away with new found respect for those companies who excel at monetizing mobile applications. As we approached the end of our runway, it became clear to us that DrawQuest didn&rsquo;t represent a venture-backed opportunity, and even with more time that was unlikely to change.
+
+
+ I&rsquo;m terribly saddened that this may spell the end for our wonderful community, but it&rsquo;s my goal to use what little money we&rsquo;ll have left after the wind-down to keep the service alive for another few months. However as of today the team has gone their separate ways, and our doors are effectively closed.
+
+
+ I&rsquo;m disappointed that I couldn&rsquo;t produce a better outcome for those who supported me the most&mdash;my investors and employees. Few in business will know the pain of what it means to fail as a venture-backed CEO. Not only do you fail your employees, your customers, and yourself, but you also fail your investors&mdash;partners who helped you bring your idea to life.
+
+
+ In my case, I am extremely lucky and grateful to be partners with people who are simply the best. What separates the best investors is not how they help you when you&rsquo;re a rocketship, but when your ship is on fire and you&rsquo;re venting atmosphere. In this case, our investors have demonstrated what sets them apart from the rest&mdash;they&rsquo;ve supported me throughout the ups and downs, and especially the downs.
+
+
+ With that said, life goes on, and the best path forward is not a wounded one, but a more learned and motivated one. I&rsquo;m definitely not itching to start another company any time soon&mdash;it will take time to decompress and reflect on the events of the past four years&mdash;but I hope that if I do some day decide to pursue a new dream, I&rsquo;ll be in a much better position to. After all, I did just receive a highly selective, four-year education for a mere&nbsp;$3.6 million dollars! (I find humor helps as well.)
+
+
+ As for what&rsquo;s next for me, I honestly have no idea. This is the first time in four years I&rsquo;ve been at a crossroads like this.
+
+
+ One thing I&rsquo;ll be doing more of is writing about my experience. Partially because it&rsquo;s therapeutic, but also because if there&rsquo;s a silver lining in all of this (and there is), it&rsquo;s that I can help educate others about a path fraught with hardship, but rewarding nonetheless.
+
+
+ I&rsquo;m also particularly inspired by what Everpix has done by making so much of their story public, and hope many others will follow in their footsteps of radical transparency. I don&rsquo;t wish to glorify my failure, but it&rsquo;s certainly something I&rsquo;d rather embrace than hide behind for the next five years.
+
+
+ On that note, if there are any specific topics you&rsquo;d like me to write about, feel free to submit them via my&nbsp;Ask page. Or if you&rsquo;d like to say hi in general, please don&rsquo;t hesitate to e-mail me at moot@4chan.org. Believe me&mdash;I&rsquo;ll have a lot of free time on my hands these next few weeks.
+
+
+ Last but not least, to my team&mdash;Dave, Eunsan, Alex, Nick, Shaun, and Jim&mdash;I am eternally grateful. To my investors&mdash;Union Square Ventures, Andreessen Horowitz, Lerer Ventures, SV Angel, Founder Collective, Chris Dixon, and Joshua Schachter&mdash;I could not have done this without you.
+
+
+ And to everyone who has supported us over the past few years, from the bottom of my heart: thank you."/>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+			
+
+	
+
+	
+
+
+	<style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_1e24341a122c_128.png" />
+	<link rel="apple-touch-icon" href="http://33.media.tumblr.com/avatar_1e24341a122c_128.png" />
+	<link rel="alternate" type="application/rss+xml" href="http://chrishateswriting.com/rss"/>
+	<link rel="stylesheet" href="http://static.tumblr.com/4iuvjvw/LoJmmu1z4/style.min.css" media="screen"/>
+	<link rel="stylesheet" href="http://static.tumblr.com/xgwqnql/MF5lbpkr4/jquery.fancybox-1.3.1.css" media="screen"/>
+
+	<script type="text/javascript">
+		tumblrUsername = 'moot';
+		searchValue = "Search";
+		themeColor = "#f55b2c";
+		
+		
+		contentWidth = 700;
+		customPhotosets = true;
+		
+		
+	
+		twitterUsername = "moot";
+		fixedBar = true;
+	
+	var showInstagram = false;
+	
+	var accessToken = '';
+	var instaCount = '4';
+	
+		
+		isPermalink = true;
+		photosets = {};
+	</script>
+	<style type="text/css">
+		 body { font-family:Helvetica Neue, Arial, sans-serif; color:#616566; background-color:#e6ebea; }
+		.blog-title, #sidebar h1, #sidebar h2, #sidebar h3, #footer h1, #footer h2, #footer h3  { font-family:Helvetica Neue, Arial, sans-serif; }
+		.copy { font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; }
+		.copy h1, .copy h2, .copy h3, .copy h4, .copy h5, .copy h6, .auto-headings .copy p:first-child strong:first-child, #notes h2, #disqus h2, .speaker {font-family:Helvetica Neue, Arial, sans-serif;}
+
+		#tabs #tabs-nav h2 span.active { background:#e6ebea; }
+
+		
+
+		
+
+		/* Main Theme Color */
+		.colored-panel, .type-answer .user-question, .pages a:hover, .invert .fixed .pages a:hover, .invert .pinned .pages a:hover, .invert #sidebar .pages a:hover, .more-likes:hover, .invert-topbar .fixed .pages a:hover, .like_link a:hover, .type-photoset .navi a:hover, #pagination .nextprev a:hover, #group-members li span, #followed li span { background-color:#f55b2c; }
+		.corners .tl { border-left-color:#f55b2c; }
+		.corners .tr { border-right-color:#f55b2c; }
+		.corners .bl, .corners .br { border-bottom-color:#f55b2c; }
+		#group-members li span:after, #followed li span:after { border-top-color:#f55b2c; }
+
+		/* Outside Link Color */
+		a, #footer-end a:hover { color:#f55b2c; }
+
+		/* Outside Link Hover */
+		a:hover { color:#131313; }
+
+		/* Inside Link Color */
+		.copy a, .copy li:before, .type-chat .speaker, .no-touch #notes-toggle:hover, .touch #notes-toggle.up, ol.notes a, #disqus a { color:#f55b2c; }
+
+		.copy a:hover, ol.notes a:hover { border-color:#f55b2c; }
+		.copy .post-title a:hover, .copy a:hover, ol.notes a:hover, #dsq-comments a:hover, #dsq-options a:hover { background-color:#fff7a5; }
+
+		.no-touch #notes-toggle:hover .icon, .touch #notes-toggle.up .icon, .photo-btns a:hover, #back-to-top .icon { background-color:#f55b2c; }
+
+		/* Colored Area */
+		.colored-panel, .colored-panel a, .colored-panel a:hover, .colored-panel .user-question, .pages a:hover, .invert-topbar .fixed .pages a:hover, .invert #sidebar .pages a:hover, .more-likes:hover, .like_link a:hover, #pagination .nextprev a:hover, #group-members li span, #followed li span { color:#fffadc; }
+
+		/* Colored Area Text Shadow */
+		.type-quote .quote-text,.type-audio .audio-meta,.type-answer .user-question,.pages a:hover, .more-likes:hover, .like_link a:hover, #pagination .nextprev a:hover, #group-members li span, #followed li span { text-shadow:1px 1px #bf4402; }
+
+		ol.notes li.tumblelog_moot { background-color:#fbfbfb; }
+		ol.notes li.tumblelog_moot .action { font-weight:bold; }
+		#page, .inner { margin:0 auto; }
+
+		iframe.twitter-follow-button { min-width: 126px; min-height: 28px; }
+
+p { font-size: 11pt; }
+
+li { font-size: 11pt;
+     padding-top: 8px; }
+
+.copy li:before { color: black; }
+	</style>
+
+	<script src="http://static.tumblr.com/hugxd2w/6Cpm8gh20/modernizr.2.6.1.min.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47382367-1', 'chrishateswriting.com');
+  ga('send', 'pageview');
+
+</script>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=moot%26postID=74083032842" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://chrishateswriting.com/post/74083032842/today-my-startup-failed" title="Today my startup failed
+No soft landing, no happy ending&mdash;we simply failed.
+It&rsquo;s been a long four year journey, full of highs and lows. I am simultaneously incredibly proud, and incredibly disappointed.
+I&rsquo;m incredibly proud of an amazing team and all..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="startups,failure,moot,drawquest,canvas" />
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="No soft landing, no happy ending&mdash;we simply failed.
+ It&amp;rsquo;s been a long four year journey, full of highs and lows. I am simultaneously incredibly proud, and incredibly disappointed.
+ I&amp;rsquo;m incredibly proud of an amazing team and all that they have accomplished. Our most recent product, DrawQuest, is by all accounts a success. In the past year it&amp;rsquo;s been downloaded more than 1.4 million times, and is currently used by about 25,000 people a day, and 400,000 last month alone. Retention and engagement are great. And yet we still failed.
+ It may seem surprising that a seemingly successful product could fail, but it happens all the time. Although we arguably found product/market fit, we couldn&amp;rsquo;t quite crack the business side of things.
+ Building any business is hard, but building a business with a single app offering and half of your runway is especially hard (we created DrawQuest after the failure of our first product, Canvas). I&amp;rsquo;ve come away with new found respect for those companies who excel at monetizing mobile applications. As we approached the end of our runway, it became clear to us that DrawQuest didn&amp;rsquo;t represent a venture-backed opportunity, and even with more time that was unlikely to change.
+ I&amp;rsquo;m terribly saddened that this may spell the end for our wonderful community, but it&amp;rsquo;s my goal to use what little money we&amp;rsquo;ll have left after the wind-down to keep the service alive for another few months. However as of today the team has gone their separate ways, and our doors are effectively closed.
+ I&amp;rsquo;m disappointed that I couldn&amp;rsquo;t produce a better outcome for those who supported me the most&mdash;my investors and employees. Few in business will know the pain of what it means to fail as a venture-backed CEO. Not only do you fail your employees, your customers, and yourself, but you also fail your investors&mdash;partners who helped you bring your idea to life.
+ In my case, I am extremely lucky and grateful to be partners with people who are simply the best. What separates the best investors is not how they help you when you&amp;rsquo;re a rocketship, but when your ship is on fire and you&amp;rsquo;re venting atmosphere. In this case, our investors have demonstrated what sets them apart from the rest&mdash;they&amp;rsquo;ve supported me throughout the ups and downs, and especially the downs.
+ With that said, life goes on, and the best path forward is not a wounded one, but a more learned and motivated one. I&amp;rsquo;m definitely not itching to start another company any time soon&mdash;it will take time to decompress and reflect on the events of the past four years&mdash;but I hope that if I do some day decide to pursue a new dream, I&amp;rsquo;ll be in a much better position to. After all, I did just receive a highly selective, four-year education for a mere&nbsp;&#36;3.6 million dollars! (I find humor helps as well.)
+ As for what&amp;rsquo;s next for me, I honestly have no idea. This is the first time in four years I&amp;rsquo;ve been at a crossroads like this.
+ One thing I&amp;rsquo;ll be doing more of is writing about my experience. Partially because it&amp;rsquo;s therapeutic, but also because if there&amp;rsquo;s a silver lining in all of this (and there is), it&amp;rsquo;s that I can help educate others about a path fraught with hardship, but rewarding nonetheless.
+ I&amp;rsquo;m also particularly inspired by what Everpix has done by making so much of their story public, and hope many others will follow in their footsteps of radical transparency. I don&amp;rsquo;t wish to glorify my failure, but it&amp;rsquo;s certainly something I&amp;rsquo;d rather embrace than hide behind for the next five years.
+ On that note, if there are any specific topics you&amp;rsquo;d like me to write about, feel free to submit them via my&nbsp;Ask page. Or if you&amp;rsquo;d like to say hi in general, please don&amp;rsquo;t hesitate to e-mail me at moot@4chan.org. Believe me&mdash;I&amp;rsquo;ll have a lot of free time on my hands these next few weeks.
+ Last but not least, to my team&mdash;Dave, Eunsan, Alex, Nick, Shaun, and Jim&mdash;I am eternally grateful. To my investors&mdash;Union Square Ventures, Andreessen Horowitz, Lerer Ventures, SV Angel, Founder Collective, Chris Dixon, and Joshua Schachter&mdash;I could not have done this without you.
+ And to everyone who has supported us over the past few years, from the bottom of my heart: thank you." /><meta name="twitter:title" content="Today my startup failed" /><meta name="twitter:url" content="http://chrishateswriting.com/post/74083032842/today-my-startup-failed" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="moot" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=moot&amp;postID=74083032842&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=moot&amp;postID=74083032842&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=moot&amp;postID=74083032842&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/chrishateswriting.com\/post\/74083032842\/today-my-startup-failed","mainEntityOfPage":true,"datePublished":"2014-01-21T19:12:00-05:00","author":"moot","headline":"Today my startup failed","articleBody":"No soft landing, no happy ending\u2014we simply failed.\nIt\u2019s been a long four year journey, full of highs and lows. I am simultaneously incredibly proud, and incredibly disappointed.\nI\u2019m incredibly proud of an amazing team and all that they have accomplished. Our most recent product, DrawQuest, is by all accounts a success. In the past year it\u2019s been downloaded more than 1.4 million times, and is currently used by about 25,000 people a day, and 400,000 last month alone. Retention and engagement are great. And yet we still failed.\nIt may seem surprising that a seemingly successful product could fail, but it happens all the time. Although we arguably found product\/market fit, we couldn\u2019t quite crack the business side of things.\nBuilding any business is hard, but building a business with a single app offering and half of your runway is especially hard (we created DrawQuest after the failure of our first product, Canvas). I\u2019ve come away with new found respect for those companies who excel at monetizing mobile applications. As we approached the end of our runway, it became clear to us that DrawQuest didn\u2019t represent a venture-backed opportunity, and even with more time that was unlikely to change.\nI\u2019m terribly saddened that this may spell the end for our wonderful community, but it\u2019s my goal to use what little money we\u2019ll have left after the wind-down to keep the service alive for another few months. However as of today the team has gone their separate ways, and our doors are effectively closed.\nI\u2019m disappointed that I couldn\u2019t produce a better outcome for those who supported me the most\u2014my investors and employees. Few in business will know the pain of what it means to fail as a venture-backed CEO. Not only do you fail your employees, your customers, and yourself, but you also fail your investors\u2014partners who helped you bring your idea to life.\nIn my case, I am extremely lucky and grateful to be partners with people who are simply the best. What separates the best investors is not how they help you when you\u2019re a rocketship, but when your ship is on fire and you\u2019re venting atmosphere. In this case, our investors have demonstrated what sets them apart from the rest\u2014they\u2019ve supported me throughout the ups and downs, and especially the downs.\nWith that said, life goes on, and the best path forward is not a wounded one, but a more learned and motivated one. I\u2019m definitely not itching to start another company any time soon\u2014it will take time to decompress and reflect on the events of the past four years\u2014but I hope that if I do some day decide to pursue a new dream, I\u2019ll be in a much better position to. After all, I did just receive a highly selective, four-year education for a mere $3.6 million dollars! (I find humor helps as well.)\nAs for what\u2019s next for me, I honestly have no idea. This is the first time in four years I\u2019ve been at a crossroads like this.\nOne thing I\u2019ll be doing more of is writing about my experience. Partially because it\u2019s therapeutic, but also because if there\u2019s a silver lining in all of this (and there is), it\u2019s that I can help educate others about a path fraught with hardship, but rewarding nonetheless.\nI\u2019m also particularly inspired by what Everpix has done by making so much of their story public, and hope many others will follow in their footsteps of radical transparency. I don\u2019t wish to glorify my failure, but it\u2019s certainly something I\u2019d rather embrace than hide behind for the next five years.\nOn that note, if there are any specific topics you\u2019d like me to write about, feel free to submit them via my Ask page. Or if you\u2019d like to say hi in general, please don\u2019t hesitate to e-mail me at moot@4chan.org. Believe me\u2014I\u2019ll have a lot of free time on my hands these next few weeks.\nLast but not least, to my team\u2014Dave, Eunsan, Alex, Nick, Shaun, and Jim\u2014I am eternally grateful. To my investors\u2014Union Square Ventures, Andreessen Horowitz, Lerer Ventures, SV Angel, Founder Collective, Chris Dixon, and Joshua Schachter\u2014I could not have done this without you.\nAnd to everyone who has supported us over the past few years, from the bottom of my heart: thank you.","@context":"http:\/\/schema.org"}</script>
+</head>
+<body class="content-700 menu-labels round-corners lg-icons scale-images singular ">
+	<div id="header" class="pinned">
+		<div class="inner">
+			
+
+			
+			<h1 class="blog-title"><a href="/">Chris Hates Writing</a></h1>
+			
+
+			
+
+			
+			<div id="search">
+				<form id="search-form" method="get" action="/search">
+					<input type="text" name="q" value="Search" />
+				</form>
+			</div>
+			
+			<ul class="menu">
+				<li><a class="random" href="/random"><span class="icon"></span><span class="label">Random</span></a></li>
+				<li><a class="archives" href="/archive"><span class="icon"></span><span class="label">Archive</span></a></li>
+				<li><a class="rss" href="http://chrishateswriting.com/rss"><span class="icon"></span><span class="label">RSS</span></a></li>
+				
+				
+			</ul>
+		</div><!-- .inner -->
+		<div class="shadow"><span></span></div>
+	</div><!-- /#header -->
+
+	<!-- PAGE -->
+	<div id="page" class="right-sidebar clearfix">
+		
+		
+		
+		
+		<div id="content">
+
+			<!-- BEGIN POSTS -->
+			
+			<article id="post-74083032842" class="post type-text tag_canvas+networks tag_canvas tag_drawquest tag_moot tag_startups tag_failure ">
+
+				
+				<div class="post-panel">
+					<div class="copy">
+						<h2 class="post-title">Today my startup failed</h2>
+						<p>No soft landing, no happy ending&mdash;<a href="http://techcrunch.com/2014/01/21/when-goods-not-good-enough/" title="With Traction But Out Of Cash, 4chan Founder Kills Off Canvas/DrawQuest" target="_blank">we simply failed</a>.</p>
+<p>It&rsquo;s been a long four year journey, full of highs and lows. I am simultaneously incredibly proud, and incredibly disappointed.</p>
+<p>I&rsquo;m incredibly proud of an amazing team and all that they have accomplished. Our most recent product, <a href="http://drawquest.com" title="DrawQuest" target="_blank">DrawQuest</a>, is by all accounts a success. In the past year it&rsquo;s been downloaded more than 1.4 million times, and is currently used by about 25,000 people a day, and 400,000 last month alone. Retention and engagement are great. And yet we still failed.</p>
+<p>It may seem surprising that a seemingly successful product could fail, but it happens all the time. Although we arguably found product/market fit, we couldn&rsquo;t quite crack the business side of things.</p>
+<p>Building any business is hard, but building a business with a single app offering and half of your runway is especially hard (we created DrawQuest after the failure of our first product, <a href="http://canv.as" title="Canvas" target="_blank">Canvas</a>). I&rsquo;ve come away with new found respect for those companies who excel at monetizing mobile applications. As we approached the end of our runway, it became clear to us that DrawQuest didn&rsquo;t represent a venture-backed opportunity, and even with more time that was unlikely to change.</p>
+<p>I&rsquo;m terribly saddened that this may spell the end for our wonderful community, but it&rsquo;s my goal to use what little money we&rsquo;ll have left after the wind-down to keep the service alive for another few months. However as of today the team has gone their separate ways, and our doors are effectively closed.</p>
+<p>I&rsquo;m disappointed that I couldn&rsquo;t produce a better outcome for those who supported me the most&mdash;my investors and employees. Few in business will know the pain of what it means to fail as a venture-backed CEO. Not only do you fail your employees, your customers, and yourself, but you also fail your investors&mdash;partners who helped you bring your idea to life.</p>
+<p>In my case, I am extremely lucky and grateful to be partners with people who are simply the best. What separates the best investors is not how they help you when you&rsquo;re a rocketship, but when your ship is on fire and you&rsquo;re venting atmosphere. In this case, our investors have demonstrated what sets them apart from the rest&mdash;they&rsquo;ve supported me throughout the ups and downs, and <em>especially</em> the downs.</p>
+<p>With that said, life goes on, and the best path forward is not a wounded one, but a more learned and motivated one. I&rsquo;m definitely not itching to start another company any time soon&mdash;it will take time to decompress and reflect on the events of the past four years&mdash;but I hope that if I do some day decide to pursue a new dream, I&rsquo;ll be in a much better position to. After all, I did just receive a highly selective, four-year education for a <em>mere</em>&nbsp;$3.6 million dollars! (I find humor helps as well.)</p>
+<p>As for what&rsquo;s next for me, I honestly have no idea. This is the first time in four years I&rsquo;ve been at a crossroads like this.</p>
+<p>One thing I&rsquo;ll be doing more of is writing about my experience. Partially because it&rsquo;s therapeutic, but also because if there&rsquo;s a silver lining in all of this (and there is), it&rsquo;s that I can help educate others about a path fraught with hardship, but rewarding nonetheless.</p>
+<p>I&rsquo;m also particularly inspired by what <a href="http://www.theverge.com/2013/11/5/5039216/everpix-life-and-death-inside-the-worlds-best-photo-startup" target="_blank">Everpix</a> has done by making so much of their story <a href="https://github.com/everpix/Everpix-Intelligence" target="_blank">public</a>, and hope many others will follow in their footsteps of radical transparency. I don&rsquo;t wish to glorify my failure, but it&rsquo;s certainly something I&rsquo;d rather embrace than hide behind for the next five years.</p>
+<p>On that note, if there are any specific topics you&rsquo;d like me to write about, feel free to submit them via my&nbsp;<a href="http://chrishateswriting.com/ask" target="_blank">Ask page</a>. Or if you&rsquo;d like to say hi in general, please don&rsquo;t hesitate to e-mail me at <a href="mailto:moot@4chan.org" target="_blank">moot@4chan.org</a>. Believe me&mdash;I&rsquo;ll have <em>a lot</em> of free time on my hands these next few weeks.</p>
+<p>Last but not least, to my team&mdash;Dave, Eunsan, Alex, Nick, Shaun, and Jim&mdash;I am eternally grateful. To my investors&mdash;Union Square Ventures, Andreessen Horowitz, Lerer Ventures, SV Angel, Founder Collective, Chris Dixon, and Joshua Schachter&mdash;I could not have done this without you.</p>
+<p>And to everyone who has supported us over the past few years, from the bottom of my heart: <strong>thank you</strong>.</p>
+					</div>
+					
+
+					
+
+						
+
+								
+
+									
+
+										
+
+											
+
+												
+
+													
+
+															
+															
+															<div class="meta">
+																<ul class="meta-list">
+																	
+																	<li class="tags">
+																		<ul class="tag-list">
+																			
+																			<li><a href="http://chrishateswriting.com/tagged/canvas-networks">#canvas networks</a></li>
+																			
+																			<li><a href="http://chrishateswriting.com/tagged/canvas">#canvas</a></li>
+																			
+																			<li><a href="http://chrishateswriting.com/tagged/drawquest">#drawquest</a></li>
+																			
+																			<li><a href="http://chrishateswriting.com/tagged/moot">#moot</a></li>
+																			
+																			<li><a href="http://chrishateswriting.com/tagged/startups">#startups</a></li>
+																			
+																			<li><a href="http://chrishateswriting.com/tagged/failure">#failure</a></li>
+																			
+																		</ul>
+																	</li>
+																	
+																	
+																	<li class="date"><a href="http://chrishateswriting.com/post/74083032842/today-my-startup-failed" title="Tue. January 21, 2014 @ 2:12 pm"><span class="icon"></span>1 year ago</a></li>
+																	<li class="notes"><a href="http://chrishateswriting.com/post/74083032842/today-my-startup-failed#notes" title="Notes"><span class="icon"></span>605</a></li>
+																	
+																	<li class="permalink"><a href="http://chrishateswriting.com/post/74083032842/today-my-startup-failed" title="Permalink"><span class="icon"></span>Permalink</a></li>
+																</ul><!--/.meta-list -->
+																<div class="share">
+																	<span class="toggle">Share</span>
+																	<div class="widget">
+																		<div class="short-link">
+																			<p>Short URL<br>
+																				<input type="text" readonly="" value="http://tmblr.co/ZsbOcw14-iLyA"></p>
+																		</div>
+																		<div class="share-links"><a target="_new" href="https://twitter.com/intent/tweet?url=http://tmblr.co/ZsbOcw14-iLyA" class="share-twitter">Twitter</a><a target="_new" href="https://www.facebook.com/sharer.php?u=http://chrishateswriting.com/post/74083032842/today-my-startup-failed&t=Today my startup failed" class="share-facebook">Facebook</a><a target="_new" href="http://pinterest.com/pin/create/button/?url=http://chrishateswriting.com/post/74083032842/today-my-startup-failed&media=" class="share-pinterest">Pinterest</a><a target="_new" href="https://plus.google.com/share?url=http://chrishateswriting.com/post/74083032842/today-my-startup-failed" class="share-google">Google+</a></div>
+																	</div>
+																</div>
+															</div><!-- /.meta -->
+															
+
+															
+															
+															<div id="notes">
+																<h2>605 Notes<span class="sep">/</span>
+																	<a id="notes-toggle" href="#"><span class="label">Hide</span><span class="icon up"></span></a></h2>
+																<ol class="notes"><!-- START NOTES --><li class="note like tumblelog_dark999999 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dark999999.tumblr.com/" title="Call Me Dark " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_6fb0e91efd36_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://dark999999.tumblr.com/" title="Call Me Dark" rel="nofollow">dark999999</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_jakubfarobek without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://jakubfarobek.tumblr.com/" title="untitled " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://jakubfarobek.tumblr.com/" title="untitled" rel="nofollow">jakubfarobek</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_nawmaw without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nawmaw.tumblr.com/" title="sheer genius in its simplicity " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_022829b91408_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nawmaw.tumblr.com/" title="sheer genius in its simplicity" rel="nofollow">nawmaw</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_cormens without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://cormens.tumblr.com/" title="noble of heartmind " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_1baa061e694f_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://cormens.tumblr.com/" title="noble of heartmind" rel="nofollow">cormens</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_kaputtgedacht without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kaputtgedacht.tumblr.com/" title="◢ I matter ◤ " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_cf6aec66d5b0_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://kaputtgedacht.tumblr.com/" title="◢ I matter ◤" rel="nofollow">kaputtgedacht</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_nef without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nef.tumblr.com/" title="Nef Rossano " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_d54a40918e04_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nef.tumblr.com/" title="Nef Rossano" rel="nofollow">nef</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_dtrum without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dtrum.tumblr.com/" title="dtrum " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_0e1d9acb5418_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://dtrum.tumblr.com/" title="dtrum" rel="nofollow">dtrum</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_journeeman without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://journeeman.tumblr.com/" title=" " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://journeeman.tumblr.com/" title="" rel="nofollow">journeeman</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_imosno without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://imosno.tumblr.com/" title="Ehhh " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_4ba91799c19a_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://imosno.tumblr.com/" title="Ehhh" rel="nofollow">imosno</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_headphoneactor-chan without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://headphoneactor-chan.tumblr.com/" title="Crying because HxH " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_3ccb3b47b7f4_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://headphoneactor-chan.tumblr.com/" title="Crying because HxH" rel="nofollow">headphoneactor-chan</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_lee without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://leerubenstein.com/" title="Lee Rubenstein " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_f5070f5137ee_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://leerubenstein.com/" title="Lee Rubenstein" rel="nofollow">lee</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_unorthadoxdreams without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://unorthadoxdreams.tumblr.com/" title="Unorthadox dreams " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_b46ed0c4fa44_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://unorthadoxdreams.tumblr.com/" title="Unorthadox dreams" rel="nofollow">unorthadoxdreams</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_daydreamersarewelcome without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://daydreamersarewelcome.tumblr.com/" title="Daydreamers Welcome " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_41f51dabdaf6_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://daydreamersarewelcome.tumblr.com/" title="Daydreamers Welcome" rel="nofollow">daydreamersarewelcome</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_the-cold-corndog without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://the-cold-corndog.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_624eb224438c_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://the-cold-corndog.tumblr.com/" title="Untitled" rel="nofollow">the-cold-corndog</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_dirtyvinylinc with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dirtyvinylinc.tumblr.com/" title="Dirty Vinyl Co."><img src="http://33.media.tumblr.com/avatar_f1cea869c361_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://dirtyvinylinc.tumblr.com/post/94576800558"><a rel="nofollow" href="http://dirtyvinylinc.tumblr.com/" class="tumblelog" title="Dirty Vinyl Co.">dirtyvinylinc</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://dirtyvinylinc.tumblr.com/post/94576800558" title="View post">Great post. Highly recommend reading it.</a></blockquote></li><li class="note like tumblelog_jetsetfarryn without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://www.jetsetfarryn.com/" title="Jetset Farryn " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_8e89eb2c30f1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://www.jetsetfarryn.com/" title="Jetset Farryn" rel="nofollow">jetsetfarryn</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_r4ffie without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://r4ffie.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_6039f3a6f863_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://r4ffie.tumblr.com/" title="Untitled" rel="nofollow">r4ffie</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_dieromantikundweltschmerz without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dieromantikundweltschmerz.tumblr.com/" title="Weltschmerz. " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_8472851d41dc_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://dieromantikundweltschmerz.tumblr.com/" title="Weltschmerz." rel="nofollow">dieromantikundweltschmerz</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_milkyscent without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://milkyscent.tumblr.com/" title="Milk Enthusiast " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_b7e20f6da4ef_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://milkyscent.tumblr.com/" title="Milk Enthusiast" rel="nofollow">milkyscent</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_ki11deer with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ki11deer.tumblr.com/" title="KillDeer"><img src="http://38.media.tumblr.com/avatar_504117636d25_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://ki11deer.tumblr.com/post/90581599463"><a rel="nofollow" href="http://ki11deer.tumblr.com/" class="tumblelog" title="KillDeer">ki11deer</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://ki11deer.tumblr.com/post/90581599463" title="View post">Canvas failed because you forced facebook integration. Drawquest failed because you tried to monetize the stupidest...</a></blockquote></li><li class="note like tumblelog_minkot without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://minkot.tumblr.com/" title="mink sure is regular " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_950ffabb14c9_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://minkot.tumblr.com/" title="mink sure is regular" rel="nofollow">minkot</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_osibun without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://osibun.tumblr.com/" title="Let This Battle Commence, One Last Time!"><img src="http://33.media.tumblr.com/avatar_a2752f43ca74_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://osibun.tumblr.com/post/87112014008"><a rel="nofollow" href="http://osibun.tumblr.com/" class="tumblelog" title="Let This Battle Commence, One Last Time!">osibun</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note reblog tumblelog_usuallyclueless without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://usuallyclueless.tumblr.com/" title="you know its hard out here for a wimp"><img src="http://33.media.tumblr.com/avatar_3368215eda46_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://usuallyclueless.tumblr.com/post/85433185038"><a rel="nofollow" href="http://usuallyclueless.tumblr.com/" class="tumblelog" title="you know its hard out here for a wimp">usuallyclueless</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_idernets without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://idernets.tumblr.com/" title="this is root privilege " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_fe9d5f138320_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://idernets.tumblr.com/" title="this is root privilege" rel="nofollow">idernets</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_24-karatdead without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://24-karatdead.tumblr.com/" title=""><img src="http://38.media.tumblr.com/avatar_4aaf44b0c561_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://24-karatdead.tumblr.com/post/84932495322"><a rel="nofollow" href="http://24-karatdead.tumblr.com/" class="tumblelog" title="">24-karatdead</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_shakapunk without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://shakapunk.tumblr.com/" title="i put the ghetto in spaghetto " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_0f2740ee49eb_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://shakapunk.tumblr.com/" title="i put the ghetto in spaghetto" rel="nofollow">shakapunk</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_ohn1ne without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ohn1ne.tumblr.com/" title="Ohnine " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_3376364ae64f_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://ohn1ne.tumblr.com/" title="Ohnine" rel="nofollow">ohn1ne</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_luckorchance without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://luckorchance.org/" title="luckorchance " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_31dbf4fe84c4_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://luckorchance.org/" title="luckorchance" rel="nofollow">luckorchance</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_luckorchance with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://luckorchance.org/" title="luckorchance"><img src="http://38.media.tumblr.com/avatar_31dbf4fe84c4_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://luckorchance.org/post/81167326239"><a rel="nofollow" href="http://luckorchance.org/" class="tumblelog" title="luckorchance">luckorchance</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://luckorchance.org/post/81167326239" title="View post">Pretty much in awe of moot for posting this. I know saying this is like a bucket of cold water but you&rsquo;re not entitled...</a></blockquote></li><li class="note reblog tumblelog_ngansau without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ngansau.com/" title="k&eacute;n s&acirc;u"><img src="http://38.media.tumblr.com/avatar_8385be1bdf32_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://ngansau.com/post/80858133934"><a rel="nofollow" href="http://ngansau.com/" class="tumblelog" title="k&eacute;n s&acirc;u">ngansau</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_tornxero without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://tornxero.tumblr.com/" title="TornXero&#039;s Blog !! " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_0f92f85d411f_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://tornxero.tumblr.com/" title="TornXero&#039;s Blog !!" rel="nofollow">tornxero</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_gandhiwouldhavelovedthis-shit without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://gandhiwouldhavelovedthis-shit.tumblr.com/" title="gandhi would have loved this shit " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_795df0922bc1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://gandhiwouldhavelovedthis-shit.tumblr.com/" title="gandhi would have loved this shit" rel="nofollow">gandhiwouldhavelovedthis-shit</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_vivjanmyrto without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://vivjanmyrto.com/" title="Vivjan Myrto"><img src="http://33.media.tumblr.com/avatar_8c1cc594a0f1_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://vivjanmyrto.com/post/79410025947"><a rel="nofollow" href="http://vivjanmyrto.com/" class="tumblelog" title="Vivjan Myrto">vivjanmyrto</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_ellisreppo without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ellisreppo.tumblr.com/" title="Ellis " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_cd2ac3d1169b_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://ellisreppo.tumblr.com/" title="Ellis" rel="nofollow">ellisreppo</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_lickylucky without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://lickylucky.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_84e8a23a9eee_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://lickylucky.tumblr.com/" title="Untitled" rel="nofollow">lickylucky</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_x7s018y3fhigoxg without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://x7s018y3fhigoxg.com/" title=" " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_42516a9be207_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://x7s018y3fhigoxg.com/" title="" rel="nofollow">x7s018y3fhigoxg</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_charlie-elise with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://charlieeli.se/" title="mere trifles"><img src="http://31.media.tumblr.com/avatar_0f695e9e984f_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://charlieeli.se/post/76953184436"><a rel="nofollow" href="http://charlieeli.se/" class="tumblelog" title="mere trifles">charlie-elise</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://charlieeli.se/post/76953184436" title="View post">And this is how you fail, fabulously. Embracing failure, learning from it and reduce the stigma. Good luck Chris and all...</a></blockquote></li><li class="note reblog tumblelog_undesconocido without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://undesconocido.tumblr.com/" title="Why u haf to be liek dis"><img src="http://38.media.tumblr.com/avatar_90f8da0c2e13_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://undesconocido.tumblr.com/post/76946173670"><a rel="nofollow" href="http://undesconocido.tumblr.com/" class="tumblelog" title="Why u haf to be liek dis">undesconocido</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_undesconocido without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://undesconocido.tumblr.com/" title="Why u haf to be liek dis " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_90f8da0c2e13_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://undesconocido.tumblr.com/" title="Why u haf to be liek dis" rel="nofollow">undesconocido</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_jmcmurdo without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://jmcmurdo.tumblr.com/" title="/dev/null/"><img src="http://38.media.tumblr.com/avatar_2975225a6e31_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://jmcmurdo.tumblr.com/post/76283837156"><a rel="nofollow" href="http://jmcmurdo.tumblr.com/" class="tumblelog" title="/dev/null/">jmcmurdo</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_somezuul without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://somezuul.tumblr.com/" title="mucizebu! " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_f25354803d28_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://somezuul.tumblr.com/" title="mucizebu!" rel="nofollow">somezuul</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_theheroweneed without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://theheroweneed.tumblr.com/" title="Pipe Bomb! " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_3c8d8a10030a_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://theheroweneed.tumblr.com/" title="Pipe Bomb!" rel="nofollow">theheroweneed</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_vincentvondoom without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://vincentvondoom.tumblr.com/" title="Vincent von Doom " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_9223a5fcc1ea_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://vincentvondoom.tumblr.com/" title="Vincent von Doom" rel="nofollow">vincentvondoom</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sterlingrules without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sterlingrules.tumblr.com/" title="My Name is Sterling " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_8ea59542f943_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sterlingrules.tumblr.com/" title="My Name is Sterling" rel="nofollow">sterlingrules</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_smoochbelly without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://tumblr.smoochbelly.com/" title="smoochbelly " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_4e174c3410d8_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://tumblr.smoochbelly.com/" title="smoochbelly" rel="nofollow">smoochbelly</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_herpaderpamcshnerpenstein without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://herpaderpamcshnerpenstein.tumblr.com/" title="That One Blog Of No Particular Interest " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_8a9d2b3da3ed_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://herpaderpamcshnerpenstein.tumblr.com/" title="That One Blog Of No Particular Interest" rel="nofollow">herpaderpamcshnerpenstein</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_radelgirl without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://radelgirl.tumblr.com/" title="radelgirl"><img src="http://33.media.tumblr.com/avatar_c414088d1f39_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://radelgirl.tumblr.com/post/75536558383"><a rel="nofollow" href="http://radelgirl.tumblr.com/" class="tumblelog" title="radelgirl">radelgirl</a> reblogged this from <a rel="nofollow" href="http://chrishateswriting.com/" class="source_tumblelog" title="Chris Hates Writing">moot</a></span><div class="clear"></div></li><li class="note like tumblelog_jessygoesprrr without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://jessygoesprrr.tumblr.com/" title="Cuddles and sexytime " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_86c49eb25ee6_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://jessygoesprrr.tumblr.com/" title="Cuddles and sexytime" rel="nofollow">jessygoesprrr</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_folkie without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://folkie.tumblr.com/" title="~~~~~Ex Nihilo~~~~~ " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_438c5d0da43c_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://folkie.tumblr.com/" title="~~~~~Ex Nihilo~~~~~" rel="nofollow">folkie</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_whenislunch without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://whenislunch.tumblr.com/" title="When is lunch? " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_cc9a7f0c7047_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://whenislunch.tumblr.com/" title="When is lunch?" rel="nofollow">whenislunch</a> likes this</span><div class="clear"></div></li><li class="note more_notes_link_container" style="text-align:center;" id="more_notes_74083032842"><a class="more_notes_link" rel="nofollow" href="#" onclick="this.style.display='none';document.getElementById('notes_loading_74083032842').style.display = 'block';if(window.ActiveXObject)var tumblrReq=new ActiveXObject('Microsoft.XMLHTTP');else if(window.XMLHttpRequest)var tumblrReq=new XMLHttpRequest();else return false;tumblrReq.onreadystatechange=function(){if(tumblrReq.readyState==4){var notes_html=tumblrReq.responseText.split('<!-- START '+'NOTES -->')[1].split('<!-- END '+'NOTES -->')[0];
+if(window.tumblrNotesLoaded)if(tumblrNotesLoaded(notes_html)==false)return;var more_notes_link=document.getElementById('more_notes_74083032842');var notes=more_notes_link.parentNode;notes.removeChild(more_notes_link);notes.innerHTML+=notes_html;if(window.tumblrNotesInserted)tumblrNotesInserted(notes_html);}};tumblrReq.open('GET','/notes/74083032842/Uv2H1q0ef?from_c=1391305215',true);tumblrReq.send();return false;">Show more notes</a><span class="notes_loading" id="notes_loading_74083032842" style="display:none;">Loading...</span></li><!-- END NOTES --></ol>
+
+															</div><!-- /.notes -->
+															
+
+															
+															
+						
+						
+
+					</div><!-- /.post-panel -->
+					<div class="post-shadow"></div>
+				</article><!-- /.post -->
+				
+				<!-- END POSTS -->
+
+				
+
+				
+				
+				<div id="pagination">
+					<div class="nextprev">
+						<a class="prev" href="http://chrishateswriting.com/post/74285938381"><span>&larr; Previous</span></a> <span class="sep">&bull;</span>
+						<a class="next" href="http://chrishateswriting.com/post/68794699432"><span>Next &rarr;</span></a>
+					</div>
+				</div><!--/#pagination -->
+				
+
+			</div><!-- /#content -->
+
+			<!-- SIDEBAR -->
+			<div id="sidebar">
+				<div id="blog-info" class="side-box">
+					
+					
+					
+
+					
+
+					
+
+					
+					<div class="description">
+						<h2>About me <a href="/about">(more)</a></h2>
+						<img class="portrait" src="http://33.media.tumblr.com/avatar_1e24341a122c_64.png" alt="Avatar"/>
+						My name is <a href="/about" target="_blank" title="About me">Chris Poole</a>, and I hate writing (but I'm giving it a shot anyway).<br><br>
+I am better known as <a href="http://twitter.com/moot" target="_blank">moot</a>, the founder of <a href="http://www.4chan.org/" target="_blank">4chan</a>.<br><br>
+You can e-mail me directly at <a href="mailto:moot@4chan.org?subject=Hello%20from%20Tumblr">moot@4chan.org</a>, or find me below:
+<br><br>
+<a href="https://twitter.com/moot" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @moot</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div><!--/.description-->
+					
+				</div><!--/#blog-info -->
+
+				
+
+				
+				
+				<div class="side-box ruled-top">
+					<h2>Pages</h2>
+					<ul class="pages">
+						
+						<li><a href="/about">About me</a></li>
+                        <li><a href="mailto:moot@4chan.org?subject=Hello%20from%20Tumblr">Contact me</a></li>
+						
+					</ul>
+				</div>
+				
+				
+
+				
+				<div class="side-box ruled-top">
+					<h2>Elsewhere</h2>
+					<ul id="socialize">
+						
+						
+						
+						
+						
+						<li class="twitter"><a href="http://www.twitter.com/moot" title="@moot on Twitter">@moot on Twitter</a></li>
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<li class="github"><a href="http://github.com/mootykins" title="mootykins on GitHub">mootykins on GitHub</a></li>
+						
+					</ul>
+				</div>
+				
+
+				<div id="tabs">
+					<div id="tabs-nav">
+						
+						
+					</div>
+
+					
+
+					
+				</div><!-- close TABS -->
+
+				
+
+				
+
+				
+				
+				
+
+			</div><!-- /#sidebar -->
+
+			
+
+			<!-- FOOTER -->
+			<div id="footer">
+				
+				
+				<!-- LIKES -->
+				
+				<!-- END LIKES -->
+				
+				
+				<div id="footer-end" class="ruled-top">
+					<div class="footer-copy">
+						<ul id="footer-links">
+							<li><a href="/rss">RSS</a></li>
+							<li><a href="/random">Random</a></li>
+							<li><a href="/archive">Archive</a></li>
+							
+							
+							<li><a href="/mobile">Mobile</a></li>
+						</ul>
+						
+					</div>
+					<div class="pixel-union"><a href="http://www.tumblr.com/theme/17403"><strong>Effector Theme</strong></a> by <a class="logo" href="http://www.pixelunion.net">Pixel Union</a></div>
+				</div><!-- /#footer-end -->
+			</div><!-- /#footer -->
+		</div><!-- /#page -->
+
+		<!-- Footer Scripts -->
+		<script>
+			function recent_tweets(data){window.tweet_data=data;}
+		</script>
+		<script src="/tweets.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="http://static.tumblr.com/hugxd2w/s4om61ic8/jquery-1.7.2.min.js"><\/script>')</script>
+			<script src="http://static.tumblr.com/hugxd2w/Xtema9ggk/plugins.min.js"></script>
+			<script src="http://static.tumblr.com/a080hxb/EhAmqxc3f/script.min.js"></script>
+			<script src="http://platform.twitter.com/widgets.js"></script>
+			<script src="https://apis.google.com/js/plusone.js" type="text/javascript"></script>
+			
+
+
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = true;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://chrishateswriting.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/74083032842/today-my-startup-failed?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017159&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvY2hyaXNoYXRlc3dyaXRpbmcuY29tXC9wb3N0XC83NDA4MzAzMjg0MlwvdG9kYXktbXktc3RhcnR1cC1mYWlsZWQiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=ANAHCFAACO&K=3a62aaa0e0e568282cbde5959499963f991642709f98ac14cbc895110619ba0d&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017159&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvY2hyaXNoYXRlc3dyaXRpbmcuY29tXC9wb3N0XC83NDA4MzAzMjg0MlwvdG9kYXktbXktc3RhcnR1cC1mYWlsZWQiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=ANAHCFAACO&K=e6a55e45eb382e9908b5ba4ba7ac6b66305ec583566d5d2344713ec3806ce02c&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017159&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2NocmlzaGF0ZXN3cml0aW5nLmNvbVwvcG9zdFwvNzQwODMwMzI4NDJcL3RvZGF5LW15LXN0YXJ0dXAtZmFpbGVkIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiNzQwODMwMzI4NDIiLCJibG9naWQiOiIzMzQzNzYzOCIsInNvdXJjZSI6MzN9XX0=&U=AJFLDINDNM&K=5cb4efd855524a20a7b0afb8a3483e5cfe6263fdb66ce72aca687d25a101d4fa&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017159&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2NocmlzaGF0ZXN3cml0aW5nLmNvbVwvcG9zdFwvNzQwODMwMzI4NDJcL3RvZGF5LW15LXN0YXJ0dXAtZmFpbGVkIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiNzQwODMwMzI4NDIiLCJibG9naWQiOiIzMzQzNzYzOCIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=AJFLDINDNM&K=a6fcb81a373d3cf5fa56c9a2837a1cb5f8485f5f3000dec0c0e84366bc367ea4&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:33437638,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Fchrishateswriting.com%2Fpost%2F74083032842%2Ftoday-my-startup-failed&amp;pid=74083032842&amp;rk=RxIU8KEJ&amp;lang=en_US&amp;name=moot&amp;avatar=http%3A%2F%2F33.media.tumblr.com%2Favatar_1e24341a122c_64.png&amp;title=Chris+Hates+Writing&amp;url=http%3A%2F%2Fchrishateswriting.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Fchrishateswriting.com%2Fpost%2F74083032842%2Ftoday-my-startup-failed&amp;pid=74083032842&amp;rk=RxIU8KEJ&amp;lang=en_US&amp;name=moot&amp;avatar=http%3A%2F%2F33.media.tumblr.com%2Favatar_1e24341a122c_64.png&amp;title=Chris+Hates+Writing&amp;url=http%3A%2F%2Fchrishateswriting.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

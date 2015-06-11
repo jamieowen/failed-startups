@@ -1,0 +1,1617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Lessons Learned | The Devver Blog</title>
+<link rel="pingback" href="https://devver.wordpress.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The Devver Blog &raquo; Feed" href="https://devver.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Devver Blog &raquo; Comments Feed" href="https://devver.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Devver Blog &raquo; Lessons Learned Comments Feed" href="https://devver.wordpress.com/2010/04/26/lessons-learned/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s1.wp.com/_static/??-eJx9kOFOBCEMhF9I5DwvRn8Yn4Vle1z3Cm1oyWbfXlZjjN6FP4Rp5mOm+FVc5GJQzOfmhFrCol4zEmxSeYFof9VjVH3w9zHCK6hfwCTEq/tSN/aJOP0CnBLM3MydmYhXv+KcYJhRgYLB7ITV/qkRhuWMBW3zdoHcS0qb/MKtlkCow8DIFfo8S7DdkWHGANQfKUMsy8sPtV8v/UeGBVfpbjdNUkHV9TNjy+677Q13dwmvthHs3o/8/nR6Pr4dD6fXw/IJoTK28g==' type='text/css' media='all' />
+<!--[if IE 6]>
+<link rel='stylesheet' id='journalist-ie6-css'  href='https://s0.wp.com/wp-content/themes/pub/journalist/ie6.css?m=1270837707g&#038;ver=4.2-RC4-32277' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-2' href='https://s1.wp.com/_static/??-eJx9jVEKwjAQRC9kXCyS4od4ljSNYctmpyQpvb4phaIo/iwzzHssrbPx0Bq0UlrMLEtkLRQSJt7v2ZdyIiZF5UaWI+zDbz8GGIF3laEfxTzFcf6n5jAIYouRGvVWv6RtOLQVeXRj+ywYnGzsI90v1852tre3fnoBMCRWbQ==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-3' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1387483371g' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-4' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423g' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFj+sKwjAMhV/IrmyrP8VnmWssqb3ZpBZ9ejtQwSkKgSTkOyeJrElgmF3RQNK2OBfI10fqLG3kL0B4NHli6DyGJzzHwBB4YVMk9kA0GfgyfV+F4YJQ/2IWOE3zSWQgvH24Hlw0IrliMJBstQEdC4tjdC5WWVEb4LXGl5cig2vPaLHcveqaau93vRrHbT+oQdk73sl1Tw=='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://devver.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Closing up shop' href='https://devver.wordpress.com/2010/04/19/closing-up-shop/' />
+<link rel='next' title='Our Terms of Service and Privacy Policy &#8211; Prepare to&nbsp;Fork' href='https://devver.wordpress.com/2010/04/28/our-terms-of-service-and-privacy-policy-prepare-to-fork/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='https://devver.wordpress.com/2010/04/26/lessons-learned/' />
+<link rel='shortlink' href='http://wp.me/pg9Ct-sG' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fdevver.wordpress.com%2F2010%2F04%2F26%2Flessons-learned%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fdevver.wordpress.com%2F2010%2F04%2F26%2Flessons-learned%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Lessons Learned" />
+<meta property="og:url" content="https://devver.wordpress.com/2010/04/26/lessons-learned/" />
+<meta property="og:description" content="As we&#039;ve begun to wrap things up here at Devver, we&#039;ve had the chance to reflect a bit on our experience. Although shutting down is not the outcome we wanted, it&#039;s clear to both Dan and I that doin..." />
+<meta property="article:published_time" content="2010-04-26T18:04:24+00:00" />
+<meta property="article:modified_time" content="2010-04-26T18:04:24+00:00" />
+<meta property="og:site_name" content="The Devver Blog" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel='openid.server' href='https://devver.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://devver.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://devver.wordpress.com/osd.xml" title="The Devver Blog" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="The Devver Blog" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="A Boulder startup improving the way developers work." /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://devver.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="Lessons Learned | The Devver Blog on WordPress.com" />
+<meta name="description" content="As we&#039;ve begun to wrap things up here at Devver, we&#039;ve had the chance to reflect a bit on our experience. Although shutting down is not the outcome we wanted, it&#039;s clear to both Dan and I that doing a startup has been an amazing learning experience. While we still have a lot to learn,&hellip;" />
+
+<script type='text/javascript' src='//partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script>
+<script type="text/javascript" src="//c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try { amznads.getAds("3033","300x250"); } catch(e) { /* ignore */ }
+</script>
+<script type="text/javascript">
+var amznKeys = amznads.getKeys();
+if (typeof amznKeys != "undefined" && amznKeys != "") { for (var i =0; i < amznKeys.length; i++) { var key = amznKeys[i]; GA_googleAddAttr("amzn", key);} }
+document.close();
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post"); }
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 3850229, pt: 'permalink', wa: 0, as: 0, domain: 'devver.wordpress.com', url: 'https://devver.wordpress.com/2010/04/26/lessons-learned/', gid: '', };
+</script>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="single single-post postid-1778 single-format-standard mp6 customizer-styles-applied highlander-enabled highlander-light">
+<div id="container" class="group">
+
+<h1><a href="https://devver.wordpress.com/">The Devver Blog</a></h1>
+<div id="bubble"><p>A Boulder startup improving the way developers work.</p></div> <!-- erase this line if you want to turn the bubble off -->
+
+<div id="content" class="group">
+<div class="post-1778 post type-post status-publish format-standard hentry category-devver category-ruby category-techstars tag-devver tag-lessons tag-minimum-viable-product tag-techstars mentions-devver-2">
+	<h2 id="post-1778">Lessons Learned</h2>
+	
+	<div class="main">
+		<p>As we&#8217;ve begun to wrap things up here at Devver, we&#8217;ve had the  chance to reflect a bit on our experience. Although shutting down is not  the outcome we wanted, it&#8217;s clear to both Dan and I that doing a  startup has been an amazing learning experience. While we still have a  lot to learn, we wanted to share some of the most important lessons  we&#8217;ve learned during this time.</p>
+<p><strong>The community</strong></p>
+<p>When we  started Devver, we were hesitant to ask for feedback and help. We  quickly found that people are incredibly helpful and generous with their  time. Users were willing to take a chance and use our products while  giving us valuable feedback. Fellow Rubyists gave us ideas and helped us  with technical problems. Mentors made time for meetings and introduced  us to others who could assist us. And other entrepreneurs, both new and  seasoned, were happy to share stories, compare experiences, and offer  support.</p>
+<p>If you are working on a startup, don&#8217;t be afraid to ask  for help! The vast majority of people want to help you succeed, provided  that you respect them and their time. That means you need to prepare  adequately (do your research and ask good questions), figure out their  preferred methods of communication (e.g. don&#8217;t call if they prefer  email), show up on time, don&#8217;t overburden them, and thank them. And when  other people need your help, give back!</p>
+<p>You can build awesome  relationships with various communities on your own, but we strongly  recommend joining a mentorship program like <a id="zc5_" title="TechStars" href="http://techstars.org/">TechStars</a>.  The program accelerated the process of connecting with mentors, users,  and other entrepreneurs by providing an amazing community during the  summer (and to this day). The advice, introductions, and support have  been simply incredible.</p>
+<p><strong>Founding team</strong></p>
+<p>Dan and I  are both technical founders. Looking back, it would have been to our  advantage to have a third founder who really loved the business aspect  of running a startup.</p>
+<p>There is a belief (among technical  founders) that technical founders are sufficient for a successful  startup. Or, put more harshly, that <span><span style="color:#000000;">&#8220;<a id="hto-" title="you can teach a hacker business, but you can't teach a  businessman how to hack" href="http://news.ycombinator.com/item?id=545559">you can teach a hacker business, but you can&#8217;t  teach a businessman how to hack</a>&#8220;. I don&#8217;t want to argue whether  that&#8217;s true or not. Clearly there are <a id="k.e4" title="examples" href="http://google.com/">examples</a> of technical founders being  sufficient to get a company going, but my point is that having solely  technical founders is non-optimal. You can teach a hacker business, but  you can&#8217;t make him or her get excited about it, which means it may not  get the time or attention it deserves.</span></span></p>
+<p>Hackers are passionate  about, well, hacking. And so we tend to measure progress in terms of  features completed or lines of code written. Clearly, code needs to be  written, but ideally a startup would have a founder who is working on  important non-technical tasks: talking with customers, measuring key  metrics, developing distribution channels, etc. I&#8217;m not advocating that  only one founder works on these tasks while technical founders ignore  customer development &#8211; everyone needs to get involved. Rather, I&#8217;m  pointing out that given a choice, technical founders will tend to solve  problems technically and having a founder who has the opposite default  is valuable.</p>
+<p><strong>Remote teams</strong></p>
+<p>We embraced  working remotely: we hired <a id="fz5m" title="Avdi" href="http://avdi.org/">Avdi</a> to work in Pennsylvania while Dan and I lived in  Boulder and later on, Dan moved to Washington, DC. There are <a id="o9gf" title="many benefits" href="http://toni.org/2010/03/08/5-reasons-why-your-company-should-be-distributed/">many benefits</a> to having a  distributed team, but two stood out in our experience. First, we could  hire top talent without having to worry about location (in fact, our  flexibility regarding location was very attractive to most candidates we  interviewed). Secondly, being in different locations allowed every team  member to work with minimal distractions, which is invaluable when it  comes to efficiently writing good code.</p>
+<p>That said, communication  was a challenge. To ensure we were all synced up, we had a daily standup  as well as a weekly review. When Dan moved to DC, he and I scheduled  another weekly meeting with no set agenda to just bring up all the  issues, large and small, that were on our minds. We also all got  together in the same location every few months to work in the same room  and rekindle our team energy.</p>
+<p>Also, pair programming was  difficult to do remotely and we never came up with a great solution. As a  result, we spent less than a day pairing a week on average.</p>
+<p>The  most significant drawback to a remote team is the administrative hassle.  It&#8217;s a pain to manage payroll, unemployment, insurance, etc in one  state. It&#8217;s a freaking nightmare to manage in three states (well, two  states and a district), even though we paid a <a id="f8-l" title="payroll service" href="http://www.paychex.com/">payroll  service</a> to take care of it. Apparently, once your startup gets  larger, there are <a id="hz2k" title="companies" href="http://administaff.com/">companies</a> that will manage this with minimal  hassle, but for a small team, it was a major annoyance and distraction.</p>
+<p><strong>Product development</strong></p>
+<p>Most of the mistakes we made developing our test  accelerator and, later, Caliper boiled down to one thing: we should have  focused more on customer development and finding a minimum viable  product (MVP).</p>
+<p>The first thing we worked on was our Ruby test  accelerator. At the time, we thought we <em>had found</em> our MVP: we had  made encouraging technical progress and we had talked to several  potential customers who were excited about the product we were building.  Anything simpler seems &#8220;too simple&#8221; to be interesting.</p>
+<p>Our  mistake at that point was to go &#8220;heads down&#8221; and focus on building the  accelerator while minimizing our contact with users and customers (after  all, we <em>knew</em> how great it was and time spent talking to  customers was time we could be hacking!). We should have asking, &#8220;Is  there an even simpler version of this product that we can deliver sooner  to learn more about pricing, market size, and technical challenges?&#8221;</p>
+<p>If  we had done so, we would have discovered:</p>
+<div id="bullets">
+<ul>
+<li>whether the need  was great enough (and if the solution was good enough) to convince  people to open their wallets</li>
+<li>that while a few users acutely  felt the pain of slow tests, most didn&#8217;t care about acceleration.  However, many of those users did want a &#8220;simpler&#8221; application &#8211;  non-accelerated Ruby cloud testing.</li>
+<li>the primary technical  challenge was not accelerating tests, it was configuring servers for  customers&#8217; Rails applications. Not only did we spend time focusing on  the wrong technical challenges, we also made architectural decisions  that actually made it harder to solve this core problem.</li>
+</ul>
+</div>
+<p>After  eventually discovering that setup and configuration was our primary  adoption problem (and after trying and failing to implement various  strategies to make it simple and easy), we tried to move to the other  end of the spectrum. Caliper was designed to provide value with zero  setup or configuration &#8211; users just provided a link to source code and  instantly got valuable data.</p>
+<p>Unfortunately, we again made the  mistake of focusing on engineering first and customer development  second. We released our first version to some moderate success and then  proceeded to continue to churn out features without really understanding  customer needs. Only later on, after finally engaging potential  customers did we realize that market was too small and price point was  to low to have Caliper sustain our company by itself.</p>
+<p><strong>Conclusion</strong></p>
+<p>This  is by no means a comprehensive list, but it is our hope that other  startups and founders-to-be can learn from our experiences, both  mistakes and successes. Doing a startup has been an incredible learning  experience for both Dan and I and we look forward to learning more in  the future &#8211; both first-hand and from the amazing group of entrepreneurs  and hackers that we&#8217;ve been privileged enough to know.</p>
+
+<div class="wpcnt">
+<div class="wpa">
+<a class="wpa-about" href="http://wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "The Journalist v1.9";
+		var wpcom_adclk_slot = "wpcom_below_post";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//pixel.wp.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "devver.wordpress.com");
+GA_googleAddAttr("BlogId", "3850229");
+GA_googleAddAttr("PageURL", "https://devver.wordpress.com/2010/04/26/lessons-learned/");
+GA_googleAddAttr("Tag", "devver");
+GA_googleAddAttr("Tag", "ruby");
+GA_googleAddAttr("Tag", "techstars");
+GA_googleAddAttr("Tag", "devver");
+GA_googleAddAttr("Tag", "lessons");
+GA_googleAddAttr("Tag", "minimum-viable-product");
+GA_googleAddAttr("Tag", "techstars");
+GA_googleAddAttr("theme_bg", "ffffff");
+GA_googleAddAttr("theme_border", "f3f3f3");
+GA_googleAddAttr("theme_text", "1c1c1c");
+GA_googleAddAttr("theme_link", "004276");
+GA_googleAddAttr("theme_url", "cc0000");
+GA_googleAddAdSensePageAttr("google_page_url", "https://devver.wordpress.com/2010/04/26/lessons-learned/");
+GA_googleFillSlot("wpcom_below_post");
+}
+</script>
+</div>
+</div>
+
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='virool.com']").length > 0 || jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//pixel.wp.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled"><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3850229-1778-55795da296e60' data-src='//widgets.wp.com/likes/#blog_id=3850229&amp;post_id=1778&amp;origin=devver.wordpress.com&amp;obj_id=3850229-1778-55795da296e60' data-name='like-post-frame-3850229-1778-55795da296e60'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>			</div>
+
+	<div class="meta group">
+		<div class="signature">
+			<p>Written by Ben <span class="edit"></span></p>
+			<p>April 26, 2010 at 11:04 am</p>
+		</div>
+		<div class="tags">
+			<p>Posted in <a href="https://devver.wordpress.com/category/devver/" rel="category tag">Devver</a>, <a href="https://devver.wordpress.com/category/ruby/" rel="category tag">Ruby</a>, <a href="https://devver.wordpress.com/category/techstars/" rel="category tag">TechStars</a></p>
+			<p>Tagged with <a href="https://devver.wordpress.com/tag/devver/" rel="tag">Devver</a>, <a href="https://devver.wordpress.com/tag/lessons/" rel="tag">lessons</a>, <a href="https://devver.wordpress.com/tag/minimum-viable-product/" rel="tag">minimum viable product</a>, <a href="https://devver.wordpress.com/tag/techstars/" rel="tag">TechStars</a></p>		</div>
+	</div>
+</div>
+<div class="navigation group">
+	<div class="alignleft">&laquo; <a href="https://devver.wordpress.com/2010/04/19/closing-up-shop/" rel="prev">Closing up shop</a></div>
+	<div class="alignright"><a href="https://devver.wordpress.com/2010/04/28/our-terms-of-service-and-privacy-policy-prepare-to-fork/" rel="next">Our Terms of Service and Privacy Policy &#8211; Prepare to&nbsp;Fork</a> &raquo;</div>
+</div>
+
+
+<a name="comments" id="comments"></a>
+
+<h3 class="reply">45 Responses</h3>
+<p class="comment_meta">Subscribe to comments with <a href="https://devver.wordpress.com/2010/04/26/lessons-learned/feed/">RSS</a>.</p>
+
+<ol class="commentlist">
+<li id="comment-719" class="pingback even thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-719">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] This post was mentioned on Twitter by devver, skim. skim said: RT @devver: New post: Lessons learned <a href="http://devver.net/blog/2010/04/lessons-learned/" rel="nofollow">http://devver.net/blog/2010/04/lessons-learned/</a> [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://topsy.com/trackback?utm_source=pingback&#038;utm_campaign=L2&#038;url=http://devver.net/blog/2010/04/lessons-learned/' rel='external nofollow' class='url'>Tweets that mention Lessons Learned – The Devver Blog -- Topsy.com</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-719">11:21 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-720" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-720">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>So sorry guys.  failing like this really sucks.  however, i have come out of the eventvue failure with even more determination to &quot;make new mistakes&quot;.  hope you guys get that energy again soon.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/robjohnson' rel='external nofollow' class='url'>Rob</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-720">6:52 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-721" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-721">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>hey fellow TechStar alumns. It&#039;s a tough decision to close up shop but I have a feeling we&#039;ll be hearing more from you guys really soon. Keep us all posted! We&#039;re rooting for you</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://havemyshift.com' rel='external nofollow' class='url'>Stephen Wooten</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-721">7:13 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-722" class="trackback odd alt thread-odd thread-alt depth-1 trackback highlander-comment highlander-comment">
+	<div id="div-comment-722">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p><strong>Social comments and analytics for this post&#8230;</strong></p>
+<p>This post was mentioned on Twitter by devver: New post: Lessons learned <a href="http://devver.net/blog/2010/04/lessons-learned/" rel="nofollow">http://devver.net/blog/2010/04/lessons-learned/</a>&#8230;</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.ubervu.com/conversations/devver.net/blog/2010/04/lessons-learned/' rel='external nofollow' class='url'>uberVU - social comments</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-722">12:19 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-723" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-723">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Good insights all around. I agree about the challenges of a distributed team when it comes to payroll, what size company does it start to make sense to use one of those &#039;other agencies&#039; that you mentioned?</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://overstuffedgorilla.com' rel='external nofollow' class='url'>Justin Smestad</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-723">7:32 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-724" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-724">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Very sound advice. Especially interesting to see your thoughts on technical founders. I&#039;m a marketing/vision kind of guy. I can lay the groundwork for technology, but I can&#039;t make the tech side of it all work.</p>
+<p>That&#039;s where I&#039;m hung up in my own ambitions. Business guys like myself can&#039;t make a startup with the tech people, and it&#039;s interesting to see that acknowledged on your end.</p>
+<p>The skill sets are mutually exclusive. Tech people can create and ideate great feature sets, but it&#039;s the marketing/biz guy that can analyze the market opportunity and measure the benefits a service offers. After all, it&#039;s all about benefits, not features.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.twitter.com/brandthony' rel='external nofollow' class='url'>Brandthony</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-724">8:01 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+<ul class="children">
+<li id="comment-725" class="comment even depth-2  highlander-comment highlander-comment">
+	<div id="div-comment-725">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>I meant &quot;can&#039;t make a startup WITHOUT the tech people.&quot;</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.twitter.com/brandthony' rel='external nofollow' class='url'>Brandthony</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-725">8:04 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li id="comment-726" class="comment odd alt thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-726">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Thank you for sharing your insights Ben, especially on the challenges of a remote team and MVP focus.  On another note, thanks again for participating in David&#039;s SpeakSake.  Looking forward to hearing about your next project.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.speaksake.com' rel='external nofollow' class='url'>Stephanie</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-726">8:38 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-727" class="comment even thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-727">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Thanks for sharing, gotta be odd to be taking such an introspective look at the situation right now.  Good luck to you both.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://hardknockmba.com' rel='external nofollow' class='url'>Al Doan</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-727">8:42 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-728" class="comment odd alt thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-728">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Great post, thanks for sharing</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://loo.me' rel='external nofollow' class='url'>Mike Lewis</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-728">9:10 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-729" class="comment even thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-729">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>As thoughtful as this post is, it shows that you will land on your feet for sure. Thanks very much for posting.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/scott_yates498' rel='external nofollow' class='url'>Scott Yates</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-729">9:11 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-730" class="comment odd alt thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-730">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Ben, you and Dan are two of my favorite nerds! Im proud to have watch your growth and your continued success&#8230;and, of course, anything I can do (including convince you to come work with comic books&#8230;hint, hint&#8230;) let me know!</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/micah105' rel='external nofollow' class='url'>micah</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-730">9:14 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+<ul class="children">
+<li id="comment-732" class="comment even depth-2  highlander-comment highlander-comment">
+	<div id="div-comment-732">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Haha thanks for that Micah. I am following with interest your companies moves. I am looking forward to the IPhone app.  Thanks for your support and advice.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/danmayer' rel='external nofollow' class='url'>danmayer</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-732">9:38 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li id="comment-731" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-731">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Thanks everyone for the well wishes and support. We learned a lot from the experience, and hopefully our experience can help others.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/danmayer' rel='external nofollow' class='url'>danmayer</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-731">9:36 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-735" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-735">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>thanks for posting &#8211; very admirable considering the sting of the event &#8211; IMHO, this really indicates that entrepreneurship is right for you, that you are reflective and can appreciate the experience for the lesson learned, as well as share it  &#8211; good luck in your next venture</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn">angela</strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-735">10:45 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-736" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-736">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Fellas, thanks for sharing &#8211; it&#039;s definitely helpful for other startups to distill lessons like these and reinforce them. I&#039;m sure you&#039;ll incorporate what you learned into your next endeavor and you&#039;ll be stronger for it.</p>
+<p>By chance are you guys going to be at Boulder.me?  Myself and another local AZ startup guy are trekking up there next week &#8211; maybe we can buy you a beer?</p>
+<p>Sean</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/sean_tierne2149' rel='external nofollow' class='url'>Sean Tierney</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-736">11:04 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+<ul class="children">
+<li id="comment-738" class="comment even depth-2  highlander-comment highlander-comment">
+	<div id="div-comment-738">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>I&#039;ll be in town and I&#039;m happy to meet up for a beer. Ping me before you head up to figure out a time/place. See you soon!</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/bhb' rel='external nofollow' class='url'>Ben Brinckerhoff</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-738">11:11 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li id="comment-739" class="comment odd alt thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-739">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Thanks everyone for the words of support. We appreciate it.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/bhb' rel='external nofollow' class='url'>Ben Brinckerhoff</a></strong></p>
+	<p><small>
+		April 26, 2010 at <a href="#comment-739">11:11 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-743" class="comment even thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-743">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Can you elaborate on how you discovered that the market wasn&#8217;t large enough to support caliper? Did you ask beta testers what the were willing to pay &amp; then extrapolate that to the estimated number of users (how did you find that number?) and then you realized it wouldn&#8217;t be enough $ to survive, or was it not enough money to get bought by someone paying millions? What was your original goal for $, and how did that change over time, ie did it start at millions and go down as you got desperate for customers, or were you more conservative at the start? Did you use any methodology when writing your vision, building the product, testing with potential users, pivoting, etc, or did you make it up as you went along? Lots of questions, please keep blogging thanks</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn">Steve</strong></p>
+	<p><small>
+		April 27, 2010 at <a href="#comment-743">5:47 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+<ul class="children">
+<li id="comment-745" class="comment odd alt depth-2  highlander-comment highlander-comment">
+	<div id="div-comment-745">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>I probably won&#039;t get into details of everything. On the Caliper project we starte signing up private beta users and discussing price with them. We quickly learned that what they were willing to pay for the service couldn&#039;t sustain a company on it&#039;s own. It could be used to help up sell other products or services (consulting). When looking at what people would pay and the expected number of paying customers over time, it just didn&#039;t make sense to continue with the product as the primary goal of a funded company.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/danmayer' rel='external nofollow' class='url'>danmayer</a></strong></p>
+	<p><small>
+		April 27, 2010 at <a href="#comment-745">6:24 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li id="comment-747" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-747">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Stellar post, all the best with the next one =)</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.intellectualstimulations.com' rel='external nofollow' class='url'>Adam Ayers</a></strong></p>
+	<p><small>
+		April 27, 2010 at <a href="#comment-747">11:13 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-748" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-748">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Really great advice&#8230; I think developers get caught up with developing the best product and forget that the best product is defined by the product customers want most, and not by the beauty of code.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.orangeslyce.com' rel='external nofollow' class='url'>Sean Coleman</a></strong></p>
+	<p><small>
+		April 27, 2010 at <a href="#comment-748">11:52 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-749" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-749">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Great advice. Good luck next time. Best.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.mobmob.com.br' rel='external nofollow' class='url'>@criativo</a></strong></p>
+	<p><small>
+		April 28, 2010 at <a href="#comment-749">2:43 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-746" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-746">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Thank you some interesting lessons learnt. Have been considering a remote team, this helped me</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.mynext.co.uk' rel='external nofollow' class='url'>steve</a></strong></p>
+	<p><small>
+		April 27, 2010 at <a href="#comment-746">8:45 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-750" class="pingback even thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-750">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] I came across a few very interesting set of &#8220;lessons learnt from my start-up&#8221; articles. (thanks Mathieu, Joel for the references) : [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.dalouche.com/wordpress/2010/04/28/lessons-learnt-from-start-ups/' rel='external nofollow' class='url'>Lessons learnt from start-ups &laquo; Sami Dalouche</a></strong></p>
+	<p><small>
+		April 28, 2010 at <a href="#comment-750">5:11 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-756" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-756">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Thank you Ben (&amp; Dan) for taking the time to dissect and analyze your experience with Devver.<br />
+What really impressed me the most is when you say &quot;we should have focused more on customer development and finding a minimum viable product (MVP) . . . &quot;, that is probably the most critical piece in any startup or any project, what is the next logical step?<br />
+Best!  Lor3nzo</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/profiles/lorenzogeraci' rel='external nofollow' class='url'>lor3nzo</a></strong></p>
+	<p><small>
+		April 29, 2010 at <a href="#comment-756">5:37 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-757" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-757">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Customer development is an ongoing process. Once you&#039;ve identified an MVP (which is an iterative process itself), the next step is to keep iterating as you add or improve features. Measure how the product is performing along key metrics, talk to customers, merge customer feedback with your vision, build and improve features, and then do it all over again!</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://intensedebate.com/people/bhb' rel='external nofollow' class='url'>Ben Brinckerhoff</a></strong></p>
+	<p><small>
+		April 29, 2010 at <a href="#comment-757">6:10 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-758" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-758">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Hey, anything that does not kill you, only makes you stronger! Good luck guys and I am sure you will bounce back again!</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn">Ashok Srinivasan</strong></p>
+	<p><small>
+		April 29, 2010 at <a href="#comment-758">9:44 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-759" class="pingback even thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-759">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] Lessons Learned on Running a Startup &#8211; Fellow Boulder startup Devver recently decided to shut down and shared their lessons on what worked and didn&#8217;t work. Really honest insights from a brilliant founder, and a great read for all SMB entrepreneurs. [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://trada.com/blog/2010/04/30/what-were-reading-this-week-2/' rel='external nofollow' class='url'>What We're Reading This Week! | Trada Blog: Paid Search Marketing, Online Advertising and Small Biz</a></strong></p>
+	<p><small>
+		April 30, 2010 at <a href="#comment-759">3:59 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-762" class="pingback odd alt thread-odd thread-alt depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-762">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] one of co-founders, Ben Brinckerhoff, points out: Most of the mistakes we made developing our test accelerator and, later, Caliper boiled down to [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://fail92fail.wordpress.com/2010/05/02/devver-and-other-thoughts-on-failures/' rel='external nofollow' class='url'>Devver and other thoughts on failures &laquo; Failures &#8211; exposed, reflected upon, considered</a></strong></p>
+	<p><small>
+		May 2, 2010 at <a href="#comment-762">9:53 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-766" class="comment even thread-even depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-766">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Understanding this stuff can be super annoying, thanks for typing this article to clear up some confusion.</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://payrollaccounting.ingyenblog.hu/' rel='external nofollow' class='url'>Auditing</a></strong></p>
+	<p><small>
+		May 2, 2010 at <a href="#comment-766">9:07 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-790" class="comment odd alt thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-790">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Ben, I don&#8217;t have your email but my buddy and I are in town from Phx for the startup week events and are bouncing around co-working out of various places and hitting the night time events.  hit me up if you wanna grab coffee or a beer &#8211; 480.221.5500</p>
+<p>sean</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.scrollinondubs.com' rel='external nofollow' class='url'>Sean Tierney</a></strong></p>
+	<p><small>
+		May 5, 2010 at <a href="#comment-790">4:16 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+<ul class="children">
+<li id="comment-791" class="comment even depth-2  highlander-comment highlander-comment">
+	<div id="div-comment-791">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Sean &#8211; yeah, I&#8217;ll be around. Shoot me an email and we&#8217;ll figure out a time (ben@devver.net)</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://bbrinck.com' rel='external nofollow' class='url'>Ben Brinckerhoff</a></strong></p>
+	<p><small>
+		May 5, 2010 at <a href="#comment-791">7:10 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li id="comment-911" class="pingback odd alt thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-911">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] the context, even though they meant well and are intelligent folks.  Post-Mortem Title:  Lessons Learned Company:  Devver  The most significant drawback to a remote team is the administrative hassle. [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.chubbybrain.com/blog/2010/10/startup-failure-post-mortem/' rel='external nofollow' class='url'>25 Best Startup Failure Post-Mortems of All Time | ChubbyBrain Blog</a></strong></p>
+	<p><small>
+		October 4, 2010 at <a href="#comment-911">3:45 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-912" class="pingback even thread-odd thread-alt depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-912">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] understand the context, even though they meant well and are intelligent folks.  Post-Mortem Title: Lessons Learned Company: Devver  The most significant drawback to a remote team is the administrative hassle. [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://foundersblock.com/featured/25-best-startup-failure-post-mortems/' rel='external nofollow' class='url'>Founders Block &raquo; Blog Archive &raquo; 25 Best Startup Failure Post-Mortems</a></strong></p>
+	<p><small>
+		October 7, 2010 at <a href="#comment-912">11:50 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-913" class="pingback odd alt thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-913">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] Devver [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://fail92fail.wordpress.com/2010/10/23/round-up-failed-startup-post-mortems/' rel='external nofollow' class='url'>Round-up: failed startup post-mortems &laquo; Failures &#8211; exposed, reflected upon, considered</a></strong></p>
+	<p><small>
+		October 23, 2010 at <a href="#comment-913">5:20 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-915" class="pingback even thread-odd thread-alt depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-915">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] need a programmer, and if you’re the right fit a programmer will also need you. In a post-mortem about the failure of devver, the founders wrote “Dan and I are both technical founders. Looking back, it would have been to [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://clicksend.wordpress.com/2010/10/11/make-it-happen-how-to-find-a-programmer/' rel='external nofollow' class='url'>Make It Happen: How to find a Programmer &laquo; Click Send &#8211; Aaron Franklin&#039;s Blog</a></strong></p>
+	<p><small>
+		October 26, 2010 at <a href="#comment-915">9:39 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-933" class="pingback odd alt thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-933">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] 3. This post mortem provides a good breakdown of how the loss of focus on the parts of the ‘company’ structure lead to failure (could be more comprehensive in my opinion) The Devver Blog: Lessons Learned [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.flyovergeeks.com/2010/12/editorial-ceo-reflects-on-failure-stories/' rel='external nofollow' class='url'>Editorial: CEO Reflects On Failure Stories | Flyover Geeks</a></strong></p>
+	<p><small>
+		December 29, 2010 at <a href="#comment-933">5:02 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-934" class="pingback even thread-odd thread-alt depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-934">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] or build product but who didn’t relish the idea of promoting the product.  The folks at Devver highlighted the need to find someone who enjoys creating and finding distribution channels and developing [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://foundersblock.com/anecdotes/why-startups-fail-an-analysis-of-failure-post-mortems/' rel='external nofollow' class='url'>Founders Block &raquo; Blog Archive &raquo; Why Startups Fail: An Analysis of Failure Post-Mortems</a></strong></p>
+	<p><small>
+		February 2, 2011 at <a href="#comment-934">11:05 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-935" class="pingback odd alt thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-935">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] or build product but who didn’t relish the idea of promoting the product.  The folks at Devver highlighted the need to find someone who enjoys creating and finding distribution channels and developing [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://fortunebrain.com/2011/why-startups-fail-an-analysis-of-post-mortems/' rel='external nofollow' class='url'>Fortune Brain &raquo; Why Startups Fail: An Analysis of Post-Mortems</a></strong></p>
+	<p><small>
+		February 13, 2011 at <a href="#comment-935">9:43 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-937" class="comment even thread-odd thread-alt depth-1  highlander-comment highlander-comment">
+	<div id="div-comment-937">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>Good, honest post.  Thank you for taking time to teach the rest of us and I hope you guys have luck with whatever you do next!</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn">Dave</strong></p>
+	<p><small>
+		March 2, 2011 at <a href="#comment-937">11:59 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-939" class="pingback odd alt thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-939">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] did Devver fail?&nbsp;&nbsp;&nbsp;Avdi Grimm, Rubyist since 2001; using Rails profe&#8230; Here a go: <a href="https://devver.wordpress.com/2010" rel="nofollow">https://devver.wordpress.com/2010</a>&#8230;8:10amView All 0 CommentsCannot add comment at this time.&nbsp;Add [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://www.quora.com/Why-did-Devver-fail#ans488015' rel='external nofollow' class='url'>Why did Devver fail? - Quora</a></strong></p>
+	<p><small>
+		April 11, 2011 at <a href="#comment-939">3:10 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-941" class="pingback even thread-odd thread-alt depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-941">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] тяга к продвижению продукта. Ребята в проекте Devver подчеркнули крайнюю важность заполучить кого-нибудь, кто любит [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://experience.openquality.ru/top-reasons-startups-fail/' rel='external nofollow' class='url'>20 главных причин краха стартапов &laquo; OpenQuality.ru | Качество программного обеспечения | Опыт экспертов</a></strong></p>
+	<p><small>
+		April 16, 2011 at <a href="#comment-941">7:23 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-960" class="pingback odd alt thread-even depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-960">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] 3. https://devver.wordpress.com/2010/04/26/lessons-learned/ [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://seyifabode.com/?p=11' rel='external nofollow' class='url'>Startup postmortems : Seyi</a></strong></p>
+	<p><small>
+		November 20, 2012 at <a href="#comment-960">4:59 pm</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+<li id="comment-963" class="pingback even thread-odd thread-alt depth-1 pingback highlander-comment highlander-comment">
+	<div id="div-comment-963">
+	<div class="comment_mod">
+		</div>
+
+	<div class="comment_text">
+	<p>[&#8230;] worry if you haven&#8217;t. Devver crashed and burned in 2010 after two years in operation. Co-founder Ben Brinckerhoff blames the failure partly on their hesitation to get feedback from their customers. The focus was on the [&#8230;]</p>
+	</div>
+
+	<div class="comment_author vcard">
+		<p><strong class="fn"><a href='http://pedronave.com/nave/youre-not-a-designer-if/' rel='external nofollow' class='url'>You&#8217;re Not A Designer If&#8230; &#8211; O blog do Nave</a></strong></p>
+	<p><small>
+		January 16, 2013 at <a href="#comment-963">12:39 am</a>			</small></p>
+	</div>
+	<div class="clear"></div>
+
+	<div class="reply">
+			</div>
+	</div>
+</li><!-- #comment-## -->
+</ol>
+<div class="navigation">
+	<div class="alignleft"></div>
+	<div class="alignright"></div>
+</div>
+<br />
+
+		<p class="nocomments">Comments are closed.</p>
+	
+
+
+
+</div>
+
+<div id="sidebar">
+<h3>Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.askthevc.com/blog/index.php" title="Founders of Foundry Group located in Boulder, Colorado.">Ask The VC</a></li>
+<li><a href="http://www.feld.com/blog/" title="Feld Thoughts, A Boulder VC">Brad Feld</a></li>
+<li><a href="http://www.davidgcohen.com/blog/" title="Boulder Entrepreneur">David Cohen</a></li>
+<li><a href="http://www.jasonmendelson.com/blog/" title="A Boulder VC">Jason Mendelson</a></li>
+<li><a href="http://norvig.com/" title="Essays on CS, AI, Google, and more">Peter Norvig&#8217;s essays</a></li>
+<li><a href="http://weblog.raganwald.com/" title="Essays on CS, Google, Ruby, etc">Reg Braithwaite&#8217;s essays</a></li>
+<li><a href="http://www.techstars.org/" title="Seed capital and mentorship for startups">TechStars</a></li>
+
+	</ul>
+
+<h3>Devver</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://devverlabs.com" title="Our homepage">Devver home</a></li>
+
+	</ul>
+
+<h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-236160"><a href="https://devver.wordpress.com/category/amazon-web-services/" >Amazon Web Services</a>
+</li>
+	<li class="cat-item cat-item-11922"><a href="https://devver.wordpress.com/category/boulder/" >Boulder</a>
+</li>
+	<li class="cat-item cat-item-780"><a href="https://devver.wordpress.com/category/development/" >Development</a>
+</li>
+	<li class="cat-item cat-item-7369581"><a href="https://devver.wordpress.com/category/devver/" >Devver</a>
+</li>
+	<li class="cat-item cat-item-86154"><a href="https://devver.wordpress.com/category/first-steps/" >First Steps</a>
+</li>
+	<li class="cat-item cat-item-20250"><a href="https://devver.wordpress.com/category/funding/" >Funding</a>
+</li>
+	<li class="cat-item cat-item-1816"><a href="https://devver.wordpress.com/category/hacking/" >Hacking</a>
+</li>
+	<li class="cat-item cat-item-277"><a href="https://devver.wordpress.com/category/misc/" >Misc</a>
+</li>
+	<li class="cat-item cat-item-4872"><a href="https://devver.wordpress.com/category/ruby/" >Ruby</a>
+</li>
+	<li class="cat-item cat-item-2227882"><a href="https://devver.wordpress.com/category/techstars/" >TechStars</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://devver.wordpress.com/category/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-3301"><a href="https://devver.wordpress.com/category/tips-tricks/" >Tips &amp; Tricks</a>
+</li>
+	<li class="cat-item cat-item-1981"><a href="https://devver.wordpress.com/category/tools/" >Tools</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://devver.wordpress.com/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+				<h3>Recent Posts</h3>		<ul>
+					<li>
+				<a href="https://devver.wordpress.com/2010/05/04/new-blog-location/">New blog location</a>
+						</li>
+					<li>
+				<a href="https://devver.wordpress.com/2010/04/30/devver-next/">Devver.next</a>
+						</li>
+					<li>
+				<a href="https://devver.wordpress.com/2010/04/28/our-terms-of-service-and-privacy-policy-prepare-to-fork/">Our Terms of Service and Privacy Policy &#8211; Prepare to&nbsp;Fork</a>
+						</li>
+					<li>
+				<a href="https://devver.wordpress.com/2010/04/26/lessons-learned/">Lessons Learned</a>
+						</li>
+					<li>
+				<a href="https://devver.wordpress.com/2010/04/19/closing-up-shop/">Closing up shop</a>
+						</li>
+				</ul>
+		<h3>Archives</h3>		<ul>
+	<li><a href='https://devver.wordpress.com/2010/05/'>May 2010</a></li>
+	<li><a href='https://devver.wordpress.com/2010/04/'>April 2010</a></li>
+	<li><a href='https://devver.wordpress.com/2010/02/'>February 2010</a></li>
+	<li><a href='https://devver.wordpress.com/2010/01/'>January 2010</a></li>
+	<li><a href='https://devver.wordpress.com/2009/12/'>December 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/11/'>November 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/10/'>October 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/09/'>September 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/08/'>August 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/07/'>July 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/06/'>June 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/05/'>May 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/04/'>April 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/03/'>March 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/02/'>February 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2009/01/'>January 2009</a></li>
+	<li><a href='https://devver.wordpress.com/2008/12/'>December 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/11/'>November 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/10/'>October 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/09/'>September 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/08/'>August 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/07/'>July 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/06/'>June 2008</a></li>
+	<li><a href='https://devver.wordpress.com/2008/05/'>May 2008</a></li>
+		</ul>
+			<div class="textwidget"><a href="http://feeds.feedburner.com/TheDevverBlog" title="Subscribe to my feed" rel="alternate"><img src="http://www.feedburner.com/fb/images/pub/feed-icon32x32.png" alt=""></a></div>
+		<h3>License/Reuse</h3>			<div class="textwidget"><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img alt="Creative Commons License" style="border-width:0;" src="http://creativecommons.org/images/public/somerights20.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">Creative Commons Attribution-Share Alike 3.0 United States License</a>.</div>
+		
+
+</div>
+
+</div>
+
+<div id="footer">
+	<p><a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com</a>. <a href="https://wordpress.com/themes/journalist/" title="Learn more about this theme">The Journalist v1.9 Theme</a>.</p>
+</div>
+<!-- wpcom_wp_footer -->
+	<div style="display:none">
+	</div>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;The Devver Blog&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter your email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="3850229"/>
+			<input type="hidden" name="source" value="https://devver.wordpress.com/2010/04/26/lessons-learned/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="3caedc121e" /><input type="hidden" name="_wp_http_referer" value="/2010/04/26/lessons-learned/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+		<iframe src='https://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJzTLy/QTc7PK0nNK9HPKtZPSS3LTE4tqNDLKtbRR5LKLdUtyClNz8wr1k/Nzc/K1C8pR6EJqs9KLSlITM7WJU41TJV9rq2hiZGlkaWFgYl5FgDiNj8X'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "devver.wordpress.com";
+	</script>
+	<script type="text/javascript" src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script><script src="//stats.wp.com/w.js?47" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'3850229','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'3850229','v':'wpcom','tz':'0','user_id':'0','post':'1778','subd':'devver'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRTmIuSltuLkN1bEJyLlZ+ay95cE1JcS5NcCt4S29GW1RfODdyeTNNOElmM0ZFRkdBYkU0QTNjcXRJdmVJLHhRLX4xWGdrUkJEY0lQWUQ1RzBoVmEzJlUxL3dNdlpJZk0sNUFKUWFbaWNkRjBtXUFsVi9VcFs/bWp4djg/bjAwSnE/TGguWzNKcjJvLUl+bDJpS2Nka25VYjc1Sz98b2JBSnEuNi1WS2xOflc9V19DSWJ5SC1oMytVTj9uTndrOCx6cnZEX2xWTG8yLS93Jk9TMTdbXzZ0cnJJNlFZSTguT3xXL29VWXdUUHJnJW9QMT9RJjYrMDNVazM='}]);
+_stq.push([ 'clickTrackerInit', '3850229', '1778' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+
+oooooooooo.                                            oooo        
+`888'   `Y8b                                           `888        
+ 888     888  .ooooo.   .ooooo.  oooo    ooo  .oooo.    888 .oo.   
+ 888oooo888' d88' `88b d88' `88b  `88.  .8'  `P  )88b   888P"Y88b  
+ 888    `88b 888   888 888   888   `88..8'    .oP"888   888   888  
+ 888    .88P 888   888 888   888    `888'    d8(  888   888   888  
+o888bood8P'  `Y8bod8P' `Y8bod8P'     .8'     `Y888""8o o888o o888o 
+                                 .o..P'                            
+                                 `Y8P'                             
+
+--> 
+<html>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <title>LayerVault is shutting down — LayerVault Blog</title>
+        <style type="text/css">figure {margin: 0;}</style>
+<link rel="icon" type="image/x-icon" href="//d1lo6mgkp2cnd3.cloudfront.net/assets/favicon-be9582dfd4a95d07cf6dd31f11954dce.ico" />
+    
+        <meta name="description" content="LayerVault is shutting down This message was originally posted on the LayerVault home page on March 11, 2015. LayerVault will be shutting down on April 11, 2015. Current customers have until then to..." />
+    
+    <link rel="icon" type="image/png" href="//d1lo6mgkp2cnd3.cloudfront.net/assets/0b59fd5/favicon.png" />
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/e43ece61-71d3-4b63-884b-a789dc4a7480.css"/>
+    <style>
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: #55606e;
+      background: #eceef1;
+      font: 14px/24px 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .Clear {
+      clear: both;
+    }
+    
+    a {
+      color: #dd4a38;
+      text-decoration: none;
+    }
+
+    #Page {
+      min-height: 100%;
+    }
+
+      #Footer {
+        color: #b33727;
+        background: #dd4a38;
+        height: 80px;
+        text-align: right;
+        font: 14px/80px 'AvenirNextLTW02-Regular', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+      }
+
+        #Footer a {
+          float: left;
+          color: #FFF;
+        }
+        
+        #TopContents .Title {
+            float: left;
+            color: #b1b8c0;
+        }
+
+        #FooterContents,
+        #TopContents{
+          width: 500px;
+          margin: auto;
+        }
+        
+    #TopStrip {
+        color: #b9c1c8;
+        height: 40px;
+        text-align: right;
+        font: 12px/40px 'Avenir Next LT W02 Demi', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+
+    #Header {
+      height: 220px;
+      background: url('http://s3.amazonaws.com/layervault/images/blog/blog-logo-light.png') no-repeat 50% 50%;
+    }
+
+      #Header a {
+        float: left;
+        width: 100%;
+        height: 220px;
+      }
+
+      #Posts {
+        margin: auto;
+        width: 500px;
+      }
+
+      .Post {
+        margin-bottom: 80px;
+        border-bottom: 4px solid #cbd0d5;
+      }
+
+        .Post img {
+          max-width: 500px;
+          margin-bottom: 10px;
+        }
+        
+        .Post img.RightImage {
+            float: right;
+            margin: 10px 0 10px 25px;
+        }
+        
+        .Post img.LeftImage {
+            float: left;
+            margin: 10px 25px 10px 0;
+        }
+        
+        .Post ul {
+            padding: 0 20px;
+        }
+        
+        .Post ul li {
+            margin: 0 0 10px 0;
+        }
+
+        .Post:last-child {
+          border-bottom: 0;
+        }
+
+        .Post h1 {
+          padding: 0;
+          margin: 0 0 30px 0;
+          text-align: center;
+        }
+
+        .Post h2,
+        .Post h3 {
+           margin: 30px 0 10px 0;
+        }
+
+        .Post h1,
+        .Post h1 a {
+          font: 28px/40px 'Avenir Next LT W02 Demi', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+        }
+
+        .Post h2,
+        .Post h2 a {
+          font: 22px/38px 'AvenirNextLTW02-Regular', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+        }
+
+        .Post h3,
+        .Post h3 a {
+          font: 18px/30px 'AvenirNextLTW02-Regular', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+        }
+
+        .Post h1,
+        .Post h1 a,
+        .Post h2,
+        .Post h2 a,
+        .Post h3,
+        .Post h3 a {
+          color: #27313d;
+        }
+
+          .Post pre {
+            margin: 0;
+            padding: 20px;
+            font: 11px/20px Menlo, 'Andale Mono', 'Courier New', Serif;
+            overflow: auto;
+            color: #55606e;
+            background: #cbd0d5;
+          }
+          
+          .Post sup a {
+              text-decoration: underline;
+              color: #55606e;
+          }
+          
+          hr {
+              border: 1px solid #55606e
+          }
+
+
+          .PostDetails {
+            height: 20px;
+            margin: 40px 0 50px 0;
+            font-family: 'AvenirNextLTW02-Regular', 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+          }
+
+            .PostDate {
+              float: left;
+            }
+
+            .PostNotes {
+              float: right;
+            }
+
+              .PostDate a,
+              .PostNotes a {
+                color: #9099a3;
+              }
+          
+          .Photo, .PhotoSet {
+            margin: 0 0 40px 0;
+          }
+
+          .PostChat {
+
+          }
+
+            .PostLine_even {
+              font-style: italic;
+            }
+
+            .PostSpeaker {
+              font-weight: bold;
+            }
+
+          .RebloggedFrom {
+            font-size: 12px;
+            margin-bottom: 10px;
+          }
+
+      #Pagination {
+        width: 500px;
+        margin: 0 auto 70px auto;
+        text-align: center;
+      }
+
+        #Pagination a {
+          border: none;
+          margin: 0 10px;
+        }
+
+      #PostNotes ol {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+        #PostNotes li {
+          margin-bottom: 10px;
+        }
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="http://static.tumblr.com/fpifyru/VCxlv9xwi/writecapture.js"></script>
+    <script src="http://static.tumblr.com/fpifyru/AKFlv9zdu/embedgist.js"></script>
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+  typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+  b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+  mixpanel.init("fc3cb5f7efe7c7d1b17e16c1fc4075f6");
+      
+  </script><!-- end Mixpanel -->
+  <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=layervault%26postID=113788354114" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://layervault.tumblr.com/post/113788354114/layervault-is-shutting-down" title="LayerVault is shutting down
+This message was originally posted on the LayerVault home page on March 11, 2015.
+LayerVault will be shutting down on April 11, 2015. Current customers have until then to download their files from the service. Beginning on..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="LayerVault is shutting down" /><meta property="og:url" content="http://layervault.tumblr.com/post/113788354114/layervault-is-shutting-down" /><meta property="og:description" content="This message was originally posted on the LayerVault home page on March 11, 2015.
+LayerVault will be shutting down on April 11, 2015. Current customers have until then to download their files from the..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://assets.tumblr.com/images/og/text_200.png" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=layervault&amp;postID=113788354114" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=layervault&amp;postID=113788354114" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="This message was originally posted on the LayerVault home page on March 11, 2015.
+
+ LayerVault will be shutting down on April 11, 2015. Current customers have until then to download their files from the service. Beginning
+on that date, the web interface will no longer be accessible and the Mac app will stop working.
+
+ Customers on monthly subscription plans will be charged a pro-rata amount for the remaining term to April 11, 2015 if they renew between now and April 10.
+
+ Customers with annual subscriptions may request a pro-rata refund for the period from April 11, 2015, until the end of the contract period by contacting support@layervault.com no later than April 30, 2015.
+
+ Designer News, the community that we have been running for the last two years, will continue on.
+
+ Some folks may be wondering: Why? We will try to share our experience as best we can via post-mortems and blog posts, but the short answer is simple: we failed to make LayerVault financially viable, exhausted our existing capital reserves, and were unable to secure additional capital to sustain uninterrupted service. We ran out of money. Although the service will cease, we&rsquo;re still hopeful that the
+technology may find a home.
+
+ Thank you to our customers, both current and former, for giving us your business.
+
+ If you have any questions about this shutdown, you can drop me an email: kelly@layervault.com.
+
+ Kelly Sutton 
+CEO, LayerVault" /><meta name="twitter:title" content="LayerVault is shutting down" /><meta name="twitter:url" content="http://layervault.tumblr.com/post/113788354114/layervault-is-shutting-down" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="LayerVault" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=layervault&amp;postID=113788354114&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=layervault&amp;postID=113788354114&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=layervault&amp;postID=113788354114&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/layervault.tumblr.com\/post\/113788354114\/layervault-is-shutting-down","mainEntityOfPage":true,"datePublished":"2015-03-16T15:04:04-04:00","author":"layervault","headline":"LayerVault is shutting down","articleBody":"This message was originally posted on the LayerVault home page on March 11, 2015.\nLayerVault will be shutting down on April 11, 2015. Current customers have until then to download their files from the service. Beginning on that date, the web interface will no longer be accessible and the Mac app will stop working.\nCustomers on monthly subscription plans will be charged a pro-rata amount for the remaining term to April 11, 2015 if they renew between now and April 10.\nCustomers with annual subscriptions may request a pro-rata refund for the period from April 11, 2015, until the end of the contract period by contacting support@layervault.com no later than April 30, 2015.\nDesigner News, the community that we have been running for the last two years, will continue on.\nSome folks may be wondering: Why? We will try to share our experience as best we can via post-mortems and blog posts, but the short answer is simple: we failed to make LayerVault financially viable, exhausted our existing capital reserves, and were unable to secure additional capital to sustain uninterrupted service. We ran out of money. Although the service will cease, we\u2019re still hopeful that the technology may find a home.\nThank you to our customers, both current and former, for giving us your business.\nIf you have any questions about this shutdown, you can drop me an email: kelly@layervault.com.\nKelly Sutton\nCEO, LayerVault","@context":"http:\/\/schema.org"}</script>
+</head>
+  <body>
+    <div id="Page">
+    <div id="TopStrip">
+        <div id="TopContents">
+            <a href="http://layervault.com" class="Title">LayerVault</a> 
+            <span>
+                Simple version control for designers. <a href="https://layervault.com/pricing?utm_source=blog">Try it free.</a>    
+            </span>
+        </div>
+    </div>
+      <div id="Header"><a href="/"></a>
+      </div>
+      <div id="Content">
+        <div id="Posts">
+          
+
+            <div class="Post">
+              
+              
+                <h1><a href="http://layervault.tumblr.com/post/113788354114/layervault-is-shutting-down">LayerVault is shutting down</a></h1>
+                <p><em>This message was originally posted on the LayerVault home page on March 11, 2015.</em></p>
+
+<p>LayerVault will be shutting down on April 11, 2015. Current customers have until then to download their files from the service. Beginning
+on that date, the web interface will no longer be accessible and the Mac app will stop working.</p>
+
+<p>Customers on monthly subscription plans will be charged a pro-rata amount for the remaining term to April 11, 2015 if they renew between now and April 10.</p>
+
+<p>Customers with annual subscriptions may request a pro-rata refund for the period from April 11, 2015, until the end of the contract period by contacting <a href="mailto:support@layervault.com" target="_blank">support@layervault.com</a> no later than April 30, 2015.</p>
+
+<p><a href="https://news.layervault.com" target="_blank">Designer News</a>, the community that we have been running for the last two years, will continue on.</p>
+
+<p>Some folks may be wondering: Why? We will try to share our experience as best we can via post-mortems and blog posts, but the short answer is simple: we failed to make LayerVault financially viable, exhausted our existing capital reserves, and were unable to secure additional capital to sustain uninterrupted service. We ran out of money. Although the service will cease, we&rsquo;re still hopeful that the
+technology may find a home.</p>
+
+<p>Thank you to our customers, both current and former, for giving us your business.</p>
+
+<p>If you have any questions about this shutdown, you can drop me an email: <a href="mailto:kelly@layervault.com" target="_blank">kelly@layervault.com</a>.</p>
+
+<p>Kelly Sutton<br>
+CEO, LayerVault</p>
+              
+              
+              
+
+              
+
+              
+
+              
+
+              
+
+                
+
+              <div class="PostDetails">
+
+                
+                <span class="PostDate">
+                  <a href="http://layervault.tumblr.com/post/113788354114/layervault-is-shutting-down">March 16, 2015</a>
+                </span>
+                
+
+                <span class="PostNotes"><a href="http://layervault.tumblr.com/post/113788354114/layervault-is-shutting-down">5 notes</a></span>
+              </div>
+            </div>
+            
+            
+            <div class="Post">
+              <div id="PostNotes">
+                <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_chaotic without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://chaotic.tumblr.com/" title="CHAOTIC " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_2defcfdf0539_16.gif" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://chaotic.tumblr.com/" title="CHAOTIC" rel="nofollow">chaotic</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_briancnelson without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://briancnelson.tumblr.com/" title="BCN " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_1ba8006fba98_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://briancnelson.tumblr.com/" title="BCN" rel="nofollow">briancnelson</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_bradenhamm without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://bradenhamm.tumblr.com/" title="bradenhamm " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_a58d65dbc84c_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://bradenhamm.tumblr.com/" title="bradenhamm" rel="nofollow">bradenhamm</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_weekdujour without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://weekdujour.tumblr.com/" title="week du jour " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_8d2d09538936_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://weekdujour.tumblr.com/" title="week du jour" rel="nofollow">weekdujour</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_tinfoilparachute with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://tinfoilparachute.tumblr.com/" title="____unwound spring ____"><img src="http://33.media.tumblr.com/avatar_bdb206784abe_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://tinfoilparachute.tumblr.com/post/113789665137"><a rel="nofollow" href="http://tinfoilparachute.tumblr.com/" class="tumblelog" title="____unwound spring ____">tinfoilparachute</a> reblogged this from <a rel="nofollow" href="http://layervault.tumblr.com/" class="source_tumblelog" title="LayerVault Blog">layervault</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://tinfoilparachute.tumblr.com/post/113789665137" title="View post">sad. another example of how a really good and well executed product (version control for design) can still not survive.</a></blockquote></li><li class="note reblog tumblelog_layervault original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://layervault.tumblr.com/" title="LayerVault Blog"><img src="http://31.media.tumblr.com/avatar_8e39015bf93b_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://layervault.tumblr.com/post/113788354114"><a rel="nofollow" href="http://layervault.tumblr.com/" class="tumblelog" title="LayerVault Blog">layervault</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+              </div>
+            </div>
+            
+
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 976735899;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976735899/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+    <div id="Footer">
+      <div id="FooterContents">
+        <a href="http://layervault.com">Visit the site</a> &copy; 2014 LayerVault Inc.
+      </div>
+    </div>
+    <script type="text/javascript">
+      function resize_video(v) {
+        try {
+          var video_width = parseInt(500);
+          v.height = Math.floor( video_width / (v.width / v.height) );
+          v.width = video_width;
+          console.log(v.height);
+        } catch(e) {
+          console.log(e);
+        }       
+            }
+      
+      $('.VideoWrapper object').each(function() {
+        resize_video(this);
+      });
+      $('.VideoWrapper embed').each(function() {
+        resize_video(this);
+      });
+      $('.VideoWrapper iframe').each(function() {
+        resize_video(this);
+      });
+
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24426626-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '838167696233833']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=838167696233833&amp;ev=PixelInitialized" /></noscript>
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l534j');</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l534j&p_id=Twitter" />
+<img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l534j&p_id=Twitter" /></noscript>
+  <!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://layervault.tumblr.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/113788354114/layervault-is-shutting-down?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017153&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvbGF5ZXJ2YXVsdC50dW1ibHIuY29tXC9wb3N0XC8xMTM3ODgzNTQxMTRcL2xheWVydmF1bHQtaXMtc2h1dHRpbmctZG93biIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5In0=&U=MHDBNEEMAJ&K=7f76486876124ef701cb6459fdda343162323e887979eb49b4668a35e54cfcb3&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017153&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvbGF5ZXJ2YXVsdC50dW1ibHIuY29tXC9wb3N0XC8xMTM3ODgzNTQxMTRcL2xheWVydmF1bHQtaXMtc2h1dHRpbmctZG93biIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5Iiwibm9zY3JpcHQiOjF9&U=MHDBNEEMAJ&K=dff2694e532ca25acf8657a2e1f1faef80717a12ba66c89de108e8ba13ce5cf9&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017153&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2xheWVydmF1bHQudHVtYmxyLmNvbVwvcG9zdFwvMTEzNzg4MzU0MTE0XC9sYXllcnZhdWx0LWlzLXNodXR0aW5nLWRvd24iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiIxMTM3ODgzNTQxMTQiLCJibG9naWQiOiIyODc5NzU5OSIsInNvdXJjZSI6MzN9XX0=&U=BHIFGLCILI&K=ab6c67ccd696f5c724aebb0c25ea89afdb82c7c48e78bfb05eecc54a84ffe710&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017153&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2xheWVydmF1bHQudHVtYmxyLmNvbVwvcG9zdFwvMTEzNzg4MzU0MTE0XC9sYXllcnZhdWx0LWlzLXNodXR0aW5nLWRvd24iLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiIxMTM3ODgzNTQxMTQiLCJibG9naWQiOiIyODc5NzU5OSIsInNvdXJjZSI6MzN9XSwibm9zY3JpcHQiOjF9&U=BHIFGLCILI&K=5295a7d37f6ac8b11ec8630319d41747f59f4233070a7575054a47bd35f53e37&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:28797599,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Flayervault.tumblr.com%2Fpost%2F113788354114%2Flayervault-is-shutting-down&amp;pid=113788354114&amp;rk=cB7ATIhF&amp;lang=en_US&amp;name=layervault&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_8e39015bf93b_64.png&amp;title=LayerVault+Blog&amp;url=http%3A%2F%2Flayervault.tumblr.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Flayervault.tumblr.com%2Fpost%2F113788354114%2Flayervault-is-shutting-down&amp;pid=113788354114&amp;rk=cB7ATIhF&amp;lang=en_US&amp;name=layervault&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_8e39015bf93b_64.png&amp;title=LayerVault+Blog&amp;url=http%3A%2F%2Flayervault.tumblr.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

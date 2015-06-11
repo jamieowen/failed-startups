@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+    <meta name="text:Disqus Shortname" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>exfm blog, Changing Tune</title>
+    
+    
+    <style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://cloudfront.extension.fm/favicon.ico" /> 
+    <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/ExtensionFMBlog" />
+    
+    <link rel="stylesheet" type="text/css" href="http://ex.fm/static/css/blog-test.css" />
+    
+    <style>
+.features.user_spotlight .copy {
+padding: 20px 45px;
+}
+.spotlight_header {
+padding: 10px 0 15px;
+}
+.spotlight_header h4 {
+text-transform: uppercase;
+font-family: "DINRegular";
+font-size: 20px;
+margin-top: 8px;
+margin-bottom: 5px;
+}
+.spotlight_avatar {
+float: left;
+margin-right: 10px;
+}
+.spotlight_avatar img {
+    border-radius: 3px;
+}
+.spotlight_link {
+	font-size: 16px;
+}
+p.question, p.answer {
+line-height: 20px;
+margin-bottom: 10px !important;
+padding: 5px 5px 8px!important;
+}
+p.question{
+	font-weight: bold;
+	background: #F8F8F8;
+	border-radius: 5px;
+}
+p.question::before, p.answer::before {
+content: 'Q';
+color: #AAA;
+float: left;
+font-size: 40px;
+font-family: 'DINRegular';
+position: relative;
+top: 8px;
+padding-right: 5px;
+display: block;
+padding-bottom: 15px;
+}
+p.answer::before {
+content: 'A';
+}
+.spotlight_header:after, p.question:after, p.answer:after {
+content: "";
+display: block;
+clear: both;
+}
+
+.team_lunch .post-title {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 5px;    
+    
+}
+
+.team_lunch h3 {
+    font-family: "DINRegular", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    }
+.team_lunch .blogpostmiddle img {
+    width: 500px;
+}
+.v3-iphone {
+    background: url(http://static.tumblr.com/njjs2hp/Easmhi3v8/v3-iphone-app.jpg) no-repeat 0 0;
+    width: 718px;
+    margin-left: -29px;
+    margin-top: -20px;
+    height: 365px;
+}
+.v3-iphone-img {
+    display: none;
+}
+        
+    </style>
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23024312-1']);
+    	_gaq.push(['_trackPageview']);
+    </script>
+    
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=exfm%26postID=70615261278" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://blog.ex.fm/post/70615261278/changing-tune" title="Changing Tune
+When we started Exfm four years ago, we had one goal. To help people discover and listen to new music on the web. What started as a Chrome extension quickly grew to a website, iPhone app, Android app, blog widget and API. Along the way..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="news,chrome,tech,music,exfm" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="Changing Tune" /><meta property="og:url" content="http://blog.ex.fm/post/70615261278/changing-tune" /><meta property="og:description" content="When we started Exfm four years ago, we had one goal. To help people discover and listen to new music on the web. What started as a Chrome extension quickly grew to a website, iPhone app, Android app,..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="https://31.media.tumblr.com/b8fc3de00d7a5dda1817ae28c88bc0b5/tumblr_inline_my4hianwLA1qzohff.png" /><meta property="og:image" content="https://31.media.tumblr.com/e17f96889c40f69f37b551b9633c4c56/tumblr_inline_my4ia2zS7v1qzohff.png" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=exfm&amp;postID=70615261278" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=exfm&amp;postID=70615261278" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="When we started Exfm four years ago, we had one goal. To help people discover and listen to new music on the web. What started as a Chrome extension quickly grew to a website, iPhone app, Android app, blog widget and API. Along the way we had people from over 200 countries use our apps and more than 50 artists play at our concerts in NYC.
+
+ Four years ago the music landscape was very different. Spotify and Rdio didn&rsquo;t exist in America. There was no Google Music or iTunes Radio. Soundcloud and Bandcamp were just getting started. Today, music flows from all places on the web. It&rsquo;s easy and affordable to get and it just keeps getting better. 
+
+ After an amazing four years of sweat and tears, we&rsquo;re ever-so-reluctantly accepting the reality of sustaining the Exfm platform as it exists today. The high costs of processing millions of new songs every month while attempting to keep that data relevant and useable is monumental. The technical challenges are compounded by the litigious nature of the music industry, which means every time we have any meaningful growth, it&amp;rsquo;s coupled with the immediate attention of the record labels in the form of takedowns and legal emails. Today, subscription services are gaining in popularity and enjoy the blessings of most major labels at a non trivial cost to those companies.
+
+ All this adds up to a very challenging position for a small startup with grand visions to make any real headway. The sad news is that we are no longer going to be able to keep the Exfm website and suite of apps up and running. To ease the transition to another music service, we&amp;rsquo;ve created an export tool so you won&amp;rsquo;t lose any of your songs, as well as a new Chrome extension that can run independently of our backend.
+
+ We still want to help create the links between the disparate music blogs and all of the music sites and apps out there. Our new Chrome extension will let you scrobble songs to Last.fm from Soundcloud. You can buy Bandcamp songs you hear on Tumblr. You can discover music on a blog and instantly save it to your Rdio or Spotify playlist. It acts as the glue between these services.
+
+ 
+
+ The new extension is available now. If you don&rsquo;t have it yet, we hope you install it and give it a try. On January 15, 2014, we will completely remove the ability to love songs and follow people and your data will no longer be accessible. Our website will only offer the Chrome extension for install and our iPhone and Android apps will stop working. Our blog widget will also stop working. We urge you to grab your songs and sites before it&rsquo;s too late. 
+
+ Once you&rsquo;ve exported your songs you can import them into an awesome new desktop app called Tomahawk which works really well with our new Chrome extension. You call also import all your songs to Rdio using this great website - re/spin.
+
+ 
+
+ This isn&rsquo;t a full goodbye. We feel the time is right to reassess how we can continue to play a role in the new music landscape. We hope you continue to find us useful in the ever-growing world of music online. We&rsquo;d love to hear back from you so please leave us comments and let us know your thoughts. Let us know what you think of the new Chrome extension. 
+
+ Thanks for an amazing four years.
+
+ Best,
+
+ Dan Kantor @dankantor 
+Marshall Jones @majman 
+Jason Culler @jasonculler" /><meta name="twitter:title" content="Changing Tune" /><meta name="twitter:url" content="http://blog.ex.fm/post/70615261278/changing-tune" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:creator" content="exfm" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=exfm&amp;postID=70615261278&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=exfm&amp;postID=70615261278&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=exfm&amp;postID=70615261278&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/blog.ex.fm\/post\/70615261278\/changing-tune","mainEntityOfPage":true,"datePublished":"2013-12-20T21:01:36-05:00","author":"exfm","image":{"@list":["https:\/\/31.media.tumblr.com\/b8fc3de00d7a5dda1817ae28c88bc0b5\/tumblr_inline_my4hianwLA1qzohff.png","https:\/\/31.media.tumblr.com\/e17f96889c40f69f37b551b9633c4c56\/tumblr_inline_my4ia2zS7v1qzohff.png"]},"headline":"Changing Tune","articleBody":"When we started Exfm four years ago, we had one goal. To help people discover and listen to new music on the web. What started as a Chrome extension quickly grew to a website, iPhone app, Android app, blog widget and API. Along the way we had people from over 200 countries use our apps and more than 50 artists play at our concerts in NYC.\nFour years ago the music landscape was very different. Spotify and Rdio didn\u2019t exist in America. There was no Google Music or iTunes Radio. Soundcloud and Bandcamp were just getting started. Today, music flows from all places on the web. It\u2019s easy and affordable to get and it just keeps getting better.\nAfter an amazing four years of sweat and tears, we\u2019re ever-so-reluctantly accepting the reality of sustaining the Exfm platform as it exists today. The high costs of processing millions of new songs every month while attempting to keep that data relevant and useable is monumental. The technical challenges are compounded by the litigious nature of the music industry, which means every time we have any meaningful growth, it\u2019s coupled with the immediate attention of the record labels in the form of takedowns and legal emails. Today, subscription services are gaining in popularity and enjoy the blessings of most major labels at a non trivial cost to those companies.\nAll this adds up to a very challenging position for a small startup with grand visions to make any real headway. The sad news is that we are no longer going to be able to keep the Exfm website and suite of apps up and running. To ease the transition to another music service, we\u2019ve created an export tool so you won\u2019t lose any of your songs, as well as a new Chrome extension that can run independently of our backend.\nWe still want to help create the links between the disparate music blogs and all of the music sites and apps out there. Our new Chrome extension will let you scrobble songs to Last.fm from Soundcloud. You can buy Bandcamp songs you hear on Tumblr. You can discover music on a blog and instantly save it to your Rdio or Spotify playlist. It acts as the glue between these services.\nThe new extension is available now. If you don\u2019t have it yet, we hope you install it and give it a try. On January 15, 2014, we will completely remove the ability to love songs and follow people and your data will no longer be accessible. Our website will only offer the Chrome extension for install and our iPhone and Android apps will stop working. Our blog widget will also stop working. We urge you to grab your songs and sites before it\u2019s too late.\nOnce you\u2019ve exported your songs you can import them into an awesome new desktop app called Tomahawk which works really well with our new Chrome extension. You call also import all your songs to Rdio using this great website - re\/spin.\nThis isn\u2019t a full goodbye. We feel the time is right to reassess how we can continue to play a role in the new music landscape. We hope you continue to find us useful in the ever-growing world of music online. We\u2019d love to hear back from you so please leave us comments and let us know your thoughts. Let us know what you think of the new Chrome extension.\nThanks for an amazing four years.\nBest,\nDan Kantor @dankantor\nMarshall Jones @majman\nJason Culler @jasonculler","@context":"http:\/\/schema.org"}</script>
+</head>
+<body class=" ">
+    <div id="top"> 
+        <div class="center"> 
+            <div id="top_right"> 
+                <div id="nav_links"> 
+                    <a class="nav_link" href="http://ex.fm/about">About</a> 
+                    <a class="nav_link selected" id="blog_nav_link" href="http://blog.ex.fm">Blog</a> 
+                    <a class="nav_link" id="faq_nav_link" href="mailto:help@ex.fm" target="_blank">Help</a> 
+                </div> 
+            </div> 
+            <h1> 
+                <a href="http://ex.fm" id="logo">
+                    <span id="logo_home_icon"></span>exfm
+                </a> 
+            </h1> 
+        </div> 
+    </div> 
+    <div id="container">
+        <div id="middle">
+
+            <div id="blogposts">
+                        
+                        
+                
+                        
+                         
+                <div class="blogpost exfm music tech chrome news text">
+                    <div class="blogpostmiddle">
+                        <div class="blogpostcontent">
+                             
+                            <div class="post-header"> 
+                                <h3>
+                                    <small></small>
+                                    <span class="post-title">Changing Tune</span>
+                                    
+                                    <a href="http://blog.ex.fm/post/70615261278/changing-tune" class="blogpostdate">
+                                        Fri, Dec 20, 2013
+                                    </a>
+                                    
+                                </h3>
+                            </div>
+
+                            <div class="copy">
+                                <p>When we started Exfm four years ago, we had one goal. To help people discover and listen to new music on the web. What started as a Chrome extension quickly grew to a website, iPhone app, Android app, blog widget and API. Along the way we had people from over 200 countries use our apps and more than 50 artists play at our concerts in NYC.</p>
+
+<p>Four years ago the music landscape was very different. Spotify and Rdio didn&rsquo;t exist in America. There was no Google Music or iTunes Radio. Soundcloud and Bandcamp were just getting started. Today, music flows from all places on the web. It&rsquo;s easy and affordable to get and it just keeps getting better. </p>
+
+<p>After an amazing four years of sweat and tears, we&rsquo;re ever-so-reluctantly accepting the reality of sustaining the Exfm platform as it exists today. The high costs of processing millions of new songs every month while attempting to keep that data relevant and useable is monumental. The technical challenges are compounded by the litigious nature of the music industry, which means every time we have any meaningful growth, it&rsquo;s coupled with the immediate attention of the record labels in the form of takedowns and legal emails. Today, subscription services are gaining in popularity and enjoy the blessings of most major labels at a non trivial cost to those companies.</p>
+
+<p>All this adds up to a very challenging position for a small startup with grand visions to make any real headway. The sad news is that we are no longer going to be able to keep the Exfm website and suite of apps up and running. To ease the transition to another music service, we&rsquo;ve created an <a href="https://exfm.parseapp.com/export">export tool</a> so you won&rsquo;t lose any of your songs, as well as a new <a href="https://chrome.google.com/webstore/detail/exfm/ehohhddamheegbbkabfgegbaeminghlb">Chrome extension</a> that can run independently of our backend.</p>
+
+<p>We still want to help create the links between the disparate music blogs and all of the music sites and apps out there. Our new Chrome extension will let you scrobble songs to Last.fm from Soundcloud. You can buy Bandcamp songs you hear on Tumblr. You can discover music on a blog and instantly save it to your Rdio or Spotify playlist. It acts as the glue between these services.</p>
+
+<p><img src="http://38.media.tumblr.com/b8fc3de00d7a5dda1817ae28c88bc0b5/tumblr_inline_my4hianwLA1qzohff.png"></p>
+
+<p>The new extension is available now. If you don&rsquo;t have it yet, we hope you <a href="https://chrome.google.com/webstore/detail/exfm/ehohhddamheegbbkabfgegbaeminghlb">install it</a> and give it a try. <b>On January 15, 2014, we will completely remove the ability to love songs and follow people and your data will no longer be accessible</b>. Our website will only offer the Chrome extension for install and our iPhone and Android apps will stop working. Our blog widget will also stop working. <b>We urge you to <a href="https://exfm.parseapp.com/export">grab your songs and sites</a> before it&rsquo;s too late</b>. </p>
+
+<p>Once you&rsquo;ve exported your songs you can import them into an awesome new desktop app called <a href="http://www.tomahawk-player.org/">Tomahawk</a> which works really well with our new Chrome extension. You call also import all your songs to Rdio using this great website - <a href="http://resp.in/">re/spin</a>.</p>
+
+<p><img src="http://33.media.tumblr.com/e17f96889c40f69f37b551b9633c4c56/tumblr_inline_my4ia2zS7v1qzohff.png"></p>
+
+<p>This isn&rsquo;t a full goodbye. We feel the time is right to reassess how we can continue to play a role in the new music landscape. We hope you continue to find us useful in the ever-growing world of music online. We&rsquo;d love to hear back from you so please leave us comments and let us know your thoughts. Let us know what you think of the new Chrome extension. </p>
+
+<p>Thanks for an amazing four years.</p>
+
+<p>Best,</p>
+
+<p>Dan Kantor <a href="https://twitter.com/dankantor">@dankantor</a><br>
+Marshall Jones <a href="https://twitter.com/majman">@majman</a><br>
+Jason Culler <a href="https://twitter.com/jasonculler">@jasonculler</a></p>
+                            </div>
+                            
+
+                            
+                            
+                            
+
+                            
+                            
+
+                             
+                                <div id="blog_share" class="hidden">
+                                    <div id="blog_share_wrapper">
+                                        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="exfm" data-related="exfm:The best place for music on the web">Tweet</a>
+                                        <div id="fb-root"></div>
+                                        <div class="fb-like" data-send="false" data-layout="button_count" data-width="95" data-show-faces="true"></div>
+                                        <div id="gplus"><g:plusone size="medium"></g:plusone></div>
+                                    </div>
+                                </div>
+                            
+                            
+                        </div> <!-- end .blogpostcontent -->
+                    </div> <!-- end .blogpostmiddle -->
+                    <div class="blogpostbottom">
+                        <div class="blogpostbottomright">
+                            <div class="blogpost-tags">
+                            
+                                <a href="http://blog.ex.fm/tagged/exfm" class="blogpost-tag">exfm</a><a href="http://blog.ex.fm/tagged/music" class="blogpost-tag">music</a><a href="http://blog.ex.fm/tagged/tech" class="blogpost-tag">tech</a><a href="http://blog.ex.fm/tagged/chrome" class="blogpost-tag">chrome</a><a href="http://blog.ex.fm/tagged/news" class="blogpost-tag">news</a>
+                            
+                            </div>
+                            <div class="post-actions">
+                                <a href="http://blog.ex.fm/post/70615261278/changing-tune" class="blognotes blog-icon"> 98 </a>
+                                
+                                <a href="http://blog.ex.fm/post/70615261278/changing-tune#disqus_thread" class="blogcomments blog-icon"></a>
+                                
+                            </div>
+                        </div>
+                        <div class="blogpostbottomleft">
+                            <span class="blog_post_author">
+                                <img src="http://33.media.tumblr.com/avatar_f8fa1873c7f0_40.png" width="40" height="40" /> 
+                                <span class="blog_post_by">by</span> 
+                                <a href="http://blog.dankantor.com/" class="blog_post_author_name">dankantor</a>
+                            </span>
+                        </div>
+                    </div> 
+                <!-- end .blogpostbottom -->
+                </div>
+
+                
+                <div class="blognotecontainer">
+                    <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_thiti-luang without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://thiti-luang.tumblr.com/" title="Thiti Luang " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_bc938f666818_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://thiti-luang.tumblr.com/" title="Thiti Luang" rel="nofollow">thiti-luang</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_zenmarlin without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://zenmarlin.tumblr.com/" title="Me &amp; My Guitar " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_646d0de9d9b7_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://zenmarlin.tumblr.com/" title="Me &amp; My Guitar" rel="nofollow">zenmarlin</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_gsfv without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://gsfv.tumblr.com/" title="gsfv " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_4f02aa1158e2_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://gsfv.tumblr.com/" title="gsfv" rel="nofollow">gsfv</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_gluttonygod without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://gluttonygod.tumblr.com/" title="Someone&#039;s In My Head Again " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_daeb3f5d2b6d_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://gluttonygod.tumblr.com/" title="Someone&#039;s In My Head Again" rel="nofollow">gluttonygod</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_turbos2 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://turbos2.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_a68932610090_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://turbos2.tumblr.com/" title="Untitled" rel="nofollow">turbos2</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sexoytonejitos without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sexoytonejitos.tumblr.com/" title="Sexo y curiosidades " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_5f94c845a148_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sexoytonejitos.tumblr.com/" title="Sexo y curiosidades" rel="nofollow">sexoytonejitos</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_madebeaut1ful without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://madebeaut1ful.tumblr.com/" title="Can You Hear Me Now?! Good :) " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_47d5c77bcddd_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://madebeaut1ful.tumblr.com/" title="Can You Hear Me Now?! Good :)" rel="nofollow">madebeaut1ful</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_p4yton without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://p4yton.tumblr.com/" title="Migajas de mi mesa. " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_41ed37017882_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://p4yton.tumblr.com/" title="Migajas de mi mesa." rel="nofollow">p4yton</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_melekdesign without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://melekdesign.tumblr.com/" title="ANGELL"><img src="http://33.media.tumblr.com/avatar_d68ed11bdd89_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://melekdesign.tumblr.com/post/73197801651"><a rel="nofollow" href="http://melekdesign.tumblr.com/" class="tumblelog" title="ANGELL">melekdesign</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note like tumblelog_chitinoustouch without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://chitinoustouch.tumblr.com/" title="chitinoustouch " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_820f9e50a3e1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://chitinoustouch.tumblr.com/" title="chitinoustouch" rel="nofollow">chitinoustouch</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sari-hime without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sari-hime.tumblr.com/" title="Soul. Rouh. Anima. " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_2479958c6f9b_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sari-hime.tumblr.com/" title="Soul. Rouh. Anima." rel="nofollow">sari-hime</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_ratmats without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ratmats.tumblr.com/" title="Mats Lagerburg " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_b0b450705d42_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://ratmats.tumblr.com/" title="Mats Lagerburg" rel="nofollow">ratmats</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_joergjaeckel without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://joergjaeckel.tumblr.com/" title="joergjaeckel " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_357c445b59e4_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://joergjaeckel.tumblr.com/" title="joergjaeckel" rel="nofollow">joergjaeckel</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_meltemkblog without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://meltemkblog.tumblr.com/" title="İsimsiz"><img src="http://assets.tumblr.com/images/default_avatar/octahedron_closed_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://meltemkblog.tumblr.com/post/72881397162"><a rel="nofollow" href="http://meltemkblog.tumblr.com/" class="tumblelog" title="İsimsiz">meltemkblog</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note reblog tumblelog_keepfromgoinginsane without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://keepfromgoinginsane.tumblr.com/" title="keepfromgoinginsane"><img src="http://38.media.tumblr.com/avatar_5e46ff89f9ff_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://keepfromgoinginsane.tumblr.com/post/72820057858"><a rel="nofollow" href="http://keepfromgoinginsane.tumblr.com/" class="tumblelog" title="keepfromgoinginsane">keepfromgoinginsane</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note reblog tumblelog_yungniggaus without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://yungniggaus.tumblr.com/" title="Untitled"><img src="http://assets.tumblr.com/images/default_avatar/pyramid_closed_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://yungniggaus.tumblr.com/post/72817034693"><a rel="nofollow" href="http://yungniggaus.tumblr.com/" class="tumblelog" title="Untitled">yungniggaus</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note like tumblelog_ehmemo without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ehmemo.tumblr.com/" title="&Eacute; m&ecirc;mo? " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_8ea6ef17d7c1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://ehmemo.tumblr.com/" title="&Eacute; m&ecirc;mo?" rel="nofollow">ehmemo</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_dannyboi2 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dannyboi2.tumblr.com/" title="dannyboi2"><img src="http://38.media.tumblr.com/avatar_bea38700076f_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://dannyboi2.tumblr.com/post/72674328012"><a rel="nofollow" href="http://dannyboi2.tumblr.com/" class="tumblelog" title="dannyboi2">dannyboi2</a> reblogged this from <a rel="nofollow" href="http://dannyboi2music.tumblr.com/" class="source_tumblelog" title="Dannyboi2MUSIC">dannyboi2music</a></span><div class="clear"></div></li><li class="note reblog tumblelog_dannyboi2music with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dannyboi2music.tumblr.com/" title="Dannyboi2MUSIC"><img src="http://38.media.tumblr.com/avatar_fa80194cd29c_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://dannyboi2music.tumblr.com/post/72674286888"><a rel="nofollow" href="http://dannyboi2music.tumblr.com/" class="tumblelog" title="Dannyboi2MUSIC">dannyboi2music</a> reblogged this from <a rel="nofollow" href="http://dannyboi2.tumblr.com/" class="source_tumblelog" title="dannyboi2">dannyboi2</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://dannyboi2music.tumblr.com/post/72674286888" title="View post">I&rsquo;m not Happy About this, Please voice your opinion and not let the Giant Corporations control what music we can buy or...</a></blockquote></li><li class="note like tumblelog_dannyboi2 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://dannyboi2.tumblr.com/" title="dannyboi2 " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_bea38700076f_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://dannyboi2.tumblr.com/" title="dannyboi2" rel="nofollow">dannyboi2</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_neath-the-curse-of-my-loverseyes without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://neath-the-curse-of-my-loverseyes.tumblr.com/" title="The Heart Is Crazy " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_b14c8d1b7bc8_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://neath-the-curse-of-my-loverseyes.tumblr.com/" title="The Heart Is Crazy" rel="nofollow">neath-the-curse-of-my-loverseyes</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_vasquezw7 with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://vasquezw7.tumblr.com/" title="vsqvz"><img src="http://33.media.tumblr.com/avatar_2fe17efc30d4_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://vasquezw7.tumblr.com/post/72360527590"><a rel="nofollow" href="http://vasquezw7.tumblr.com/" class="tumblelog" title="vsqvz">vasquezw7</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://vasquezw7.tumblr.com/post/72360527590" title="View post">has been my favorite music app&hellip;.</a></blockquote></li><li class="note like tumblelog_hrschel without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://hrschel.tumblr.com/" title="Waffles &amp; Falafels " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_2162526b5a77_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://hrschel.tumblr.com/" title="Waffles &amp; Falafels" rel="nofollow">hrschel</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_ttayla without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ttayla.tumblr.com/" title="the truth " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_237ad716ceca_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://ttayla.tumblr.com/" title="the truth" rel="nofollow">ttayla</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_freelanceyoungadult with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://freelanceyoungadult.tumblr.com/" title="I tripped in gravity"><img src="http://33.media.tumblr.com/avatar_14cf25d199a4_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://freelanceyoungadult.tumblr.com/post/72201872036"><a rel="nofollow" href="http://freelanceyoungadult.tumblr.com/" class="tumblelog" title="I tripped in gravity">freelanceyoungadult</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://freelanceyoungadult.tumblr.com/post/72201872036" title="View post">This is so sad! I wish you the best and please come back soon! This has been my music app for far too long :(</a></blockquote></li><li class="note like tumblelog_peiwata without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://peiwata.tumblr.com/" title="P2C " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_d7b0b2f8ecbc_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://peiwata.tumblr.com/" title="P2C" rel="nofollow">peiwata</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_chercole without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://chercole.tumblr.com/" title="you&#039;re* lmao " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_9fe88c69ef80_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://chercole.tumblr.com/" title="you&#039;re* lmao" rel="nofollow">chercole</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_minimalseoul without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://minimalseoul.tumblr.com/" title="Minimal Seoul " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_9e51f6727dcf_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://minimalseoul.tumblr.com/" title="Minimal Seoul" rel="nofollow">minimalseoul</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_nabillera with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nabillera.tumblr.com/" title="Nowhere House"><img src="http://38.media.tumblr.com/avatar_60f8df91bd38_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://nabillera.tumblr.com/post/72076926996"><a rel="nofollow" href="http://nabillera.tumblr.com/" class="tumblelog" title="Nowhere House">nabillera</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://nabillera.tumblr.com/post/72076926996" title="View post">지난 몇 년간 새로운 음악이 고플 때마다 가장 즐겨 찾았던 웹사이트였는데. 너무 너무 아쉽다, 문 닫는다니. 이제 어데로 갈 거나.ㅠㅠ</a></blockquote></li><li class="note reblog tumblelog_ctrltae without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://ctrltae.tumblr.com/" title="Hold me tight."><img src="http://33.media.tumblr.com/avatar_79ad4a43a41a_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://ctrltae.tumblr.com/post/72058571340"><a rel="nofollow" href="http://ctrltae.tumblr.com/" class="tumblelog" title="Hold me tight.">ctrltae</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note like tumblelog_nohface without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nohface.tumblr.com/" title="-SICLE. " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_491ffb654aec_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nohface.tumblr.com/" title="-SICLE." rel="nofollow">nohface</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_smxfr without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://smxfr.tumblr.com/" title="Cyb&#039;s D&eacute;couverte"><img src="http://38.media.tumblr.com/avatar_8fb01ae9c46c_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://smxfr.tumblr.com/post/71998954759"><a rel="nofollow" href="http://smxfr.tumblr.com/" class="tumblelog" title="Cyb&#039;s D&eacute;couverte">smxfr</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note reblog tumblelog_midnighttinparis without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://midnighttinparis.tumblr.com/" title="Hey you :)"><img src="http://38.media.tumblr.com/avatar_bc8141ef0f8e_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://midnighttinparis.tumblr.com/post/71894853685"><a rel="nofollow" href="http://midnighttinparis.tumblr.com/" class="tumblelog" title="Hey you :)">midnighttinparis</a> reblogged this from <a rel="nofollow" href="http://kenf1965.tumblr.com/" class="source_tumblelog" title="kenf1965">kenf1965</a></span><div class="clear"></div></li><li class="note reblog tumblelog_bochinohito without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://bochinohito.tumblr.com/" title="Bochinohito&rsquo;s Tumblr"><img src="http://31.media.tumblr.com/avatar_5b40be69a96d_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://bochinohito.tumblr.com/post/71817348274"><a rel="nofollow" href="http://bochinohito.tumblr.com/" class="tumblelog" title="Bochinohito&rsquo;s Tumblr">bochinohito</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a></span><div class="clear"></div></li><li class="note like tumblelog_bochinohito without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://bochinohito.tumblr.com/" title="Bochinohito&rsquo;s Tumblr " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_5b40be69a96d_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://bochinohito.tumblr.com/" title="Bochinohito&rsquo;s Tumblr" rel="nofollow">bochinohito</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_moamenbolbol without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://moamenbolbol.tumblr.com/" title="BolBol &#039;_- " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_25f43a2d6d89_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://moamenbolbol.tumblr.com/" title="BolBol &#039;_-" rel="nofollow">moamenbolbol</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_unhealedwound without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://unhealedwound.tumblr.com/" title=" " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_1997c28a81e0_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://unhealedwound.tumblr.com/" title="" rel="nofollow">unhealedwound</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_kenf1965 with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kenf1965.tumblr.com/" title="kenf1965"><img src="http://38.media.tumblr.com/avatar_5db8bb621ea1_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://kenf1965.tumblr.com/post/71418502615"><a rel="nofollow" href="http://kenf1965.tumblr.com/" class="tumblelog" title="kenf1965">kenf1965</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://kenf1965.tumblr.com/post/71418502615" title="View post">It&rsquo;s a very sad day you will be truely missed by me and all your followers please come back soon</a></blockquote></li><li class="note like tumblelog_kenf1965 without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://kenf1965.tumblr.com/" title="kenf1965 " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_5db8bb621ea1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://kenf1965.tumblr.com/" title="kenf1965" rel="nofollow">kenf1965</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_vides with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://vides.tumblr.com/" title="Black &amp; White"><img src="http://33.media.tumblr.com/avatar_9450f73b93c8_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://vides.tumblr.com/post/71410658826"><a rel="nofollow" href="http://vides.tumblr.com/" class="tumblelog" title="Black &amp; White">vides</a> reblogged this from <a rel="nofollow" href="http://blog.ex.fm/" class="source_tumblelog" title="exfm blog">exfm</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://vides.tumblr.com/post/71410658826" title="View post">Noooooo, this is my fav app ;(</a></blockquote></li><li class="note like tumblelog_carsonreneau without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://carsonreneau.tumblr.com/" title="Carson R. " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_9c631a8674a1_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://carsonreneau.tumblr.com/" title="Carson R." rel="nofollow">carsonreneau</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_velossfaeniel without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://velossfaeniel.tumblr.com/" title="To die by your side, such a heavenly way to die. " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_1606379f9202_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://velossfaeniel.tumblr.com/" title="To die by your side, such a heavenly way to die." rel="nofollow">velossfaeniel</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_radiovitea without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://radiovitea.tumblr.com/" title=" " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_5b45caae6f99_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://radiovitea.tumblr.com/" title="" rel="nofollow">radiovitea</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_kamiisyuu without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nyaa.suka.se/" title="天使? ★ " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_a9164c8ed398_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nyaa.suka.se/" title="天使? ★" rel="nofollow">kamiisyuu</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_medeixadoidavai without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://medeixadoidavai.tumblr.com/" title="Chega chegando :3 " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_cf108ebc2cca_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://medeixadoidavai.tumblr.com/" title="Chega chegando :3" rel="nofollow">medeixadoidavai</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_stadiumsshrines without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://stadiumsshrines.tumblr.com/" title=" " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_fdded1fc5500_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://stadiumsshrines.tumblr.com/" title="" rel="nofollow">stadiumsshrines</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_josefuego without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://josefuego.tumblr.com/" title="Languishing in Shame. " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_72647f90ab99_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://josefuego.tumblr.com/" title="Languishing in Shame." rel="nofollow">josefuego</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_alintz without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://alintz.tumblr.com/" title="Tangled Web We Weave " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_5bb1e094e62a_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://alintz.tumblr.com/" title="Tangled Web We Weave" rel="nofollow">alintz</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_miggy-angel-poet without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://miggy-angel-poet.tumblr.com/" title="SouthpawSyntax " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_b827c46f3da0_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://miggy-angel-poet.tumblr.com/" title="SouthpawSyntax" rel="nofollow">miggy-angel-poet</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_am-afterglow without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://am-afterglow.tumblr.com/" title="{ 6:01 AM } " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_54d43a222afb_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://am-afterglow.tumblr.com/" title="{ 6:01 AM }" rel="nofollow">am-afterglow</a> likes this</span><div class="clear"></div></li><li class="note more_notes_link_container" style="text-align:center;" id="more_notes_70615261278"><a class="more_notes_link" rel="nofollow" href="#" onclick="this.style.display='none';document.getElementById('notes_loading_70615261278').style.display = 'block';if(window.ActiveXObject)var tumblrReq=new ActiveXObject('Microsoft.XMLHTTP');else if(window.XMLHttpRequest)var tumblrReq=new XMLHttpRequest();else return false;tumblrReq.onreadystatechange=function(){if(tumblrReq.readyState==4){var notes_html=tumblrReq.responseText.split('<!-- START '+'NOTES -->')[1].split('<!-- END '+'NOTES -->')[0];
+if(window.tumblrNotesLoaded)if(tumblrNotesLoaded(notes_html)==false)return;var more_notes_link=document.getElementById('more_notes_70615261278');var notes=more_notes_link.parentNode;notes.removeChild(more_notes_link);notes.innerHTML+=notes_html;if(window.tumblrNotesInserted)tumblrNotesInserted(notes_html);}};tumblrReq.open('GET','/notes/70615261278/a2zEDb5pt?from_c=1387696998',true);tumblrReq.send();return false;">Show more notes</a><span class="notes_loading" id="notes_loading_70615261278" style="display:none;">Loading...</span></li><!-- END NOTES --></ol>
+
+                </div>
+                
+                                   
+                
+                
+                <div class="blognotecontainer">
+                   <div id="disqus_thread"></div>
+                   <script type="text/javascript" src="http://disqus.com/forums/extensionfmblog/embed.js"></script>
+                   <noscript><a href="http://extensionfmblog.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+                </div>
+                                
+                
+
+            
+            
+            </div> <!-- end blogposts -->
+
+        <div id="right-column">
+            <div id="about" class="column-list">
+                <span class="list-header">What is this exfm?</span>
+                <p>
+                    Only the best way to discover and share new music online. Like, ever!
+                    
+                </p>
+                <a href="http://ex.fm/create-account" class="btn signup">Sign Up Now</a>
+                <a href="http://ex.fm/tutorial" class="learnmore">Learn More</a>
+            </div>
+            <div id="features" class="column-list">
+                <ul>
+                    <li class="list-header">Features</li>
+                    
+                    <li><a href="/tagged/siteoftheday">Site of the Day</a></li>
+                    <li><a href="/tagged/album-of-the-week">Album of the Week</a></li>
+                    <li><a href="/tagged/monthly-mixtape">Monthly Mixtape</a></li>
+                    <li><a href="/tagged/team-tuneage">Team Tuneage</a></li>
+                    <li><a href="/tagged/daily-dos">Daily Dos</a></li>
+                    <li><a href="/tagged/user-spotlight">User Spotlight</a></li>
+                    <li><a href="/tagged/new-tastemakers">New Tastemakers</a></li>
+                    
+                    <li><a href="/tagged/exfm-presents">exfm Presents</a></li>
+                    
+                    <li><a href="/tagged/team-lunch">Team Lunch</a></li>
+                    <li><a href="http://blog.ex.fm/resource-library">Resource &amp; Feature Library</a></li>
+                </ul>
+            </div>
+            <div id="connect" class="column-list">
+                <ul>
+                    <li class="list-header">Follow us on</li>
+<li><a href="http://tumblr.com/follow/exfm">Tumblr</a></li>
+                    <li><a href="http://twitter.com/exfm">Twitter</a></li>
+                    <li><a href="http://www.facebook.com/exfm.music">Facebook</a></li>
+                    <li><a href="http://www.foursquare.com/exfm">Foursquare</a></li>
+                </ul>
+            </div>
+            <div id="team" class="column-list">
+                <ul>
+                    <li class="list-header">Team</li>
+                    <li>
+                        <a href="http://ex.fm/dan" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_dan);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/dan">Dan Kantor</a></h4><p>Founder + CEO</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_dan">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_dan"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_dan"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://ex.fm/majman" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_majman);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/majman">Marshall Jones</a></h4><p>Founder + Creative Director</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_majman">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_majman"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_majman"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://ex.fm/jesspage" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_jesspage);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/jesspage">Jessica Page</a></h4><p>Marketing + Community <br /> Manager</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_jesspage">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_jesspage"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_jesspage"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://ex.fm/lucas" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_lucas);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/lucas">Lucas Hrabovsky</a></h4><p>CTO</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_lucas">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_lucas"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_lucas"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://ex.fm/jm" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_jm);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/jm">Jonathan Marmor</a></h4><p>Software Developer</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_jm">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_jm"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_jm"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://ex.fm/jasonculler" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_jasonculler);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/jasonculler">Jason Culler</a></h4><p>Designer</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_jasonculler">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_jasonculler"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_jasonculler"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://ex.fm/grmnygrmny" class="team-img" style="background-image:url(http://images.extension.fm/avatar_small_grmnygrmny);"></a>
+                        <div class="team-info">
+                            <h4 class="team-name"><a href="http://ex.fm/grmnygrmny">Drew Harris</a></h4><p>Intern Developer</p>
+                        </div>
+                        <div class="team_now_playing" id="team_now_playing_grmnygrmny">
+                            <span class="team_now_playing_intro">Now Playing:</span>
+                            <a href="#" class="team_now_playing_title" id="team_now_playing_title_grmnygrmny"></a> by
+                            <a href="#" class="team_now_playing_artist" id="team_now_playing_artist_grmnygrmny"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- end middle -->             
+
+    
+
+    <div id="blogbottom">
+        <div id="home_footer">
+            <div class="home_footer_section">
+                <div class="home_footer_header">Company</div>
+                <div class="home_footer_column">
+                    <a href="http://ex.fm/about" class="home_footer_link" target="_blank" >About</a>
+                    <a href="mailto:help@ex.fm" class="home_footer_link" target="_blank" >Help</a>
+                    <a href="http://ex.fm/jobs" class="home_footer_link" target="_blank" >Jobs</a>
+                    <a href="http://ex.fm/labs" class="home_footer_link" target="_blank" >Labs</a>
+                </div>
+                <div class="home_footer_column">
+                    <a href="http://ex.fm/privacy" class="home_footer_link" target="_blank" >Privacy</a>
+                    <a href="http://ex.fm/terms" class="home_footer_link" target="_blank" >Terms of Service</a>
+                    <a href="http://ex.fm/dmca" class="home_footer_link" target="_blank" >DMCA</a>
+                </div>
+            </div>
+            <div class="home_footer_section">
+                <div class="home_footer_header">Apps</div>
+                <div class="home_footer_column">
+                    <a href="http://ex.fm/iphone" class="home_footer_link" target="_blank" >iPhone</a>
+                    <a href="http://ex.fm/android" class="home_footer_link" target="_blank" >Android</a>
+                    <a href="http://ex.fm/site-player" class="home_footer_link" target="_blank" >Site Player for Blogs</a>
+                    <a href="http://ex.fm/chrome" class="home_footer_link" target="_blank" >Chrome Extension</a>
+                </div>
+            </div>
+            <div class="home_footer_section">
+                <div class="home_footer_header">Developers</div>
+                <a href="http://ex.fm/api" class="home_footer_link" target="_blank" >API</a>
+                <a href="http://ex.fm/javascript-api" class="home_footer_link" target="_blank" >Site Player API</a>
+            </div>
+            <div class="home_footer_section">
+                <div class="home_footer_header">Follow</div>
+                <a href="http://blog.ex.fm" class="home_footer_link" target="_blank" >Tumblr</a>
+                <a href="http://twitter.com/exfm" class="home_footer_link" target="_blank" >Twitter</a>
+                <a href="http://www.facebook.com/exfm.music" class="home_footer_link" target="_blank" >Facebook</a>
+                <a href="http://ex.fm/badges" class="home_footer_link" target="_blank" >Badges</a>
+            </div>
+        </div>
+        <div id="home_footer_copyright">
+            &copy; 2013 Extension Entertainment Inc. - All Rights Reserved
+            <a href="http://nytm.org/made/" target="_blank" id="home_made_nyc" outbound_type="home_made_nyc">Proudly made in Nolita, NYC</a>    
+        </div> 
+    </div> <!-- end bottom -->
+    
+    <div id="blogpowered"><a href="http://www.tumblr.com">Blog Powered by Tumblr</a></div>
+    
+</div> <!-- end container -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://ex.fm/static/js/config.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://ex.fm/static/js/libs/socket.io.js" type="text/javascript" charset="utf-8"></script>
+        <script src="http://ex.fm/static/js/website/blog.js" type="text/javascript" charset="utf-8"></script>
+        
+        
+        
+        
+        <script type="text/javascript">
+            //<![CDATA[
+            (function() {
+                var links = document.getElementsByTagName('a');
+                var query = '?';
+                for(var i = 0; i < links.length; i++) {
+                    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+                        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+                    }
+                }
+                document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/extensionfmblog/get_num_replies.js' + query + '"></' + 'script>');
+            })();
+            //]]>
+        </script>
+        
+     
+<script>
+(function(){
+  var iframes = document.body.getElementsByTagName('iframe')
+  ,   newVimeoWidth = 650
+  ,   newVimeoHeight = 'auto';
+  for(x in iframes){
+    if(iframes[x].src && iframes[x].src.indexOf('player.vimeo.com') > -1){
+      if(newVimeoHeight == 'auto'){
+        newVimeoHeight = ( newVimeoWidth * 9 ) / 16;
+      }
+      iframes[x].width = newVimeoWidth;
+      iframes[x].height = newVimeoHeight
+    }
+  }
+})();
+</script>     
+     
+     
+  <script type="text/javascript" src="http://static.extension.fm/exfm.js?"></script>   
+     
+<script type="text/javascript">  (function() {
+    var ga = document.createElement('script');     ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://blog.ex.fm";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/70615261278/changing-tune?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017161&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5leC5mbVwvcG9zdFwvNzA2MTUyNjEyNzhcL2NoYW5naW5nLXR1bmUiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSJ9&U=JPLIDJBMPG&K=eab3a9fcdc8a2373915a9131440ff84568c7634f50465e6e2ae360c369c3dc9c&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017161&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5leC5mbVwvcG9zdFwvNzA2MTUyNjEyNzhcL2NoYW5naW5nLXR1bmUiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsIm5vc2NyaXB0IjoxfQ==&U=JPLIDJBMPG&K=5e2bcf5b664bc03c17543ca8e5aa9e7d31942bffdbe6b374e91d058b3910bab4&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017161&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuZXguZm1cL3Bvc3RcLzcwNjE1MjYxMjc4XC9jaGFuZ2luZy10dW5lIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiNzA2MTUyNjEyNzgiLCJibG9naWQiOiIzMDE2MDE5Iiwic291cmNlIjozM31dfQ==&U=HCIEFLJDHP&K=78d745939c1826af5692669641264d0cdefc5963ca41c2a48058266b2535fc35&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017161&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuZXguZm1cL3Bvc3RcLzcwNjE1MjYxMjc4XC9jaGFuZ2luZy10dW5lIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJwb3N0cyI6W3sicG9zdGlkIjoiNzA2MTUyNjEyNzgiLCJibG9naWQiOiIzMDE2MDE5Iiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=HCIEFLJDHP&K=57d7d25670a1534af4ef038668d2cd3b51d35612772cc85819ebe198339aa090&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:3016019,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Fblog.ex.fm%2Fpost%2F70615261278%2Fchanging-tune&amp;pid=70615261278&amp;rk=ZjIYVD8x&amp;lang=en_US&amp;name=exfm&amp;avatar=http%3A%2F%2F33.media.tumblr.com%2Favatar_d03409c20cfd_64.png&amp;title=exfm+blog&amp;url=http%3A%2F%2Fblog.ex.fm%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Fblog.ex.fm%2Fpost%2F70615261278%2Fchanging-tune&amp;pid=70615261278&amp;rk=ZjIYVD8x&amp;lang=en_US&amp;name=exfm&amp;avatar=http%3A%2F%2F33.media.tumblr.com%2Favatar_d03409c20cfd_64.png&amp;title=exfm+blog&amp;url=http%3A%2F%2Fblog.ex.fm%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

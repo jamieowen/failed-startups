@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>A Postmortem Analysis of Standout Jobs</title><meta name="robots" content="noarchive,noodp,noydir" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="alternate" type="application/rss+xml" title="Instigator Blog &raquo; Feed" href="http://www.instigatorblog.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Instigator Blog &raquo; Comments Feed" href="http://www.instigatorblog.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Instigator Blog &raquo; A Postmortem Analysis of Standout Jobs Comments Feed" href="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/feed/" />
+<link rel="canonical" href="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.instigatorblog.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='portfolio_slideshow-css'  href='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/portfolio-slideshow/css/portfolio-slideshow.min.css?ver=1.5.1' type='text/css' media='screen' />
+<link rel='stylesheet' id='instapress-css'  href='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/instapress/instapress.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/instapress/fancybox/jquery.fancybox.css?ver=1.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='remobile-pro-theme-css'  href='http://instigator.wpengine.netdna-cdn.com/wp-content/themes/remobile-pro/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://instigator.wpengine.netdna-cdn.com/wp-includes/css/dashicons.min.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CNeuton%3A300%2C700&#038;ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
+<script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/instapress/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-content/themes/remobile-pro/js/responsive-menu.js?ver=1.0.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.instigatorblog.com/xmlrpc.php?rsd" />
+
+<!-- Portfolio Slideshow-->
+<noscript><link rel="stylesheet" type="text/css" href="http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/portfolio-slideshow/css/portfolio-slideshow-noscript.css?ver=1.5.1" /></noscript><script type="text/javascript">/* <![CDATA[ */var psTimeout = new Array();  var psAutoplay = new Array();  var psFluid = new Array(); var psTrans = new Array(); var psSpeed = new Array(); var psLoop = new Array();/* ]]> */</script>
+<!--//Portfolio Slideshow-->
+<script src="//load.sumome.com/" data-sumo-site-id="c90db886bac27fed6360df347fb48399044fbc93f077e43f62e84840dbdc40b8" async></script>
+<!-- Twitter button plus 1.0 by unijimpe -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<link rel="Shortcut Icon" href="http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/genesis-favicon-uploader/favicons/favicon.ico" type="image/x-icon" />
+<link rel="pingback" href="http://www.instigatorblog.com/xmlrpc.php" />
+<style type="text/css">
+form#mc-embedded-subscribe-form input#mc-embedded-subscribe:hover {color: #000;}
+</style><!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="single single-post postid-2243 single-format-standard custom-header header-full-width full-width-content" itemscope="itemscope" itemtype="http://schema.org/WebPage"><div class="site-container"><header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader"><nav class="nav-primary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement"><ul id="menu-top-menu" class="menu genesis-nav-menu menu-primary"><li id="menu-item-2919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="http://www.instigatorblog.com/startup-investor-resources/">Startup &#038; Investor Resources</a></li>
+<li id="menu-item-2918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="http://www.instigatorblog.com/recent-posts/">Recent Posts</a></li>
+<li id="menu-item-2925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="http://www.instigatorblog.com/search/">Search</a></li>
+<li id="menu-item-2921" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2921"><a href="http://www.instigatorblog.com/contact-ben/">Contact Me</a></li>
+</ul></nav><div class="title-area"><h1 class="site-title" itemprop="headline"><a href="http://www.instigatorblog.com/">Instigator Blog</a></h1><h2 class="site-description" itemprop="description">Lean Analytics, startups, angel investing, product management and more!</h2></div></header><div class="site-inner"><div class="content-sidebar-wrap"><main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog"><article class="post-2243 post type-post status-publish format-standard category-startups tag-analysis tag-postmortem tag-standout-jobs tag-startups entry" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><header class="entry-header"><h1 class="entry-title" itemprop="headline">A Postmortem Analysis of Standout Jobs</h1> 
+<p class="entry-meta"><time class="entry-time" itemprop="datePublished" datetime="2010-10-05T09:43:08+00:00">October 5, 2010</time> by <span class="entry-author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><a href="http://www.instigatorblog.com/author/byosko/" class="entry-author-link" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Ben Yoskovitz</span></a></span> <span class="entry-comments-link"><a href="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/#comments"><span class="dsq-postid" data-dsqidentifier="2243 http://www.instigatorblog.com/?p=2243">93 Comments</span></a></span> </p></header><div class="entry-content" itemprop="text"><p>It&#8217;s been a number of months since I <a href="http://www.instigatorblog.com/standout-jobs-acquired/2010/05/03/">announced that we sold Standout Jobs</a>. In that time I&#8217;ve gone through a myriad of emotions and cyclical arguments in my head about the entire process of starting Standout Jobs, running it and selling it. I&#8217;ve <a href="http://www.chubbybrain.com/blog/2010/09/how-to-develop-a-product-that-nobody-wants-the-story-of-chubbybrain/#more-4415">read</a> a <a href="http://blog.eventvue.com/post/372936164/post-mortem">number</a> of <a href="http://www.chubbybrain.com/blog/2010/10/startup-failure-post-mortem/">great</a> (and <a href="http://blog.precipice.org/why-wesabe-lost-to-mint">heartfelt</a>) <a href="http://blog.paulbiggar.com/archive/why-we-shut-newstilt-down/">postmortems</a> of late, and then read Eric Ries&#8217; blog post: <a href="http://www.startuplessonslearned.com/2010/10/stop-lying-on-stage.html">Stop lying on stage</a>. I appreciate Eric&#8217;s point-of-view, and I&#8217;ve had similar experiences watching people on stage, publicly addressing an audience and omitting key points of their &#8220;startup&#8217;s story&#8221;. Investors do it too. Everyone does it (I think it&#8217;s human nature.) But there&#8217;s a big difference between &#8220;on the record&#8221; and &#8220;off the record&#8221;. People should be smart enough to know the difference. And there are some bridges not worth burning (at least completely.) Even more importantly, there&#8217;s just some things that aren&#8217;t meant for public consumption. Perhaps in those cases the stories (or &#8220;legends!&#8221;) shouldn&#8217;t be promoted whatsoever, because they&#8217;re only half-truths&#8230;</p>
+<p><strong>One thing is certain: Success is never as easy as it seems when someone else talks about it, and failure is rarely as dismal as it seems either.</strong></p>
+<p>&#8220;Overnight successes&#8221; are generally bullshit. No road to startup success is without big, massive road bumps. It&#8217;s called a rollercoaster for a reason. On the flip side, failure is rarely so crippling a blow that entrepreneurs can&#8217;t pick up and keep going. Everyone fails. &#8220;Out of the ashes&#8230;&#8221; and all that.</p>
+<p><strong>So in reflecting on all of this (and more), I&#8217;ve decided to write the Standout Jobs postmortem.</strong> And the only way to do so effectively, publicly and hopefully with the end result of helping other entrepreneurs, is to reflect on my own performance and efforts.</p>
+<p>Although we did exit Standout Jobs it was not a financial success. In fact, personally, I have less money now than when I started the company. Initially (I can&#8217;t remember for how long) I wasn&#8217;t paying myself. When we raised financing, I paid myself a fair salary, but then cut it down when the company was struggling. At the end, I wasn&#8217;t paying myself for quite awhile as well. Such is life when you decide to start a company. High risk = high reward (or not!)</p>
+<p>I am pleased (as I indicated when I announced the exit) that we found a buyer for Standout Jobs. It was a great and difficult experience to go through. It was a true learning experience. The technology we built was solid, and I do honestly hope that the acquirer is able to leverage it with great success. You can certainly see in the marketplace today that a number of players have been working on enhancing employer profiles, increasing employer branding and social recruiting opportunities for employers. We were onto something.</p>
+<h3>Timing Sucked</h3>
+<p><strong>Our timing was terrible.</strong> We launched the paying version of our application in the fall of 2008 about 5 minutes before the economy collapsed. Very few companies were hiring. I got feedback on sales calls like this: <em>&#8220;That&#8217;s a great product, really love it, but we won&#8217;t be hiring for another 18 months or so. You have anything to help us fire people?&#8221;</em></p>
+<p>We knew the economy was heading south, but we had no idea how bad it would be and how long it would last. And we failed to react quickly and aggressively enough. <strong>In fact, I think most failures of CEOs and startup founders fall under the category of, <em>&#8220;didn&#8217;t react quickly and aggressively enough.&#8221;</em></strong> I&#8217;d say it&#8217;s fairly rare that a startup overreacts to something and changes too radically. In 99.9% of cases it&#8217;s the opposite: startups don&#8217;t change fast enough. But making aggressive, fast changes takes bold, bold leaders.</p>
+<h3>Not Bold Enough</h3>
+<p>Simply put, I wasn&#8217;t bold enough. It took too long for me to sound the alarms loud enough. There are a number of reasons for this, and I&#8217;d say they&#8217;re quite common. For starters, I&#8217;m not a loudmouthed egomaniac. I don&#8217;t think you have to be, but you do need a big ego to survive. I have a healthy enough ego (most days!) but it did take a beating during the course of Standout Jobs. It&#8217;s not that hard to get to a point where you believe that everyone else knows better than you do. And having to tell your investors, Board of Directors, employees, family, etc. that what you told them would work isn&#8217;t working is just plain hard.</p>
+<p><strong>I absolutely believe that taking a more analytical approach &#8211; driven by Customer Development and Lean Startup principles &#8211; can bolster your sagging ego and help you make rational, honest and difficult decisions.</strong> With Standout Jobs, I wasn&#8217;t rigorous enough in this process. I won&#8217;t make that mistake again.</p>
+<h3>Market Understanding</h3>
+<p>I didn&#8217;t have a strong enough understanding of the HR / Recruitment market going in. I&#8217;ve <a href="http://www.instigatorblog.com/domain-knowledge-for-startup-founders/2010/06/21/">written</a> about <a href="http://www.instigatorblog.com/enterprise-20-startups-know-your-market/2008/08/21/">this</a> before and I see countless entrepreneurs make the same mistake. They look at a market objectively and think, <em>&#8220;I can fix that!&#8221;</em> only to realize when they get neck-deep into it that there are a whole bunch of issues they didn&#8217;t understand. </p>
+<p><strong>I just didn&#8217;t do enough homework. And doing homework while you&#8217;re writing the test as fast as you can is pretty damn hard. </strong></p>
+<p>Having said that, I do think that I did a good job pushing my way into the industry leadership, networking, communicating Standout&#8217;s vision and catching a good sense of where the market was heading. And in some markets, brand awareness and brand building amongst the evangelists and leaders is critical to gaining exposure and generating buzz. It can provide a false sense of success, which is something to be wary about, but it can also add significant value.</p>
+<p><strong>The lack of market understanding ultimately meant that we couldn&#8217;t match the right product to the right market at the right price.</strong></p>
+<h3>Product Development</h3>
+<p>I had an exceptionally strong team. Best I&#8217;ve ever worked with. But in reality we didn&#8217;t code and launch fast enough. We didn&#8217;t get product into customers&#8217; hands fast enough. We were fast, but next time I&#8217;ll move faster, and iterate much more frequently. Of course that&#8217;s easy to say, but I think a lot of developers aren&#8217;t as comfortable as they need to be with this strategy. The fact is that having a specification and building to that specification is a lot easier for a developer; constantly changing requirements, moving things around, cutting features, adding stuff, circling back with feedback, etc. makes a developer&#8217;s job harder. More rewarding. But harder.</p>
+<p>In the future I&#8217;ll focus a lot more on a Minimum Viable Product (MVP) and getting it into the hands of customers as early as possible. <strong>And even more importantly, I&#8217;ll solicit real, hard feedback from them.</strong> With Standout Jobs, we did things in a slightly incorrect order, which distorted our view of reality.</p>
+<h3>Shoving Things Down the Market&#8217;s Throat</h3>
+<p><strong>If you find yourself in an argument with a market, you&#8217;re very likely to lose.</strong> As we got Standout Jobs into the hands of customers we saw a few troubling issues. People weren&#8217;t using it as actively as we had expected. People were still following the same bad habits they had before even though we provided them a &#8220;better way.&#8221; Ultimately changing behavior is extremely hard. It&#8217;s possible, but you need to be very, very creative about it.</p>
+<p>I didn&#8217;t realize just how much of a behavior change we were asking people to make. We did find ways of circumventing people&#8217;s unwillingness to change, but we never committed to those strategies fully, in part because they didn&#8217;t work quickly enough, and in part because we were stubborn.</p>
+<h3>Simplifying the Value Proposition</h3>
+<p>I was able to simplify Standout&#8217;s value proposition to the point where it was clear, but that&#8217;s not always enough. Part of the problem was that our value proposition lacked immediacy: <em>&#8220;Invest in your employer brand and over time you&#8217;ll hire better fits into your company at a faster rate.&#8221;</em> The problem is with &#8220;invest in your employer brand&#8221; &#8211; too few people truly have time for that (although they should!)</p>
+<p><strong>I didn&#8217;t make a strong enough case for tying the value proposition to something immediate that HR could sell internally to their bosses.</strong> It&#8217;s important to note that &#8220;selling a value proposition&#8221; and &#8220;delivering actual value&#8221; are two different things. I remember a sales call once with two people in an HR department. This was the second call. We were doing a web demo. As I was presenting, the new person on the call said, &#8220;We already have something like this. It&#8217;s [name not included here]. It does what you&#8217;re talking about.&#8221; I was surprised that the first person I had met didn&#8217;t bring this up since the other product was somewhat competitive. It turns out that neither of the two people even knew the URL of the site that the competitor had launched for them. The competitor had managed to sell their solution to this company, and the company didn&#8217;t even know where that solution was online. That was surprising and demoralizing. The competitor had managed to &#8220;sell their value proposition&#8221; extremely well, but whether they were delivering on value was a different story. <strong>Please note: I&#8217;m not arguing that you should sell a good value proposition and not deliver actual value, but you can&#8217;t get to delivering actual value if you can&#8217;t sell a good value proposition.</strong></p>
+<p>Value propositions need to be super clear, straightforward and deliver (or at least claim to deliver!) immediate results. Tying value propositions to making more money is best. Saving money is second best. Everything else is tertiary&#8230;</p>
+<h3>Raised Too Much Money, Too Early</h3>
+<p>I raised too much money, too early for Standout Jobs (~$1.8M). We didn&#8217;t have the validation needed to justify raising the money we did. Part of the reason for this is that the founding team couldn&#8217;t build an MVP on its own. That was a mistake. If the founding team can&#8217;t put out product on its own (or with a small amount of external help from freelancers) they shouldn&#8217;t be founding a startup. We could have brought on additional co-founders, who would have been compensated primarily with equity versus cash, but we didn&#8217;t.</p>
+<p>I had never raised venture capital before. Raising the money felt like winning. It felt like all (or most of) the justification we needed. It set us on a path of building a bigger product than we should have, and committing (falsely) to our own assumptions of what would work, without fully testing them.</p>
+<p>Having said that, I also realized at some point in the process &#8211; especially as a result of the recession &#8211; that in order to survive we would have needed a lot more money and a lot more time. I estimated about $5 million and 3 more years. That wasn&#8217;t going to happen. But as we got deeper into the market we recognized that to punch a real hole in it would require lots and lots of capital. So while we raised too much, too early, we also weren&#8217;t in a position to raise a lot more, later when it would have made more sense.</p>
+<h3>Raised Money Over Too Long a Period of Time</h3>
+<p>Although I did raise too much money too early, it also took too long. The money was raised in two major tranches, but we also left room for key angel investors to come in at various stages. The entire process took 9-10 months at least. As a result, I spent too much time raising money, which was a complete distraction from running the business. That&#8217;s the double-edged sword of fundraising &#8212; you have to do it (and it&#8217;s hard) + it&#8217;s distracting and in some ways detrimental to running your startup. I saw raising money as a form of validation, and so I was willing to invest in it. But it&#8217;s really only validation that someone will write you a check; not that you&#8217;ve got a strong, scalable business. The challenge with raising money is that once you start, it&#8217;s hard to stop. The money is used to grow your company, which often results in more expenses. More expenses, without revenue to support them, means going back to raise more money. So you end up on this conveyor belt of raising money, which is difficult to get off of.</p>
+<h3>Investor Management</h3>
+<p>I had a great group of investors. This included Montreal-based venture firms and angel investors in Montreal, New York and elsewhere. Unfortunately I didn&#8217;t manage and leverage my investors enough. From a leverage perspective, I didn&#8217;t do enough to extract value from my investors. I didn&#8217;t engage them enough for introductions to potential partners and customers. I didn&#8217;t follow through as frequently as I should have. </p>
+<p><strong>I think the key to successfully managing and leveraging investors is consistency.</strong> You need to be consistently knocking on their door, asking for help with specific issues, and providing them the ammunition they need to promote your startup. Investors are busy people. Venture capitalists are managing portfolios and chasing new deals. Angel investors are doing the same, and often times have their own startups they&#8217;re working on. You need to earn mindshare and attention.</p>
+<p>On the flip side, you can&#8217;t listen to everything your investors tell you. They&#8217;re not infallible. If you disagree with them you need to step up and say so. It&#8217;s not easy, especially for first-time entrepreneurs, but it&#8217;s critical. The relationship between investor and entrepreneur isn&#8217;t parent-child. It&#8217;s partner-partner.</p>
+<h3>Go-To Market</h3>
+<p>When we were getting ready to launch the paying version of Standout Jobs, we decided to pursue a <a href="http://www.instigatorblog.com/startups-risk-channel-partners/2010/02/25/">channel partner strategy</a>. This meant providing partners with a white label version of the Standout Jobs platform so they could resell it. In principle it made a lot of sense: they had existing customers, market share, mindshare and experience selling into the HR market. And we had a lot of interest. But looking back it was too early for us to be seeking partners. We didn&#8217;t know ourselves yet how to sell the product, to who and for how much. Without that information we didn&#8217;t provide channel partners with enough of a &#8220;sale-in-a-box&#8221; that they could execute on.</p>
+<p><strong>In some ways we tried to offload responsibility of selling our product to our channel partners.</strong> It worked, to a degree, but not well enough. And when the recession hit, everyone in the HR / Recruitment space got clobbered. Our partners recoiled and focused on their core, and we were left holding the bag. I still believe there&#8217;s immense value in leveraging channels for sales, but only after you know how to sell your product effectively; the channels then provide scale.</p>
+<h3>Big Pivots</h3>
+<p>At some point in mid-2009 it was very clear that Standout Jobs was in trouble. The recession was still holding a death grip on the economy, we were running out of cash and traction was middling at best. It was a difficult time. I don&#8217;t remember the exact order of events, but we decided to pivot in a big way. This was an &#8220;Odeo into Twitter&#8221; moment, where we were prepared to shutdown Standout Jobs as we (and everyone) knew it, and resurface with something completely different (although still relevant and emergent from our experience.) It was an exciting point and truly re-energized the founders and the team. We had some rough ideas, brainstormed furiously and put together a super-basic prototype of what we envisioned. It was a B2C play around identity, referrals and recommendations. There are a number of startups now that are playing in that space. </p>
+<p>We pitched the concept to our Board of Directors but a decision was made to &#8220;stay the course.&#8221; I have no clue if the new idea would have generated any traction, but I should have fought harder for it. We certainly didn&#8217;t have much to lose at that point. I don&#8217;t think many startups really go through this kind of massive, transformational change. It&#8217;s scary. And inasmuch as people talk about pivoting (although this was more like a &#8220;scrap and restart completely new&#8221;), I don&#8217;t know that most entrepreneurs and investors really have the stomach for it.</p>
+<p>I also tried a few smaller pivots. I relaunched the website and repackaged the product into a few different offerings. Also added a service layer on top of the product. The goal was to take what we had and try to find a market. I also wanted to simplify things and focus on lead generation as much as possible. These smaller pivots and market adjustments actually generated positive response, but I didn&#8217;t have the time or resources to execute on them aggressively enough.</p>
+<h3>Bullshit &amp; Politics</h3>
+<p>I&#8217;m not a fan of bullshit or politics, but unfortunately these are both realities when running a startup &#8211; particularly one that&#8217;s not performing well. You have to be prepared for it. I&#8217;d recommend having one or two very strong outside advisors &#8211; experienced entrepreneurs that have &#8220;been there, done that&#8221; &#8211; to lean on when you get to this stage.</p>
+<h3>Creating Value</h3>
+<p>In October, 2009 we let go the bulk of the team. We held on for as long as we could because we were engaged with potential acquirers and felt that the team would add value in an acquisition. And there were a couple of acquirers where I think this was legitimately true. Unfortunately, they didn&#8217;t see it that way! Eventually I made the decision to let the team go. It&#8217;s a shitty experience, but not as bad as you might think.</p>
+<p><strong>Throughout the acquisition process we worked to create value.</strong> The team. Our partners. The technology. Us (the founders.) <strong>It&#8217;s a very similar experience to raising early money; often you don&#8217;t have a lot of proof of anything, but you try and tell a good story.</strong> And fundamentally, I believed at the time (and still do today) that we were doing something right in terms of where recruitment marketing and branding was headed. The package wasn&#8217;t quite there, but combined with other pieces of the proverbial puzzle and I saw the potential for strong value to emerge.</p>
+<h3>Perseverance</h3>
+<p>With all of the mistakes I made and all the difficulties faced by Standout Jobs, I&#8217;m still pleased that we (and I) persevered. From the fall of 2009 until the acquisition closed, Standout Jobs was really just me looking to get a deal done. Sort of a &#8220;last man standing Ultimately it was too little, too late, but I&#8217;m still glad I went through it.</p>
+<p>Having said that, I think founders have to be very cognizant of their startup&#8217;s lifecycle. When it&#8217;s time, put a bullet in it and move on. Whenever I had the &#8220;should we kill it?&#8221; conversation with my founders, investors or Board of Directors I always felt that I could extract more value. And I wanted to try. The experience was worthwhile.</p>
+<h3>The Future</h3>
+<p>I&#8217;m no longer involved with Standout Jobs. The acquirer has been working for some time on the technology and I look forward to future announcements from them. I&#8217;m still actively looking at the HR / Recruitment space &#8212; frankly, I feel like there&#8217;s unfinished business there. A lot of entrepreneurs have reached out to solicit my feedback on their HR / Recruitment startups. I&#8217;d encourage you to keep doing so. I&#8217;m looking for the winners in there; I&#8217;ve gotta believe they&#8217;re somewhere!</p>
+<p>I&#8217;ve now moved on to <a href="http://yearonelabs.com">Year One Labs</a>, an early stage seed accelerator based in Montreal. So I&#8217;m (sort of) on the other side of the table, although I can&#8217;t ever really picture myself as an investor. I see myself more like a guy that wants to help other entrepreneurs build successful businesses. Not because I&#8217;ve sold a company for $100M yet, but because I&#8217;ve been through a lot, seen a lot, and like to roll up my sleeves and get dirty. And at some point in the future I will found another startup (or two, or three, or four.) Once you start, it&#8217;s hard to stop. Even with the ups and downs, bumps and bruises. I&#8217;d rather not repeat the same experience I had with Standout Jobs (at least not in its entirety), but I&#8217;d take this life and these experiences over a &#8220;regular job&#8221; any day.</p>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/&amp;layout=standard&amp;show_faces=0&amp;width=450&amp;action=like&amp;colorscheme=light&amp;font=" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:25px"></iframe><p><a href="http://twitter.com/share?url=http%3A%2F%2Fwww.instigatorblog.com%2Fpostmortem-analysis-of-standout-jobs%2F2010%2F10%2F05%2F&amp;via=byosko&amp;text=A Postmortem Analysis of Standout Jobs" class="twitter-share-button">Tweet</a></p><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/"
+    dc:identifier="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/"
+    dc:title="A Postmortem Analysis of Standout Jobs"
+    trackback:ping="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/trackback/" />
+</rdf:RDF>-->
+</div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="http://www.instigatorblog.com/category/startups/" rel="category tag">Startups</a></span></p><div style="border:dotted 1px #eee;margin-top:20px;padding:20px;"><h4>Want more content like this?</h4>	
+Signup for free and you'll get new content as soon as it's available. Thanks!
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup" style="margin-top:10px;" width="50%">
+<form action="http://instigatorblog.us5.list-manage1.com/subscribe/post?u=c799d7dc2cd6d02515335eaee&amp;id=b825cae346" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+	<input name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" type="email" style="height:27px;"> 
+	<p style="margin-top:5px;"><input value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" type="submit" style="background:#22a3d9;"></p>
+</form>
+</div></div>
+</footer></article>
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+            <div class="navigation">
+                <div class="nav-previous">
+                    <span class="meta-nav">&larr;</span>&nbsp;
+                    <a href="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/comment-page-1/#comments" >Older Comments</a>                </div>
+                <div class="nav-next">
+                                        &nbsp;<span class="meta-nav">&rarr;</span>
+                </div>
+            </div> <!-- .navigation -->
+
+            <ul id="dsq-comments">
+                    <li class="post pingback">
+        <p>Pingback: <a href='http://jasonalba.com/2010/10/19/entrepreneur-reads-from-ben-yoskovitz-fred-wilson/' rel='external nofollow' class='url'>Jason Alba (al &#8211; buh)&raquo; Blog Archive &raquo; Entrepreneur Reads from Ben Yoskovitz &amp; Fred Wilson</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-119192">
+        <div id="dsq-comment-header-119192" class="dsq-comment-header">
+            <cite id="dsq-cite-119192">
+http://twitter.com/JoeStubblebine                <span id="dsq-author-user-119192">Joe Stubblebine</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-119192" class="dsq-comment-body">
+            <div id="dsq-comment-message-119192" class="dsq-comment-message"><p>Being president and one of the co-founders of JobCircle.com, I know all too well the challenges you faced while at the helm of Standout Jobs from a technology, sales, and investment perspective, not to mention the additional challenges of working in the recruitment productsservices space in this economy.  It took courage for you to be honest.  This article should be a must-read for any entrepreneur.  Thanks for taking the time to share your experience.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-119193">
+        <div id="dsq-comment-header-119193" class="dsq-comment-header">
+            <cite id="dsq-cite-119193">
+http://twitter.com/JoeStubblebine                <span id="dsq-author-user-119193">Joe Stubblebine</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-119193" class="dsq-comment-body">
+            <div id="dsq-comment-message-119193" class="dsq-comment-message"><p>Being president and one of the co-founders of JobCircle.com, I know all too well the challenges you faced while at the helm of Standout Jobs from a technology, sales, and investment perspective, not to mention the additional challenges of working in the recruitment productsservices space in this economy.  It took courage for you to be honest.  This article should be a must-read for any entrepreneur.  Thanks for taking the time to share your experience.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-119202">
+        <div id="dsq-comment-header-119202" class="dsq-comment-header">
+            <cite id="dsq-cite-119202">
+http://www.gamespog.net/                <span id="dsq-author-user-119202">POG</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-119202" class="dsq-comment-body">
+            <div id="dsq-comment-message-119202" class="dsq-comment-message"><p>great post Ben. Wish I had done the same, if only to get my thoughts clear as my startup went up in flames, I think I would have come to terms with my success/failure a lot faster.</p>
+<p>Thanks for sharing </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-119203">
+        <div id="dsq-comment-header-119203" class="dsq-comment-header">
+            <cite id="dsq-cite-119203">
+http://www.gamesdidi.net/                <span id="dsq-author-user-119203">Didi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-119203" class="dsq-comment-body">
+            <div id="dsq-comment-message-119203" class="dsq-comment-message"><p>Great article. You are correct that there is a huge opportunity to revamp the HR/recruiting space <img src="http://instigator.wpengine.netdna-cdn.com/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /> </p>
+<p><a href="http://www.gamesdidi.net/" rel="nofollow">http://www.gamesdidi.net/</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-119204">
+        <div id="dsq-comment-header-119204" class="dsq-comment-header">
+            <cite id="dsq-cite-119204">
+http://didigamesflash.blogspot.com/                <span id="dsq-author-user-119204">Anh_saochoi</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-119204" class="dsq-comment-body">
+            <div id="dsq-comment-message-119204" class="dsq-comment-message"><p>Thanks for posting this, it was a great read and definitely shows some of the true themes of what really goes on behind the curtains. It definitely provided me with some value and helped me understand how some successful exits aren&#8217;t as glorious or profitable as they sound in the news clips. Also great to hear some feedback on using Lean Startup methodologies and how easy, hard and valuable they actually are. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-119207">
+        <div id="dsq-comment-header-119207" class="dsq-comment-header">
+            <cite id="dsq-cite-119207">
+http://manumarchal.blogspot.com/                <span id="dsq-author-user-119207">Manu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-119207" class="dsq-comment-body">
+            <div id="dsq-comment-message-119207" class="dsq-comment-message"><p>Ben, thanks a lot for sharing this, very useful and insightful and you&#8217;re certainly setting the stage for others to share their experience about why a non-successful startup is still a successful experience. Congrats.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://fail92fail.wordpress.com/2010/10/23/round-up-failed-startup-post-mortems/' rel='external nofollow' class='url'>Round-up: failed startup post-mortems &laquo; Failures &#8211; exposed, reflected upon, considered</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.marsdd.com/blog/2010/11/05/advice-from-adversity/' rel='external nofollow' class='url'>MaRS Blog &#8211; Innovation and Commercialization in Canada &raquo; Blog Archive &raquo; Advice from adversity</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://riccentre.wordpress.com/2010/12/14/advice-from-adversity/' rel='external nofollow' class='url'>Advice from adversity &laquo; The RIC Blog</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://riccentre.com/blog/?p=3830' rel='external nofollow' class='url'>Advice from adversity | RIC Centre Blog</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.instigatorblog.com/the-secret-to-successful-job-referrals/2010/12/20/' rel='external nofollow' class='url'>The Secret to Successful Job Referrals</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://dev.jetcooper.com/300_jetcooper/website/code/blog/year-one-in-review/' rel='external nofollow' class='url'>Year One in Review | Jet Cooper</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://techvibes.com/blog/global/post/montreals-ben-yoskovitz-to-join-halifaxs-goinstant-2011-10-24' rel='external nofollow' class='url'>Technology news - Techvibes.com</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.instigatorblog.com/how-to-design-successful-interview-process/2012/04/02/' rel='external nofollow' class='url'>How To Design a Successful Interview Process for Hiring Top Talent</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://blog.thehetgroup.com/2010/10/05/lessons-in-failure-the-startup-post-mortem/' rel='external nofollow' class='url'>Lessons in Failure: The Startup Post-Mortem | The HET Group Blog</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.instigatorblog.com/xobni-recruitment-video-still-one-of-the-best-ever/2013/07/08/' rel='external nofollow' class='url'>Xobni Recruitment Video Still One of the Best Ever</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://allenjcochran.com/2013/07/xobni-recruitment-video-still-one-of-the-best-ever/' rel='external nofollow' class='url'>Xobni Recruitment Video Still One of the Best Ever - I Look Good In Design</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://cwsolutions.ca/cws2/?p=1209' rel='external nofollow' class='url'>Contingent Workforce Solutions &raquo; Buyer of Standout Jobs Finally Named</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.instigatorblog.com/founder-failure/2014/01/22/' rel='external nofollow' class='url'>Founder Failure</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://kszybalski.com/on-startups-they-arent-easy/' rel='external nofollow' class='url'>On startups.. they aren&#8217;t easy &#8211; Kamil Szybalski</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://undertheradar.co.kr/2014/02/05/101-%eb%a7%8c%ec%95%bd%ec%97%90-51%ea%b0%9c%ec%9d%98-%ec%8a%a4%ed%83%80%ed%8a%b8%ec%97%85%ec%9d%b4-%ec%9d%b4%ec%95%bc%ea%b8%b0%ed%95%98%eb%8a%94-%ec%8b%a4%ed%8c%a' rel='external nofollow' class='url'>[101] &#8216;???&#8217; 51?? ????? ????? ?? ?? ?? (51 Startup Failure Post-Mortems) | Under the Radar</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://venturebeat.com/2014/02/05/my-startup-tanked-why-more-entrepreneurs-are-writing-about-their-failures/' rel='external nofollow' class='url'>&#039;My startup tanked&#039;: Why more entrepreneurs are being open about their failures | VentureBeat | Entrepreneur | by Christina Farr</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://techauntie.com/my-startup-tanked-why-more-entrepreneurs-are-being-open-about-their-failures/' rel='external nofollow' class='url'>‘My startup tanked’: Why more entrepreneurs are being open about their failures | Tech Auntie</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.bacinews.com/my-startup-tanked-why-more-entrepreneurs-are-being-open-about-theirfailures/' rel='external nofollow' class='url'>&#8216;My startup tanked&#8217;: Why more entrepreneurs are being open about their&nbsp;failures | BaciNews</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.cbinsights.com/blog/trends/startup-failure-post-mortem' rel='external nofollow' class='url'>51 Startup Failure Post-Mortems</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://blog.howtoweb.co/2014/02/10-founders-failures-you-should-know/' rel='external nofollow' class='url'>10 founders' failures you should know</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://alltopstartups.com/2014/03/01/failed-startups-what-went-wrong/' rel='external nofollow' class='url'>Failed Startups: 7 Startup Founders Reveal What Went Wrong with Their Startups | Alltopstartups.com</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://matrixcbsolutions.com/wp2/failed-startups-7-startup-founders-reveal-went-wrong-startups/' rel='external nofollow' class='url'>MATRIX Collaborative Business Solutions Failed Startups: 7 Startup Founders Reveal What Went Wrong with Their Startups - MATRIX Collaborative Business Solutions</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://hustleandknow.wordpress.com/2014/04/12/postmortem-standout-jobs/' rel='external nofollow' class='url'>Postmortem: Standout Jobs | Hustle &amp; Know</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://blog.xminds.com/startup-2/%e2%80%9cit%e2%80%99s-not-the-idea-that-is-unique-but-the-way-you-implement-it%e2%80%9d/' rel='external nofollow' class='url'>Social Media Apps |Mobile Apps| Android Apps |iPhone Apps| iPad Apps – Xminds &raquo; Blog Archive &raquo; “It’s not the idea that is unique but the way you implement it”</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://videosoftwarefreedownload.co.uk/10-lessons-to-learn-from-failing-startups-including-my-own/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own)</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://news.socialdashboard.com/if-we-just-had-more-why-start-ups-fail/' rel='external nofollow' class='url'>If we just had &#8230; more&#8230; $$: Why start-ups fail | If we just had ... more... $$: Why start-ups fail | Social Dashboard</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://tech.co/50-startups-share-startups-failed-2014-10' rel='external nofollow' class='url'>30 Founders Share Why Their Startups Failed</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.wilbertrogers.com/2014/11/13/10-lessons-to-learn-from-failing-startups-including-my-own-entrepreneur-com-by-john-rampton/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own) entrepreneur.com &#8211; by John Rampton | WILBERTROGERS.COM</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.xconomy.com/san-francisco/2014/12/08/the-risks-and-opportunities-in-a-startup-age-5-years-and-up/' rel='external nofollow' class='url'>The Risks and Opportunities in a Startup: Age 5 Years and Up | Xconomy</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.onlinesalesguidetip.com/the-risks-and-opportunities-in-a-startup-age-5-years-and-up/' rel='external nofollow' class='url'>The Risks and Opportunities in a Startup: Age 5 Years and Up | Online Sales Guide Tips</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://xoellexo.wordpress.com/2014/12/14/10-lessons-to-learn-from-failing-startups-including-my-own/' rel='external nofollow' class='url'>10 Lessons to Learn From Failing Startups (Including My Own) | Elle&#039;s Writing, Film &amp; Life Observation Tidibits</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://en.cameron-museum.com/blog/archives/300/trackback' rel='external nofollow' class='url'>my review here</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://blog.alphacamp.co/2015/02/04/standout-jobs/' rel='external nofollow' class='url'>???????Standout Jobs - ?????????- ALPHA Camp Blog</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://bensonsystem.com/2015/02/standout-jobs/' rel='external nofollow' class='url'>???????Standout Jobs — ????????? | Benson System</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://nextjuggernaut.com/blog/actionable-advice-from-10-uber-for-x-start-ups-that-failed/' rel='external nofollow' class='url'>Actionable advice from 10 Uber for X start-ups that failed -</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://innovations.co.ug/dev/failed-startups-7-startup-founders-reveal-what-went-wrong-with-their-startups/' rel='external nofollow' class='url'>Failed Startups: 7 Startup Founders Reveal What Went Wrong with Their Startups - Management Innovations</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+            </ul>
+
+            <div class="navigation">
+                <div class="nav-previous">
+                    <span class="meta-nav">&larr;</span>
+                    &nbsp;<a href="http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/comment-page-1/#comments" >Older Comments</a>                </div>
+                <div class="nav-next">
+                                        &nbsp;<span class="meta-nav">&rarr;</span>
+                </div>
+            </div><!-- .navigation -->
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+var disqus_url = 'http://www.instigatorblog.com/postmortem-analysis-of-standout-jobs/2010/10/05/';
+var disqus_identifier = '2243 http://www.instigatorblog.com/?p=2243';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'instigatorblog';
+var disqus_title = "A Postmortem Analysis of Standout Jobs";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=2243';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+</main></div></div><div class="footer-widgets"><div class="wrap"><div class="footer-widgets-1 widget-area"><section id="text-16" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Ben Yoskovitz</h4>
+			<div class="textwidget"><img src="http://instigator.wpengine.netdna-cdn.com/wp-content/uploads/2011/01/ben-yoskovitz.jpg" style="float:left;margin:0 10px 0 0; border: 1px solid #e4e4e4;" height="100" width="100"><strong>I'm VP Product at <a href="http://varagesale.com">VarageSale</a>.</strong><br><br> 
+
+I'm also a Founding Partner at <a href="http://yearonelabs.com/">Year One Labs</a>, an early stage accelerator in Montreal. Previously I founded Standout Jobs (and sold it).</p>
+<p><a class="button" href="http://instigatorblog.com/about/">My bio &raquo;</a></p></div>
+		</div></section>
+</div><div class="footer-widgets-2 widget-area"><section id="text-17" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Buy Lean Analytics</h4>
+			<div class="textwidget"><img src="http://instigator.wpengine.netdna-cdn.com/wp-content/uploads/2014/01/Screen-Shot-2014-01-15-at-11.31.27-AM.png" alt="Lean Analytics" title="Lean Analytics" width="125" style="border:solid #eeeeee 1px; float:left;margin-right:10px;"></a><p><em style="font-style:italic">"Lean Analytics is the missing piece of Lean Startup!"</em> - Dan Martell, founder Clarity</p>
+
+<p>Get the book at <a href="http://leananalyticsbook.com">leananalyticsbook.com</a></p></div>
+		</div></section>
+</div><div class="footer-widgets-3 widget-area"><section id="text-18" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Get updates</h4>
+			<div class="textwidget"><p style="padding-bottom:10px;">Get new content directly in your inbox. Occasionally, I'll also send special content to subscribers (I promise it'll be high quality!)</p>
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://instigatorblog.us5.list-manage1.com/subscribe/post?u=c799d7dc2cd6d02515335eaee&amp;id=b825cae346" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+	<input name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="" type="email"> 
+	<input value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" type="submit">
+</form>
+</div>
+</div>
+		</div></section>
+</div></div></div><footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter"><nav class="nav-secondary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement"><ul id="menu-top-menu-1" class="menu genesis-nav-menu menu-secondary"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2919"><a href="http://www.instigatorblog.com/startup-investor-resources/">Startup &#038; Investor Resources</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2918"><a href="http://www.instigatorblog.com/recent-posts/">Recent Posts</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="http://www.instigatorblog.com/search/">Search</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2921"><a href="http://www.instigatorblog.com/contact-ben/">Contact Me</a></li>
+</ul></nav><div class="creds">Views expressed here are mine and mine alone.<p>Copyright &copy; 2015 &middot; Built on the <a href="http://www.studiopress.com/themes/genesis" title="Genesis Framework">Genesis Framework</a></p></div><p></p></footer></div>        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'instigatorblog';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); 
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        <script type='text/javascript'>/* <![CDATA[ */ var portfolioSlideshowOptions = {  psHash:false, psLoader:false, psFluid:false };/* ]]> */</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-285921-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/instapress/instapress.js?ver=1.5.3'></script>
+<script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/portfolio-slideshow/js/jquery.cycle.all.min.js?ver=2.99'></script>
+<script type='text/javascript' src='http://instigator.wpengine.netdna-cdn.com/wp-content/plugins/portfolio-slideshow/js/portfolio-slideshow.min.js?ver=1.5.1'></script>
+</body>
+</html>

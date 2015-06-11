@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>My startup&#8217;s dead! 5 things I learned | Debugger.Break();</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://debuggerdotbreak.wordpress.com/xmlrpc.php" />
+	<link rel="alternate" type="application/rss+xml" title="Debugger.Break(); &raquo; Feed" href="https://debuggerdotbreak.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Debugger.Break(); &raquo; Comments Feed" href="https://debuggerdotbreak.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Debugger.Break(); &raquo; My startup&#8217;s dead! 5 things I&nbsp;learned Comments Feed" href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s1.wp.com/_static/??-eJx9j9FqwzAMRX9onrq2jPWh7FsSR3WcSJGIZEL+vs5GGVtHXoSuOIeLYNEQZXKcHLgEpZLyZGCcCVedZcDov9NrNHuB/zXKIxoM6NrEMXylJ7wlST+CpISdFA83IZIFltwl3O2YkRrHLqiY/0l7WpQZ65218Y1g7HKDhFyxPY31/WFta1//2q1ZtNKhbXVGs1An58LB+1r07H2fQUsLsS/TCOYr4YZ98vXtfDpejofzx2G4A7XZnmE=' type='text/css' media='all' />
+<link rel='stylesheet' id='oswald-css'  href='https://fonts.googleapis.com/css?family=Oswald&#038;subset=latin%2Clatin-ext&#038;ver=4.2-RC4-32277' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://s1.wp.com/_static/??-eJx9i9EKgzAMRX9oXdCVvY19i5asxrVJMSni369DGO7Fl8u5cA6sxQVhQzawCTMqlDpCmCq/gTiA2pbQrSVIvgbVCxyCXF1JNRIrYJaZ9t01AhajZuoPzvqI4pKEwUj477hXGmg5Sxcck8SGEZp1uN/omR+d773vu5u/zx/aN1gk' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-3' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1387483371g' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-4' href='https://s2.wp.com/_static/??-eJx1i0EOQDAQRS+kBqlgIc5SMtpKO206FdfHwgqr95P3HxxRLIEyUga/i+h2bYkhBs5idcomYKOSJf2wXJgL+K40EiZ7iZ/5arNBjwxGgnZhVu4+TH6sZdP1g2yqdjsBJYs67w==' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFj+sKwjAMhV/IrmyrP8VnmWssqb3ZpBZ9ejtQwSkKgSTkOyeJrElgmF3RQNK2OBfI10fqLG3kL0B4NHli6DyGJzzHwBB4YVMk9kA0GfgyfV+F4YJQ/2IWOE3zSWQgvH24Hlw0IrliMJBstQEdC4tjdC5WWVEb4LXGl5cig2vPaLHcveqaau93vRrHbT+oQdk73sl1Tw=='></script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://debuggerdotbreak.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='&ldquo;Yet Another JS Framework&rdquo; isn&rsquo;t so bad after&nbsp;all' href='https://debuggerdotbreak.wordpress.com/2015/01/26/yet-another-js-framework-isnt-so-bad-after-all/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/' />
+<link rel='shortlink' href='http://wp.me/p1RxoU-5c' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fdebuggerdotbreak.wordpress.com%2F2015%2F05%2F21%2Fmy-startups-dead-5-things-i-learned%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fdebuggerdotbreak.wordpress.com%2F2015%2F05%2F21%2Fmy-startups-dead-5-things-i-learned%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="My startup&#039;s dead! 5 things I learned" />
+<meta property="og:url" content="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/" />
+<meta property="og:description" content="Last week I sent the dreaded, “I’m going out of business” email to clients of my BitShuva Radio startup: An unintentional startup A few years ago, I wrote a piece of software to solve a niche probl..." />
+<meta property="article:published_time" content="2015-05-21T15:55:26+00:00" />
+<meta property="article:modified_time" content="2015-05-21T16:54:47+00:00" />
+<meta property="og:site_name" content="Debugger.Break();" />
+<meta property="og:image" content="https://debuggerdotbreak.files.wordpress.com/2015/05/shuttingdown_thumb.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="https://debuggerdotbreak.files.wordpress.com/2015/05/shuttingdown_thumb.png?w=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/206adcc66386cc58e99b79a51b877415?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/206adcc66386cc58e99b79a51b877415?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/67cc4f78c1a5b2621d5fddcb5b9aa539?s=114" />
+<link rel='openid.server' href='https://debuggerdotbreak.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://debuggerdotbreak.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://debuggerdotbreak.wordpress.com/osd.xml" title="Debugger.Break();" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+<meta name="application-name" content="Debugger.Break();" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Coding? Take a break and gain some software wisdom" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://debuggerdotbreak.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/206adcc66386cc58e99b79a51b877415?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="My startup&#8217;s dead! 5 things I&nbsp;learned | Debugger.Break(); on WordPress.com" />
+<meta name="description" content="Last week I sent the dreaded, “I’m going out of business” email to clients of my BitShuva Radio startup: An unintentional startup A few years ago, I wrote a piece of software to solve a niche problem: the Messianic Jewish religious community had a lot of great music, but no online services were playing that music.&hellip;" />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+<body class="single single-post postid-322 single-format-standard mp6 customizer-styles-applied single-author highlander-enabled highlander-light">
+
+<div id="container">
+
+	<div id="header">
+		<h1 id="site-title"><a href="https://debuggerdotbreak.wordpress.com/" title="Debugger.Break();" rel="home">Debugger.Break();</a></h1>
+		<h2 id="site-description">Coding? Take a break and gain some software wisdom</h2>
+	</div>
+
+	<div id="menu">
+				<div class="menu"><ul><li ><a href="https://debuggerdotbreak.wordpress.com/">Home</a></li><li class="page_item page-item-2"><a href="https://debuggerdotbreak.wordpress.com/about/">About</a></li></ul></div>
+	</div>
+
+	<div id="contents">
+					
+				
+<div class="post-322 post type-post status-publish format-standard hentry category-uncategorized tag-startups" id="post-322">
+	<div class="entry-meta">
+				<div class="date"><a href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/">May 21 2015</a></div>
+						<div class="comments"><a href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/#comments">3 Comments</a></div>
+						<span class="byline">
+			<a href="https://debuggerdotbreak.wordpress.com/author/judahgabriel/">
+				By Judah Gabriel Himango			</a>
+		</span><!-- .byline -->
+				<span class="cat-links"><a href="https://debuggerdotbreak.wordpress.com/category/uncategorized/" rel="category tag">Uncategorized</a></span>
+							</div>
+	<div class="main">
+						<h2 class="entry-title">
+					My startup&#8217;s dead! 5 things I&nbsp;learned				</h2>
+		
+		<div class="entry-content">
+						<p>Last week I sent the dreaded, “I’m going out of business” email to clients of my <a href="http://bitshuva.com">BitShuva Radio startup</a>:</p>
+<p><a href="https://debuggerdotbreak.files.wordpress.com/2015/05/shuttingdown.png"><img style="display:inline;" title="shuttingDown" src="https://debuggerdotbreak.files.wordpress.com/2015/05/shuttingdown_thumb.png?w=500&#038;h=736" alt="shuttingDown" width="500" height="736" /></a></p>
+<h3>An unintentional startup</h3>
+<p>A few years ago, I wrote a piece of software to solve a niche problem: the Messianic Jewish religious community had a lot of great music, but no online services were playing that music. I wrote a Pandora-like music service that played Messianic Jewish music, <a href="http://messianicradio.com">Chavah Messianic Radio</a> was born, and it’s been great. (Chavah is still doing very well to this day; Google Analytics tells me it’s had 5,874 unique listeners this month – not bad at all!)</p>
+<p>After creating Chavah, I wrote a programming article about the software: <a href="http://www.codeproject.com/Articles/109786/Build-a-Pandora-clone-with-Silverlight">How to Build a Pandora Clone in Silverlight 4</a>. (At the time, Silverlight was the hotness! I’ve since ported Chavah to HTML5, but I digress.)</p>
+<p>Once that article was published, <strong>several people emailed me asking if I’d build a radio station for them</strong>. One after another. Turns out there many underserved music niches. Nigerian music. West African soul. Egyptian Coptic chants. Indie artists. Instrumentals. Ethiopian pop. A marketplace for beats. Local bands from central Illinois. All these clients came out of the woodwork, asking me to build clones of my radio station for their communities.</p>
+<p>After these clients approached me – with no marketing or sales pitches on my part – it looked like a good business opportunity. I founded <a href="http://bitshuva.com">BitShuva Radio</a> and got to work for these clients. I had founded a startup.</p>
+<p>But after almost 2 years, making less than $100/month on recurring monthly fees, and spending hours every week working for peanuts, I’ve decided to fold the startup. It wasn’t worth my time, it was eating into my family life, preventing me from working on things I really wanted to work on. So this week, I cut the cord.</p>
+<p>Along the way, I learned so much! Maybe this will help the next person who does their first startup.</p>
+<p>Here’s what I learned:</p>
+<h3>1. Don’t be afraid to ask for a *lot* of money.</h3>
+<p>When I acquired my first client, I had no idea how much to charge. For me, the work involved forking an existing codebase, swapping out some logos and colors, and deploying to a web server. A few hours of work.</p>
+<p>I dared to ask for the hefty sum of $75.</p>
+<p>Yes, I asked for <em>SEVENTY-FIVE WHOLE DOLLARS!</em> I remember saying that figure to the man on the other end of the phone – what a thrill! – $75 for forking a codebase, ha! To my surprise, he agreed to this exorbitant charge.</p>
+<p>In my startup newbie mind, $75 seemed totally reasonable for forking a codebase and tweaking some CSS. After all, it’s not that much work.</p>
+<p>What I didn’t understand was<strong>, you charge not for how much work it is for you. You charge how much the service is worth.</strong> A custom Pandora-like radio station, with thumb-up and –down functionality, song requests, user registration, playing native web audio with fallbacks to Flash for old browsers – creating a community around a niche genre of music – that’s what you charge for. That&#8217;s the value being created here. The client doesn’t care if it’s just forking a codebase and tweaking CSS – to him, it’s a brand new piece of software with his branding and content. He doesn’t know what code, repo forking, or CSS is. All he knows is he’s getting a custom piece of software doing exactly what he wants. And that’s worth a lot more than $75.</p>
+<p>It took me several clients to figure this out. My next client, I tried charging $100. He went for it. The next client $250. The next client $500. Then $1000.</p>
+<p>I kept charging more and more until finally 3 clients all turned down my $2000 fee. So I lowered the price back to $1000.</p>
+<p>Money is just business. It’s not insulting to ask for a lot of money. Change as much as you can. Had I knew this when I started, I’d have several thousand dollars more in my pocket right now.</p>
+<h3>2. Keep your head above the ever-changing technology waters</h3>
+<p>Don&#8217;t drown!</p>
+<p>When I built my first the first radio software, Silverlight seemed like a reasonable choice. HTML5 audio was nascent, Firefox didn’t support native MP3 audio, IE9 was still a thing. So I turned to plugins.</p>
+<p>Over time, <a href="https://debuggerdotbreak.wordpress.com/2011/11/11/the-bell-tolls-for-flash-and-silverlight-isnt-far-behind/">plugins like Silverlight fell out of favor</a>, particularly due to the mobile explosion. Suddenly, everyone’s trying to run my radio software on phones and tablets, and plugins don’t work there, so I had to act.</p>
+<p>I ported my radio software code to HTML5, with Flash fallbacks for old browsers. KnockoutJS was the the new hotness, so I moved all our Silverlight code to HTML5+CSS3+KnockoutJS.</p>
+<p>As the software grew in complexity, it became apparent you really need something more than data-binding, but Knockout was just data-binding. Single Page Application (SPA) frameworks became the new hotness, and I ported our code over to <a href="http://durandaljs.com">DurandalJS</a>.</p>
+<p>Soon, <a href="http://eisenbergeffect.bluespire.com/angular-and-durandal-converge/">Durandal was abandoned by its creator</a>, and said creator joined the AngularJS team at Google. Not wanting to be left on a dying technology, I ported the code to Angular 1.x.</p>
+<p>Shortly after, the Durandal author <a href="http://eisenbergeffect.bluespire.com/leaving-angular/">left the Angular team over issues with the Angular vNext design</a>, and founded <a href="http://aurelia.io/">Aurelia</a>.</p>
+<p>If I was continuing my startup today, I&#8217;d be looking at riding that wave and moving to Aurelia or Angular 2.</p>
+<p>What am I saying? Staying on top of the technology wave is a balancing act:<strong> stand still and you&#8217;ll be dead within a year, but move to every new hotness, and you&#8217;ll be forever porting your code and never adding new features. </strong>My advice is to be fiscally pragmatic about it: if your paying clients have a need for new technology, migrate. Otherwise, use caution and a wait-and-see approach.</p>
+<p>Applying this wisdom in hindsight to my startup, it was wise to move from Silverlight to HTML5 (my paying clients needed that to run on mobile). However, jumping around from Knockout to Durandal to Angular did little for my clients. I should have used more caution and used a wait-and-see approach.</p>
+<h3>3. Custom software is a fool&#8217;s errand. Build customizable software, not custom software builds</h3>
+<p>My startup grew out of clients asking for custom versions of my radio software. &#8220;Oh, you have a Pandora clone? Can you make one for my music niche?&#8221;</p>
+<p>Naturally, I spent most of my time building custom software. They pay me a nice up-front sum ($1000 in the latter days), and we go our merry way, right?</p>
+<p>Turns out, it&#8217;s a terrible business model. Here&#8217;s why:</p>
+<p>Clients continually want more features, bug fixes, more customization. I charged that $1000 up-front fee to build a custom station, but then would spend many hours every week responding to customer complaints, customer requests, bug fixes, performance fixes, new features. And I didn&#8217;t charge a dime for that. (After all, the client&#8217;s perspective was, &#8220;I already paid you!&#8221;)</p>
+<p>In hindsight, I should have built a customizable platform, ala WordPress, in which potential radio clients could go to my website, bitshuva.com, spin up a new radio station (mystation.bitshuva.com), customize it in-browser, let them use the whole damn thing for free, and when they reach a limit of songs or bandwidth, bring up a PayPal prompt. All of that is automated, it doesn&#8217;t require my intervention, and it&#8217;s not &#8220;custom&#8221; software, it&#8217;s software that the client themselves can customize to their OCDified heart&#8217;s content.</p>
+<p>Had I done that, my startup probably would be making more money today, maybe even sustainably so.</p>
+<p>Bottom line: Unless a client is paying for 25% of your annual salary, don&#8217;t go follow the &#8220;I&#8217;ll build a custom version just for you, dear client&#8221; business model. It&#8217;s a fool&#8217;s errand.</p>
+<h3>4. On Saying &#8220;No&#8221;</h3>
+<p>I&#8217;m a people-pleaser. So, when a person pays me money, I amplify that people pleasing by 10.</p>
+<p>&#8220;Hey, Judah, can you add XYZ to my radio station this week?&#8221;</p>
+<p>&#8220;Judah! Buddy! Did you fix that one thing with the logins?&#8221;</p>
+<p>&#8220;How&#8217;s it going, Judah! Where is that new feature we talked about?&#8221;</p>
+<p>&#8220;Hey Judah, hope it&#8217;s going well. When are you going to finish my radio station features? I thought we were on for last week.&#8221;</p>
+<p>I wanted to please my precious clients. So of course I said &#8220;yes&#8221;. I said yes, yes, yes, until I had no time left for myself, my sanity, my family.</p>
+<p>A turning point for me for over late December, at my in-laws. I was upstairs working, rather than spending the holidays with my kids, my wife. &#8220;What the hell am I doing?&#8221; The amount of money I was making was small beans, why am I blowing my very limited time on this earth doing *this*?</p>
+<p>You see why folks in the YCombinator / Silicon Valley startup clique put so much emphasis on, &#8220;You should be young, single, work exclusively on your startup, all-in committal.&#8221; I can totally see why, but I also completely don&#8217;t want that lifestyle.</p>
+<p>Maybe if I had followed YCombinator-level devotion to my startup, it would have grown. But the reality is, I value things outside of software, too. <span class='wp-smiley wp-emoji wp-emoji-smile' title=':-)'>:-)</span> I like to chill and watch shows and eat ice cream. I like to relax on the couch with my wife. I like to teach my son how to drive. I like to play My Little Ponies with my daughter. I like to play music on the guitar. I like to work on tech pet projects (like <a href="http://messianicradio.com">Chavah</a>, <a href="http://messianicchords.com">MessianicChords</a>, <a href="http://etzmitzvot.com">EtzMitzvot</a>).</p>
+<p>The startup chipped away at all that, leaving me with precious little time outside of the startup.</p>
+<h3>5. Startups force you to learn outside your technological niche</h3>
+<p>On a more positive note, running a startup taught me all kinds of things I would have never learned as a plain old programmer.</p>
+<p>When I launched my startup, I was mostly a Windows desktop app developer (i.e. dead in the water). I didn&#8217;t know how to run websites in IIS, how to work with DNS, how to scale things, didn&#8217;t understand web development. I didn&#8217;t know how to market software, how to talk to clients, what prices to charge, didn&#8217;t have an eye for &#8220;ooh, I could monetize that&#8230;&#8221;</p>
+<p>Building a useful piece of software &#8212; a radio station used by a few thousand people &#8212; forces you to learn all this crap and become proficient and building useful things.</p>
+<p>In the end, getting all retrospective and and hindsight-y here, I&#8217;m glad I took the plunge and did a startup, even if it didn&#8217;t work out financially, because I learned so much and am a more rounded technological individual for it. Armed with all this knowledge, I believe I will try my hand at a startup again in the future. For now, I&#8217;m going to enjoy my temporary freedom. <span class='wp-smiley wp-emoji wp-emoji-smile' title=':-)'>:-)</span></p>
+<p>Thanks for reading.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-322"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/?share=facebook" title="Share on Facebook" id="sharing-facebook-322"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-27536116-322-55795d6e334eb' data-src='//widgets.wp.com/likes/#blog_id=27536116&amp;post_id=322&amp;origin=debuggerdotbreak.wordpress.com&amp;obj_id=27536116-322-55795d6e334eb' data-name='like-post-frame-27536116-322-55795d6e334eb'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>		</div>
+		<span class="tag-links"><strong>Tagged</strong> <a href="https://debuggerdotbreak.wordpress.com/tag/startups/" rel="tag">startups</a></span>	</div>
+</div>
+
+
+<div id="comments">
+
+			<h2 id="comments-title">
+			3 thoughts on &ldquo;<span>My startup&#8217;s dead! 5 things I&nbsp;learned</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+					<li class="pingback even thread-even depth-1 highlander-comment" id="comment-565">
+				<div id="div-comment-565" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='https://davidjaxon.wordpress.com/2015/06/08/pricing-your-product-dont-be-afraid-to-ask-for-a-lot-of-money/' rel='external nofollow' class='url'>Pricing your product? Don&#8217;t be afraid to ask for a *lot* of money | A Founder&#039;s Notebook</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/#comment-565">
+			June 8, 2015 at 4:39 am</a>		</div>
+
+		<p>[&#8230;] excerpt from My Startups&#8217;s Dead! 5 Things I Learned by Judah Gabriel [&#8230;]</p>
+
+		<div class="reply"><a class='comment-reply-link' href='/2015/05/21/my-startups-dead-5-things-i-learned/?replytocom=565#respond' onclick='return addComment.moveForm( "div-comment-565", "565", "respond", "322" )' aria-label='Reply to Pricing your product? Don&#8217;t be afraid to ask for a *lot* of money | A Founder&#039;s Notebook'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-catsh odd alt thread-odd thread-alt depth-1 parent highlander-comment" id="comment-567">
+				<div id="div-comment-567" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://1.gravatar.com/avatar/74c27efe9759dd19765e4b0c8e1c2e3f?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Lin</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/#comment-567">
+			June 8, 2015 at 5:44 pm</a>		</div>
+
+		<p>Hi Judah, great story and great experiences you shared! As you said in the post, though the startup didn&#8217;t make it, the time and work for it are the investments in yourself, and for your next startup. Hope to see your next startup soon!</p>
+
+		<div class="reply"><a class='comment-reply-link' href='/2015/05/21/my-startups-dead-5-things-i-learned/?replytocom=567#respond' onclick='return addComment.moveForm( "div-comment-567", "567", "respond", "322" )' aria-label='Reply to Lin'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-judahgabriel comment-author-is-site-member bypostauthor even depth-2 highlander-comment" id="comment-569">
+				<div id="div-comment-569" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='https://2.gravatar.com/avatar/2b623250b8f7ef2797dd68f5752e27dc?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://judahgabriel.blogspot.com' rel='external nofollow' class='url'>Judah Gabriel Himango</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/#comment-569">
+			June 10, 2015 at 10:24 am</a>		</div>
+
+		<p>Thanks for the kind words, Lin.</p>
+
+		<div class="reply"><a class='comment-reply-link' href='/2015/05/21/my-startups-dead-5-things-i-learned/?replytocom=569#respond' onclick='return addComment.moveForm( "div-comment-569", "569", "respond", "322" )' aria-label='Reply to Judah Gabriel Himango'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+	
+							<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/05/21/my-startups-dead-5-things-i-learned/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://debuggerdotbreak.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="e785b4f749" /><input type="hidden" name="_wp_http_referer" value="/2015/05/21/my-startups-dead-5-things-i-learned/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=https%3A%2F%2Fdebuggerdotbreak.wordpress.com" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+						
+						<p class="form-submit"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='322' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1f36d1bf8a" /></p>
+<input type="hidden" name="genseq" value="1434017134" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="82"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+</div><!-- #comments -->			</div><!-- #contents -->
+
+	<div class="navigation">
+		<div class="nav-previous"><a href="https://debuggerdotbreak.wordpress.com/2015/01/26/yet-another-js-framework-isnt-so-bad-after-all/" rel="prev"><span class="meta-nav">&larr;</span> Previous post</a></div>
+		<div class="nav-next"></div>
+	</div>
+
+
+
+	<div id="footer">
+		<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com</a>.
+		<span class="sep"> | </span>
+		<a href="https://wordpress.com/themes/chunk/" title="Learn more about this theme">The Chunk Theme</a>.	</div>
+
+</div>
+
+<!-- wpcom_wp_footer -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201524x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-74c27efe9759dd19765e4b0c8e1c2e3f">
+	</div>
+	<div class="grofile-hash-map-2b623250b8f7ef2797dd68f5752e27dc">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/debuggerdotbreak.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/debuggerdotbreak.wordpress.com\/wp-login.php?action=logout&_wpnonce=833ddfae10","homeURL":"https:\/\/debuggerdotbreak.wordpress.com\/","postID":"322","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1424115551j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Debugger.Break();&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter your email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="27536116"/>
+			<input type="hidden" name="source" value="https://debuggerdotbreak.wordpress.com/2015/05/21/my-startups-dead-5-things-i-learned/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="d36516fe09" /><input type="hidden" name="_wp_http_referer" value="/2015/05/21/my-startups-dead-5-things-i-learned/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="https://wordpress.com/?ref=lof">Build a website with WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/debuggerdotbreak.wordpress.com\/2015\/05\/21\/my-startups-dead-5-things-i-learned\/":322};
+		window.WPCOM_jetpack = false;
+				window.WPCOM_site_ID = 27536116;
+			</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='https://widgets.wp.com/likes/master.html?ver=20141028#ver=20141028&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1404442431g'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JetpackEmojiSettings = {"base_url":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/emoji\/twemoji\/"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyNy7sSAiEMheEXkg2O18bxWRg2rkEIGQKuvr1YbGG1Vqf4vwOzGJ+5IlcICiM+yaO8hqAb6InYxzaifpvPKXVmCkp8D4l4Qcs/NSOxTcQKmHIgqPPPrvqAVZx/mP/0mpKs1dyiowJ6d4V4Wrafrumy3e/s+Xiy9hA+lGxg8A=='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "debuggerdotbreak.wordpress.com";
+	</script>
+	<script type="text/javascript" src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script><script src="//stats.wp.com/w.js?47" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'27536116','blog_tz':'-5','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'27536116','v':'wpcom','tz':'-5','user_id':'0','post':'322','subd':'debuggerdotbreak'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lYixwbDJzR2UxfERBOWN1WEZPJjlNT1B8Sz9dMlkld0QtUFc5UDM4P1pRdS5rTjV6OWM1LGRVdXZwJTI3Ujd6RnlfeXRFTWdxWk1tP2IxUGkrTjhfN3oxOVA2NTZVNEI4W21XfFZkVGo3ZXpYfDZHVjB2aFdSSV8zUlBWQ0ktMEIwVCxOTj0zSDZ4MDhWZkhDOCZBazNlbHlvP0V4Um1aSUhTWl0lMTJTbj9+TjZUTEpdN0tQZG05WUtrUzB+WS0zTjhiYWQvQ1swSmpPeUZrdlpYT0Jbd1pnflNWZk4yTDImRlhoUUZyTGZUaVR1amJnWnBjYkh3UjBLflF0JWFWP0JXNXpSMjJnSmxMfGEubWllNmV6bU5yc0xvMTIrWH5hb0FQUHltdlUtQVJiST8='}]);
+_stq.push([ 'clickTrackerInit', '27536116', '322' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
+<!--
+	generated in 0.217 seconds
+	54959 bytes batcached for 300 seconds
+-->

@@ -1,0 +1,218 @@
+<!doctype html public "-//w3c//dtd html 4.01//en" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <title>alex pankratov</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" id=favicon>
+    <link rel="stylesheet"    type="text/css"  href="/css/all-in-one.css">
+
+</head>
+
+<body>
+	<div id=preload><i></i><b></b><u></u></div>
+        <div id=menu>
+
+                <div id=m-root class=active>
+                        <!-- a name=hello href=#>Hello, my name is...</a -->
+                        <a name=hello href=#>Enter</a>
+                        <span id=breadcrumb><a href=#></a></span>
+                </div>
+
+                <div id=hello>
+                        <a href=/about>about</a><br>
+                        
+                        <a name=software href=#>software</a><br>
+                        <a name=design   href=#>design</a><br>
+			<a href=/draft   style="display:none;">draft</a>
+                </div>
+
+                <div id=software>
+                        <a name=projects  href=#>projects</a><br>
+                        <a name=notes     href=#>peanuts</a><br>
+                        <a name=libraries href=#>libraries</a><br>
+                </div>
+                
+                <div id=projects>
+
+                        <div class=h>notable</div>
+                            <a href=/hamachi
+			       title="Virtual private networking system">
+			       hamachi</a><br>
+
+                            <a href=/certtime
+			       title="Digital time-stamping service">
+			       certtime</a><br>
+
+                       <div class=h>in the works</div>
+                            <!-- a href=/replicator
+			       title="Real-time data replication project">
+			       replicator</a><br>
+
+                            <a href=/zero-im
+			       title="Minimalistic IM client">
+			       zero im</a><br -->
+
+                            <a href=/bvckup
+			       title="Minimalistic real-time backup">
+			       bvckup</a><br>
+
+                            <!-- a href=/pingstrom
+			       title="Distributed network monitoring">
+			       pingstrom</a><br -->
+
+                            <a href=/notwerk
+			       title="Distributed network monitoring">
+			       notwerk</a><br>
+                            
+                        <a href=# class=more>more ...</a>
+                        <div class=more-block>
+
+			<!-- div class=h>web-related</div>
+                            <a href=/font-matters
+                               title="In-browser detection of font smoothing">
+			       font matters</a><br>
+                            <a href=/personal-hn
+                               title="Bookmarklet for customizing the story list on Hacker News">
+			       personal hn</a><br-->
+                            
+
+			<div class=h>utilities</div>
+
+			    <a href=/sign
+			       title="File signing utility for Unixes">
+			       sign</a><br>
+
+			    <a href=/dnsfix
+			       title="Real-time network traffic engineering thingy">
+			       dnsfix</a><br>
+
+			<div class=h>on hold</div>
+                            <a href=/native-analytics
+			       title='Standalone server-side web analytics'>
+			       native analytics</a></br>
+
+
+			<div class=h>useless</div>
+
+			    <!-- a href=/1-bit-ui
+			       title="Intelligent light switch, Arduino">
+			       1-bit ui</a><br -->
+
+			    <a href=/yafe
+			       title="Yet another fractal explorer">
+			       yafe</a><br>
+
+			    <a href=/bff    
+			       title="Fast brainfuck interpreter">
+			       bff</a><br>
+
+			</div>
+
+                </div>
+
+		<div id=notes>
+	
+			<div class=h>thoughts</div>
+                            <!-- a href=/si
+                               title="Thoughts on evolving C language">
+			       si language</a><br -->
+
+                            <a href=/on-linked-lists
+                               title="Linked list classification">
+			       on linked lists</a><br>
+                            
+			    <a href=/on-backups
+                               title="Mirroring vs archiving - towards
+			       better data protection">
+			       on backups</a><br>
+
+
+                        <div class=h>networking</div>
+                            <a href=/pldp
+                               title="Packet loss detection protocol">
+			       pldp</a><br>
+
+	
+			<!-- div class=h>legal</div>
+			    <a href=/fast-track-patents
+                               title='The implications of new USPTO prioritized patent examination process'>
+			       fast-track patents</a><br -->
+
+			<div class=h>web fluff</div>
+
+			    <a href=/password-hinting   
+			       title="Real-time password validity
+			       hinting">password hinting</a><br>
+			    <a href=/gif-player
+			       title='On-demand GIF loader/player'>
+			       gif player</a><br>
+ 			    <a href=/sticky-footer
+			       title='Sticky webpage footer'>
+			       sticky footer</a><br>
+			    <a href=/iip
+			       title='Internet improvement project'>
+			       the iip</a><br>
+ 			    <a href=/is-a-follower
+			       title='Dribbble betterment project'
+			       style='display: none'>
+			       is a follower</a><br>
+
+		</div>
+
+		<div id=libraries>
+                
+                        <!-- a href=/libp>lib p</a><br -->
+                        <a href=/halloc><i>lib</i> halloc</a><br>
+                        <!-- a href=/lfsalloc><i>lib</i> lfsalloc</a><br -->
+                        <!-- a href=/rational-slab-alloc><i>lib</i> rsalloc</a><br -->
+                        <a href=/lpng><i>lib</i> lpng</a><br>
+                        
+                        <a href=# class=more>older ...</a>
+                        <div class=more-block>
+                        
+                            <a href=/libike><i>lib</i> ike</a><br>
+                            <a href=/libppf><i>lib</i> ppf</a><br>
+                            <a href=/ipsec2k><i>lib</i> ipsec2k</a>
+                        </div>
+                </div>
+
+                <div id=design>
+                        <a href=/interfaces>interfaces</a><br>
+                        <a href=/logotypes>logotypes</a><br>
+                        <a href=/personal-mark>personal mark</a>
+                </div>
+
+        </div>
+
+        <div id=content-wrapper>
+            <div id=content></div>
+        </div>
+
+        <div id=wait></div>
+        
+        <div id=content-parts>
+            <div class="hint"></div>
+            <div class="blank"></div>
+            <div class="splash"></div>
+            <div class="ajax-error"> 
+                <div class=error>
+                    Oops<br>
+                    <strong>not found</strong>
+                </div>
+            </div>
+        </div>
+        
+    <noscript>
+        <b>&lt;noscript&gt;</b> Javascript please <b>&lt;/noscript&gt;</b>
+    </noscript>
+
+    <script type="text/javascript">var crumble='hdvczptuzmlqpqqs';</script>
+    <script type="text/javascript" src="/js/all-in-one.min.js"></script>
+
+</body>
+
+</html>
+

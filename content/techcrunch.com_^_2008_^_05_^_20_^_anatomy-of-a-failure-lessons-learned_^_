@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en">
+<head>
+	<title>Anatomy Of A Failure: Lessons Learned  |  TechCrunch</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta charset="UTF-8">
+			<script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+		<meta name="p:domain_verify" content="6189ff68ce30e30f12b40b3b40873027"/>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-title" content="TechCrunch">
+	<meta name="robots" content="NOYDIR,NOODP" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/favicon.ico" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon.png" rel="apple-touch-icon-precomposed" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon_2x.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon_ipad.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+	<link href="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/homescreen_TCIcon_ipad_2x.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+			<link rel="alternate" href="android-app://com.aol.mobile.techcrunch/http/techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/" />
+	
+	<script type="text/javascript">window.bN_cfg={h:window.location.hostname};</script>
+	<meta name="google-site-verification" content="4U1OC1LwZlFHAehLhCV4rt3YzWI_AyF7Gb0XqlaVEhE" />
+<meta name="msvalidate.01" content="5ABD8A078F3356F3A6A8C8643C31FB8F" />
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=techcrunch.com&amp;id=24588526&amp;t=1434017191&amp;back=http%3A%2F%2Ftechcrunch.com%2F2008%2F05%2F20%2Fanatomy-of-a-failure-lessons-learned%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="TechCrunch &raquo; Feed" href="http://techcrunch.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TechCrunch &raquo; Comments Feed" href="http://techcrunch.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TechCrunch &raquo; Anatomy Of A Failure: Lessons&nbsp;Learned Comments Feed" href="http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/_static/??-eJx9jtFuwjAMRX9oxoMi1Jdp35JmJjHESZS4oP09Lohp07a+WPda58jGawVfslJWlBlqmgPnjonP1PFEWp0/w71tfO8v+DfuSyPbS3W6EEIf7CiRGLamST08rSVGu7V65lqNhmmqjXoHm8KzgEY79Nt7rPHCFZV89G3OPsLudTtg189EG+H8kBhzUTavf4W1LwIVSMU75ZJ/FDgmx21NbTSlEiwGNOpb/e/7uMeQyuTSArzL23Y/DONhHMbd6QaAY6Ph' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Live_Cache = {"ajaxurl":"http:\/\/techcrunch.com","auto_updates":{"live-cache-widget-1-title":"#live-cache-widget-1 h2","live-cache-widget-1-text":"#live-cache-widget-1 div","live-cache-subtitle":".live-island .live-subtitle","live-cache-text":".live-island .vid-caption","live-cache-title-livecaster":".livecaster-title","live-cache-text-livecaster":".livecaster-text"}};
+var gravityInsightsParams = {"type":"content","action":"","site_guid":"fca4fa8af1286d8a77f26033fdeed202"};
+var tcOmniture = {"pageName":"Anatomy Of A Failure: Lessons Learned","prop1":"article","prop2":"general","prop54":"wordpress","prop9":"tcr:17713","prop16":"standard-article","prop19":"deadpool|lefora|meetro","prop23":"05-20-2008","prop64":"gravity","prop65":"original_content","prop22":"contributor-","omni_env":"prod"};
+var TC_Async_Head_Scripts = {"tc_ads_wrapper_omniture":"http:\/\/o.aolcdn.com\/os_merge\/?file=\/ads\/adsWrapper.js&file=\/moat\/prod\/moatuac.js"};
+var TC_Google_Analytics_Config = {"account":"UA-991406-1","domain":"techcrunch.com"};
+var tcKorrelate = "post";
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sranalytics = {"version":"0.1.4","pid":"518833fa642b2405ba000008","iframe":"0","title":"Anatomy Of A Failure: Lessons Learned","url":"http:\/\/techcrunch.com\/2008\/05\/20\/anatomy-of-a-failure-lessons-learned\/","date":"2008-05-21 00:03:15","channels":[],"tags":["DEADPOOL","lefora","Meetro"],"authors":["Contributor"]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyNkGluAzEIhS9Ux52lP6uehRDiwfVWw8woOX2cKF01aishIcHj44Fdi+GEYT6QWN/ibaZ6uqedlwf7m8BEdhWUdpHTuxhzUkp61ZYsGkkEHG10v6/itDCtf8o8aQF8NZWEz7RlUNZj3ntC/cnSiZoZu3CxSjhhnRNOpn/sBgsipLfpwHvz2d26618Yl7MLm2/5Ml7C7Dg1xxxLoHYSNBAkCCdlbBhYQLByaUipH/UGfInP3TgMT10/9qO/AM5tp9I='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://tctechcrunch2011.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='MS blocks HP&#039;s AMDs from SP3 update for XP  (I love&nbsp;acronyms)' href='http://techcrunch.com/2008/05/20/ms-blocks-hps-amds-from-sp3-update-for-xp-i-love-acronyms/' />
+<link rel='next' title='French school tells its students to turn off TV, computer, video&nbsp;games' href='http://techcrunch.com/2008/05/20/french-school-tells-its-students-to-turn-off-tv-computer-video-games/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/' />
+<link rel='shortlink' href='http://wp.me/p1FaB8-4BH' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Ftechcrunch.com%2F2008%2F05%2F20%2Fanatomy-of-a-failure-lessons-learned%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Ftechcrunch.com%2F2008%2F05%2F20%2Fanatomy-of-a-failure-lessons-learned%2F&amp;for=wpcom-auto-discovery" /><link rel='openid.server' href='http://tctechcrunch2011.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://tctechcrunch2011.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://techcrunch.com/osd.xml" title="TechCrunch" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com" />
+
+
+<!-- BEGIN Sailthru Horizon Meta Information -->
+<meta name="sailthru.date" content="2008-05-20 17:03:15" />
+<meta name="sailthru.title" content="Anatomy Of A Failure: Lessons&nbsp;Learned" />
+<meta name="sailthru.tags" content="DEADPOOL, lefora, Meetro" />
+<meta name="sailthru.author" content="Serkan Toto" />
+<meta name="sailthru.description" content="
+
+This post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month. Bragiel is also the founder hosted forum solution Lefora." />
+<!-- END Sailthru Horizon Meta Information -->
+
+	<meta property="fb:app_id" content="187288694643718" />
+	<meta property="fb:admins" content="543710097,771265067,1661021707,1550970059,663677613,1178144075,726995222,506404657,4700188" />
+			<meta property="article:publisher" content="https://www.facebook.com/techcrunch" />
+	<meta property="og:site_name" content="TechCrunch" />
+<meta property="og:site" content="social.techcrunch.com" />
+<meta property="og:title" content="Anatomy Of A Failure: Lessons&nbsp;Learned" />
+<meta property="og:description" content="This post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month..." />
+<meta property="og:image" content="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/techcrunch.global.thumb-placeholder.png" />
+<meta property="og:url" content="http://social.techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/" />
+<meta property="og:type" content="article" />
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:image:src' content='https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/techcrunch.global.thumb-placeholder.png' />
+<meta name='twitter:site' content='@techcrunch' />
+<meta name='twitter:url' content='http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/' />
+<meta name='twitter:description' content='This post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month. Bragiel is also the founder hosted forum&hellip;' />
+<meta name='twitter:title' content='Anatomy Of A Failure: Lessons Learned | TechCrunch' />
+<meta class="swiftype" name="author" data-type="string" content="Contributor" />
+<meta class="swiftype" name="title" data-type="string" content="Anatomy Of A Failure: Lessons Learned" />
+<meta class="swiftype" name="image" data-type="enum" content="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/techcrunch.global.thumb-placeholder.png" />
+<meta class="swiftype" name="object_type" data-type="string" content="post" />
+<meta class="swiftype" name="url" data-type="enum" content="http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/" />
+<meta class="swiftype" name="timestamp" data-type="date" content="2008-05-20 17:03:15" />
+<meta class="swiftype" name="content" data-type="text" content="This post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month. Bragiel is also the founder hosted forum solution Lefora. See our coverage of these two companies here, along with our first post on Meetro in August 2005. Also see our post titled What To Do With Failed Startup IP?. In the spirit of openness, I write this post on what we did wrong at Meetro - a post mortem of sorts. You don&#039;t see this often enough in the startup world even though the majority of startups go belly-up. Hell, there are probably a few today that will go away with a whimper. So much knowledge is lost. If you&#039;ve had similar experiences, I encourage you to share them over at Lefora. To those of you not familiar with Meetro, we were one of the first location-based social networks. We figured out where you were physically and then we would tell you else was around you in real-time. You would then be able to instant&hellip;" />
+<meta class="swiftype" name="excerpt" data-type="text" content="This post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month. Bragiel is also the founder hosted forum solution Lefora. See our coverage of these two companies here, along with our first post on Meetro in August 2005. Also see our post titled What To Do With Failed Startup IP?.
+
+In the spirit of openness, I&hellip;" />
+<meta class="swiftype" name="tag" data-type="string" content="DEADPOOL" />
+<meta class="swiftype" name="tag" data-type="string" content="lefora" />
+<meta class="swiftype" name="tag" data-type="string" content="Meetro" />
+	<meta name="description" content="This post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month..." />
+	<script type="text/javascript">var ajaxurl = "http://techcrunch.com/wp-admin/admin-ajax.php"</script><meta name="application-name" content="TechCrunch" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Startup and Technology News" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://techcrunch.com/feed/;icon-uri=http://0.gravatar.com/blavatar/ad5b2a2b10ddd8fc4e4588abd4e12a84?s=16" />
+	<style type="text/css">#site-logo { background: url(http://s0.wp.com/wp-content/themes/vip/techcrunch-2013/images/logos/green.png) no-repeat !important; }</style>
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+	<script src="http://o.aolcdn.com/os_merge/?file=/aol/beacon.min.js&file=/aol/omniture.min.js" type="text/javascript"></script>
+	<!--[if lte IE 8 ]>
+	<script src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/js/respond.min.js"></script>
+	<![endif]-->
+	<meta name="st:robots" content="follow, index">
+</head>
+<body class="single single-post postid-17713 single-format-standard mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+
+<div class="ad-top-mobile">
+	<div id="adsDiv2b85153c36" class="mobile-ads-center"></div>
+<script>
+/* <![CDATA[ */
+if (ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.htmlAdWH('348-14-15-bda', ads.width(), ads.height(), 'f', 'adsDiv2b85153c36');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div>
+
+<header class="header cf header-context-news" role="banner">
+
+	<div class="nav-bar">
+		<div class="lc">
+			<div class="lc">
+				<a href="/" class="logo-link" title="TechCrunch" data-omni-sm="gbl_topnav"><img src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/logo.svg" alt="TechCrunch" class="logo"></a>
+
+				<a href="#" class="toggle-link nav-toggle icon-hamburger"><span class="is-vishidden">Menu</span></a>
+				<a href="#" class="toggle-link search-form-toggle icon-mag"><span class="is-vishidden">Search</span></a>
+
+				<div class="header-logo-bar cf">
+
+					<div class="header-social">
+						<ul class="inline-list social-list sprite-social">
+							<li class="nav-followus">Follow Us</li><li class="first">
+								<a href="https://www.facebook.com/techcrunch" rel="external" class="spricon nosprite icon-facebook" target="_blank"><span class="is-vishidden">Facebook</span></a>
+							</li><li>
+								<a href="https://instagram.com/techcrunch" rel="external" class="spricon nosprite icon-instagram" target="_blank"><span class="is-vishidden">Instagram</span></a>
+							</li><li>
+								<a href="https://twitter.com/techcrunch" rel="external" class="spricon nosprite icon-twitter" target="_blank"><span class="is-vishidden">Twitter</span></a>
+							</li><li class="youtube nav-aux">
+								<a href="http://www.youtube.com/user/techcrunch" rel="external" class="spricon nosprite icon-youtube" target="_blank"><span class="is-vishidden">Youtube</span></a>
+							</li><li class="flipboard nav-aux">
+								<a href="https://flipboard.com/@techcrunch" rel="external" class="spricon nosprite icon-flipboard" target="_blank"><span class="is-vishidden">Flipboard</span></a>
+							</li><li class="linkedin nav-aux">
+								<a href="http://www.linkedin.com/company/techcrunch" rel="external" class="spricon nosprite icon-linkedin" target="_blank"><span class="is-vishidden">LinkedIn</span></a>
+							</li><li class="nav-aux">
+								<a href="https://plus.google.com/+TechCrunch" rel="external" class="spricon nosprite icon-google-plus" target="_blank"><span class="is-vishidden">Google+</span></a>
+							</li><li class="rss nav-aux">
+								<a href="/rssfeeds/" class="spricon nosprite icon-rss"><span class="is-vishidden">RSS</span></a>
+							</li>
+							<li class="nav-social-more">
+								<a href="#" class="icon-caret-down"><span class="is-vishidden">More</span></a>
+								<ul>
+									<li class="youtube">
+										<a href="http://www.youtube.com/user/techcrunch" rel="external" class="spricon nosprite icon-youtube" target="_blank"><span class="is-vishidden">Youtube</span></a>
+									</li><li class="flipboard">
+										<a href="https://flipboard.com/@techcrunch" rel="external" class="spricon nosprite icon-flipboard" target="_blank"><span class="is-vishidden">Flipboard</span></a>
+									</li><li class="linkedin">
+										<a href="http://www.linkedin.com/company/techcrunch" rel="external" class="spricon nosprite icon-linkedin" target="_blank"><span class="is-vishidden">LinkedIn</span></a>
+									</li><li class="google-plus">
+										<a href="https://plus.google.com/+TechCrunch" rel="external" class="spricon nosprite icon-google-plus" target="_blank"><span class="is-vishidden">Google+</span></a>
+									</li><li class="rss">
+										<a href="/rssfeeds/" class="spricon nosprite icon-rss"><span class="is-vishidden">RSS</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<div class="header-tip">
+							<a href="/got-a-tip/" data-omni-sm="gbl_topnav">
+								Got a tip? <span>Let us know.</span>
+							</a>
+						</div>
+					</div>
+
+					<nav class="nav-primary">
+	<ul class="nav" id="nav">
+		<li class="nav-level1 nav-news">
+			<a href="/" class="nav-parent icon-caret-down">News</a>
+
+			<div class="nav-subnav single-col">
+				<ul class="nav-col">
+					<li class="subnav-title">Channels</li>
+					<ul class="subnav-channel" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-899745" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899745"><a href="http://techcrunch.com/startups/">Startups</a></li>
+<li id="menu-item-899746" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899746"><a href="http://techcrunch.com/mobile/">Mobile</a></li>
+<li id="menu-item-899747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899747"><a href="http://techcrunch.com/gadgets/">Gadgets</a></li>
+<li id="menu-item-899748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899748"><a href="http://techcrunch.com/enterprise/">Enterprise</a></li>
+<li id="menu-item-899749" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899749"><a href="http://techcrunch.com/social/">Social</a></li>
+<li id="menu-item-899750" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899750"><a href="http://techcrunch.com/europe/">Europe</a></li>
+<li id="menu-item-901944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-901944"><a href="/asia">Asia</a></li>
+</ul>				</ul>
+				<div class="nav-col nav-col-border">
+					<a href="http://techcrunch.com/topic/">All Topics</a>
+					<a href="http://techcrunch.com/gallery/">All Galleries</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-level1 nav-shows">
+			<a href="/video/" class="nav-parent icon-caret-down">Video</a>
+
+			<div class="nav-subnav">
+				<div class="subnav-title">Shows</div>
+				<ul class="nav-col">
+					<ul class="subnav-tctv-shows-left" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-1134051" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134051"><a href="http://techcrunch.com/video/tctv-news/">TCTV News</a></li>
+<li id="menu-item-1134050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134050"><a href="http://techcrunch.com/video/crunchreport/">Crunch Report</a></li>
+<li id="menu-item-899755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899755"><a href="http://techcrunch.com/video/crunchweek/">CrunchWeek</a></li>
+<li id="menu-item-1106526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1106526"><a href="http://techcrunch.com/events/disrupt-ny-2015/video/">Disrupt NY 2015</a></li>
+</ul>				</ul>
+				<ul class="nav-col">
+					<ul class="subnav-tctv-shows-left" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-1106527" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1106527"><a href="http://techcrunch.com/video/techcrunch-gadgets/">Gadgets</a></li>
+<li id="menu-item-1134052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1134052"><a href="http://techcrunch.com/video/fly-or-die/">Fly or Die</a></li>
+<li id="menu-item-1041669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1041669"><a href="http://techcrunch.com/video/inside-jobs/">Inside Jobs</a></li>
+<li id="menu-item-899762" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899762"><a href="http://techcrunch.com/video/tc-cribs/">TC Cribs</a></li>
+</ul>				</ul>
+				<div class="subnav-separator"></div>
+				<div class="nav-col nav-col-border">
+					<a href="/video/">All Shows</a>
+				</div>
+				<div class="nav-col nav-col-border">
+					<a href="/video/all/">All Videos</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-level1 nav-events">
+			<a href="/events/" class="nav-parent icon-caret-down">Events</a>
+
+			<div class="nav-subnav">
+				<ul class="nav-col">
+					<li class="subnav-title">TechCrunch Events</li>
+					<ul class="subnav-events-tc-events" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-899739" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899739"><a href="http://techcrunch.com/event-type/disrupt/">Disrupt</a></li>
+<li id="menu-item-936211" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-936211"><a href="http://techcrunch.com/startup-battlefield/">Startup Battlefield</a></li>
+<li id="menu-item-899740" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899740"><a href="http://techcrunch.com/event-type/crunchies-23/">Crunchies</a></li>
+<li id="menu-item-899741" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899741"><a href="http://techcrunch.com/event-type/meetups/">Meetups</a></li>
+<li id="menu-item-899742" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899742"><a href="http://techcrunch.com/event-type/international-city/">International City Events</a></li>
+<li id="menu-item-899744" class="menu-item menu-item-type-taxonomy menu-item-object-tc_event menu-item-899744"><a href="http://techcrunch.com/event-type/hackathon-2/">Hackathon</a></li>
+<li id="menu-item-1084973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1084973"><a href="http://techcrunch.com/events/include">Include</a></li>
+</ul>				</ul>
+				<ul class="nav-col">
+					<li class="subnav-title">News About</li>
+					<ul class="subnav-events-news-about" data-omni-sm-delegate="gbl_mainnav"><li id="menu-item-1021048" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1021048"><a href="http://techcrunch.com/events/google-io/">Google I/O 2014</a></li>
+<li id="menu-item-899737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899737"><a href="http://techcrunch.com/events/ces-2015/">CES</a></li>
+<li id="menu-item-899736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899736"><a href="http://techcrunch.com/event-type/sxsw-2/">SXSW</a></li>
+<li id="menu-item-1010535" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1010535"><a href="http://techcrunch.com/events/wwdc-2014/">WWDC 2014</a></li>
+</ul>				</ul>
+				<div class="subnav-separator"></div>
+				<div class="nav-col-border">
+					<a href="/events/">All Events</a>
+				</div>
+			</div>
+		</li>
+		<li class="nav-crunchbase">
+			<a href="https://www.crunchbase.com" class="nav-parent">Crunchbase</a>
+		</li>
+	</ul>
+</nav>
+
+		<nav class="nav-trending">
+			<ul class="nav">
+				<li id="trending-icon">
+					Trending
+					<i class="icon-trending"></i>
+				</li>
+				<li id="menu-item-1159242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1159242"><a href="http://techcrunch.com/topic/company/spotify/">Spotify</a></li>
+<li id="menu-item-899781" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899781"><a href="http://techcrunch.com/tag/apple/">Apple</a></li>
+<li id="menu-item-1135158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1135158"><a href="http://techcrunch.com/topic/company/uber">Uber</a></li>
+			</ul>
+		</nav>
+
+		<nav class="nav-contextual">
+			<ul class="nav">
+				<li class="nav-news">
+					<a href="/" class="nav-parent">News</a>
+				</li>
+				<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899745"><a href="http://techcrunch.com/startups/">Startups</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899746"><a href="http://techcrunch.com/mobile/">Mobile</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899747"><a href="http://techcrunch.com/gadgets/">Gadgets</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899748"><a href="http://techcrunch.com/enterprise/">Enterprise</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899749"><a href="http://techcrunch.com/social/">Social</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899750"><a href="http://techcrunch.com/europe/">Europe</a></li>
+			</ul>
+		</nav>
+	
+										<form action="/" method="get" class="search-form">
+						<fieldset>
+							<legend>Search TechCrunch</legend>
+							<label for="s">Search TechCrunch</label>
+							<input type="search" placeholder="Search" class="search-field" name="s" value="" />
+							<button class="search-submit">
+								<span class="icon-mag" aria-hidden="true"></span>
+								<span class="is-vishidden">Search</span>
+							</button>
+							<button class="search-close">
+								<span class="icon-close" aria-hidden="true"></span>
+								<span class="is-vishidden">Search</span>
+							</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<div class="header-ad">
+	<div id="adsDiv7a33234d8f" class=""></div>
+<script>
+/* <![CDATA[ */
+if (!ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.htmlAdWH('93458665', "LB", "LB", 'f', 'adsDiv7a33234d8f');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div>
+
+
+		<div class="announcement announcement-flat-background announcement-centered">
+			<div class="lc">
+				<div class="announcement-bg">
+										<div class="announcement_left">
+						<a href="http://apply.tcdisrupt.com/">
+														<span class="announcement-text">
+							<strong class="announcement-headline">Startup Battlefield</strong>&nbsp;Now Accepting Applications for Disrupt SF Startup Battlefield								<span class="announcement-link-text">
+																			Apply Now																												<span class="icon-caret-right"></span>
+																	</span>
+						</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+<!-- Begin: Article Body Content - Main -->
+<div role="main" class="fluid" style="">
+	<!-- Begin: Article - Primary -->
+	<article class="article lc">
+		<div class="l-two-col-expose">
+
+			<!-- Begin: Article Content - Body Right Column -->
+			<div class="l-main-container">
+				<div class="l-main">
+				
+				<!-- Begin: Article Header -->
+				<header class="article-header page-title">
+					<!-- Begin: Article Eyebrows -->
+<div class="tags">
+	
+			<div class="tag-item">
+				<a href="http://techcrunch.com/tag/meetro/" class="tag" data-omni-sm="art_articlecategory">Meetro</a>
+
+				<div class="links" id="tc-tag-item-meetro">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2008/04/09/meetro-abandoned-for-lefora-a-hosted-forum-solution/">
+					<img src="http://i2.wp.com/tctechcrunch2011.files.wordpress.com/2008/04/lefora_logo.png?resize=150%2C150" alt="Meetro Abandoned for Lefora, A Hosted Forum&nbsp;Solution" />
+
+					<div class="block-content">
+						<h3>Meetro Abandoned for Lefora, A Hosted Forum&nbsp;Solution</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2008-04-09 03:00:37"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2007/11/07/wetpaint-combines-discussion-forums-with-wikis/">
+					<img src="http://i1.wp.com/tctechcrunch2011.files.wordpress.com/2007/11/wetpaintwiki.jpg?resize=150%2C150" alt="Wetpaint Combines Discussion Forums With&nbsp;Wikis" />
+
+					<div class="block-content">
+						<h3>Wetpaint Combines Discussion Forums With&nbsp;Wikis</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2007-11-07 00:28:49"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2007/10/26/meetro-working-to-make-forum-creation-dead-simple/">
+					<img src="http://i1.wp.com/www.techcrunch.com/wp-content/meetro_logo.bmp?resize=150%2C150" alt="Meetro Working to Make Forum Creation Dead&nbsp;Simple" />
+
+					<div class="block-content">
+						<h3>Meetro Working to Make Forum Creation Dead&nbsp;Simple</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2007-10-26 17:21:00"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/tag/meetro/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		
+			<div class="tag-item">
+				<a href="http://techcrunch.com/tag/lefora/" class="tag" data-omni-sm="art_articlecategory">lefora</a>
+
+				<div class="links" id="tc-tag-item-lefora">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2010/07/24/forum-site-lefora-gobbled-up-by-crowdgather/">
+					<img src="http://i1.wp.com/www.crunchbase.com/assets/images/resized/0001/9857/19857v1-max-250x250.png?resize=150%2C150" alt="Forum Site Lefora Gobbled Up By&nbsp;CrowdGather" />
+
+					<div class="block-content">
+						<h3>Forum Site Lefora Gobbled Up By&nbsp;CrowdGather</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2010-07-24 10:13:49"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2010/04/21/tal-ki-the-easiest-way-to-add-a-forum-to-a-website/">
+					<img src="http://i1.wp.com/tctechcrunch2011.files.wordpress.com/2010/04/talki.jpg?resize=150%2C150" alt="Tal.ki: The Easiest Way To Add A Forum To A&nbsp;Website" />
+
+					<div class="block-content">
+						<h3>Tal.ki: The Easiest Way To Add A Forum To A&nbsp;Website</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2010-04-21 15:53:08"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2008/04/09/meetro-abandoned-for-lefora-a-hosted-forum-solution/">
+					<img src="http://i2.wp.com/tctechcrunch2011.files.wordpress.com/2008/04/lefora_logo.png?resize=150%2C150" alt="Meetro Abandoned for Lefora, A Hosted Forum&nbsp;Solution" />
+
+					<div class="block-content">
+						<h3>Meetro Abandoned for Lefora, A Hosted Forum&nbsp;Solution</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2008-04-09 03:00:37"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/tag/lefora/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		
+			<div class="tag-item">
+				<a href="http://techcrunch.com/tag/deadpool/" class="tag" data-omni-sm="art_articlecategory">DEADPOOL</a>
+
+				<div class="links" id="tc-tag-item-deadpool">
+					<ul class="recirc-river river-small g g-1-2-1">
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/06/04/yahoo-sunsets-yahoo-pipes-an-iftt-precursor-along-with-yahoo-maps-and-more/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2014/08/yahoo_sunnyvale_buildingdsign.jpeg?w=150" alt="Yahoo Sunsets Yahoo Pipes, An IFTTT Precursor, Along With Yahoo Maps And&nbsp;More" />
+
+					<div class="block-content">
+						<h3>Yahoo Sunsets Yahoo Pipes, An IFTTT Precursor, Along With Yahoo Maps And&nbsp;More</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-06-04 11:24:35"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/06/03/bye-branch/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/06/shutterstock_157789028.jpg?w=150" alt="After Facebook Acqui-Hired Branch Media In 2014, Founders Shutter Branch (And&nbsp;Potluck)" />
+
+					<div class="block-content">
+						<h3>After Facebook Acqui-Hired Branch Media In 2014, Founders Shutter Branch (And&nbsp;Potluck)</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-06-03 09:37:12"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+			<li>
+			<div class="block-small">
+				<a class="block-wrapper" href="http://techcrunch.com/2015/05/18/price-tracking-service-poachit-shuts-down/">
+					<img src="https://tctechcrunch2011.files.wordpress.com/2015/05/poachit.jpeg?w=150" alt="Price-Tracking Service PoachIt Shuts&nbsp;Down" />
+
+					<div class="block-content">
+						<h3>Price-Tracking Service PoachIt Shuts&nbsp;Down</h3>
+
+						<div class="block-meta">
+							<div class="byline">
+								<time datetime="2015-05-18 12:33:57"></time>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	
+	<li>
+		<div class="block-small">
+			<a class="block-wrapper" href="http://techcrunch.com/tag/deadpool/">
+				<div class="block-content">
+					<h3>Browse more...</h3>
+				</div>
+			</a>
+		</div>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+<!-- End: Article Eyebrows -->
+
+					
+					<h1 class="alpha tweet-title">Anatomy Of A Failure: Lessons Learned</h1>
+					<div class="title-left">
+					<div class="byline">
+	Posted <time datetime="2008-05-20" class="timestamp">May 20, 2008</time> by Serkan Toto</div>
+<!-- Begin: Social Share Icons -->
+<div class="social-share social-share-inline">
+	<ul class="inline-list social-share-list" id="social-share" data-permalink="http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/" data-shortlink="http://bit.ly/dRW9l" data-shareTitle="Anatomy Of A Failure: Lessons&nbsp;Learned" data-post-id="17713">
+				<li class="total-shares">
+			<h5 class="total-shares-count">0</h5><br />
+			<small>SHARES</small>
+		</li>
+							<li>
+				<a href="#comments" rel="external" class="comment icon-comment launch-social-load"></a>
+			</li>
+		
+		<li>
+			<a href="#" rel="external" class="facebook icon-facebook"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="twitter icon-twitter"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="linkedin icon-linkedin"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="google-plus icon-google-plus"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="reddit icon-reddit"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="stumbleupon icon-stumbleupon"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="email icon-email"></a>
+		</li>
+		<li>
+			<a href="#" rel="external" class="flipboard icon-flipboard"></a>
+		</li>
+			</ul>
+</div>
+
+<div class="social-share social-share-fixed">
+	<div class="less">
+		<a class="blank"></a>
+		<a class="icon-flipboard" href="#"></a>
+		<a class="icon-stumbleupon" href="#"></a>
+		<a class="icon-reddit" href="#"></a>
+		<a class="icon-email" href="#"></a>
+	</div>
+
+	<div class="shown">
+		<a class="icon-facebook" href="#"></a>
+		<a class="icon-twitter" href="#"></a>
+		<a class="icon-linkedin" href="#"></a>
+		<a class="icon-whatsapp" href="#"></a>
+		<a class="icon-email" href="#"></a>
+	</div>
+</div>
+
+<!-- End: Social Share Icons -->
+
+					</div>
+					<a href="http://techcrunch.com/2008/05/20/ms-blocks-hps-amds-from-sp3-update-for-xp-i-love-acronyms/" class="next-link" data-omni-sm="art_nextstory">
+						<div class="next-story-link">Next Story</div>
+						<div class="next-story-full">
+							<h4 class="next-title">MS blocks HP&#039;s AMDs from SP3 update for XP  (I love&nbsp;acronyms)</h4>
+						</div>
+					</a>
+				</header>
+				<!-- End: Article Header -->
+
+				<!-- Begin: Article Body -->
+				<div class="l-two-col">
+
+					<!-- Begin: Article Body - Main -->
+					<div class="l-main-container">
+						<div class="l-main">
+							<div class="article-entry text">
+
+<!-- Begin: Wordpress Article Content -->
+
+<p><a href="http://www.crunchbase.com/company/meetro"><img src="http://tctechcrunch2011.files.wordpress.com/2008/05/meetro_logo.png" class="shot2"></a></p>
+<p><em>This <a href="http://meetro.lefora.com/2008/05/21/meetro-post-mortem/">post</a> was written by guest contributor <a href="http://www.crunchbase.com/person/paul-bragiel">Paul Bragiel</a>, founder of <a href="http://www.meetro.com/">Meetro</a>, a location-aware instant messaging platform that was <a href="http://www.techcrunch.com/tag/deadpool">DeadPooled</a> last month. Bragiel is also the founder hosted forum solution <a href="http://www.lefora.com/">Lefora</a>. See our coverage of these two companies <a href="http://www.techcrunch.com/tag/meetro/">here</a>, along with our first post on Meetro in <a href="http://www.techcrunch.com/2005/08/01/profile-meetro/">August 2005</a>. Also see our post titled <a href="http://www.techcrunch.com/2008/05/06/what-to-do-with-failed-startup-ip/">What To Do With Failed Startup IP?</a></em>.</p>
+<hr>
+<p>In the spirit of openness, I write this post on what we did wrong at <a href="http://www.meetro.com/">Meetro</a> – a post mortem of sorts. You don’t see this often enough in the startup world even though the majority of startups go belly-up.  Hell, there are probably a few today that will go away with a whimper.  So much knowledge is lost. If you’ve had similar experiences, I encourage you to share them <a href="http://postmortem.lefora.com">over at Lefora</a>.</p>
+<p>To those of you not familiar with Meetro, we were one of the first location-based social networks.  We figured out where you were physically and then we would tell you else was around you in real-time.  You would then be able to instant message with them, check out their profiles, and hopefully meet up.  Other functionality included telling you about restaurants close by, media created nearby, and various local information that pertained to your location.  We also supported all your various instant messaging protocols (AIM, MSN, Yahoo) and a slew of other social features.</p>
+<p>Even with a robust product we simply couldn’t capture enough market share.  So here are the major problems we had that, in the end, we couldn’t overcome.  There were, of course, mini fires and random things but every startup goes through those.  I have a feeling some of the other location-based startups out there right now are experiencing the same things.</p>
+<p>Most importantly, there was a “location problem”. It’s really hard to grow a product that’s 100% focused on where you physically are. Tons of companies have tried this before and most of them have died.  We, of course, were cocky and had to give it a try.  There was just something so sexy about the idea that you could load up a piece of software and it would tell you about someone nearby who was interesting to you.  Someone will crack this and make billions of dollars on it.  I can only hope to be involved in some shape or form, since it’s an itch that hasn’t gone away for me.</p>
+<p><!--more--></p>
+<p>A perfect example of this difficulty was our community in Chicago.  We launched our product and got all of our friends in Chicago on it.  We then had the largest papers in the area do nice detailed write-ups on us.  Things were going great.  We had hundreds of active users and you could feel the buzz around it.  We threw a few parties that continued to support the good mood all around.  Hell, our CTO Sam even met his current girlfriend at one of them.</p>
+<p>The problem we would soon find out was that having hundreds of active users in Chicago didn’t mean that you would have even two active users in Milwaukee, less than a hundred miles away, not to mention any in New York or San Francisco.  The software and concept simply didn’t scale beyond its physical borders.</p>
+<p>I would also cite a theoretical Idaho example. No matter how slick Meetro was, if you opened it up in the middle of Idaho and no one else was nearby using it, the service simply wasn’t that interesting.  We did do a few things to address this, such as including “random” people and the whole Meetro team in the application.  I must say, this did create some great friendships and kept some people around, but in the end it just wasn’t enough.</p>
+<p>So how do you overcome the location problem?  The way I see it, a Meetro-like application will succeed with one of the following strategies.</p>
+<p>1. A product with a HUGE audience turns it on.  I’m talking about a <a href="http://www.myspace.com/">MySpace</a>, <a href="http://www.facebook.com/">Facebook</a>, etc.  Something that has a really rabid audience, where it would be a great feature addition.  It still wouldn’t be easy. You would have to do it properly right out of the gate.  There are just tons of privacy and personal issues that come into play when you are talking about physical location.</p>
+<p>I remember vividly being pissed that MySpace didn’t work with us (read: buy us) after talking with them off and on.  I was naive, the more I think about it. It would have unleashed pure anarchy and it wouldn’t have been worth it in the short-term.  Plus, at the time they were dealing with their own scaling issues and moving over to .Net.  However, I still think it’s something that should be on the roadmap of one of these big players.</p>
+<p>2.  A company has a really long term vision and builds it out city by city.  This is similar to the approach taken by <a href="http://www.yelp.com/">Yelp</a>.  They know it’s not easy and I know first hand that they are putting a lot of effort into fostering their communities.  It’s an ongoing job.  You simply can’t establish a city and then let it fend for itself.</p><div>
+<div id="adsDiv81e94e45fe" class="native-ad-mobile"></div>
+<script>
+/*  */
+(function(window){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function() {
+			if (window.ads.isMobile()) {
+				window.adSetInView('1');
+				window.htmlAdWH('348-14-15-339d', '320', '115', 'text', 'adsDiv81e94e45fe');
+				window.adSetInView('0');
+			}
+		});
+	}(this));
+/*  */
+</script>
+</div>
+<p>We had this happen to us in Meetro.  After we got the Chicago community going, we up and moved our company to Palo Alto.  We weren’t there anymore to be the face of the community, organize events, etc.  While the service continued and had a core bunch of people using it, by no means was it as rabid as it was at its peak.  By the time I realized this, it already was a bit too late and we had shifted our focus to getting a community going in San Francisco.</p>
+<p>3.  Someone creates a viral product that grows like crazy but location isn’t the core feature.  It just happens to be part of the bigger whole and as people use it more and more, they realize that the location piece built into it has become increasingly valuable for them.  I don’t know what this product is, otherwise I would be building it right now.</p>
+<p>Next, the “download problem”.  This one is obvious now but when we started in 2004, Web 2.0 hadn’t quite happened yet and some download apps were still growing (e.g. <a href="http://www.skype.com/">Skype</a>).  Plus we needed a download for the application to work.  Having worked with phone carriers for years, I had decided early on that we simply weren’t going to wait for the carriers to get their act together on location.  They still haven’t done it properly 4 years later.</p>
+<p>So to get around them we decided we would build out our own location technology.  We filed patents and everything.   Simply put, we were counting on the continued growth of WiFi.  When you launched Meetro we would scan for all the WiFi networks out there.  We would then crosscheck what was out there with what we had in a huge global database (it had grown to 4+ million hotspots when we stopped).  If it was in the database, then we would do some trilateration to figure out where you were. If not, we would ask you to enter your location. We would save this info and use it later to crosscheck and verify it against similar data.</p>
+<p>This data grew quite fast. We averaged around 5 wifi routers found per location, and in dense cities like New York, I remember averaging 9.6.  I remember being quite excited since a key part of our business plan was to build an alternate GPS of sorts and use Meetro as a vehicle to gather and refine this data.  The best part was that the technology was self-healing, so if some router was replaced or moved our system, we would learn about it very fast.</p>
+<p>In the end, though, the dropoff that happened once people had to download and install Meetro was HUGE and didn’t help us at all.  If I recall, it was something in the 80 to 90% range.  It crushed adoption rates.</p>
+<p>Lastly, the “realtime problem”.  This one is similar to the location problem in that if someone wasn’t online when you were online, they were no good to you.  While the realtime chat aspect of the application made for some really serendipitous meetings, it also made it harder for people to gauge the activity of their communities, especially if they logged in at odd hours, people were set as away, etc.</p>
+<p>I can still feel the magic of when I was on layover in the Denver Airport, I met one of our users, and we grabbed a beer.  This is what I dreamed Meetro would be about all the time, but those moments were too few and far between. We did fix this in the end but it was too little too late.  So, to anyone tackling this problem in the future, make sure you have some type of persistence built-in, be it “people here previously” or “most common visitors to the area” etc.</p>
+<p>Compound these 3 problems and the writing was on the wall.  So how would I do things differently today?</p>
+<p>1. I would wait until location is all clean and dandy with the carriers and build on top of that.  <a href="http://www.loopt.com/">Loopt</a> has been doing the huge business development cycle and has been waiting it out for the past few years.  It seems as though they’re seeing the light at the end of the tunnel.  I’m not really following who else is doing this stuff right now, but I’m sure they’re out there.</p>
+<p>2.  I would take our technology, create an API, and plug it into existing applications that have already been downloaded and given low-level access to the hardware our technology needed.  I’m thinking about something that would run on top of AIM, Skype or Firefox, for example.  Act as a friendly parasite on top of these apps that are already well established.  Expect some licensing announcements soon concerning our IP on this front.</p>
+<p>3. The other option is to build out something that just allows you to “check in” where you are at.  Kind of like <a href="http://www.twitter.com/">Twitter</a> meets location (<a href="http://www.dodgeball.com/">Dodgeball</a> did this).  However, this in my mind compromises the ultimate use case of a Meetro-like concept.</p>
+<p>We could have gone about trying to fix Meetro but the team was just ready to move on.  Raising money on the flat growth we had was nearly impossible.  Plus I knew that in order to keep the tight-knit team we had built together, we needed to shift focus for sanity sake.  People (myself included) just felt beat up.  We knew that fixing these issues would involve a complete rearchitecturing of the code, and people just weren’t excited about the idea enough anymore to do it right.</p>
+<div class="cbw snap_nopreview">
+<div class="cbw_header">
+<div class="cbw_header_text"><a href="http://www.crunchbase.com/">CrunchBase Information</a></div>
+</div>
+<div class="cbw_content">
+<div class="cbw_subheader"><a href="http://www.crunchbase.com/person/paul-bragiel">Paul Bragiel</a></div>
+<div class="cbw_subcontent"></div>
+<div class="cbw_footer">Information provided by <a href="http://www.crunchbase.com/">CrunchBase</a>
+</div>
+</div>
+</div>
+<!-- End: Wordpress Article Content -->
+
+
+								
+							</div>
+
+<div id="social-after-wrapper" class="cf social-share social-share-inline social-share-with-bubbles">
+	<ul class="inline-list social-share-list" id="social-after" data-permalink="http://techcrunch.com/2008/05/20/anatomy-of-a-failure-lessons-learned/" data-shortlink="http://bit.ly/dRW9l" data-shareTitle="Anatomy Of A Failure: Lessons&nbsp;Learned" data-post-id="17713">
+		<li class="total-shares">
+			<h5 class="total-shares-count">0</h5><br />
+			<small>SHARES</small>
+		</li>
+		<li>
+			<div class="bubble total-facebook">0</div>
+			<a href="#" rel="external" class="facebook has-text icon-facebook">Share</a>
+		</li>
+		<li>
+			<div class="bubble total-twitter">0</div>
+			<a href="#" rel="external" class="twitter has-text icon-twitter">Tweet</a>
+		</li>
+		<li>
+			<div class="bubble total-linkedin">0</div>
+			<a href="#" rel="external" class="linkedin has-text icon-linkedin">Share</a>
+		</li>
+		<li>
+			<div class="bubble total-google-plus">0</div>
+			<a href="#" rel="external" class="google-plus icon-google-plus"></a>
+		</li>
+		<li>
+			<div class="bubble total-reddit">0</div>
+			<a href="#" rel="external" class="reddit icon-reddit"></a>
+		</li>
+		<li>
+			<div class="bubble total-stumbleupon">0</div>
+			<a href="#" rel="external" class="stumbleupon icon-stumbleupon"></a>
+		</li>
+		<li>
+			<div class="bubble total-email">0</div>
+			<a href="#" rel="external" class="email icon-email"></a>
+		</li>
+		<li>
+			<div class="bubble bubble-fake"></div>
+			<a href="#" rel="external" class="flipboard icon-flipboard"></a>
+		</li>
+	</ul>
+</div>
+<div id="grv-personalization-56"></div>
+<script>window.TechCrunch.loader.on( 'gravity-beacon', function(){ window.tc_loadGravityScript( 'recirculation' ); } );</script><div class="ad-cluster-container ad-cluster-no-ad" style="display: none;">
+	<small class="advertise-here"><a href="http://techcrunch.com/advertise/" title="Advertise on TechCrunch">Advertisement</a></small>
+	<ul class="ad-cluster" data-adcount="4">
+	</ul>
+</div>
+						</div>
+					</div>
+					<!-- End: Article Body - Main -->
+
+					<!-- Begin: Article Body - Sidebar -->
+					<div class="l-sidebar">
+<div class="ad-unit ad-300x250">
+	<small class="advertise-here">
+		<a href="http://techcrunch.com/advertise/" title="Advertise on TechCrunch">
+			Advertisement		</a>
+	</small>
+	<!-- Begin: Right Rail Advertisement -->
+		<div id="adsDiv5f513beed4" class=""></div>
+<script>
+/* <![CDATA[ */
+if (!ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.htmlAdWH('93311232', "RR", "RR", 'f', 'adsDiv5f513beed4');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script>	<!-- End: Right Rail Advertisement -->
+</div>
+
+<div class="section">
+	<div id="adsDiv88bbacc240" class="mobile-ads-center"></div>
+<script>
+/* <![CDATA[ */
+if (ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.adSetInView('1');
+			window.htmlAdWH('93446219', "300", "250", 'f', 'adsDiv88bbacc240');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div><!-- Begin: Crunchbase Shoal -->
+<div class="section aside crunchbase-cluster collapse">
+<h3 class="section-title collapse-title">CrunchBase</h3>
+
+<div class="collapse-body">
+<ul class="crunchbase-accordion">
+		<!-- Begin: CrunchBase Card -->
+		<li class="data-card crunchbase-card active" data-crunchbase-url="https://crunchbase.com/organization/lefora/">
+		<h4 class="card-title card-acc-handle">
+			<a class="cb-card-title-link" href="https://crunchbase.com/organization/lefora/">
+				Lefora			</a>
+		</h4>
+
+		<div class="card-acc-panel">
+		<ul class="card-info">					<li>
+						<strong class="key">&nbsp;</strong>
+						<span class="value">&nbsp;</span>
+					</li>
+									<li class="cb-card-description full">
+						<strong class="key">Overview</strong>
+						<span class="value">Lefora is a free hosted forum service.  
+
+Richard Chen has invested in Lefora</span>
+					</li>
+
+																								<li class="full">
+								<strong class="key">Location</strong>
+								<span class="value">
+																		<a href="https://crunchbase.com/organization/lefora/">, </a>
+								</span>
+							</li>
+						
+																			<li class="full">
+								<strong class="key">Categories</strong>
+								<span class="value">
+																													<a class="" href="http://crunchbase.com/category/curatedweb/c87f19a05bd9c7c6e379ca118f49aa4e">Curated Web</a>								</span>
+							</li>
+											
+										<li class="full">
+						<strong class="key">Founders</strong>
+						<span class="value"><a href="https://crunchbase.com/person/vincent-lauria" target="_blank">Vincent Lauria</a>, <a href="https://crunchbase.com/person/samuel-stauffer" target="_blank">Samuel Stauffer</a></span>
+					</li>
+										<li class="full">
+						<strong class="key">Website</strong>
+						<span class="value">
+							<a href="http://www.lefora.com" target="_blank">http://www.lefora.com</a>						</span>
+					</li>
+							<li class="full profile">
+			<a href="https://crunchbase.com/organization/lefora" target="_blank">Full profile for Lefora</a>		</li>
+		</ul>
+		</div>
+		</li>
+		<!-- End: CrunchBase Card -->		<!-- Begin: CrunchBase Card -->
+		<li class="data-card crunchbase-card" data-crunchbase-url="https://crunchbase.com/organization/meetro/">
+		<h4 class="card-title card-acc-handle">
+			<a class="cb-card-title-link" href="https://crunchbase.com/organization/meetro/">
+				Meetro			</a>
+		</h4>
+
+		<div class="card-acc-panel">
+		<ul class="card-info">					<li>
+						<strong class="key">&nbsp;</strong>
+						<span class="value">&nbsp;</span>
+					</li>
+									<li class="cb-card-description full">
+						<strong class="key">Overview</strong>
+						<span class="value">Meetro was a freely downloadable instant messaging client and real-time social networking application that was for its location awareness.
+
+It detected your own physical location and then let you see which other Meetro users were located nearby.  
+
+Available for both Windows and Mac, Meetro also supported AIM, MSN, ICQ, and Yahoo IM services so you could combine all of your buddies across different &hellip;</span>
+					</li>
+
+																								<li class="full">
+								<strong class="key">Location</strong>
+								<span class="value">
+																		<a href="http://crunchbase.com/location/palo-alto/0d81d68c9c59f14f01163ad9ce7145ca">Palo Alto, California</a>
+								</span>
+							</li>
+						
+																			<li class="full">
+								<strong class="key">Categories</strong>
+								<span class="value">
+																													<a class="" href="http://crunchbase.com/category/curatedweb/c87f19a05bd9c7c6e379ca118f49aa4e">Curated Web</a>								</span>
+							</li>
+											
+										<li class="full">
+						<strong class="key">Website</strong>
+						<span class="value">
+							<a href="http://www.meetro.com" target="_blank">http://www.meetro.com</a>						</span>
+					</li>
+							<li class="full profile">
+			<a href="https://crunchbase.com/organization/meetro" target="_blank">Full profile for Meetro</a>		</li>
+		</ul>
+		</div>
+		</li>
+		<!-- End: CrunchBase Card -->
+
+</ul>
+</div>
+</div>
+<!-- End: Crunchbase Shoal -->
+	<div class="section aside newsletters-signup collapse collapse-adjacent block">
+		
+<h2 class="section-title collapse-title aside-adjacent">
+	<img class="newsletter-logo" alt="TechCrunch" src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/logo.svg" scale="0"> Newsletters
+</h2>
+
+
+<div class="collapse-body newsletter-body">
+	<div class="newsletter newsletter-side-bar-newsletters">
+		<form method="post" class="inline-form form-newsletters" action="" data-nonce="da85246b35">
+			<div class="checkboxes">
+				<fieldset class="custom-checkbox">
+					<input type="checkbox" name="crunchdaily" id="tc-daily-55795da81ffef0.67110434" checked="checked">
+					<label for="tc-daily-55795da81ffef0.67110434">
+						<span class="custom-checkbox-fake"></span>
+						<strong>TechCrunch Daily</strong> Top headlines, delivered daily
+					</label>
+				</fieldset>
+				<fieldset class="custom-checkbox">
+					<input type="checkbox" name="crunchweekly" id="tc-week-in-review-55795da81ffef0.67110434" checked="checked">
+					<label for="tc-week-in-review-55795da81ffef0.67110434">
+						<span class="custom-checkbox-fake"></span>
+						<strong>TC Week-in-Review</strong> Most popular stories, delivered Sundays
+					</label>
+				</fieldset>
+				<fieldset class="custom-checkbox">
+					<input type="checkbox" name="crunchbase" id="tc-crunchbase-daily-55795da81ffef0.67110434" checked="checked">
+					<label for="tc-crunchbase-daily-55795da81ffef0.67110434">
+						<span class="custom-checkbox-fake"></span>
+						<strong>CrunchBase Daily</strong> Latest startup fundings, delivered daily
+					</label>
+				</fieldset>
+			</div>
+
+			<fieldset>
+				<label class="is-vishidden">Enter Address</label>
+				<input type="email" name="email" placeholder="Enter Address">
+				<button type="submit" class="newsletter-submit">Subscribe</button>
+			</fieldset>
+		</form>
+	</div>
+</div>	</div>
+
+<section class="aside section video-aside crunchreport collapse collapse-adjacent">
+	<h2 class="section-title collapse-title">
+		Latest <span>Crunch Report</span>	</h2>
+	<div class="collapse-body cf">
+		<ul class="vid-list cf">
+			<li class="block vid-feature" data-lightbox-omniture="crunchreport">
+				<div class="block block-inset">
+	<a href="http://techcrunch.com/video/facebook-messenger-adds-games-to-app-list-crunch-report/518878434/?rr">
+		<img src="http://pthumbnails.5min.com/10377569/518878434_c_300_170.jpg" alt="Facebook Messenger Adds Its First Offical Game | Crunch Report" data-lightbox-url="http://techcrunch.com/video/facebook-messenger-adds-games-to-app-list-crunch-report/518878434/lightbox">
+				<div class="block-title">
+			<h3>Facebook Messenger Adds Its First Offical Game | Crunch Report</h3>			
+		</div>
+			</a>
+</div>
+			</li>
+		</ul>
+		<a href="http://techcrunch.com/video/crunchreport/?rr" class="text-btn" data-omni-sm="rightrail_crmore">Watch More Episodes<i class="icon-caret-right"></i></a>
+	</div>
+</section>
+<div class="section ad-300x250">
+	<div id="adsDivd145028a42" class=""></div>
+<script>
+/* <![CDATA[ */
+if (!ads.isMobile()) {
+	(function(window,$){
+		window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function(){
+			if ( !window.ads.isAdPageSet ){
+				if ( typeof window.adSetAdURL == 'function' ) {
+					window.adSetAdURL('/wp-content/themes/vip/techcrunch-2013/_uac/adpage.html');
+					window.ads.isAdPageSet = true;
+				}
+				if ( typeof window.adsResizePortrait === 'function' ) {
+					window.adsResizePortrait('1');
+				}
+			}
+			window.adSetInView('D');
+			window.htmlAdWH('93422861', "RR", "RR", 'f', 'adsDivd145028a42');
+		});
+	}(this,this.jQuery));
+}
+/* ]]> */
+</script></div>
+					</div>
+					<!-- End: Article Body - Sidebar -->
+
+				</div>
+				<!-- End: Article Body -->
+
+				</div>
+			</div>
+			<!-- End: Article Content - Body Right Column -->
+
+			<!-- Begin: Article Recirculation - Body Left Column -->
+			<div class="l-sidebar demo-block">
+				<!-- Begin: Recirculation Accordion -->
+<div class="accordion recirc-accordion">
+		<ul>
+												<li id="tc-accordion-item-meetro-tag">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/tag/meetro/">
+							Meetro						</a>
+					</div>
+				</li>
+														<li id="tc-accordion-item-lefora-tag">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/tag/lefora/">
+							lefora						</a>
+					</div>
+				</li>
+														<li id="tc-accordion-item-deadpool-tag">
+										<div class="loaded acc-handle">
+						<a href="http://techcrunch.com/tag/deadpool/">
+							DEADPOOL						</a>
+					</div>
+				</li>
+														<li class="active">
+					<div class="acc-handle loaded"><a>Popular Posts</a></div>
+					<div class="acc-panel">
+
+								<div id="acc-native-ad"></div>
+		<script type='text/javascript'>
+			(function(window){
+				try {
+					window.TechCrunch.loader.on('tc_ads_wrapper_omniture', function() {
+						if (!window.ads.isMobile()) {
+							window.adSetInView('1');
+							window.htmlAdWH('93457286', '320', '115', 'text', 'acc-native-ad');
+							window.adSetInView('0');
+						}
+					});
+				} catch (e) {
+					// Assume this is just no ad placement for this page load
+				}
+			}(this));
+		</script>
+						<ul class="recirc-river river-small" data-omni-sm-delegate="art_recircbottom">
+							<div id="grv-personalization-14"></div>
+							<script>if( !ads.isMobile() ){ window.TechCrunch.loader.on( 'gravity-beacon', function(){ window.tc_loadGravityScript( 'recirculation-accordion' ); } ); }</script>
+						</ul>
+					</div>	
+				</li>
+				</ul>
+</div>
+<!-- End: Recirculation Accordion -->
+
+			</div>
+			<!-- End: Article Recirculation - Body Left Column -->
+
+		</div>
+	</article>
+	<!-- End: Article - Primary -->
+
+<!-- Begin: Article - Secondary -->
+<div class="article-extra">
+	<div class="lc l-three-col">
+
+		<!-- Begin: Center Column -->
+		<div class="l-main-container">
+			<div class="l-main">
+				<section class="comments section">
+					<div class="comments-container" id="comments-container">
+						<div id="disqus_thread">
+	<div id="dsq-content">
+		<ul id="dsq-comments">
+					</ul>
+			</div>
+</div>
+		
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script type="text/javascript" charset="utf-8">
+	var disqus_url = "http:\/\/techcrunch.com\/2008\/05\/20\/anatomy-of-a-failure-lessons-learned\/";
+	var disqus_identifier = "17713 http:\/\/www.techcrunch.com\/2008\/05\/20\/anatomy-of-a-failure-lessons-learned\/";
+	var disqus_container_id = 'disqus_thread';
+	var disqus_domain = "disqus.com";
+	var disqus_shortname = "techcrunch";
+		var disqus_config = function () {
+	    var config = this; // Access to the config object
+
+	    /* 
+	       All currently supported events:
+	        * preData — fires just before we request for initial data
+	        * preInit - fires after we get initial data but before we load any dependencies
+	        * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+	        * afterRender - fires when template is rendered but before we show it
+	        * onReady - everything is done
+	     */
+
+		config.callbacks.preData.push(function() {
+			// clear out the container (its filled for SEO/legacy purposes)
+			document.getElementById(disqus_container_id).innerHTML = '';
+		})
+		config.callbacks.onReady.push(function() {
+/*
+			// sync comments in the background so we don't block the page
+			var req = new XMLHttpRequest();
+			req.open('GET', '?cf_action=sync_comments&post_id=17713', true);
+			req.send(null);
+*/
+		});
+		
+			};
+	
+	var facebookXdReceiverPath = "http:\/\/tctechcrunch2011.wordpress.com\/wp-content\/themes\/vip\/plugins\/disqus\/xd_receiver.htm";
+</script>
+
+<script type="text/javascript" charset="utf-8">
+	var DsqLocal = {
+		'trackbacks': [
+		],
+		'trackback_url': "http:\/\/techcrunch.com\/2008\/05\/20\/anatomy-of-a-failure-lessons-learned\/trackback\/"	};
+</script>
+
+<script type="text/javascript" charset="utf-8">
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.40';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+					</div>
+				</section>
+			</div>
+		</div>
+		<!-- End: Center Column -->
+
+		<!-- Begin: Right Column -->
+		<div class="l-sidebar-2 recirc-up-next section">
+			
+				<div class="toaster section">
+					<div class="toaster-container">
+						<div class="toaster-content">
+							<div class="toaster-title">Up Next</div>
+							<h3 class="h-alt"><a href="http://techcrunch.com/2008/05/20/ms-blocks-hps-amds-from-sp3-update-for-xp-i-love-acronyms/" data-omni-sm="art_upnext">MS blocks HP&#039;s AMDs from SP3 update for XP  (I love&nbsp;acronyms)</a></h3>
+							<div class="byline">
+	Posted <time datetime="2008-05-20" class="timestamp">May 20, 2008</time> </div>						</div>
+					</div>
+				</div>
+	<div class="section aside-alt crunchboard-listings collapse collapse-last">
+		<h3 class="section-title collapse-title">CrunchBoard</h3>
+
+		<div class="collapse-body">
+			<h4 class="h-alt crunchboard-listings-subhead">Job Listings</h4>
+			<ul class="info-list lined-list">
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20550" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Marketing Performance Manager</h3>
+
+							<div class="info-meta">Close5</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20549" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Producer, Website &amp; Content</h3>
+
+							<div class="info-meta">Open Road Media</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20544" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Technical Manager, Client Engineering</h3>
+
+							<div class="info-meta">Discovery Communications</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20543" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>ShopStyle Senior Software Engineer - Messaging Infrastructure</h3>
+
+							<div class="info-meta">POPSUGAR</div>
+						</a>
+					</li>
+									<li>
+						<a href="http://www.crunchboard.com/opening/detailjob.php?jid=20539" onclick="s_objectID='rr_crunchboard';" target="_blank">
+							<h3>Full-Stack Developer</h3>
+
+							<div class="info-meta">PadillaCRT</div>
+						</a>
+					</li>
+							</ul>
+			<a href="http://www.crunchboard.com/jobs/" target="_blank" class="text-btn">More from CrunchBoard</a>
+		</div>
+	</div>
+		</div>
+		<!-- End: Right Column -->
+
+	</div>
+</div>
+<!-- End: Article - Secondary -->
+
+</div>
+<!-- End: Article Body Content - Main -->
+
+<!-- Begin: Article Body Content - Advertisement -->
+<div class="feature-island-container">
+	<div class="ad-cluster-container ad-cluster-no-ad" style="display: none;">
+	<small class="advertise-here"><a href="http://techcrunch.com/advertise/" title="Advertise on TechCrunch">Advertisement</a></small>
+	<ul class="ad-cluster-6" data-adcount="6">
+	</ul>
+</div>
+</div>
+<!-- End: Article Body Content - Advertisement -->
+<!-- Begin Footer -->
+<footer class="footer" role="contentinfo">
+	<div class="footer-content">
+
+		<!-- Begin Primary Nav (Footer) -->
+		<nav class="nav-footer">
+			<h4 class="footer-logo"><a href="/" rel="home">TechCrunch</a></h4>
+
+			<div class="g g-3up g-nogutter">
+
+				<!-- Begin TechCrunch Column -->
+				<div class="gi">
+					<h4 class="footer-logo-crunch-network"><img src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/crunch-network.jpg"/></h4>
+					<div>
+						<ul class="footer-links-about"><li id="menu-item-899764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-899764"><a href="http://techcrunch.com/">News</a></li>
+<li id="menu-item-899765" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899765"><a href="http://techcrunch.com/video/">TCTV</a></li>
+<li id="menu-item-899766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899766"><a href="http://techcrunch.com/events/">Events</a></li>
+<li id="menu-item-899767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899767"><a href="http://www.crunchbase.com">CrunchBase</a></li>
+</ul>
+					</div>
+				</div>
+				<!-- End TechCrunch Column -->
+
+				<!-- Begin About Column -->
+				<div class="gi">
+					<h4>About</h4>
+					<div>
+						<ul class="footer-links-about"><li id="menu-item-899768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899768"><a href="http://techcrunch.com/about/">Staff</a></li>
+<li id="menu-item-899769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899769"><a href="http://techcrunch.com/contact/">Contact Us</a></li>
+<li id="menu-item-899770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899770"><a href="http://techcrunch.com/advertise/">Advertise With Us</a></li>
+<li id="menu-item-899771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899771"><a href="http://techcrunch.com/got-a-tip/">Send Us A Tip</a></li>
+</ul>
+					</div>
+				</div>
+				<!-- End About Column -->
+
+				<!-- Begin International Column -->
+				<div class="gi">
+					<h4>International</h4>
+					<div>
+						<ul class="footer-links-about"><li id="menu-item-899772" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899772"><a href="http://techcrunch.cn/">China</a></li>
+<li id="menu-item-899773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-899773"><a href="http://techcrunch.com/europe/">Europe</a></li>
+<li id="menu-item-899774" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-899774"><a href="http://jp.techcrunch.com/">Japan</a></li>
+</ul>
+					</div>
+				</div>
+				<!-- End International Column -->
+
+			</div>
+		</nav>
+		<!-- End Primary Nav (Footer) -->
+
+		<!-- Begin Secondary Nav (Footer) -->
+		<div class="footer-follow g g-3up">
+
+			<!-- Begin Social Column -->
+			<div class="gi">
+				<div class="footer-social">
+					<h3>Follow TechCrunch</h3>
+					<ul class="inline-list social-list sprite-social">
+						<li><a href="https://www.facebook.com/techcrunch" rel="external" class="spricon nosprite dark icon-facebook" target="_blank"><span class="is-vishidden">Facebook</span></a></li>
+						<li><a href="https://twitter.com/techcrunch" rel="external" class="spricon nosprite dark icon-twitter" target="_blank"><span class="is-vishidden">Twitter</span></a></li>
+						<li><a href="https://plus.google.com/+TechCrunch" rel="external" class="spricon nosprite dark icon-google-plus" target="_blank"><span class="is-vishidden">Google+</span></a></li>
+						<li><a href="http://www.linkedin.com/company/techcrunch" rel="external" class="spricon nosprite dark icon-linkedin" target="_blank"><span class="is-vishidden">LinkedIn</span></a></li>
+						<li><a href="http://www.youtube.com/user/techcrunch" rel="external" class="spricon nosprite dark icon-youtube" target="_blank"><span class="is-vishidden">Youtube</span></a></li>
+						<li><a href="http://pinterest.com/techcrunch/" rel="external" class="spricon nosprite dark icon-pinterest" target="_blank"><span class="is-vishidden">Pinterest</span></a></li>
+						<li><a href="http://techcrunch.tumblr.com/" rel="external" class="spricon i-tumblr" target="_blank"><span class="is-vishidden">Tumblr</span></a></li>
+						<li><a href="http://instagram.com/techcrunch" rel="external" class="spricon i-instagram" target="_blank"><span class="is-vishidden">Instagram</span></a></li>
+						<li><a href="http://www.stumbleupon.com/channel/techcrunch/" rel="external" class="spricon nosprite dark icon-stumbleupon" target="_blank"><span class="is-vishidden">StumbleUpon</span></a></li>
+						<li><a href="/rssfeeds/" rel="external" class="spricon nosprite dark icon-rss"><span class="is-vishidden">Feed</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Social Column -->
+
+			<!-- Begin TC Apps Column -->
+			<div class="gi">
+				<h3>TechCrunch Apps</h3>
+				<ul class="inline-list social-list sprite-social">
+					<li><a href="https://itunes.apple.com/us/app/techcrunch/id526058642?mt=8" class="spricon i-apple" rel="external" target="_blank"><span class="is-vishidden">iOS</span></a></li>
+					<li><a href="https://play.google.com/store/apps/details?id=com.aol.mobile.techcrunch" class="spricon i-android" rel="external" target="_blank"><span class="is-vishidden">Android</span></a></li>
+					<li><a href="http://apps.microsoft.com/windows/en-US/app/techcrunch-the-inside-story/e1127f3e-b8da-4939-9778-0a4e3a51d2d9" class="spricon i-windows" target="_blank"><span class="is-vishidden">Windows 8</span></a></li>
+				</ul>
+			</div>
+			<!-- End TC Apps Column -->
+
+			<!-- Begin Subscribe Column -->
+			<div class="gi">
+				
+<h3 class="section-title aside-adjacent"><span class="no-mobile">Subscribe to </span>TechCrunch Daily</h3 >
+<div class="">
+	<p class="crunchdaily-tagline">Latest headlines delivered to you daily</p>
+	<div class="newsletter newsletter-side-bar-crunchdaily">
+		<form method="post" class="inline-form form-newsletters crunchdaily-newsletter" data-crunchlist="crunchdaily" action="http://link.techcrunch.com/s/Readership" data-nonce="da85246b35">
+			<input type="checkbox" name="crunchdaily" checked="checked" class="is-hidden">
+			<fieldset>
+				<legend>Subscribe to &lt;span class=&quot;no-mobile&quot;&gt;Subscribe to &lt;/span&gt;TechCrunch Daily</legend>
+				<label class="is-vishidden">Enter Email Address</label>
+				<input type="email" name="email" placeholder="Enter Email Address">
+				<button type="submit" class="newsletter-submit">Subscribe</button>
+			</fieldset>
+		</form>
+	</div>
+</div>			</div>
+			<!-- End Subscribe Column -->
+
+		</div>
+		<!-- End Secondary Nav (Footer) -->
+
+		<!-- Begin Copyright -->
+		<div class="footer-meta-nav g g-1up">
+			<div class="copyright gi">
+				<span class="footer-section">
+					&copy; 2013-2015 AOL Inc. All rights reserved.
+				</span>
+				<span class="footer-section">
+					<a href="http://www.aoltech.com/" rel="external">Aol Tech</a>
+					<a href="http://privacy.aol.com/">Privacy Policy</a>
+					<a href="http://adinfo.aol.com/about-our-ads">About Our Ads</a>
+					<a href="/anti-harassment-policy/">Anti Harassment Policy</a>
+					<a href="http://legal.aol.com/TOS/">Terms of Service</a>
+				</span>
+				<span class="footer-section">
+					<div class="vip-shoutout-container">Powered by <a href="https://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a></div>
+				</span>
+				<span class="footer-section">
+					<div class="webtype-shout-out">Fonts by <a href="http://www.webtype.com/" rel="external" style="padding:0;" target="_blank"><img src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/1x1.png" data-src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/webtype_footer_link.png" alt="<Webtype>" /></a></div>
+				</span>
+			</div>
+		</div>
+		<!-- End Copyright -->
+
+	</div>
+</footer>
+
+<!--[if lte IE 9 ]>
+    <script src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/js/placeMe-1.0.js"></script>
+<![endif]-->
+<!--[if lte IE 8 ]>
+	<script src="https://s0.wp.com/wp-content/themes/vip/techcrunch-2013/assets/js/ie8.js"></script>
+<![endif]-->
+
+<!-- wpcom_wp_footer -->
+	<script type="application/ld+json">
+		{"@context":"http:\/\/schema.org","@type":"Article","url":"http:\/\/techcrunch.com\/2008\/05\/20\/anatomy-of-a-failure-lessons-learned\/","author":{"@type":"Person","name":"Contributor"},"headline":"Anatomy Of A Failure: Lessons Learned","articleBody":"\n\nThis post was written by guest contributor Paul Bragiel, founder of Meetro, a location-aware instant messaging platform that was DeadPooled last month. Bragiel is also the founder hosted forum solution Lefora. See our coverage of these two companies here, along with our first post on Meetro in August 2005. Also see our post titled What To Do With Failed Startup IP?.\n\n\n\nIn the spirit of openness, I write this post on what we did wrong at Meetro - a post mortem of sorts. You don't see this often enough in the startup world even though the majority of startups go belly-up.  Hell, there are probably a few today that will go away with a whimper.  So much knowledge is lost. If you've had similar experiences, I encourage you to share them over at Lefora.\n\nTo those of you not familiar with Meetro, we were one of the first location-based social networks.  We figured out where you were physically and then we would tell you else was around you in real-time.  You would then be able to instant message with them, check out their profiles, and hopefully meet up.  Other functionality included telling you about restaurants close by, media created nearby, and various local information that pertained to your location.  We also supported all your various instant messaging protocols (AIM, MSN, Yahoo) and a slew of other social features.\n\nEven with a robust product we simply couldn't capture enough market share.  So here are the major problems we had that, in the end, we couldn't overcome.  There were, of course, mini fires and random things but every startup goes through those.  I have a feeling some of the other location-based startups out there right now are experiencing the same things.\n\nMost importantly, there was a \"location problem\". It's really hard to grow a product that's 100% focused on where you physically are. Tons of companies have tried this before and most of them have died.  We, of course, were cocky and had to give it a try.  There was just something so sexy about the idea that you could load up a piece of software and it would tell you about someone nearby who was interesting to you.  Someone will crack this and make billions of dollars on it.  I can only hope to be involved in some shape or form, since it's an itch that hasn't gone away for me.\n\n\n\nA perfect example of this difficulty was our community in Chicago.  We launched our product and got all of our friends in Chicago on it.  We then had the largest papers in the area do nice detailed write-ups on us.  Things were going great.  We had hundreds of active users and you could feel the buzz around it.  We threw a few parties that continued to support the good mood all around.  Hell, our CTO Sam even met his current girlfriend at one of them.\n\nThe problem we would soon find out was that having hundreds of active users in Chicago didn't mean that you would have even two active users in Milwaukee, less than a hundred miles away, not to mention any in New York or San Francisco.  The software and concept simply didn't scale beyond its physical borders.\n\nI would also cite a theoretical Idaho example. No matter how slick Meetro was, if you opened it up in the middle of Idaho and no one else was nearby using it, the service simply wasn't that interesting.  We did do a few things to address this, such as including \"random\" people and the whole Meetro team in the application.  I must say, this did create some great friendships and kept some people around, but in the end it just wasn't enough.\n\nSo how do you overcome the location problem?  The way I see it, a Meetro-like application will succeed with one of the following strategies.\n\n1. A product with a HUGE audience turns it on.  I'm talking about a MySpace, Facebook, etc.  Something that has a really rabid audience, where it would be a great feature addition.  It still wouldn't be easy. You would have to do it properly right out of the gate.  There are just tons of privacy and personal issues that come into play when you are talking about physical location.\n\nI remember vividly being pissed that MySpace didn't work with us (read: buy us) after talking with them off and on.  I was naive, the more I think about it. It would have unleashed pure anarchy and it wouldn't have been worth it in the short-term.  Plus, at the time they were dealing with their own scaling issues and moving over to .Net.  However, I still think it's something that should be on the roadmap of one of these big players.\n\n2.  A company has a really long term vision and builds it out city by city.  This is similar to the approach taken by Yelp.  They know it's not easy and I know first hand that they are putting a lot of effort into fostering their communities.  It's an ongoing job.  You simply can't establish a city and then let it fend for itself.\n\nWe had this happen to us in Meetro.  After we got the Chicago community going, we up and moved our company to Palo Alto.  We weren't there anymore to be the face of the community, organize events, etc.  While the service continued and had a core bunch of people using it, by no means was it as rabid as it was at its peak.  By the time I realized this, it already was a bit too late and we had shifted our focus to getting a community going in San Francisco.\n\n3.  Someone creates a viral product that grows like crazy but location isn't the core feature.  It just happens to be part of the bigger whole and as people use it more and more, they realize that the location piece built into it has become increasingly valuable for them.  I don't know what this product is, otherwise I would be building it right now.\n\nNext, the \"download problem\".  This one is obvious now but when we started in 2004, Web 2.0 hadn't quite happened yet and some download apps were still growing (e.g. Skype).  Plus we needed a download for the application to work.  Having worked with phone carriers for years, I had decided early on that we simply weren't going to wait for the carriers to get their act together on location.  They still haven't done it properly 4 years later.\n\nSo to get around them we decided we would build out our own location technology.  We filed patents and everything.   Simply put, we were counting on the continued growth of WiFi.  When you launched Meetro we would scan for all the WiFi networks out there.  We would then crosscheck what was out there with what we had in a huge global database (it had grown to 4+ million hotspots when we stopped).  If it was in the database, then we would do some trilateration to figure out where you were. If not, we would ask you to enter your location. We would save this info and use it later to crosscheck and verify it against similar data.\n\nThis data grew quite fast. We averaged around 5 wifi routers found per location, and in dense cities like New York, I remember averaging 9.6.  I remember being quite excited since a key part of our business plan was to build an alternate GPS of sorts and use Meetro as a vehicle to gather and refine this data.  The best part was that the technology was self-healing, so if some router was replaced or moved our system, we would learn about it very fast.\n\nIn the end, though, the dropoff that happened once people had to download and install Meetro was HUGE and didn't help us at all.  If I recall, it was something in the 80 to 90% range.  It crushed adoption rates.\n\nLastly, the \"realtime problem\".  This one is similar to the location problem in that if someone wasn't online when you were online, they were no good to you.  While the realtime chat aspect of the application made for some really serendipitous meetings, it also made it harder for people to gauge the activity of their communities, especially if they logged in at odd hours, people were set as away, etc.\n\nI can still feel the magic of when I was on layover in the Denver Airport, I met one of our users, and we grabbed a beer.  This is what I dreamed Meetro would be about all the time, but those moments were too few and far between. We did fix this in the end but it was too little too late.  So, to anyone tackling this problem in the future, make sure you have some type of persistence built-in, be it \"people here previously\" or \"most common visitors to the area\" etc.\n\nCompound these 3 problems and the writing was on the wall.  So how would I do things differently today?\n\n1. I would wait until location is all clean and dandy with the carriers and build on top of that.  Loopt has been doing the huge business development cycle and has been waiting it out for the past few years.  It seems as though they're seeing the light at the end of the tunnel.  I'm not really following who else is doing this stuff right now, but I'm sure they're out there.\n\n2.  I would take our technology, create an API, and plug it into existing applications that have already been downloaded and given low-level access to the hardware our technology needed.  I'm thinking about something that would run on top of AIM, Skype or Firefox, for example.  Act as a friendly parasite on top of these apps that are already well established.  Expect some licensing announcements soon concerning our IP on this front.\n\n3. The other option is to build out something that just allows you to \"check in\" where you are at.  Kind of like Twitter meets location (Dodgeball did this).  However, this in my mind compromises the ultimate use case of a Meetro-like concept.\n\nWe could have gone about trying to fix Meetro but the team was just ready to move on.  Raising money on the flat growth we had was nearly impossible.  Plus I knew that in order to keep the tight-knit team we had built together, we needed to shift focus for sanity sake.  People (myself included) just felt beat up.  We knew that fixing these issues would involve a complete rearchitecturing of the code, and people just weren't excited about the idea enough anymore to do it right.\n\nCrunchBase InformationPaul BragielInformation provided by CrunchBase","datePublished":"2008-05-21T00:03:15+00:00","mainEntityOfPage":"True","image":{"@list":["https:\/\/s0.wp.com\/wp-content\/themes\/vip\/techcrunch-2013\/assets\/images\/techcrunch.global.thumb-placeholder.png","http:\/\/tctechcrunch2011.files.wordpress.com\/2008\/05\/meetro_logo.png"]}}	</script> <noscript><img src="http://b.scorecardresearch.com/b?c1=2&c2=6036210&c3=&c4=&c5=&c6=&c15=&cv=1.3&cj=1" style="height:0;width:0;visibility:hidden" /></noscript><script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201524x'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/js/devicepx.js?m=1429298047g'></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var PushUpNotificationSettings = {"domain":"https:\/\/tctechcrunch2011.wordpress.com","userID":"271","websitePushID":"web.com.wordpress.tctechcrunch2011","webServiceURL":"https:\/\/push.10up.com","prompt":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var TC_VideoLoader_Settings = {"yt_key":"AIzaSyBhsoyL5FHDdWDh-w7DgTTHaC8PS2dvFdI"};
+var TC_Language_Settings = {"ajax_url":{"chinese":"http:\/\/techcrunch.com\/chinesemodal"},"chinese":["zh","zh-hk","zh-cn","zh-sg","zh-tw"],"english":["en","en-au","en-bz","en-ca","en-ie","en-jm","en-nz","en-ph","en-za","en-tt","en-gb","en-us","en-zw"],"japanese":["ja"]};
+var TC_Async_Scripts = {"tc_livefyre":"http:\/\/zor.livefyre.com\/wjs\/v1.0\/javascripts\/CommentCount.js","tc_gravity":"http:\/\/cdn.insights.gravity.com\/moth-min.js","commscore":"http:\/\/b.scorecardresearch.com\/beacon.js","aol_universal_navbar":"https:\/\/s.aolcdn.com\/os\/aol\/unb.min.js","tc_adsonar":"http:\/\/js.adsonar.com\/js\/aslJSON.js"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _sf_async_config = {"uid":"2905","domain":"techcrunch.com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVj90KwjAMRl/ILu5H1AvxWbourK1tLEu64dvrxOHNGHoX+DjnEJiSMncSJIGYVQq5d8QgkxPBQbVBm1vrhk4lh5CQOkd94XkH/3CEIw7rrFiMyDC6BIsjZbY5gV+uIjraSFZqhv3boTTp8BBneKMjaKwZMhmrqn1Zg2ZG4dnwXdaaPyn49WPAD36Nl7Kp6+ZwPJVn/wRqooXg'></script>
+<script type='text/javascript' src='https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js?ver=4.2-RC4-32277'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?47" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'24588526','blog_tz':'-7','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'24588526','v':'wpcom','tz':'-7','user_id':'0','post':'17713','subd':'tctechcrunch2011'}]);
+function st_vt() {var x=document.createElement("img");x.src="http://pixel.wp.com/g.gif?blog=24588526&v=wpcomvt&tz=-7&user_id=0&post=17713&subd=tctechcrunch2011&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXUVYmb2hZL0lEQT9qcF9NWi1bMDJfLy90VXNvY2U3ZFZ1RWlDan5dUUVCUnh3VDl+VG8tNm5YJXFsOU5+UC9rcHovcUt4NndzOG10QVg/cnNXOFo2U0w2TEhwWm5STXN4fFJIWUM9VHo1U1JNYV9OfisudHMvN35obUhFd1JmRUJvNHpad1FOU21ENiVHfHksU25oTWhXaX5VQ1ZkRTRNN3NRRXhQbkd+VTgmVDdIb11XWDFybUU0c2laLG40Ym1yOEp8M1h8OFlmYz1YQjRtVTZHbVYyZz9JUG4vRTl+Z1UsS1k='}]);
+_stq.push([ 'clickTrackerInit', '24588526', '17713' ]);
+	</script>
+<noscript><img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>	<script>
+		(function (window, $, undefined) {
+			var document = window.document;
+
+			function loadChartbeat() {
+				window._sf_endpt = (new Date()).getTime();
+				var e = document.createElement('script'),
+					url = ("https:" === document.location.protocol) ? "https://s3.amazonaws.com/" : "http://";
+				url += "static.chartbeat.com/js/chartbeat.js";
+				e.setAttribute('language', 'javascript');
+				e.setAttribute('type', 'text/javascript');
+				e.async = true;
+				e.setAttribute('src', url);
+				document.body.appendChild(e);
+			}
+
+			$(loadChartbeat);
+		}(this, this.jQuery));
+	</script>
+<!--Page generated in 0.2323 seconds.-->
+</body>
+</html>
+<!--
+	generated in 0.260 seconds
+	94911 bytes batcached for 300 seconds
+-->

@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lte-ie8"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7 lte-ie8"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8 lte-ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--
+==========================================================================
+ ____                     ___       __  __
+/\  _`\  __              /\_ \     /\ \/\ \          __
+\ \ \L\ \\_\  __  _    __\//\ \    \ \ \ \ \    ___ /\_\    ___    ___
+ \ \ ,__//\ \/\ \/'\ /'__`\\ \ \    \ \ \ \ \ /' _ `\/\ \  / __`\/' _ `\
+  \ \ \/ \ \ \/>  <//\  __/ \_\ \_   \ \ \_\ \/\ \/\ \ \ \/\ \L\ \\ \/\ \
+   \ \_\  \ \_\\_/\_\ \____\/\____\   \ \_____\ \_\ \_\ \_\ \____/ \_\ \_\
+    \/_/   \/_///\/_/\/____/\/____/    \/_____/\/_/\/_/\/_/\/___/ \/_/\/_/
+==========================================================================
+   Effector v4.4.2
+   Updated: March 11, 2015
+   Website: https://www.pixelunion.net
+   Themes: http://tumblr.com/themes/by/pixelunion-themes
+==========================================================================
+-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Insomanic: Andy Young's Blog &bull; Looking back at 7 years with my startup...</title>
+
+  
+    <meta name="description" content="Looking back at 7 years with my startup GroupSpaces Today I announced that I&rsquo;m joining the team at Stripe, after 7 years working on my startup, GroupSpaces. The decision to join Stripe was by no means..."/>
+  
+
+  <meta name="color:Background" content="#e6ebea"/>
+  <meta name="color:Colored Area Text" content="#fffadc"/>
+  <meta name="color:Colored Area Text Shadow" content="#bf4402"/>
+  <meta name="color:Inside Link" content="#f55b2c"/>
+  <meta name="color:Inside Link Hover" content="#fff7a5"/>
+  <meta name="color:Main Theme" content="#f55b2c"/>
+  <meta name="color:Outside Link" content="#f55b2c"/>
+  <meta name="color:Outside Link Hover" content="#131313"/>
+  <meta name="color:Outside Text" content="#616566"/>
+  <meta name="font:Inside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+  <meta name="font:Inside Text" content="Georgia, serif"/>
+  <meta name="font:Outside Heading" content="Helvetica Neue, Arial, sans-serif"/>
+  <meta name="font:Outside Text" content="Helvetica Neue, Arial, sans-serif"/>
+  <meta name="image:Background" content=""/>
+  <meta name="image:Banner" content=""/>
+  <meta name="image:Large Sidebar Portrait" content=""/>
+  <meta name="image:Logo" content=""/>
+  <meta name="if:Align Top Menu Left" content="0"/>
+  <meta name="if:Automatic Headings" content="0"/>
+  <meta name="if:Blog Title in Page Header" content="0"/>
+  <meta name="if:Blog Title in Sidebar" content="0"/>
+  <meta name="if:Blog Title in Top bar" content="1"/>
+  <meta name="if:Centered Layout" content="1"/>
+  <meta name="if:Collapse Notes" content="1"/>
+  <meta name="if:Content Width 500" content="0"/>
+  <meta name="if:Content Width 600" content="0"/>
+  <meta name="if:Content Width 700" content="1"/>
+  <meta name="if:Custom Photosets" content="1"/>
+  <meta name="if:Fixed Background" content="0"/>
+  <meta name="if:Fixed Top Bar" content="1"/>
+  <meta name="if:Hide Sidebar" content="0"/>
+  <meta name="if:Infinite Scrolling" content="0"/>
+  <meta name="if:Invert" content="0"/>
+  <meta name="if:Invert Top Bar" content="0"/>
+  <meta name="if:Large Social Icons" content="1"/>
+  <meta name="if:Left Sidebar" content="0"/>
+  <meta name="if:Logo in Top bar" content="0"/>
+  <meta name="if:Fullscreen Background" content="0"/>
+  <meta name="if:Pages In Top Bar" content="0"/>
+  <meta name="if:Rounded Post Corners" content="0"/>
+  <meta name="if:Scale Images" content="1"/>
+  <meta name="if:Search Box In Sidebar" content="0"/>
+  <meta name="if:Show About Heading" content="1"/>
+  <meta name="if:Show Blogs I Follow" content="0"/>
+  <meta name="if:Show Description" content="1"/>
+  <meta name="if:Show Group Blog Info" content="0"/>
+  <meta name="if:Show Instagram" content="0"/>
+  <meta name="if:Show Likes" content="0"/>
+  <meta name="if:Show Likes in Sidebar" content="0"/>
+  <meta name="if:Show Pages Heading" content="1"/>
+  <meta name="if:Show Portrait" content="0"/>
+  <meta name="if:Show Random Post Icon" content="0"/>
+  <meta name="if:Show Social Icons Widget" content="0"/>
+  <meta name="if:Show Tweets" content="1"/>
+  <meta name="if:Show Twitter Profile" content="1"/>
+  <meta name="if:Top Menu With Labels" content="0"/>
+  <meta name="text:Behance Username" content=""/>
+  <meta name="text:Cargo URL" content=""/>
+  <meta name="text:Copyright Text" content=""/>
+  <meta name="text:Default Search Text" content="Search"/>
+  <meta name="text:Delicious Username" content=""/>
+  <meta name="text:Disqus Shortname" content=""/>
+  <meta name="text:Dribbble Username" content=""/>
+  <meta name="text:FFFFound Username" content=""/>
+  <meta name="text:Facebook Username" content=""/>
+  <meta name="text:Flickr Username" content=""/>
+  <meta name="text:Forrst Username" content=""/>
+  <meta name="text:Foursquare Username" content=""/>
+  <meta name="text:GetClicky Site ID" content=""/>
+  <meta name="text:Google Analytics Web Property ID" content=""/>
+  <meta name="text:Google URL" content=""/>
+  <meta name="text:Grooveshark Username" content=""/>
+  <meta name="text:Instagram Username" content=""/>
+  <meta name="text:Instagram Heading" content="Instagram"/>
+  <meta name="text:Instagram Access Token" content=""/>
+  <meta name="text:Instagram Count Max 4" content="4"/>
+  <meta name="text:Lastfm Username" content=""/>
+  <meta name="text:Liked Posts Heading" content="I Dig These Posts"/>
+  <meta name="text:Linkedin Profile URL" content=""/>
+  <meta name="text:Myspace Friend ID" content=""/>
+  <meta name="text:Num Tweets Max 4" content="4"/>
+  <meta name="text:Pinboard Username" content=""/>
+  <meta name="text:Pinterest Username" content=""/>
+  <meta name="text:Rdio Username" content=""/>
+  <meta name="text:Rows of Followed Avatars" content="3"/>
+  <meta name="text:Skype Username" content=""/>
+  <meta name="text:Social Icons Heading" content="Me, Elsewhere"/>
+  <meta name="text:Soundcloud Username" content=""/>
+  <meta name="text:Spotify Username" content=""/>
+  <meta name="text:Tagline" content=""/>
+  <meta name="text:Twitter Heading" content="Twitter"/>
+  <meta name="text:Twitter Username" content=""/>
+  <meta name="text:Vimeo Username" content=""/>
+  <meta name="text:Xbox Live Profile URL" content=""/>
+  <meta name="text:Youtube Username" content=""/>
+  <meta name="text:github Username" content=""/>
+
+  <!-- FACEBOOK OPEN GRAPH -->
+  <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+  <meta property="og:site_name" content="Insomanic: Andy Young's Blog"/>
+
+  
+
+    <meta property="og:url" content="http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup"/>
+    <meta property="og:type" content="article"/>
+
+    
+      
+        <meta property="og:title" content="Looking back at 7 years with my startup GroupSpaces"/>
+        <meta property="og:description" content="Today I announced that I&rsquo;m joining the team at Stripe, after 7 years working on my startup, GroupSpaces. The decision to join Stripe was by no means easy, to say the least. The journey bringing GroupSpaces from a college-room idea has been the best ride of my life - an unbeatable learning experience full of the hardest challenges, the opportunity to work with people I have the utmost respect for, and the creation of a product of which I&rsquo;m immensely proud. I&rsquo;m indebted to all the mentors, advisors, investors and all who&rsquo;ve supported us along the way.
+
+
+ Going back to when I first started working on the ideas that became GroupSpaces - before we formed a company, lost and gained team members, reformed a new company, took time out of university and raised investment - it&rsquo;s been a 7 year journey for me. 7 years ago, my cofounder David and I knew nothing about business or startups. We had no connections to anything like the ecosystem that exists today in London.&nbsp;
+
+
+ 7 years is a long time in any context, particularly for a business that has not become the proverbial billion dollar success. But I&rsquo;m at one with what Ian from Songkick (who I highly respect for being down to earth in the face of much of the hype and hubris of the startup scene) had to say about being&nbsp;open and proud about the length of time it takes to build our companies. In this manner we fought a long hard graft, assembling the cliche&rsquo;d airplane on the way down.
+
+
+ Today, GroupSpaces is a sustainable small business, doing that old-fashioned thing of making more money than it spends, and continuing to grow user base and revenue. A fascinating diversity of organisations use GroupSpaces to ease management of their membership, communications and activities - from professional associations to sports clubs, local hobby groups to prominent international campaigning organisations, campus-based student societies to community groups and charities.&nbsp;
+
+
+ While disappointed that the business grew slower than we hoped in financial returns, I&rsquo;m hugely proud of the contribution and impact we&rsquo;ve made, and I remain dedicated to seeing GroupSpaces continue to thrive and achieve the best it can. We started GroupSpaces with the ambition to build a global internet-scale company, and it&rsquo;s in this light that it&rsquo;s now time for me to move on to tackle the next challenge. However I&rsquo;ll continue to be involved in supporting the business, while my departure from the day-to-day has made room for fresh blood to drive it forward in new ways. I look forward to seeing GroupSpaces continue to grow, either standalone or in time with an appropriate partner.
+
+
+ With the bittersweet benefit of hindsight, I&rsquo;ve been able to dwell on the key mistakes we made and how they affected our progress. For the possible benefit of others - along with bringing no small amount of closure for myself - I&rsquo;ve detailed my thoughts on these mistakes and learnings as follows:
+
+
+ &nbsp;- Failing to appreciate a lack of product-market fit as we moved into new markets
+
+
+ GroupSpaces originally started out serving the student market, where we achieved considerable success. We designed a tool to solve our own problems, discovered that there were many like us, and with the benefit of the closely-linked geographically-concentrated nature of universities and colleges we spread often like wildfire though campuses in the UK. A stand-out memory was signing up a single organisation at the London School of Economics at the beginning of the semester; with no further marketing we had 100 organisations using the platform by the end of that term.
+
+
+ The problems came when we followed this by focusing on marketing and distribution when expanding into other markets beyond students, failing to identify early on our issues with significantly different activation rates due to issues such as far less recognition, peer endorsement and good old-fashioned offline word of mouth. As a result we ploughed on for too long &ldquo;pushing uphill&rdquo; without going back and ensuring our product was fully appropriate for these new markets.
+
+
+ &nbsp;- Insufficient focus, focus, focus
+
+
+ I firmly believe startups should choose their One True Thing as early as possible and aim to do that one thing well. With a small team that peaked around 12 people, we simultaneously tried to work on the product, while scale up user acquisition and paid marketing channels, while building out a business model consisting of 3(!) different revenue streams - all while attempting to fit our achievements into a framework that would enable us to demonstrate progress and hit milestones that we could use to raise further funding. This had the inevitable effect that we ended up scoring straight Cs - sub-standard product, sub-standard metrics, sub-standard traction.&nbsp;
+
+
+ The irony is that at the time we believed we understood this point, and considered ourselves to be very focused - we&rsquo;d learned to say &ldquo;no&rdquo; to most opportunities and suggestions, and had a very clear idea of our target customer, our product and what we were not. Our problem was that our &ldquo;one thing&rdquo; had many multiple parts. I cringe when I recall our spreadsheet models that had customer lifetime value as a messy fudge blending multiple different metrics, each of which depended on other metrics - and ultimately too many assumptions to meaningfully test.
+
+
+ I believe a startup needs to achieve a single A grade in one thing to advance to the next stage - if I could go back, the advice I would give myself would be to force ourselves to limit our focus to one thing - a single KPI at a time - to which all our efforts should directly and measurably contribute.
+
+
+ &nbsp;- A confused strategy, attempting to hedge ourselves
+
+
+ Following on the point about focus, looking back we were very confused about which milestones we needed to hit in order to be able to progress to the next stage and raise subsequent funding. We ended up hedging ourselves - attempting to limit the downside in the case the upside didn&rsquo;t work out, attempting to have multiple stories and metrics on which we could raise if we didn&rsquo;t hit other targets. Predictably, there&rsquo;s no such thing as a free lunch - we simply ended up in no-mans&rsquo; land with our straight C grades - no massively scaling user base on the social side and mediocre numbers on the business model.
+
+
+ We fell into this trap in part though the history of the company: we spent the first years of the company building a smaller business with mentors and investors focused on safety and predictability of building a solid company. Our ambitions led us to raise a VC round where the game becomes the go-big-or-go-home play (aka. throw-stuff-against-the-wall-and-see-what-sticks..). Not to say that either would have been a better or worse path to choose, but our mistake was not to make the jump to a boom-or-bust game fully, and instead get stuck in in the middle - a murky territory without clear strategy where every decision feels at odds with another, and our hedging to limit the downside definitely held us back from achieving the upside.
+
+
+ &nbsp;- Premature scaling
+
+
+ It follows on from the points above, but we most definitely committed the all-too-common sin of premature scaling. Driven by the desire to hit significant numbers to prove the road for future fundraising and encouraged by our great initial traction in the student market, we embarked on significant work developing paid marketing channels and distribution channels that we could use to demonstrate scalable customer acquisition. This all fell flat due to our lack of product/market fit in the new markets, distracted significantly from product work to fix the fit (double fail) and cost a whole bunch of our runway.&nbsp;
+
+
+ &nbsp;- Moving too slowly after we raised our Series A
+
+
+ (Back in 2010 when we closed the round, $1.3m was still known as Series A - there was none of that seedy talk you get nowadays..)&nbsp;
+
+
+ In hindsight it&rsquo;s painful that we were not up to speed with the full team we wanted to hire until a full 8 months after we closed our VC round. We proudly described how we&rsquo;d spent 3 months &ldquo;learning how to hire&rdquo; - by doing everything we could to learn from others, interview carefully and ensure we hired the right people. &ldquo;Hire slow, fire fast&rdquo; was the advice on many a respected startup blog. Well, not to add to the problem - but as I now know: &ldquo;hire fast, fire fast&rdquo; is for sure the better plan.
+
+
+ Nothing struck me as such a comparison as when a friend more recently made a hire for her startup on the spot after an interview that went well, extended to 90 minutes and then - done. When I mentioned this to her she said simply &ldquo;I need to hire 20 people in the next month&rdquo;. Granted not how it goes in every situation, but another piece of advice I would give my earlier self would be to trust my gut sooner without dragging out an interview process to multiple rounds as standard or because &ldquo;regardless, we should spend some time making this hire to see who else comes along&rdquo;.
+
+
+ We should have closed our round being able to name the 3 people we wanted to hire next, and being moving forward producing product and traction with a full team (not necessarily large, but balanced) within 2 months. At the time it was easy to feel like all our time on the meta-aspects of building a company was well spent. But for too long we were not 100% focused on the only things that ultimately mattered - customers, product/market fit, traction - and all the while our monthly burn was - well - burning.
+
+
+ What we did right 
+
+
+ Despite all the above, we certainly did a number of things right. You may note that nowhere have I mentioned the key ideas behind GroupSpaces as among the things I consider mistaken.&nbsp;With GroupSpaces we have provided a great product that provides significant value to our many loyal users, and more continue to sign up as customers each day.&nbsp;I still believe a place exists for GroupSpaces or a similar service to scale to serve the market of the millions of membership organisations that currently rely on the unhappy marriage of a Yahoo/Google Group coupled with an Excel spreadsheet/google doc for member records, in addition to their own website and other services for events or payments.
+
+
+ I hope to write more about my learnings as time allows, but for now it just remains for me to restate my heartfelt thanks to those who have supported us in the journey with GroupSpaces, and look forward to what the future holds for both GroupSpaces and Stripe."/>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+    
+
+  
+
+  
+
+  <style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_c787af86adb0_128.png" />
+  <link rel="apple-touch-icon" href="http://33.media.tumblr.com/avatar_c787af86adb0_128.png" />
+  <link rel="alternate" type="application/rss+xml" href="http://insomanic.me.uk/rss"/>
+  <link rel="stylesheet" href="http://static.tumblr.com/xgwqnql/MF5lbpkr4/jquery.fancybox-1.3.1.css" media="screen"/>
+
+  
+    <link href="http://static.tumblr.com/bkoalsz/Fmanl08la/style.css" media="screen" rel="stylesheet" type="text/css" />
+  
+
+  <script type="text/javascript">
+    tumblrUsername = 'apexa';
+    searchValue = "Search";
+    themeColor = "#f55b2c";
+    
+    
+    contentWidth = 700;
+    customPhotosets = true;
+    
+    collapseNotes = true;
+    
+    disqusEnabled = true;
+    disqusShortname = "apexa";
+    
+    twitterUsername = "";
+    fixedBar = true;
+    
+    var showInstagram = false;
+    
+    var accessToken = '';
+    var instaCount = '4';
+    
+    
+    isPermalink = true;
+    photosets = {};
+  </script>
+  <style type="text/css">
+    body {
+      font-family:Helvetica Neue, Arial, sans-serif;
+      color:#616566;
+      background-color:#e6ebea;
+      
+    }
+
+    .blog-title,
+    #sidebar h1,
+    #sidebar h2,
+    #sidebar h3,
+    #footer h1,
+    #footer h2,
+    #footer h3 {
+      font-family:Helvetica Neue, Arial, sans-serif;
+    }
+
+    .copy {
+      font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    }
+    .copy h1,
+    .copy h2,
+    .copy h3,
+    .copy h4,
+    .copy h5,
+    .copy h6,
+    .auto-headings .copy p:first-child strong:first-child,
+    #notes h2,
+    #disqus h2,
+    .speaker {
+      font-family:Helvetica Neue, Arial, sans-serif;
+    }
+
+    #tabs #tabs-nav h2 span.active {
+      background:#e6ebea;
+    }
+
+    
+
+    
+
+    /* Main Theme Color */
+    .colored-panel,
+    .type-answer .user-question,
+    .pages a:hover,
+    .invert .fixed .pages a:hover,
+    .invert .pinned .pages a:hover,
+    .invert #sidebar .pages a:hover,
+    .more-likes:hover,
+    .invert-topbar .fixed .pages a:hover,
+    .like_link a:hover,
+    .type-photoset .navi a:hover,
+    #pagination .nextprev a:hover,
+    #group-members li span,
+    #followed li span {
+      background-color:#f55b2c;
+    }
+    .corners .tl {
+      border-left-color: #f55b2c;
+    }
+    .corners .tr {
+      border-right-color: #f55b2c;
+    }
+    .corners .bl,
+    .corners .br {
+      border-bottom-color:#f55b2c;
+    }
+    #group-members li span:after,
+    #followed li span:after {
+      border-top-color:#f55b2c;
+    }
+
+    /* Outside Link Color */
+    a, #footer-end a:hover {
+      color:#f55b2c;
+    }
+
+    /* Outside Link Hover */
+    a:hover {
+      color:#131313;
+    }
+
+    /* Inside Link Color */
+    .copy a,
+    .copy li:before,
+    .type-chat .speaker,
+    .no-touch #notes-toggle:hover,
+    .touch #notes-toggle.up,
+    ol.notes a,
+    #disqus a {
+      color:#f55b2c;
+    }
+
+    .copy a:hover,
+    ol.notes a:hover {
+      border-color:#f55b2c;
+    }
+    .copy .post-title a:hover,
+    .copy a:hover,
+    ol.notes a:hover,
+    #dsq-comments a:hover,
+    #dsq-options a:hover {
+      background-color:#fff7a5;
+    }
+
+    .no-touch #notes-toggle:hover .icon,
+    .touch #notes-toggle.up .icon,
+    .photo-btns a:hover,
+    #back-to-top .icon {
+      background-color:#f55b2c;
+    }
+
+    /* Colored Area */
+    .colored-panel,
+    .colored-panel a,
+    .colored-panel a:hover,
+    .colored-panel .user-question,
+    .pages a:hover,
+    .invert-topbar .fixed .pages a:hover,
+    .invert #sidebar .pages a:hover,
+    .more-likes:hover,
+    .like_link a:hover,
+    #pagination .nextprev a:hover,
+    #group-members li span,
+    #followed li span {
+      color:#fffadc;
+    }
+
+    /* Colored Area Text Shadow */
+    .type-quote .quote-text,
+    .type-audio .audio-meta,
+    .type-answer .user-question,
+    .pages a:hover,
+    .more-likes:hover,
+    .like_link a:hover,
+    #pagination .nextprev a:hover,
+    #group-members li span,
+    #followed li span {
+      text-shadow:1px 1px #bf4402;
+    }
+
+    ol.notes li.tumblelog_apexa {
+      background-color:#fbfbfb;
+    }
+    ol.notes li.tumblelog_apexa .action {
+      font-weight:bold;
+    }
+    #page, .inner {
+      margin:0 auto;
+    }
+
+    .right { float: right; margin: 0 0 5px 10px; }
+body { font-size: 16px; }
+#sidebar { font-size: 12px; }
+  </style>
+
+  <script src="http://static.tumblr.com/hugxd2w/6Cpm8gh20/modernizr.2.6.1.min.js"></script>
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=apexa%26postID=48136679276" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup" title="Looking back at 7 years with my startup GroupSpaces
+Today I announced that I&rsquo;m joining the team at Stripe, after 7 years working on my startup, GroupSpaces. The decision to join Stripe was by no means easy, to say the least. The journey bringing..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="Today I announced that I&amp;rsquo;m joining the team at Stripe, after 7 years working on my startup, GroupSpaces. The decision to join Stripe was by no means easy, to say the least. The journey bringing GroupSpaces from a college-room idea has been the best ride of my life - an unbeatable learning experience full of the hardest challenges, the opportunity to work with people I have the utmost respect for, and the creation of a product of which I&amp;rsquo;m immensely proud. I&amp;rsquo;m indebted to all the mentors, advisors, investors and all who&amp;rsquo;ve supported us along the way.
+ Going back to when I first started working on the ideas that became GroupSpaces - before we formed a company, lost and gained team members, reformed a new company, took time out of university and raised investment - it&amp;rsquo;s been a 7 year journey for me. 7 years ago, my cofounder David and I knew nothing about business or startups. We had no connections to anything like the ecosystem that exists today in London.&nbsp;
+ 7 years is a long time in any context, particularly for a business that has not become the proverbial billion dollar success. But I&amp;rsquo;m at one with what Ian from Songkick (who I highly respect for being down to earth in the face of much of the hype and hubris of the startup scene) had to say about being&nbsp;open and proud about the length of time it takes to build our companies. In this manner we fought a long hard graft, assembling the cliche&amp;rsquo;d airplane on the way down.
+ Today, GroupSpaces is a sustainable small business, doing that old-fashioned thing of making more money than it spends, and continuing to grow user base and revenue. A fascinating diversity of organisations use GroupSpaces to ease management of their membership, communications and activities - from professional associations to sports clubs, local hobby groups to prominent international campaigning organisations, campus-based student societies to community groups and charities.&nbsp;
+ While disappointed that the business grew slower than we hoped in financial returns, I&amp;rsquo;m hugely proud of the contribution and impact we&amp;rsquo;ve made, and I remain dedicated to seeing GroupSpaces continue to thrive and achieve the best it can. We started GroupSpaces with the ambition to build a global internet-scale company, and it&amp;rsquo;s in this light that it&amp;rsquo;s now time for me to move on to tackle the next challenge. However I&amp;rsquo;ll continue to be involved in supporting the business, while my departure from the day-to-day has made room for fresh blood to drive it forward in new ways. I look forward to seeing GroupSpaces continue to grow, either standalone or in time with an appropriate partner.
+ With the bittersweet benefit of hindsight, I&amp;rsquo;ve been able to dwell on the key mistakes we made and how they affected our progress. For the possible benefit of others - along with bringing no small amount of closure for myself - I&amp;rsquo;ve detailed my thoughts on these mistakes and learnings as follows:
+ &nbsp;- Failing to appreciate a lack of product-market fit as we moved into new markets
+ GroupSpaces originally started out serving the student market, where we achieved considerable success. We designed a tool to solve our own problems, discovered that there were many like us, and with the benefit of the closely-linked geographically-concentrated nature of universities and colleges we spread often like wildfire though campuses in the UK. A stand-out memory was signing up a single organisation at the London School of Economics at the beginning of the semester; with no further marketing we had 100 organisations using the platform by the end of that term.
+ The problems came when we followed this by focusing on marketing and distribution when expanding into other markets beyond students, failing to identify early on our issues with significantly different activation rates due to issues such as far less recognition, peer endorsement and good old-fashioned offline word of mouth. As a result we ploughed on for too long &amp;ldquo;pushing uphill&amp;rdquo; without going back and ensuring our product was fully appropriate for these new markets.
+ &nbsp;- Insufficient focus, focus, focus
+ I firmly believe startups should choose their One True Thing as early as possible and aim to do that one thing well. With a small team that peaked around 12 people, we simultaneously tried to work on the product, while scale up user acquisition and paid marketing channels, while building out a business model consisting of 3(!) different revenue streams - all while attempting to fit our achievements into a framework that would enable us to demonstrate progress and hit milestones that we could use to raise further funding. This had the inevitable effect that we ended up scoring straight Cs - sub-standard product, sub-standard metrics, sub-standard traction.&nbsp;
+ The irony is that at the time we believed we understood this point, and considered ourselves to be very focused - we&amp;rsquo;d learned to say &amp;ldquo;no&amp;rdquo; to most opportunities and suggestions, and had a very clear idea of our target customer, our product and what we were not. Our problem was that our &amp;ldquo;one thing&amp;rdquo; had many multiple parts. I cringe when I recall our spreadsheet models that had customer lifetime value as a messy fudge blending multiple different metrics, each of which depended on other metrics - and ultimately too many assumptions to meaningfully test.
+ I believe a startup needs to achieve a single A grade in one thing to advance to the next stage - if I could go back, the advice I would give myself would be to force ourselves to limit our focus to one thing - a single KPI at a time - to which all our efforts should directly and measurably contribute.
+ &nbsp;- A confused strategy, attempting to hedge ourselves
+ Following on the point about focus, looking back we were very confused about which milestones we needed to hit in order to be able to progress to the next stage and raise subsequent funding. We ended up hedging ourselves - attempting to limit the downside in the case the upside didn&amp;rsquo;t work out, attempting to have multiple stories and metrics on which we could raise if we didn&amp;rsquo;t hit other targets. Predictably, there&amp;rsquo;s no such thing as a free lunch - we simply ended up in no-mans&amp;rsquo; land with our straight C grades - no massively scaling user base on the social side and mediocre numbers on the business model.
+ We fell into this trap in part though the history of the company: we spent the first years of the company building a smaller business with mentors and investors focused on safety and predictability of building a solid company. Our ambitions led us to raise a VC round where the game becomes the go-big-or-go-home play (aka. throw-stuff-against-the-wall-and-see-what-sticks..). Not to say that either would have been a better or worse path to choose, but our mistake was not to make the jump to a boom-or-bust game fully, and instead get stuck in in the middle - a murky territory without clear strategy where every decision feels at odds with another, and our hedging to limit the downside definitely held us back from achieving the upside.
+ &nbsp;- Premature scaling
+ It follows on from the points above, but we most definitely committed the all-too-common sin of premature scaling. Driven by the desire to hit significant numbers to prove the road for future fundraising and encouraged by our great initial traction in the student market, we embarked on significant work developing paid marketing channels and distribution channels that we could use to demonstrate scalable customer acquisition. This all fell flat due to our lack of product/market fit in the new markets, distracted significantly from product work to fix the fit (double fail) and cost a whole bunch of our runway.&nbsp;
+ &nbsp;- Moving too slowly after we raised our Series A
+ (Back in 2010 when we closed the round, &#36;1.3m was still known as Series A - there was none of that seedy talk you get nowadays..)&nbsp;
+ In hindsight it&amp;rsquo;s painful that we were not up to speed with the full team we wanted to hire until a full 8 months after we closed our VC round. We proudly described how we&amp;rsquo;d spent 3 months &amp;ldquo;learning how to hire&amp;rdquo; - by doing everything we could to learn from others, interview carefully and ensure we hired the right people. &amp;ldquo;Hire slow, fire fast&amp;rdquo; was the advice on many a respected startup blog. Well, not to add to the problem - but as I now know: &amp;ldquo;hire fast, fire fast&amp;rdquo; is for sure the better plan.
+ Nothing struck me as such a comparison as when a friend more recently made a hire for her startup on the spot after an interview that went well, extended to 90 minutes and then - done. When I mentioned this to her she said simply &amp;ldquo;I need to hire 20 people in the next month&amp;rdquo;. Granted not how it goes in every situation, but another piece of advice I would give my earlier self would be to trust my gut sooner without dragging out an interview process to multiple rounds as standard or because &amp;ldquo;regardless, we should spend some time making this hire to see who else comes along&amp;rdquo;.
+ We should have closed our round being able to name the 3 people we wanted to hire next, and being moving forward producing product and traction with a full team (not necessarily large, but balanced) within 2 months. At the time it was easy to feel like all our time on the meta-aspects of building a company was well spent. But for too long we were not 100% focused on the only things that ultimately mattered - customers, product/market fit, traction - and all the while our monthly burn was - well - burning.
+ What we did right 
+ Despite all the above, we certainly did a number of things right. You may note that nowhere have I mentioned the key ideas behind GroupSpaces as among the things I consider mistaken.&nbsp;With GroupSpaces we have provided a great product that provides significant value to our many loyal users, and more continue to sign up as customers each day.&nbsp;I still believe a place exists for GroupSpaces or a similar service to scale to serve the market of the millions of membership organisations that currently rely on the unhappy marriage of a Yahoo/Google Group coupled with an Excel spreadsheet/google doc for member records, in addition to their own website and other services for events or payments.
+ I hope to write more about my learnings as time allows, but for now it just remains for me to restate my heartfelt thanks to those who have supported us in the journey with GroupSpaces, and look forward to what the future holds for both GroupSpaces and Stripe." /><meta name="twitter:title" content="Looking back at 7 years with my startup GroupSpaces" /><meta name="twitter:url" content="http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=apexa&amp;postID=48136679276&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=apexa&amp;postID=48136679276&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=apexa&amp;postID=48136679276&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/insomanic.me.uk\/post\/48136679276\/looking-back-at-7-years-with-my-startup","mainEntityOfPage":true,"datePublished":"2013-04-16T19:17:00-04:00","author":"apexa","headline":"Looking back at 7 years with my startup GroupSpaces","articleBody":"Today I announced that I\u2019m joining the team at Stripe, after 7 years working on my startup, GroupSpaces. The decision to join Stripe was by no means easy, to say the least. The journey bringing GroupSpaces from a college-room idea has been the best ride of my life - an unbeatable learning experience full of the hardest challenges, the opportunity to work with people I have the utmost respect for, and the creation of a product of which I\u2019m immensely proud. I\u2019m indebted to all the mentors, advisors, investors and all who\u2019ve supported us along the way.\nGoing back to when I first started working on the ideas that became GroupSpaces - before we formed a company, lost and gained team members, reformed a new company, took time out of university and raised investment - it\u2019s been a 7 year journey for me. 7 years ago, my cofounder David and I knew nothing about business or startups. We had no connections to anything like the ecosystem that exists today in London.\n7 years is a long time in any context, particularly for a business that has not become the proverbial billion dollar success. But I\u2019m at one with what Ian from Songkick (who I highly respect for being down to earth in the face of much of the hype and hubris of the startup scene) had to say about being open and proud about the length of time it takes to build our companies. In this manner we fought a long hard graft, assembling the cliche\u2019d airplane on the way down.\nToday, GroupSpaces is a sustainable small business, doing that old-fashioned thing of making more money than it spends, and continuing to grow user base and revenue. A fascinating diversity of organisations use GroupSpaces to ease management of their membership, communications and activities - from professional associations to sports clubs, local hobby groups to prominent international campaigning organisations, campus-based student societies to community groups and charities.\nWhile disappointed that the business grew slower than we hoped in financial returns, I\u2019m hugely proud of the contribution and impact we\u2019ve made, and I remain dedicated to seeing GroupSpaces continue to thrive and achieve the best it can. We started GroupSpaces with the ambition to build a global internet-scale company, and it\u2019s in this light that it\u2019s now time for me to move on to tackle the next challenge. However I\u2019ll continue to be involved in supporting the business, while my departure from the day-to-day has made room for fresh blood to drive it forward in new ways. I look forward to seeing GroupSpaces continue to grow, either standalone or in time with an appropriate partner.\nWith the bittersweet benefit of hindsight, I\u2019ve been able to dwell on the key mistakes we made and how they affected our progress. For the possible benefit of others - along with bringing no small amount of closure for myself - I\u2019ve detailed my thoughts on these mistakes and learnings as follows:\n- Failing to appreciate a lack of product-market fit as we moved into new markets\nGroupSpaces originally started out serving the student market, where we achieved considerable success. We designed a tool to solve our own problems, discovered that there were many like us, and with the benefit of the closely-linked geographically-concentrated nature of universities and colleges we spread often like wildfire though campuses in the UK. A stand-out memory was signing up a single organisation at the London School of Economics at the beginning of the semester; with no further marketing we had 100 organisations using the platform by the end of that term.\nThe problems came when we followed this by focusing on marketing and distribution when expanding into other markets beyond students, failing to identify early on our issues with significantly different activation rates due to issues such as far less recognition, peer endorsement and good old-fashioned offline word of mouth. As a result we ploughed on for too long \u201cpushing uphill\u201d without going back and ensuring our product was fully appropriate for these new markets.\n- Insufficient focus, focus, focus\nI firmly believe startups should choose their One True Thing as early as possible and aim to do that one thing well. With a small team that peaked around 12 people, we simultaneously tried to work on the product, while scale up user acquisition and paid marketing channels, while building out a business model consisting of 3(!) different revenue streams - all while attempting to fit our achievements into a framework that would enable us to demonstrate progress and hit milestones that we could use to raise further funding. This had the inevitable effect that we ended up scoring straight Cs - sub-standard product, sub-standard metrics, sub-standard traction.\nThe irony is that at the time we believed we understood this point, and considered ourselves to be very focused - we\u2019d learned to say \u201cno\u201d to most opportunities and suggestions, and had a very clear idea of our target customer, our product and what we were not. Our problem was that our \u201cone thing\u201d had many multiple parts. I cringe when I recall our spreadsheet models that had customer lifetime value as a messy fudge blending multiple different metrics, each of which depended on other metrics - and ultimately too many assumptions to meaningfully test.\nI believe a startup needs to achieve a single A grade in one thing to advance to the next stage - if I could go back, the advice I would give myself would be to force ourselves to limit our focus to one thing - a single KPI at a time - to which all our efforts should directly and measurably contribute.\n- A confused strategy, attempting to hedge ourselves\nFollowing on the point about focus, looking back we were very confused about which milestones we needed to hit in order to be able to progress to the next stage and raise subsequent funding. We ended up hedging ourselves - attempting to limit the downside in the case the upside didn\u2019t work out, attempting to have multiple stories and metrics on which we could raise if we didn\u2019t hit other targets. Predictably, there\u2019s no such thing as a free lunch - we simply ended up in no-mans\u2019 land with our straight C grades - no massively scaling user base on the social side and mediocre numbers on the business model.\nWe fell into this trap in part though the history of the company: we spent the first years of the company building a smaller business with mentors and investors focused on safety and predictability of building a solid company. Our ambitions led us to raise a VC round where the game becomes the go-big-or-go-home play (aka. throw-stuff-against-the-wall-and-see-what-sticks..). Not to say that either would have been a better or worse path to choose, but our mistake was not to make the jump to a boom-or-bust game fully, and instead get stuck in in the middle - a murky territory without clear strategy where every decision feels at odds with another, and our hedging to limit the downside definitely held us back from achieving the upside.\n- Premature scaling\nIt follows on from the points above, but we most definitely committed the all-too-common sin of premature scaling. Driven by the desire to hit significant numbers to prove the road for future fundraising and encouraged by our great initial traction in the student market, we embarked on significant work developing paid marketing channels and distribution channels that we could use to demonstrate scalable customer acquisition. This all fell flat due to our lack of product\/market fit in the new markets, distracted significantly from product work to fix the fit (double fail) and cost a whole bunch of our runway.\n- Moving too slowly after we raised our Series A\n(Back in 2010 when we closed the round, $1.3m was still known as Series A - there was none of that seedy talk you get nowadays..)\nIn hindsight it\u2019s painful that we were not up to speed with the full team we wanted to hire until a full 8 months after we closed our VC round. We proudly described how we\u2019d spent 3 months \u201clearning how to hire\u201d - by doing everything we could to learn from others, interview carefully and ensure we hired the right people. \u201cHire slow, fire fast\u201d was the advice on many a respected startup blog. Well, not to add to the problem - but as I now know: \u201chire fast, fire fast\u201d is for sure the better plan.\nNothing struck me as such a comparison as when a friend more recently made a hire for her startup on the spot after an interview that went well, extended to 90 minutes and then - done. When I mentioned this to her she said simply \u201cI need to hire 20 people in the next month\u201d. Granted not how it goes in every situation, but another piece of advice I would give my earlier self would be to trust my gut sooner without dragging out an interview process to multiple rounds as standard or because \u201cregardless, we should spend some time making this hire to see who else comes along\u201d.\nWe should have closed our round being able to name the 3 people we wanted to hire next, and being moving forward producing product and traction with a full team (not necessarily large, but balanced) within 2 months. At the time it was easy to feel like all our time on the meta-aspects of building a company was well spent. But for too long we were not 100% focused on the only things that ultimately mattered - customers, product\/market fit, traction - and all the while our monthly burn was - well - burning.\nWhat we did right\nDespite all the above, we certainly did a number of things right. You may note that nowhere have I mentioned the key ideas behind GroupSpaces as among the things I consider mistaken. With GroupSpaces we have provided a great product that provides significant value to our many loyal users, and more continue to sign up as customers each day. I still believe a place exists for GroupSpaces or a similar service to scale to serve the market of the millions of membership organisations that currently rely on the unhappy marriage of a Yahoo\/Google Group coupled with an Excel spreadsheet\/google doc for member records, in addition to their own website and other services for events or payments.\nI hope to write more about my learnings as time allows, but for now it just remains for me to restate my heartfelt thanks to those who have supported us in the journey with GroupSpaces, and look forward to what the future holds for both GroupSpaces and Stripe.","@context":"http:\/\/schema.org"}</script>
+</head>
+<body class="content-700 round-corners lg-icons scale-images singular ">
+  <div id="header" class="pinned">
+    <div class="inner">
+      
+
+      
+        <h1 class="blog-title"><a href="/">Insomanic: Andy Young's Blog</a></h1>
+      
+
+      
+
+      
+      <ul class="menu">
+        
+        <li><a class="archives" href="/archive" title="Archive"><span class="icon"></span><span class="label">Archive</span></a></li>
+        <li><a class="rss" href="http://insomanic.me.uk/rss" title="RSS feed"><span class="icon"></span><span class="label">RSS</span></a></li>
+        
+        
+      </ul>
+    </div><!-- .inner -->
+    <div class="shadow"><span></span></div>
+  </div><!-- /#header -->
+
+  <!-- PAGE -->
+  <div id="page" class="right-sidebar clearfix">
+
+    
+
+    
+      
+    
+
+    <div id="content">
+
+      <!-- BEGIN POSTS -->
+      
+        <article id="post-48136679276" class="post
+          type-text 
+          
+          
+          
+          
+          
+          
+          
+          
+          ">
+
+          
+            <div class="post-panel">
+              <div class="copy">
+                <h2 class="post-title">Looking back at 7 years with my startup GroupSpaces</h2>
+                <p>Today <a href="http://insomanic.me.uk/post/48127029333/im-joining-stripe" target="_blank">I announced that I&rsquo;m joining the team at Stripe</a>, after 7 years working on my startup, GroupSpaces. The decision to join Stripe was by no means easy, to say the least. The journey bringing GroupSpaces from a college-room idea has been the best ride of my life - an unbeatable learning experience full of the hardest challenges, the opportunity to work with people I have the utmost respect for, and the creation of a product of which I&rsquo;m immensely proud. I&rsquo;m indebted to all the mentors, advisors, investors and all who&rsquo;ve supported us along the way.</p>
+<p>Going back to when I first started working on the ideas that became GroupSpaces - before we formed a company, lost and gained team members, reformed a new company, took time out of university and raised investment - it&rsquo;s been a 7 year journey for me. 7 years ago, my cofounder David and I knew nothing about business or startups. We had no connections to anything like the ecosystem that exists today in London.&nbsp;</p>
+<p>7 years is a long time in any context, particularly for a business that has not become the proverbial billion dollar success. But I&rsquo;m at one with what <a href="http://twitter.com/soundboy" target="_blank">Ian</a> from Songkick (who I highly respect for being down to earth in the face of much of the hype and hubris of the startup scene) <a href="http://soundboy.tumblr.com/post/29890434157/the-lost-years-of-internet-start-ups" target="_blank">had to say about being&nbsp;open and proud about the length of time it takes to build our companies</a>. In this manner we fought a long hard graft, assembling the cliche&rsquo;d airplane on the way down.</p>
+<p>Today, GroupSpaces is a sustainable small business, doing that old-fashioned thing of making more money than it spends, and continuing to grow user base and revenue. A fascinating diversity of organisations use GroupSpaces to ease management of their membership, communications and activities - from professional associations to sports clubs, local hobby groups to prominent international campaigning organisations, campus-based student societies to community groups and charities.&nbsp;</p>
+<p>While disappointed that the business grew slower than we hoped in financial returns, I&rsquo;m hugely proud of the contribution and impact we&rsquo;ve made, and I remain dedicated to seeing GroupSpaces continue to thrive and achieve the best it can. We started GroupSpaces with the ambition to build a global internet-scale company, and it&rsquo;s in this light that it&rsquo;s now time for me to move on to tackle the next challenge. However I&rsquo;ll continue to be involved in supporting the business, while my departure from the day-to-day has made room for fresh blood to drive it forward in new ways. I look forward to seeing GroupSpaces continue to grow, either standalone or in time with an appropriate partner.</p>
+<p>With the bittersweet benefit of hindsight, I&rsquo;ve been able to dwell on the key mistakes we made and how they affected our progress. For the possible benefit of others - along with bringing no small amount of closure for myself - I&rsquo;ve detailed my thoughts on these mistakes and learnings as follows:</p>
+<p><strong>&nbsp;- Failing to appreciate a lack of product-market fit as we moved into new markets</strong></p>
+<p>GroupSpaces originally started out serving the student market, where we achieved considerable success. We designed a tool to solve our own problems, discovered that there were many like us, and with the benefit of the closely-linked geographically-concentrated nature of universities and colleges we spread often like wildfire though campuses in the UK. A stand-out memory was signing up a single organisation at the London School of Economics at the beginning of the semester; with no further marketing we had 100 organisations using the platform by the end of that term.</p>
+<p>The problems came when we followed this by focusing on marketing and distribution when expanding into other markets beyond students, failing to identify early on our issues with significantly different activation rates due to issues such as far less recognition, peer endorsement and good old-fashioned offline word of mouth. As a result we ploughed on for too long &ldquo;pushing uphill&rdquo; without going back and ensuring our product was fully appropriate for these new markets.</p>
+<p><strong>&nbsp;- Insufficient focus, focus, focus</strong></p>
+<p>I firmly believe startups should choose their One True Thing as early as possible and aim to do that one thing well. With a small team that peaked around 12 people, we simultaneously tried to work on the product, while scale up user acquisition and paid marketing channels, while building out a business model consisting of 3(!) different revenue streams - all while attempting to fit our achievements into a framework that would enable us to demonstrate progress and hit milestones that we could use to raise further funding. This had the inevitable effect that we ended up scoring straight Cs - sub-standard product, sub-standard metrics, sub-standard traction.&nbsp;</p>
+<p>The irony is that at the time we believed we understood this point, and considered ourselves to be very focused - we&rsquo;d learned to say &ldquo;no&rdquo; to most opportunities and suggestions, and had a very clear idea of our target customer, our product and what we were not. Our problem was that our &ldquo;one thing&rdquo; had many multiple parts. I cringe when I recall our spreadsheet models that had customer lifetime value as a messy fudge blending multiple different metrics, each of which depended on other metrics - and ultimately too many assumptions to meaningfully test.</p>
+<p>I believe a startup needs to achieve a single A grade in one thing to advance to the next stage - if I could go back, the advice I would give myself would be to force ourselves to limit our focus to one thing - a single KPI at a time - to which all our efforts should directly and measurably contribute.</p>
+<p><strong>&nbsp;- A confused strategy, attempting to hedge ourselves</strong></p>
+<p>Following on the point about focus, looking back we were very confused about which milestones we needed to hit in order to be able to progress to the next stage and raise subsequent funding. We ended up hedging ourselves - attempting to limit the downside in the case the upside didn&rsquo;t work out, attempting to have multiple stories and metrics on which we could raise if we didn&rsquo;t hit other targets. Predictably, there&rsquo;s no such thing as a free lunch - we simply ended up in no-mans&rsquo; land with our straight C grades - no massively scaling user base on the social side and mediocre numbers on the business model.</p>
+<p>We fell into this trap in part though the history of the company: we spent the first years of the company building a smaller business with mentors and investors focused on safety and predictability of building a solid company. Our ambitions led us to raise a VC round where the game becomes the go-big-or-go-home play (aka. throw-stuff-against-the-wall-and-see-what-sticks..). Not to say that either would have been a better or worse path to choose, but our mistake was not to make the jump to a boom-or-bust game fully, and instead get stuck in in the middle - a murky territory without clear strategy where every decision feels at odds with another, and our hedging to limit the downside definitely held us back from achieving the upside.</p>
+<p><strong>&nbsp;- Premature scaling</strong></p>
+<p>It follows on from the points above, but we most definitely committed the all-too-common sin of premature scaling. Driven by the desire to hit significant numbers to prove the road for future fundraising and encouraged by our great initial traction in the student market, we embarked on significant work developing paid marketing channels and distribution channels that we could use to demonstrate scalable customer acquisition. This all fell flat due to our lack of product/market fit in the new markets, distracted significantly from product work to fix the fit (double fail) and cost a whole bunch of our runway.&nbsp;</p>
+<p><strong>&nbsp;- Moving too slowly after we raised our Series A</strong></p>
+<p><em>(Back in 2010 when we closed the round, $1.3m was still known as Series A - there was none of that seedy talk you get nowadays..)&nbsp;</em></p>
+<p>In hindsight it&rsquo;s painful that we were not up to speed with the full team we wanted to hire until a full 8 months after we closed our VC round. We proudly described how we&rsquo;d spent 3 months &ldquo;learning how to hire&rdquo; - by doing everything we could to learn from others, interview carefully and ensure we hired the right people. &ldquo;Hire slow, fire fast&rdquo; was the advice on many a respected startup blog. Well, not to add to the problem - but as I now know: &ldquo;hire fast, fire fast&rdquo; is for sure the better plan.</p>
+<p>Nothing struck me as such a comparison as when a friend more recently made a hire for her startup on the spot after an interview that went well, extended to 90 minutes and then - done. When I mentioned this to her she said simply &ldquo;I need to hire 20 people in the next month&rdquo;. Granted not how it goes in every situation, but another piece of advice I would give my earlier self would be to trust my gut sooner without dragging out an interview process to multiple rounds as standard or because &ldquo;regardless, we should spend some time making this hire to see who else comes along&rdquo;.</p>
+<p>We should have closed our round being able to name the 3 people we wanted to hire next, and being moving forward producing product and traction with a full team (not necessarily large, but balanced) within 2 months. At the time it was easy to feel like all our time on the meta-aspects of building a company was well spent. But for too long we were not 100% focused on the only things that ultimately mattered - customers, product/market fit, traction - and all the while our monthly burn was - well - burning.</p>
+<p><span><strong>What we did right</strong><br></span></p>
+<p><span>Despite all the above, we certainly did a number of things right. You may note that nowhere have I mentioned the key ideas behind GroupSpaces as among the things I consider mistaken.&nbsp;</span><span>With GroupSpaces we have provided a great product that provides significant value to our many loyal users, and more continue to sign up as customers each day.&nbsp;</span><span>I still believe a place exists for GroupSpaces or a similar service to scale to serve the market of the millions of membership organisations that currently rely on the unhappy marriage of a Yahoo/Google Group coupled with an Excel spreadsheet/google doc for member records, in addition to their own website and other services for events or payments.</span></p>
+<p><span>I hope to write more about my learnings as time allows, but for now it just remains for me to restate my heartfelt thanks to those who have supported us in the journey with GroupSpaces, and look forward to what the future holds for both GroupSpaces and Stripe.</span></p>
+              </div>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <div class="meta">
+              <ul class="meta-list">
+
+                
+
+                
+
+                <li class="date">
+                  <a href="http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup" title="Tue. April 16, 2013 @ 8:17 pm">
+                    <span class="icon"></span>2 years ago
+                  </a>
+                  
+                </li>
+
+                <li class="notes"><a href="http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup#notes"><span class="icon"></span>9</a></li>
+
+                
+                  <li class="comments hidden">
+                    <a id="dsq-48136679276" href="http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup#disqus_thread">
+                      <span class="icon"></span>Comments
+                    </a>
+                  </li>
+                
+
+                <li class="permalink"><a href="http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup"><span class="icon"></span>Permalink</a></li>
+
+              </ul><!--/.meta-list -->
+
+              <div class="share">
+                <span class="toggle">Share</span>
+                <div class="widget">
+                  <div class="short-link">
+                    <p>Short URL<br>
+                    <input type="text" readonly="" value="http://tmblr.co/ZxDibyirAszi"></p>
+                  </div>
+                  <div class="share-links"><a target="_new" href="https://twitter.com/intent/tweet?text=Looking back at 7 years with my startup GroupSpaces&url=http://tmblr.co/ZxDibyirAszi&via=andyy" class="share-twitter">Twitter</a><a target="_new" href="https://www.facebook.com/sharer.php?u=http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup&t=Looking back at 7 years with my startup GroupSpaces" class="share-facebook">Facebook</a><a target="_new" href="http://pinterest.com/pin/create/button/?url=http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup&media=" class="share-pinterest">Pinterest</a><a target="_new" href="https://plus.google.com/share?url=http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup" class="share-google">Google+</a></div>
+                </div>
+              </div>
+            </div><!-- /.meta -->
+          
+
+          
+            
+              <div id="notes">
+                <h2>9 Notes<span class="sep">/</span>
+                  <a id="notes-toggle" href="#"><span class="label">Hide</span><span class="icon up"></span></a></h2>
+                <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_litmanlive without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://litmanlive.tumblr.com/" title="LITMANLIVE " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_daff49197d27_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://litmanlive.tumblr.com/" title="LITMANLIVE" rel="nofollow">litmanlive</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_hinternetz without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://hinternetz.tumblr.com/" title="zeitgeist on ice " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_81e6f5a91fe9_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://hinternetz.tumblr.com/" title="zeitgeist on ice" rel="nofollow">hinternetz</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_breezewater without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://breezewater.tumblr.com/" title="The Breezy Memoirs"><img src="http://38.media.tumblr.com/avatar_cc463e15d3f2_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://breezewater.tumblr.com/post/49446523429"><a rel="nofollow" href="http://breezewater.tumblr.com/" class="tumblelog" title="The Breezy Memoirs">breezewater</a> reblogged this from <a rel="nofollow" href="http://insomanic.me.uk/" class="source_tumblelog" title="Insomanic: Andy Young&#039;s Blog">apexa</a></span><div class="clear"></div></li><li class="note like tumblelog_yusuketakahashi without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://yusuketakahashi.com/" title="aerodynamics " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_0f29d7748d5a_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://yusuketakahashi.com/" title="aerodynamics" rel="nofollow">yusuketakahashi</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_yninny without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://yninny.tumblr.com/" title="YN IN NY " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_0614691e7fce_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://yninny.tumblr.com/" title="YN IN NY" rel="nofollow">yninny</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_humansofldn without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://humansofldn.tumblr.com/" title="Untitled " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_62c71fc65d6c_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://humansofldn.tumblr.com/" title="Untitled" rel="nofollow">humansofldn</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_photocopyblog without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://photocopyblog.tumblr.com/" title="PhotoCopy " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_8b5d91e032f8_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://photocopyblog.tumblr.com/" title="PhotoCopy" rel="nofollow">photocopyblog</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_nikhilshah without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nikhilshah.me/" title="Nikhil Shah Dot Me " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_e22f5fd2e7f2_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nikhilshah.me/" title="Nikhil Shah Dot Me" rel="nofollow">nikhilshah</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_apexa original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://insomanic.me.uk/" title="Insomanic: Andy Young&#039;s Blog"><img src="http://33.media.tumblr.com/avatar_c787af86adb0_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://insomanic.me.uk/post/48136679276"><a rel="nofollow" href="http://insomanic.me.uk/" class="tumblelog" title="Insomanic: Andy Young&#039;s Blog">apexa</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+              </div><!-- /.notes -->
+            
+
+            
+              
+                <!-- DISQUS COMMENTS -->
+                <div id="disqus">
+                  <h2>Recent comments</h2>
+                  <script type="text/javascript">var disqus_url = "http://insomanic.me.uk/post/48136679276/looking-back-at-7-years-with-my-startup"; var disqus_title ="Looking back at 7 years with my startup GroupSpaces";</script>
+                  <div id="disqus_thread"></div>
+                  <script type="text/javascript">
+                    var disqus_identifier = 48136679276;
+                    (function() {
+                      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                      dsq.src = 'http://' + disqusShortname + '.disqus.com/embed.js';
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                  </script>
+                  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=">comments powered by Disqus.</a></noscript>
+                  <a href="http://disqus.com" class="dsq-brlink">Blog comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div><!-- /#disqus -->
+              
+            
+          
+
+          </div><!-- /.post-panel -->
+          <div class="post-shadow"></div>
+        </article><!-- /.post -->
+      
+      <!-- END POSTS -->
+
+      
+
+      
+
+      
+        <div id="pagination">
+          <div class="nextprev">
+            <a class="prev" href="http://insomanic.me.uk/post/52026854106"><span>&larr; Previous</span></a> <span class="sep">&bull;</span>
+            <a class="next" href="http://insomanic.me.uk/post/44130560066"><span>Next &rarr;</span></a>
+          </div>
+        </div><!--/#pagination -->
+      
+
+    </div><!-- /#content -->
+
+    <!-- SIDEBAR -->
+      <div id="sidebar">
+        <div id="blog-info" class="side-box">
+          
+            
+          
+
+          
+
+          
+
+          
+            <div class="description">
+              <h2>About</h2>
+              <img class="portrait" src="http://33.media.tumblr.com/avatar_c787af86adb0_64.png" alt="Avatar"/>
+              Hi, I'm Andy. I'm an entrepreneur, an engineer, a founder, a music addict. Currently building <a href="https://stripe.com">Stripe</a> in the UK, previously founder/CEO/CTO of <a href="http://groupspaces.com/">GroupSpaces</a> - solving the pains of membership and group management. I created <a href="http://apps.facebook.com/selectivetwitter/">Selective Tweets</a> (the #fb hashtag). I live and work in London.
+            </div><!--/.description-->
+          
+        </div><!--/#blog-info -->
+
+        
+          <div id="search">
+            <form id="search-form" method="get" action="/search">
+              <span class="left"></span>
+              <input type="text" name="q" value="Search" />
+              <span class="right"></span>
+            </form>
+          </div>
+        
+
+        
+          
+        
+
+        
+          <div class="side-box ruled-top">
+            <h2>Me, Elsewhere</h2>
+            <ul id="socialize">
+              
+              
+              
+              
+              
+              <li class="twitter"><a href="http://www.twitter.com/andyy" title="@andyy on Twitter">@andyy on Twitter</a></li>
+              <li class="facebook"><a href="http://www.facebook.com/andyjy" title="Facebook Profile">Facebook Profile</a></li>
+              
+              
+              
+              <li class="delicious"><a href="http://www.delicious.com/andyjy" title="andyjy on Delicious">andyjy on Delicious</a></li>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <li class="google"><a href="https://plus.google.com/117803442849435127614/" title="Google">Google</a></li>
+              
+              <li class="linkedin"><a href="http://www.linkedin.com/in/andrewyoung" title="Linkedin Profile">Linkedin Profile</a></li>
+              <li class="github"><a href="http://github.com/andyyoung" title="andyyoung on github">andyyoung on github</a></li>
+              
+              
+            </ul>
+          </div>
+        
+
+        <div id="tabs">
+          <div id="tabs-nav">
+            
+            
+          </div>
+
+          
+            
+          
+
+          
+        </div><!-- close TABS -->
+
+        
+
+        
+
+        
+
+      </div><!-- /#sidebar -->
+    
+
+    
+
+    <div id="footer">
+      
+
+      <div id="footer-end" class="ruled-top">
+        <div class="footer-copy">
+          <ul id="footer-links">
+            <li><a href="/rss">RSS</a></li>
+            <li><a href="/random">Random</a></li>
+            <li><a href="/archive">Archive</a></li>
+            
+            
+            <li><a href="/mobile">Mobile</a></li>
+          </ul>
+          <p class="copyright">Copyright (c) 2009-2012 AY..</p>
+        </div>
+        <div class="pixel-union"><a href="http://www.tumblr.com/theme/17403"><strong>Effector Theme</strong></a> &mdash; <a href="https://www.pixelunion.net/?utm_source=tumblr&utm_medium=link&utm_term=tumblr%20themes&utm_campaign=sdoppler">Tumblr themes</a> by <span class="logo">Pixel Union</span></div>
+      </div><!-- /#footer-end -->
+    </div><!-- /#footer -->
+  </div><!-- /#page -->
+
+  <!-- Footer Scripts -->
+
+  <script>
+    function recent_tweets(data){window.tweet_data=data;}
+  </script>
+
+  <script src="/tweets.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>window.jQuery || document.write('<script src="http://static.tumblr.com/hugxd2w/s4om61ic8/jquery-1.7.2.min.js"><\/script>')</script>
+
+  
+    <script src="http://static.tumblr.com/bkoalsz/sESnl08ku/script.js" type="text/javascript"></script>
+  
+
+  <script src="http://platform.twitter.com/widgets.js"></script>
+
+  <script src="https://apis.google.com/js/plusone.js" type="text/javascript"></script>
+
+  
+    <script type="text/javascript">
+      var _gaq=[["_setAccount","UA-10443496-1"],["_trackPageview"]];
+      (function(d,t){
+        var g=d.createElement(t), s=d.getElementsByTagName(t)[0];
+        g.async=1;
+        g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+        s.parentNode.insertBefore(g,s)
+      }(document,"script"));
+    </script>
+  
+
+  
+
+    <script>
+    var themeTitle = "Effector Theme";
+    var url = "http://effectortheme.tumblr.com/";
+    (function() {
+        var pxu = document.createElement('script'); pxu.type = 'text/javascript'; pxu.async = true; pxu.src = 'http://cdn.pixelunion.net/customize/pxucm.js';
+        var isCustomize = (window.location.href.indexOf('/customize_preview_receiver.html') >= 0);
+        var isDemo = (window.location.href.indexOf(url) >= 0);
+        (isCustomize || isDemo) && ((document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pxu));
+    })();
+    </script>
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = false;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://insomanic.me.uk";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/48136679276/looking-back-at-7-years-with-my-startup?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017175&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvaW5zb21hbmljLm1lLnVrXC9wb3N0XC80ODEzNjY3OTI3NlwvbG9va2luZy1iYWNrLWF0LTcteWVhcnMtd2l0aC1teS1zdGFydHVwIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkifQ==&U=LDEGCBJPJC&K=08976e3ff89bd2e43fd571bb9e7eb482c65dad76003f02e485fe641ec9148499&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017175&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvaW5zb21hbmljLm1lLnVrXC9wb3N0XC80ODEzNjY3OTI3NlwvbG9va2luZy1iYWNrLWF0LTcteWVhcnMtd2l0aC1teS1zdGFydHVwIiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJub3NjcmlwdCI6MX0=&U=LDEGCBJPJC&K=6a50789f192a61e5374567ea5f401da5dfd91016d3b8a6fdc7ad758700c3e16c&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017175&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2luc29tYW5pYy5tZS51a1wvcG9zdFwvNDgxMzY2NzkyNzZcL2xvb2tpbmctYmFjay1hdC03LXllYXJzLXdpdGgtbXktc3RhcnR1cCIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjQ4MTM2Njc5Mjc2IiwiYmxvZ2lkIjoiNjQ5NjEiLCJzb3VyY2UiOjMzfV19&U=FHHENEPGPG&K=3fc78f5891aa4b150d293853409b383bdf29a589f0a4a4334d180f33a04a706c&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017175&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2luc29tYW5pYy5tZS51a1wvcG9zdFwvNDgxMzY2NzkyNzZcL2xvb2tpbmctYmFjay1hdC03LXllYXJzLXdpdGgtbXktc3RhcnR1cCIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjQ4MTM2Njc5Mjc2IiwiYmxvZ2lkIjoiNjQ5NjEiLCJzb3VyY2UiOjMzfV0sIm5vc2NyaXB0IjoxfQ==&U=FHHENEPGPG&K=cc520351d99214a05072aa09a35008718a8cf280be3277b754e4d1aa21cf948e&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:64961,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Finsomanic.me.uk%2Fpost%2F48136679276%2Flooking-back-at-7-years-with-my-startup&amp;pid=48136679276&amp;rk=JnzMxyk7&amp;lang=en_US&amp;name=apexa&amp;avatar=http%3A%2F%2F33.media.tumblr.com%2Favatar_c787af86adb0_64.png&amp;title=Insomanic%3A+Andy+Young%26%23039%3Bs+Blog&amp;url=http%3A%2F%2Finsomanic.me.uk%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Finsomanic.me.uk%2Fpost%2F48136679276%2Flooking-back-at-7-years-with-my-startup&amp;pid=48136679276&amp;rk=JnzMxyk7&amp;lang=en_US&amp;name=apexa&amp;avatar=http%3A%2F%2F33.media.tumblr.com%2Favatar_c787af86adb0_64.png&amp;title=Insomanic%3A+Andy+Young%26%23039%3Bs+Blog&amp;url=http%3A%2F%2Finsomanic.me.uk%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>

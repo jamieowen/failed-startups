@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie7 no-js" lang="en-GB"> <![endif]-->
+<!--[if IE 8]>         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie8 no-js" lang="en-GB"> <![endif]-->
+<!--[if IE 9]>         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="ie9 no-js" lang="en-GB"> <![endif]-->
+<!--[if gt IE 9]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" class="no-js" lang="en-GB"><!--<![endif]-->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	
+	<link rel="pingback" href="http://telecoms.com/xmlrpc.php">
+
+	<link rel="dns-prefetch" href="//fonts.googleapis">
+	<link rel="dns-prefetch" href="//pbs.twimg.com">
+	<link rel="dns-prefetch" href="//servedby.informatm.com">
+	<link rel="dns-prefetch" href="//images.informatm.com">
+	<link rel="dns-prefetch" href="//platform.twitter.com">
+	<link rel="dns-prefetch" href="//connect.facebook.net">
+	<link rel="dns-prefetch" href="//static.ak.facebook.com">
+	<link rel="dns-prefetch" href="//s-static.ak.facebook.com">
+	<link rel="shortcut icon"  href="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/icons/48x48-favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/icons/48x48-favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/icons/180x180-touch.png">
+
+	
+<meta name="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta name="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta name="google-site-verification" content="MBhlg4w9AXe1Pz_sQfYl1EiyTSAah6fG4FXbZqSk1Gg" />
+<meta property="og:site_name" content="Telecoms.com" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Samba Mobile closes down" />
+<meta property="og:url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta property="og:description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta property="og:locale" content="en_GB" />
+<meta property="article:published_time" content="2014-04-28T14:59:03+00:00" />
+<meta property="article:modified_time" content="2015-01-10T13:46:58+00:00" />
+<meta property="article:author" content="http://telecoms.com/author/dawindersahota/" />
+<meta property="article:publisher" content="http://telecoms.com/" />
+<meta property="article:section" content="Operator" />
+<meta property="article:tag" content="operator" />
+<meta property="article:tag" content="mvno" />
+<meta property="article:tag" content="samba mobile" />
+<meta property="article:tag" content="uk" />
+<meta property="article:tag" content="eastern europe" />
+<meta property="article:tag" content="western europe" />
+<meta property="og:image" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="300" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:title" content="Samba Mobile closes down" />
+<meta property="twitter:description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta property="twitter:image:src" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta property="twitter:image:width" content="300" />
+<meta property="twitter:image:height" content="300" />
+<meta name="dcterms.title" content="Samba Mobile closes down" />
+<meta name="dcterms.identifier" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta name="dcterms.creator" content="Sahota, Dawinderpal" />
+<meta name="dcterms.created" content="2014-04-28T14:59:03+00:00" />
+<meta name="dcterms.available" content="2014-04-28T14:59:03+00:00" />
+<meta name="dcterms.modified" content="2015-01-10T13:46:58+00:00" />
+<meta name="dcterms.description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta name="dcterms.subject" content="operator" />
+<meta name="dcterms.subject" content="mvno" />
+<meta name="dcterms.subject" content="samba mobile" />
+<meta name="dcterms.subject" content="uk" />
+<meta name="dcterms.subject" content="eastern europe" />
+<meta name="dcterms.subject" content="western europe" />
+<meta name="dcterms.language" content="en-GB" />
+<meta name="dcterms.publisher" content="http://telecoms.com/" />
+<meta name="dcterms.coverage" content="World" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<link rel="publisher" type="text/html" title="Telecoms.com" href="http://telecoms.com/" />
+<link rel="author" type="text/html" title="Dawinderpal Sahota" href="http://telecoms.com/author/dawindersahota/" />
+
+<title>Samba Mobile closes down | Telecoms.com</title>
+<link rel="alternate" type="application/rss+xml" title="Telecoms.com &raquo; Samba Mobile closes down Comments Feed" href="http://telecoms.com/253092/samba-mobile-closes-down/feed/" />
+<link rel='stylesheet' id='google-fonts-css'  href='http://fonts.googleapis.com/css?family=Ubuntu%3A300%2C400%2C500%7COpen+Sans%3A300italic%2C400italic%2C600italic%2C400%2C300%2C600&#038;ver=4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='core-style-css'  href='http://telecoms.com/wp-content/themes/telecoms.com/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://telecoms.com/wp-content/themes/telecoms.com/assets/scripts/min/jquery.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://telecoms.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://telecoms.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='KPN reports 98% drop in net income' href='http://telecoms.com/252782/kpn-reports-98-drop-in-net-income/' />
+<link rel='next' title='Skype makes group video calling free' href='http://telecoms.com/253352/skype-makes-group-video-calling-free/' />
+<link rel='canonical' href='http://telecoms.com/253092/samba-mobile-closes-down/' />
+<link rel='shortlink' href='http://telecoms.com/?p=253092' />
+<style type="text/css">
+.wp-polls .pollbar {
+	margin: 1px;
+	font-size: 6px;
+	line-height: 8px;
+	height: 8px;
+	background-image: url('http://telecoms.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');
+	border: 1px solid #c8c8c8;
+}
+</style>
+			<!--[if lt IE 9]>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+				<script src="http://html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+				<script>"article aside footer header nav section time".replace(/\w+/g,function(n){document.createElement(n)})</script>
+				<link rel="stylesheet" href="http://telecoms.com/wp-content/themes/telecoms.com/assets/css/ie8-grid-foundation-4.css" />
+			<![endif]-->
+
+			<!--[if lte IE 9]>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+				<link rel="stylesheet" href="http://telecoms.com/wp-content/themes/telecoms.com/assets/css/style_ie.css">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+			<![endif]-->
+	
+
+	</head>
+
+<body class="single single-post postid-253092 single-format-standard">
+
+
+<ul class="hide">
+	<li></li>
+</ul> 
+
+<div class="full-row show-for-large-up fixed desktop-menu">
+
+	<!--[if lte IE 8]>
+			<div class="row">
+				<div class="columns small-12 chromeframe">
+					<p>You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
+				</div>
+			</div>        
+	<![endif]-->
+
+	<div class="row navigation" role="navigation">
+		<div class="columns small-12">
+
+			<div class="wrap">
+				<div class="row">
+					<div class="columns small-12 large-10 menu padding-right-zero">
+						<div id="branded-header" class="branded-header">
+							<div class="branded-header-perspective">
+								<div class="branded-header-front">
+									<!--FRONT-->
+									<nav>
+							            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li class="divider"></li><li id="menu-item-378862" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Home" href="/"><i class="fa fa-home"></i></a></li>
+<li class="divider"></li><li id="menu-item-378872" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/news">News</a></li>
+<li class="divider"></li><li id="menu-item-378892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="http://telecoms.com/about-analysis">Analysis</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-378952" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/a-week-in-wireless/">A Week in Wireless</a></li>
+	<li id="menu-item-378962" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/interview">Interviews</a></li>
+	<li id="menu-item-378972" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/opinion">Opinion</a></li>
+	<li id="menu-item-378922" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/type/video">Video</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-378902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="http://telecoms.com/white-papers/">Intelligence</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-408711" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-intelligence/">About Intelligence</a></li>
+	<li id="menu-item-380802" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/white-papers/">White Papers &#038; Reports</a></li>
+	<li id="menu-item-399941" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/reports/">Annual Industry Survey</a></li>
+	<li id="menu-item-378992" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/magazine/">Magazines</a></li>
+	<li id="menu-item-379002" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/polls">Polls</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-378912" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/webinars">Webinars</a></li>
+<li class="divider"></li><li id="menu-item-382722" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://awards.telecoms.com/">Awards</a></li>
+<li class="divider"></li><li id="menu-item-378932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="http://telecoms.com/resource-centre/companies/">Resource Centre</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-379462" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-the-resource-centre/">About/Packages</a></li>
+	<li id="menu-item-379032" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/my-account">My Resource Centre</a></li>
+	<li id="menu-item-379022" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/companies">Companies</a></li>
+	<li id="menu-item-399611" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.amdocs.com">Amdocs Partner Site</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-379062" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://jobs.telecoms.com">Jobs</a></li>
+<li class="divider"></li><li id="menu-item-378942" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="/about-us">More</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-379402" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-us/">About Us</a></li>
+	<li id="menu-item-379042" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/events">Events</a></li>
+	<li id="menu-item-399931" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/press-releases/">Press Releases</a></li>
+	<li id="menu-item-379052" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/contact-us">Contact Us</a></li>
+</ul>
+</li>
+</ul></div>									</nav>
+									<!--FRONT-->
+								</div>
+								<div class="branded-header-bottom">
+									<!--BACK-->
+									<div class="">
+										<a href="http://telecoms.com"><img class="img-responsive sm-logo left" src="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/dummy/tcoms-logo-sm.png" title="Telecoms.com" width="304" height="108" /></a>
+									</div>
+									<nav>
+							            <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="menu"><li class="divider"></li><li id="menu-item-378862" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Home" href="/"><i class="fa fa-home"></i></a></li>
+<li class="divider"></li><li id="menu-item-378872" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/news">News</a></li>
+<li class="divider"></li><li id="menu-item-378892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="http://telecoms.com/about-analysis">Analysis</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-378952" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/a-week-in-wireless/">A Week in Wireless</a></li>
+	<li id="menu-item-378962" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/interview">Interviews</a></li>
+	<li id="menu-item-378972" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/opinion">Opinion</a></li>
+	<li id="menu-item-378922" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/type/video">Video</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-378902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="http://telecoms.com/white-papers/">Intelligence</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-408711" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-intelligence/">About Intelligence</a></li>
+	<li id="menu-item-380802" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/white-papers/">White Papers &#038; Reports</a></li>
+	<li id="menu-item-399941" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/reports/">Annual Industry Survey</a></li>
+	<li id="menu-item-378992" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/magazine/">Magazines</a></li>
+	<li id="menu-item-379002" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/polls">Polls</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-378912" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/webinars">Webinars</a></li>
+<li class="divider"></li><li id="menu-item-382722" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://awards.telecoms.com/">Awards</a></li>
+<li class="divider"></li><li id="menu-item-378932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="http://telecoms.com/resource-centre/companies/">Resource Centre</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-379462" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-the-resource-centre/">About/Packages</a></li>
+	<li id="menu-item-379032" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/my-account">My Resource Centre</a></li>
+	<li id="menu-item-379022" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/companies">Companies</a></li>
+	<li id="menu-item-399611" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.amdocs.com">Amdocs Partner Site</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-379062" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://jobs.telecoms.com">Jobs</a></li>
+<li class="divider"></li><li id="menu-item-378942" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown"><a href="/about-us">More</a>
+<ul class="sub-menu dropdown"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-379402" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-us/">About Us</a></li>
+	<li id="menu-item-379042" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/events">Events</a></li>
+	<li id="menu-item-399931" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/press-releases/">Press Releases</a></li>
+	<li id="menu-item-379052" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/contact-us">Contact Us</a></li>
+</ul>
+</li>
+</ul></div>									</nav>
+									<!--BACK-->
+								</div>
+							</div><!-- END PERSPECTIVE -->	
+						</div><!-- END BRANDED HEADER -->
+					</div>
+					<div class="columns large-2 show-for-large-up padding-left-zero">
+			      		<ul class="header-icns right login-menu">
+			      			<li class="search-icn"><a href="#" title="Search Telecoms.com"><i class="fa fa-search"></i></a></li>
+			      			<li><a href="/sign-up" title="Sign up to the newsletter"><i class="fa fa-pencil-square-o"></i></a></li>
+			      						      				<li><a href="http://telecoms.com/log-in/?redirect=" title="Log in to your account"><i class="fa fa-user"></i></a></li>
+			      						      		</ul>
+					</div>
+				</div><!-- END ROW -->
+			</div><!-- END WRAP -->	
+
+		</div><!-- END COL -->
+
+	    <!-- SEARCH -->
+		<div class="search-tab">	
+			<form role="search" method="get" class="search-form" action="http://telecoms.com/">
+					<input type="search" class="search-field" placeholder="Search..." value="" name="s" title="search" />
+				<button type="submit" class="search-submit">
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
+		</div>	
+		<!-- SEARCH -->
+
+	</div><!-- END ROW -->
+</div>
+
+<div class="off-canvas-wrap" data-offcanvas>
+	<div class="fixed off-canvas-fixed hide-for-large-up">
+	   	<div class="tab-bar hide-for-large-up fixed">
+	   		<div class="row">
+	   			<div class="columns small-6">
+			   		<nav>
+			   			<div>
+				   			<a href="http://telecoms.com"><img class="img-responsive sm-logo left" src="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/dummy/tcoms-logo-sm.png" title="Telecoms.com" /></a>
+				   		</div>	
+			       		<div class="left-small">
+			        		<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+							<!--a class="left-off-canvas-toggle menu-close" ><i class="fa fa-times"></i></a-->			        		
+			      		</div>
+			      	</nav>
+			    </div>
+			    <div class="columns small-6">
+					<nav>
+			      		<ul class="header-icns right login-menu">
+			      			<li class="search-icn"><a href="#" title="Search for a term"><i class="fa fa-search"></i></a></li>
+			      			<li><a href="/sign-up" title="Sign up to the news alert"><i class="fa fa-pencil-square-o"></i></a></li>
+			      						      				<li><a href="http://telecoms.com/log-in/?redirect=" title="Log in to your account"><i class="fa fa-user"></i></a></li>
+			      						      		</ul>
+					</nav>
+			    </div>
+	   		</div><!-- END ROW -->
+			<!-- SEARCH -->
+			<div class="search-tab">	
+				<form role="search" method="get" class="search-form" action="http://telecoms.com/">
+					<label>
+						<input type="search" class="search-field" placeholder="Search..." value="" name="s" title="search" />
+					</label>
+					<button type="submit" class="search-submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</form>
+			</div>	
+			<!-- SEARCH -->
+      		<!-- SEARCH -->
+      	</div>
+
+	    <!-- Off Canvas Menu -->
+
+		<aside class="left-off-canvas-menu">
+			<div class="menu-main-menu-container"><ul id="menu-main-menu-2" class="off-canvas-list"><li class="divider"></li><li id="menu-item-378862" class="menu-item menu-item-type-custom menu-item-object-custom"><a title="Home" href="/"><i class="fa fa-home"></i></a></li>
+<li class="divider"></li><li id="menu-item-378872" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/news">News</a></li>
+<li class="divider"></li><li id="menu-item-378892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu"><a href="http://telecoms.com/about-analysis">Analysis</a>
+<ul class="left-submenu"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-378952" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/a-week-in-wireless/">A Week in Wireless</a></li>
+	<li id="menu-item-378962" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/interview">Interviews</a></li>
+	<li id="menu-item-378972" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/opinion">Opinion</a></li>
+	<li id="menu-item-378922" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/type/video">Video</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-378902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu"><a href="http://telecoms.com/white-papers/">Intelligence</a>
+<ul class="left-submenu"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-408711" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-intelligence/">About Intelligence</a></li>
+	<li id="menu-item-380802" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/white-papers/">White Papers &#038; Reports</a></li>
+	<li id="menu-item-399941" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/reports/">Annual Industry Survey</a></li>
+	<li id="menu-item-378992" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/magazine/">Magazines</a></li>
+	<li id="menu-item-379002" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/polls">Polls</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-378912" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/webinars">Webinars</a></li>
+<li class="divider"></li><li id="menu-item-382722" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://awards.telecoms.com/">Awards</a></li>
+<li class="divider"></li><li id="menu-item-378932" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu"><a href="http://telecoms.com/resource-centre/companies/">Resource Centre</a>
+<ul class="left-submenu"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-379462" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-the-resource-centre/">About/Packages</a></li>
+	<li id="menu-item-379032" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/my-account">My Resource Centre</a></li>
+	<li id="menu-item-379022" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/companies">Companies</a></li>
+	<li id="menu-item-399611" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.amdocs.com">Amdocs Partner Site</a></li>
+</ul>
+</li>
+<li class="divider"></li><li id="menu-item-379062" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://jobs.telecoms.com">Jobs</a></li>
+<li class="divider"></li><li id="menu-item-378942" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-submenu"><a href="/about-us">More</a>
+<ul class="left-submenu"><li class="back"><a href="#">Back</a></li>
+	<li id="menu-item-379402" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/about-us/">About Us</a></li>
+	<li id="menu-item-379042" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/resource-centre/events">Events</a></li>
+	<li id="menu-item-399931" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://telecoms.com/press-releases/">Press Releases</a></li>
+	<li id="menu-item-379052" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/contact-us">Contact Us</a></li>
+</ul>
+</li>
+</ul></div>		</aside>
+    	
+
+	</div><!--END fixed off-canvas-fixed--> 
+
+	<div class="inner-wrap">		    
+
+		<section class="row page-push">
+			<header class="columns small-12" role="banner">
+				<div class="row">
+					<div class="columns small-12 large-3 show-for-large-up">
+						<h1 class="hide">Telecoms.com</h1>
+						<a href="http://telecoms.com" title="Go to the homepage"><img class="img-responsive" src="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/dummy/tcoms-logo.png" title="Telecoms.com" /></a>
+					</div>
+					<div class="columns small-12 large-9 text-align-right lead-banner">
+							
+			<div class="advert homepage-leaderboard">
+
+			
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p><script type='text/javascript'><!--//<![CDATA[
+					var m3_u = (location.protocol=='https:'?'https://servedby.informatm.com/ajs.php':'http://servedby.informatm.com/ajs.php');
+					var m3_r = Math.floor(Math.random()*99999999999);
+					if (!document.MAX_used) document.MAX_used = ',';
+					document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					document.write ("?zoneid=1460");
+					document.write ("&amp;tags=mvno%2Csamba-mobile%2Cuk");
+document.write ('&amp;cb=' + m3_r);
+					if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+					document.write ("&amp;loc=" + escape(window.location));
+					if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					if (document.context) document.write ("&#038;context=" + escape(document.context));
+					if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					document.write ("'></scr"+"ipt>");
+				//]]&gt;--></script><br />
+				<noscript><a href='http://servedby.informatm.com/ck.php?n=ad8f7a2f&amp;cb=1420915465918 target='_blank'><br />
+					<img src='http://servedby.informatm.com/avw.php?zoneid=1460&amp;cb=1420915465918&amp;n=ad8f7a2f' border='0' alt='' /></a><br />
+				</noscript></p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+
+			</div>
+
+								</div>
+				</div>
+			</header>
+		</section><!-- END ROW -->
+
+
+		<!-- CONTENT -->
+		<section class="row">
+			<div class="columns small-12">
+
+
+<div class="row">
+	<div class="columns small-12"> 
+			<h2 class="page-title">news</h2>
+	</div>
+</div>
+
+
+	<div class="row article-view">	
+
+		<div class="columns large-1 show-for-large-up">
+			<ul class="no-bullet social-vertical social-bar">
+				
+<li>
+	<a href="http://twitter.com/share/?url=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F&text=UK+MVNO+Samba+Mobile+has+closed+down+its+business+due+to+unsustainable+mobile+da...&title=Samba+Mobile+closes+down" title="Share on Twitter" class="share-twitter"><i class="fa fa-twitter-square"></i><i class="fa fa-twitter"></i></a>
+</li>
+<li>
+	<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F&title=Samba+Mobile+closes+down&summary=UK+MVNO+Samba+Mobile+has+closed+down+its+business+due+to+unsustainable+mobile+data+costs.+The+service+launched+in+July+2012+offering+subscribers+free+mobile+data+usage+in+return+for+viewing+adverts+and+ran+on+3UK%E2%80%99s+mobile+network.+It%27s+a+business+model+several+have+tried+and+none+have+yet+succeeded+with.&source=Telecoms.com" class="share-linkedin" title="Post to LinkedIn"><i class="fa fa-linkedin-square"></i><i class="fa fa-linkedin"></i></a>
+</li>
+<li>
+	<a href="#" data-url="http://telecoms.com/253092/samba-mobile-closes-down/" class="share-facebook" title="Post to Facebook"><i class="fa fa-facebook-square"></i><i class="fa fa-facebook"></i></a>
+</li>
+<li>
+	<a href="https://plus.google.com/share?url=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F" class="share-google" title="Share on Google Plus"><i class="fa fa-google-plus-square"></i><i class="fa fa-google-plus"></i></a>
+</li>
+			</ul>
+		</div>
+
+		<div class="columns small-12 medium-7">
+								
+			<div class="row">
+				<div class="columns small-12">
+					<h2>Samba Mobile closes down</h2>		
+				</div>
+			</div><!-- END ROW -->
+
+
+							<div class="row article-author">
+					<div class="columns small-12">
+						<div class="author-thumb left">
+						 	<img alt='' src='http://0.gravatar.com/avatar/84ad1964ffa606d4bf7d7b3d03d3e71e?s=56&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D56&amp;r=G' class='avatar avatar-56 photo' height='56' width='56' />						</div>
+						<ul class="no-bullet author-details left display-inline">
+							<li class="profile">Written by <a href="http://telecoms.com/author/dawindersahota/" title="Posts by Dawinderpal Sahota" rel="author">Dawinderpal Sahota</a></li>
+							<li class="byline">28 April 2014 @ 14:59</li>
+						</ul>
+					</div>
+				</div><!-- END ROW -->
+			
+			<div class="row hide-for-large-up">
+				<div class="columns small-12">
+					<ul class="no-bullet social-horizontal social-bar left">
+						
+<li>
+	<a href="http://twitter.com/share/?url=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F&text=UK+MVNO+Samba+Mobile+has+closed+down+its+business+due+to+unsustainable+mobile+da...&title=Samba+Mobile+closes+down" title="Share on Twitter" class="share-twitter"><i class="fa fa-twitter-square"></i><i class="fa fa-twitter"></i></a>
+</li>
+<li>
+	<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F&title=Samba+Mobile+closes+down&summary=UK+MVNO+Samba+Mobile+has+closed+down+its+business+due+to+unsustainable+mobile+data+costs.+The+service+launched+in+July+2012+offering+subscribers+free+mobile+data+usage+in+return+for+viewing+adverts+and+ran+on+3UK%E2%80%99s+mobile+network.+It%27s+a+business+model+several+have+tried+and+none+have+yet+succeeded+with.&source=Telecoms.com" class="share-linkedin" title="Post to LinkedIn"><i class="fa fa-linkedin-square"></i><i class="fa fa-linkedin"></i></a>
+</li>
+<li>
+	<a href="#" data-url="http://telecoms.com/253092/samba-mobile-closes-down/" class="share-facebook" title="Post to Facebook"><i class="fa fa-facebook-square"></i><i class="fa fa-facebook"></i></a>
+</li>
+<li>
+	<a href="https://plus.google.com/share?url=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F" class="share-google" title="Share on Google Plus"><i class="fa fa-google-plus-square"></i><i class="fa fa-google-plus"></i></a>
+</li>
+					</ul> 
+				</div>
+			</div><!-- END ROW -->							
+
+							<div class="row">
+					<div class="columns small-12 headline-image-container">
+						<img width="700" height="285" src="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-700x285.jpg" class="article-img wp-post-image" alt="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />					</div>
+				</div><!-- END ROW -->
+			
+			<div class="row">
+				<div class="columns small-12">
+					
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p>UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service <a href="http://www.telecoms.com/46375/ad-supported-mobile-broadband-service-launched-in-uk/">launched in July 2012 </a>offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It’s a business model several have tried and none have yet succeeded with.</p>
+<p>Samba Mobile was founded in 2010 and said at launch that it has financial backing from an international mobile operator and a number of very experienced and “well-connected independent investors”</p>
+<p>The MVNO said that it closed down its operations primarily due to the high cost of wholesale data. It said that prices of wholesale data makes its current model unsustainable. The service will shut down its data service with immediate effect and warned that it may not relaunch unless negotiations with partners result in lower costs.</p>
+<p>The firm added that all customers who bought a SIM card or Dongle during April 2014 will receive a refund and customers who bought a cash top-up that has not expired will be refunded for any unused data on their cash top-up. The refunds will be paid into the Paypal accounts used to subscribe to the service. However, funds that were earned from watching ads will not be refunded, the MVNO added.</p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+				</div>
+			</div><!-- END ROW -->
+
+			<div class="row">
+				<div class="columns small-12">
+					<i class="fa fa-tags"></i> Tags: <a href="http://telecoms.com/tag/mvno/" rel="tag">MVNO</a>, <a href="http://telecoms.com/tag/samba-mobile/" rel="tag">Samba Mobile</a>, <a href="http://telecoms.com/tag/uk/" rel="tag">UK</a>				</div>
+			</div>
+
+			
+			<div class="row">
+				<div class="small-12 columns">
+					
+<hr>
+ 
+<div id="comments" class="comments-area">
+
+
+
+
+								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/253092/samba-mobile-closes-down/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://telecoms.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+						
+<!--
+	wsl_render_auth_widget
+	WordPress Social Login 2.2.3.
+	http://wordpress.org/plugins/wordpress-social-login/
+-->
+
+<style type="text/css">
+.wp-social-login-connect-with{}.wp-social-login-provider-list{}.wp-social-login-provider-list a{}.wp-social-login-provider-list img{}.wsl_connect_with_provider{} 
+</style>
+
+<div class="wp-social-login-widget">
+
+	<div class="wp-social-login-connect-with">Connect with:</div>
+
+	<div class="wp-social-login-provider-list">
+<a href="http://telecoms.com/wp-login.php?action=wordpress_social_authenticate&#038;mode=login&#038;provider=Facebook&#038;redirect_to=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F" title="Sign in with Facebook"><i class="fa fa-facebook-square"></i></a><a href="http://telecoms.com/wp-login.php?action=wordpress_social_authenticate&#038;mode=login&#038;provider=Google&#038;redirect_to=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F" title="Sign in with Google"><i class="fa fa-google-plus-square"></i></a><a href="http://telecoms.com/wp-login.php?action=wordpress_social_authenticate&#038;mode=login&#038;provider=Twitter&#038;redirect_to=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F" title="Sign in with Twitter"><i class="fa fa-twitter-square"></i></a><a href="http://telecoms.com/wp-login.php?action=wordpress_social_authenticate&#038;mode=login&#038;provider=LinkedIn&#038;redirect_to=http%3A%2F%2Ftelecoms.com%2F253092%2Fsamba-mobile-closes-down%2F" title="Sign in with LinkedIn"><i class="fa fa-linkedin-square"></i></a>
+	</div> 
+
+	<div class="wp-social-login-widget-clearing"></div>
+
+</div>
+
+<!-- wsl_render_auth_widget -->
+
+		<div class="telecoms-login">
+			<p>-or-</p>
+			<p><a href="http://telecoms.com/log-in/?redirect=http://telecoms.com/253092/samba-mobile-closes-down/" class="button">Log in with your Telecoms.com account</a></p>
+			<p>Alternatively, post a comment by completing the form below:</p>
+		</div>
+														<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true"></textarea></p>						<p class="form-allowed-tags" id="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" class="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='253092' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="bc12dc42ab" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="150"/></p>					</form>
+							</div><!-- #respond -->
+			
+</div><!-- #comments .comments-area --> 
+				</div>
+			</div>
+						
+
+		</div>
+
+ 
+<div class="columns small-12 medium-5 large-4 content-cols generic-sidecol">
+
+			<div class="row">
+			<div class="columns small-12">
+
+				<div class="right related-content-wrap">
+					<div class="related-content right">
+						
+
+<h3>Related Content</h3>
+
+<ul class="no-bullet">
+			<li><a href="http://telecoms.com/422841/ofcom-unveils-plans-to-auction-new-2-3-ghz-and-3-4-ghz-spectrum/" title="Ofcom unveils plans to auction new 2.3 GHz and 3.4 GHz spectrum">Ofcom unveils plans to auction new 2.3 GHz and 3.4 GHz spectrum</a></li>
+			<li><a href="http://telecoms.com/422071/orange-acquisition-of-jazztel-cleared-after-concessions/" title="Orange acquisition of Jazztel cleared after concessions">Orange acquisition of Jazztel cleared after concessions</a></li>
+			<li><a href="http://telecoms.com/421791/bt-argues-competition-will-be-enhanced-by-ee-deal/" title="BT argues competition will be ‘enhanced’ by EE deal">BT argues competition will be ‘enhanced’ by EE deal</a></li>
+			<li><a href="http://telecoms.com/421761/xiaomi-expands-to-us-and-european-markets/" title="Xiaomi expands to US and European markets">Xiaomi expands to US and European markets</a></li>
+	</ul>
+
+					</div>
+				</div>
+
+			</div>
+		</div><!-- END ROW -->	
+	
+	<div class="separation left">
+
+		<div class="row">
+			<div class="columns small-12 insights-col">
+
+				
+			<div class="advert amdocs">
+
+			
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p><script type='text/javascript'><!--//<![CDATA[
+					var m3_u = (location.protocol=='https:'?'https://servedby.informatm.com/ajs.php':'http://servedby.informatm.com/ajs.php');
+					var m3_r = Math.floor(Math.random()*99999999999);
+					if (!document.MAX_used) document.MAX_used = ',';
+					document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					document.write ("?zoneid=1510");
+					document.write ("&amp;tags=mvno%2Csamba-mobile%2Cuk");
+document.write ('&amp;cb=' + m3_r);
+					if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+					document.write ("&amp;loc=" + escape(window.location));
+					if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					if (document.context) document.write ("&#038;context=" + escape(document.context));
+					if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					document.write ("'></scr"+"ipt>");
+				//]]&gt;--></script><br />
+				<noscript><a href='http://servedby.informatm.com/ck.php?n=a0808e07&amp;cb=1424102186491 target='_blank'><br />
+					<img src='http://servedby.informatm.com/avw.php?zoneid=1510&amp;cb=1424102186491&amp;n=a0808e07' border='0' alt='' /></a><br />
+				</noscript></p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+
+			</div>
+
+			
+				
+			<div class="advert mpu-1-generic">
+
+			
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p><script type='text/javascript'><!--//<![CDATA[
+					var m3_u = (location.protocol=='https:'?'https://servedby.informatm.com/ajs.php':'http://servedby.informatm.com/ajs.php');
+					var m3_r = Math.floor(Math.random()*99999999999);
+					if (!document.MAX_used) document.MAX_used = ',';
+					document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					document.write ("?zoneid=1472");
+					document.write ("&amp;tags=mvno%2Csamba-mobile%2Cuk");
+document.write ('&amp;cb=' + m3_r);
+					if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+					document.write ("&amp;loc=" + escape(window.location));
+					if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					if (document.context) document.write ("&#038;context=" + escape(document.context));
+					if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					document.write ("'></scr"+"ipt>");
+				//]]&gt;--></script><br />
+				<noscript><a href='http://servedby.informatm.com/ck.php?n=a5477f91&amp;cb=1420915497594 target='_blank'><br />
+					<img src='http://servedby.informatm.com/avw.php?zoneid=1472&amp;cb=1420915497594&amp;n=a5477f91' border='0' alt='' /></a><br />
+				</noscript></p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+
+			</div>
+
+			
+				
+			<div class="advert mpu-2-generic">
+
+			
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p><script type='text/javascript'><!--//<![CDATA[
+					var m3_u = (location.protocol=='https:'?'https://servedby.informatm.com/ajs.php':'http://servedby.informatm.com/ajs.php');
+					var m3_r = Math.floor(Math.random()*99999999999);
+					if (!document.MAX_used) document.MAX_used = ',';
+					document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					document.write ("?zoneid=1474");
+					document.write ("&amp;tags=mvno%2Csamba-mobile%2Cuk");
+document.write ('&amp;cb=' + m3_r);
+					if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+					document.write ("&amp;loc=" + escape(window.location));
+					if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					if (document.context) document.write ("&#038;context=" + escape(document.context));
+					if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					document.write ("'></scr"+"ipt>");
+				//]]&gt;--></script><br />
+				<noscript><a href='http://servedby.informatm.com/ck.php?n=a7e0f227&amp;cb=1420915489326 target='_blank'><br />
+					<img src='http://servedby.informatm.com/avw.php?zoneid=1474&amp;cb=1420915489326&amp;n=a7e0f227' border='0' alt='' /></a><br />
+				</noscript></p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+
+			</div>
+
+			
+			
+<article class="row insights-snippet webinars">
+	<div class="columns small-12">
+
+		<div class="tab-box right">
+			<div class="tab-title left">
+				<h3>Webinars</h3>
+			</div>
+			<div class="view-all left">
+				<span><a href="/webinars">View all</a></span>
+			</div>
+
+			<div class="tab-content left">
+									<img width="475" height="274" src="http://telecoms.com/wp-content/blogs.dir/1/files/2015/06/Splash_openet-475x274.jpg" class="img-responsive wp-post-image" alt="Splash_openet" />								<h4><a href="http://telecoms.com/workcast_webinar/webinar-top-10-lte-service-innovations-with-operator-examples/" title="Top 10 LTE Service Innovations with Operator Examples">Top 10 LTE Service Innovations with Operator Examples</a></h4>
+				<ul class="byline-default">
+					<li class="post-date">24 June 2015</li>
+				</ul>
+			</div>											
+		</div>
+
+	</div>
+</article>
+
+
+			
+
+
+<article class="row insights-snippet ">
+	<div class="columns small-12">
+
+		<div class="tab-box right">
+			<div class="tab-title left">
+				<h3>White Papers</h3>
+			</div>
+			<div class="view-all left">
+				<span><a href="/white-papers/">View all</a></span>
+			</div>
+
+			<div class="tab-content left">							
+				<!-- content -->
+				
+				<div class="inner-list left">
+					<div class="insights-thumb left">
+											<img width="100" height="100" src="http://telecoms.com/wp-content/blogs.dir/1/files/2015/05/Haud_systems_Image-100x100.png" class="attachment-analysis-column-small wp-post-image" alt="Haud_systems_Image" />								
+					</div>
+					<div class="content-wrap left whitepapers-content">
+						<h4><a href="http://telecoms.com/intelligence/making-grey-pay-cashing-in-on-the-a2p-opportunity/" title="Grey is the new green: Cashing in on the A2P opportunity"> Grey is the new green: Cashing in on the A2P opportunity</a></h4>
+						<ul class="byline-default share-menu">
+																<li class="post-share">
+		<span style="position:relative;">
+							<span class="icon-redo squared-off"></span> Share
+						<div class="tool-tip slideIn top">
+				<ul class="popup">
+					<li>
+						<a href="http://twitter.com/share/?url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fmaking-grey-pay-cashing-in-on-the-a2p-opportunity%2F&text=Operators+the+world+over+should+still+see+significant+monetary+value+in+SMS.+Rec...&title=Grey+is+the+new+green%3A+Cashing+in+on+the+A2P+opportunity" title="share" class="share-twitter"><i class="fa fa-twitter-square"></i></a>
+					</li>
+					<li>
+						<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fmaking-grey-pay-cashing-in-on-the-a2p-opportunity%2F&title=Grey+is+the+new+green%3A+Cashing+in+on+the+A2P+opportunity&summary=Operators+the+world+over+should+still+see+significant+monetary+value+in+SMS.+Recent+research+indicates+that+the+growth+of+Application+to+Person+messaging+is+entering+a+golden+age%2C+a+four+year+window+where+feature+phones+still+outnumber+smartphones+globally.+A2P+messaging+has+the+potential+to+replenish+a+revenue+stream+which+many+had+considered+dead+for+some+time.&source=Telecoms.com" class="share-linkedin" title="share"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+					<li>
+						<a href="#" data-url="http://telecoms.com/intelligence/making-grey-pay-cashing-in-on-the-a2p-opportunity/" class="share-facebook" title="share"><i class="fa fa-facebook-square"></i></a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fmaking-grey-pay-cashing-in-on-the-a2p-opportunity%2F" class="share-google" title="share"><i class="fa fa-google-plus-square"></i></a>
+					</li>
+				</ul>
+			</div>
+		</span>	
+	</li>
+														<li class="post-date">26 May 2015</li>
+						</ul>
+					</div>
+				</div>
+				<!-- content -->
+									<hr />
+				
+				
+				<div class="inner-list left">
+					<div class="insights-thumb left">
+											<img width="100" height="100" src="http://telecoms.com/wp-content/blogs.dir/1/files/2015/05/Oracle-Communications-600-100x100.jpg" class="attachment-analysis-column-small wp-post-image" alt="Oracle-Communications-600" />								
+					</div>
+					<div class="content-wrap left whitepapers-content">
+						<h4><a href="http://telecoms.com/intelligence/adopt-a-holistic-approach-to-network-service-orchestration/" title="Adopt a holistic approach to network service orchestration"> Adopt a holistic approach to network service orchestration</a></h4>
+						<ul class="byline-default share-menu">
+																<li class="post-share">
+		<span style="position:relative;">
+							<span class="icon-redo squared-off"></span> Share
+						<div class="tool-tip slideIn top">
+				<ul class="popup">
+					<li>
+						<a href="http://twitter.com/share/?url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fadopt-a-holistic-approach-to-network-service-orchestration%2F&text=Network+Functions+Virtualization+%28NFV%29+technology+is+re-shaping+how+network+oper...&title=Adopt+a+holistic+approach+to+network+service+orchestration" title="share" class="share-twitter"><i class="fa fa-twitter-square"></i></a>
+					</li>
+					<li>
+						<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fadopt-a-holistic-approach-to-network-service-orchestration%2F&title=Adopt+a+holistic+approach+to+network+service+orchestration&summary=Network+Functions+Virtualization+%28NFV%29+technology+is+re-shaping+how+network+operators+instantiate%2C+elastically+scale+and+terminate+network+services+in+virtualized+network+environments.+However%2C+even+with+this+increasingly+dynamic+network%2C+how+do+you+fully+realize+material+business+benefits%2C+not+just+network+benefits%3F&source=Telecoms.com" class="share-linkedin" title="share"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+					<li>
+						<a href="#" data-url="http://telecoms.com/intelligence/adopt-a-holistic-approach-to-network-service-orchestration/" class="share-facebook" title="share"><i class="fa fa-facebook-square"></i></a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fadopt-a-holistic-approach-to-network-service-orchestration%2F" class="share-google" title="share"><i class="fa fa-google-plus-square"></i></a>
+					</li>
+				</ul>
+			</div>
+		</span>	
+	</li>
+														<li class="post-date">21 May 2015</li>
+						</ul>
+					</div>
+				</div>
+				<!-- content -->
+									<hr />
+				
+				
+				<div class="inner-list left">
+					<div class="insights-thumb left">
+											<img width="100" height="100" src="http://telecoms.com/wp-content/blogs.dir/1/files/2015/05/nfv-carrier-grade-wp-mail-100x100.jpg" class="attachment-analysis-column-small wp-post-image" alt="nfv-carrier-grade-wp-mail" />								
+					</div>
+					<div class="content-wrap left whitepapers-content">
+						<h4><a href="http://telecoms.com/intelligence/building-the-carrier-grade-nfv-infrastructure/" title="Building the Carrier Grade NFV Infrastructure"> Building the Carrier Grade NFV Infrastructure</a></h4>
+						<ul class="byline-default share-menu">
+																<li class="post-share">
+		<span style="position:relative;">
+							<span class="icon-redo squared-off"></span> Share
+						<div class="tool-tip slideIn top">
+				<ul class="popup">
+					<li>
+						<a href="http://twitter.com/share/?url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fbuilding-the-carrier-grade-nfv-infrastructure%2F&text=Network+Functions+Virtualization+%28NFV%29+is+the+telco%E2%80%99s+version+of+IT+virtualiza...&title=Building+the+Carrier+Grade+NFV+Infrastructure" title="share" class="share-twitter"><i class="fa fa-twitter-square"></i></a>
+					</li>
+					<li>
+						<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fbuilding-the-carrier-grade-nfv-infrastructure%2F&title=Building+the+Carrier+Grade+NFV+Infrastructure&summary=Network+Functions+Virtualization+%28NFV%29+is+the+telco%E2%80%99s+version+of+IT+virtualization%2C+achieved+by+augmenting+the+latter+with+the+carrier+grade+capabilities+required+for+high+availability%2C+security%2C+and+performance%2C+as+well+as+for+more+efficient+network+management.+But+while+it%E2%80%99s+important+for+services+to+be+reliable+in+the+IT+world%2C+the+stakes+are+higher+in+telecommunications+%5B%26hellip%3B%5D&source=Telecoms.com" class="share-linkedin" title="share"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+					<li>
+						<a href="#" data-url="http://telecoms.com/intelligence/building-the-carrier-grade-nfv-infrastructure/" class="share-facebook" title="share"><i class="fa fa-facebook-square"></i></a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Ftelecoms.com%2Fintelligence%2Fbuilding-the-carrier-grade-nfv-infrastructure%2F" class="share-google" title="share"><i class="fa fa-google-plus-square"></i></a>
+					</li>
+				</ul>
+			</div>
+		</span>	
+	</li>
+														<li class="post-date">12 May 2015</li>
+						</ul>
+					</div>
+				</div>
+				<!-- content -->
+									<hr />
+				
+				
+			</div>	
+
+		</div>
+	</div>
+</article>
+
+
+			<article class="row events-snippet">
+	<div class="columns small-12">
+
+		<div class="tab-box right">
+			<div class="tab-title left">
+				<h3>Events</h3>
+			</div>
+
+			<div class="view-all left">
+				<span><a href="/resource-centre/events">View all</a></span>
+			</div>
+
+			<div class="tab-content left">
+
+								
+				
+					
+					
+						<!-- content -->
+						<div class="inner-list left">
+							<div class="events-thumb left">
+								<a href="http://telecoms.com/resource-centre/view/next-generation-service-platforms-webrtc-telecom-apis/" title="Learn More">
+																			<img width="130" height="65" src="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/NGSPlogo-360x1801-130x65.jpg" class="attachment-rc_small wp-post-image" alt="NGSPlogo-360x180" />																	</a>	
+							</div>
+							
+							<div class="content-wrap left">
+								<ul class="event-list">
+									<li><h4><a href="http://telecoms.com/resource-centre/view/next-generation-service-platforms-webrtc-telecom-apis/" title="Learn More">Next Generation Service Platforms &#8211; WebRTC &#038; Telecom APIs</a></h4></li>
+									<li><strong>16-18 June 2015</strong></li>
+									<li class="learn-more"><a href="http://telecoms.com/resource-centre/view/next-generation-service-platforms-webrtc-telecom-apis/" title="Learn More">View Event</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- content -->
+						
+													<hr>
+						
+						
+					
+						<!-- content -->
+						<div class="inner-list left">
+							<div class="events-thumb left">
+								<a href="http://telecoms.com/resource-centre/view/fit-for-purpose-networks/" title="Learn More">
+																	</a>	
+							</div>
+							
+							<div class="content-wrap left">
+								<ul class="event-list">
+									<li><h4><a href="http://telecoms.com/resource-centre/view/fit-for-purpose-networks/" title="Learn More">Fit for Purpose Networks</a></h4></li>
+									<li><strong>17-18 June 2015</strong></li>
+									<li class="learn-more"><a href="http://telecoms.com/resource-centre/view/fit-for-purpose-networks/" title="Learn More">View Event</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- content -->
+						
+													<hr>
+						
+						
+					
+						<!-- content -->
+						<div class="inner-list left">
+							<div class="events-thumb left">
+								<a href="http://telecoms.com/resource-centre/view/wdm-silicon-photonics-focus/" title="Learn More">
+																			<img width="130" height="59" src="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/WDM-logo-130x59.jpg" class="attachment-rc_small wp-post-image" alt="WDM logo" />																	</a>	
+							</div>
+							
+							<div class="content-wrap left">
+								<ul class="event-list">
+									<li><h4><a href="http://telecoms.com/resource-centre/view/wdm-silicon-photonics-focus/" title="Learn More">WDM &#8211; Next Generation Optical Networking</a></h4></li>
+									<li><strong>22-25 June 2015</strong></li>
+									<li class="learn-more"><a href="http://telecoms.com/resource-centre/view/wdm-silicon-photonics-focus/" title="Learn More">View Event</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- content -->
+						
+						
+						
+					
+				
+			</div>	
+
+		</div>
+	</div>
+</article>
+									<article class="row insights-snippet polls">
+	<div class="columns small-12">
+		<div class="tab-box right">
+			<div class="tab-title left">
+				<h3>Polls</h3>
+			</div>
+			<div class="view-all left">
+				<span><a href="/polls">View all</a></span>
+			</div>
+			
+			<div class="tab-content left">							
+				<!-- content -->
+				<div class="inner-list left">
+					<div id="polls-92" class="wp-polls">
+	<form id="polls_form_92" class="wp-polls-form" action="/index.php" method="post">
+		<p style="display: none;"><input type="hidden" id="poll_92_nonce" name="wp-polls-nonce" value="7e4e1a7856" /></p>
+		<p style="display: none;"><input type="hidden" name="poll_id" value="92" /></p>
+		<p style="text-align: center;"><strong>What do you most associate with the Internet of Things?</strong></p><div id="polls-92-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+		<li><input type="radio" id="poll-answer-512" name="poll_92" value="512" /> <label for="poll-answer-512">Smartphones, tablets and wearable tech</label></li>
+		<li><input type="radio" id="poll-answer-522" name="poll_92" value="522" /> <label for="poll-answer-522">Home automation</label></li>
+		<li><input type="radio" id="poll-answer-532" name="poll_92" value="532" /> <label for="poll-answer-532">Connected cars</label></li>
+		<li><input type="radio" id="poll-answer-542" name="poll_92" value="542" /> <label for="poll-answer-542">Smart cities</label></li>
+		<li><input type="radio" id="poll-answer-552" name="poll_92" value="552" /> <label for="poll-answer-552">Sensors</label></li>
+		<li><input type="radio" id="poll-answer-562" name="poll_92" value="562" /> <label for="poll-answer-562">RFID and tracking technology</label></li>
+		<li><input type="radio" id="poll-answer-572" name="poll_92" value="572" /> <label for="poll-answer-572">Machine generated big data</label></li>
+		</ul><p style="text-align: center;"><input type="button" name="vote" value="   Vote   " class="Buttons" onclick="poll_vote(92);" onkeypress="poll_result(92);" /></p>
+<!--<p style="text-align: center;"><a href="#ViewPollResults" onclick="poll_result(92); return false;" onkeypress="poll_result(92); return false;" title="View Results Of This Poll">View Results</a></p>-->
+</div>
+	</form>
+</div>
+<div id="polls-92-loading" class="wp-polls-loading"><img src="http://telecoms.com/wp-content/plugins/wp-polls/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="wp-polls-image" />&nbsp;Loading ...</div>
+			
+				</div>
+				<!-- content -->
+			</div>	
+
+		</div>
+
+	</div>
+</article>			
+			
+<article class="row insights-snippet twitter">
+	<div class="columns small-12"><div class="tab-box right">
+		<div class="tab-title left">
+			<h3>Twitter</h3>
+		</div>
+		<div class="view-all left">
+			<span><a href="http://twitter.com/telecoms">View all</a></span>
+		</div>
+		
+		<div class="tab-content left">							
+			<!-- content -->
+			<div class="inner-list left">
+									<div class="tweet row">
+						<div class="large-3 columns hide-for-small-only hide-for-medium-only"><img src="http://pbs.twimg.com/profile_images/487238555907813376/TC6bOjYb_normal.jpeg" alt="telecoms"></div>
+						<div class="small-12 large-9 columns">
+							<p>
+								CTOs call for improved industry cooperation over <a href="https://twitter.com/search?q=%235G">#5G</a> <a href="http://t.co/4i4WRo2EWs">http://t.co/4i4WRo2EWs</a> <a href="https://twitter.com/search?q=%23networks">#networks</a> <a href="https://twitter.com/search?q=%23ee">#ee</a> <a href="https://twitter.com/search?q=%23huawei">#huawei</a> <a href="https://twitter.com/search?q=%23icc2015">#icc2015</a> <a href="https://twitter.com/search?q=%23qualcomm">#qualcomm</a><br>
+								<small class="timestamp">10 June 2015 @ 12:33:47 UTC</small>
+							</p>
+						</div>
+						
+					</div>
+									<div class="tweet row">
+						<div class="large-3 columns hide-for-small-only hide-for-medium-only"><img src="http://pbs.twimg.com/profile_images/487238555907813376/TC6bOjYb_normal.jpeg" alt="telecoms"></div>
+						<div class="small-12 large-9 columns">
+							<p>
+								<a href="https://twitter.com/search?q=%23Vodafone">#Vodafone</a> launches home #<a href="https://twitter.com/search?q=%23broadband">#broadband</a> in belated <a href="https://twitter.com/search?q=%23multiplay">#multiplay</a> move <a href="http://t.co/kx1Kbg5koA">http://t.co/kx1Kbg5koA</a> <a href="https://twitter.com/search?q=%23contentapplications">#contentapplications</a> <a href="https://twitter.com/search?q=%23lte">#lte</a><br>
+								<small class="timestamp">10 June 2015 @ 12:33:47 UTC</small>
+							</p>
+						</div>
+						
+					</div>
+								</div>
+			</div>
+		</div>
+	</div>		
+</article>
+				
+			<div class="advert mpu-3-generic">
+
+			
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p><script type='text/javascript'><!--//<![CDATA[
+					var m3_u = (location.protocol=='https:'?'https://servedby.informatm.com/ajs.php':'http://servedby.informatm.com/ajs.php');
+					var m3_r = Math.floor(Math.random()*99999999999);
+					if (!document.MAX_used) document.MAX_used = ',';
+					document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					document.write ("?zoneid=1476");
+					document.write ("&amp;tags=mvno%2Csamba-mobile%2Cuk");
+document.write ('&amp;cb=' + m3_r);
+					if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+					document.write ("&amp;loc=" + escape(window.location));
+					if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					if (document.context) document.write ("&#038;context=" + escape(document.context));
+					if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					document.write ("'></scr"+"ipt>");
+				//]]&gt;--></script><br />
+				<noscript><a href='http://servedby.informatm.com/ck.php?n=a16f8c71&amp;cb=1427369224476 target='_blank'><br />
+					<img src='http://servedby.informatm.com/avw.php?zoneid=1476&amp;cb=1427369224476&amp;n=a16f8c71' border='0' alt='' /></a><br />
+				</noscript></p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+
+			</div>
+
+			
+				
+			<div class="advert mpu-4-homepage">
+
+			
+<!-- BEGIN Microdata added by Add-Meta-Tags WordPress plugin -->
+<!-- Scope BEGIN: Article -->
+<div itemscope itemtype="http://schema.org/Article" itemref="comments">
+<!-- Scope BEGIN: Organization -->
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="Telecoms.com" />
+<meta itemprop="description" content="The leading provider of global news, comment and analysis for the telecommunications industry" />
+<meta itemprop="logo" content="http://telecoms.com/wp-content/blogs.dir/1/files/2015/01/telecoms-200-200.png" />
+<meta itemprop="url" content="http://telecoms.com/" />
+</span> <!-- Scope END: Organization -->
+<!-- Scope BEGIN: Person -->
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Dawinderpal Sahota" />
+<meta itemprop="description" content="Dawinderpal Sahota is senior staff writer on telecoms.com | Follow him @telecomssahota" />
+<meta itemprop="image" content="http://www.gravatar.com/avatar/c58935176c2ef177c694ee3e044c8a56?s=128" />
+<meta itemprop="url" content="http://telecoms.com/author/dawindersahota/" />
+</span> <!-- Scope END: Person -->
+<meta itemprop="url" content="http://telecoms.com/253092/samba-mobile-closes-down/" />
+<meta itemprop="datePublished" content="2014-04-28T14:59:03+00:00" />
+<meta itemprop="dateModified" content="2015-01-10T13:46:58+00:00" />
+<meta itemprop="copyrightYear" content="2014" />
+<meta itemprop="inLanguage" content="en_GB" />
+<meta itemprop="name" content="Samba Mobile closes down" />
+<meta itemprop="headline" content="Samba Mobile closes down" />
+<meta itemprop="description" content="UK MVNO Samba Mobile has closed down its business due to unsustainable mobile data costs. The service launched in July 2012 offering subscribers free mobile data usage in return for viewing adverts and ran on 3UK’s mobile network. It&#039;s a business model several have tried and none have yet succeeded with." />
+<meta itemprop="articleSection" content="Operator" />
+<meta itemprop="keywords" content="operator, mvno, samba mobile, uk, eastern europe, western europe" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<!-- Scope BEGIN: ImageObject -->
+<span itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+<meta itemprop="name" content="sorry_we_are_closed" />
+<meta itemprop="url" content="http://telecoms.com/29907/google-in-spat-with-taiwanese-government/sorry_we_are_closed/" />
+<meta itemprop="thumbnailUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-150x150.jpg" />
+<meta itemprop="contentUrl" content="http://telecoms.com/wp-content/blogs.dir/1/files/2011/06/sorry_we_are_closed-300x300.jpg" />
+<meta itemprop="width" content="300" />
+<meta itemprop="height" content="300" />
+<meta itemprop="encodingFormat" content="image/jpeg" />
+<meta itemprop="caption" content="Samba Mobile has announced that it has closed down its business due to unsustainable mobile data costs" />
+</span> <!-- Scope END: ImageObject -->
+<div itemprop="articleBody">
+<p><script type='text/javascript'><!--//<![CDATA[
+					var m3_u = (location.protocol=='https:'?'https://servedby.informatm.com/ajs.php':'http://servedby.informatm.com/ajs.php');
+					var m3_r = Math.floor(Math.random()*99999999999);
+					if (!document.MAX_used) document.MAX_used = ',';
+					document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					document.write ("?zoneid=1470");
+					document.write ("&amp;tags=mvno%2Csamba-mobile%2Cuk");
+document.write ('&amp;cb=' + m3_r);
+					if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+					document.write ("&amp;loc=" + escape(window.location));
+					if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					if (document.context) document.write ("&#038;context=" + escape(document.context));
+					if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					document.write ("'></scr"+"ipt>");
+				//]]&gt;--></script><br />
+				<noscript><a href='http://servedby.informatm.com/ck.php?n=aaad2f89&amp;cb=1426249899166 target='_blank'><br />
+					<img src='http://servedby.informatm.com/avw.php?zoneid=1470&amp;cb=1426249899166&amp;n=aaad2f89' border='0' alt='' /></a><br />
+				</noscript></p>
+
+</div> <!-- Itemprop END: articleBody -->
+</div> <!-- Scope END: Article -->
+<!-- END Microdata added by Add-Meta-Tags WordPress plugin -->
+
+			</div>
+
+			
+			</div>
+		</div><!-- END ROW -->	
+
+	</div>	
+</div>
+	</div>
+
+
+			</div>
+		</section><!-- END ROW -->
+
+  	</div><!-- END INNER WRAP -->
+</div> <!--off-canvas-wrap -->
+
+
+<footer>
+	<div class="row">
+		<div class="columns small-12">
+			<hr class="footer-border" />
+			<section class="row">
+				<div class="columns small-6">
+					<a href="http://telecoms.com" title=""><img src="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/dummy/tcoms-logo-sm.png" alt="telecoms.com logo" class="ft-telecoms" width="125" height="36" /></a>
+				</div>
+				<div class="columns small-6">
+					<a href="http://informatandm.com" title="Informa Telecoms &amp; Media"><img src="http://telecoms.com/wp-content/themes/telecoms.com/assets/images/dummy/itm-sm.png" alt="Informa Telecoma and Media logo" class="ft-itm" width="91" height="32" /></a>
+				</div>
+			</section><!-- END ROW -->
+			<section class="row">
+				<div class="columns small-12 footer-address" itemscope itemtype="http://schema.org/Organization">
+					<i class="fa fa-map-marker"></i> Address: 
+					<span itemprop="name">Telecoms.com</span>, 
+						<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="streetAddress">Mortimer House, 37-41 Mortimer Street</span>  <span itemprop="addressLocality">London</span> <span itemprop="addressRegion">UK</span>, W1T 3JH
+						</span>
+				</div>
+				<div class="columns small-12">
+					<ul class="no-bullet display-inline footer-links">
+						<li>&copy;Telecoms.com 2015. All rights reserved.</li>
+						<li><a href="/privacy-policy/" title="Privacy Policy">Privacy &amp; Cookies</a></li>
+						<li><a href="/about-us/" title="About Us">About Us</a></li>
+						<li><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+					</ul>
+				</div>
+			</section><!-- END ROW -->
+		</div>
+	</div><!-- END ROW -->	
+</footer>
+
+
+
+
+<script type='text/javascript' src='http://telecoms.com/wp-content/plugins/akismet/_inc/form.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"http:\/\/telecoms.com\/wp-admin\/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+var rllArgs = {"script":"nivo_lightbox","selector":"lightbox","custom_events":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://telecoms.com/wp-content/themes/telecoms.com/assets/scripts/min/vendor.min.js'></script>
+<script type='text/javascript' src='http://telecoms.com/wp-content/themes/telecoms.com/assets/scripts/min/core.min.js'></script>
+		<script>window.twttr = (function (d, s, id) {
+			var t, js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src= "https://platform.twitter.com/widgets.js";
+			fjs.parentNode.insertBefore(js, fjs);
+			return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+		}(document, "script", "twitter-wjs"));</script>
+			<div id="fb-root"></div>
+		<script>
+				window.fbAsyncInit = function() {
+					FB.init({
+						appId      : '730412467030748',
+						xfbml      : true,
+						version    : 'v2.1'
+					});
+				};
+
+				(function(d, s, id){
+					 var js, fjs = d.getElementsByTagName(s)[0];
+					 if (d.getElementById(id)) {return;}
+					 js = d.createElement(s); js.id = id;
+					 js.src = "//connect.facebook.net/en_US/sdk.js";
+					 fjs.parentNode.insertBefore(js, fjs);
+				 }(document, 'script', 'facebook-jssdk'));
+			</script>
+			<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-7933300-3', 'auto');
+			ga('send', 'pageview');
+							ga('set', '&uid', 0);
+					</script>
+			<div class="footer-popup-holder">
+			<div class="footer-popup" id="cookie-notice">
+				<div class="row">
+					<div class="small-11 columns">
+						Websites are now required by law to gain your consent before applying cookies. We use cookies to improve your 
+						browsing experience. Parts of the website may not work as expected without them. By closing or ignoring this 
+						message, you are consenting to our use of cookies.
+					</div>
+					<div class="small-1 columns">
+						<a href="#" class="close">X</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function () {
+				if($.cookie('panel_cookie')) {
+					$('#cookie-notice').hide();
+				} else {
+					$(function() {
+							$(window).ready(function(){
+								 $('#cookie-notice').stop(true).animate({'bottom':'0'},300);
+							});
+							$('#cookie-notice .close').bind('click',function(){
+									$('#cookie-notice').stop(true).animate({'bottom':'-90px'},300, function(){
+										$.cookie('panel_cookie', 'closed', { expires: 365, path: '/', domain: 'telecoms.com' });  
+											$('#cookie-notice').hide();
+									});
+									return false;
+							});
+					});
+				} 
+			});
+		</script>
+			<script>
+		$(document).on('ready', function () {
+			if (typeof $.cookie('PHPSESSID') != 'undefined') {
+				$.cookie('PHPSESSID', '', {expires: -1, path: '/'});
+			}			
+							for (var key in $.cookie()) {
+					if (key.search(/^(wp-|wordpress_)/i) === 0) {
+						$.cookie(key, '', {expires: -1, path: '/'});
+					}
+				}
+					});
+		</script>
+	
+</body>
+
+<!--Served from wp4-->
+
+</html>

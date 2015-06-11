@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=75ff60d174af47d7ea271d82d4fe1151"></script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+     Theme: The Minimalist v1.
+     Design: The Minimalist (http://minimalist.co)
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+     <title>Dodd's Blog | Learn by Shipping: Lessons Learned From My Money...</title>	
+     <meta name="description" content="Learn by Shipping: Lessons Learned From My Money Losing Startup This isn&#039;t a postmortem. Bellstrike, isn&rsquo;t dead or dying. We have a great product (we let nonprofits set up attractive, donation-enabled..." />
+     <meta name="if:Show description" content="1" />	
+     <meta name="if:Show search" content="1" />
+     <meta name="text:Twitter name" content="" />
+     <meta name="text:Disqus Shortname" content="" />
+     <meta name="text:Google Analytics ID" content="" />	
+     <style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://33.media.tumblr.com/avatar_fa28abd723a5_128.png" />
+     <link rel="alternate" type="application/rss+xml" title="Dodd's Blog" href="http://blog.doddcaldwell.com/rss" />
+
+<!-- Styles -->
+
+<link rel="stylesheet" href="http://static.tumblr.com/f1whv92/Mp9l6ewcg/reset.css" />
+<style type="text/css">
+
+/*----- GENERAL -----*/
+
+     header, footer, section, article, nav, aside {
+        display: block;
+     }
+
+     body {
+        background: #ffffff;
+        color: #222;
+        font: 14px/20px Georgia, "Times New Roman", Times, serif;
+        padding-top: 25px;
+        text-align: center;
+        width:500px;
+        margin: 0 auto;
+     }
+
+     h1, h2, h3, hQ {
+        font-family: Cufon;
+     }
+
+     h1 {
+        font-size: 50px;
+        line-height: 50px;
+     }
+
+     h2 {
+        font-size: 31px;
+        line-height: 37px; 
+     }
+
+     h3 {
+        font-size: 21px;
+        line-height: 27px; 
+     }
+
+     a:link, a:visited {
+        color: #222222;
+        font-weight: bold;
+        text-decoration: underline;
+     }
+     
+     a:hover, a:active {
+        text-decoration: underline;
+     }
+
+     hr{
+        border:0 #ccc solid;
+        border-top-width:1px;
+        clear:both;
+        height:0;
+     }
+
+     ol{list-style:decimal}
+
+     ul{list-style:disc}
+
+     li{margin-left:30px}
+
+     p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:15px}
+
+     #main {
+        padding: 0px;
+     }
+
+/*----- MASTHEAD -----*/
+
+     .noMeta > div {
+        padding: 0px;
+     }
+
+     #masthead {
+        margin-bottom: 0px;
+     }
+
+     #masthead h1 {
+        margin-bottom: 0;
+     }
+
+     #masthead h1 a:link, #masthead h1 a:visited {
+        text-transform: Uppercase;
+        color: #000000;
+        text-decoration: underline;
+     }
+
+     #masthead h1 a:active {
+        text-decoration: underline;
+     }
+
+     #masthead p {
+        font-family: Georgia, serif;
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 0;
+     }
+
+     #masthead a:link, #masthead a:visited {
+        color: #000000;
+        text-decoration: underline;
+     }
+     
+     #masthead #siteDescription a:link,
+     #masthead #siteDescription a:link {
+
+         color: #bca474 !important;
+     }
+
+     #siteDescription{
+        font-size: 13px;
+        color: #222;
+        text-transform: Uppercase;
+        border-top: 1px solid #222;
+        margin-top: 20px;
+        margin-bottom: -5px;
+        padding: 15px 0 0 0;
+        font-family: Cufon;
+     }
+
+/*----- SEARCH FORM -----*/
+
+     #frmSearch {
+        padding-top: 20px; 
+        display: none;
+     }
+
+     #txtSearch {
+        background: url(http://static.tumblr.com/bpryy0m/6lRl6gmys/search.jpg) left no-repeat;
+        width: 225px;
+        padding: 2px 0 0 20px;
+        font: 12px/12px Georgia, "Times New Roman", Times, serif;
+        color: #222;
+        border: 0px;
+     }
+
+/*----- MAIN HEADER NAV STRIP -----*/
+
+     #mainNav {
+        border-top: 1px solid #222;
+        border-bottom: 2px solid #222;
+        margin-top: 20px;
+        padding: 15px;
+        font-family: Cufon;
+     }
+
+     #mainNav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+     }
+
+     #mainNav li {
+        margin: 5px;
+        display: inline;
+        padding: 0;
+     }
+
+     #mainNav a:link, #mainNav a:visited {
+        padding: 0;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 2px;
+        text-decoration: none;
+        color: #222;
+        text-transform: Uppercase;
+     }
+
+     #mainNav a:hover, #mainNav a:active {
+        outline: none;
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+     }
+
+     #mainNav a.active {
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+     }
+
+/*----- ARTICLE META INFO -----*/
+
+     #designline {
+        margin-top: 50px;
+     }
+
+     h5{
+        position: relative;
+        top: -35px;
+        margin-bottom: 0px;
+        font-family: Georgia, serif;
+        font-size: 10px;
+        color: #bca474;
+        text-decoration: none;
+        text-transform: Uppercase;
+        font-weight: bold;
+        border-bottom: 1px solid #bca474;
+        background: #fff;
+     }
+
+     h5 a:link, .line a:visited{
+        font-family: Georgia, serif;
+        font-size: 10px;
+        color: #bca474;
+        text-decoration: none;
+        text-transform: Uppercase;
+        font-weight: bold;
+     }
+
+     h5 a:hover{
+        text-decoration: underline;
+     }
+
+     h5 abbr{
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 8px;
+        background: #fff;
+        top: 10px;
+     }
+
+     h5.postDate a{
+        color: #bca474;
+     }
+
+/*----- ARTICLE -----*/
+
+     article {
+        background: #fff;
+        margin-bottom: 20px;
+        text-align: left;
+       position: relative;
+      }
+
+     article img {
+        border: none;
+        margin-bottom: 15px;
+        max-width: 500px;
+     }
+
+     article p img {
+        margin: 0;
+     }
+     article > div {
+        padding: 0px;
+        overflow: hidden;
+     }
+     article .searchPage {
+        margin: 35px 0 0 0;
+     }
+
+     .searchPageText {
+        margin: 0 0 30px 0;
+     }
+
+     article .meta a:link, article .meta a:visited {
+        text-decoration: none;
+     }
+
+     article .meta a:hover, article .meta a:active {
+        text-decoration: underline;
+     }
+
+     article h2 {
+        text-align: center;
+        color: #222222;
+     }
+
+     article h2 a:link, article h2 a:visited {
+        text-transform: Uppercase;
+        color: #222;
+        text-decoration: none;
+     }
+
+     article h2 a:hover, article h2 a:active {
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+     }
+
+     blockquote {
+        border-left: 2px solid #bca474;
+        margin-left: 0;
+        padding-left: 1em;
+     }
+
+     #quoteSource{
+        margin: 0 auto;
+        text-align: left;
+     }
+
+     #quoteText h2 {
+        text-align: left;
+        color: #222222;
+     }
+
+     article .chat {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+     }
+
+     article .chat li {
+        margin: 0 0 2px;
+        padding: 2px 0 2px 0;
+     }
+
+     .photoCaption {
+        text-align: center;
+     }
+
+/*----- AUDIO PLAYER -----*/
+
+     .audio {
+        height: 28px;
+        width: 26px;
+        overflow: hidden;
+        margin: auto;
+        padding-top: 7px;
+     }
+
+     .audioc {
+        background-image:url('http://static.tumblr.com/f1whv92/9iCl6bfgp/audiocircle.png');
+        background-repeat: no-repeat; 
+        height: 41px;
+        width: 41px;
+     }
+
+     .audioCaption {
+        margin-top: 1px;
+     }
+
+     .audioleft {
+        width: 41px;
+        float: left;
+      }
+
+     .audioright {
+        width: 444px;
+        float: right;
+      }
+
+     .audioContainer {
+        margin-top: 5px;
+     }
+
+     .audioClear {
+        clear:both;
+     }
+
+/*----- ARTICLE NOTES -----*/
+
+     .notes {
+        border-top: 1px solid #bca474;
+        list-style: none;
+        padding: 20px 0 5px 0;
+        margin: 30px 0 0 0;
+     }
+     .notes li {
+        margin: 0;
+     }
+
+     .notes .avatar {
+        margin: 0 5px 0 0;
+        position: relative;
+        top: 5px;
+     }
+
+     .notes blockquote {
+        margin: 10px 0 0 35px;
+        padding-left: 10px;
+        border-left: 2px solid #222222;
+     }
+
+     .media {
+        width: 500px;
+        margin-bottom: 20px;
+     }
+
+/*----- PAGE NAVIGATION -----*/
+
+     #pageNav {
+        margin-top: 20px;
+        border-top: 1px solid #222;
+     }
+
+     #pageNav ul {
+        list-style: none;
+        padding: 10px 15px;
+        margin: 10px 0;
+     }
+
+     #pageNav li {
+        margin: 0;
+        display: inline;
+     }
+
+     #pageNav a:link, #pageNav a:visited {
+        font: 11px Georgia, "Times New Roman", Times, serif;
+        padding: 0;
+        margin: 0 2px;
+        background: #34hdf5;
+        color: #222;
+        text-decoration: none;
+     }
+
+     #pageNav a:hover, #pageNav a:active, #pageNav a.active:link, #pageNav a.active:visited {
+        text-decoration: underline;
+     }
+
+     #pageNavOlder:after {
+        content: " »";
+        font-size: 10px;
+     }
+
+     #pageNavNewer:before {
+        content: "« ";
+     }
+
+/*----- FOOTER META -----*/
+
+     #sitemeta {
+        border-top: 2px solid #222;
+        color: #222;
+        padding: 20px 0 32px 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 11px;
+     }
+
+     #sitemeta p {
+        margin: 0;
+     }
+
+     #sitemeta a:link, #sitemeta a:visited {
+        color: #222;
+        font-weight: bold;
+     }
+
+
+</style>
+
+<!-- Scripts -->
+
+<!--[if IE]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+     <script src="http://static.tumblr.com/q9z1v7k/dgEkijh8r/cufon-yui.js" type="text/javascript"></script>
+     <script src="http://static.tumblr.com/f1whv92/fgIl65bo1/cufon_300.font.js" type="text/javascript"></script>
+
+     <script type="text/javascript">
+        Cufon.replace('h1',{ fontFamily: "Cufon" });
+        Cufon.replace('h2',{ fontFamily: "Cufon" });
+        Cufon.replace('h3',{ fontFamily: "Cufon" });
+        Cufon.replace('#mainNav',{ fontFamily: "Cufon" });
+        Cufon.replace('#siteDescription',{ fontFamily: "Cufon" });
+     </script>
+
+<script>
+     $(function() {
+        var search = $("#txtSearch").val();
+        var placeholder = "Search...";
+        var fadeToOpacity = 0.4;
+        $("#txtSearch").fadeTo("normal", fadeToOpacity);
+        if (search == "") {
+     $("#txtSearch").val(placeholder);
+     }
+     $("#txtSearch").blur(function() {
+        search = $("#txtSearch").val();
+        if (!(search != "" && search != placeholder)) {
+        $("#txtSearch").val(placeholder);
+     }
+     $("#txtSearch").fadeTo("normal", fadeToOpacity);
+     });
+     $("#txtSearch").focus(function() {
+        search = $("#txtSearch").val();
+        if (search == placeholder) {
+        $("#txtSearch").val("");
+     }
+     $("#txtSearch").fadeTo("normal", 1);
+     });
+     $("#btnSearch").click(function() {
+     $("#frmSearch").slideToggle("normal");
+     $(this).toggleClass("active");
+ //  $("#txtSearch").focus();
+     });
+     });
+</script>
+
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=doddcaldwell%26postID=25472858251" />
+<link rel="alternate" type="application/json+oembed" href="http://www.tumblr.com/oembed/1.0?url=http://blog.doddcaldwell.com/post/25472858251/lessons-learned-from-self-funded-startup" title="Learn by Shipping: Lessons Learned From My Money Losing Startup
+This isn&#039;t a postmortem. Bellstrike, isn&rsquo;t dead or dying. We have a great product (we let nonprofits set up attractive, donation-enabled websites in about 1-2 minutes,) but it&rsquo;s not..."/>
+<script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=a4169182721d644dacd145af89115b95"></script>
+
+<link rel="stylesheet" type="text/css" href="http://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3">
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+<meta name="keywords" content="startups" />
+
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="" /><meta property="og:title" content="Learn by Shipping: Lessons Learned From My Money Losing Startup" /><meta property="og:url" content="http://blog.doddcaldwell.com/post/25472858251/lessons-learned-from-self-funded-startup" /><meta property="og:description" content="This isn&#039;t a postmortem. Bellstrike, isn&rsquo;t dead or dying. We have a great product (we let nonprofits set up attractive, donation-enabled websites in about 1-2 minutes,) but it&rsquo;s not profitable. I&rsquo;ve..." /><meta property="og:determiner" content="a" /><meta property="og:type" content="tumblr-feed:entry" /><meta property="og:image" content="http://bellstrike.com.s3.amazonaws.com/blog/images/MoonClerk%20Logo%20Color.jpg" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=doddcaldwell&amp;postID=25472858251" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=doddcaldwell&amp;postID=25472858251" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary" /><meta name="twitter:description" content="This isn&#039;t&nbsp; a postmortem. Bellstrike, isn&amp;rsquo;t dead or dying. We have a great product (we let nonprofits set up attractive, donation-enabled websites in about 1-2 minutes,) but it&amp;rsquo;s not profitable. I&amp;rsquo;ve lost a lot of money. But I shipped. And by shipping I learned. I learned why some ventures lose money and why you shouldn&amp;rsquo;t always be upset about it.
+ Why My Startup Is Losing Money:
+ 1) It&amp;rsquo;s scratching an itch that a market doesn&amp;rsquo;t care much about scratching
+ Before I launched Bellstrike in September, I talked to a lot of small nonprofits. Most said they would use Bellstrike. Then they didn&amp;rsquo;t. In retrospect, I realize I got a lot of false positives. I remember having to convince many of them why they actually needed a website. I&amp;rsquo;m pretty sure that&amp;rsquo;s not good.
+ There&amp;rsquo;s a reason many small nonprofits are small - they don&amp;rsquo;t raise a lot of money. Since my revenue is based on donations, (we have free signup and take a cut of donations, capping our fees every month) that&amp;rsquo;s a bummer. Some of them don&amp;rsquo;t have the desire to grow, some don&amp;rsquo;t have the time or resources, and some don&amp;rsquo;t have the skills. Having a website that makes it easy to donate only provides the platform, not the donations. It&amp;rsquo;s still up to the nonprofit to promote their site.
+ Additionally, many of the nonprofits that have the ability to raise a good bit of money have custom desires, meaning that they want all kinds of custom stuff on their website. If they want to do a lot of custom stuff, they&amp;rsquo;re probably better off going with something more robust like Wordpress. I&amp;rsquo;ve tried to create a Carbonmade for nonprofits. I&amp;rsquo;m still not sure how Carbonmade pulls it off - creating websites with limited customization but that work for their target audience.
+ 2) I haven&amp;rsquo;t found a profitable, replicable, and scalable way to pick up customers
+ The goal is to pay &#36;X to pick up a customer and get &#36;Y in lifetime revenue from that customer where Y &amp;gt; (X + our other costs). Some people call that a &amp;ldquo;profit&amp;rdquo;. I&amp;rsquo;ve heard it&amp;rsquo;s beneficial if you can repeat this process. I&amp;rsquo;ve tried a lot of methods to make that happen but haven&amp;rsquo;t found anything that&amp;rsquo;s remotely promising. I&amp;rsquo;ve tried paid sponsorships, pay-per-click advertising (on my own and hiring it out), traditional advertising, all kinds of SEO stuff I&amp;rsquo;ve read in books, social media stuff everyone talks about, contests, guest blog posts, online display advertising, A/B testing, referral incentives, PR, and even some callouts. So far, the best avenue has just been word of mouth.
+ 3) There&amp;rsquo;s a long lag (usually infinite) between customer acquisition and customer revenue
+ We&amp;rsquo;ve had 1152 signups (not all are legit.) Of those signups, 45 nonprofits have received donations (1,467 donations totaling more than &#36;110,000.) I&amp;rsquo;ll let you do the math on where that leaves my revenue. Of the nonprofits that have raised money, there is generally a long lag (months) between when they sign up and when they upload content to their website. Then there&amp;rsquo;s a lag between when they upload content and when they promote the site and receive donations.
+ Why I&amp;rsquo;m Not Upset That It&amp;rsquo;s Losing Money:
+ 1) Shipping Itself is an Accomplishment
+ A lot of people have ideas but never start. Even fewer ship after starting. I shipped Bellstrike. Before I started, I didn&amp;rsquo;t know the difference between CSS and HTML. While I&amp;rsquo;m still not a developer, I know enough not to be a clueless CEO. I learned how to design software that&amp;rsquo;s easy for non-technical people to use. I learned how to work with developers and designers. I learned what mistakes I don&amp;rsquo;t want to repeat. I learned that making good software is hard. And I learned that I like it.
+ 1) &amp;ldquo;Failure isn&amp;rsquo;t a title but a process&amp;rdquo; *
+ Even though Bellstrike isn&amp;rsquo;t profitable, it continues to pick up new nonprofits and revenue continues to grow, mostly through word of mouth. We&amp;rsquo;ve got some incredible customers. My costs are way less now that we&amp;rsquo;ve developed a solid feature set and aren&amp;rsquo;t investing as much into more features. I&amp;rsquo;m in the fortunate position to be able to afford the maintenance costs, hosting, etc. I&amp;rsquo;m also passionate about helping nonprofits so I have no plans to abandon it. Though Bellstrike won&amp;rsquo;t ever make me millions, over time it has potential to be a profitable, though not huge, venture.
+ 3) Adversity can inspire new ventures
+ When we were developing the recurring donation feature for Bellstrike, I learned a lot about the recurring payments industry. Not just for nonprofits, but for everybody. I learned that it&amp;rsquo;s really tricky and costly. If you&amp;rsquo;re not a developer, there aren&amp;rsquo;t really any good options out there. So, Ryan Wood, one of the developers at Bellstrike, and I are starting a new venture called MoonClerk.
+ 
+ Our tagline is &amp;ldquo;Recurring Payments for the Rest of Us.&amp;rdquo; We allow anyone, regardless of technical ability, to immediately start accepting recurring and one-time credit card payments for physical and digital products, services, and donations. We&amp;rsquo;re doing some cool stuff that hopefully solves some problems for a big market (you can read more on our website.) And, we&amp;rsquo;re actually going to be charging a monthly fee. No more freemium for me. We were accepted to The Iron Yard, a startup accelerator located in our amazing town, Greenville, SC. I would have never had the idea, know-how, or connections to build MoonClerk if I hadn&amp;rsquo;t first built Bellstrike.&nbsp;
+ 4) &amp;ldquo;Comparison is the thief of joy&amp;rdquo; **
+ I try not to compare my successes and failures to others. There are very few Instagrams or Airbnb&amp;rsquo;s. When I go around comparing myself to everyone else, I usually end up disappointed. Comparison is tempting though. I resist the temptation by thinking about all of the things in my life that are undeservedly, mind-blowingly awesome. The list is pretty long. And if you think about it, yours probably is too. &nbsp;
+ * Quote by @joshfraser
+ ** Quote by Theodore Roosevelt
+" /><meta name="twitter:title" content="Learn by Shipping: Lessons Learned From My Money Losing Startup" /><meta name="twitter:url" content="http://blog.doddcaldwell.com/post/25472858251/lessons-learned-from-self-funded-startup" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=doddcaldwell&amp;postID=25472858251&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=doddcaldwell&amp;postID=25472858251&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=doddcaldwell&amp;postID=25472858251&amp;referrer=twitter-cards" />
+
+<!-- GOOGLE CAROUSEL --><script type="application/ld+json">{"@type":"SocialMediaPosting","url":"http:\/\/blog.doddcaldwell.com\/post\/25472858251\/lessons-learned-from-self-funded-startup","mainEntityOfPage":true,"datePublished":"2012-06-20T15:59:00-04:00","author":"doddcaldwell","headline":"Learn by Shipping: Lessons Learned From My Money Losing Startup","articleBody":"This isn\u0027t a postmortem. Bellstrike, isn\u2019t dead or dying. We have a great product (we let nonprofits set up attractive, donation-enabled websites in about 1-2 minutes,) but it\u2019s not profitable. I\u2019ve lost a lot of money. But I shipped. And by shipping I learned. I learned why some ventures lose money and why you shouldn\u2019t always be upset about it.\nWhy My Startup Is Losing Money:\n1) It\u2019s scratching an itch that a market doesn\u2019t care much about scratching\nBefore I launched Bellstrike in September, I talked to a lot of small nonprofits. Most said they would use Bellstrike. Then they didn\u2019t. In retrospect, I realize I got a lot of false positives. I remember having to convince many of them why they actually needed a website. I\u2019m pretty sure that\u2019s not good.\nThere\u2019s a reason many small nonprofits are small - they don\u2019t raise a lot of money. Since my revenue is based on donations, (we have free signup and take a cut of donations, capping our fees every month) that\u2019s a bummer. Some of them don\u2019t have the desire to grow, some don\u2019t have the time or resources, and some don\u2019t have the skills. Having a website that makes it easy to donate only provides the platform, not the donations. It\u2019s still up to the nonprofit to promote their site.\nAdditionally, many of the nonprofits that have the ability to raise a good bit of money have custom desires, meaning that they want all kinds of custom stuff on their website. If they want to do a lot of custom stuff, they\u2019re probably better off going with something more robust like Wordpress. I\u2019ve tried to create a Carbonmade for nonprofits. I\u2019m still not sure how Carbonmade pulls it off - creating websites with limited customization but that work for their target audience.\n2) I haven\u2019t found a profitable, replicable, and scalable way to pick up customers\nThe goal is to pay $X to pick up a customer and get $Y in lifetime revenue from that customer where Y \u003E (X + our other costs). Some people call that a \u201cprofit\u201d. I\u2019ve heard it\u2019s beneficial if you can repeat this process. I\u2019ve tried a lot of methods to make that happen but haven\u2019t found anything that\u2019s remotely promising. I\u2019ve tried paid sponsorships, pay-per-click advertising (on my own and hiring it out), traditional advertising, all kinds of SEO stuff I\u2019ve read in books, social media stuff everyone talks about, contests, guest blog posts, online display advertising, A\/B testing, referral incentives, PR, and even some callouts. So far, the best avenue has just been word of mouth.\n3) There\u2019s a long lag (usually infinite) between customer acquisition and customer revenue\nWe\u2019ve had 1152 signups (not all are legit.) Of those signups, 45 nonprofits have received donations (1,467 donations totaling more than $110,000.) I\u2019ll let you do the math on where that leaves my revenue. Of the nonprofits that have raised money, there is generally a long lag (months) between when they sign up and when they upload content to their website. Then there\u2019s a lag between when they upload content and when they promote the site and receive donations.\nWhy I\u2019m Not Upset That It\u2019s Losing Money:\n1) Shipping Itself is an Accomplishment\nA lot of people have ideas but never start. Even fewer ship after starting. I shipped Bellstrike. Before I started, I didn\u2019t know the difference between CSS and HTML. While I\u2019m still not a developer, I know enough not to be a clueless CEO. I learned how to design software that\u2019s easy for non-technical people to use. I learned how to work with developers and designers. I learned what mistakes I don\u2019t want to repeat. I learned that making good software is hard. And I learned that I like it.\n1) \u201cFailure isn\u2019t a title but a process\u201d *\nEven though Bellstrike isn\u2019t profitable, it continues to pick up new nonprofits and revenue continues to grow, mostly through word of mouth. We\u2019ve got some incredible customers. My costs are way less now that we\u2019ve developed a solid feature set and aren\u2019t investing as much into more features. I\u2019m in the fortunate position to be able to afford the maintenance costs, hosting, etc. I\u2019m also passionate about helping nonprofits so I have no plans to abandon it. Though Bellstrike won\u2019t ever make me millions, over time it has potential to be a profitable, though not huge, venture.\n3) Adversity can inspire new ventures\nWhen we were developing the recurring donation feature for Bellstrike, I learned a lot about the recurring payments industry. Not just for nonprofits, but for everybody. I learned that it\u2019s really tricky and costly. If you\u2019re not a developer, there aren\u2019t really any good options out there. So, Ryan Wood, one of the developers at Bellstrike, and I are starting a new venture called MoonClerk.\nOur tagline is \u201cRecurring Payments for the Rest of Us.\u201d We allow anyone, regardless of technical ability, to immediately start accepting recurring and one-time credit card payments for physical and digital products, services, and donations. We\u2019re doing some cool stuff that hopefully solves some problems for a big market (you can read more on our website.) And, we\u2019re actually going to be charging a monthly fee. No more freemium for me. We were accepted to The Iron Yard, a startup accelerator located in our amazing town, Greenville, SC. I would have never had the idea, know-how, or connections to build MoonClerk if I hadn\u2019t first built Bellstrike.\n4) \u201cComparison is the thief of joy\u201d **\nI try not to compare my successes and failures to others. There are very few Instagrams or Airbnb\u2019s. When I go around comparing myself to everyone else, I usually end up disappointed. Comparison is tempting though. I resist the temptation by thinking about all of the things in my life that are undeservedly, mind-blowingly awesome. The list is pretty long. And if you think about it, yours probably is too.\n* Quote by @joshfraser\n** Quote by Theodore Roosevelt","@context":"http:\/\/schema.org"}</script>
+</head>
+<body>
+
+     <header id="masthead" class="clearfix">
+        <div id="thehead">          
+              <h1 class="cufon"><a href="/">Dodd's Blog</a></h1>
+              <form action="/search" method="get" id="frmSearch">
+              <input type="text" id="txtSearch" name="q" value="" />
+              </form>    
+
+     
+        <div id="siteDescription">I'm <a href="http://doddcaldwell.com" Title="Go to DoddCaldwell.com">Dodd Caldwell</a>.
+<br>I run <a href="http://moonclerk.com" Title="Go to MoonClerk: Recurring Payments for the Rest of Us">MoonClerk</a>, <a href="http://hungercrunch.com" Title="Go to HungerCrunch">Hunger Crunch</a>, <a href="http://loftresumes.com" Title="Go to Loft Resumes">Loft Resumes</a>, 
+</br>and  <a href="http://www.ricebowls.org" Title="Go to Rice Bowls: Fill Bowls, Fight Hunger">Rice Bowls</a>.
+<br>You can find me on <a href="http://twitter.com/doddcaldwell" Title="Go to twitter.com/doddcaldwell">Twitter</a>.</div>
+     
+
+           <nav id="mainNav">        
+              
+              
+                               
+              <li><a href="/archive">Archive</a></li>
+              <li><a href="/random">Random</a></li>
+              <li><a href="http://blog.doddcaldwell.com/rss">RSS</a></li>
+              <li><a href="javascript:;" id="btnSearch">Search</a></li>
+              
+           </nav>         
+        </div>
+     </header>
+
+     <section id="main" class="clearfix">
+     <div class="layout">           
+     
+      
+           
+
+
+     <div id="designline">
+        <h5 class="postDate">
+           <abbr><a href="http://blog.doddcaldwell.com/post/25472858251/lessons-learned-from-self-funded-startup">20th Jun 2012</a> | <a href="http://blog.doddcaldwell.com/post/25472858251/lessons-learned-from-self-funded-startup#notes">6 notes</a>
+           </abbr>
+        </h5>
+     </div>
+
+     <article>
+        <div>
+           
+              <h2><a href="http://blog.doddcaldwell.com/post/25472858251/lessons-learned-from-self-funded-startup">Learn by Shipping: Lessons Learned From My Money Losing Startup</a></h2>
+              <p>This isn't&nbsp; a postmortem. <a href="http://bellstrike.com" target="_blank">Bellstrike,</a> isn&rsquo;t dead or dying. We have a great product (we let nonprofits set up attractive, donation-enabled websites in about 1-2 minutes,) but it&rsquo;s not profitable. I&rsquo;ve lost a lot of money. But I shipped. And by shipping I learned. I learned why some ventures lose money and why you shouldn&rsquo;t always be upset about it.</p>
+<p><strong>Why My Startup Is Losing Money</strong>:</p>
+<p><strong>1) It&rsquo;s scratching an itch that a market doesn&rsquo;t care much about scratching</strong></p>
+<p>Before I launched Bellstrike in September, I talked to a lot of small nonprofits. Most said they would use Bellstrike. Then they didn&rsquo;t. In retrospect, I realize I got a lot of false positives. I remember having to convince many of them why they actually needed a website. I&rsquo;m pretty sure that&rsquo;s not good.</p>
+<p>There&rsquo;s a reason many small nonprofits are small - they don&rsquo;t raise a lot of money. Since my revenue is based on donations, (we have free signup and take a cut of donations, capping our fees every month) that&rsquo;s a bummer. Some of them don&rsquo;t have the desire to grow, some don&rsquo;t have the time or resources, and some don&rsquo;t have the skills. Having a website that makes it easy to donate only provides the platform, not the donations. It&rsquo;s still up to the nonprofit to promote their site.</p>
+<p>Additionally, many of the nonprofits that have the ability to raise a good bit of money have custom desires, meaning that they want all kinds of custom stuff on their website. If they want to do a lot of custom stuff, they&rsquo;re probably better off going with something more robust like Wordpress. I&rsquo;ve tried to create a <a href="http://carbonmade.com/" target="_blank">Carbonmade</a> for nonprofits. I&rsquo;m still not sure how Carbonmade pulls it off - creating websites with limited customization but that work for their target audience.</p>
+<p><strong>2) I haven&rsquo;t found a profitable, replicable, and scalable way to pick up customers</strong></p>
+<p>The goal is to pay <span>$X to pick up a customer and get $Y in lifetime revenue from that customer where Y &gt; (X + our other costs). Some people</span> call that a &ldquo;profit&rdquo;. I&rsquo;ve heard it&rsquo;s beneficial if you can repeat this process. I&rsquo;ve tried a lot of methods to make that happen but haven&rsquo;t found anything that&rsquo;s remotely promising. I&rsquo;ve tried paid sponsorships, pay-per-click advertising (on my own and hiring it out), traditional advertising, all kinds of SEO stuff I&rsquo;ve read in books, social media stuff everyone talks about, contests, guest blog posts, online display advertising, A/B testing, referral incentives, PR, and even some callouts. So far, the best avenue has just been word of mouth.</p>
+<p><strong>3) There&rsquo;s a long lag (usually infinite) between customer acquisition and customer revenue</strong></p>
+<p>We&rsquo;ve had 1152 signups (not all are legit.) Of those signups, 45 nonprofits have received donations (1,467 donations totaling more than $110,000.) I&rsquo;ll let you do the math on where that leaves my revenue. Of the nonprofits that have raised money, there is generally a long lag (months) between when they sign up and when they upload content to their website. Then there&rsquo;s a lag between when they upload content and when they promote the site and receive donations.</p>
+<p><strong>Why I&rsquo;m Not Upset That It&rsquo;s Losing Money:</strong></p>
+<p><strong>1) Shipping Itself is an Accomplishment</strong></p>
+<p>A lot of people have ideas but never start. Even fewer ship after starting. I shipped Bellstrike. Before I started, I didn&rsquo;t know the difference between CSS and HTML. While I&rsquo;m still not a developer, I know enough not to be a clueless CEO. I learned how to design software that&rsquo;s easy for non-technical people to use. I learned how to work with developers and designers. I learned what mistakes I don&rsquo;t want to repeat. I learned that making good software is hard. And I learned that I like it.</p>
+<p><strong>1) &ldquo;Failure isn&rsquo;t a title but a process&rdquo; *</strong></p>
+<p>Even though Bellstrike isn&rsquo;t profitable, it continues to pick up new nonprofits and revenue continues to grow, mostly through word of mouth. We&rsquo;ve got some incredible customers. My costs are way less now that we&rsquo;ve developed a solid feature set and aren&rsquo;t investing as much into more features. I&rsquo;m in the fortunate position to be able to afford the maintenance costs, hosting, etc. I&rsquo;m also passionate about helping nonprofits so I have no plans to abandon it. Though Bellstrike won&rsquo;t ever make me millions, over time it has potential to be a profitable, though not huge, venture.</p>
+<p><strong>3) Adversity can inspire new ventures</strong></p>
+<p>When we were developing the recurring donation feature for Bellstrike, I learned a lot about the recurring payments industry. Not just for nonprofits, but for everybody. I learned that it&rsquo;s really tricky and costly. If you&rsquo;re not a developer, there aren&rsquo;t really any good options out there. So, <a href="https://twitter.com/ryanwood" target="_blank">Ryan Wood</a>, one of the developers at Bellstrike, and I are starting a new venture called <a href="http://moonclerk.com" target="_blank">MoonClerk</a>.</p>
+<p><a href="http://moonclerk.com" target="_blank"><img src="http://bellstrike.com.s3.amazonaws.com/blog/images/MoonClerk%20Logo%20Color.jpg"></a></p>
+<p>Our tagline is &ldquo;Recurring Payments for the Rest of Us.&rdquo; We allow anyone, regardless of technical ability, to immediately start accepting recurring and one-time credit card payments for physical and digital products, services, and donations. We&rsquo;re doing some cool stuff that hopefully solves some problems for a big market (you can read more on our website.) And, we&rsquo;re actually going to be charging a monthly fee. No more freemium for me. We were accepted to <a href="http://theironyard.com/labs/" target="_blank">The Iron Yard</a>, a startup accelerator located in our amazing town, <a href="http://lifeingreenville.com/" target="_blank">Greenville, SC</a>. I would have never had the idea, know-how, or connections to build MoonClerk if I hadn&rsquo;t first built Bellstrike.&nbsp;</p>
+<p><strong>4) &ldquo;Comparison is the thief of joy&rdquo; **</strong></p>
+<p>I try not to compare my successes and failures to others. There are very few Instagrams or Airbnb&rsquo;s. When I go around comparing myself to everyone else, I usually end up disappointed. Comparison is tempting though. I resist the temptation by thinking about all of the things in my life that are undeservedly, mind-blowingly awesome. The list is pretty long. And if you think about it, yours probably is too. &nbsp;</p>
+<p>* Quote by @joshfraser</p>
+<p>** Quote by Theodore Roosevelt</p>
+<div></div>
+           
+          
+           
+          
+           
+          
+           
+
+                  
+          
+          
+
+          
+         
+          
+          
+          
+          
+          
+ 
+                    
+            
+          
+             <ol class="notes"><!-- START NOTES --><li class="note like tumblelog_nooneanythingelse without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://nooneanythingelse.tumblr.com/" title="No one " rel="nofollow"><img src="http://33.media.tumblr.com/avatar_9b9948616a73_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://nooneanythingelse.tumblr.com/" title="No one" rel="nofollow">nooneanythingelse</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_sweetio without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://sweetio.tumblr.com/" title="Sweet.io Blog " rel="nofollow"><img src="http://assets.tumblr.com/images/default_avatar_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://sweetio.tumblr.com/" title="Sweet.io Blog" rel="nofollow">sweetio</a> likes this</span><div class="clear"></div></li><li class="note like tumblelog_getonstage without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://getonstage.tumblr.com/" title="Get On Stage " rel="nofollow"><img src="http://38.media.tumblr.com/avatar_0775d3dc3fd5_16.png" class="avatar " alt="" /></a><span class="action"><a rel="nofollow" href="http://getonstage.tumblr.com/" title="Get On Stage" rel="nofollow">getonstage</a> likes this</span><div class="clear"></div></li><li class="note reblog tumblelog_monkeymace with_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://monkeymace.com/" title="Monkey Mace"><img src="http://38.media.tumblr.com/avatar_149e7f3a509a_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://monkeymace.com/post/25511676799"><a rel="nofollow" href="http://monkeymace.com/" class="tumblelog" title="Monkey Mace">monkeymace</a> reblogged this from <a rel="nofollow" href="http://blog.doddcaldwell.com/" class="source_tumblelog" title="Dodd&#039;s Blog">doddcaldwell</a> and added:</span><div class="clear"></div><blockquote><a rel="nofollow" href="http://monkeymace.com/post/25511676799" title="View post">I remember checking Bellstrike out a while back, and thinking that it was a cool service. But when I got to the pricing...</a></blockquote></li><li class="note reblog tumblelog_doddcaldwell original_post without_commentary"><a rel="nofollow" class="avatar_frame" target="_blank" href="http://blog.doddcaldwell.com/" title="Dodd&#039;s Blog"><img src="http://38.media.tumblr.com/avatar_fa28abd723a5_16.png" class="avatar " alt="" /></a><span class="action" data-post-url="http://blog.doddcaldwell.com/post/25472858251"><a rel="nofollow" href="http://blog.doddcaldwell.com/" class="tumblelog" title="Dodd&#039;s Blog">doddcaldwell</a> posted this</span><div class="clear"></div></li><!-- END NOTES --></ol>
+
+          
+          
+          
+ 
+        </div>
+     </article>
+
+
+     
+        <nav id="pageNav">
+           <ul class="clearfix">
+              <li><a href="http://blog.doddcaldwell.com/post/20238528691" id="pageNavNewer">Previous</a></li>
+              <li><a href="http://blog.doddcaldwell.com/post/42601300747" id="pageNavOlder">Next</a></li>  
+           </ul>
+        </nav>
+     
+      
+      
+      
+     
+     
+     </div><!-- END layout -->
+     </section>
+
+     <footer id="sitemeta">
+        <div class="clearfix">
+           <div class="thefooter">
+              <p><a href="http://www.tumblr.com/theme/12051">The Minimalist Theme</a> designed by <a href="http://minimalist.co">The Minimalist</a> | Powered by <a href="http://tumblr.com">Tumblr</a></p>
+           </div>
+        </div>
+     </footer>
+
+     
+        <script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try{var pageTracker=_gat._getTracker("UA-26957138-1");pageTracker._trackPageview()}catch(err){}</script>
+     
+
+<!-- BEGIN TUMBLR CODE --><iframe scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0; z-index:9999;" id="ga_target"></iframe><script type="text/javascript">
+    (function(){
+        var analytics_frame = document.getElementById('ga_target');
+        var analytics_iframe_loaded;
+        var user_logged_in;
+        var blog_is_nsfw = 'No';
+        var addthis_enabled = true;
+
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent,function(e) {
+            var message = (e.data && e.data.split) ? e.data.split(';') : '';
+            switch (message[0]) {
+                case 'analytics_iframe_loaded':
+                    analytics_iframe_loaded = true;
+                    postCSMessage();
+                    postGAMessage();
+                    postATMessage();
+                    break;
+                case 'user_logged_in':
+                    user_logged_in = message[1];
+                    postGAMessage();
+                    postATMessage();
+                    break;
+            }
+        }, false);
+
+        analytics_frame.src = "https://secure.assets.tumblr.com/analytics.html?f65f173ecd0610e1ad2f9930f8476598#" + 
+                              "http://blog.doddcaldwell.com";
+        function postGAMessage() {
+            if (analytics_iframe_loaded && user_logged_in) {
+                var is_ajax = false;
+                analytics_frame.contentWindow.postMessage(['tick_google_analytics', is_ajax, user_logged_in, blog_is_nsfw, '/post/25472858251/lessons-learned-from-self-funded-startup?route=%2Fpost%2F%3Aid%2F%3Asummary'].join(';'), analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+        function postCSMessage() {
+            COMSCORE = true;
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }
+        function postATMessage() {
+            if (addthis_enabled && analytics_iframe_loaded) {
+                analytics_frame.contentWindow.postMessage('enable_addthis', analytics_frame.src.split('/analytics.html')[0]);
+            }
+        }
+    })();
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017181&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5kb2RkY2FsZHdlbGwuY29tXC9wb3N0XC8yNTQ3Mjg1ODI1MVwvbGVzc29ucy1sZWFybmVkLWZyb20tc2VsZi1mdW5kZWQtc3RhcnR1cCIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5In0=&U=OALAFBOOPB&K=fc3c5446098f1620f3336cb496b8b2b387e2d969930242d35cd83ffb2dd5a547&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017181&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5kb2RkY2FsZHdlbGwuY29tXC9wb3N0XC8yNTQ3Mjg1ODI1MVwvbGVzc29ucy1sZWFybmVkLWZyb20tc2VsZi1mdW5kZWQtc3RhcnR1cCIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5Iiwibm9zY3JpcHQiOjF9&U=OALAFBOOPB&K=b4b749e36909ad0ccc78c7500985aa1606abd480da77f62f8c7fda19a63af1fe&R="></noscript><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><script type="text/javascript">!function(s){s.src='https://px.srvcs.tumblr.com/impixu?T=1434017181&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuZG9kZGNhbGR3ZWxsLmNvbVwvcG9zdFwvMjU0NzI4NTgyNTFcL2xlc3NvbnMtbGVhcm5lZC1mcm9tLXNlbGYtZnVuZGVkLXN0YXJ0dXAiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiIyNTQ3Mjg1ODI1MSIsImJsb2dpZCI6IjI4Nzc4MDkzIiwic291cmNlIjozM31dfQ==&U=JPECHICDGO&K=bb9d285e44c9e7b5c52fc28bf55a1abd83e2fc7e0fefb1d9aec321fd835216b6&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="https://px.srvcs.tumblr.com/impixu?T=1434017181&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cuZG9kZGNhbGR3ZWxsLmNvbVwvcG9zdFwvMjU0NzI4NTgyNTFcL2xlc3NvbnMtbGVhcm5lZC1mcm9tLXNlbGYtZnVuZGVkLXN0YXJ0dXAiLCJyZXF0eXBlIjowLCJyb3V0ZSI6IlwvcG9zdFwvOmlkXC86c3VtbWFyeSIsInBvc3RzIjpbeyJwb3N0aWQiOiIyNTQ3Mjg1ODI1MSIsImJsb2dpZCI6IjI4Nzc4MDkzIiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=JPECHICDGO&K=7a6a32d288db99c709d894e77ae8f0813b7f1c6ae47f035b0795031a0d347198&R="></noscript><script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapid-3.29.js?_v=eba0b54ceda4a58e0c1ee32920e5bc09"></script>
+<script src="http://assets.tumblr.com/assets/scripts/vendor/yahoo/rapidworker-1.2.js?_v=2c11d5915df4de9216a0aae5988fad84"></script>
+<script>
+                (function() {
+                    var YAHOO = window.YAHOO;
+                    if (YAHOO) {
+                        var keys = {
+                            pd:'/post/:id/:summary',
+                            _li:0,
+                            b_id:28778093,
+                            i_rad:0,
+                            i_strm:0,
+                            test_id:'OTHER',
+                            anon_id:''
+                        };
+                        var conf = {
+                            webworker_file:'/assets/scripts/vendor/yahoo/rapid-web-worker-1.2.js',
+                                                        spaceid:1197716038,
+                            client_only:1,
+                            keys:keys,
+                            nol:1,
+                            fpc:true
+                        };
+                        YAHOO.rapid = new YAHOO.i13n.Rapid(conf);
+                    }
+                })();
+            </script><script>
+        (function (w,d) {
+            'use strict';
+            var l = function(el, type, listener, useCapture) {
+                el.addEventListener ?
+                el.addEventListener(type, listener, !!useCapture) :
+                el.attachEvent && el.attachEvent('on' + type, listener, !!useCapture);
+            };
+            var a = function () {
+                                if (d.getElementById('tumblr-cdx')) {
+                    return;
+                }
+                var s = d.createElement('script');
+                var el = d.getElementsByTagName('script')[0];
+                s.async = true;
+                s.src = 'http://assets.tumblr.com/assets/scripts/vendor/cedexis/cedexis.radar.js?_v=055a4592665b07598b696d17aedf2778';
+                s.type = 'text/javascript';
+                s.id = 'tumblr-cdx';
+                d.body.appendChild(s);
+            };
+            l(w,'load',a);
+        }(window, document));
+</script><iframe id="tumblr_controls" class="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" src="https://secure.assets.tumblr.com/assets/html/iframe/o.html?_v=94a1c12c347bd23eb801dc09d87cefd0#src=http%3A%2F%2Fblog.doddcaldwell.com%2Fpost%2F25472858251%2Flessons-learned-from-self-funded-startup&amp;pid=25472858251&amp;rk=GkJg2mHU&amp;lang=en_US&amp;name=doddcaldwell&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_fa28abd723a5_64.png&amp;title=Dodd%26%23039%3Bs+Blog&amp;url=http%3A%2F%2Fblog.doddcaldwell.com%2F&amp;page_slide=slide"></iframe>
+<div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://assets.tumblr.com/assets/html/iframe/teaser.html?_v=342ba5c4e784a328ebdca8f22f04abc0#src=http%3A%2F%2Fblog.doddcaldwell.com%2Fpost%2F25472858251%2Flessons-learned-from-self-funded-startup&amp;pid=25472858251&amp;rk=GkJg2mHU&amp;lang=en_US&amp;name=doddcaldwell&amp;avatar=http%3A%2F%2F38.media.tumblr.com%2Favatar_fa28abd723a5_64.png&amp;title=Dodd%26%23039%3Bs+Blog&amp;url=http%3A%2F%2Fblog.doddcaldwell.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div><script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=b2497930de8c1a4bc01163e7acbd1bf8");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><!-- END TUMBLR CODE -->
+
+</body>
+</html>
